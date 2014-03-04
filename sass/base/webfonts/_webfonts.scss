@@ -1,0 +1,73 @@
+//////////////////////////////
+// BASE: Base element styles 
+//////////////////////////////
+
+@import "_webfonts_variables";
+@import "_webfonts_extendables";
+
+// Google fonts using webfont loader JS to load font and add the class to the html tag once it's loaded
+
+body {
+  @extend %serif; 
+}
+.wf-droidsans-n4-active {
+  #{headings()},
+  button,
+  input[type="button"],
+  input[type="submit"], 
+  input.cancel {
+    @extend %sans;
+  }
+}
+
+strong, b {
+  @extend %serif-bold; 
+}
+
+
+em, i {
+  @extend %serif-italic; 
+}
+
+// never sure what order the tags will be in and if there mixed
+strong em, 
+b i, 
+em strong, 
+i b, 
+strong i, 
+b em, 
+i strong, 
+em b {
+  @extend %serif-bold-italic;
+}
+
+#{headings()},
+blockquote {
+  strong {
+     @extend %sans-bold;
+  }
+}
+
+h4 {
+  @extend %sans-bold; 
+}
+
+
+
+//#{headings()} {
+//  @extend %sans;
+//}
+
+
+// For offline/local fonts
+//@include web-font-face($body-font-name, $body-font-file-name, $font-weight, $font-style, $inline-fonts);
+//
+//@include web-font-face($body-bold-font-name, $body-bold-font-file-name, $body-bold-font-weight, $font-style, $inline-fonts); 
+//
+//@include web-font-face($body-italic-font-name, $body-italic-font-file-name, $font-weight, $body-italic-font-style, $inline-fonts);
+//
+//@include web-font-face($body-bold-italic-font-name, $body-bold-italic-font-file-name, $body-bold-italic-font-weight, $body-bold-italic-font-style, $inline-fonts);
+//
+//@include web-font-face($heading-font-name, $heading-font-file-name, $font-weight, $font-style, $inline-fonts);
+//
+//@include web-font-face($heading-bold-font-name, $heading-bold-font-file-name, $heading-bold-font-weight, $font-style, $inline-fonts); 

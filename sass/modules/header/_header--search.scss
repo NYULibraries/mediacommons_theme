@@ -1,0 +1,95 @@
+//////////////////////////////
+// SUB-MODULES: Component styles that are layout independent 
+//////////////////////////////
+
+[role="search"] {
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  fieldset {
+    margin: 0;
+    border: none;
+  }
+}
+[role="search"] input[type="submit"] {
+  font-family: $icon-font-name; // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
+}
+[role="search"] label, [role="search"] label span {
+  display: none;
+}
+
+// style placeholder text see '_header--search_mixins.scss' placeholder mixin
+input[type="search"] {
+  padding-left: .75em;
+  font-family: $header-font-family;
+  @include input-placeholder {
+    color: nth($primary, 2);
+  }
+}
+
+.wf-droidsans-n4-active input[type="search"] {
+  font-family: $heading-font-name, $header-font-family;
+}
+
+@include respond-to("full navigation") {
+
+  [role="search"] label {
+    display: none;
+  }
+  [role="search"] label span {
+    display: none;
+  }
+}
+
+@include respond-to("narrow navigation") {
+  [role="search"] {
+    margin: 0;
+    display: block;
+    float: none;
+    position: relative;
+    background-color: transparent;
+  }
+  [role="search"] label span {
+    display: none;
+  }
+  [role="search"] label {
+    height: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    padding-top: .6em;
+    margin: 0 2%;
+    display: block;
+    float: right;
+    @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
+    @include border-radius(5px);
+    border: 1px solid #ccc;
+  }
+  [role="search"].open label {
+    margin-bottom: .25em;
+  }
+  [role="search"] fieldset {
+    clear: both;
+    background-color: nth($black, 3);
+    border: none;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    position: relative;
+    left: 0;
+    top: 0em;
+    display: none;
+  }
+  [role="search"].open fieldset {
+    height: auto;
+    padding: 10px;
+  }
+  input[type="search"] {
+    width: 85%;
+    
+  }
+  [role="search"] fieldset[aria-hidden="true"] {
+    width: 15%; 
+  }
+}

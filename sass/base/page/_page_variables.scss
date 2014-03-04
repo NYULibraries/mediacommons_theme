@@ -1,0 +1,76 @@
+//////////////////////////////
+// VARIABLES: For Base styles 
+//////////////////////////////
+
+// Fonts see base/_webfonts
+// http://awesome-fontstacks.com/bundles/414-droooooid
+// added in Droid Serif and Droid Sans which are native fonts on Android Phones so they don't need to wait for the webfont version to be loaded 
+$body-font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+$header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+$blockquote-font-family: $header-font-family;
+//$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
+
+$body-font-size: 16px; 
+$body-line-height: 1.5em;
+
+///// body
+//$body-background-color: nth($black , 6);
+//$body-background-rgba: rgba($body-background-color, 1);
+$body-border-width: false;
+$body-border-color-rgba: rgba(0,0,0,0); 
+$body-margin: 0 auto;
+$body-padding: 0;
+
+$html-border-width: false;
+$html-border-color: nth($primary, 1);
+$html-background-color: $body-background-color;
+
+// Links
+$link-color: nth($primary, 1);
+$link-text-decoration: none;
+$link-border-width: false;
+///// Visited
+$link-visited-link-color: nth($primary, 2);
+$link-visited-border-width: false;
+///// Hover
+$link-hover-link-color: lighten($link-color, 10%);
+// $link-hover-text-decoration: none; 
+$link-hover-border-width: false;
+$link-hover-border-color: $link-color;
+///// Active
+$link-active-link-color: $link-color;
+
+//  $blue_mc:#196195;
+//  $orange_imr:#dd5520;
+//  $green_mcp:#456b2d;
+//  $aqua_tne:#148385;
+//  $red_ac:#be1e2d;
+
+//////////////////////////////
+// DEFAULT VARIABLES
+//////////////////////////////
+
+// Typography _typography.scss
+$body-font-family: Palatino, Cambria, Georgia, serif !default;
+$secondary-font: Calibri, 'Helvetica Neue', Arial, sans-serif !default;
+$header-font-family: $body-font-family !default;
+$monospaced-font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", monospace !default;
+
+/// html
+$html-border-width: 0.5em 0 0 0 !default;
+$html-border-style: solid !default;
+$html-border-color: #693 !default;
+$html-background-color: #eee !default;
+
+/// body
+$body-background-color: #fefefe !default;
+$body-background-rgba: rgba(255,255,255,0.9) !default;
+$body-margin: 0 2.5% !default;
+$body-padding: 0 2.5% !default;
+$body-font-size: 100% !default;
+$body-line-height: 1.875em !default;
+$body-color: #333 !default;
+$body-border-width: 0 1px 0 1px !default;
+$body-border-style: solid !default;
+$body-border-color: #ddd !default;
+$body-border-color-rgba: rgba(0,0,0,0.13) !default; 

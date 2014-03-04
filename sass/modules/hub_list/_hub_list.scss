@@ -1,0 +1,83 @@
+//////////////////////////////
+// MODULES: Component styles that are layout independent 
+//////////////////////////////
+
+[role="complementary"].part-of-hub {
+  background: nth($black, 5);
+  header {
+    padding: .5em .5em .5em 1em;
+    background: nth($primary, 2);
+    > div {
+      font-style: italic;
+      color: nth($black, 1);
+    }
+  }
+  h2 {
+    font-size: 1.4em;
+    padding: 0 0 .4em 0;
+    margin: 0 0 .4em 0;
+    color: nth($black, 6);
+  }
+  ul[role="menu"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: table;
+    width: 100%;
+    
+    li {
+      display: table-row;
+      text-indent: 0;
+      margin: 0;
+      > a:first-child {
+        display: table-cell;
+        padding:.5em;
+      }
+      &:hover {
+        background: nth($primary, 5);
+        a {
+          //color: nth($black, 6);
+        }
+      }
+      &.current, &.current:hover  {
+        background: nth($quadrary, 2);
+        a, span {
+          color: nth($black, 1);
+        }
+      }
+      > h3 {
+        vertical-align: top;
+        display: table-cell;
+        font-size: 1.2em;
+        padding: .5em 0;
+        margin: 0;
+      }
+    }
+  }
+  .responsive-disclosure {
+    display: none;
+  }
+  @include respond-to("full navigation") {
+    span.responsive-disclosure {
+      display: none;
+    }
+    nav {
+      display: block;
+    }
+  }
+  @include respond-to("not desktop") {
+    clear: left;
+    span.responsive-disclosure {
+      display: inline-block;
+      float: right;
+      margin-right: 1em;
+    }
+    nav {
+      display: none;
+    }
+  }
+}
+
+aside + h2 {
+  clear: both;
+}

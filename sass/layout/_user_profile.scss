@@ -1,0 +1,30 @@
+//////////////////////////////
+// LAYOUT: Layout dependent css and media queries only 
+//////////////////////////////
+
+body.meco {
+    header, article, footer {
+    a {
+      color: nth($mc-blue,1) !important; // FOR PROFILE PAGE DEMO ONLY
+    }
+  }
+  input[type="search"] {
+    @include input-placeholder {
+      color: nth($mc-blue, 2); // FOR PROFILE PAGE DEMO ONLY
+    }
+  }
+  
+  @include respond-to("full navigation") {
+    section[role="complementary"] {
+      float: right;
+      max-width: ms(12);
+    }
+    .profile aside {
+      background-color: nth($mc-blue, 3); // FOR PROFILE PAGE DEMO ONLY
+      > h2 {
+        background: nth($mc-blue, 1); // FOR PROFILE PAGE DEMO ONLY
+      }
+    }
+
+  }
+}

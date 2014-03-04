@@ -1,0 +1,12 @@
+//////////////////////////////
+// MIXINS: For Modules 
+//////////////////////////////
+
+// See: Icon fonts, HAML and Sass http://gist.io/4731881
+// For each loop that conumes the $icons list
+@each $icon in $icons {
+  #{nth($icon, 1)}:before {
+    content: nth($icon, 2);
+    @extend %ico-font-base;
+  }
+}

@@ -1,0 +1,44 @@
+//////////////////////////////
+// EXTENDABLES: For Base styles 
+//////////////////////////////
+
+%serif {
+  font-family: $body-font-family;
+  .wf-droidserif-n4-active & {
+    font-family: $body-font-name, $body-font-family; 
+  }
+}
+%serif-bold {
+  font-weight: 700;
+  font-style: normal;
+  .wf-droidserif-n7-active & {
+    font-family: $body-bold-font-name;
+  } 
+}
+%serif-italic {
+  font-style: italic;
+  .wf-droidserif-i4-active & {
+    font-family: $body-italic-font-name;
+  }
+}
+%serif-bold-italic {
+  font-weight: 700;
+  font-style: italic;
+  .wf-droidserif-i7-active & {
+    font-family: $body-bold-italic-font-name;
+  }
+}
+
+%sans {
+  font-family: $header-font-family;
+  .wf-droidsans-n4-active & {
+    font-family: $heading-font-name, $header-font-family;
+  }
+}
+%sans-bold {
+  font-weight: 700;
+  font-style: normal;
+  .wf-droidsans-n7-active & {
+    font-family: $heading-bold-font-name;
+  }
+}

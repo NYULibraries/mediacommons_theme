@@ -1,0 +1,21 @@
+//////////////////////////////
+// MODULES: Component styles that are layout independent 
+//////////////////////////////
+
+
+// https://github.com/Team-Sass/toolkit#fluid-images-and-html5-video
+$intrinsic-ratio: 16/9;
+$intrinsic-ratio-elements: 'iframe';
+
+figure.embedded.video {
+  @include intrinsic-ratio;
+  iframe {
+    border: none;
+  }
+}
+
+@include respond-to('desktop') {
+  figure.embedded.video {
+    @include intrinsic-ratio($intrinsic-ratio, ms(14), $intrinsic-ratio-elements, false);
+  }
+}

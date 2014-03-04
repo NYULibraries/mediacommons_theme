@@ -1,0 +1,39 @@
+//////////////////////////////
+// MIXINS: For Base 
+//////////////////////////////
+
+
+// Cause you can't extend silently from a media query 
+@mixin button {
+  width: auto;
+  text-align: center;
+  font-family: $button-font-family;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  @include border-outline(border, $button-border-width, $button-border-style, $button-border-color);
+  cursor: pointer;
+  @include margin-padding(padding, $button-padding);
+  line-height: 1;
+  @include border-radius($button-border-radius);
+  /// from _formalize
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  color: #333;
+  outline: 0;
+  overflow: visible;
+  text-shadow: #fff 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  @include simple-background-gradient($button-color, $button-gradient-pos, $button-gradient-stop-1, $button-gradient-stop-2);
+  @include text-shadow($button-text-shadow);
+  &:hover,
+  &:focus {
+    @include text-shadow($button-hover-text-shadow);
+    @include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, lighten($button-hover-gradient-stop-1,5%), lighten($button-hover-gradient-stop-2, 5%));
+  }  
+  &:active {
+    @include text-shadow($button-active-text-shadow);
+    @include simple-background-gradient($button-active-color, $button-active-gradient-pos, $button-active-gradient-stop-1, $button-active-gradient-stop-2);
+  }
+}

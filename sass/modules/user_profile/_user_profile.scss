@@ -1,0 +1,194 @@
+//////////////////////////////
+// MODULES: Component styles that are layout independent 
+//////////////////////////////
+
+// Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
+
+.author.date {
+  display: block;
+  
+  + p {
+    clear: both;
+  }
+  .h-card {
+    > .u-url{
+    display: inline-block;
+    float: left;
+    }
+    address {
+      padding-left: 5em;
+      line-height: 1.5em;
+      display: block;
+      padding-top: 2em;
+    }  
+  }
+}
+
+.h-card {
+  margin: 1em 0;
+  
+  > .u-url:first-child {
+   @extend %user-photo-treatment;
+    margin: 1em 0;
+    
+    .u-photo {    
+      margin: 0;
+      
+      .comments &, .spoke & {
+        float: left;
+      }
+    }
+  }
+  
+  address {  // http://html5doctor.com/the-address-element/
+    &:before {
+      content: "by\20";  
+    }
+  }
+  .p-name.u-url {
+    font-weight: bold;
+  }
+  .p-org {
+    &:before {
+      content: "\20\2014\20";   // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+    }
+  }
+  .h-adr {
+    display: block;
+  }
+}
+
+.profile {
+  
+  header {
+    margin-bottom: 1em;
+    padding: 0 1em;
+    .u-photo {
+      float: left;
+      margin: 0 .5em 1em 0;
+      @extend %user-photo-treatment;
+    }
+    .p-name {
+      font-size:2em;
+    }
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  li {
+    margin-bottom: .5em;
+    text-indent:0;
+    margin-left: 0;
+  }
+  h1 {
+    margin-bottom: .2em;
+    color: nth($black, 1);
+  }
+  h2 {
+    margin-top: 2rem;
+    margin-bottom: .7em;
+  }
+  .following {
+    @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+  }
+  .author {
+    font-style: italic;
+    &:before {
+      content: "\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+    }
+  }
+  .contact-info li {
+    display: inline-block;
+    margin-right: 1%;
+    a {
+    }
+    span {
+
+    }
+  }
+  ul.Tags li:first-child {
+    display: inline-block;
+    padding: 0;
+  }
+  .following li.h-card {
+    display: inline-block;
+    width: 32.6667%;
+    > a {
+      display: block;
+    } 
+  }
+  aside {
+    @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+  }
+  @include respond-to("full navigation") {
+    section {
+      max-width: ms(14);
+      float: left;
+      margin: 0 1em 1em 0;
+      padding: 0 1em;
+      
+    }
+    aside {
+      background-color: nth($quadrary, 5);
+      margin-top: 1em;
+      > h2 {
+        color: nth($black, 6);
+        background: nth($tertiary, 2);
+        margin: 0;
+        font-size: 15px;
+        font-size: 1.3rem;
+        padding: .5em;
+      }
+      > ul {
+        padding: .5em;
+        margin: 0;
+      }
+    }
+    .following li.h-card {
+      float: left;
+      width: 50%;
+    }
+
+    .contact-info {
+      li {
+        margin-bottom: 0;
+        float: none;
+        text-indent: 0;
+        a {
+            width: auto;
+            text-indent:.25em;
+            color: nth($mc-blue, 2);
+          &:hover {
+              text-decoration: none;
+            span {
+              text-decoration: underline;
+              color: nth($mc-blue, 1);
+            }
+          }
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile {
+  @include respond-to("narrow navigation") {
+     padding: 0 3%;
+    .contact-info li {
+      display: inline-block;
+      margin-right: 1%;
+      font-size: 1.4em;
+      a {
+        @include button;
+      }
+      span {
+        display: none;
+      }
+    }
+  }
+}  

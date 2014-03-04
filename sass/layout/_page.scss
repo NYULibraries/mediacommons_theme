@@ -1,0 +1,233 @@
+//////////////////////////////
+// LAYOUT: Layout dependent css and media queries only 
+//////////////////////////////
+
+.skip-to-nav {
+  @include respond-to('full navigation') {
+    @include element-invisible;
+  }
+}
+  
+footer {
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+}
+html {
+  @include respond-to('desktop content') {
+    @include type-size($body-font-size); // 16px
+  }
+  @include respond-to('extra wide content') {
+    @include type-size($body-font-size + 5); // 21px
+  }
+  @include respond-to('wide content') {
+    @include type-size($body-font-size + 2); // 18px
+  }
+  @include respond-to('medium wide content') {
+    @include type-size($body-font-size - 1); // 15px
+  }
+  @include respond-to('medium content') {
+    @include type-size($body-font-size - 2); // 14px
+  }
+  @include respond-to('medium only content') {
+    @include type-size($body-font-size - 2); // 14px
+  }
+  @include respond-to('narrow content') {
+    @include type-size($body-font-size - 3); // 13px
+  }
+  @include respond-to('mobile content') {
+    @include type-size($body-font-size - 4); // 12px
+  }
+}
+
+body {
+  @include respond-to('desktop content') {
+    @include type-size( 1rem, $body-line-height); // 16px/1.5em 
+  }
+  @include respond-to('extra wide content') {
+    @include type-size( 1rem, $body-line-height + .2); // 21px/1.7em
+  }
+  @include respond-to('wide content') { 
+    @include type-size( 1rem, $body-line-height + .16666); // 18px/1.6666em
+  }
+  @include respond-to('medium wide content') { 
+    @include type-size( 1rem, $body-line-height - .1); // 15px/1.4em
+  }
+  @include respond-to('medium content') { 
+    @include type-size( 1rem, $body-line-height - .1); // 14px/1.4em
+  }
+  @include respond-to('medium only content') { 
+    @include type-size( 1rem, $body-line-height - .1); // 14px/1.4em
+  }
+  @include respond-to('narrow content') { 
+    @include type-size( 1rem, $body-line-height - .1); // 13px/1.4em
+  }
+  @include respond-to('mobile content') { 
+    @include type-size( 1rem, $body-line-height - .16666); // 12px/1.333em
+  }
+}
+#content {
+  max-width: ms(14); // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
+  padding: 1em;   
+  @include respond-to('desktop content') {
+    float: left;
+    width: 60%;
+  }
+  @include respond-to('extra wide content') {
+    float: left;
+    width: 60%;
+  }
+  @include respond-to('wide content') {
+    float: left;
+    width: 60%; 
+  }
+  @include respond-to('medium wide content') {
+    float: left;
+    width: 60%; 
+  }
+  @include respond-to('medium content') {
+    float: left;
+    width: 60%; 
+  }
+  @include respond-to('medium only content') {
+  }
+  @include respond-to('narrow content') { 
+  }
+  @include respond-to('mobile content') {
+  }
+}
+//article {
+//  max-width: ms(16);  //  see modular scale notes in base/typography/_typography_variables
+//  margin: 0 auto;
+//  @include respond-to('desktop content') {
+//    width: 100%;
+//  }
+//  @include respond-to('extra wide content') {
+//    width: 100%;
+//  }
+//  @include respond-to('wide content') {
+//    width: 100%; 
+//  }
+//  @include respond-to('medium wide content') {
+//    width: 100%;
+//  }
+//  @include respond-to('medium content') {
+//    width: 100%;
+//  }
+//}
+main {
+  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+  max-width: ms(16);  // ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
+  margin: 0 auto;
+  @include respond-to('desktop content') {
+    width: 100%;
+  }
+  @include respond-to('extra wide content') {
+    width: 100%;
+  }
+  @include respond-to('wide content') {
+    width: 100%; 
+  }
+  @include respond-to('medium wide content') {
+    width: 100%;
+  }
+  @include respond-to('medium content') {
+    width: 100%;
+  }
+}
+
+
+
+//.mediacommons-network {
+//  img {
+//    display:inline-block;
+//    max-width:130px;
+//  }
+//}
+//
+//.wrapper {
+//  .node {
+//    a {
+//      font-size:1.05em;
+//    }
+//  }
+//  width: 70%;
+//  max-width: 1200px;
+//  padding: 0 2em;
+//  background-color: #fff;
+//  overflow: hidden;
+//  margin:0 auto;
+//  h1 {
+//    font-size:2.5em;
+//    line-height:1em;
+//    margin:.4em 0;
+//    padding:0;
+//    font-weight:600;
+//    width:90%;
+//  }
+//  h2 {
+//    font-size:1em;
+//    border-bottom:3px solid $grey1;
+//    margin-top:.5em;
+//    padding-bottom:.5em;
+//    font-weight:600;
+//    &.section-title {
+//      margin-bottom:2em;
+//    }
+//  }
+//  h3 {
+//    color:#999;
+//    margin:0;
+//    display:inline-block;
+//    font-weight:normal;
+//  }
+//  .post, .cluster, .content {
+//    //width:67%;
+//    width:58.5%;
+//    display:inline-block;
+//    font-size:1.2em;
+//    line-height:1.55em;
+//  }
+//  .node-hub {
+//    .content {
+//      width:100%;
+//    }
+//  }
+//}
+//
+//.trigger {
+//  font-size:.8em;
+//  a:hover {
+//    text-decoration:none;
+//  }
+//}
+//  .contributors {
+//    font-size:.8em;
+//    .user-picture {
+//      display:block;
+//      overflow:hidden;
+//      margin-top:0em;
+//      &:after {
+//        content: " F.name L.name";
+//      }
+//      a {
+//        float: left;
+//        margin-right:.25em;
+//        font-size:.85em;
+//        display:block;
+//        padding:.1em 0;
+//        border-bottom:none;
+//        @include profile(30px);
+//        border:1px solid #ebebeb;
+//        overflow:hidden;
+//        &:hover {
+//          border:1px solid #ccc;
+//        }
+//      }
+//    }
+//  }
+//
+//  .new {
+//    background: yellow;
+//    color: red;
+//    padding: .25em;
+//    margin-right: .25em;
+//}   

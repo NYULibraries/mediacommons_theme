@@ -1,0 +1,7 @@
+.svn
+.sass-cache/*
+.DS_Store
+.buildpath
+.project
+.settings/*
+css/*

@@ -154,8 +154,18 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
       'babyzen_preprocess_user_register_form'
     ),
   );
+
+     /*    $hooks['user_picture'] = array(
+          'arguments' => array('account' => NULL),
+          'preprocess functions' => array('babyzen_preprocess_user_picture'),
+          'template' => 'user-picture',
+        );*/
   return $hooks;
 }
+//function babyzen_preprocess_user_picture( &$vars ) {
+//dsm($vars);
+
+ // }
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 
@@ -206,8 +216,15 @@ function babyzen_form_alter( &$form, &$form_state, $form_id ) {
     $form['pass']['#attributes']['placeholder'] = t( 'Password' );
     $form['pass']['#description'] = "The password field is case sensitive.";
     $form['actions']['submit']['#value'] = "Login";
+  } else if ($form_id == 'search_block_form') {
+    // HTML5 placeholder attribute
+    $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+   //$form['search_block_form']['#type'] = 'search';
+    //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
   }
+
 }
+
 
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */

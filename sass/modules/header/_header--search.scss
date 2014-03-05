@@ -21,7 +21,7 @@
 }
 
 // style placeholder text see '_header--search_mixins.scss' placeholder mixin
-input[type="search"] {
+input[type="search"], input[name="search_block_form"] {
   padding-left: .75em;
   font-family: $header-font-family;
   @include input-placeholder {

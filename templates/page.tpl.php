@@ -33,21 +33,17 @@
 
  <?php if ($messages) : ?>
           <?php print $messages; ?>
-          <?php endif; ?>
+  <?php endif; ?>
 
       
-  <?php 
-    
-   print render($page['content']); ?> </main>
+  <?php print render($page['content']); ?> </main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>
 <?php endif; ?>
 
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
-  <footer role="contentinfo">
-    <?php print render($page['footer']); ?> MediaCommons: A Digital Scholarly Network -- Powered by NYU
-  </footer>
+    <?php print render($page['footer']); ?> 
 <?php endif; ?>
  
    

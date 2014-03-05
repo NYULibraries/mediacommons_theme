@@ -1718,7 +1718,13 @@ nav[role="navigation"].global {
   padding: 0.3em 1% 0 1%;
   /*   */
 }
-/* line 20, ../sass/modules/global_nav/_global_nav.scss */
+@media (min-width: 61.3125em) {
+  /* line 7, ../sass/modules/global_nav/_global_nav.scss */
+  nav[role="navigation"].global {
+    top: 0.3em;
+  }
+}
+/* line 24, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul {
   margin: 0;
   padding: 0;
@@ -1754,13 +1760,13 @@ nav[role="navigation"].global ul li:last-child {
 nav[role="navigation"].global ul li.last {
   padding-right: 0;
 }
-/* line 23, ../sass/modules/global_nav/_global_nav.scss */
+/* line 27, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul li {
   text-indent: 0;
   margin: 0;
   padding: 0;
 }
-/* line 27, ../sass/modules/global_nav/_global_nav.scss */
+/* line 31, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul li a {
   font-size: .775em;
   line-height: 1.5em;
@@ -1770,12 +1776,12 @@ nav[role="navigation"].global ul li a {
   text-indent: 0;
   padding: .5em;
 }
-/* line 35, ../sass/modules/global_nav/_global_nav.scss */
+/* line 39, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul li a:hover {
   color: #eaeaea;
   text-decoration: underline;
 }
-/* line 43, ../sass/modules/global_nav/_global_nav.scss */
+/* line 47, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections {
   margin: 0;
   padding: 0;
@@ -1811,12 +1817,12 @@ nav[role="navigation"].global ul.global-sections li:last-child {
 nav[role="navigation"].global ul.global-sections li.last {
   padding-right: 0;
 }
-/* line 47, ../sass/modules/global_nav/_global_nav.scss */
+/* line 51, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections ul {
   width: auto;
   position: relative;
 }
-/* line 50, ../sass/modules/global_nav/_global_nav.scss */
+/* line 54, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections ul > li.navitems2.open {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
@@ -1825,21 +1831,21 @@ nav[role="navigation"].global ul.global-sections ul > li.navitems2.open {
   -webkit-border-bottom-left-radius: 0;
   border-bottom-left-radius: 0;
 }
-/* line 55, ../sass/modules/global_nav/_global_nav.scss */
+/* line 59, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections ul > li:before {
   content: "|";
   color: #cccccc;
   font-size: .75em;
 }
-/* line 60, ../sass/modules/global_nav/_global_nav.scss */
+/* line 64, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections ul > li > a {
   padding: .3em 0.5em;
 }
-/* line 65, ../sass/modules/global_nav/_global_nav.scss */
+/* line 69, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.global-sections ul li:first-child:before {
   content: " ";
 }
-/* line 71, ../sass/modules/global_nav/_global_nav.scss */
+/* line 75, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global .logolink {
   max-width: 100%;
   padding: .125em 1em 0 0;
@@ -1850,33 +1856,33 @@ nav[role="navigation"].global .logolink {
   font-size: 1.2em;
   line-height: 1;
 }
-/* line 80, ../sass/modules/global_nav/_global_nav.scss */
+/* line 84, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global .logolink:hover {
   text-decoration: none;
 }
-/* line 83, ../sass/modules/global_nav/_global_nav.scss */
+/* line 87, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global .logolink span {
   display: none;
 }
-/* line 87, ../sass/modules/global_nav/_global_nav.scss */
+/* line 91, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global a.drop-down {
   font-weight: bold;
 }
-/* line 90, ../sass/modules/global_nav/_global_nav.scss */
+/* line 94, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global a.drop-down.open {
   -moz-border-radius-topright: 5px;
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
-/* line 95, ../sass/modules/global_nav/_global_nav.scss */
+/* line 99, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li.navitems2 {
   position: relative;
 }
-/* line 98, ../sass/modules/global_nav/_global_nav.scss */
+/* line 102, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li.navitems2 ul {
   display: none;
 }
-/* line 101, ../sass/modules/global_nav/_global_nav.scss */
+/* line 105, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li.navitems2.open ul {
   height: auto;
   display: block;
@@ -1895,15 +1901,15 @@ nav[role="navigation"].global li.navitems2.open ul {
   top: 1.66em;
   right: 0;
 }
-/* line 112, ../sass/modules/global_nav/_global_nav.scss */
+/* line 116, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li.navitems2.open ul a {
   display: block;
 }
-/* line 118, ../sass/modules/global_nav/_global_nav.scss */
+/* line 122, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="true"] {
   display: none;
 }
-/* line 121, ../sass/modules/global_nav/_global_nav.scss */
+/* line 125, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"] {
   display: inline-block;
 }
@@ -1912,13 +1918,13 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
   nav[role="navigation"].global {
     font-size: 1.33em;
   }
-  /* line 131, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 133, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global ul.navitems > li {
     background-image: -webkit-linear-gradient(top, #12476e, #175888);
     background-image: -moz-linear-gradient(top, #12476e, #175888);
     background-image: linear-gradient(top, #12476e, #175888);
   }
-  /* line 133, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 135, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global ul.navitems > li:first-child {
     -moz-border-radius-topleft: 5px;
     -webkit-border-top-left-radius: 5px;
@@ -1927,7 +1933,7 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
     -webkit-border-bottom-left-radius: 5px;
     border-bottom-left-radius: 5px;
   }
-  /* line 136, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 138, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global ul.navitems > li:last-child {
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1936,7 +1942,7 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
     -webkit-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  /* line 138, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 140, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global ul.navitems > li:last-child.open {
     -moz-border-radius-topright: 5px;
     -webkit-border-top-right-radius: 5px;
@@ -1952,19 +1958,19 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
     padding: 0 2%;
     font-size: 1.5em;
   }
-  /* line 150, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 152, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global a.logolink {
     padding: .25em 0em .25em 0;
   }
-  /* line 152, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 154, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global a.logolink:before {
     content: "\e002 \e00b";
   }
-  /* line 156, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 158, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global ul li {
     background: none;
   }
-  /* line 160, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 162, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections li {
     width: 16em;
     height: 1.925em;
@@ -1974,7 +1980,7 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
     z-index: 5;
     float: none;
   }
-  /* line 169, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 171, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li > ul.navitems {
     height: 0px;
     overflow: hidden;
@@ -1991,37 +1997,37 @@ nav[role="navigation"].global li[aria-haspopup="true"] > ul[aria-hidden="false"]
     border-bottom-right-radius: 5px;
     top: -1px;
   }
-  /* line 178, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 180, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li > ul.navitems li:before {
     content: "";
   }
-  /* line 182, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 184, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li ul.navitems.open {
     height: auto;
     padding-bottom: .25em;
   }
-  /* line 186, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 188, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li ul.open > li {
     display: block;
     float: none;
     width: 100%;
     clear: left;
   }
-  /* line 191, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 193, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li ul.open > li:hover {
     background-color: #12476e;
     color: #eaeaea;
   }
-  /* line 195, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 197, ../sass/modules/global_nav/_global_nav.scss */
   nav[role="navigation"].global > ul.global-sections > li ul.open > li a {
     font-size: 1em;
   }
 }
-/* line 203, ../sass/modules/global_nav/_global_nav.scss */
+/* line 205, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils {
   position: absolute;
   right: 0px;
-  top: 0.3em;
+  top: 0;
   margin: 0;
   padding: 0;
   border: 0;
@@ -2055,26 +2061,27 @@ nav[role="navigation"].global ul.utils li:last-child {
 nav[role="navigation"].global ul.utils li.last {
   padding-right: 0;
 }
-/* line 208, ../sass/modules/global_nav/_global_nav.scss */
+/* line 211, ../sass/modules/global_nav/_global_nav.scss */
+nav[role="navigation"].global ul.utils.logged-in .last {
+  display: none;
+}
+/* line 214, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils > li {
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
   padding: 0;
   color: #e0e0e0;
   margin-right: .5em;
 }
-/* line 213, ../sass/modules/global_nav/_global_nav.scss */
+/* line 218, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils > li > a {
   padding: 0.3em 0.5em;
+}
+/* line 222, ../sass/modules/global_nav/_global_nav.scss */
+nav[role="navigation"].global ul.utils li[aria-haspopup="true"] > a {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  background-image: -webkit-linear-gradient(top, #175888, #12476e);
-  background-image: -moz-linear-gradient(top, #175888, #12476e);
-  background-image: linear-gradient(top, #175888, #12476e);
 }
-/* line 220, ../sass/modules/global_nav/_global_nav.scss */
+/* line 224, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li[aria-haspopup="true"] > a.open {
   -moz-border-radius-bottomleft: 0px;
   -webkit-border-bottom-left-radius: 0px;
@@ -2091,7 +2098,7 @@ nav[role="navigation"].global ul.utils li[aria-haspopup="true"] > a.open {
   border-bottom: none;
   height: 3.6em;
 }
-/* line 230, ../sass/modules/global_nav/_global_nav.scss */
+/* line 234, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul {
   margin: 0;
   padding: 0;
@@ -2129,7 +2136,7 @@ nav[role="navigation"].global ul.utils li > ul li {
   *display: inline;
   white-space: nowrap;
 }
-/* line 239, ../sass/modules/global_nav/_global_nav.scss */
+/* line 243, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li {
   list-style-image: none;
   list-style-type: none;
@@ -2146,38 +2153,38 @@ nav[role="navigation"].global ul.utils li > ul > li {
   width: 300px;
   text-indent: 0em;
 }
-/* line 243, ../sass/modules/global_nav/_global_nav.scss */
+/* line 247, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form {
   font-size: .875em;
   width: 300px;
   padding: 0 1em;
 }
-/* line 247, ../sass/modules/global_nav/_global_nav.scss */
+/* line 251, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form input {
   max-width: 100%;
   display: block;
   margin: 0 0 1em 0;
 }
-/* line 252, ../sass/modules/global_nav/_global_nav.scss */
+/* line 256, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form .description {
   display: none;
   white-space: normal;
   font-size: .875em;
   line-height: 1.2em;
 }
-/* line 258, ../sass/modules/global_nav/_global_nav.scss */
+/* line 262, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form label {
   display: none;
 }
-/* line 261, ../sass/modules/global_nav/_global_nav.scss */
+/* line 265, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form #edit-submit {
   float: right;
 }
-/* line 264, ../sass/modules/global_nav/_global_nav.scss */
+/* line 268, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 267, ../sass/modules/global_nav/_global_nav.scss */
+/* line 271, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form .social-login {
   margin: .5em 0;
   clear: both;
@@ -2185,12 +2192,12 @@ nav[role="navigation"].global ul.utils li > ul > li form .social-login {
   font-size: .825em;
   line-height: 1.2em;
 }
-/* line 273, ../sass/modules/global_nav/_global_nav.scss */
+/* line 277, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form .social-login .twitter {
   display: inline-block;
   float: left;
 }
-/* line 277, ../sass/modules/global_nav/_global_nav.scss */
+/* line 281, ../sass/modules/global_nav/_global_nav.scss */
 nav[role="navigation"].global ul.utils li > ul > li form .social-login .facebook {
   display: inline-block;
   float: right;

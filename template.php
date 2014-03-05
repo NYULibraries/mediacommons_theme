@@ -137,16 +137,16 @@ function STARTERKIT_preprocess_block(&$variables, $hook) {
 // */
 
 
-function babyzen_theme(&$existing, $type, $theme, $path) {
-  $hooks = zen_theme($existing, $type, $theme, $path);
-  
- $hooks['user_login'] = array(
+function babyzen_theme( &$existing, $type, $theme, $path ) {
+  $hooks = zen_theme( $existing, $type, $theme, $path );
+
+  $hooks['user_login'] = array(
     'render element' => 'form',
     'template' => 'templates/user-login',
     'preprocess functions' => array(
-       'babyzen_preprocess_user_login'
+      'babyzen_preprocess_user_login'
     ),
-  ); 
+  );
   $hooks['user_register_form'] = array(
     'render element' => 'form',
     'template' => 'user-register-form',
@@ -156,106 +156,126 @@ function babyzen_theme(&$existing, $type, $theme, $path) {
   );
   return $hooks;
 }
-function babyzen_preprocess_html(&$vars) {
-// An anonymous user has a user id of zero.     
- 
- /*drupal_add_css(path_to_theme() . '/css/specialcase.css', array('group' => CSS_THEME));*/
-  $specialBodyClass   = theme_get_setting('special_body_class');
-  if (!empty($specialBodyClass)){
-      $vars['classes_array'][] = $specialBodyClass;
-  } 
+function babyzen_preprocess_html( &$vars ) {
+  // An anonymous user has a user id of zero.
+
+  /*drupal_add_css(path_to_theme() . '/css/specialcase.css', array('group' => CSS_THEME));*/
+  $specialBodyClass   = theme_get_setting( 'special_body_class' );
+  if ( !empty( $specialBodyClass ) ) {
+    $vars['classes_array'][] = $specialBodyClass;
+  }
 }
-function babyzen_preprocess_block(&$vars, $hook) {
-  // Use a template with no wrapper for the page's main content.
-  // if ($vars['block_html_id'] == 'block-system-main') {
-   
-  //   $vars['theme_hook_suggestions'][] = 'block__user_login';
-  // }
+function babyzen_preprocess_block( &$variables, $hook ) {
+  global $user;
+  $block =& $variables['block'];
+
+  if ( $block->module == 'system' && $block->delta == 'user-menu' ) {
+    if ( user_is_logged_in() ) {
+      //dpm( $variables['content'] );
+      //$variables['content'] = check_plain($user->name) . $variables['content'];
+    }
+  }
 }
-function babyzen_user_login_block($vars){
+
+
+
+function babyzen_user_menu() {
+  $items['user/login'] = array(
+    'title' => 'Join',
+    'access callback' => 'user_is_anonymous',
+    'type' => MENU_DEFAULT_LOCAL_TASK,
+  );
+
+  return $items;
 }
-function babyzen_preprocess_user_login(&$vars) { 
-     // Extract the form buttons, and put them in independent variable.
-    //$vars['buttons'] = $vars['form']['actions'];
-    //hide($vars['form']['actions']);
+
+function babyzen_user_login_block( $vars ) {
 }
-function babyzen_preprocess_user_register_form(&$vars) {
+function babyzen_preprocess_user_login( &$vars ) {
+  // Extract the form buttons, and put them in independent variable.
+  //$vars['buttons'] = $vars['form']['actions'];
+  //hide($vars['form']['actions']);
+}
+function babyzen_preprocess_user_register_form( &$vars ) {
   //$vars['intro_text'] = t('This is my super awesome reg form');
 }
-function babyzen_form_alter( &$form, &$form_state, $form_id )
-{
-    if (in_array( $form_id, array( 'user_login', 'user_login_block')))
-    {
-        $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
-        $form['name']['#description'] = "You may login with either your assigned username or your e-mail address."; 
-        $form['pass']['#attributes']['placeholder'] = t( 'Password' );
-        $form['pass']['#description'] = "The password field is case sensitive.";
-        $form['actions']['submit']['#value'] = "Login";
-    }
+function babyzen_form_alter( &$form, &$form_state, $form_id ) {
+  if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
+    $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
+    $form['name']['#description'] = "You may login with either your assigned username or your e-mail address.";
+    $form['pass']['#attributes']['placeholder'] = t( 'Password' );
+    $form['pass']['#description'] = "The password field is case sensitive.";
+    $form['actions']['submit']['#value'] = "Login";
+  }
 }
 
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
-function babyzen_preprocess_page(&$vars) {
+function babyzen_preprocess_page( &$vars ) {
   /** Remove logo */
   $vars['logo'] = null;
 }
 
-function babyzen_menu_tree__features($variables) {
- 
+function babyzen_menu_tree__features( $variables ) {
+
   //return print_r($variables);
- 
- // if ($element['#original_link']['depth'] == '1') {
+
+  // if ($element['#original_link']['depth'] == '1') {
   //  $element['#attributes']['class'][] = 'rara';
   //}
   return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
 }
-function babyzen_menu_link__features(array $variables) {
+function babyzen_menu_link__features( array $variables ) {
   $element = $variables['element'];
   //return print_r($variables['element']);
- 
-  if ($element['#original_link']['depth'] == '1') {
+
+  if ( $element['#original_link']['depth'] == '1' ) {
     // This sets the classes for the lists item
-
-
     $element['#title'] = '<span>' . $element['#title'] . '</span>';
     $element['#localized_options']['html'] = true;
     // This sets the classes for the link itself
     $element['#localized_options']['attributes']['class'][] = "logolink";
     $element['#localized_options']['attributes']['class'][] = "mc-logo";
   }
- 
-   //  l(t('Link text'), 'about-us', array('attributes' => array('class' => array('about-link', 'another-class'))));
+
+  //  l(t('Link text'), 'about-us', array('attributes' => array('class' => array('about-link', 'another-class'))));
 
   $sub_menu = '';
-  if ($element['#below']) {
-    $sub_menu = drupal_render($element['#below']);
+  if ( $element['#below'] ) {
+    $sub_menu = drupal_render( $element['#below'] );
   }
-  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+  $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+  return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
-function babyzen_menu_tree__user_menu(&$variables) {
+function babyzen_menu_tree__user_menu( &$variables ) {
   return '<ul class="utils logged-in" role="menubar">' . $variables['tree'] . '</ul>';
 }
-function babyzen_menu_link__user_menu(array $variables) {
+function babyzen_menu_link__user_menu( array $variables ) {
+  global $user;
   $element = $variables['element'];
   //return print_r($variables);
-  if ($element['#title'] == 'Login') {
+  if ( $element['#title'] == 'Login' ) {
     $element['#localized_options']['attributes']['class'][] = "login-link";
     $element['#attributes']['aria-haspopup'] = "true";
     $element['#attributes']['role'] = "menuitem";
-    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-    
-      $pop = '<ul class="login-area" aria-hidden="true" style="">
-        <li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
-    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $pop . "</li>\n";
-  } else {
-     $element['#attributes']['role'] = "menuitem";
-    $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-    return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . "</li>\n";
+    $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+    $pop = '<ul class="login-area" aria-hidden="true" style="">
+        <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
+    return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
+  } else if ( $element['#title'] == 'My account' ) {
+      $element['#localized_options']['attributes']['class'][] = "login-link";
+      $element['#attributes']['aria-haspopup'] = "true";
+      $element['#attributes']['role'] = "menuitem";
+      $output =  l( $user->name, $element['#href'], $element['#localized_options'] );
+      //$pop = '<ul class="user-pref-area" aria-hidden="true" style=""><li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
+      $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l(t('Edit my account'), "user/{$GLOBALS['user']->uid}/edit") . '</li>
+        <li role="menuitem"> <a href="#">View my contributions</a> </li>
+        <li role="menuitem"> <a href="#">View my bookmarks</a> </li>
+        <li role="menuitem"> <a href="user/logout">Logout</a></li></ul>';
+      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";
+    } else {
+      $element['#attributes']['role'] = "menuitem";
+      $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
   }
 }
-
-/*
-$variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
-*/

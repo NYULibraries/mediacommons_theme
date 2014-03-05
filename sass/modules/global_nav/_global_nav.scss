@@ -12,6 +12,10 @@ nav[role="navigation"].global {
     font-family: $heading-font-name;
     font-size: $ms-base;
     position: absolute;
+    @include respond-to("desktop") {
+        top: $globalnav-top-pad;
+    }
+
     top: 0;
     left: 0;
     z-index: 2000;
@@ -123,8 +127,6 @@ nav[role="navigation"].global {
         }
     }
     //  Moved from layout/_globalnav.scss
-    @include respond-to("desktop") {}
-
     @include respond-to("tablet-lh") {
         font-size: 1.33em;
         ul.navitems {
@@ -203,20 +205,22 @@ nav[role="navigation"].global {
     ul.utils {
         position: absolute;
         right: 0px;
-        top: $globalnav-top-pad;
+        top: 0;
         @include horizontal-list(1em);
+        // Hide join link when logged in
+        &.logged-in .last {
+            display: none;
+        }
         > li {
-            @include border-radius(5px);
             padding: 0;
             color: nth($black, 5);
             margin-right: .5em;
             > a {
                 padding: 0.3em 0.5em;
-                @include border-radius(5px);
-                @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
             }
         }
         li[aria-haspopup="true"] > a {
+            @include border-radius(5px);
             &.open {
                 @include border-bottom-radius(0px);
                 padding-bottom: 2em;

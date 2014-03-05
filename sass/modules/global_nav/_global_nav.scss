@@ -4,6 +4,13 @@
 
 @import "_global_nav_variables";
 
+#admin-menu, #admin-menu .dropdown {
+    display: none;
+}
+#block-system-user-menu {
+  outline: none;
+  position: relative;
+}
 nav[role="navigation"].global {
     //$experimental-support-for-svg: true;
     @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
@@ -12,10 +19,6 @@ nav[role="navigation"].global {
     font-family: $heading-font-name;
     font-size: $ms-base;
     position: absolute;
-    @include respond-to("desktop") {
-        top: $globalnav-top-pad;
-    }
-
     top: 0;
     left: 0;
     z-index: 2000;
@@ -30,7 +33,7 @@ nav[role="navigation"].global {
             padding: 0;
             a {
                 font-size: .775em;
-                line-height: 1.5em;
+                line-height: 1.5;
                 font-weight: normal;
                 font-weight: 400;
                 color: nth($black, 5);
@@ -206,9 +209,13 @@ nav[role="navigation"].global {
         position: absolute;
         right: 0px;
         top: 0;
+        //@include respond-to("desktop") {
+           // top: $globalnav-top-pad;
+        //}
+
         @include horizontal-list(1em);
-        // Hide join link when logged in
-        &.logged-in .last {
+        // Hide join link when logged in. todo: work this into drupal
+        .logged-in & .last {
             display: none;
         }
         > li {

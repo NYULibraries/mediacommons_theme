@@ -248,10 +248,10 @@ function babyzen_menu_link__features( array $variables ) {
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
 function babyzen_menu_tree__user_menu( &$variables ) {
-  return '<ul class="utils logged-in" role="menubar">' . $variables['tree'] . '</ul>';
+  return '<ul class="utils" role="menubar">' . $variables['tree'] . '</ul>';
 }
 function babyzen_menu_link__user_menu( array $variables ) {
-  global $user;
+  global $user, $base_path;
   $element = $variables['element'];
   //return print_r($variables);
   if ( $element['#title'] == 'Login' ) {
@@ -269,9 +269,9 @@ function babyzen_menu_link__user_menu( array $variables ) {
       $output =  l( $user->name, $element['#href'], $element['#localized_options'] );
       //$pop = '<ul class="user-pref-area" aria-hidden="true" style=""><li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
       $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l(t('Edit my account'), "user/{$GLOBALS['user']->uid}/edit") . '</li>
-        <li role="menuitem"> <a href="#">View my contributions</a> </li>
-        <li role="menuitem"> <a href="#">View my bookmarks</a> </li>
-        <li role="menuitem"> <a href="user/logout">Logout</a></li></ul>';
+        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my contributions</a> </li>
+        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my bookmarks</a> </li>
+        <li role="menuitem"> <a href="' . $base_path . 'user/logout">Logout</a></li></ul>';
       return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";
     } else {
       $element['#attributes']['role'] = "menuitem";

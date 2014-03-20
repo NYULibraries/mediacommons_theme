@@ -154,18 +154,23 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
       'babyzen_preprocess_user_register_form'
     ),
   );
-
-     /*    $hooks['user_picture'] = array(
+  $hooks['user_picture'] = array(
           'arguments' => array('account' => NULL),
           'preprocess functions' => array('babyzen_preprocess_user_picture'),
-          'template' => 'user-picture',
-        );*/
+          'template' => 'templates/user-picture',
+        );
   return $hooks;
 }
-//function babyzen_preprocess_user_picture( &$vars ) {
-//dsm($vars);
-
- // }
+function babyzen_preprocess_user_picture( &$vars ) {
+  dsm($vars);
+   // $string = $vars['user_picture'];
+   //    preg_match_all('#\bhttps?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', $string, $match);    
+   //    if($picture = $vars['user_picture']) {
+   //      $vars['user_picture'] = $match[0][0];
+   //    }
+      $vars['user_picture'] = " * user pic *";
+      
+  }
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 
@@ -295,4 +300,16 @@ function babyzen_menu_link__user_menu( array $variables ) {
       $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
       return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
   }
+}
+function babyzen_image($variables) {
+    $attributes = $variables['attributes'];
+    $attributes['src'] = file_create_url($variables['path']);
+    $attributes['class'] = 'testclass';
+    foreach (array('width', 'height', 'alt', 'title') as $key) {
+      if (isset($variables[$key])) {
+        $attributes[$key] = $variables[$key];
+      }
+    }
+    dsm($variables);
+    return '<img class="testclasslmh" ' . drupal_attributes($attributes) . ' />'; 
 }

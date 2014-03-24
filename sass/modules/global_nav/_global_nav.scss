@@ -215,9 +215,9 @@ nav[role="navigation"].global {
 
         @include horizontal-list(1em);
         // Hide join link when logged in. todo: work this into drupal
-        .logged-in & .last {
-            display: none;
-        }
+        // .logged-in & .last {
+        //     display: none;
+        // }
         > li {
             padding: 0;
             color: nth($black, 5);

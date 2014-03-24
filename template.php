@@ -1,5 +1,7 @@
 <?php
 /**
+ *
+ *
  * @file
  * Contains the theme's functions to manipulate Drupal's default markup.
  *
@@ -11,9 +13,9 @@
 /**
  * Override or insert variables into the maintenance page template.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("maintenance_page" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -29,9 +31,9 @@ function STARTERKIT_preprocess_maintenance_page(&$variables, $hook) {
 /**
  * Override or insert variables into the html templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("html" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -47,9 +49,9 @@ function STARTERKIT_preprocess_html(&$variables, $hook) {
 /**
  * Override or insert variables into the page templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("page" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -61,9 +63,9 @@ function STARTERKIT_preprocess_page(&$variables, $hook) {
 /**
  * Override or insert variables into the node templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("node" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -82,9 +84,9 @@ function STARTERKIT_preprocess_node(&$variables, $hook) {
 /**
  * Override or insert variables into the comment templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("comment" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -96,9 +98,9 @@ function STARTERKIT_preprocess_comment(&$variables, $hook) {
 /**
  * Override or insert variables into the region templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("region" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -113,9 +115,9 @@ function STARTERKIT_preprocess_region(&$variables, $hook) {
 /**
  * Override or insert variables into the block templates.
  *
- * @param $variables
+ * @param unknown $variables
  *   An array of variables to pass to the theme template.
- * @param $hook
+ * @param unknown $hook
  *   The name of the template being rendered ("block" in this case.)
  */
 /* -- Delete this line if you want to use this function
@@ -155,7 +157,7 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
     ),
   );
 
-     /*    $hooks['user_picture'] = array(
+  /*    $hooks['user_picture'] = array(
           'arguments' => array('account' => NULL),
           'preprocess functions' => array('babyzen_preprocess_user_picture'),
           'template' => 'user-picture',
@@ -165,7 +167,7 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
 //function babyzen_preprocess_user_picture( &$vars ) {
 //dsm($vars);
 
- // }
+// }
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 
@@ -216,12 +218,12 @@ function babyzen_form_alter( &$form, &$form_state, $form_id ) {
     $form['pass']['#attributes']['placeholder'] = t( 'Password' );
     $form['pass']['#description'] = "The password field is case sensitive.";
     $form['actions']['submit']['#value'] = "Login";
-  } else if ($form_id == 'search_block_form') {
-    // HTML5 placeholder attribute
-    $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
-   //$form['search_block_form']['#type'] = 'search';
-    //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
-  }
+  } else if ( $form_id == 'search_block_form' ) {
+      // HTML5 placeholder attribute
+      $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
+      //$form['search_block_form']['#type'] = 'search';
+      //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
+    }
 
 }
 
@@ -234,12 +236,6 @@ function babyzen_preprocess_page( &$vars ) {
 }
 
 function babyzen_menu_tree__features( $variables ) {
-
-  //return print_r($variables);
-
-  // if ($element['#original_link']['depth'] == '1') {
-  //  $element['#attributes']['class'][] = 'rara';
-  //}
   return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
 }
 function babyzen_menu_link__features( array $variables ) {
@@ -255,19 +251,12 @@ function babyzen_menu_link__features( array $variables ) {
     $element['#localized_options']['attributes']['class'][] = "mc-logo";
   }
 
-  //  l(t('Link text'), 'about-us', array('attributes' => array('class' => array('about-link', 'another-class'))));
-
   $sub_menu = '';
   if ( $element['#below'] ) {
     $sub_menu = drupal_render( $element['#below'] );
   }
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
-}
-
-
-function babyzen_menu_tree__user_menu( &$variables ) {
-  return '<ul class="utils" role="menubar">' . $variables['tree'] . '</ul>';
 }
 
 function babyzen_menu_tree__menu_mediacommonsusermenu( $variables ) {
@@ -278,7 +267,9 @@ function babyzen_menu_link__menu_mediacommonsusermenu( array $variables ) {
   global $user, $base_path;
   $element = $variables['element'];
   //return print_r($variables);
-  if ( $element['#title'] == 'Login' ) {
+  if ( user_is_anonymous() ) {
+
+    $element['#title'] = 'Login';
     $element['#localized_options']['attributes']['class'][] = "login-link";
     $element['#attributes']['aria-haspopup'] = "true";
     $element['#attributes']['role'] = "menuitem";
@@ -286,49 +277,17 @@ function babyzen_menu_link__menu_mediacommonsusermenu( array $variables ) {
     $pop = '<ul class="login-area" aria-hidden="true" style="">
         <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
     return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
-  } else if ( $element['#title'] == 'My account' ) {
+
+  } else if ( user_is_logged_in() ) {
       $element['#localized_options']['attributes']['class'][] = "login-link";
       $element['#attributes']['aria-haspopup'] = "true";
       $element['#attributes']['role'] = "menuitem";
       $output =  l( $user->name, $element['#href'], $element['#localized_options'] );
-      //$pop = '<ul class="user-pref-area" aria-hidden="true" style=""><li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
-      $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l(t('Edit my account'), "user/{$GLOBALS['user']->uid}/edit") . '</li>
+      $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l( t( 'Edit my account' ), "user/{$GLOBALS['user']->uid}/edit" ) . '</li>
         <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my contributions</a> </li>
         <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my bookmarks</a> </li>
         <li role="menuitem"> <a href="' . $base_path . 'user/logout">Logout</a></li></ul>';
-      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";
-    } else {
-      $element['#attributes']['role'] = "menuitem";
-      $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
-      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
+      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";  
   }
-}
-function babyzen_menu_link__user_menu( array $variables ) {
-  global $user, $base_path;
-  $element = $variables['element'];
-  //return print_r($variables);
-  if ( $element['#title'] == 'Login' ) {
-    $element['#localized_options']['attributes']['class'][] = "login-link";
-    $element['#attributes']['aria-haspopup'] = "true";
-    $element['#attributes']['role'] = "menuitem";
-    $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
-    $pop = '<ul class="login-area" aria-hidden="true" style="">
-        <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
-    return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
-  } else if ( $element['#title'] == 'My account' ) {
-      $element['#localized_options']['attributes']['class'][] = "login-link";
-      $element['#attributes']['aria-haspopup'] = "true";
-      $element['#attributes']['role'] = "menuitem";
-      $output =  l( $user->name, $element['#href'], $element['#localized_options'] );
-      //$pop = '<ul class="user-pref-area" aria-hidden="true" style=""><li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
-      $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l(t('Edit my account'), "user/{$GLOBALS['user']->uid}/edit") . '</li>
-        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my contributions</a> </li>
-        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my bookmarks</a> </li>
-        <li role="menuitem"> <a href="' . $base_path . 'user/logout">Logout</a></li></ul>';
-      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";
-    } else {
-      $element['#attributes']['role'] = "menuitem";
-      $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
-      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
-  }
+
 }

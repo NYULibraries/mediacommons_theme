@@ -154,23 +154,18 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
       'babyzen_preprocess_user_register_form'
     ),
   );
-  $hooks['user_picture'] = array(
+
+     /*    $hooks['user_picture'] = array(
           'arguments' => array('account' => NULL),
           'preprocess functions' => array('babyzen_preprocess_user_picture'),
-          'template' => 'templates/user-picture',
-        );
+          'template' => 'user-picture',
+        );*/
   return $hooks;
 }
-function babyzen_preprocess_user_picture( &$vars ) {
-  dsm($vars);
-   // $string = $vars['user_picture'];
-   //    preg_match_all('#\bhttps?://[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|/))#', $string, $match);    
-   //    if($picture = $vars['user_picture']) {
-   //      $vars['user_picture'] = $match[0][0];
-   //    }
-      $vars['user_picture'] = " * user pic *";
-      
-  }
+//function babyzen_preprocess_user_picture( &$vars ) {
+//dsm($vars);
+
+ // }
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 
@@ -269,8 +264,44 @@ function babyzen_menu_link__features( array $variables ) {
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+
 function babyzen_menu_tree__user_menu( &$variables ) {
   return '<ul class="utils" role="menubar">' . $variables['tree'] . '</ul>';
+}
+
+function babyzen_menu_tree__menu_mediacommonsusermenu( $variables ) {
+  //dsm($vars);
+  return '<ul class="utils" role="menubar">ZZZZZ ' . $variables['tree'] . '</ul>';
+}
+function babyzen_menu_link__menu_mediacommonsusermenu( array $variables ) {
+  global $user, $base_path;
+  $element = $variables['element'];
+  //return print_r($variables);
+  if ( $element['#title'] == 'Login' ) {
+    $element['#localized_options']['attributes']['class'][] = "login-link";
+    $element['#attributes']['aria-haspopup'] = "true";
+    $element['#attributes']['role'] = "menuitem";
+    $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+    $pop = '<ul class="login-area" aria-hidden="true" style="">
+        <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
+    return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
+  } else if ( $element['#title'] == 'My account' ) {
+      $element['#localized_options']['attributes']['class'][] = "login-link";
+      $element['#attributes']['aria-haspopup'] = "true";
+      $element['#attributes']['role'] = "menuitem";
+      $output =  l( $user->name, $element['#href'], $element['#localized_options'] );
+      //$pop = '<ul class="user-pref-area" aria-hidden="true" style=""><li role="menuitem">' . render(drupal_get_form('user_login')) . '</li></ul>';
+      $pop2 = '<ul role="menu" aria-hidden="true" class="user-pref-area" style="display: none;"> <li role="menuitem">'  .l(t('Edit my account'), "user/{$GLOBALS['user']->uid}/edit") . '</li>
+        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my contributions</a> </li>
+        <li role="menuitem"> <a href="' . $base_path . 'user/'. $user->uid .'">View my bookmarks</a> </li>
+        <li role="menuitem"> <a href="' . $base_path . 'user/logout">Logout</a></li></ul>';
+      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop2 . "</li>\n";
+    } else {
+      $element['#attributes']['role'] = "menuitem";
+      $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+      return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
+  }
 }
 function babyzen_menu_link__user_menu( array $variables ) {
   global $user, $base_path;
@@ -300,16 +331,4 @@ function babyzen_menu_link__user_menu( array $variables ) {
       $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
       return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . "</li>\n";
   }
-}
-function babyzen_image($variables) {
-    $attributes = $variables['attributes'];
-    $attributes['src'] = file_create_url($variables['path']);
-    $attributes['class'] = 'testclass';
-    foreach (array('width', 'height', 'alt', 'title') as $key) {
-      if (isset($variables[$key])) {
-        $attributes[$key] = $variables[$key];
-      }
-    }
-    dsm($variables);
-    return '<img class="testclasslmh" ' . drupal_attributes($attributes) . ' />'; 
 }

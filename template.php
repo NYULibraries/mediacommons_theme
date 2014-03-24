@@ -272,7 +272,7 @@ function babyzen_menu_tree__user_menu( &$variables ) {
 
 function babyzen_menu_tree__menu_mediacommonsusermenu( $variables ) {
   //dsm($vars);
-  return '<ul class="utils" role="menubar">ZZZZZ ' . $variables['tree'] . '</ul>';
+  return '<ul class="utils" role="menubar"> ' . $variables['tree'] . '</ul>';
 }
 function babyzen_menu_link__menu_mediacommonsusermenu( array $variables ) {
   global $user, $base_path;

@@ -157,15 +157,15 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
     ),
   );
 
-  /*    $hooks['user_picture'] = array(
-          'arguments' => array('account' => NULL),
-          'preprocess functions' => array('babyzen_preprocess_user_picture'),
-          'template' => 'user-picture',
-        );*/
+   // $hooks['user_picture'] = array(
+   //        'arguments' => array('account' => NULL),
+   //        'preprocess functions' => array('babyzen_preprocess_user_picture'),
+   //        'template' => 'templates/user-picture',
+   //      );
   return $hooks;
 }
-//function babyzen_preprocess_user_picture( &$vars ) {
-//dsm($vars);
+// function babyzen_preprocess_user_picture( &$vars ) {
+// dsm($vars);
 
 // }
 function babyzen_preprocess_html( &$vars ) {
@@ -241,7 +241,6 @@ function babyzen_menu_tree__features( $variables ) {
 function babyzen_menu_link__features( array $variables ) {
   $element = $variables['element'];
   //return print_r($variables['element']);
-
   if ( $element['#original_link']['depth'] == '1' ) {
     // This sets the classes for the lists item
     $element['#title'] = '<span>' . $element['#title'] . '</span>';

@@ -59,7 +59,9 @@
 }
 
 .profile {
-  
+  >h3 {
+    display:none;
+  }
   header {
     margin-bottom: 1em;
     padding: 0 1em;

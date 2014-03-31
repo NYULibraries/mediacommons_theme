@@ -2550,81 +2550,85 @@ figure.embedded.video iframe {
   display: block;
 }
 
-/* line 63, ../sass/modules/user_profile/_user_profile.scss */
+/* line 62, ../sass/modules/user_profile/_user_profile.scss */
+.profile > h3 {
+  display: none;
+}
+/* line 65, ../sass/modules/user_profile/_user_profile.scss */
 .profile header {
   margin-bottom: 1em;
   padding: 0 1em;
 }
-/* line 66, ../sass/modules/user_profile/_user_profile.scss */
+/* line 68, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .u-photo {
   float: left;
   margin: 0 .5em 1em 0;
 }
-/* line 71, ../sass/modules/user_profile/_user_profile.scss */
+/* line 73, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .p-name {
   font-size: 2em;
 }
-/* line 76, ../sass/modules/user_profile/_user_profile.scss */
+/* line 78, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 80, ../sass/modules/user_profile/_user_profile.scss */
+/* line 82, ../sass/modules/user_profile/_user_profile.scss */
 .profile li {
   margin-bottom: .5em;
   text-indent: 0;
   margin-left: 0;
 }
-/* line 85, ../sass/modules/user_profile/_user_profile.scss */
+/* line 87, ../sass/modules/user_profile/_user_profile.scss */
 .profile h1 {
   margin-bottom: .2em;
   color: #333333;
 }
-/* line 89, ../sass/modules/user_profile/_user_profile.scss */
+/* line 91, ../sass/modules/user_profile/_user_profile.scss */
 .profile h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 96, ../sass/modules/user_profile/_user_profile.scss */
+/* line 98, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author {
   font-style: italic;
 }
-/* line 98, ../sass/modules/user_profile/_user_profile.scss */
+/* line 100, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author:before {
   content: "\2014\20";
 }
-/* line 102, ../sass/modules/user_profile/_user_profile.scss */
+/* line 104, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   display: inline-block;
   margin-right: 1%;
 }
-/* line 111, ../sass/modules/user_profile/_user_profile.scss */
+/* line 113, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul.Tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 115, ../sass/modules/user_profile/_user_profile.scss */
+/* line 117, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   display: inline-block;
   width: 32.6667%;
 }
-/* line 118, ../sass/modules/user_profile/_user_profile.scss */
+/* line 120, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card > a {
   display: block;
 }
-/* line 126, ../sass/modules/user_profile/_user_profile.scss */
+/* line 128, ../sass/modules/user_profile/_user_profile.scss */
 .profile section {
   max-width: 35.72245em;
   float: left;
   margin: 0 1em 1em 0;
   padding: 0 1em;
 }
-/* line 133, ../sass/modules/user_profile/_user_profile.scss */
+/* line 135, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside {
   background-color: #ffe3d8;
   margin-top: 1em;
 }
-/* line 136, ../sass/modules/user_profile/_user_profile.scss */
+/* line 138, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside > h2 {
   color: #eaeaea;
   background: #e55769;
@@ -2633,38 +2637,38 @@ figure.embedded.video iframe {
   font-size: 1.3rem;
   padding: .5em;
 }
-/* line 144, ../sass/modules/user_profile/_user_profile.scss */
+/* line 146, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside > ul {
   padding: .5em;
   margin: 0;
 }
-/* line 149, ../sass/modules/user_profile/_user_profile.scss */
+/* line 151, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   float: left;
   width: 50%;
 }
-/* line 155, ../sass/modules/user_profile/_user_profile.scss */
+/* line 157, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   margin-bottom: 0;
   float: none;
   text-indent: 0;
 }
-/* line 159, ../sass/modules/user_profile/_user_profile.scss */
+/* line 161, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a {
   width: auto;
   text-indent: .25em;
   color: #5288af;
 }
-/* line 163, ../sass/modules/user_profile/_user_profile.scss */
+/* line 165, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a:hover {
   text-decoration: none;
 }
-/* line 165, ../sass/modules/user_profile/_user_profile.scss */
+/* line 167, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a:hover span {
   text-decoration: underline;
   color: #196195;
 }
-/* line 170, ../sass/modules/user_profile/_user_profile.scss */
+/* line 172, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a span {
   display: inline-block;
 }

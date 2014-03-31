@@ -189,7 +189,11 @@ function babyzen_preprocess_block( &$variables, $hook ) {
   }
 }
 
-
+function babyzen_preprocess_image_style(&$variables) {
+    if ($variables['style_name'] == 'profile_page_pic') {
+        $variables['attributes']['class'][] = 'u-photo photo';
+    }
+}
 
 function babyzen_user_menu() {
   $items['user/login'] = array(

@@ -52,12 +52,10 @@ nav[role="navigation"].global {
         float: left;
         // You can't add special classes for subnavs in Drupal so we select by nesting depth
         ul {
+            
             width: auto;
             position: relative;
-            > li.navitems2.open {
-                @include border-corner-radius(top, right, 5px);
-                @include border-corner-radius(bottom, left, 0);
-            }
+            
             > li {
                 &:before {
                     content: "|";
@@ -132,7 +130,7 @@ nav[role="navigation"].global {
     //  Moved from layout/_globalnav.scss
     @include respond-to("tablet-lh") {
         font-size: 1.33em;
-        ul.navitems {
+        ul.global-sections ul.global-sections {
             > li {
                 @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
                 &:first-child {
@@ -171,7 +169,7 @@ nav[role="navigation"].global {
                 z-index: 5;
                 float: none;
             }
-            > li > ul.navitems {
+            > li > ul.global-sections {
                 height: 0px;
                 overflow: hidden;
                 z-index: 2;
@@ -184,7 +182,7 @@ nav[role="navigation"].global {
                     content: "";
                 }
             }
-            > li ul.navitems.open {
+            > li ul.global-sections.open {
                 height: auto;
                 padding-bottom: .25em;
             }

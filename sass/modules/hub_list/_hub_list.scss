@@ -2,6 +2,35 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
+
+
+[role="directory"]#hometoc {
+  margin: 2em 0;
+  h1.hub-title {
+    font-size: 1.5em;
+    padding:  .4em 0 0 0;
+    margin: 0 0 .1em 0;
+    color: nth($black, 1);
+  }
+  p {
+    margin: .1em 0 ;
+  }
+  .view-mode-toc_spoke {
+    h2 {
+      font-size: 1.5em;
+      line-height: 1.2;
+    }
+    .byline {
+      margin-top: .5em;
+      font-size: 1em;
+    }
+    span {
+      display: inline-block;
+      margin-right: .3em;
+    }
+
+  }
+}
 [role="complementary"].part-of-hub {
   background: nth($black, 5);
   header {

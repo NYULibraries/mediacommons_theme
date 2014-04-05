@@ -2579,7 +2579,7 @@ figure.embedded.video iframe {
 /* line 65, ../sass/modules/user_profile/_user_profile.scss */
 .profile header {
   margin-bottom: 1em;
-  padding: 0 1em;
+  padding: 0;
 }
 /* line 68, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .u-photo {

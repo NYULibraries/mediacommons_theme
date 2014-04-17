@@ -10,12 +10,6 @@
  */
 
 
-
-
-
-
-
-
 function babyzen_theme( &$existing, $type, $theme, $path ) {
   $hooks = zen_theme( $existing, $type, $theme, $path );
 
@@ -35,10 +29,6 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
   );
   return $hooks;
 }
-// function babyzen_preprocess_user_picture( &$vars ) {
-// dsm($vars);
-
-// }
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 

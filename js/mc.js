@@ -17,7 +17,7 @@
         $("a.drop-down").remove();
         $(".navitems2 ul").children().unwrap().unwrap();
         $("a.logolink").click(function(e) {
-            $('ul.global-sections ul.global-sections').toggleClass("open", 100);
+            $('nav.global li.sites_nav ul').toggleClass("open", 100);
             e.preventDefault();
             e.stopPropagation();
         });
@@ -27,7 +27,7 @@
         });
         $(document).click(function(e) {
             e.preventDefault();
-            $('ul.global-sections ul.global-sections').toggleClass("open", false, 100);
+            $('nav.global li.sites_nav ul').toggleClass("open", false, 100);
             // Everything with an "open" class should be closed here 
         });
     }
@@ -38,17 +38,18 @@
         $("a.drop-down").remove();
         $(".navitems2 ul").children().unwrap().unwrap();
         var widthSum = 0;
-        var spaceWidth = ($("nav.global").width() - $("a.logolink.mc-logo").width() - $("ul.utils").width()) - 125;
-        console.log("a " + $("nav.global").width() + " b " + $("a.logolink.mc-logo").width() + "c " + $("ul.utils").width());
-        $("ul.global-sections ul li").each(function(index) {
+        var spaceWidth = ($("nav.global").width() - $("a.logolink.mc-logo").width() - $("li.utils").width()) - 125;
+        //console.log('$("nav.global").width() ' + $("nav.global").width() + ' ||| a.logolink.mc-logo ' + $("a.logolink.mc-logo").width() + ' ||| $("li.utils").width()' + $("li.utils").width());
+        $("nav.global li.sites_nav li").each(function(index) {
             widthSum += $(this).width();
             if (widthSum > spaceWidth) {
-                $(this).nextAll('li').addBack().wrapAll("<li class='navitems2 ' role='menuitem'><ul class='more-items'></ul><li>");
+                $(this).nextAll('li').addBack().wrapAll("<li class='navitems2' role='menuitem'><ul class='more-items'></ul><li>");
                 $('.navitems2').prepend('<a class="drop-down" href="#">More</a>');
                 $("a.drop-down").click(function() {
-                    $('.navitems2').toggleClass("open", 100);
-                    $('.navitems').toggleClass("open", 100);
+                    $('.navitems2').toggleClass("open");
+                    $('.navitems').toggleClass("open");
                     $(this).toggleClass("open");
+
                 });
                 return false;
             }

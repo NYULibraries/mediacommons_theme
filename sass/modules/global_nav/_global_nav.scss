@@ -7,10 +7,12 @@
 #admin-menu, #admin-menu .dropdown {
     display: none;
 }
+
 #block-system-user-menu {
-  outline: none;
-  position: relative;
+    outline: none;
+    position: relative;
 }
+
 nav[role="navigation"].global {
     //$experimental-support-for-svg: true;
     @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
@@ -46,33 +48,47 @@ nav[role="navigation"].global {
             }
         }
     }
-    // Nav among MC projects
-    ul.global-sections {
-        @include horizontal-list(0em);
-        float: left;
-        // You can't add special classes for subnavs in Drupal so we select by nesting depth
-        ul {
-            
-            width: auto;
-            position: relative;
-            
-            > li {
+    // top level lists
+    >ul {
+        width: 100%;
+        position: relative;
+        >li.sites_nav {
+            li {
                 &:before {
                     content: "|";
                     color: nth($black, 4);
                     font-size: .75em;
                 }
                 > a {
-                    padding: .3em 0.5em;
+                    padding: .5em 0.5em;
+                }
+                &:first-child {
+                    &:before {
+                        content: " ";
+                    }
                 }
             }
-            li:first-child {
-                &:before {
-                    content: " ";
+        }
+        >li.utils.logged-in {
+            li.first, li:first-child {
+                // overriding horizontal lists mixin
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }
+        // all deeper than one level
+        ul {
+            float: left;
+            width: auto;
+            position: relative;
+            > li {
+                > a {
+                    padding: .3em 0.5em;
                 }
             }
         }
     }
+    // Nav among MC projects
     .logolink {
         max-width: 100%;
         padding: .125em 1em 0 0;
@@ -130,7 +146,8 @@ nav[role="navigation"].global {
     //  Moved from layout/_globalnav.scss
     @include respond-to("tablet-lh") {
         font-size: 1.33em;
-        ul.global-sections ul.global-sections {
+        background-color: red;
+        >ul ul {
             > li {
                 @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
                 &:first-child {
@@ -159,7 +176,7 @@ nav[role="navigation"].global {
         ul li {
             background: none;
         }
-        > ul.global-sections {
+        >ul {
             li {
                 width: 16em;
                 height: $globalnav-height;
@@ -169,7 +186,7 @@ nav[role="navigation"].global {
                 z-index: 5;
                 float: none;
             }
-            > li > ul.global-sections {
+            > li > ul {
                 height: 0px;
                 overflow: hidden;
                 z-index: 2;
@@ -182,7 +199,7 @@ nav[role="navigation"].global {
                     content: "";
                 }
             }
-            > li ul.global-sections.open {
+            > li ul.open {
                 height: auto;
                 padding-bottom: .25em;
             }
@@ -203,28 +220,11 @@ nav[role="navigation"].global {
     }
 
     // Utilities -- login, user preferences
-    ul.utils {
-        position: absolute;
-        right: 0px;
-        top: 0;
-        //@include respond-to("desktop") {
-           // top: $globalnav-top-pad;
-        //}
-
+    li.utils {
         @include horizontal-list(1em);
-        // Hide join link when logged in. todo: work this into drupal
-        // .logged-in & .last {
-        //     display: none;
-        // }
-        > li {
-            padding: 0;
-            color: nth($black, 5);
-            margin-right: .5em;
-            > a {
-                padding: 0.3em 0.5em;
-            }
-        }
-        li[aria-haspopup="true"] > a {
+        position: absolute;
+        right: 0;
+        [aria-haspopup="true"] > a {
             @include border-radius(5px);
             &.open {
                 @include border-bottom-radius(0px);
@@ -236,7 +236,17 @@ nav[role="navigation"].global {
                 height: 3.6em;
             }
         }
-        li > ul {
+        // Hide join link when logged in. todo: work this into drupal
+        // .logged-in & .last {
+        //     display: none;
+        // }
+        padding: 0;
+        color: nth($black, 4);
+        margin-right: .5em;
+        > a {
+            padding: 0.3em 0.5em;
+        }
+        > ul {
             @include inline-block-list;
             position: absolute;
             z-index: 100;
@@ -292,5 +302,4 @@ nav[role="navigation"].global {
             }
         }
     }
-    //
 }

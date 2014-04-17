@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Media Commons "BabyZen" Sub-theme Starter Kit
+name        = Media Commons BabyZen Sub-theme 
 description = Read the <a href="https://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 
 
@@ -94,6 +94,7 @@ regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[search] 		= Search
 regions[highlighted]    = Highlighted
+regions[messages]       = Messages
 regions[help]           = Help
 regions[content]        = Content
 regions[homepage_top]   = Home Page Top

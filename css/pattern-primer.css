@@ -2685,59 +2685,28 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   margin-top: 1em;
 }
 
-/* line 7, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc {
-  margin: 2em 0;
-}
-/* line 9, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc h1.hub-title {
-  font-size: 1.5em;
-  padding: .4em 0 0 0;
-  margin: 0 0 .1em 0;
-  color: #333333;
-}
-/* line 15, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc p {
-  margin: 0.1em 0;
-}
-/* line 19, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke h2 {
-  font-size: 1.5em;
-  line-height: 1.2;
-}
-/* line 23, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke .byline {
-  margin-top: .5em;
-  font-size: 1em;
-}
-/* line 27, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke span {
-  display: inline-block;
-  margin-right: .3em;
-}
-
-/* line 34, ../sass/modules/hub_list/_hub_list.scss */
+/* line 8, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub {
   background: #e0e0e0;
 }
-/* line 36, ../sass/modules/hub_list/_hub_list.scss */
+/* line 10, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub header {
   padding: .5em .5em .5em 1em;
   background: #e57f57;
 }
-/* line 39, ../sass/modules/hub_list/_hub_list.scss */
+/* line 13, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub header > div {
   font-style: italic;
   color: #333333;
 }
-/* line 44, ../sass/modules/hub_list/_hub_list.scss */
+/* line 18, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub h2 {
   font-size: 1.4em;
   padding: 0 0 .4em 0;
   margin: 0 0 .4em 0;
   color: #eaeaea;
 }
-/* line 50, ../sass/modules/hub_list/_hub_list.scss */
+/* line 24, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] {
   list-style: none;
   margin: 0;
@@ -2745,30 +2714,30 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   display: table;
   width: 100%;
 }
-/* line 57, ../sass/modules/hub_list/_hub_list.scss */
+/* line 31, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li {
   display: table-row;
   text-indent: 0;
   margin: 0;
 }
-/* line 61, ../sass/modules/hub_list/_hub_list.scss */
+/* line 35, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li > a:first-child {
   display: table-cell;
   padding: .5em;
 }
-/* line 65, ../sass/modules/hub_list/_hub_list.scss */
+/* line 39, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li:hover {
   background: #f9e5dd;
 }
-/* line 71, ../sass/modules/hub_list/_hub_list.scss */
+/* line 45, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li.current, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover {
   background: #ff753f;
 }
-/* line 73, ../sass/modules/hub_list/_hub_list.scss */
+/* line 47, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li.current a, [role="complementary"].part-of-hub ul[role="menu"] li.current span, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover a, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover span {
   color: #333333;
 }
-/* line 77, ../sass/modules/hub_list/_hub_list.scss */
+/* line 51, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li > h3 {
   vertical-align: top;
   display: table-cell;
@@ -2776,38 +2745,38 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   padding: .5em 0;
   margin: 0;
 }
-/* line 86, ../sass/modules/hub_list/_hub_list.scss */
+/* line 60, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub .responsive-disclosure {
   display: none;
 }
 @media (min-width: 50.0625em) {
-  /* line 90, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 64, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"].part-of-hub span.responsive-disclosure {
     display: none;
   }
-  /* line 93, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 67, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"].part-of-hub nav {
     display: block;
   }
 }
 @media (min-width: 15em) and (max-width: 61.25em) {
-  /* line 34, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 8, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"].part-of-hub {
     clear: left;
   }
-  /* line 99, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 73, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"].part-of-hub span.responsive-disclosure {
     display: inline-block;
     float: right;
     margin-right: 1em;
   }
-  /* line 104, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 78, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"].part-of-hub nav {
     display: none;
   }
 }
 
-/* line 110, ../sass/modules/hub_list/_hub_list.scss */
+/* line 84, ../sass/modules/hub_list/_hub_list.scss */
 aside + h2 {
   clear: both;
 }

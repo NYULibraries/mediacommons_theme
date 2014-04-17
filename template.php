@@ -239,9 +239,9 @@ function babyzen_preprocess_page( &$vars ) {
   $vars['logo'] = null;
 }
 
-function babyzen_menu_tree__mcglobalnav( $variables ) {
-  return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
-}
+// function babyzen_menu_tree__mcglobalnav( $variables ) {
+//   return '<ul class="global-sections" role="menubar"> ' . $variables['tree'] . '</ul>';
+// }
 function babyzen_menu_link__mcglobalnav( array $variables ) {
   $element = $variables['element'];
   //return print_r($variables['element']);

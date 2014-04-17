@@ -6,6 +6,8 @@
 // Example color scheme
   
 $primary-color:  #dd5520;
+// In transition (int)
+$primary-color-int:  #782A71;
 $black-value: #333;
 $meco-blue: #196195;
 
@@ -24,8 +26,11 @@ $cs-color-model:        ryb;
 
 $black:     tint-stack($black-value);
 $primary:   tint-stack(cs-primary());
+$primary-int:   tint-stack($primary-color-int);
 $secondary: tint-stack(cs-secondary());
+$secondary-int: tint-stack(#ff0000);
 $tertiary:  tint-stack(cs-tertiary());
+//$tertiary-int:  tint-stack(cs-tertiary-int());
 $quadrary:  tint-stack(cs-quadrary());
-
+//$quadrary-int:  tint-stack(cs-quadrary-int());
 $mc-blue:   tint-stack($meco-blue); 

@@ -40,6 +40,24 @@ $link-hover-border-color: $link-color;
 ///// Active
 $link-active-link-color: $link-color;
 
+/// Int
+
+// Links
+$link-color-int: nth($primary-int, 1);
+$link-text-decoration: none;
+$link-border-width: false;
+///// Visited
+$link-visited-link-color-int: nth($primary-int, 2);
+$link-visited-border-width: false;
+///// Hover
+$link-hover-link-color-int: lighten($link-color-int, 10%);
+// $link-hover-text-decoration: none; 
+$link-hover-border-width: false;
+$link-hover-border-color-int: $link-color-int;
+///// Active
+$link-active-link-color-int: $link-color-int;
+
+
 //  $blue_mc:#196195;
 //  $orange_imr:#dd5520;
 //  $green_mcp:#456b2d;

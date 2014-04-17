@@ -76,10 +76,10 @@ function babyzen_user_menu() {
 function babyzen_form_alter( &$form, &$form_state, $form_id ) {
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
-    $form['name']['#description'] = "You may login with either your assigned username or your e-mail address.";
+    $form['name']['#description'] = t("You may login with either your assigned username or your e-mail address.");
     $form['pass']['#attributes']['placeholder'] = t( 'Password' );
-    $form['pass']['#description'] = "The password field is case sensitive.";
-    $form['actions']['submit']['#value'] = "Login";
+    $form['pass']['#description'] = t("The password field is case sensitive.");
+    $form['actions']['submit']['#value'] = t("Login");
   } else if ( $form_id == 'search_block_form' ) {
       // HTML5 placeholder attribute
       $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );

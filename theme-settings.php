@@ -14,27 +14,11 @@ function babyzen_form_system_theme_settings_alter(&$form, &$form_state, $form_id
   }
 
   // Create the form using Forms API: http://api.drupal.org/api/7
-
-  /*
-  $form['theme_settings']['STARTERKIT_example'] = array(
-    '#type'          => 'checkbox',
-    '#title'         => t('STARTERKIT sample setting'),
-    '#default_value' => theme_get_setting('STARTERKIT_example'),
-    '#description'   => t("This option doesn't do anything; it's just an example."),
-  );*/
   $form['theme_settings']['special_body_class'] = array(
     '#type'          => 'textfield',
     '#title'         => t('Special Body Class Name'),
-  
     '#default_value' => theme_get_setting('special_body_class'),
     '#size'          => 25,
     '#maxlength'     => 30,
   );
-
-  // Remove some of the base theme's settings.
-  /* -- Delete this line if you want to turn off this setting.
-  unset($form['themedev']['zen_wireframes']); // We don't need to toggle wireframes on this site.
-  // */
-
-  // We are editing the $form in place, so we don't need to return anything.
 }

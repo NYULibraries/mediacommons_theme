@@ -112,7 +112,7 @@ nav[role="navigation"].global {
         //height: 3.7em !important;
         @include border-corner-radius(top, right, 5px);
     }
-    /*   */
+    /*  Javascript generated markup  */
     li.navitems2 {
         position: relative;
     }
@@ -135,90 +135,12 @@ nav[role="navigation"].global {
         }
     }
     // State
-    li[aria-haspopup="true"] > ul {
-        &[aria-hidden="true"] {
-            display: none;
-        }
-        &[aria-hidden="false"] {
-            display: inline-block;
-        }
+    ul[aria-hidden="true"] {
+        display: none;
     }
-    //  Moved from layout/_globalnav.scss
-    @include respond-to("tablet-lh") {
-        font-size: 1.33em;
-        background-color: red;
-        >ul ul {
-            > li {
-                @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
-                &:first-child {
-                    @include border-left-radius(5px);
-                }
-                &:last-child {
-                    @include border-right-radius(5px);
-                    &.open {
-                        @include border-corner-radius(top, right, 5px);
-                        @include border-corner-radius(bottom, right, 0);
-                    }
-                }
-            }
-        }
+    ul[aria-hidden="false"] {
+        display: inline-block;
     }
-
-    @include respond-to("mobile-lh") {
-        padding: 0 2%;
-        font-size: 1.5em;
-        a.logolink {
-            padding: .25em 0em .25em 0;
-            &:before {
-                content: "\e002 \e00b";
-            }
-        }
-        ul li {
-            background: none;
-        }
-        >ul {
-            li {
-                width: 16em;
-                height: $globalnav-height;
-                display: block;
-                clear: left;
-                position: relative;
-                z-index: 5;
-                float: none;
-            }
-            > li > ul {
-                height: 0px;
-                overflow: hidden;
-                z-index: 2;
-                @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
-                width: 100%;
-                @include border-corner-radius(bottom, left, 5px);
-                @include border-corner-radius(bottom, right, 5px);
-                top: -1px;
-                li:before {
-                    content: "";
-                }
-            }
-            > li ul.open {
-                height: auto;
-                padding-bottom: .25em;
-            }
-            > li ul.open > li {
-                display: block;
-                float: none;
-                width: 100%;
-                clear: left;
-                &:hover {
-                    background-color: $globalnav-background-gradient-end;
-                    color: nth($black, 6);
-                }
-                a {
-                    font-size: 1em;
-                }
-            }
-        }
-    }
-
     // Utilities -- login, user preferences
     li.utils {
         @include horizontal-list(1em);
@@ -298,6 +220,97 @@ nav[role="navigation"].global {
                             float: right;
                         }
                     }
+                }
+            }
+        }
+    }
+    //  Moved from layout/_globalnav.scss
+    @include respond-to("tablet-lh") {
+        font-size: 1.33em;
+        >ul ul {
+            > li {
+                @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
+                &:first-child {
+                    @include border-left-radius(5px);
+                }
+                &:last-child {
+                    @include border-right-radius(5px);
+                    &.open {
+                        @include border-corner-radius(top, right, 5px);
+                        @include border-corner-radius(bottom, right, 0);
+                    }
+                }
+            }
+        }
+    }
+
+    @include respond-to("mobile-lh") {
+        padding: 0 2%;
+        font-size: 1.5em;
+        a.logolink {
+            padding: .25em 0em .25em 0;
+            &:before {
+                content: "\e002 \e00b";
+            }
+        }
+        ul.level1 {
+            width: auto;
+            position: relative;
+            height: $globalnav-height;
+            li.sites_nav {
+                width: 16em;
+                height: $globalnav-height;
+                display: block;
+                clear: left;
+                position: relative;
+                z-index: 5;
+                float: left;
+                padding-right: 0;
+                ul[aria-hidden="true"] {
+                    display: none;
+                }
+                ul[aria-hidden="false"] {
+                    display: block;
+                }
+                li:before {
+                    content: " ";
+                    
+                }
+            }
+            li.utils {
+                width: auto;
+                height: $globalnav-height;
+                display: block;
+                clear: none;
+                position: absolute;
+                z-index: 15;
+                float: right;
+                padding-right: 0;
+                a.login-link {
+                    height: $globalnav-height;
+                    display: block;
+                }
+                ul {
+                    right: 0;
+                    padding-bottom: 20px;
+                }
+            }
+            ul.open {
+                height: auto;
+                padding-bottom: .25em;
+                @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
+            }
+            ul.open > li {
+                display: block;
+                float: left;
+                width: 100%;
+                clear: left;
+                &:hover {
+                    background-color: $globalnav-background-gradient-end;
+                    color: nth($black, 6);
+                }
+                a {
+                    font-size: 1em;
                 }
             }
         }

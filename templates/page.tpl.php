@@ -36,6 +36,8 @@
       
   <?php print render($page['content']); ?> </main>
   
+
+  
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>
 <?php endif; ?>

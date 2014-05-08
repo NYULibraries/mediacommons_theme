@@ -1,86 +1,176 @@
-//////////////////////////////
-// MODULES: Component styles that are layout independent 
-//////////////////////////////
-
-
-
+/* MODULES: Component styles that are layout independent */
 
 [role="complementary"].part-of-hub {
-  background: nth($black, 5);
-  header {
-    padding: .5em .5em .5em 1em;
-    background: nth($primary, 2);
-    > div {
-      font-style: italic;
-      color: nth($black, 1);
+    background: nth($black, 5);
+    header {
+        padding: .5em .5em .5em 1em;
+        background: nth($primary, 2);
+        > div {
+            font-style: italic;
+            color: nth($black, 1);
+        }
     }
-  }
-  h2 {
-    font-size: 1.4em;
-    padding: 0 0 .4em 0;
-    margin: 0 0 .4em 0;
-    color: nth($black, 6);
-  }
-  ul[role="menu"] {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: table;
-    width: 100%;
-    
-    li {
-      display: table-row;
-      text-indent: 0;
-      margin: 0;
-      > a:first-child {
-        display: table-cell;
-        padding:.5em;
-      }
-      &:hover {
-        background: nth($primary, 5);
-        a {
-          //color: nth($black, 6);
+    h2 {
+        font-size: 1.4em;
+        padding: 0 0 .4em 0;
+        margin: 0 0 .4em 0;
+        color: nth($black, 6);
+    }
+    &.contrib-list {
+        margin-left: 10px;
+        position: relative;
+        z-index: 100;
+        .view-mode-user_list_item {
+            .u-photo {
+                float: left;
+                margin: 0 .5em 1em 0;
+                @extend %user-photo-treatment;
+                width: 3em; 
+                height: 3em;
+            }
+            h2 {
+                font-size: 1em;
+                padding: 0;
+                margin: 0;
+                color: nth($black, 3);
+            }
+            h3 {
+                display: none;
+            }
+            dl {
+                margin: 0;
+                article.profile {
+                    margin: 0;
+                    clear: none;
+                }
+            }
+            ul.contact-info {
+                display: none;
+            }
+            .view-mode-account header {
+                background-color: inherit;
+                padding: 0;
+                margin: 0;
+            }
+            padding: 10px;
         }
-      }
-      &.current, &.current:hover  {
-        background: nth($quadrary, 2);
-        a, span {
-          color: nth($black, 1);
-        }
-      }
-      > h3 {
-        vertical-align: top;
-        display: table-cell;
-        font-size: 1.2em;
-        padding: .5em 0;
+    }
+    ul[role="menu"] {
+        list-style: none;
         margin: 0;
-      }
+        padding: 0;
+        display: table;
+        width: 100%;
+        li {
+            display: table-row;
+            text-indent: 0;
+            margin: 0;
+            > a:first-child {
+                display: table-cell;
+                padding: .5em;
+            }
+            &:hover {
+                background: nth($primary, 5);
+                a {
+                    //color: nth($black, 6);
+               
+                }
+            }
+            &.current, &.current:hover {
+                background: nth($quadrary, 2);
+                a, span {
+                    color: nth($black, 1);
+                }
+            }
+            > h3 {
+                vertical-align: top;
+                display: table-cell;
+                font-size: 1.2em;
+                padding: .5em 0;
+                margin: 0;
+            }
+        }
     }
-  }
-  .responsive-disclosure {
-    display: none;
-  }
-  @include respond-to("full navigation") {
-    span.responsive-disclosure {
-      display: none;
+    .responsive-disclosure {
+        display: none;
     }
-    nav {
-      display: block;
+    @include respond-to("full navigation") {
+        span.responsive-disclosure {
+            display: none;
+        }
+        nav {
+            display: block;
+        }
     }
-  }
-  @include respond-to("not desktop") {
-    clear: left;
-    span.responsive-disclosure {
-      display: inline-block;
-      float: right;
-      margin-right: 1em;
+
+    @include respond-to("not desktop") {
+        clear: left;
+        span.responsive-disclosure {
+            display: inline-block;
+            float: right;
+            margin-right: 1em;
+        }
+        nav {
+            display: none;
+        }
     }
-    nav {
-      display: none;
-    }
-  }
 }
 
 aside + h2 {
-  clear: both;
+    clear: both;
+}
+
+[role="directory"]#hometoc {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    h1.hub-title {
+        font-size: 1.5em;
+        padding: .4em 0 0 0;
+        margin: 0 0 .1em 0;
+        color: nth($black, 1);
+    }
+    p {
+        margin: .1em 0;
+    }
+    .view-mode-toc_spoke.clearfix:after {
+        clear: left;
+    }
+    .all-spokes {
+        position: relative;
+        z-index: 10;
+    }
+    .view-mode-toc_spoke {
+        padding-top: 1.5rem;
+        line-height: 1.5;
+        .contextual-links-wrapper {
+            /* the edit option cog breaks links in left floated aside otherwise */
+            left: 0;
+        }
+        .toc-spoke-thumb {
+            float: left;
+            margin-right: 10px;
+        }
+        h2 {
+            font-size: 1.3rem;
+            margin-top: 0;
+            padding-top: 0;
+            padding-bottom: .4rem;
+            margin-left: 110px;
+            a {
+                display: block;
+            }
+        }
+        .byline {
+            // margin-top: 0em;
+            font-size: 1em;
+            margin-left: 110px;
+        }
+        .toc-spoke-date {
+            margin-left: 110px;
+        }
+        span {
+            display: inline-block;
+            margin-right: .3em;
+        }
+    }
 }

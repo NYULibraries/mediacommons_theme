@@ -36,6 +36,12 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
+
+ <?php if (isset($page['homepage_sidebar'])) : ?>
+          <aside role="complementary" class="spoke part-of-hub"><?php print render($page['homepage_sidebar']); ?></aside>
+  <?php endif; ?> 
+
+  
     <?php  
     print render($page['homepage_top']);
     print render($page['homepage_bottom']);

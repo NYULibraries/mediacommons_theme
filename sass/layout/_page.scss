@@ -65,8 +65,9 @@ body {
   }
 }
 #content {
+ 
   max-width: ms(14); // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-  padding: 1em;   
+  // padding: 1em;   
   @include respond-to('desktop content') {
     float: left;
     width: 60%;

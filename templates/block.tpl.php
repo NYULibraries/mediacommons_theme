@@ -8,5 +8,8 @@
  */
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+	<?php if (!empty($block->subject)): ?>
+  <header><?php print $block->subject; ?></header>
+<?php endif; ?>
 <?php print $content; ?>
 </div>

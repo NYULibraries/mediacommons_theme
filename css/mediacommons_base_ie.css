@@ -19,7 +19,7 @@ pre {
 }
 
 /* line 42, ../sass/partials/_extendables.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item .u-photo, .h-card > .u-url:first-child, .profile header .u-photo {
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item img, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item img, .h-card > .u-url:first-child, .profile header .u-photo {
   width: 4.524em;
   height: 4.524em;
   -webkit-border-radius: 3em;
@@ -2371,53 +2371,56 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   color: #eaeaea;
 }
 /* line 19, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list {
+[role="complementary"].part-of-hub.contrib-list, [role="complementary"].part-of-hub .contrib-list {
   margin-left: 10px;
   position: relative;
   z-index: 100;
 }
 /* line 23, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item {
-  padding: 10px;
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item {
+  padding: 10px 10px 0 10px;
 }
-/* line 24, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item .u-photo {
+/* line 25, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item .prof-img-hold, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item .prof-img-hold {
   float: left;
+}
+/* line 28, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item img, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item img {
   margin: 0 .5em 1em 0;
   width: 3em;
   height: 3em;
 }
-/* line 31, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item h2 {
+/* line 35, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item h2, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item h2 {
   font-size: 1em;
   padding: 0;
   margin: 0;
   color: #999999;
 }
-/* line 37, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item h3 {
+/* line 41, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item h3, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item h3 {
   display: none;
 }
-/* line 40, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item dl {
+/* line 44, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item dl, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item dl {
   margin: 0;
 }
-/* line 42, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item dl article.profile {
+/* line 46, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item dl article.profile, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item dl article.profile {
   margin: 0;
   clear: none;
 }
-/* line 47, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item ul.contact-info {
+/* line 51, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item ul.contact-info, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item ul.contact-info {
   display: none;
 }
-/* line 50, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item .view-mode-account header {
+/* line 54, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"].part-of-hub.contrib-list .view-mode-user_list_item .view-mode-account header, [role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item .view-mode-account header {
   background-color: inherit;
   padding: 0;
   margin: 0;
 }
-/* line 58, ../sass/modules/hub_list/_hub_list.scss */
+/* line 62, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] {
   list-style: none;
   margin: 0;
@@ -2425,30 +2428,30 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   display: table;
   width: 100%;
 }
-/* line 64, ../sass/modules/hub_list/_hub_list.scss */
+/* line 68, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li {
   display: table-row;
   text-indent: 0;
   margin: 0;
 }
-/* line 68, ../sass/modules/hub_list/_hub_list.scss */
+/* line 72, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li > a:first-child {
   display: table-cell;
   padding: .5em;
 }
-/* line 72, ../sass/modules/hub_list/_hub_list.scss */
+/* line 76, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li:hover {
   background: #f9e5dd;
 }
-/* line 79, ../sass/modules/hub_list/_hub_list.scss */
+/* line 83, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li.current, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover {
   background: #ff753f;
 }
-/* line 81, ../sass/modules/hub_list/_hub_list.scss */
+/* line 85, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li.current a, [role="complementary"].part-of-hub ul[role="menu"] li.current span, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover a, [role="complementary"].part-of-hub ul[role="menu"] li.current:hover span {
   color: #333333;
 }
-/* line 85, ../sass/modules/hub_list/_hub_list.scss */
+/* line 89, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub ul[role="menu"] li > h3 {
   vertical-align: top;
   display: table-cell;
@@ -2456,87 +2459,94 @@ footer ul[role=menu] li, footer ul[role=menu] li:first-child {
   padding: .5em 0;
   margin: 0;
 }
-/* line 94, ../sass/modules/hub_list/_hub_list.scss */
+/* line 98, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub .responsive-disclosure {
   display: none;
 }
-/* line 98, ../sass/modules/hub_list/_hub_list.scss */
+/* line 102, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub span.responsive-disclosure {
   display: none;
 }
-/* line 101, ../sass/modules/hub_list/_hub_list.scss */
+/* line 105, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub nav {
   display: block;
 }
 
-/* line 119, ../sass/modules/hub_list/_hub_list.scss */
+/* line 123, ../sass/modules/hub_list/_hub_list.scss */
 aside + h2 {
   clear: both;
 }
 
-/* line 123, ../sass/modules/hub_list/_hub_list.scss */
+/* line 127, ../sass/modules/hub_list/_hub_list.scss */
 [role="directory"]#hometoc {
   margin-top: 2em;
   margin-bottom: 2em;
 }
-/* line 126, ../sass/modules/hub_list/_hub_list.scss */
+/* line 130, ../sass/modules/hub_list/_hub_list.scss */
 [role="directory"]#hometoc h1.hub-title {
   font-size: 1.5em;
   padding: .4em 0 0 0;
   margin: 0 0 .1em 0;
   color: #333333;
 }
-/* line 132, ../sass/modules/hub_list/_hub_list.scss */
+/* line 136, ../sass/modules/hub_list/_hub_list.scss */
 [role="directory"]#hometoc p {
   margin: .1em 0;
 }
-/* line 135, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke.clearfix:after {
-  clear: left;
-}
-/* line 138, ../sass/modules/hub_list/_hub_list.scss */
+/* line 140, ../sass/modules/hub_list/_hub_list.scss */
 [role="directory"]#hometoc .all-spokes {
   position: relative;
   z-index: 10;
 }
-/* line 142, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke {
+
+/* line 146, ../sass/modules/hub_list/_hub_list.scss */
+.prof-img-hold {
+  float: left;
+}
+
+/* line 149, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke.clearfix:after {
+  clear: left;
+}
+
+/* line 152, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke {
   padding-top: 1.5rem;
   line-height: 1.5;
 }
-/* line 145, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke .contextual-links-wrapper {
+/* line 155, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 149, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke .toc-spoke-thumb {
+/* line 159, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke .toc-spoke-thumb {
   float: left;
   margin-right: 10px;
 }
-/* line 153, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke h2 {
+/* line 163, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke h2 {
   font-size: 1.3rem;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: .4rem;
   margin-left: 110px;
 }
-/* line 159, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke h2 a {
+/* line 169, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke h2 a {
   display: block;
 }
-/* line 163, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke .byline {
+/* line 173, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke .byline {
   font-size: 1em;
   margin-left: 110px;
 }
-/* line 168, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke .toc-spoke-date {
+/* line 178, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke .toc-spoke-date {
   margin-left: 110px;
 }
-/* line 171, ../sass/modules/hub_list/_hub_list.scss */
-[role="directory"]#hometoc .view-mode-toc_spoke span {
+/* line 181, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-toc_spoke span {
   display: inline-block;
   margin-right: .3em;
 }
@@ -2778,12 +2788,11 @@ body {
 /* line 67, ../sass/layout/_page.scss */
 #content {
   max-width: 35.72245em;
-  padding: 1em;
   float: left;
   width: 60%;
 }
 
-/* line 116, ../sass/layout/_page.scss */
+/* line 117, ../sass/layout/_page.scss */
 main {
   max-width: 59.53742em;
   margin: 0 auto;

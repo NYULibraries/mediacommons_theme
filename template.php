@@ -82,7 +82,9 @@ function babyzen_form_alter( &$form, &$form_state, $form_id ) {
 function babyzen_preprocess_page( &$vars ) {
   /** Remove logo */
   $vars['logo'] = null;
+
+  if (isset($vars['node'])) {
+    // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
+    $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
+  }
 }
-
-
-

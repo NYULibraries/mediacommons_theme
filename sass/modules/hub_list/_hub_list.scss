@@ -16,13 +16,17 @@
         margin: 0 0 .4em 0;
         color: nth($black, 6);
     }
-    &.contrib-list {
+    &.contrib-list, .contrib-list {
         margin-left: 10px;
         position: relative;
         z-index: 100;
         .view-mode-user_list_item {
-            .u-photo {
-                float: left;
+            padding: 10px 10px 0 10px;
+            .prof-img-hold {
+                float:left;
+            }
+            img {
+                // float: left;
                 margin: 0 .5em 1em 0;
                 @extend %user-photo-treatment;
                 width: 3em; 
@@ -52,7 +56,7 @@
                 padding: 0;
                 margin: 0;
             }
-            padding: 10px;
+            
         }
     }
     ul[role="menu"] {
@@ -132,12 +136,18 @@ aside + h2 {
     p {
         margin: .1em 0;
     }
-    .view-mode-toc_spoke.clearfix:after {
-        clear: left;
-    }
+    
     .all-spokes {
         position: relative;
         z-index: 10;
+    }
+
+}
+.prof-img-hold {
+    float:left;
+}
+ .view-mode-toc_spoke.clearfix:after {
+        clear: left;
     }
     .view-mode-toc_spoke {
         padding-top: 1.5rem;
@@ -173,4 +183,3 @@ aside + h2 {
             margin-right: .3em;
         }
     }
-}

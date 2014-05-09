@@ -36,16 +36,20 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
+<div id="content">
 
- <?php if (isset($page['homepage_sidebar'])) : ?>
+    <?php  
+    print render($page['homepage_top']);
+    print render($page['homepage_bottom']);
+   ?> 
+</div>
+  <?php if (isset($page['homepage_sidebar'])) : ?>
           <aside role="complementary" class="spoke part-of-hub"><?php print render($page['homepage_sidebar']); ?></aside>
   <?php endif; ?> 
 
   
-    <?php  
-    print render($page['homepage_top']);
-    print render($page['homepage_bottom']);
-   ?> </main>
+
+  </main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>

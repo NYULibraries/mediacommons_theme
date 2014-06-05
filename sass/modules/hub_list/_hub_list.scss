@@ -23,13 +23,13 @@
         .view-mode-user_list_item {
             padding: 10px 10px 0 10px;
             .prof-img-hold {
-                float:left;
+                float: left;
             }
             img {
                 // float: left;
                 margin: 0 .5em 1em 0;
                 @extend %user-photo-treatment;
-                width: 3em; 
+                width: 3em;
                 height: 3em;
             }
             h2 {
@@ -56,7 +56,6 @@
                 padding: 0;
                 margin: 0;
             }
-            
         }
     }
     ul[role="menu"] {
@@ -124,7 +123,7 @@ aside + h2 {
     clear: both;
 }
 
-[role="directory"]#hometoc {
+[role="directory"]#hometoc, .node-hub.view-mode-full {
     margin-top: 2em;
     margin-bottom: 2em;
     h1.hub-title {
@@ -136,50 +135,61 @@ aside + h2 {
     p {
         margin: .1em 0;
     }
-    
     .all-spokes {
         position: relative;
         z-index: 10;
     }
-
-}
-.prof-img-hold {
-    float:left;
-}
- .view-mode-toc_spoke.clearfix:after {
-        clear: left;
-    }
-    .view-mode-toc_spoke {
-        padding-top: 1.5rem;
-        line-height: 1.5;
-        .contextual-links-wrapper {
-            /* the edit option cog breaks links in left floated aside otherwise */
-            left: 0;
-        }
-        .toc-spoke-thumb {
-            float: left;
-            margin-right: 10px;
-        }
-        h2 {
-            font-size: 1.3rem;
-            margin-top: 0;
-            padding-top: 0;
-            padding-bottom: .4rem;
-            margin-left: 110px;
-            a {
-                display: block;
-            }
-        }
-        .byline {
-            // margin-top: 0em;
-            font-size: 1em;
-            margin-left: 110px;
-        }
-        .toc-spoke-date {
-            margin-left: 110px;
-        }
-        span {
+    .field-name-field-curators-editors {
+        margin: .5em 0;
+        .field-label {
             display: inline-block;
-            margin-right: .3em;
+            font-weight: normal;
+        }
+        .field-items {
+            display: inline-block;
         }
     }
+}
+
+.prof-img-hold {
+    float: left;
+}
+
+.view-mode-toc_spoke.clearfix:after {
+    clear: left;
+}
+
+.view-mode-toc_spoke {
+    padding-top: 1.5rem;
+    line-height: 1.5;
+    .contextual-links-wrapper {
+        /* the edit option cog breaks links in left floated aside otherwise */
+        left: 0;
+    }
+    .toc-spoke-thumb {
+        float: left;
+        margin-right: 10px;
+    }
+    h2 {
+        font-size: 1.3rem;
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: .4rem;
+        margin-left: 110px;
+        a {
+            display: block;
+        }
+    }
+    .byline {
+        // margin-top: 0em;
+        font-size: 1em;
+        margin-left: 110px;
+    }
+    .toc-spoke-date {
+        margin-left: 110px;
+    }
+    span {
+        display: inline-block;
+        margin-right: .3em;
+    }
+}

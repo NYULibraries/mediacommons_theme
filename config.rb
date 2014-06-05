@@ -1,10 +1,11 @@
 # Require any additional compass plugins here.
-require 'compass-pattern-primer'
+#require 'compass-pattern-primer'
+require 'compass'
 require 'toolkit'
 require 'modular-scale'
-require 'compass-normalize'
-require 'compass_formalize'
-
+#require 'compass-normalize'
+#require 'compass_formalize'
+require 'color-schemer'
 
 # Change this to :production when ready to deploy the CSS to the live server.
 environment = :development
@@ -27,7 +28,6 @@ fonts_dir 		= "fonts"
 # Require any additional compass plugins installed on your system.
 #require 'ninesixty'
 #require 'zen-grids'
-
 # Assuming this theme is in sites/*/themes/THEMENAME, you can add the partials
 # included with a module by uncommenting and modifying one of the lines below:
 #add_import_path "../../../default/modules/FOO"

@@ -11,8 +11,7 @@ $start: -1;
 $end: 20;
 
 
- 
- $ms-base: 1em 2.25em;// 16px 36px
+$ms-base: 1em 2.25em;// 16px 36px
 //$base-size: 16px 36px;
 $ms-ratio: $major-sixth;    // 1:1.667
 
@@ -35,11 +34,11 @@ $h1-color: nth($black, 2);
 
 $h2-border-width: false;
 $h2-font-size: ms(3); // 2.25em
-$h2-line-height: 1.1em;
+$h2-line-height: 1.1;
 $h2-padding: .25em;
 $h2-padding-pos: top;
 $h2-margin-pos: bottom;
-$h2-margin: -.25em;
+$h2-margin: 0;
 $h2-color: nth($black, 2);
 
 $h3-border-width: false;

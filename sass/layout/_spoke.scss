@@ -10,9 +10,6 @@
     clear: both;
     float: left;
   }  
-}
-
-[role="article"].spoke {
   @include respond-to("not desktop") {
     section.video.part-of-hub {
       padding-top: 1em;

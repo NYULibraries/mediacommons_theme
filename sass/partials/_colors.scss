@@ -1,14 +1,14 @@
 //////////////////////////////
 // COLORS: Create a color scheme
 //////////////////////////////
-@import 'toolkit/colours';  // tint-stack, shade-stack etc 
-
+@import 'toolkit/colors';  // tint-stack, shade-stack etc 
+@import 'color-schemer';
 // Example color scheme
   
 $primary-color:  #dd5520;
 // In transition (int)
 $primary-color-int:  #782A71;
-$black-value: #333;
+$black-value: #232323;
 $meco-blue: #196195;
 
 
@@ -30,7 +30,7 @@ $primary-int:   tint-stack($primary-color-int);
 $secondary: tint-stack(cs-secondary());
 $secondary-int: tint-stack(#ff0000);
 $tertiary:  tint-stack(cs-tertiary());
-//$tertiary-int:  tint-stack(cs-tertiary-int());
+
 $quadrary:  tint-stack(cs-quadrary());
-//$quadrary-int:  tint-stack(cs-quadrary-int());
+
 $mc-blue:   tint-stack($meco-blue); 

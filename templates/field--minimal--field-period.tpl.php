@@ -46,14 +46,8 @@
 ?>
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>  
-  <div class="field-label">Curated by: </div>
-  <div class="field-items"<?php print $content_attributes; ?>>
   	<?php 
-  	$length = count($items);
-  	?>
-    <?php foreach ($items as $i => $item):
-    print ($i == $length-1) ? ' and ' : (($i == 0) ? '' : ', '); ?>
-      <span class="curatorname"><?php print render($item);?></span>
-    <?php endforeach; ?>
-  </div>
+      foreach ($items as $i => $item): 
+      print render($item);
+      endforeach; ?>
 </div>

@@ -123,27 +123,47 @@ aside + h2 {
     clear: both;
 }
 
-[role="directory"]#hometoc, .node-hub.view-mode-full {
+/*****************************/
+.node-hub {
     margin-top: 2em;
     margin-bottom: 2em;
-    h1.hub-title {
+    .hub-title {
         font-size: 1.5em;
-        padding: .4em 0 0 0;
+        padding: .1em 0 0 0;
         margin: 0 0 .1em 0;
         color: nth($black, 1);
     }
     p {
-        margin: .1em 0;
+        margin: 0 0 .2em 0;
     }
     .all-spokes {
         position: relative;
         z-index: 10;
     }
-    .field-name-field-curators-editors {
-        margin: .5em 0;
+    .field-name-field-body {
+        margin: .5rem 0 0 0;
+        line-height: 1.5;
+    }
+    .field-name-field-period, .field-name-field-curators-editors, .field-name-field-contributors {
+        font-size: .7em;
+        line-height: 1.5;
+        // padding: .3em .5em;
+        // float:left;
+        // display: inline-block;
+        text-transform: uppercase;
+        // font-weight: bold;
+        // font-style: italic;
+        color: #fff;
+        color: nth($black, 2);
+        // background-color: nth($black, 2);
+        font-family: "Droid Sans", $header-font-family;
+        a:link, a:visited {
+            color: nth($black, 2);
+        }
         .field-label {
             display: inline-block;
             font-weight: normal;
+            margin-right: 5px;
         }
         .field-items {
             display: inline-block;
@@ -155,12 +175,11 @@ aside + h2 {
     float: left;
 }
 
-.view-mode-toc_spoke.clearfix:after {
-    clear: left;
-}
-
 .view-mode-toc_spoke {
-    padding-top: 1.5rem;
+    &.clearfix:after {
+        clear: left;
+    }
+    padding-top: 1.5em;
     line-height: 1.5;
     .contextual-links-wrapper {
         /* the edit option cog breaks links in left floated aside otherwise */
@@ -170,20 +189,24 @@ aside + h2 {
         float: left;
         margin-right: 10px;
     }
+    a:link, a:visited {
+        color: nth($black, 2);
+    }
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         margin-top: 0;
         padding-top: 0;
-        padding-bottom: .4rem;
+        padding-bottom: .1em;
         margin-left: 110px;
-        a {
-            display: block;
+        a:link, a:visited {
+            color: nth($black, 1);
         }
     }
     .byline {
         // margin-top: 0em;
-        font-size: 1em;
+        font-size: .8em;
         margin-left: 110px;
+        font-family: "Droid Sans", $header-font-family;
     }
     .toc-spoke-date {
         margin-left: 110px;
@@ -192,4 +215,13 @@ aside + h2 {
         display: inline-block;
         margin-right: .3em;
     }
+}
+
+.node-hub.node-teaser {
+    margin: 0;
+    padding: 1em 0;
+    border-bottom: 2px solid gray;
+    // h2 {
+    //     margin: 0;
+    // }
 }

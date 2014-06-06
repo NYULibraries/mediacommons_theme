@@ -46,7 +46,7 @@
 ?>
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>  
-  <div class="field-label">Curated by: </div>
+  <div class="field-label">Contributorsx: </div>
   <div class="field-items"<?php print $content_attributes; ?>>
   	<?php 
   	$length = count($items);

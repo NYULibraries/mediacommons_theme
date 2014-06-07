@@ -16,7 +16,7 @@
         margin: 0 0 .4em 0;
         color: nth($black, 6);
     }
-    &.contrib-list, .contrib-list {
+    .contrib-list {
         margin-left: 10px;
         position: relative;
         z-index: 100;
@@ -58,7 +58,30 @@
             }
         }
     }
-    ul[role="menu"] {
+    /* Other spokes in this hub sidebar */
+    .contrib-list.view-all-spokes-in-this-spokes-hub, .view-all-spokes-in-this-spokes-hub {
+        margin-left: 0px;
+        header {
+            padding: 1rem;
+            background-color:  nth($primary, 5);
+            font-size: 1.2em;
+            line-height: 1.5;
+            span {
+                display:block;
+                color: #333;
+                font-style: italic;
+                font-size: .7em;
+            }
+        }
+        .view-content {
+            padding: 1rem;
+            > div {
+                line-height: 1.3;
+                margin-bottom: .8rem;
+            }
+        }
+    }
+    ul[role="menu"], ul {
         list-style: none;
         margin: 0;
         padding: 0;
@@ -175,7 +198,7 @@ aside + h2 {
     float: left;
 }
 
-.view-mode-toc_spoke {
+.view-mode-toc_spoke, .node-spoke.view-mode-teaser, .node-spoke.node-teaser {
     &.clearfix:after {
         clear: left;
     }
@@ -185,7 +208,7 @@ aside + h2 {
         /* the edit option cog breaks links in left floated aside otherwise */
         left: 0;
     }
-    .toc-spoke-thumb {
+    .thumb {
         float: left;
         margin-right: 10px;
     }
@@ -202,7 +225,7 @@ aside + h2 {
             color: nth($black, 1);
         }
     }
-    .byline {
+    .field-name-author {
         // margin-top: 0em;
         font-size: .8em;
         margin-left: 110px;
@@ -214,6 +237,18 @@ aside + h2 {
     span {
         display: inline-block;
         margin-right: .3em;
+    }
+}
+
+.node-spoke.view-mode-full {
+    .field-name-field-attached-images {
+        float: left;
+        margin-right: 10px;
+    }
+    .field-name-field-body {
+        margin: .5rem 0 0 0;
+        line-height: 1.5;
+        clear: left;
     }
 }
 

@@ -28,6 +28,7 @@ nav[role="navigation"].global {
     // ALL LISTS
     ul {
         @include horizontal-list(0.5em);
+        overflow: visible;
         margin: 0;
         li {
             text-indent: 0;
@@ -145,6 +146,7 @@ nav[role="navigation"].global {
     li.utils {
         @include horizontal-list(1em);
         position: absolute;
+        overflow: visible;
         right: 0;
         [aria-haspopup="true"] > a {
             @include border-radius(5px);
@@ -185,7 +187,7 @@ nav[role="navigation"].global {
                     font-size: .875em;
                     width: 300px;
                     padding: 0 1em;
-                    input {
+                    input[type="text"], input[type="password"] {
                         max-width: 100%;
                         display: block;
                         margin: 0 0 1em 0;
@@ -207,17 +209,20 @@ nav[role="navigation"].global {
                     }
                     .social-login {
                         margin: .5em 0;
-                        clear: both;
+                        overflow: hidden;
+                        width: 100%;
                         display: block;
-                        font-size: .825em;
+                        font-size: .7em;
                         line-height: 1.2em;
-                        .twitter {
-                            display: inline-block;
+                        input#edit-submit-twitter {
+                            max-width: 46%;
+                            padding: 5px;
                             float: left;
                         }
-                        .facebook {
-                            display: inline-block;
+                        input#edit-submit-facebook {
+                            max-width: 52%;
                             float: right;
+                            padding: 5px;
                         }
                     }
                 }
@@ -274,7 +279,6 @@ nav[role="navigation"].global {
                 }
                 li:before {
                     content: " ";
-                    
                 }
             }
             li.utils {

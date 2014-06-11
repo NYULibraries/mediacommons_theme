@@ -22,7 +22,7 @@
 
 <main role="main">
 
-  
+
 
   <?php if (isset($page['highlighted'])) : ?>
             <div id="highlighted"><?php print render($page['highlighted']); ?></div>
@@ -33,18 +33,20 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
- <article id="content">  
-  <?php print render($page['content']); ?> 
+ <article id="content">
+  <?php print render($page['content']); ?>
   </article>
  <?php if (isset($page['sidebar_second'])) : ?>
           <aside role="complementary" class="spoke part-of-hub"><?php print render($page['sidebar_second']); ?>
           </aside>
-  <?php endif; ?> </main>
-  
+  <?php endif; ?> 
+
+</main>
+
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>
 <?php endif; ?>
 
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
-    <?php print render($page['footer']); ?> 
+    <?php print render($page['footer']); ?>
 <?php endif; ?>

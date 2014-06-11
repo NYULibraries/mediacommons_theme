@@ -29,6 +29,7 @@ function babyzen_theme( &$existing, $type, $theme, $path ) {
   );
   return $hooks;
 }
+
 function babyzen_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 

@@ -1524,28 +1524,31 @@ ul.Tags li a {
 
 /* line 5, ../sass/modules/footer/_footer.scss */
 footer {
-  border-top: 2px solid #5a5a5a;
-  padding-top: 1em;
-}
-/* line 9, ../sass/modules/footer/_footer.scss */
-footer p {
+  border-top: 2px solid #c8c8c8;
+  padding: 1em;
+  margin-top: 3em;
   text-align: center;
 }
-/* line 12, ../sass/modules/footer/_footer.scss */
+/* line 10, ../sass/modules/footer/_footer.scss */
 footer .powered {
   font-size: .8em;
 }
-/* line 15, ../sass/modules/footer/_footer.scss */
-footer ul[role=menu] {
+/* line 13, ../sass/modules/footer/_footer.scss */
+footer ul[role=menu], footer ul.menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
-/* line 20, ../sass/modules/footer/_footer.scss */
-footer ul[role=menu] li, footer ul[role=menu] li:first-child {
+/* line 18, ../sass/modules/footer/_footer.scss */
+footer ul[role=menu] li, footer ul[role=menu] li:first-child, footer ul.menu li, footer ul.menu li:first-child {
   text-indent: 0;
   display: inline;
+  margin: 0;
+}
+/* line 22, ../sass/modules/footer/_footer.scss */
+footer ul[role=menu] li a, footer ul[role=menu] li:first-child a, footer ul.menu li a, footer ul.menu li:first-child a {
+  padding: 0 .5em;
 }
 
 /* line 5, ../sass/modules/comments/_comments.scss */

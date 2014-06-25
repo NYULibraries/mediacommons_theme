@@ -75,8 +75,8 @@ p, ul, ol, hr, table, form, fieldset {
 }
 li {
   list-style-position: $li-list-style-position;
-  @include margin-padding(margin, $li-margin, $li-margin-pos);
-  text-indent: $li-text-indent;
+  // @include margin-padding(margin, $li-margin, $li-margin-pos);
+  // text-indent: $li-text-indent;
 }
 blockquote {
   @include margin-padding(margin, $blockquote-margin);

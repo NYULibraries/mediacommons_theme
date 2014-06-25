@@ -34,9 +34,9 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
   <?php if ($header): ?>
-    <div class="view-header">
+    <header class="view-header">
       <?php print $header; ?>
-    </div>
+    </header>
   <?php endif; ?>
 
   <?php if ($exposed): ?>

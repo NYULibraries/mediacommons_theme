@@ -7,8 +7,5 @@
  *
  * @ingroup views_templates
  */
-?><div class="p-org org">
-<?php 
-print $output;
-?></div>
+?><div class="p-org org"><?php print $output;?></div>
 

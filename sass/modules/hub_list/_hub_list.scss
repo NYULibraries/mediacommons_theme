@@ -3,7 +3,7 @@
 [role="complementary"].part-of-hub {
     background: nth($black, 5);
     header {
-        padding: .5em .5em .5em 1em;
+        padding: .5rem .5rem .5rem 1rem;
         background: nth($primary, 2);
         > div {
             font-style: italic;
@@ -16,44 +16,44 @@
         margin: 0 0 .4em 0;
         color: nth($black, 6);
     }
-    .contrib-list {
-        margin-left: 10px;
-        position: relative;
-        z-index: 100;
-        .view-mode-user_list_item {
-            padding: 10px 10px 0 10px;
-            .prof-img-hold {
-                float: left;
-            }
-            img {
-                @extend %user-photo-teaser-treatment;
-            }
-            h2 {
-                font-size: 1em;
-                padding: 0;
-                margin: 0;
-                color: nth($black, 3);
-            }
-            h3 {
-                display: none;
-            }
-            dl {
-                margin: 0;
-                article.profile {
-                    margin: 0;
-                    clear: none;
-                }
-            }
-            ul.contact-info {
-                display: none;
-            }
-            .view-mode-account header {
-                background-color: inherit;
-                padding: 0;
-                margin: 0;
-            }
-        }
-    }
+    // .contrib-list {
+    //     margin-left: 10px;
+    //     position: relative;
+    //     z-index: 100;
+    //     .view-mode-user_list_item {
+    //         padding: 10px 10px 0 10px;
+    //         .prof-img-hold {
+    //             float: left;
+    //         }
+    //         img {
+    //             @extend %user-photo-teaser-treatment;
+    //         }
+    //         h2 {
+    //             font-size: 1em;
+    //             padding: 0;
+    //             margin: 0;
+    //             color: nth($black, 3);
+    //         }
+    //         h3 {
+    //             display: none;
+    //         }
+    //         dl {
+    //             margin: 0;
+    //             article.profile {
+    //                 margin: 0;
+    //                 clear: none;
+    //             }
+    //         }
+    //         ul.contact-info {
+    //             display: none;
+    //         }
+    //         .view-mode-account header {
+    //             background-color: inherit;
+    //             padding: 0;
+    //             margin: 0;
+    //         }
+    //     }
+    // }
     /* Other spokes in this hub sidebar */
     .contrib-list.view-all-spokes-in-this-spokes-hub, .view-all-spokes-in-this-spokes-hub {
         margin-left: 0px;
@@ -190,9 +190,7 @@ aside + h2 {
     }
 }
 
-.prof-img-hold {
-    float: left;
-}
+
 
 .view-mode-toc_spoke, .node-spoke.view-mode-teaser, .node-spoke.node-teaser {
     &.clearfix:after {

@@ -22,9 +22,36 @@
         }
     }
 }
-
+.sidebar .h-card, aside[role="complementary"] .h-card {
+    width: auto;
+    overflow: hidden;
+    padding: .5rem .5rem .5rem 1rem;
+    font-size: .7rem;
+    line-height: 1.2;
+    .p-name {
+        font-size: .9rem;
+    }
+    .field-user-avatar{
+        float: left;
+        a {
+            display: block;
+        }
+        .u-photo {
+             @extend %user-photo-teaser-treatment;
+        }
+    }
+}
 .h-card {
-    margin: 1em 0;
+    
+    .field-user-avatar, .prof-img-hold {
+        float: left;
+        a {
+            display: block;
+        }
+        .u-photo {
+             @extend %user-photo-teaser-treatment;
+        }
+    }
     > .u-url:first-child {
         @extend %user-photo-treatment;
         margin: 1em 0;

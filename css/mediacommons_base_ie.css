@@ -70,7 +70,7 @@ pre {
 }
 
 /* line 52, ../sass/partials/_extendables.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item img, .view-user-search li img {
+.sidebar .h-card .field-user-avatar .u-photo, aside[role="complementary"] .h-card .field-user-avatar .u-photo, .h-card .field-user-avatar .u-photo, .h-card .prof-img-hold .u-photo, .view-user-search li img {
   display: block;
   margin: 0 .5em 1em 0;
   width: 3rem;
@@ -316,8 +316,6 @@ p, ul, ol, hr, table, form, fieldset {
 /* line 76, ../sass/base/typography/_typography.scss */
 li {
   list-style-position: inside;
-  margin-left: 1em;
-  text-indent: -1em;
 }
 
 /* line 81, ../sass/base/typography/_typography.scss */
@@ -1566,6 +1564,125 @@ footer ul[role=menu] li a, footer ul[role=menu] li:first-child a, footer ul.menu
   padding: 0 .5em;
 }
 
+/* --------------- System Tabs  --------------- */
+/* line 39, ../sass/modules/tabs/_tabs.scss */
+.tabs {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 20px 0;
+}
+
+/* line 43, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden;
+  border: none;
+  background: transparent url(../images/tabs-border.png) repeat-x left bottom;
+}
+
+/* line 50, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.primary li {
+  display: block;
+  float: left;
+  /* LTR */
+  vertical-align: bottom;
+  margin: 0 5px 0 0;
+  /* LTR */
+}
+
+/* line 56, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.primary li.active a {
+  border-bottom: 1px solid #ffffff;
+}
+
+/* line 59, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.primary li a {
+  color: #000;
+  background-color: #ededed;
+  height: 1.8em;
+  line-height: 1.9;
+  display: block;
+  font-size: 0.929em;
+  float: left;
+  /* not LTR */
+  padding: 0 10px 3px;
+  margin: 0;
+  text-shadow: 0 1px 0 #fff;
+  -khtml-border-radius-topleft: 6px;
+  -moz-border-radius-topleft: 6px;
+  -webkit-border-top-left-radius: 6px;
+  border-top-left-radius: 6px;
+  -khtml-border-radius-topright: 6px;
+  -moz-border-radius-topright: 6px;
+  -webkit-border-top-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+/* line 79, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.primary li.active a {
+  background-color: #ffffff;
+}
+
+/* line 82, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary {
+  border-bottom: none;
+  padding: 0.5em 0;
+}
+
+/* line 86, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary li {
+  display: block;
+  float: left;
+  /* LTR */
+}
+
+/* line 90, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary li:last-child {
+  border-right: none;
+  /* LTR */
+}
+
+/* line 93, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary li:first-child {
+  padding-left: 0;
+  /* LTR */
+}
+
+/* line 96, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary li a {
+  padding: 0.25em 0.5em;
+}
+
+/* line 99, ../sass/modules/tabs/_tabs.scss */
+.tabs ul.secondary li a.active {
+  background: #f2f2f2;
+  border-bottom: none;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/* line 107, ../sass/modules/tabs/_tabs.scss */
+ul.action-links {
+  list-style: none;
+  margin: 5px;
+  padding: 0.5em 1em;
+}
+
+/* line 112, ../sass/modules/tabs/_tabs.scss */
+ul.action-links li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* line 116, ../sass/modules/tabs/_tabs.scss */
+ul.action-links li a {
+  padding-left: 15px;
+  background: url(../images/add.png) no-repeat left center;
+  margin: 0 10px 0 0;
+}
+
 /* line 5, ../sass/modules/comments/_comments.scss */
 .comments {
   margin-bottom: 2em;
@@ -1596,7 +1713,7 @@ footer ul[role=menu] li a, footer ul[role=menu] li:first-child a, footer ul.menu
 }
 /* line 5, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub header {
-  padding: .5em .5em .5em 1em;
+  padding: .5rem .5rem .5rem 1rem;
   background: #e57f57;
 }
 /* line 8, ../sass/modules/hub_list/_hub_list.scss */
@@ -1610,50 +1727,6 @@ footer ul[role=menu] li a, footer ul[role=menu] li:first-child a, footer ul.menu
   padding: 0 0 .4em 0;
   margin: 0 0 .4em 0;
   color: #e9e9e9;
-}
-/* line 19, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list {
-  margin-left: 10px;
-  position: relative;
-  z-index: 100;
-}
-/* line 23, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item {
-  padding: 10px 10px 0 10px;
-}
-/* line 25, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item .prof-img-hold {
-  float: left;
-}
-/* line 31, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item h2 {
-  font-size: 1em;
-  padding: 0;
-  margin: 0;
-  color: #919191;
-}
-/* line 37, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item h3 {
-  display: none;
-}
-/* line 40, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item dl {
-  margin: 0;
-}
-/* line 42, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item dl article.profile {
-  margin: 0;
-  clear: none;
-}
-/* line 47, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item ul.contact-info {
-  display: none;
-}
-/* line 50, ../sass/modules/hub_list/_hub_list.scss */
-[role="complementary"].part-of-hub .contrib-list .view-mode-user_list_item .view-mode-account header {
-  background-color: inherit;
-  padding: 0;
-  margin: 0;
 }
 /* line 58, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].part-of-hub .contrib-list.view-all-spokes-in-this-spokes-hub, [role="complementary"].part-of-hub .view-all-spokes-in-this-spokes-hub {
@@ -1790,35 +1863,30 @@ aside + h2 {
   display: inline-block;
 }
 
-/* line 193, ../sass/modules/hub_list/_hub_list.scss */
-.prof-img-hold {
-  float: left;
-}
-
-/* line 197, ../sass/modules/hub_list/_hub_list.scss */
+/* line 195, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke, .node-spoke.view-mode-teaser, .node-spoke.node-teaser {
   padding-top: 1.5em;
   line-height: 1.5;
 }
-/* line 198, ../sass/modules/hub_list/_hub_list.scss */
+/* line 196, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke.clearfix:after, .node-spoke.view-mode-teaser.clearfix:after, .node-spoke.node-teaser.clearfix:after {
   clear: left;
 }
-/* line 203, ../sass/modules/hub_list/_hub_list.scss */
+/* line 201, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .contextual-links-wrapper, .node-spoke.view-mode-teaser .contextual-links-wrapper, .node-spoke.node-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 207, ../sass/modules/hub_list/_hub_list.scss */
+/* line 205, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .thumb, .node-spoke.view-mode-teaser .thumb, .node-spoke.node-teaser .thumb {
   float: left;
   margin-right: 10px;
 }
-/* line 211, ../sass/modules/hub_list/_hub_list.scss */
+/* line 209, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke a:link, .view-mode-toc_spoke a:visited, .node-spoke.view-mode-teaser a:link, .node-spoke.view-mode-teaser a:visited, .node-spoke.node-teaser a:link, .node-spoke.node-teaser a:visited {
   color: #5a5a5a;
 }
-/* line 214, ../sass/modules/hub_list/_hub_list.scss */
+/* line 212, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2, .node-spoke.view-mode-teaser h2, .node-spoke.node-teaser h2 {
   font-size: 1.1rem;
   margin-top: 0;
@@ -1826,39 +1894,39 @@ aside + h2 {
   padding-bottom: .1em;
   margin-left: 110px;
 }
-/* line 220, ../sass/modules/hub_list/_hub_list.scss */
+/* line 218, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2 a:link, .view-mode-toc_spoke h2 a:visited, .node-spoke.view-mode-teaser h2 a:link, .node-spoke.view-mode-teaser h2 a:visited, .node-spoke.node-teaser h2 a:link, .node-spoke.node-teaser h2 a:visited {
   color: #232323;
 }
-/* line 224, ../sass/modules/hub_list/_hub_list.scss */
+/* line 222, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .field-name-author, .node-spoke.view-mode-teaser .field-name-author, .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
   margin-left: 110px;
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
-/* line 230, ../sass/modules/hub_list/_hub_list.scss */
+/* line 228, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .toc-spoke-date, .node-spoke.view-mode-teaser .toc-spoke-date, .node-spoke.node-teaser .toc-spoke-date {
   margin-left: 110px;
 }
-/* line 233, ../sass/modules/hub_list/_hub_list.scss */
+/* line 231, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke span, .node-spoke.view-mode-teaser span, .node-spoke.node-teaser span {
   display: inline-block;
   margin-right: .3em;
 }
 
-/* line 240, ../sass/modules/hub_list/_hub_list.scss */
+/* line 238, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 244, ../sass/modules/hub_list/_hub_list.scss */
+/* line 242, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
   clear: left;
 }
 
-/* line 251, ../sass/modules/hub_list/_hub_list.scss */
+/* line 249, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser {
   margin: 0;
   padding: 1em 0;
@@ -1923,118 +1991,143 @@ figure.embedded.video iframe {
   padding-top: 2em;
 }
 
-/* line 26, ../sass/modules/user_profile/_user_profile.scss */
-.h-card {
-  margin: 1em 0;
+/* line 25, ../sass/modules/user_profile/_user_profile.scss */
+.sidebar .h-card, aside[role="complementary"] .h-card {
+  width: auto;
+  overflow: hidden;
+  padding: .5rem .5rem .5rem 1rem;
+  font-size: .7rem;
+  line-height: 1.2;
 }
-/* line 28, ../sass/modules/user_profile/_user_profile.scss */
+/* line 31, ../sass/modules/user_profile/_user_profile.scss */
+.sidebar .h-card .p-name, aside[role="complementary"] .h-card .p-name {
+  font-size: .9rem;
+}
+/* line 34, ../sass/modules/user_profile/_user_profile.scss */
+.sidebar .h-card .field-user-avatar, aside[role="complementary"] .h-card .field-user-avatar {
+  float: left;
+}
+/* line 36, ../sass/modules/user_profile/_user_profile.scss */
+.sidebar .h-card .field-user-avatar a, aside[role="complementary"] .h-card .field-user-avatar a {
+  display: block;
+}
+
+/* line 46, ../sass/modules/user_profile/_user_profile.scss */
+.h-card .field-user-avatar, .h-card .prof-img-hold {
+  float: left;
+}
+/* line 48, ../sass/modules/user_profile/_user_profile.scss */
+.h-card .field-user-avatar a, .h-card .prof-img-hold a {
+  display: block;
+}
+/* line 55, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 31, ../sass/modules/user_profile/_user_profile.scss */
+/* line 58, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 33, ../sass/modules/user_profile/_user_profile.scss */
+/* line 60, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 40, ../sass/modules/user_profile/_user_profile.scss */
+/* line 67, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 44, ../sass/modules/user_profile/_user_profile.scss */
+/* line 71, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 48, ../sass/modules/user_profile/_user_profile.scss */
+/* line 75, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-org:before {
   content: "\20\2014\20";
 }
-/* line 54, ../sass/modules/user_profile/_user_profile.scss */
+/* line 81, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
 
-/* line 60, ../sass/modules/user_profile/_user_profile.scss */
+/* line 87, ../sass/modules/user_profile/_user_profile.scss */
 .profile > h3 {
   display: none;
 }
-/* line 63, ../sass/modules/user_profile/_user_profile.scss */
+/* line 90, ../sass/modules/user_profile/_user_profile.scss */
 .profile header {
   margin-bottom: 1em;
   padding: 0;
 }
-/* line 66, ../sass/modules/user_profile/_user_profile.scss */
+/* line 93, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .u-photo {
   float: left;
   margin: 0 .5em 1em 0;
 }
-/* line 71, ../sass/modules/user_profile/_user_profile.scss */
+/* line 98, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .p-name {
   font-size: 2em;
 }
-/* line 75, ../sass/modules/user_profile/_user_profile.scss */
+/* line 102, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 79, ../sass/modules/user_profile/_user_profile.scss */
+/* line 106, ../sass/modules/user_profile/_user_profile.scss */
 .profile li {
   margin-bottom: .5em;
   text-indent: 0;
   margin-left: 0;
 }
-/* line 84, ../sass/modules/user_profile/_user_profile.scss */
+/* line 111, ../sass/modules/user_profile/_user_profile.scss */
 .profile h1 {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 88, ../sass/modules/user_profile/_user_profile.scss */
+/* line 115, ../sass/modules/user_profile/_user_profile.scss */
 .profile h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 97, ../sass/modules/user_profile/_user_profile.scss */
+/* line 124, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author {
   font-style: italic;
 }
-/* line 99, ../sass/modules/user_profile/_user_profile.scss */
+/* line 126, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author:before {
   content: "\2014\20";
 }
-/* line 105, ../sass/modules/user_profile/_user_profile.scss */
+/* line 132, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   display: inline-block;
   margin-right: 1%;
 }
-/* line 111, ../sass/modules/user_profile/_user_profile.scss */
+/* line 138, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul.Tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 115, ../sass/modules/user_profile/_user_profile.scss */
+/* line 142, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   display: inline-block;
   width: 32.6667%;
 }
-/* line 118, ../sass/modules/user_profile/_user_profile.scss */
+/* line 145, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card > a {
   display: block;
 }
-/* line 128, ../sass/modules/user_profile/_user_profile.scss */
+/* line 155, ../sass/modules/user_profile/_user_profile.scss */
 .profile section {
   max-width: 35.72245em;
   float: left;
   margin: 0 1em 1em 0;
   padding: 0 1em;
 }
-/* line 134, ../sass/modules/user_profile/_user_profile.scss */
+/* line 161, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside {
   background-color: #ffe3d8;
   margin-top: 1em;
 }
-/* line 137, ../sass/modules/user_profile/_user_profile.scss */
+/* line 164, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside > h2 {
   color: #e9e9e9;
   background: #e55769;
@@ -2043,38 +2136,38 @@ figure.embedded.video iframe {
   font-size: 1.3rem;
   padding: .5em;
 }
-/* line 145, ../sass/modules/user_profile/_user_profile.scss */
+/* line 172, ../sass/modules/user_profile/_user_profile.scss */
 .profile aside > ul {
   padding: .5em;
   margin: 0;
 }
-/* line 150, ../sass/modules/user_profile/_user_profile.scss */
+/* line 177, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   float: left;
   width: 50%;
 }
-/* line 155, ../sass/modules/user_profile/_user_profile.scss */
+/* line 182, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   margin-bottom: 0;
   float: none;
   text-indent: 0;
 }
-/* line 159, ../sass/modules/user_profile/_user_profile.scss */
+/* line 186, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a {
   width: auto;
   text-indent: .25em;
   color: #5288af;
 }
-/* line 163, ../sass/modules/user_profile/_user_profile.scss */
+/* line 190, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a:hover {
   text-decoration: none;
 }
-/* line 165, ../sass/modules/user_profile/_user_profile.scss */
+/* line 192, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a:hover span {
   text-decoration: underline;
   color: #196195;
 }
-/* line 170, ../sass/modules/user_profile/_user_profile.scss */
+/* line 197, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li a span {
   display: inline-block;
 }

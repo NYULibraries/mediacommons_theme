@@ -89,8 +89,22 @@ function babyzen_preprocess_page( &$vars ) {
     $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
   }
 }
-
-// function babyzen_preprocess_field( &$vars ) {
-
-// dsm($vars);
-//   }
+function tne_field__minimal__field_full_name__mediacommonsprofile ($vars) {
+  return '<h1 class="p-name fn">' . $vars[items][0]['#markup'] . '</h1>';
+}
+function tne_field__minimal__field_skype__mediacommonsprofile ($vars) {
+  return '<li><a class="u-url url skype" href="skype:kfitz" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+}
+function tne_field__minimal__field_twitter__mediacommonsprofile ($vars) {
+  return '<li><a class="u-url url twitter" href="https://twitter.com/'.  $vars[items][0]['#markup']   . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+}
+function tne_field__minimal__field_email__mediacommonsprofile ($vars) {
+  return '<li><a class="u-email email"  href="mailto:" rel="external me"><span>' . $vars[element]['#object']->field_email[und][0][email] . '</span></a></li>';
+}
+function tne_field__minimal__field_url__mediacommonsprofile ($vars) {
+  return '<li><a class="u-url url www"  href="'.  $vars[items][0]['#href'] . '" rel="external me"><span>' . $vars[items][0]['#title'] . '</span></a></li>';
+}
+function tne_field__minimal__field_telephone__mediacommonsprofile ($vars) {
+  $phone = preg_replace('/\D+/', '', $vars[items][0]['#markup']);
+  return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+}

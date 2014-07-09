@@ -70,7 +70,7 @@ pre {
 }
 
 /* line 52, ../sass/partials/_extendables.scss */
-.sidebar .h-card .field-user-avatar .u-photo, aside[role="complementary"] .h-card .field-user-avatar .u-photo, .h-card .field-user-avatar .u-photo, .h-card .prof-img-hold .u-photo, .view-user-search li img {
+.h-card .field-user-avatar img, .h-card .prof-img-hold img, .view-user-search li img {
   display: block;
   margin: 0 .5em 1em 0;
   width: 3rem;
@@ -1597,51 +1597,55 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
   width: 10em;
 }
 /* line 30, ../sass/modules/header/_header--logos.scss */
+.front .logo {
+  width: 14em;
+}
+/* line 33, ../sass/modules/header/_header--logos.scss */
 .no-svg .logo {
   background-image: url('../images/mc-logos/mediacommons-logos.png?1398277518');
 }
-/* line 33, ../sass/modules/header/_header--logos.scss */
+/* line 36, ../sass/modules/header/_header--logos.scss */
 body.mc .logo {
   background-position: 0 0%;
 }
-/* line 36, ../sass/modules/header/_header--logos.scss */
+/* line 39, ../sass/modules/header/_header--logos.scss */
 body.imr .logo {
   background-position: 0 33%;
 }
-/* line 39, ../sass/modules/header/_header--logos.scss */
+/* line 42, ../sass/modules/header/_header--logos.scss */
 body.tne .logo {
   background-position: 0 66%;
 }
-/* line 42, ../sass/modules/header/_header--logos.scss */
+/* line 45, ../sass/modules/header/_header--logos.scss */
 body.alt-ac .logo {
   background-position: 0 100%;
 }
 
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 48, ../sass/modules/header/_header--logos.scss */
+  /* line 51, ../sass/modules/header/_header--logos.scss */
   [role="banner"] h1 {
     float: left;
     position: absolute;
     left: 1.8em;
   }
-  /* line 53, ../sass/modules/header/_header--logos.scss */
+  /* line 56, ../sass/modules/header/_header--logos.scss */
   [role="banner"] .logo {
     padding-bottom: 0;
   }
-  /* line 55, ../sass/modules/header/_header--logos.scss */
+  /* line 58, ../sass/modules/header/_header--logos.scss */
   body.mc [role="banner"] .logo {
     background-position: 0 1%;
   }
-  /* line 58, ../sass/modules/header/_header--logos.scss */
+  /* line 61, ../sass/modules/header/_header--logos.scss */
   body.imr [role="banner"] .logo {
     background-position: 0 30%;
     width: 8em;
   }
-  /* line 62, ../sass/modules/header/_header--logos.scss */
+  /* line 65, ../sass/modules/header/_header--logos.scss */
   body.tne [role="banner"] .logo {
     background-position: 0 60%;
   }
-  /* line 65, ../sass/modules/header/_header--logos.scss */
+  /* line 68, ../sass/modules/header/_header--logos.scss */
   body.alt-ac [role="banner"] .logo {
     background-position: 0 90%;
   }
@@ -2018,22 +2022,58 @@ ul.action-links li a {
 .comments {
   margin-bottom: 2em;
 }
-/* line 8, ../sass/modules/comments/_comments.scss */
+/* line 7, ../sass/modules/comments/_comments.scss */
 .comments article {
   padding: 0 2.5%;
   border: transparent 1px solid;
 }
-/* line 11, ../sass/modules/comments/_comments.scss */
+/* line 10, ../sass/modules/comments/_comments.scss */
 .comments article:nth-of-type(odd) {
   background: #f9ebdd;
 }
-/* line 14, ../sass/modules/comments/_comments.scss */
+/* line 13, ../sass/modules/comments/_comments.scss */
 .comments article:nth-of-type(even) {
   background: #f6dec7;
 }
-/* line 18, ../sass/modules/comments/_comments.scss */
+/* line 17, ../sass/modules/comments/_comments.scss */
 .comments h3 + time {
   margin-top: 1em;
+}
+
+/* line 22, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li {
+  width: auto;
+  overflow: hidden;
+  padding: .5rem .5rem .5rem 1rem;
+  font-size: .7rem;
+  line-height: 1.2;
+  display: block;
+}
+/* line 29, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li .views-field-subject {
+  font-size: .8rem;
+  margin-bottom: .2rem;
+}
+/* line 33, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li .views-field-name {
+  display: inline-block;
+}
+/* line 35, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li .views-field-name .p-name {
+  display: inline-block;
+}
+/* line 37, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li .views-field-name .p-name:before {
+  content: "\20\2014\20";
+}
+/* line 45, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li .views-field-timestamp {
+  display: inline-block;
+}
+/* line 48, ../sass/modules/comments/_comments.scss */
+#block-views-mc-recent-comments-block li p {
+  margin: .4rem 0;
+  line-height: 1.4;
 }
 
 /* MODULES: Component styles that are layout independent */
@@ -2321,164 +2361,139 @@ figure.embedded.video iframe {
   }
 }
 /* line 7, ../sass/modules/user_profile/_user_profile.scss */
-.author.date {
-  display: block;
-}
-/* line 9, ../sass/modules/user_profile/_user_profile.scss */
-.author.date + p {
-  clear: both;
-}
-/* line 13, ../sass/modules/user_profile/_user_profile.scss */
-.author.date .h-card > .u-url {
-  display: inline-block;
-  float: left;
-}
-/* line 17, ../sass/modules/user_profile/_user_profile.scss */
-.author.date .h-card address {
-  padding-left: 5em;
-  line-height: 1.5em;
-  display: block;
-  padding-top: 2em;
+.block-views .view-content {
+  padding: .5em 0 1em 0;
 }
 
-/* line 25, ../sass/modules/user_profile/_user_profile.scss */
-.sidebar .h-card, aside[role="complementary"] .h-card {
+/* line 11, ../sass/modules/user_profile/_user_profile.scss */
+.h-card {
   width: auto;
   overflow: hidden;
   padding: .5rem .5rem .5rem 1rem;
   font-size: .7rem;
   line-height: 1.2;
 }
-/* line 31, ../sass/modules/user_profile/_user_profile.scss */
-.sidebar .h-card .p-name, aside[role="complementary"] .h-card .p-name {
+/* line 17, ../sass/modules/user_profile/_user_profile.scss */
+.h-card .p-name {
   font-size: .9rem;
 }
-/* line 34, ../sass/modules/user_profile/_user_profile.scss */
-.sidebar .h-card .field-user-avatar, aside[role="complementary"] .h-card .field-user-avatar {
-  float: left;
-}
-/* line 36, ../sass/modules/user_profile/_user_profile.scss */
-.sidebar .h-card .field-user-avatar a, aside[role="complementary"] .h-card .field-user-avatar a {
-  display: block;
-}
-
-/* line 46, ../sass/modules/user_profile/_user_profile.scss */
+/* line 20, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar, .h-card .prof-img-hold {
   float: left;
 }
-/* line 48, ../sass/modules/user_profile/_user_profile.scss */
+/* line 22, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar a, .h-card .prof-img-hold a {
   display: block;
 }
-/* line 55, ../sass/modules/user_profile/_user_profile.scss */
+/* line 29, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 58, ../sass/modules/user_profile/_user_profile.scss */
+/* line 32, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 60, ../sass/modules/user_profile/_user_profile.scss */
+/* line 34, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 67, ../sass/modules/user_profile/_user_profile.scss */
+/* line 41, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 71, ../sass/modules/user_profile/_user_profile.scss */
+/* line 45, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 75, ../sass/modules/user_profile/_user_profile.scss */
+/* line 49, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-org:before {
   content: "\20\2014\20";
 }
-/* line 81, ../sass/modules/user_profile/_user_profile.scss */
+/* line 55, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
 
-/* line 87, ../sass/modules/user_profile/_user_profile.scss */
+/* line 61, ../sass/modules/user_profile/_user_profile.scss */
 .profile > h3 {
   display: none;
 }
-/* line 90, ../sass/modules/user_profile/_user_profile.scss */
+/* line 64, ../sass/modules/user_profile/_user_profile.scss */
 .profile header {
   margin-bottom: 1em;
   padding: 0;
 }
-/* line 93, ../sass/modules/user_profile/_user_profile.scss */
+/* line 67, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .u-photo {
   float: left;
   margin: 0 .5em 1em 0;
 }
-/* line 98, ../sass/modules/user_profile/_user_profile.scss */
+/* line 72, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .p-name {
   font-size: 2em;
 }
-/* line 102, ../sass/modules/user_profile/_user_profile.scss */
+/* line 76, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 106, ../sass/modules/user_profile/_user_profile.scss */
+/* line 80, ../sass/modules/user_profile/_user_profile.scss */
 .profile li {
   margin-bottom: .5em;
   text-indent: 0;
   margin-left: 0;
 }
-/* line 111, ../sass/modules/user_profile/_user_profile.scss */
+/* line 85, ../sass/modules/user_profile/_user_profile.scss */
 .profile h1 {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 115, ../sass/modules/user_profile/_user_profile.scss */
+/* line 89, ../sass/modules/user_profile/_user_profile.scss */
 .profile h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 124, ../sass/modules/user_profile/_user_profile.scss */
+/* line 98, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author {
   font-style: italic;
 }
-/* line 126, ../sass/modules/user_profile/_user_profile.scss */
+/* line 100, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author:before {
   content: "\2014\20";
 }
-/* line 132, ../sass/modules/user_profile/_user_profile.scss */
+/* line 106, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   display: inline-block;
   margin-right: 1%;
 }
-/* line 138, ../sass/modules/user_profile/_user_profile.scss */
+/* line 112, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul.Tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 142, ../sass/modules/user_profile/_user_profile.scss */
+/* line 116, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   display: inline-block;
   width: 32.6667%;
 }
-/* line 145, ../sass/modules/user_profile/_user_profile.scss */
+/* line 119, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card > a {
   display: block;
 }
 @media (min-width: 50.0625em) {
-  /* line 155, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 129, ../sass/modules/user_profile/_user_profile.scss */
   .profile section {
     max-width: 35.72245em;
     float: left;
     margin: 0 1em 1em 0;
     padding: 0 1em;
   }
-  /* line 161, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 135, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside {
     background-color: #ffe3d8;
     margin-top: 1em;
   }
-  /* line 164, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 138, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > h2 {
     color: #e9e9e9;
     background: #e55769;
@@ -2487,55 +2502,55 @@ figure.embedded.video iframe {
     font-size: 1.3rem;
     padding: .5em;
   }
-  /* line 172, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 146, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > ul {
     padding: .5em;
     margin: 0;
   }
-  /* line 177, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 151, ../sass/modules/user_profile/_user_profile.scss */
   .profile .following li.h-card {
     float: left;
     width: 50%;
   }
-  /* line 182, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 156, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     margin-bottom: 0;
     float: none;
     text-indent: 0;
   }
-  /* line 186, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 160, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-indent: .25em;
     color: #5288af;
   }
-  /* line 190, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 164, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover {
     text-decoration: none;
   }
-  /* line 192, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 166, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover span {
     text-decoration: underline;
     color: #196195;
   }
-  /* line 197, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 171, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a span {
     display: inline-block;
   }
 }
 
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 206, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 180, ../sass/modules/user_profile/_user_profile.scss */
   .profile {
     padding: 0 3%;
   }
-  /* line 209, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 183, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     display: inline-block;
     margin-right: 1%;
     font-size: 1.4em;
   }
-  /* line 213, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 187, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-align: center;
@@ -2582,7 +2597,7 @@ figure.embedded.video iframe {
     background-image: -moz-linear-gradient(45deg, #d7d7d7, #dedede);
     background-image: linear-gradient(45deg, #d7d7d7, #dedede);
   }
-  /* line 216, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 190, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li span {
     display: none;
   }

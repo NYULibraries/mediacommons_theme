@@ -3,163 +3,51 @@
 //////////////////////////////
 
 .comments {
-  margin-bottom: 2em;
-  
-  article {
-    padding: 0 2.5%;
-    border: transparent 1px solid;
-    &:nth-of-type(odd) {
-      background: nth($secondary, 5);
+    margin-bottom: 2em;
+    article {
+        padding: 0 2.5%;
+        border: transparent 1px solid;
+        &:nth-of-type(odd) {
+            background: nth($secondary, 5);
+        }
+        &:nth-of-type(even) {
+            background: nth($secondary, 4);
+        }
     }
-    &:nth-of-type(even) {
-      background: nth($secondary, 4);
+    h3 + time {
+        margin-top: 1em;
     }
-  }
-  h3 + time {
-    margin-top: 1em;
-  }
 }
 
-///* all */
-//.comment_login {
-//  font-style:italic;
-//  a {
-//      background:yellow;
-//    }
-//}
-//
-//#comments {
-//  margin-top:0;
-//}
-//.comment-wrapper {
-//  p {
-//    margin:.5em 0;
-//  }
-//
-//  .must-login {
-//    background: #fafafa;
-//    padding: 1em;
-//    margin-bottom: 1em;
-//    font-style:italic;
-//  }
-//
-//  label {
-//    display:none;
-//  }
-//  .form-text, .text-full {
-//    padding:1.5em 1em;
-//  }
-//  width:38.5%;
-//  -moz-box-sizing: border-box;
-//  -webkit-box-sizing: border-box;
-//  box-sizing: border-box;
-//  float:right;
-//  font-size:.8em;
-//  line-height:1.5em;
-//  .comment {
-//    border-top: 1px solid $grey2;
-//    padding:0;
-//    .content {
-//      width:100%;
-//    }
-//    ul.inline {
-//      text-transform: capitalize;
-//      margin-bottom:2em;
-//      display:block;
-//      li {
-//        margin:0;
-//        padding:0;
-//        text-indent:0;
-//        &.comment-delete, &.comment-edit {
-//          float:right;
-//          margin-left:.5em;
-//          a {
-//            display:inline-block;
-//            opacity:.7;
-//          }
-//        }
-//        &.comment-reply {
-//          a {
-//            text-transform: capitalize;
-//            display:inline-block;
-//          }
-//        }
-//      }
-//    }
-//  }
-//  .comment-form {
-//    overflow:hidden;
-//    background:$grey;
-//    padding:.5em 1.25em 1em;
-//    margin-bottom:0;
-//  }
-//  #edit-author--2,.filter-wrapper {
-//    display:none;
-//  }
-//  #edit-preview{
-//    display:none;
-//  }
-//  #edit-submit {
-//    float:right;
-//    display:block;
-//    clear:both;
-//  }
-//  h3 {
-//    a {
-//      font-weight:600;
-//      font-size:.3em;
-//      color:#333!important;
-//      border-bottom:none!important;
-//    }
-//  }
-//}
-//
-//#comments {
-//  background:rgb(238,238,238);
-//  h4 {
-//    color:white;
-//    padding:1em;
-//    background:rgb(51, 51, 51);
-//  }
-//  .comment-form {
-//    //background:rgb(204,204,204);
-//    background:$grey;
-//    margin:0;
-//    padding:1em 1.25em 2em;
-//    input[type=text],textarea{
-//      border:1px solid darken($grey,5%);
-//      @include border-radius(0);
-//    }
-//    .grippie {
-//        border:none;
-//      }
-//    input[type=submit]{
-//      //width:100%;
-//      line-height:4em;
-//      margin:.5em 0 0 0;
-//      padding:0 3em;
-//    }
-//  }
-//  .comment {
-//    background:rgb(238,238,238);
-//    padding:0 1em;
-//  }
-//  .indented {
-//    //border:1px dashed #ccc;
-//    margin:.75em;
-//    background:#f8f8f8;
-//    .comment {
-//      background:#f8f8f8;
-//      border-top:none;
-//    }
-//    .indented {
-//      background:#fff;
-//      margin:0;
-//      .comment {
-//        border-top:1px solid #eee;
-//        background:#fff;
-//      }
-//    }
-//  }
-//}
+#block-views-mc-recent-comments-block li {
+    width: auto;
+    overflow: hidden;
+    padding: .5rem .5rem .5rem 1rem;
+    font-size: .7rem;
+    line-height: 1.2;
+    display: block;
+    .views-field-subject {
+        font-size: .8rem;
+        margin-bottom: .2rem;
+    }
+    .views-field-name {
+        display: inline-block;
+        .p-name {
+          display: inline-block;
+          &:before {
+            content: "\20\2014\20";
+            // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+       
+        }
+        }
+        
+    }
+    .views-field-timestamp {
+        display: inline-block;
+    }
+    p {
+        margin: .4rem 0;
+        line-height: 1.4;
+    }
+}
 

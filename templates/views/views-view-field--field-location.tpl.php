@@ -7,8 +7,11 @@
  *
  * @ingroup views_templates
  */
-?><div class="h-adr">
+?>
+<?php  if ($output) : ?>
+<div class="h-adr">
 <?php 
 print $output;
 ?></div>
+<?php endif; ?>
 

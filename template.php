@@ -55,6 +55,7 @@ function babyzen_preprocess_image_style(&$variables) {
         $variables['attributes']['class'][] = 'u-photo photo';
     }
 }
+
 function babyzen_user_menu() {
   $items['user/login'] = array(
     'title' => 'Join',

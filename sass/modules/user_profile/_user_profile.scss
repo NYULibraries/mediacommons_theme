@@ -4,25 +4,11 @@
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
 
-.author.date {
-    display: block;
-    + p {
-        clear: both;
-    }
-    .h-card {
-        > .u-url {
-            display: inline-block;
-            float: left;
-        }
-        address {
-            padding-left: 5em;
-            line-height: 1.5em;
-            display: block;
-            padding-top: 2em;
-        }
-    }
+.block-views .view-content{
+    padding: .5em 0 1em 0;
 }
-.sidebar .h-card, aside[role="complementary"] .h-card {
+
+.h-card {
     width: auto;
     overflow: hidden;
     padding: .5rem .5rem .5rem 1rem;
@@ -31,25 +17,13 @@
     .p-name {
         font-size: .9rem;
     }
-    .field-user-avatar{
-        float: left;
-        a {
-            display: block;
-        }
-        .u-photo {
-             @extend %user-photo-teaser-treatment;
-        }
-    }
-}
-.h-card {
-    
     .field-user-avatar, .prof-img-hold {
         float: left;
         a {
             display: block;
         }
-        .u-photo {
-             @extend %user-photo-teaser-treatment;
+        img {
+            @extend %user-photo-teaser-treatment;
         }
     }
     > .u-url:first-child {

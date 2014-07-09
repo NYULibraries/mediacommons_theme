@@ -6,16 +6,18 @@
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728164
  */
-?><h1>NODE</h1>
+?>
 <article class="node-<?php print $node->nid; ?> <?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-<h1>NODE 2</h1>
-  <?php if ($title_prefix || $title_suffix || $display_submitted || $unpublished || !$page && $title): ?>
+
+  <?php if ($page && $title): ?>
     <header>
       <?php print render($title_prefix); ?>
-      <?php if (!$page && $title): ?>
+        <?php if (!$page): ?>
         <h2<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+           <?php else: ?>
+  <h2<?php print $title_attributes; ?>><?php print $title; ?></h2>
+             <?php endif; ?>
+     <?php print render($title_suffix); ?>
 
       <?php if ($display_submitted): ?>
         <p class="submitted">

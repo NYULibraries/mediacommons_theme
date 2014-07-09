@@ -102,6 +102,7 @@ regions[homepage_bottom]   = Home Page Bottom
 regions[homepage_sidebar]   = Home Page Sidebar
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
+regions[sidebar_previous_clusters] = Previous Clusters sidebar
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 

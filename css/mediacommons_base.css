@@ -2366,6 +2366,17 @@ figure.embedded.video iframe {
 }
 
 /* line 11, ../sass/modules/user_profile/_user_profile.scss */
+.field-name-metadata-for-spoke .h-card {
+  padding: 1rem .5rem .5rem 0rem;
+}
+/* line 13, ../sass/modules/user_profile/_user_profile.scss */
+.field-name-metadata-for-spoke .h-card .p-name, .field-name-metadata-for-spoke .h-card .p-org {
+  font-size: 1rem;
+  display: inline-block;
+  padding-top: 1rem;
+}
+
+/* line 20, ../sass/modules/user_profile/_user_profile.scss */
 .h-card {
   width: auto;
   overflow: hidden;
@@ -2373,127 +2384,127 @@ figure.embedded.video iframe {
   font-size: .7rem;
   line-height: 1.2;
 }
-/* line 17, ../sass/modules/user_profile/_user_profile.scss */
+/* line 26, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name {
   font-size: .9rem;
 }
-/* line 20, ../sass/modules/user_profile/_user_profile.scss */
+/* line 29, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar, .h-card .prof-img-hold {
   float: left;
 }
-/* line 22, ../sass/modules/user_profile/_user_profile.scss */
+/* line 31, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar a, .h-card .prof-img-hold a {
   display: block;
 }
-/* line 29, ../sass/modules/user_profile/_user_profile.scss */
+/* line 38, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 32, ../sass/modules/user_profile/_user_profile.scss */
+/* line 41, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 34, ../sass/modules/user_profile/_user_profile.scss */
+/* line 43, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 41, ../sass/modules/user_profile/_user_profile.scss */
+/* line 50, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 45, ../sass/modules/user_profile/_user_profile.scss */
+/* line 54, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 49, ../sass/modules/user_profile/_user_profile.scss */
+/* line 58, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-org:before {
   content: "\20\2014\20";
 }
-/* line 55, ../sass/modules/user_profile/_user_profile.scss */
+/* line 64, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
 
-/* line 61, ../sass/modules/user_profile/_user_profile.scss */
+/* line 70, ../sass/modules/user_profile/_user_profile.scss */
 .profile > h3 {
   display: none;
 }
-/* line 64, ../sass/modules/user_profile/_user_profile.scss */
+/* line 73, ../sass/modules/user_profile/_user_profile.scss */
 .profile header {
   margin-bottom: 1em;
   padding: 0;
 }
-/* line 67, ../sass/modules/user_profile/_user_profile.scss */
+/* line 76, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .u-photo {
   float: left;
   margin: 0 .5em 1em 0;
 }
-/* line 72, ../sass/modules/user_profile/_user_profile.scss */
+/* line 81, ../sass/modules/user_profile/_user_profile.scss */
 .profile header .p-name {
   font-size: 2em;
 }
-/* line 76, ../sass/modules/user_profile/_user_profile.scss */
+/* line 85, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 80, ../sass/modules/user_profile/_user_profile.scss */
+/* line 89, ../sass/modules/user_profile/_user_profile.scss */
 .profile li {
   margin-bottom: .5em;
   text-indent: 0;
   margin-left: 0;
 }
-/* line 85, ../sass/modules/user_profile/_user_profile.scss */
+/* line 94, ../sass/modules/user_profile/_user_profile.scss */
 .profile h1 {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 89, ../sass/modules/user_profile/_user_profile.scss */
+/* line 98, ../sass/modules/user_profile/_user_profile.scss */
 .profile h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 98, ../sass/modules/user_profile/_user_profile.scss */
+/* line 107, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author {
   font-style: italic;
 }
-/* line 100, ../sass/modules/user_profile/_user_profile.scss */
+/* line 109, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author:before {
   content: "\2014\20";
 }
-/* line 106, ../sass/modules/user_profile/_user_profile.scss */
+/* line 115, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   display: inline-block;
   margin-right: 1%;
 }
-/* line 112, ../sass/modules/user_profile/_user_profile.scss */
+/* line 121, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul.Tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 116, ../sass/modules/user_profile/_user_profile.scss */
+/* line 125, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   display: inline-block;
   width: 32.6667%;
 }
-/* line 119, ../sass/modules/user_profile/_user_profile.scss */
+/* line 128, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card > a {
   display: block;
 }
 @media (min-width: 50.0625em) {
-  /* line 129, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 138, ../sass/modules/user_profile/_user_profile.scss */
   .profile section {
     max-width: 35.72245em;
     float: left;
     margin: 0 1em 1em 0;
     padding: 0 1em;
   }
-  /* line 135, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 144, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside {
     background-color: #ffe3d8;
     margin-top: 1em;
   }
-  /* line 138, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 147, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > h2 {
     color: #e9e9e9;
     background: #e55769;
@@ -2502,55 +2513,55 @@ figure.embedded.video iframe {
     font-size: 1.3rem;
     padding: .5em;
   }
-  /* line 146, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 155, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > ul {
     padding: .5em;
     margin: 0;
   }
-  /* line 151, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 160, ../sass/modules/user_profile/_user_profile.scss */
   .profile .following li.h-card {
     float: left;
     width: 50%;
   }
-  /* line 156, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 165, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     margin-bottom: 0;
     float: none;
     text-indent: 0;
   }
-  /* line 160, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 169, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-indent: .25em;
     color: #5288af;
   }
-  /* line 164, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 173, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover {
     text-decoration: none;
   }
-  /* line 166, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 175, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover span {
     text-decoration: underline;
     color: #196195;
   }
-  /* line 171, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 180, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a span {
     display: inline-block;
   }
 }
 
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 180, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 189, ../sass/modules/user_profile/_user_profile.scss */
   .profile {
     padding: 0 3%;
   }
-  /* line 183, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 192, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     display: inline-block;
     margin-right: 1%;
     font-size: 1.4em;
   }
-  /* line 187, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 196, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-align: center;
@@ -2597,7 +2608,7 @@ figure.embedded.video iframe {
     background-image: -moz-linear-gradient(45deg, #d7d7d7, #dedede);
     background-image: linear-gradient(45deg, #d7d7d7, #dedede);
   }
-  /* line 190, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 199, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li span {
     display: none;
   }

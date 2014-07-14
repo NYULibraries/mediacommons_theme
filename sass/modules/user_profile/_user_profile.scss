@@ -4,8 +4,17 @@
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
 
-.block-views .view-content{
+.block-views .view-content {
     padding: .5em 0 1em 0;
+}
+
+.field-name-metadata-for-spoke .h-card {
+    padding: 1rem .5rem .5rem 0rem;
+    .p-name, .p-org {
+        font-size: 1rem;
+        display: inline-block;
+        padding-top: 1rem;
+    }
 }
 
 .h-card {

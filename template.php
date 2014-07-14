@@ -109,3 +109,7 @@ function tne_field__minimal__field_telephone__mediacommonsprofile ($vars) {
   $phone = preg_replace('/\D+/', '', $vars[items][0]['#markup']);
   return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
 }
+function tne_field__minimal__post_date ($vars) {
+  return '<time>' . $vars[items][0]['#markup'] . '</time>';
+}
+

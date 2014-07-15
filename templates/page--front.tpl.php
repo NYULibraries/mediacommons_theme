@@ -44,7 +44,7 @@
    ?> 
 </div>
   <?php if (isset($page['homepage_sidebar'])) : ?>
-          <aside role="complementary" class="spoke part-of-hub"><?php print render($page['homepage_sidebar']); ?></aside>
+          <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
   <?php endif; ?> 
 
   

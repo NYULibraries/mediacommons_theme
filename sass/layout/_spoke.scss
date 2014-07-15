@@ -24,12 +24,12 @@ section.video.part-of-hub {
 }
 
 @include respond-to('desktop') {
-  section.curators-note{
+  section.curators-note, .spoke-body {
     max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
     float: left;
     margin: 0 1em 1em 0;
   }
-  [role="complementary"].part-of-hub {
+  [role="complementary"] {
     width: ms(12);  // width of the side content — see modular scale notes in base/typography/_typography_variables
     float: right;
     ul[role="menu"] {
@@ -66,7 +66,7 @@ section.video.part-of-hub {
     }
     margin: 0 1em 1em 0;
   }
-  [role="complementary"].part-of-hub { 
+  [role="complementary"] { 
     clear: left;
     ul[role="menu"] {
       li {
@@ -87,7 +87,7 @@ section.video.part-of-hub {
   .comments article {
     padding: 0 3.5%;
   }
-  [role="complementary"].part-of-hub { 
+  [role="complementary"] { 
     clear: left;
     ul[role="menu"] {
       li {

@@ -114,7 +114,7 @@ body {
 //    width: 100%;
 //  }
 //}
-main {
+main, .node-type-spoke #content {
   @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
   max-width: ms(16);  // ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
   margin: 0 auto;

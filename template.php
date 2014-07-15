@@ -38,6 +38,10 @@ function babyzen_preprocess_html( &$vars ) {
   if ( !empty( $specialBodyClass ) ) {
     $vars['classes_array'][] = $specialBodyClass;
   }
+
+ if (($key = array_search('no-sidebars', $vars['classes_array'])) !== false) {
+    unset($vars['classes_array'][$key]);
+}
 }
 function babyzen_preprocess_block( &$variables, $hook ) {
   global $user;
@@ -88,6 +92,10 @@ function babyzen_preprocess_page( &$vars ) {
   if (isset($vars['node'])) {
     // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
     $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
+    // https://www.drupal.org/node/410908
+    if ($vars['node']->type == 'spoke') {
+       // unset($vars['sidebar']);
+      }
   }
 }
 function tne_field__minimal__field_full_name__mediacommonsprofile ($vars) {

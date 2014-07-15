@@ -10,10 +10,14 @@
 
 .field-name-metadata-for-spoke .h-card {
     padding: 1rem .5rem .5rem 0rem;
-    .p-name, .p-org {
+    .nameHolder, .p-org {
         font-size: 1rem;
         display: inline-block;
         padding-top: 1rem;
+    }
+    .p-name {
+        display: inline-block;
+        font-size: 1rem;
     }
 }
 

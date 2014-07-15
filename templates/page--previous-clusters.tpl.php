@@ -39,7 +39,7 @@
   <?php print render($page['content']); ?> 
   </article>
  <?php if (isset($page['sidebar_previous_clusters'])) : ?>
-  <aside role="complementary" class="spoke part-of-hub"><?php print render($page['sidebar_previous_clusters']); ?></aside>
+  <aside role="complementary"><?php print render($page['sidebar_previous_clusters']); ?></aside>
   <?php endif; ?> </main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>

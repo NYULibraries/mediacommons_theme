@@ -17,7 +17,7 @@ body.meco {
         }
     }
     @include respond-to("full navigation") {
-        section[role="complementary"] {
+        [role="complementary"] {
             float: right;
             max-width: ms(12);
         }

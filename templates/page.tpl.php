@@ -39,7 +39,7 @@
   <?php print render($page['content']); ?> 
   </article>
  <?php if (isset($page['sidebar_first'])) : ?>
-          <aside role="complementary" class="spoke part-of-hub"><?php print render($page['sidebar_first']); ?>
+          <aside role="complementary"><?php print render($page['sidebar_first']); ?>
           </aside>
   <?php endif; ?> </main>
   

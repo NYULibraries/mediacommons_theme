@@ -12,7 +12,7 @@
 ; page at admin/appearance.
 
 screenshot  = screenshot.png
-name        = Media Commons BabyZen Sub-theme 
+name        = Media Commons Base theme
 description = A work in progress.
 
 
@@ -50,7 +50,6 @@ stylesheets[all][] = system.messages.css
 stylesheets[all][] = system.theme.css
 
 ; Then we add our own stylesheet.
-;stylesheets[all][] = fonts/style.css
 stylesheets[all][] = css/mediacommons_base.css
 
 ; Built-in conditional stylesheet support has been removed from Zen 7.x-5.x.
@@ -100,8 +99,8 @@ regions[content]        = Content
 regions[homepage_top]   = Home Page Top
 regions[homepage_bottom]   = Home Page Bottom
 regions[homepage_sidebar]   = Home Page Sidebar
-regions[sidebar_first]  = First sidebar
-regions[sidebar_second] = Second sidebar
+;regions[sidebar_first]  = First sidebar
+;regions[sidebar_second] = Second sidebar
 regions[sidebar_previous_clusters] = Previous Clusters sidebar
 regions[footer]         = Footer
 regions[bottom]         = Page bottom

@@ -36,11 +36,7 @@
  <article id="content">
   <?php print render($page['content']); ?>
   </article>
- <?php if (isset($page['sidebar_second'])) : ?>
-          <aside role="complementary" class="spoke part-of-hub"><?php print render($page['sidebar_second']); ?>
-          </aside>
-  <?php endif; ?> 
-
+ 
 </main>
 
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>

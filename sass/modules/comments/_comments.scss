@@ -17,37 +17,72 @@
     h3 + time {
         margin-top: 1em;
     }
+    .form-wrap {
+        margin: 1em;
+    }
+    .comment-form {
+        input#edit-subject {
+            width: 100%;
+        }
+        span.form-required {
+            display: none;
+        }
+        fieldset.filter-wrapper {
+            border: none;
+        }
+        .filter-guidelines {
+            display: none;
+        }
+        .filter-help {
+            padding: 0;
+        }
+        .filter-help a {
+            padding: 0 20px 0 0;
+            width: 20px;
+            overflow: hidden;
+            display: block;
+            text-indent: -2000em;
+            height: 20px;
+        }
+        .form-type-select {
+            padding: 0;
+        }
+    }
 }
 
-#block-views-mc-recent-comments-block li {
-    width: auto;
-    overflow: hidden;
-    padding: .5rem .5rem .5rem 1rem;
-    font-size: .7rem;
-    line-height: 1.2;
-    display: block;
-    .views-field-subject {
-        font-size: .8rem;
-        margin-bottom: .2rem;
+.view-mc-recent-comments {
+    ul {
+        padding: 0;
+        margin: 0;
     }
-    .views-field-name {
-        display: inline-block;
-        .p-name {
-          display: inline-block;
-          &:before {
-            content: "\20\2014\20";
-            // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-       
+    li {
+        width: auto;
+        overflow: hidden;
+        padding: .5rem .5rem .5rem 0rem;
+        font-size: .7rem;
+        line-height: 1.2;
+        display: block;
+        .views-field-subject {
+            font-size: .8rem;
+            margin-bottom: .2rem;
         }
+        .views-field-name {
+            display: inline-block;
+            .p-name {
+                display: inline-block;
+                &:before {
+                    content: "\20\2014\20";
+                    // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+               
+                }
+            }
         }
-        
-    }
-    .views-field-timestamp {
-        display: inline-block;
-    }
-    p {
-        margin: .4rem 0;
-        line-height: 1.4;
+        .views-field-timestamp {
+            display: inline-block;
+        }
+        p {
+            margin: .4rem 0;
+            line-height: 1.4;
+        }
     }
 }
-

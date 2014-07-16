@@ -84,6 +84,15 @@ function babyzen_form_alter( &$form, &$form_state, $form_id ) {
     }
 
 }
+/**
+ * Implement hook_form_comment_form_alter().
+ */
+function babyzen_form_comment_form_alter(&$form, &$form_state) {
+  //dpm($form);
+  $form['subject']['#size'] = "auto";
+} 
+
+
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function babyzen_preprocess_page( &$vars ) {
   /** Remove logo */

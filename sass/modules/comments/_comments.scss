@@ -5,7 +5,7 @@
 .comments {
     margin-bottom: 2em;
     article {
-        padding: 0 2.5%;
+        padding: 2.5%;
         border: transparent 1px solid;
         &:nth-of-type(odd) {
             background: nth($secondary, 5);
@@ -14,11 +14,32 @@
             background: nth($secondary, 4);
         }
     }
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
     h3 + time {
-        margin-top: 1em;
+        margin: .5em 0 .4em;
+    }
+    .nameHolder, .p-org {
+        display: inline-block;
+        padding-top: 1em;
     }
     .form-wrap {
         margin: 1em;
+    }
+    .h-card {
+        padding: 0;
+        // .field-user-avatar img {
+        //     height: 2em;
+        //     width: 2em;
+        // }
+    }
+    p {
+        margin: .6em 0;
+    }
+    .indented {
+        margin-left: 35px;
     }
     .comment-form {
         input#edit-subject {

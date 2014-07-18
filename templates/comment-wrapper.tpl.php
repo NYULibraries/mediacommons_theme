@@ -11,10 +11,10 @@
 $comments = render($content['comments']);
 $comment_form = render($content['comment_form']);
 ?>
-<section role="complementary" id="comments" class="comments <?php print $classes; ?>"<?php print $attributes; ?>>
+<section id="comments" class="comments <?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print render($title_prefix); ?>
   <?php if ($comments && $node->type != 'forum'): ?>
-    <header><h2 class="comments__title title"><?php print t('Comments'); ?></h2></header>
+    <header><h1 class="comments__title title"><?php print t('Comments'); ?></h1></header>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 

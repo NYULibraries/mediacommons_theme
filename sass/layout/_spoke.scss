@@ -24,7 +24,7 @@ section.video.part-of-hub {
 }
 
 @include respond-to('desktop') {
-  section.curators-note, .spoke-body {
+  .spoke-body, section.curators-note, section.comments {
     max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
     float: left;
     margin: 0 1em 1em 0;

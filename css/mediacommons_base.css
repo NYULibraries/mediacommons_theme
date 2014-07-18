@@ -72,7 +72,7 @@ pre {
 /* line 52, ../sass/partials/_extendables.scss */
 .h-card .field-user-avatar img, .h-card .prof-img-hold img, .view-user-search li img {
   display: block;
-  margin: 0 .5em 1em 0;
+  margin: 0 .5em 0em 0;
   width: 3rem;
   height: 3rem;
   -webkit-border-radius: 3em;
@@ -241,7 +241,7 @@ h1 {
   color: #5a5a5a;
 }
 
-/* line 16, ../sass/base/typography/_typography.scss */
+/* line 17, ../sass/base/typography/_typography.scss */
 h2 {
   font-weight: normal;
   font-size: 2.25em;
@@ -251,7 +251,7 @@ h2 {
   color: #5a5a5a;
 }
 
-/* line 25, ../sass/base/typography/_typography.scss */
+/* line 27, ../sass/base/typography/_typography.scss */
 h3 {
   font-weight: normal;
   font-size: 1.66667em;
@@ -261,7 +261,7 @@ h3 {
   color: #5a5a5a;
 }
 
-/* line 34, ../sass/base/typography/_typography.scss */
+/* line 37, ../sass/base/typography/_typography.scss */
 h4 {
   font-weight: bold;
   font-size: 1.35em;
@@ -271,7 +271,7 @@ h4 {
   color: #5a5a5a;
 }
 
-/* line 43, ../sass/base/typography/_typography.scss */
+/* line 47, ../sass/base/typography/_typography.scss */
 h5 {
   font-weight: normal;
   font-size: 1.35em;
@@ -281,7 +281,7 @@ h5 {
   color: #5a5a5a;
 }
 
-/* line 52, ../sass/base/typography/_typography.scss */
+/* line 57, ../sass/base/typography/_typography.scss */
 h6 {
   font-weight: bold;
   font-size: 1em;
@@ -291,34 +291,34 @@ h6 {
   color: #5a5a5a;
 }
 
-/* line 61, ../sass/base/typography/_typography.scss */
+/* line 67, ../sass/base/typography/_typography.scss */
 b, strong {
   font-weight: bold;
 }
 
-/* line 64, ../sass/base/typography/_typography.scss */
+/* line 71, ../sass/base/typography/_typography.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 67, ../sass/base/typography/_typography.scss */
+/* line 75, ../sass/base/typography/_typography.scss */
 hr {
   height: 0.1em;
   background: #cccccc;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 73, ../sass/base/typography/_typography.scss */
+/* line 82, ../sass/base/typography/_typography.scss */
 p, ul, ol, hr, table, form, fieldset {
   margin: 1.25em 0;
 }
 
-/* line 76, ../sass/base/typography/_typography.scss */
+/* line 86, ../sass/base/typography/_typography.scss */
 li {
   list-style-position: inside;
 }
 
-/* line 81, ../sass/base/typography/_typography.scss */
+/* line 92, ../sass/base/typography/_typography.scss */
 blockquote {
   margin: 1em 1.5em 1em 0;
   border-width: 0 0 0 0.25em;
@@ -335,12 +335,12 @@ blockquote {
   -moz-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 92, ../sass/base/typography/_typography.scss */
+/* line 103, ../sass/base/typography/_typography.scss */
 blockquote em {
   font-weight: normal;
 }
 
-/* line 96, ../sass/base/typography/_typography.scss */
+/* line 108, ../sass/base/typography/_typography.scss */
 figcaption {
   font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
   font-weight: normal;
@@ -350,7 +350,8 @@ figcaption {
   color: #666666;
 }
 
-/* line 103, ../sass/base/typography/_typography.scss */
+/* line 117, ../sass/base/typography/_typography.scss */
+article,
 article > p,
 article section > p {
   font-size: inherit;
@@ -365,7 +366,13 @@ article section > p {
   */
 }
 
-/* line 117, ../sass/base/typography/_typography.scss */
+/* line 129, ../sass/base/typography/_typography.scss */
+article.comment {
+  font-size: 0.8rem;
+  line-height: 1.3rem;
+}
+
+/* line 136, ../sass/base/typography/_typography.scss */
 article footer + p:first-letter,
 article section > h2 + p:first-letter,
 article section > p:first-child:first-letter,
@@ -381,7 +388,7 @@ h1 + p:first-letter {
   color: inherit;
 }
 
-/* line 128, ../sass/base/typography/_typography.scss */
+/* line 148, ../sass/base/typography/_typography.scss */
 time {
   display: block;
   text-align: left;
@@ -397,7 +404,7 @@ time:before {
   content: "";
 }
 
-/* line 139, ../sass/base/typography/_typography.scss */
+/* line 159, ../sass/base/typography/_typography.scss */
 pre {
   margin: 1em;
   padding: 2em;
@@ -413,7 +420,7 @@ pre {
   background-image: linear-gradient(top, #cccccc, #eeeeee);
 }
 
-/* line 150, ../sass/base/typography/_typography.scss */
+/* line 170, ../sass/base/typography/_typography.scss */
 address {
   font-style: normal;
   display: inline;
@@ -2024,7 +2031,7 @@ ul.action-links li a {
 }
 /* line 7, ../sass/modules/comments/_comments.scss */
 .comments article {
-  padding: 0 2.5%;
+  padding: 2.5%;
   border: transparent 1px solid;
 }
 /* line 10, ../sass/modules/comments/_comments.scss */
@@ -2036,34 +2043,56 @@ ul.action-links li a {
   background: #f6dec7;
 }
 /* line 17, ../sass/modules/comments/_comments.scss */
-.comments h3 + time {
-  margin-top: 1em;
+.comments h3 {
+  margin: 0;
+  padding: 0;
 }
-/* line 20, ../sass/modules/comments/_comments.scss */
+/* line 21, ../sass/modules/comments/_comments.scss */
+.comments h3 + time {
+  margin: .5em 0 .4em;
+}
+/* line 24, ../sass/modules/comments/_comments.scss */
+.comments .nameHolder, .comments .p-org {
+  display: inline-block;
+  padding-top: 1em;
+}
+/* line 28, ../sass/modules/comments/_comments.scss */
 .comments .form-wrap {
   margin: 1em;
 }
-/* line 24, ../sass/modules/comments/_comments.scss */
+/* line 31, ../sass/modules/comments/_comments.scss */
+.comments .h-card {
+  padding: 0;
+}
+/* line 38, ../sass/modules/comments/_comments.scss */
+.comments p {
+  margin: .6em 0;
+}
+/* line 41, ../sass/modules/comments/_comments.scss */
+.comments .indented {
+  margin-left: 35px;
+}
+/* line 45, ../sass/modules/comments/_comments.scss */
 .comments .comment-form input#edit-subject {
   width: 100%;
 }
-/* line 27, ../sass/modules/comments/_comments.scss */
+/* line 48, ../sass/modules/comments/_comments.scss */
 .comments .comment-form span.form-required {
   display: none;
 }
-/* line 30, ../sass/modules/comments/_comments.scss */
+/* line 51, ../sass/modules/comments/_comments.scss */
 .comments .comment-form fieldset.filter-wrapper {
   border: none;
 }
-/* line 33, ../sass/modules/comments/_comments.scss */
+/* line 54, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-guidelines {
   display: none;
 }
-/* line 36, ../sass/modules/comments/_comments.scss */
+/* line 57, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-help {
   padding: 0;
 }
-/* line 39, ../sass/modules/comments/_comments.scss */
+/* line 60, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-help a {
   padding: 0 20px 0 0;
   width: 20px;
@@ -2072,17 +2101,17 @@ ul.action-links li a {
   text-indent: -2000em;
   height: 20px;
 }
-/* line 47, ../sass/modules/comments/_comments.scss */
+/* line 68, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .form-type-select {
   padding: 0;
 }
 
-/* line 54, ../sass/modules/comments/_comments.scss */
+/* line 75, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments ul {
   padding: 0;
   margin: 0;
 }
-/* line 58, ../sass/modules/comments/_comments.scss */
+/* line 79, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li {
   width: auto;
   overflow: hidden;
@@ -2091,28 +2120,28 @@ ul.action-links li a {
   line-height: 1.2;
   display: block;
 }
-/* line 65, ../sass/modules/comments/_comments.scss */
+/* line 86, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-subject {
   font-size: .8rem;
   margin-bottom: .2rem;
 }
-/* line 69, ../sass/modules/comments/_comments.scss */
+/* line 90, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name {
   display: inline-block;
 }
-/* line 71, ../sass/modules/comments/_comments.scss */
+/* line 92, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name .p-name {
   display: inline-block;
 }
-/* line 73, ../sass/modules/comments/_comments.scss */
+/* line 94, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name .p-name:before {
   content: "\20\2014\20";
 }
-/* line 80, ../sass/modules/comments/_comments.scss */
+/* line 101, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-timestamp {
   display: inline-block;
 }
-/* line 83, ../sass/modules/comments/_comments.scss */
+/* line 104, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li p {
   margin: .4rem 0;
   line-height: 1.4;
@@ -2868,7 +2897,7 @@ main, .node-type-spoke #content {
 
 @media (min-width: 61.3125em) {
   /* line 27, ../sass/layout/_spoke.scss */
-  section.curators-note, .spoke-body {
+  .spoke-body, section.curators-note, section.comments {
     max-width: 35.72245em;
     float: left;
     margin: 0 1em 1em 0;

@@ -8,14 +8,7 @@
  */
 ?>
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
   <header>
-    <p class="submitted">
-      <?php print $picture; ?>
-      <?php print $submitted; ?>
-      <?php print $permalink; ?>
-    </p>
-
     <?php print render($title_prefix); ?>
     <?php if ($title): ?>
       <h3<?php print $title_attributes; ?>>
@@ -28,7 +21,17 @@
       <mark class="new"><?php print $new; ?></mark>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-
+    <?php print '<time>'. $created . '</time>'; ?>
+    <div class="h-card vcard">
+      <?php print '<div class="field-user-avatar">' . $user_avatar . '</div>'; ?>
+      <div>
+        <div class="nameHolder">By <?php print $author; ?></div>
+        <?php if ($organization): ?>
+          <span class="p-org org"><?php print $organization; ?></span>
+        <?php endif; ?>
+        </div>
+      <?php //print $permalink; ?>
+    </div>
     <?php if ($status == 'comment-unpublished'): ?>
       <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
     <?php endif; ?>

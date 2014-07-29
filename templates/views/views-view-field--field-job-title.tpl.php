@@ -2,8 +2,7 @@
 
 /**
  * @file
- * Default simple view template to output only image markup 
- * for profile image
+ * Simple view template to output only markup 
  *
  * @ingroup views_templates
  */

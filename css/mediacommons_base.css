@@ -2028,71 +2028,114 @@ ul.action-links li a {
 /* line 5, ../sass/modules/comments/_comments.scss */
 .comments {
   margin-bottom: 2em;
+  line-height: 1.2;
 }
-/* line 7, ../sass/modules/comments/_comments.scss */
+/* line 8, ../sass/modules/comments/_comments.scss */
 .comments article {
   padding: 2.5%;
   border: transparent 1px solid;
 }
-/* line 10, ../sass/modules/comments/_comments.scss */
+/* line 11, ../sass/modules/comments/_comments.scss */
 .comments article:nth-of-type(odd) {
   background: #f9ebdd;
 }
-/* line 13, ../sass/modules/comments/_comments.scss */
+/* line 14, ../sass/modules/comments/_comments.scss */
 .comments article:nth-of-type(even) {
   background: #f6dec7;
 }
-/* line 17, ../sass/modules/comments/_comments.scss */
+/* line 18, ../sass/modules/comments/_comments.scss */
+.profile .comments li.views-row-first {
+  padding: 0 0 2.5%  0;
+}
+/* line 21, ../sass/modules/comments/_comments.scss */
+.profile .comments li {
+  padding: 2.5% 0;
+  border-bottom: 1px solid #f6dec7;
+  line-height: 1.3;
+}
+/* line 26, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-created {
+  font-style: italic;
+  font-size: .7rem;
+  color: #5a5a5a;
+  display: inline-block;
+}
+/* line 32, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-created:before {
+  content: "\20\2014\20";
+}
+/* line 38, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-subject {
+  font-size: .9rem;
+  display: inline-block;
+}
+/* line 44, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-title {
+  margin: 0.2rem 0;
+  font-size: .7rem;
+  color: #5a5a5a;
+}
+/* line 50, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-comment-body {
+  font-size: .7rem;
+  line-height: 1.4;
+  margin: 0.8rem 0 0 0;
+}
+/* line 54, ../sass/modules/comments/_comments.scss */
+.profile .comments li .views-field-comment-body p {
+  margin: 0.3em 0 0 0;
+}
+/* line 59, ../sass/modules/comments/_comments.scss */
 .comments h3 {
   margin: 0;
   padding: 0;
 }
-/* line 21, ../sass/modules/comments/_comments.scss */
+/* line 63, ../sass/modules/comments/_comments.scss */
 .comments h3 + time {
   margin: .5em 0 .4em;
 }
-/* line 24, ../sass/modules/comments/_comments.scss */
+/* line 66, ../sass/modules/comments/_comments.scss */
 .comments .nameHolder, .comments .p-org {
   display: inline-block;
   padding-top: 1em;
 }
-/* line 28, ../sass/modules/comments/_comments.scss */
+/* line 70, ../sass/modules/comments/_comments.scss */
 .comments .form-wrap {
   margin: 1em;
 }
-/* line 31, ../sass/modules/comments/_comments.scss */
+/* line 73, ../sass/modules/comments/_comments.scss */
 .comments .h-card {
   padding: 0;
 }
-/* line 38, ../sass/modules/comments/_comments.scss */
+/* line 81, ../sass/modules/comments/_comments.scss */
 .comments p {
-  margin: .6em 0;
+  margin: .6em 0 0;
 }
-/* line 41, ../sass/modules/comments/_comments.scss */
+/* line 84, ../sass/modules/comments/_comments.scss */
 .comments .indented {
   margin-left: 35px;
 }
-/* line 45, ../sass/modules/comments/_comments.scss */
+/* line 88, ../sass/modules/comments/_comments.scss */
 .comments .comment-form input#edit-subject {
   width: 100%;
 }
-/* line 48, ../sass/modules/comments/_comments.scss */
+/* line 91, ../sass/modules/comments/_comments.scss */
 .comments .comment-form span.form-required {
   display: none;
 }
-/* line 51, ../sass/modules/comments/_comments.scss */
+/* line 94, ../sass/modules/comments/_comments.scss */
 .comments .comment-form fieldset.filter-wrapper {
   border: none;
 }
-/* line 54, ../sass/modules/comments/_comments.scss */
+/* line 97, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-guidelines {
   display: none;
 }
-/* line 57, ../sass/modules/comments/_comments.scss */
+/* line 100, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-help {
   padding: 0;
 }
-/* line 60, ../sass/modules/comments/_comments.scss */
+/* line 103, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .filter-help a {
   padding: 0 20px 0 0;
   width: 20px;
@@ -2101,17 +2144,17 @@ ul.action-links li a {
   text-indent: -2000em;
   height: 20px;
 }
-/* line 68, ../sass/modules/comments/_comments.scss */
+/* line 111, ../sass/modules/comments/_comments.scss */
 .comments .comment-form .form-type-select {
   padding: 0;
 }
 
-/* line 75, ../sass/modules/comments/_comments.scss */
+/* line 118, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments ul {
   padding: 0;
   margin: 0;
 }
-/* line 79, ../sass/modules/comments/_comments.scss */
+/* line 122, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li {
   width: auto;
   overflow: hidden;
@@ -2120,28 +2163,28 @@ ul.action-links li a {
   line-height: 1.2;
   display: block;
 }
-/* line 86, ../sass/modules/comments/_comments.scss */
+/* line 129, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-subject {
   font-size: .8rem;
   margin-bottom: .2rem;
 }
-/* line 90, ../sass/modules/comments/_comments.scss */
+/* line 133, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name {
   display: inline-block;
 }
-/* line 92, ../sass/modules/comments/_comments.scss */
+/* line 135, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name .p-name {
   display: inline-block;
 }
-/* line 94, ../sass/modules/comments/_comments.scss */
+/* line 137, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name .p-name:before {
   content: "\20\2014\20";
 }
-/* line 101, ../sass/modules/comments/_comments.scss */
+/* line 144, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-timestamp {
   display: inline-block;
 }
-/* line 104, ../sass/modules/comments/_comments.scss */
+/* line 147, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li p {
   margin: .4rem 0;
   line-height: 1.4;
@@ -2448,7 +2491,14 @@ figure.embedded.video iframe {
   font-size: 1rem;
 }
 
-/* line 24, ../sass/modules/user_profile/_user_profile.scss */
+/* line 23, ../sass/modules/user_profile/_user_profile.scss */
+h2.block-title {
+  font-size: 1.5rem;
+  margin-bottom: .5rem;
+}
+
+/* for contributors lists as well as profile */
+/* line 28, ../sass/modules/user_profile/_user_profile.scss */
 .h-card {
   width: auto;
   overflow: hidden;
@@ -2456,61 +2506,56 @@ figure.embedded.video iframe {
   font-size: .7rem;
   line-height: 1.2;
 }
-/* line 30, ../sass/modules/user_profile/_user_profile.scss */
+/* line 34, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name {
   font-size: .9rem;
 }
-/* line 33, ../sass/modules/user_profile/_user_profile.scss */
+/* line 37, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar, .h-card .prof-img-hold {
   float: left;
 }
-/* line 35, ../sass/modules/user_profile/_user_profile.scss */
+/* line 39, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar a, .h-card .prof-img-hold a {
   display: block;
 }
-/* line 42, ../sass/modules/user_profile/_user_profile.scss */
+/* line 46, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 45, ../sass/modules/user_profile/_user_profile.scss */
+/* line 49, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 47, ../sass/modules/user_profile/_user_profile.scss */
+/* line 51, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 54, ../sass/modules/user_profile/_user_profile.scss */
+/* line 58, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 58, ../sass/modules/user_profile/_user_profile.scss */
+/* line 62, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 62, ../sass/modules/user_profile/_user_profile.scss */
+/* line 66, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-org:before {
   content: "\20\2014\20";
 }
-/* line 68, ../sass/modules/user_profile/_user_profile.scss */
+/* line 72, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
 
-/* line 74, ../sass/modules/user_profile/_user_profile.scss */
+/* line 78, ../sass/modules/user_profile/_user_profile.scss */
 .profile > h3 {
   display: none;
 }
-/* line 77, ../sass/modules/user_profile/_user_profile.scss */
+/* line 81, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul {
   list-style-type: none;
   padding: 0;
-}
-/* line 81, ../sass/modules/user_profile/_user_profile.scss */
-.profile li {
-  margin-bottom: .5em;
-  text-indent: 0;
-  margin-left: 0;
+  margin-top: 0;
 }
 /* line 86, ../sass/modules/user_profile/_user_profile.scss */
 .profile h2 {
@@ -2525,11 +2570,17 @@ figure.embedded.video iframe {
   line-height: 1.1;
 }
 /* line 95, ../sass/modules/user_profile/_user_profile.scss */
+.profile header.h-card li {
+  margin-bottom: .5em;
+  text-indent: 0;
+  margin-left: 0;
+}
+/* line 100, ../sass/modules/user_profile/_user_profile.scss */
 .profile header.h-card .u-photo {
   float: left;
   margin: 0 .5em .1em 0;
 }
-/* line 100, ../sass/modules/user_profile/_user_profile.scss */
+/* line 105, ../sass/modules/user_profile/_user_profile.scss */
 .profile header.h-card .p-name {
   font-size: 2rem;
   padding: 0;
@@ -2537,56 +2588,56 @@ figure.embedded.video iframe {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 108, ../sass/modules/user_profile/_user_profile.scss */
+/* line 113, ../sass/modules/user_profile/_user_profile.scss */
 .profile header.h-card .p-country-name:before {
   content: ",\20";
 }
-/* line 118, ../sass/modules/user_profile/_user_profile.scss */
+/* line 123, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author {
   font-style: italic;
 }
-/* line 120, ../sass/modules/user_profile/_user_profile.scss */
+/* line 125, ../sass/modules/user_profile/_user_profile.scss */
 .profile .author:before {
   content: "\2014\20";
 }
-/* line 126, ../sass/modules/user_profile/_user_profile.scss */
+/* line 131, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info {
   clear: left;
 }
-/* line 129, ../sass/modules/user_profile/_user_profile.scss */
+/* line 134, ../sass/modules/user_profile/_user_profile.scss */
 .profile .contact-info li {
   display: inline-block;
   margin-right: 1%;
   line-height: 1.6;
 }
-/* line 136, ../sass/modules/user_profile/_user_profile.scss */
+/* line 141, ../sass/modules/user_profile/_user_profile.scss */
 .profile ul.Tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 140, ../sass/modules/user_profile/_user_profile.scss */
+/* line 145, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card {
   display: inline-block;
   width: 32.6667%;
 }
-/* line 143, ../sass/modules/user_profile/_user_profile.scss */
+/* line 148, ../sass/modules/user_profile/_user_profile.scss */
 .profile .following li.h-card > a {
   display: block;
 }
 @media (min-width: 50.0625em) {
-  /* line 153, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 158, ../sass/modules/user_profile/_user_profile.scss */
   .profile section {
     max-width: 35.72245em;
     float: left;
     margin: 0 1em 1em 0;
     padding: 0 1em;
   }
-  /* line 159, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 164, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside {
     background-color: #ffe3d8;
     margin-top: 1em;
   }
-  /* line 162, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 167, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > h2 {
     color: #e9e9e9;
     background: #e55769;
@@ -2595,55 +2646,55 @@ figure.embedded.video iframe {
     font-size: 1.3rem;
     padding: .5em;
   }
-  /* line 170, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 175, ../sass/modules/user_profile/_user_profile.scss */
   .profile aside > ul {
     padding: .5em;
     margin: 0;
   }
-  /* line 175, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 180, ../sass/modules/user_profile/_user_profile.scss */
   .profile .following li.h-card {
     float: left;
     width: 50%;
   }
-  /* line 180, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 185, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     margin-bottom: 0;
     float: none;
     text-indent: 0;
   }
-  /* line 184, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 189, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-indent: .25em;
     color: #5288af;
   }
-  /* line 188, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 193, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover {
     text-decoration: none;
   }
-  /* line 190, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 195, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a:hover span {
     text-decoration: underline;
     color: #196195;
   }
-  /* line 195, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 200, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a span {
     display: inline-block;
   }
 }
 
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 204, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 209, ../sass/modules/user_profile/_user_profile.scss */
   .profile {
     padding: 0 3%;
   }
-  /* line 207, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 212, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li {
     display: inline-block;
     margin-right: 1%;
     font-size: 1.4em;
   }
-  /* line 211, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 216, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li a {
     width: auto;
     text-align: center;
@@ -2690,7 +2741,7 @@ figure.embedded.video iframe {
     background-image: -moz-linear-gradient(45deg, #d7d7d7, #dedede);
     background-image: linear-gradient(45deg, #d7d7d7, #dedede);
   }
-  /* line 214, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 219, ../sass/modules/user_profile/_user_profile.scss */
   .profile .contact-info li span {
     display: none;
   }

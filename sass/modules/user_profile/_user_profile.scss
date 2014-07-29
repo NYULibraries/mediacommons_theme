@@ -74,18 +74,6 @@
     >h3 {
         display: none;
     }
-    header {
-        margin-bottom: 1em;
-        padding: 0;
-        .u-photo {
-            float: left;
-            margin: 0 .5em 1em 0;
-            @extend %user-photo-treatment;
-        }
-        .p-name {
-            font-size: 2em;
-        }
-    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -95,13 +83,32 @@
         text-indent: 0;
         margin-left: 0;
     }
-    h1 {
-        margin-bottom: .2em;
-        color: nth($black, 1);
-    }
     h2 {
         margin-top: 2rem;
         margin-bottom: .7em;
+    }
+    header.h-card {
+        margin-bottom: 1em;
+        padding: 0;
+        font-size: 1rem;
+        line-height: 1.1;
+        .u-photo {
+            float: left;
+            margin: 0 .5em .1em 0;
+            @extend %user-photo-treatment;
+        }
+        .p-name {
+            font-size: 2rem;
+            padding: 0;
+            margin-top: .5rem;
+            margin-bottom: .2em;
+            color: nth($black, 1);
+        }
+        .p-country-name {
+            &:before {
+                content: ",\20";
+            }
+        }
     }
     .following {
         @extend %clearfix;
@@ -116,9 +123,13 @@
        
         }
     }
+    .contact-info {
+        clear: left;
+    }
     .contact-info li {
         display: inline-block;
         margin-right: 1%;
+        line-height: 1.6;
         a {}
         span {}
     }

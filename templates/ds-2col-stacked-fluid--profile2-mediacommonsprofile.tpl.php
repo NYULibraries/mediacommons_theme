@@ -5,19 +5,20 @@
  * Display Suite 2 column stacked template.
  */
 ?>
-<<?php print $layout_wrapper; print $layout_attributes; ?> class="ds-2col-stacked <?php print $classes;?> clearfix">
+<<?php print $layout_wrapper; print $layout_attributes; ?> class="profile <?php print $classes;?> clearfix">
 
   <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <?php print "<header>"; ?>
+  <?php print '<header class="h-card">'; ?>
     <?php print $header; ?>
   <?php print "</header>"; ?>
 
-  <<?php print $left_wrapper ?> class="spoke-body <?php print $left_classes; ?>">
+  <<?php print $left_wrapper ?> class="<?php print $left_classes; ?>">
     <?php print $left; ?>
   </<?php print $left_wrapper ?>>
+
 
 
     <?php print $right; ?>

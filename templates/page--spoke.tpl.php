@@ -34,7 +34,7 @@
       <?php print $messages; ?>
   <?php endif; ?>
 
-  <article id="content">
+  <article role="article" class="spoke">
     <?php print render($page['content']); ?>
   </article>
  

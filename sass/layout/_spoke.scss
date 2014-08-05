@@ -1,132 +1,112 @@
 //////////////////////////////
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
-
-[role="article"].spoke { 
-  .vcard {
-    display: block;
-  }
-  section.video > figure.video {
-    clear: both;
-    float: left;
-  }  
-  @include respond-to("not desktop") {
-    section.video.part-of-hub {
-      padding-top: 1em;
+[role="article"].spoke {
+    header {
+        margin: 0 0 1em 0;
+        h1 {
+            margin: .5em 0 .33em 0;
+        }
     }
-  }
-  @include respond-to("mobile-lh") {
-  }
+    .vcard {
+        display: block;
+    }
+    section.video > figure.video {
+        clear: both;
+        float: left;
+    }
+    @include respond-to("mobile tablet") {
+        section.video.part-of-hub {
+            padding-top: 1em;
+        }
+    }
 }
 
 section.video.part-of-hub {
-  @extend %clearfix; // https://github.com/team-sass/toolkit#clearfix
+    @extend %clearfix;
+    // https://github.com/team-sass/toolkit#clearfix
 }
 
-@include respond-to('desktop') {
-  .spoke-body, section.curators-note, section.comments {
-    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-    float: left;
-    margin: 0 1em 1em 0;
-  }
-  [role="complementary"] {
-    width: ms(12);  // width of the side content — see modular scale notes in base/typography/_typography_variables
-    float: right;
-    ul[role="menu"] {
-      li {
-       > a:first-child {
-         width: 25%;
-       } 
-       > h3 {
-         width: 75%;
+
+
+
+@include respond-to("tabletxxx") {
+    
+    section.curators-note {
+        .text-body {
+            margin-top: 1.5em;
+            //text-align: justify;
+            @include column-count(2);
+            @include column-gap(1.5em);
+            p {
+                text-indent: 1em;
+                &:first-child {
+                    text-indent: 0;
+                    margin: 0 0 1em 0;
+                }
+            }
         }
-      }
+        margin: 0 1em 1em 0;
     }
-  }
+    
 }
 
-@include respond-to('tablet') {
-  [role="article"].spoke > header, 
-  section.curators-note {
-    padding: 0 2.5%;
-  }
-  section.curators-note {
-    .text-body {
-      margin-top: 1.5em;
-      //text-align: justify;
-      @include column-count(2);
-      @include column-gap(1.5em);
-      p {
-        text-indent: 1em;
-        &:first-child {
-          text-indent: 0;
-          margin: 0 0 1em 0;
+
+@include respond-to("mobilex") {
+    [role="article"].spoke > header,
+    section.curators-note,
+    .comments article {
+        padding: 0 3.5%;
+    }
+    [role="complementary"] {
+        clear: left;
+        ul[role="menu"] {
+            li {
+                > a:first-child {
+                    width: 20%;
+                }
+                > h3 {
+                    width: 80%;
+                }
+            }
         }
-      }
     }
-    margin: 0 1em 1em 0;
-  }
-  [role="complementary"] { 
-    clear: left;
-    ul[role="menu"] {
-      li {
-       > a:first-child {
-         width: 12%;
-       } 
-       > h3 {
-         width: 88%;
-        }
-      }
-    }
-  }
-}
-
-@include respond-to('mobile') {
-  [role="article"].spoke > header, 
-  section.curators-note, 
-  .comments article {
-    padding: 0 3.5%;
-  }
-  [role="complementary"] { 
-    clear: left;
-    ul[role="menu"] {
-      li {
-       > a:first-child {
-         width: 20%;
-       } 
-       > h3 {
-         width: 80%;
-        }
-      }
-    }
-  }
-}
-
-.spoke .comments {
-  > h2 {
-    padding: .5em;
-    background: nth($secondary, 4);
-  }
-  @include respond-to('desktop') {
-    float: right;
-    max-width: ms(12);  // see modular scale notes in base/typography/_typography_variables
-    article {
-      @include type-size($body-font-size - 1, $body-line-height - .1); // 16px
-    }
-  }
-  @include respond-to('tablet') {
-    clear: left;
-    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-    article { 
-      @include type-size($body-font-size - 2, $body-line-height - .1); // 16px
-    }
-  }
 }
 
 
-@include respond-to('narrow content') {
-  section.curators-note {
-    @include column-count(1);
-    max-width: ms(14);  // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-  }
+// .spoke .comments {
+//     > h2 {
+//         padding: .5em;
+//         background: nth($secondary, 4);
+//     }
+//     @include respond-to("desktop") {
+//         float: right;
+//         max-width: ms(12);
+//         // see modular scale notes in base/typography/_typography_variables
+//         article {
+//             @include type-size($body-font-size - 1, $body-line-height - 0.1);
+//             // 16px
+       
+//         }
+//     }
+
+//     @include respond-to("tablet") {
+//         clear: left;
+//         max-width: ms(14);
+//         // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
+//         article {
+//             @include type-size($body-font-size - 2, $body-line-height - 0.1);
+//             // 16px
+       
+//         }
+//     }
+// }
+
+@include respond-to("narrow contentx") {
+    section.curators-note {
+        @include column-count(1);
+        max-width: ms(14);
+        // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
+   
+    }
 }

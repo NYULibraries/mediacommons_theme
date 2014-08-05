@@ -22,14 +22,14 @@
   max-width: 100%; 
   padding: 16% 0 9% 0;
   display: block; 
-  margin: 0 0 .25em 0; 
+  margin: 0 0 .25em -10px; 
   background: image-url('mc-logos/mediacommons-logos.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
-  .front & {
-     width: 14em;
-  }
+  // .front & {
+  //    width: 14em;
+  // }
   .no-svg & { // png fallback Note: relies on modernizer svg test
     background-image: image-url('mc-logos/mediacommons-logos.png');
   }

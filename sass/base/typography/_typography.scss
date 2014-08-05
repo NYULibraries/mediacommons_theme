@@ -80,7 +80,8 @@ hr {
 }
 
 p, ul, ol, hr, table, form, fieldset {
-    @include margin-padding(margin, $element-margin);
+  //  @include margin-padding(margin, $element-margin);
+    margin: 0 0 1em 0 ;
 }
 
 li {
@@ -117,7 +118,8 @@ article > p,
 article section > p {
     @include type-size($article-font-size, $article-line-height);
     word-spacing: $article-word-spacing;
-    @include margin-padding(margin, $article-margin);
+    // @include margin-padding(margin, $article-margin);
+    margin-top: 0;
     /*  Does this improve the reading experience?
       -webkit-hyphens: auto;
       -moz-hyphens: auto;

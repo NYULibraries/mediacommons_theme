@@ -31,7 +31,6 @@ h2.block-title {
         padding-left: 0;
     }
     .p-job-title, .p-org, .views-label-field-research-interests {
-        // background-color: red;
         display: inline-block;
         // padding: .2em .2em .2em 0;
         line-height: 1.4;
@@ -43,10 +42,16 @@ h2.block-title {
     width: auto;
     overflow: hidden;
     padding: .5rem .5rem .5rem 1rem;
-    font-size: .7rem;
+    font-size: .9rem;
+    [role="complementary"] & {
+        font-size: .7rem;
+    }
     line-height: 1.2;
     .p-name {
-        font-size: .9rem;
+        font-size: 1.1rem;
+        [role="complementary"] & {
+            font-size: .9rem;
+        }
     }
     .field-user-avatar, .prof-img-hold {
         float: left;
@@ -106,11 +111,6 @@ h2.block-title {
         padding: 0;
         font-size: 1rem;
         line-height: 1.1;
-        li {
-            margin-bottom: .5em;
-            text-indent: 0;
-            margin-left: 0;
-        }
         .u-photo {
             float: left;
             margin: 0 .5em .1em 0;
@@ -129,10 +129,19 @@ h2.block-title {
             }
         }
     }
-    .following {
-        @extend %clearfix;
-        // https://github.com/team-sass/toolkit#clearfix
-   
+    .contact-info {
+        clear: left;
+        margin-top: 1em;
+    }
+    .contact-info li {
+        display: inline-block;
+        margin-right: 1%;
+        line-height: 1.6;
+    }
+    li {
+        margin-bottom: .5em;
+        text-indent: 0;
+        margin-left: 0;
     }
     .author {
         font-style: italic;
@@ -142,33 +151,16 @@ h2.block-title {
        
         }
     }
-    .contact-info {
-        clear: left;
-    }
-    .contact-info li {
-        display: inline-block;
-        margin-right: 1%;
-        line-height: 1.6;
-        a {}
-        span {}
-    }
     ul.tags li:first-child {
         display: inline-block;
         padding: 0;
-    }
-    .following li.h-card {
-        display: inline-block;
-        width: 32.6667%;
-        > a {
-            display: block;
-        }
     }
     aside {
         @extend %clearfix;
         // https://github.com/team-sass/toolkit#clearfix
    
     }
-    @include respond-to("full navigation") {
+    @include respond-to("wide") {
         section.comments, section {
             max-width: ms(14);
             float: left;
@@ -178,17 +170,13 @@ h2.block-title {
         [role="complementary"] {
             // width of the side content — see modular scale notes in base/typography/_typography_variables
             float: left;
-            max-width: ms(12);
+            // max-width: ms(12);
             padding: 0;
             margin-top: 1em;
             > ul {
                 padding: .5em;
                 margin: 0;
             }
-        }
-        .following li.h-card {
-            float: left;
-            width: 50%;
         }
         .contact-info {
             li {
@@ -197,13 +185,19 @@ h2.block-title {
                 text-indent: 0;
                 a {
                     width: auto;
-                    text-indent: .25em;
-                    color: nth($mc-blue, 2);
-                    &:hover {
+                    text-indent: .1em;
+                    // color: nth($mc-blue, 2);
+                    // color: nth($primary, 2);
+                    &.u-email {
+                        text-indent: .2em;
+                    }
+                    &:hover, &:visited {
                         text-decoration: none;
                         span {
                             text-decoration: underline;
-                            color: nth($mc-blue, 1);
+                            // color: nth($mc-blue, 1);
+                            // color: nth($primary, 1);
+                       
                         }
                     }
                     span {
@@ -213,21 +207,31 @@ h2.block-title {
             }
         }
     }
-}
 
-.profile {
-    @include respond-to("narrow navigation") {
-        padding: 0 3%;
-        .contact-info li {
-            display: inline-block;
-            margin-right: 1%;
-            font-size: 1.4em;
-            a {
-                @include button;
+    @include respond-to("mobile tablet") {
+        .contact-info {
+            margin-top: 2em;
+            display: table;
+            width: 100%;
+            li {
+                // display: inline-block;
+                padding: 0 2% 0 0;
+                font-size: 1.4em;
+                display: table-cell;
+                &:last-child {
+                    padding: 0;
+                }
+                a {
+                    @include button;
+                    display: block;
+                }
+                span {
+                    display: none;
+                }
             }
-            span {
-                display: none;
-            }
+        }
+        [role="complementary"] {
+            margin: 1em 0 2em;
         }
     }
 }

@@ -21,11 +21,10 @@
   <?php endif; ?>
 
 <main role="main">
-
+<div id="content">
   <?php if ($tabs = render($tabs)): ?>
   <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>
-
 
   <?php if (isset($page['highlighted'])) : ?>
             <div id="highlighted"><?php print render($page['highlighted']); ?></div>
@@ -36,20 +35,14 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
-<div id="content">
-
-    <?php  
-    print render($page['homepage_top']);
-    print render($page['homepage_bottom']);
-   ?> 
+<article  class="toc" role="directory">
+  <?php print render($page['content']); ?> 
+  </article>
 </div>
-  <?php if (isset($page['homepage_sidebar'])) : ?>
-          <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
-  <?php endif; ?> 
-
-  
-
-  </main>
+ <?php if (isset($page['sidebar_first'])) : ?>
+          <aside role="complementary"><?php print render($page['sidebar_first']); ?>
+          </aside>
+  <?php endif; ?> </main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>
@@ -58,7 +51,3 @@
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
     <?php print render($page['footer']); ?> 
 <?php endif; ?>
- 
-   
-
-

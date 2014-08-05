@@ -11,22 +11,24 @@
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
 
-  <?php print '<header class="h-card">'; ?>
+  <?php print '<header class="h-card vcard">'; ?>
     <?php print $header; ?>
   <?php print "</header>"; ?>
 
-  <<?php print $left_wrapper ?> class="<?php print $left_classes; ?>">
+  
     <?php print $left; ?>
-  </<?php print $left_wrapper ?>>
+ 
 
 
-
+<!--  <section class="rightside"> -->
     <?php print $right; ?>
+<!-- </section> -->
 
-
+<?php if (!empty($footer)): ?>
   <<?php print $footer_wrapper ?> class="<?php print $footer_classes; ?>">
-    <?php print $footer; ?>
+    <?php  print $footer; ?>
   </<?php print $footer_wrapper ?>>
+<?php endif; ?>
 
 </<?php print $layout_wrapper ?>>
 

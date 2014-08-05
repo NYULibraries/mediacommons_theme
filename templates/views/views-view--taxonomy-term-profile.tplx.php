@@ -15,10 +15,8 @@
       <?php print $header; ?>
     </header>
   <?php endif; ?>
-  
-    
-<?php foreach ($rows as $id => $row): ?>
-	<div class="h-card vcard">
+  <?php foreach ($rows as $row): ?>
+	<div class="h-card vcard">asdfdsaf
     <?php print $row; ?>
-</div>
-<?php endforeach; ?>
+	</div>
+<?php endforeach; 

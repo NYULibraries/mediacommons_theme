@@ -20,10 +20,24 @@
         font-size: 1rem;
     }
 }
+
 h2.block-title {
     font-size: 1.5rem;
     margin-bottom: .5rem;
 }
+
+.page-taxonomy {
+    .h-card {
+        padding-left: 0;
+    }
+    .p-job-title, .p-org, .views-label-field-research-interests {
+        // background-color: red;
+        display: inline-block;
+        // padding: .2em .2em .2em 0;
+        line-height: 1.4;
+    }
+}
+
 /* for contributors lists as well as profile */
 .h-card {
     width: auto;
@@ -138,7 +152,7 @@ h2.block-title {
         a {}
         span {}
     }
-    ul.Tags li:first-child {
+    ul.tags li:first-child {
         display: inline-block;
         padding: 0;
     }
@@ -155,23 +169,18 @@ h2.block-title {
    
     }
     @include respond-to("full navigation") {
-        section {
+        section.comments, section {
             max-width: ms(14);
             float: left;
-            margin: 0 1em 1em 0;
-            padding: 0 1em;
+            margin: 0 2em 1em 0;
+            padding: 0 1em 0 0;
         }
-        aside {
-            background-color: nth($quadrary, 5);
+        [role="complementary"] {
+            // width of the side content — see modular scale notes in base/typography/_typography_variables
+            float: left;
+            max-width: ms(12);
+            padding: 0;
             margin-top: 1em;
-            > h2 {
-                color: nth($black, 6);
-                background: nth($tertiary, 2);
-                margin: 0;
-                font-size: 15px;
-                font-size: 1.3rem;
-                padding: .5em;
-            }
             > ul {
                 padding: .5em;
                 margin: 0;

@@ -3,139 +3,45 @@
 //////////////////////////////
 
 // Move to Taxonomy module?
-
-ul.Tags {
-  padding: 0;
-  li {
-    display: inline-block;
-    list-style-type: none;
-    line-height: 2.25em;
-    margin-right: 10px;
-    &:first-child {
-      display: block;
-      padding: 0 0 1em 0;
+.tags-block-spoke {
+    margin-top: 2em;
+    h2 {
+        color: nth($black, 2);
+        margin: 0;
+        font-size: 18px;
+        font-size: 1.5rem;
     }
-    &:last-child {
-      margin-right: 0px;
-    }
-    a {
-      @include border-radius(5px);
-      padding: 4px 8px;
-      @include background-image(linear-gradient(top, nth($black, 5), darken(nth($black, 5), 5%)));
-    }
-  }
 }
 
-//@mixin blockquotes {
-//  &.mc  { @include blockquote($blue_mc); }
-//  &.imr   { @include blockquote($orange_imr); }
-//  &.mcp { @include blockquote($green_mcp); }
-//  &.tne { @include blockquote($aqua_tne); }
-//  &.ac { @include blockquote($red_ac); }
-//}
-//
-//@mixin blockquote($bgcolor) {
-//  blockquote{
-//    border-top:none;
-//    border-bottom:none;
-//    border-left:4px solid $grey;
-//    @include border-radius(0);
-//    margin-left:0;
-//    line-height:1.25em;
-//    color:darken($bgcolor,10%);
-//  }
-//  
-//}
+/* taxonomy page */
+.page-taxonomy .term-listing-heading {
+    .page-title, .label-inline {
+        display: inline-block;
+        @include type-size($h1-font-size, $h1-line-height);
+        margin-top: 0;
+          color: $h1-color;
+    }
+}
 
-
-
-//
-//ul.spokes {
-//  padding:0;
-//  li {
-//    margin:0;
-//    text-indent:0;
-//    list-style-type: none;
-//    border-bottom:1px solid $grey;
-//    padding:.25em 0;
-//    a {
-//      border-bottom:none;
-//    }
-//  }
-//}
-//
-//.node-form {
-//    font-size:.9em;
-//  }
-//
-//.node-hub {
-//  .image {
-//    display: inline-block;
-//    float: left;
-//    margin-bottom: 1em;
-//    width:38.5%;
-//    img {
-//      width: 100%;
-//      vertical-align: top;
-//    }
-//  }
-//  .description {
-//    width: 58.5%;
-//    float: right;
-//    display: inline-block;
-//    text-align:justify;
-//    p {
-//      margin-top:0;
-//    }
-//    .contributors {
-//      //border: 1px solid #ebebeb;
-//      //@include radius($button-radius);
-//      //background: #f8f8f8;
-//      padding: 1em;
-//      display: block;
-//      overflow: hidden;
-//      margin-top: 1em;
-//    }
-//  }
-//}
-//
-//.node-hub, .node-spoke {
-//  p {
-//    margin: 0 0 1.25em 0
-//  }
-//  ul {
-//    padding:0;
-//  }
-//}
-//
-//.node-spoke {
-//  .content {
-//    img {
-//      width:100%;
-//      max-width:100%;
-//    }
-//  }
-//}
-//
-//.marker {
-//  color: black;
-//  background: yellow;
-//  font-size: .8em;
-//  padding: .25em .5em;
-//  text-transform: uppercase;
-//  font-family: "Myriad Pro";
-//  display:inline-block;
-//  line-height:1em;
-//}
-//
-//.tease {
-//  //border-top:1px solid #ccc;
-//  //margin-top:1em;
-//}
-//
-//.field-name-field-tags {
-//  border-top: 1px solid #333;
-//  border-bottom: 1px solid #333;
-//  margin-bottom: 1em;
-//}
-//
+ul.tags {
+    padding: 0;
+    margin-top: .5em;
+    li {
+        display: inline-block;
+        list-style-type: none;
+        line-height: 2.25em;
+        margin-right: 10px;
+        &:first-child {
+            // display: block;
+            padding: 0 0 1em 0;
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        a {
+            @include border-radius(5px);
+            padding: 4px 8px;
+            @include background-image(linear-gradient(top, lighten(nth($black, 5), 7%), lighten(nth($black, 5), 5%)));
+        }
+    }
+}

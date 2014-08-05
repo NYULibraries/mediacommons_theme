@@ -222,4 +222,34 @@ function tne_field__minimal__field_telephone__mediacommonsprofile ($vars) {
 function tne_field__minimal__post_date ($vars) {
   return '<time>' . $vars[items][0]['#markup'] . '</time>';
 }
-
+function tne_field__minimal__field_research_interests__mediacommonsprofile($vars){
+  $output = '<aside role="complementary" class="research_interests">';
+   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
+  foreach (element_children($vars['items']) as $key) {
+      $output .= '<li><a href="' . $vars['items'][$key]['#href'] . '">';
+      $output .= $vars['items'][$key]['#title'];
+     $output .= '</a></li>';
+  }
+   $output .= '</ul></aside>';
+   return $output;
+}
+function tne_field__minimal__field_bio__mediacommonsprofile($vars){
+  $output = '<aside role="complementary" class="bio"><header>';
+  $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
+  $output .=  $vars[items][0]['#markup'];
+  $output .= '</div></aside>';
+   return $output;
+}
+function tne_field__minimal__field_tags($vars){
+  //dpm($vars);
+  $output = '<div class="tags-block-spoke">' ;
+   $output .= '<h2>' . $vars['label'] . '</h2><ul class="tags">';
+  foreach (element_children($vars['items']) as $key) {
+      $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+      $output .= $vars['items'][$key]['#title'];
+     $output .= '</a></li>';
+  }
+   $output .= '</ul></div>';
+   return $output;
+}
+//field--field-tags.tpl.php

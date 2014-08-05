@@ -25,6 +25,6 @@
  */
 ?>
 
-<dl<?php print $attributes; ?>>
-  <?php print $profile_items; ?>
-</dl>
+
+<?php print $profile_items; ?>
+

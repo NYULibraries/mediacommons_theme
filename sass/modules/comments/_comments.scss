@@ -5,6 +5,12 @@
 .comments {
     margin-bottom: 2em;
     line-height: 1.2;
+    .title {
+        color: nth($black, 2);
+        margin: 0;
+        font-size: 20px;
+        font-size: 1.9rem;
+    }
     article {
         padding: 2.5%;
         border: transparent 1px solid;
@@ -22,7 +28,6 @@
         padding: 2.5% 0;
         border-bottom: 1px solid nth($secondary, 4);
         line-height: 1.3;
-       
         .views-field-created {
             font-style: italic;
             font-size: .7rem;
@@ -30,19 +35,18 @@
             color: nth($black, 2);
             display: inline-block;
             &:before {
-            content: "\20\2014\20";
-            // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-       
-        }
+                content: "\20\2014\20";
+                // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+           
+            }
         }
         .views-field-subject {
             font-size: .9rem;
-            
             // margin: .3rem 0 .2rem;
             display: inline-block;
         }
-         .views-field-title {
-            margin: .2rem 0 ;
+        .views-field-title {
+            margin: 0.2rem 0;
             font-size: .7rem;
             color: nth($black, 2);
             .field-content {}

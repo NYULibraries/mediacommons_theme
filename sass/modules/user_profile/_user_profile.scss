@@ -138,11 +138,6 @@ h2.block-title {
         margin-right: 1%;
         line-height: 1.6;
     }
-    li {
-        margin-bottom: .5em;
-        text-indent: 0;
-        margin-left: 0;
-    }
     .author {
         font-style: italic;
         &:before {
@@ -160,16 +155,67 @@ h2.block-title {
         // https://github.com/team-sass/toolkit#clearfix
    
     }
+    & li.views-row-first {
+        padding: 0 0 2.5%  0;
+    }
+    .leftside li {
+        margin-bottom: .5em;
+        text-indent: 0;
+        margin-left: 0;
+        padding: 2.5% 0;
+        border-bottom: 1px solid nth($secondary, 4);
+        line-height: 1.3;
+        .views-field-created {
+            font-style: italic;
+            font-size: .7rem;
+            // margin: .3rem 0 .2rem;
+            color: nth($black, 2);
+            display: inline-block;
+            &:before {
+                content: "\20\2014\20";
+                // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+           
+            }
+        }
+        .views-field-title {
+            margin: 0.2rem 0;
+            font-size: .9rem;
+            color: nth($black, 2);
+        }
+        &.comment {
+            .views-field-title {
+                margin: 0.2rem 0;
+                font-size: .7rem;
+                color: nth($black, 2);
+            }
+        }
+        .views-field-subject {
+            font-size: .9rem;
+            // margin: .3rem 0 .2rem;
+            display: inline-block;
+        }
+        .views-field-comment-body {
+            font-size: .7rem;
+            line-height: 1.4;
+            margin: 0.8rem 0 0 0;
+            p {
+                margin: 0.3em 0 0 0;
+            }
+        }
+    }
     @include respond-to("wide") {
-        section.comments, section {
-            max-width: ms(14);
+        .leftside {
+            width: 60%;
             float: left;
-            margin: 0 2em 1em 0;
+        }
+        section.comments, section {
             padding: 0 1em 0 0;
+            margin: 0 2em 1em 0;
+            max-width: ms(14);
         }
         [role="complementary"] {
             // width of the side content — see modular scale notes in base/typography/_typography_variables
-            float: left;
+            float: right;
             // max-width: ms(12);
             padding: 0;
             margin-top: 1em;

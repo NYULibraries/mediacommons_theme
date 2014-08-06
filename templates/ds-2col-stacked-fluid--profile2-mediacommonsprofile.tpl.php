@@ -15,9 +15,9 @@
     <?php print $header; ?>
   <?php print "</header>"; ?>
 
-  
+  <div class="leftside">
     <?php print $left; ?>
- 
+ </div>
 
 
 <!--  <section class="rightside"> -->

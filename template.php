@@ -200,29 +200,29 @@ function mediacommons_preprocess_page( &$vars ) {
       }
   }
 }
-function tne_field__minimal__field_full_name__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_full_name__mediacommonsprofile ($vars) {
   return '<h1 class="p-name fn">' . $vars[items][0]['#markup'] . '</h1>';
 }
-function tne_field__minimal__field_skype__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_skype__mediacommonsprofile ($vars) {
   return '<li><a class="u-url url skype" href="skype:kfitz" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
 }
-function tne_field__minimal__field_twitter__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_twitter__mediacommonsprofile ($vars) {
   return '<li><a class="u-url url twitter" href="https://twitter.com/'.  $vars[items][0]['#markup']   . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
 }
-function tne_field__minimal__field_email__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_email__mediacommonsprofile ($vars) {
   return '<li><a class="u-email email"  href="mailto:" rel="external me"><span>' . $vars[element]['#object']->field_email[und][0][email] . '</span></a></li>';
 }
-function tne_field__minimal__field_url__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_url__mediacommonsprofile ($vars) {
   return '<li><a class="u-url url www"  href="'.  $vars[items][0]['#href'] . '" rel="external me"><span>' . $vars[items][0]['#title'] . '</span></a></li>';
 }
-function tne_field__minimal__field_telephone__mediacommonsprofile ($vars) {
+function mediacommons_field__minimal__field_telephone__mediacommonsprofile ($vars) {
   $phone = preg_replace('/\D+/', '', $vars[items][0]['#markup']);
   return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
 }
-function tne_field__minimal__post_date ($vars) {
+function mediacommons_field__minimal__post_date ($vars) {
   return '<time>' . $vars[items][0]['#markup'] . '</time>';
 }
-function tne_field__minimal__field_research_interests__mediacommonsprofile($vars){
+function mediacommons_field__minimal__field_research_interests__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="research_interests">';
    $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {
@@ -233,17 +233,17 @@ function tne_field__minimal__field_research_interests__mediacommonsprofile($vars
    $output .= '</ul></aside>';
    return $output;
 }
-function tne_field__minimal__field_bio__mediacommonsprofile($vars){
+function mediacommons_field__minimal__field_bio__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="bio"><header>';
   $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
   $output .=  $vars[items][0]['#markup'];
   $output .= '</div></aside>';
    return $output;
 }
-function tne_field__minimal__field_tags($vars){
+function mediacommons_field__minimal__field_tags($vars){
   //dpm($vars);
   $output = '<div class="tags-block-spoke">' ;
-   $output .= '<h2>' . $vars['label'] . '</h2><ul class="tags">';
+  $output .= '<h2>' . $vars['label'] . '</h2><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {
       $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
       $output .= $vars['items'][$key]['#title'];

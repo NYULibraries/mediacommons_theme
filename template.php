@@ -10,27 +10,27 @@
  */
 
 
-function babyzen_theme( &$existing, $type, $theme, $path ) {
+function mediacommons_theme( &$existing, $type, $theme, $path ) {
   $hooks = zen_theme( $existing, $type, $theme, $path );
 
   $hooks['user_login'] = array(
     'render element' => 'form',
     'template' => 'templates/user-login',
     'preprocess functions' => array(
-      'babyzen_preprocess_user_login'
+      'mediacommons_preprocess_user_login'
     ),
   );
   $hooks['user_register_form'] = array(
     'render element' => 'form',
     'template' => 'user-register-form',
     'preprocess functions' => array(
-      'babyzen_preprocess_user_register_form'
+      'mediacommons_preprocess_user_register_form'
     ),
   );
   return $hooks;
 }
 
-function babyzen_preprocess_html( &$vars ) {
+function mediacommons_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
 
   /*drupal_add_css(path_to_theme() . '/css/specialcase.css', array('group' => CSS_THEME));*/
@@ -43,7 +43,7 @@ function babyzen_preprocess_html( &$vars ) {
     unset($vars['classes_array'][$key]);
 }
 }
-function babyzen_preprocess_block( &$variables, $hook ) {
+function mediacommons_preprocess_block( &$variables, $hook ) {
   global $user;
   $block =& $variables['block'];
 
@@ -54,13 +54,13 @@ function babyzen_preprocess_block( &$variables, $hook ) {
     }
   }
 }
-function babyzen_preprocess_image_style(&$variables) {
+function mediacommons_preprocess_image_style(&$variables) {
     if ($variables['style_name'] == 'profile_page_pic') {
         $variables['attributes']['class'][] = 'u-photo photo';
     }
 }
 
-function babyzen_user_menu() {
+function mediacommons_user_menu() {
   $items['user/login'] = array(
     'title' => 'Join',
     'access callback' => 'user_is_anonymous',
@@ -69,7 +69,7 @@ function babyzen_user_menu() {
 
   return $items;
 }
-function babyzen_form_alter( &$form, &$form_state, $form_id ) {
+function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t("You may login with either your assigned username or your e-mail address.");
@@ -84,14 +84,14 @@ function babyzen_form_alter( &$form, &$form_state, $form_id ) {
     }
 
 }
-//function babyzen_preprocess_user_picture(&$vars) {
+//function mediacommons_preprocess_user_picture(&$vars) {
   //dpm($vars);
   //$vars['user_picture'] = 'z';
   //}
 /**
  * Implement template_preprocess_comment().
  */
-function babyzen_preprocess_comment(&$variables) {
+function mediacommons_preprocess_comment(&$variables) {
   $comment = $variables['elements']['#comment'];
   $node = $variables['elements']['#node'];
   $variables['comment'] = $comment;
@@ -180,14 +180,14 @@ function babyzen_preprocess_comment(&$variables) {
 /**
  * Implement hook_form_comment_form_alter().
  */
-function babyzen_form_comment_form_alter(&$form, &$form_state) {
+function mediacommons_form_comment_form_alter(&$form, &$form_state) {
   //dpm($form);
   $form['subject']['#size'] = "auto";
 } 
 
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
-function babyzen_preprocess_page( &$vars ) {
+function mediacommons_preprocess_page( &$vars ) {
   /** Remove logo */
   $vars['logo'] = null;
 

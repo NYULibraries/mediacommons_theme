@@ -224,32 +224,121 @@ function mediacommons_field__minimal__post_date ($vars) {
 }
 function mediacommons_field__minimal__field_research_interests__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="research_interests">';
-   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
+  $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {
-      $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
-      $output .= $vars['items'][$key]['#title'];
-     $output .= '</a></li>';
+    $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $output .= $vars['items'][$key]['#title'];
+    $output .= '</a></li>';
   }
-   $output .= '</ul></aside>';
-   return $output;
+  $output .= '</ul></aside>';
+  return $output;
 }
 function mediacommons_field__minimal__field_bio__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="bio"><header>';
   $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
   $output .=  $vars[items][0]['#markup'];
   $output .= '</div></aside>';
-   return $output;
+  return $output;
 }
 function mediacommons_field__minimal__field_tags($vars){
   //dpm($vars);
   $output = '<div class="tags-block-spoke">' ;
   $output .= '<h2>' . $vars['label'] . '</h2><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {
-      $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
-      $output .= $vars['items'][$key]['#title'];
-     $output .= '</a></li>';
+    $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $output .= $vars['items'][$key]['#title'];
+    $output .= '</a></li>';
   }
    $output .= '</ul></div>';
    return $output;
 }
 //field--field-tags.tpl.php
+/* navigation */
+
+function mediacommons_preprocess_menu_tree( &$variables ) {
+  $tree = new DOMDocument();
+  @$tree->loadHTML( $variables['tree'] );
+  $links = $tree->getElementsByTagname( 'li' );
+  foreach ( $links as $link ) {
+    $parentname = $link->getAttribute( 'data-menu-parent-name' );
+    $level = $link->getAttribute( 'data-level' );
+    break;
+  }
+  $variables['menu_parent_name'] = $parentname;
+  $variables['level'] = $level;
+}
+
+/**
+ * Implements hook_menu_tree().
+ */
+function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
+  $extra = '';
+  if ( $variables['level'] == "2" ) {
+    $extra = ' aria-hidden="true" style="display:none;"';
+  }
+  return '<ul role="menubar" class="' . $variables['menu_parent_name'] . ' level' . $variables['level'] . '"' . $extra . '>' . $variables['tree'] . '</ul>';
+}
+
+/**
+ * Implements hook_menu_link().
+ */
+function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
+  $element = $variables['element'];
+  // https://api.drupal.org/comment/11474#comment-11474
+  $name_id = strtolower( strip_tags( $element['#title'] ) );
+  // remove colons and anything past colons
+  if ( strpos( $name_id, ':' ) ) $name_id = substr( $name_id, 0, strpos( $name_id, ':' ) );
+  //Preserve alphanumerics, everything else goes away
+  $pattern = '/[^a-z]+/ ';
+  $name_id = preg_replace( $pattern, '', $name_id );
+  $element['#attributes']['class'][] = 'menu-' . $element['#original_link']['mlid'] . ' '.$name_id;//
+
+  //  Links
+  if ( $element['#original_link']['depth'] == '1' ) {
+    // List Items
+    if ( in_array( "first", $element['#attributes']['class'] ) ) {
+       // SITES NAV  --  LOGIN, MY ACCOUNT
+      // This sets the classes for the <li> tag
+      $element['#attributes']['class'][] = 'sites_nav';
+
+      // This sets the classes for the link itself
+      $element['#localized_options']['attributes']['class'][] = "logolink";
+      $element['#localized_options']['attributes']['class'][] = "mc-logo";
+      $element['#title'] = '<span>' . $element['#title'] . '</span>';
+    } else {
+      // USER UTILITIES --  LOGIN, MY ACCOUNT
+      $element['#attributes']['class'][] = 'utils' ;
+      $element['#attributes']['aria-haspopup'] = "true";
+      if ( $name_id == "myaccount" ) {
+        global $user, $base_path;
+        if ( user_is_anonymous() ) {
+          return;
+        }
+        $element['#attributes']['class'][] = 'logged-in' ;
+        $element['#localized_options']['attributes']['class'][] = "login-link";
+        $element['#title'] = $user->name;
+      } else {
+        $element['#attributes']['class'][] = 'logged-out' ;
+        $element['#localized_options']['attributes']['class'][] = "login-link";
+        $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+        $pop = '<ul class="login-area" aria-hidden="true" style="">
+        <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
+        return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
+      }
+    }
+    $element['#localized_options']['html'] = true;
+  } else if ( $element['#original_link']['depth'] == '2' ) {
+      $element['#localized_options']['attributes']['class'][] = "level2";
+    }
+  $sub_menu = '';
+  if ( $element['#below'] ) {
+    $sub_menu = drupal_render( $element['#below'] );
+  }
+  $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+  ////
+  // Define special variables for use in hook_menu_tree
+  $element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'] ;
+  $element['#attributes']['data-level'] = $element['#original_link']['depth'];
+  return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
+}
+

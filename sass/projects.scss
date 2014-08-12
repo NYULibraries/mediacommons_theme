@@ -1,0 +1,61 @@
+@import 'toolkit';
+@import "toolkit/colors";
+@import 'color-schemer';
+
+$map: (mc: #196195, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+$black-value: #333333;
+$black: tint-stack($black-value);
+
+@each $header, $col in $map {
+    /*   */
+  $primary-color: $col;
+  $cs-primary: $primary-color !global;
+  
+  // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+  $cs-scheme: tetrad !global;
+  
+  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $cs-hue-offset: 20 !global;
+  
+  // Options: 0-100;
+  $cs-brightness-offset: 0 !global;
+  
+  // Options: 0-100;
+  $cs-color-model: ryb !global;
+  $primary: tint-stack(cs-primary());
+  $secondary: tint-stack(cs-secondary());
+  $tertiary: tint-stack(cs-tertiary());
+  body.#{$header} {
+    a:link,
+    a:visited {
+        color:$col;
+    }
+    a[href]:hover,
+    a[href]:focus {
+      color: darken($col, 10%);
+      text-decoration: underline;
+    }
+    a[href]:active {
+      color: darken($col, 20%);
+    }
+    // .logo , h1 , h2 , h3  {
+    //   color: darken($col, 10%);
+    // }
+    [role="navigation"].main ul.main {
+      border-bottom: 1px solid nth($black, 3);
+      border-top: 1px solid nth($black, 3);
+      li {
+        font-size: .9em;
+      }
+    }
+   [role="complementary"] {
+        background-color: lighten(nth($tertiary, 5), 3%);
+        header {
+            background-color: nth($tertiary, 4);
+        }
+    }
+    
+  }
+  /*   */
+}
+

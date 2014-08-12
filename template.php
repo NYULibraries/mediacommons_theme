@@ -201,26 +201,28 @@ function mediacommons_preprocess_page( &$vars ) {
   }
 }
 function mediacommons_field__minimal__field_full_name__mediacommonsprofile ($vars) {
-  return '<h1 class="p-name fn">' . $vars[items][0]['#markup'] . '</h1>';
+   if (isset($vars['items'])) {
+    return '<h1 class="p-name fn">' . $vars['items'][0]['#markup'] . '</h1>';
+  }
 }
 function mediacommons_field__minimal__field_skype__mediacommonsprofile ($vars) {
-  return '<li><a class="u-url url skype" href="skype:kfitz" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+  return '<li><a class="u-url url skype" href="skype:kfitz" rel="me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__field_twitter__mediacommonsprofile ($vars) {
-  return '<li><a class="u-url url twitter" href="https://twitter.com/'.  $vars[items][0]['#markup']   . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+  return '<li><a class="u-url url twitter" href="https://twitter.com/'.  $vars['items'][0]['#markup']   . '" rel="me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__field_email__mediacommonsprofile ($vars) {
-  return '<li><a class="u-email email"  href="mailto:" rel="external me"><span>' . $vars[element]['#object']->field_email[und][0][email] . '</span></a></li>';
+  return '<li><a class="u-email email"  href="mailto:" rel="external me"><span>' . $vars['element']['#object']->field_email[und][0]['email'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__field_url__mediacommonsprofile ($vars) {
-  return '<li><a class="u-url url www"  href="'.  $vars[items][0]['#href'] . '" rel="external me"><span>' . $vars[items][0]['#title'] . '</span></a></li>';
+  return '<li><a class="u-url url www"  href="'.  $vars['items'][0]['#href'] . '" rel="external me"><span>' . $vars['items'][0]['#title'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__field_telephone__mediacommonsprofile ($vars) {
-  $phone = preg_replace('/\D+/', '', $vars[items][0]['#markup']);
-  return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars[items][0]['#markup'] . '</span></a></li>';
+  $phone = preg_replace('/\D+/', '', $vars['items'][0]['#markup']);
+  return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__post_date ($vars) {
-  return '<time>' . $vars[items][0]['#markup'] . '</time>';
+  return '<time>' . $vars['items'][0]['#markup'] . '</time>';
 }
 function mediacommons_field__minimal__field_research_interests__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="research_interests">';
@@ -236,7 +238,7 @@ function mediacommons_field__minimal__field_research_interests__mediacommonsprof
 function mediacommons_field__minimal__field_bio__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="bio"><header>';
   $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
-  $output .=  $vars[items][0]['#markup'];
+  $output .=  $vars['items'][0]['#markup'];
   $output .= '</div></aside>';
   return $output;
 }

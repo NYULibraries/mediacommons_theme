@@ -1,7 +1,11 @@
 //////////////////////////////
 // EXTENDABLES: Common reusable classes. Go extend yourself!
 //////////////////////////////
+%clearfix {
+    overflow:hidden;
+    width:auto;
 
+}
 %element-invisible {
     // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
     position: absolute !important;

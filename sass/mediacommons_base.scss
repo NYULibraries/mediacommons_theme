@@ -3,8 +3,13 @@ $breakpoint-no-query-fallbacks: false;
 @import 'toolkit';
 @import "compass/typography";
 @import "compass/css3";
+@import "compass/css3/deprecated-support";
 @import 'modular-scale';
 @import 'color-schemer';
+@import "breakpoint";
+
+//$breakpoint-legacy-syntax: true;
+
 
 @import "partials/_browsers";
 @import "partials/_colors";

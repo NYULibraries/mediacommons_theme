@@ -150,11 +150,7 @@ h2.block-title {
         display: inline-block;
         padding: 0;
     }
-    aside {
-        @extend %clearfix;
-        // https://github.com/team-sass/toolkit#clearfix
    
-    }
     & li.views-row-first {
         padding: 0 0 2.5%  0;
     }

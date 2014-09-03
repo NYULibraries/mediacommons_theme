@@ -1,6 +1,8 @@
 $breakpoint-no-query-fallbacks: false;
 
 @import 'toolkit';
+@import "compass/";
+@import "compass/reset";
 @import "compass/typography";
 @import "compass/css3";
 @import "compass/css3/deprecated-support";
@@ -24,6 +26,7 @@ $breakpoint-no-query-fallbacks: false;
 //@import "compass-pattern-primer";
 
 @import "_config";
+@import "layout/_reset";
 
 @import "base/page/_page";
 @import "base/forms/_forms";

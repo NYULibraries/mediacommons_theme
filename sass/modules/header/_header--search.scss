@@ -71,7 +71,7 @@ input[type="search"], input[name="search_block_form"] {
   }
   [role="search"] fieldset {
     clear: both;
-    background-color: nth($black, 3);
+    background-color: nth($black, 5);
     border: none;
     margin: 0;
     width: 100%;
@@ -87,7 +87,13 @@ input[type="search"], input[name="search_block_form"] {
   }
   input[type="search"] {
     width: 85%;
-    
+    padding: 8px;
+    font-size: 1.4rem;
+  }
+  input[type="submit"] {
+    height: 2.5em;
+    width:2.5em;
+    margin-top: 5px;
   }
   [role="search"] fieldset[aria-hidden="true"] {
     width: 15%; 

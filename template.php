@@ -17,16 +17,16 @@ function mediacommons_theme( &$existing, $type, $theme, $path ) {
     'render element' => 'form',
     'template' => 'templates/user-login',
     'preprocess functions' => array(
-      'mediacommons_preprocess_user_login'
+     // 'mediacommons_preprocess_user_login'
     ),
   );
-  $hooks['user_register_form'] = array(
-    'render element' => 'form',
-    'template' => 'user-register-form',
-    'preprocess functions' => array(
-      'mediacommons_preprocess_user_register_form'
-    ),
-  );
+  // $hooks['user_register_form'] = array(
+  //   'render element' => 'form',
+  //   'template' => 'user-register-form',
+  //   'preprocess functions' => array(
+  //     'mediacommons_preprocess_user_register_form'
+  //   ),
+  // );
   return $hooks;
 }
 
@@ -43,17 +43,7 @@ function mediacommons_preprocess_html( &$vars ) {
     unset($vars['classes_array'][$key]);
 }
 }
-function mediacommons_preprocess_block( &$variables, $hook ) {
-  global $user;
-  $block =& $variables['block'];
 
-  if ( $block->module == 'system' && $block->delta == 'user-menu' ) {
-    if ( user_is_logged_in() ) {
-      //dpm( $variables['content'] );
-      //$variables['content'] = check_plain($user->name) . $variables['content'];
-    }
-  }
-}
 function mediacommons_preprocess_image_style(&$variables) {
     if ($variables['style_name'] == 'profile_page_pic') {
         $variables['attributes']['class'][] = 'u-photo photo';
@@ -67,27 +57,32 @@ function mediacommons_user_menu() {
     'type' => MENU_DEFAULT_LOCAL_TASK,
   );
 
-  return $items;
+  // return $items;
 }
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t("You may login with either your assigned username or your e-mail address.");
+     $form['name']['#size'] = 28;
+ 
     $form['pass']['#attributes']['placeholder'] = t( 'Password' );
     $form['pass']['#description'] = t("The password field is case sensitive.");
+    $form['pass']['#size'] = 28;
     $form['actions']['submit']['#value'] = t("Login");
   } else if ( $form_id == 'search_block_form' ) {
       // HTML5 placeholder attribute
       $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
       //$form['search_block_form']['#type'] = 'search';
+   
       //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
+//dpm($form);
+      $form['#prefix'] = '';
+      $form['#suffix'] = '';
+
     }
 
 }
-//function mediacommons_preprocess_user_picture(&$vars) {
-  //dpm($vars);
-  //$vars['user_picture'] = 'z';
-  //}
+
 /**
  * Implement template_preprocess_comment().
  */
@@ -189,7 +184,7 @@ function mediacommons_form_comment_form_alter(&$form, &$form_state) {
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function mediacommons_preprocess_page( &$vars ) {
   /** Remove logo */
-  $vars['logo'] = null;
+  // $vars['logo'] = null;
 
   if (isset($vars['node'])) {
     // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
@@ -224,6 +219,52 @@ function mediacommons_field__minimal__field_telephone__mediacommonsprofile ($var
 function mediacommons_field__minimal__post_date ($vars) {
   return '<time>' . $vars['items'][0]['#markup'] . '</time>';
 }
+
+// function mediacommons_form_element($variables) {
+//   $element = &$variables['element'];
+//   //dpm($element);
+//   // This function is invoked as theme wrapper, but the rendered form element
+//   // may not necessarily have been processed by form_builder().
+
+//   if ($element['#id'] == 'search-block-form'){
+//     $output = '';
+//     $element += array(
+//       '#title_display' => 'before',
+//     );
+
+//     // Add element #id for #type 'item'.
+//     if (isset($element['#markup']) && !empty($element['#id'])) {
+//       $attributes['id'] = $element['#id'];
+//     }
+//     // If #title is not set, we don't display any label or required marker.
+//     if (!isset($element['#title'])) {
+//       $element['#title_display'] = 'none';
+//     }
+//     $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+//     $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+
+//     switch ($element['#title_display']) {
+//       case 'before':
+//       case 'invisible':
+//         $output .= ' ' . theme('form_element_label', $variables);
+//         $output .= ' <fieldset>' . $prefix . $element['#children'] . $suffix . '</fieldset>';
+//         break;
+
+//       case 'after':
+//         $output .= ' ' . $prefix . $element['#children'] . $suffix;
+//         $output .= ' ' . theme('form_element_label', $variables) . "\n";
+//         break;
+
+//       case 'none':
+//       case 'attribute':
+//         // Output no label and no required marker, only the children.
+//         $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+//         break;
+//     }
+//     return $output;
+//     }
+// }
+
 function mediacommons_field__minimal__field_research_interests__mediacommonsprofile($vars){
   $output = '<aside role="complementary" class="research_interests">';
   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';

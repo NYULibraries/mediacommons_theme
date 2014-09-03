@@ -14,11 +14,6 @@ body.mc a[href]:focus {
 body.mc a[href]:active {
   color: #0a283e;
 }
-/* line 44, ../sass/projects.scss */
-body.mc [role="navigation"].main ul.main {
-  border-bottom: 1px solid #999999;
-  border-top: 1px solid #999999;
-}
 /* line 47, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
@@ -48,11 +43,6 @@ body.tne a[href]:focus {
 /* line 38, ../sass/projects.scss */
 body.tne a[href]:active {
   color: #0f5f5f;
-}
-/* line 44, ../sass/projects.scss */
-body.tne [role="navigation"].main ul.main {
-  border-bottom: 1px solid #999999;
-  border-top: 1px solid #999999;
 }
 /* line 47, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
@@ -84,11 +74,6 @@ body.imr a[href]:focus {
 body.imr a[href]:active {
   color: #8e2f13;
 }
-/* line 44, ../sass/projects.scss */
-body.imr [role="navigation"].main ul.main {
-  border-bottom: 1px solid #999999;
-  border-top: 1px solid #999999;
-}
 /* line 47, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
@@ -119,11 +104,6 @@ body.int a[href]:focus {
 body.int a[href]:active {
   color: #2c102a;
 }
-/* line 44, ../sass/projects.scss */
-body.int [role="navigation"].main ul.main {
-  border-bottom: 1px solid #999999;
-  border-top: 1px solid #999999;
-}
 /* line 47, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
@@ -153,11 +133,6 @@ body.alt a[href]:focus {
 /* line 38, ../sass/projects.scss */
 body.alt a[href]:active {
   color: #661018;
-}
-/* line 44, ../sass/projects.scss */
-body.alt [role="navigation"].main ul.main {
-  border-bottom: 1px solid #999999;
-  border-top: 1px solid #999999;
 }
 /* line 47, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {

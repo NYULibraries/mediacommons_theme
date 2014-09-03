@@ -42,8 +42,8 @@ $black: tint-stack($black-value);
     //   color: darken($col, 10%);
     // }
     [role="navigation"].main ul.main {
-      border-bottom: 1px solid nth($black, 3);
-      border-top: 1px solid nth($black, 3);
+      //border-bottom: 1px solid nth($black, 3);
+     // border-top: 1px solid nth($black, 3);
       li {
         font-size: .9em;
       }

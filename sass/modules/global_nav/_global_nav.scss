@@ -53,30 +53,6 @@ nav[role="navigation"].global {
     >ul {
         width: 100%;
         position: relative;
-        >li.sites_nav {
-            li {
-                &:before {
-                    content: "|";
-                    color: nth($black, 4);
-                    font-size: .75em;
-                }
-                > a {
-                    padding: .5em 0.5em;
-                }
-                &:first-child {
-                    &:before {
-                        content: " ";
-                    }
-                }
-            }
-        }
-        >li.utils.logged-in {
-            li.first, li:first-child {
-                // overriding horizontal lists mixin
-                padding-left: 1em;
-                padding-right: 1em;
-            }
-        }
         // all deeper than one level
         ul {
             float: left;
@@ -89,52 +65,6 @@ nav[role="navigation"].global {
             }
         }
     }
-    // Nav among MC projects
-    .logolink {
-        max-width: 100%;
-        padding: .125em 1em 0 0;
-        display: block;
-        float: left;
-        overflow: hidden;
-        margin: 0;
-        font-size: 1.2em;
-        line-height: 1;
-        &:hover {
-            text-decoration: none;
-        }
-        span {
-            display: none;
-        }
-    }
-    a.drop-down {
-        font-weight: bold;
-    }
-    a.drop-down.open {
-        //height: 3.7em !important;
-        @include border-corner-radius(top, right, 5px);
-    }
-    /*  Javascript generated markup  */
-    li.navitems2 {
-        position: relative;
-    }
-    li.navitems2 ul {
-        display: none;
-    }
-    li.navitems2.open ul {
-        height: auto;
-        display: block;
-        @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-start));
-        @include border-corner-radius(bottom, left, 5px);
-        @include border-corner-radius(bottom, right, 5px);
-        padding-bottom: 10px;
-        position: absolute;
-        clear: both;
-        top: 1.66em;
-        right: 0;
-        a {
-            display: block;
-        }
-    }
     // State
     ul[aria-hidden="true"] {
         display: none;
@@ -142,9 +72,43 @@ nav[role="navigation"].global {
     ul[aria-hidden="false"] {
         display: inline-block;
     }
+    li.sites_nav {
+        // Nav among MC projects
+        .logolink {
+            max-width: 100%;
+            padding: .125em 1em 0 0;
+            display: block;
+            float: left;
+            overflow: hidden;
+            margin: 0;
+            font-size: 1.2em;
+            line-height: 1;
+            &:hover {
+                text-decoration: none;
+            }
+            span {
+                display: none;
+            }
+        }
+        li {
+            &:before {
+                content: "|";
+                color: nth($black, 4);
+                font-size: .75em;
+            }
+            > a {
+                padding: .5em 0.5em;
+            }
+            &:first-child {
+                &:before {
+                    content: " ";
+                }
+            }
+        }
+    }
     // Utilities -- login, user preferences
     li.utils {
-        @include horizontal-list(1em);
+        // @include horizontal-list(1em);
         position: absolute;
         overflow: visible;
         right: 0;
@@ -160,6 +124,13 @@ nav[role="navigation"].global {
                 height: 3.6em;
             }
         }
+        &.logged-in {
+            li.first, li:first-child {
+                // overriding horizontal lists mixin
+                padding-left: 1em;
+                padding-right: 1em;
+            }
+        }
         // Hide join link when logged in. todo: work this into drupal
         // .logged-in & .last {
         //     display: none;
@@ -167,11 +138,9 @@ nav[role="navigation"].global {
         padding: 0;
         color: nth($black, 4);
         margin-right: .5em;
-        > a {
-            padding: 0.3em 0.5em;
-        }
         > ul {
-            @include inline-block-list;
+            min-width: 300px;
+            //@include inline-block-list;
             position: absolute;
             z-index: 100;
             @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
@@ -180,15 +149,25 @@ nav[role="navigation"].global {
             right: .5em;
             top: 1.66em;
             > li {
-                @include inline-block-list-item(1em);
-                width: 300px;
+                //@include inline-block-list-item(1em);
+                > a {
+                    padding: 0.3em 0.5em;
+                    display: block;
+                }
+
+                float: none;
+                list-style-image: none;
+                list-style-type: none;
+                margin-left: 0;
+                vertical-align: middle;
+                max-width: 300px;
                 text-indent: 0em;
                 form {
                     font-size: .875em;
-                    width: 300px;
-                    padding: 0 1em;
+                    margin: 0 1em;
                     input[type="text"], input[type="password"] {
                         max-width: 100%;
+                        width: 100%;
                         display: block;
                         margin: 0 0 1em 0;
                     }
@@ -229,40 +208,20 @@ nav[role="navigation"].global {
             }
         }
     }
-    //  Moved from layout/_globalnav.scss
-    @include respond-to("tablet-lh") {
-        font-size: 1.33em;
-        >ul ul {
-            > li {
-                @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
-                &:first-child {
-                    @include border-left-radius(5px);
-                }
-                &:last-child {
-                    @include border-right-radius(5px);
-                    &.open {
-                        @include border-corner-radius(top, right, 5px);
-                        @include border-corner-radius(bottom, right, 0);
-                    }
-                }
-            }
-        }
-    }
-
-    @include respond-to("mobile-lh") {
+    @include respond-to("narrow navigation") {
         padding: 0 2%;
-        font-size: 1.5em;
-        a.logolink {
-            padding: .25em 0em .25em 0;
-            &:before {
-                content: "\e002 \e00b";
-            }
-        }
+        font-size: 1.3rem;
         ul.level1 {
             width: auto;
             position: relative;
             height: $globalnav-height;
             li.sites_nav {
+                a.logolink {
+                    padding: .25em 0em .25em 0;
+                    &:before {
+                        content: "\e002 \e00b";
+                    }
+                }
                 width: 16em;
                 height: $globalnav-height;
                 display: block;
@@ -280,6 +239,11 @@ nav[role="navigation"].global {
                 li:before {
                     content: " ";
                 }
+                .menu-mcglobalnav {
+                    a {
+                        padding: .4em 1em;
+                    }
+                }
             }
             li.utils {
                 width: auto;
@@ -294,9 +258,20 @@ nav[role="navigation"].global {
                     height: $globalnav-height;
                     display: block;
                 }
+
                 ul {
                     right: 0;
-                    padding-bottom: 20px;
+                   
+                    li,li:first-child {
+                        padding: 0;
+                        a {
+                            padding: .4em 1em;
+                            display: block;
+                        }
+                    }
+                    li:first-child {
+                        padding-top: 20px;
+                    }
                 }
             }
             ul.open {
@@ -306,7 +281,7 @@ nav[role="navigation"].global {
             }
             ul.open > li {
                 display: block;
-                float: left;
+                float: none;
                 width: 100%;
                 clear: left;
                 &:hover {
@@ -314,7 +289,8 @@ nav[role="navigation"].global {
                     color: nth($black, 6);
                 }
                 a {
-                    font-size: 1em;
+                    font-size: 1rem;
+                    display: block;
                 }
             }
         }

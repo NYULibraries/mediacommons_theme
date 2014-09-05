@@ -18,11 +18,7 @@
     height: 0px !important;
     overflow: hidden;
     display: none !important;
-  }
-}
-
-[role="banner"] {
-  
+  }  
   @include respond-to("full navigation") {
     margin: $globalnav-height auto 0 auto;
     width: 94.5%;
@@ -37,7 +33,7 @@
     position: relative;
     button.skip-arrow {
       padding-top: .5em;
-      margin: 0 4px;
+      margin: 0 2%;
       @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
       //border: none;

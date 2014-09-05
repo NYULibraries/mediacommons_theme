@@ -12,7 +12,12 @@ function mediacommons_form_system_theme_settings_alter(&$form, &$form_state, $fo
   if (isset($form_id)) {
     return;
   }
+  unset($form['breadcrumb']);
+  unset($form['support']);
+  unset($form['theme_zen_settings']);
 
+  unset($form['theme_settings']);
+  $form['theme_settings'] = array();
   // Create the form using Forms API: http://api.drupal.org/api/7
   $form['theme_settings']['special_body_class'] = array(
     '#type'          => 'textfield',

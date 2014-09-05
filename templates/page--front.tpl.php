@@ -3,11 +3,9 @@
     <button type="button" class="skip-arrow"></button>
     <h1><a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>
 
-  <?php if ($logo): ?>
-  <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><?php print $logo; ?><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-  <?php endif; ?>
+
   <?php print render($page['search']); ?>
-  <nav id="main-nav" class="nav main imr" role="navigation">
+  <nav id="main-nav" class="nav main" role="navigation">
     <?php if ($main_menu ) : ?>
     <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main')))); ?>
     <?php endif; ?>

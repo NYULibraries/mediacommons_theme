@@ -4,7 +4,7 @@
 
 [role="banner"] {
   h1 {
-    display: inline-block;
+    display: block;
     float: left;
     font-size: 1.8em;
     line-height: 1em;
@@ -52,6 +52,8 @@
       float: left;
       position: absolute;
       left: 50px;
+      // needs to lie on top of project nav and search dropdowns
+      z-index: 1000;
     }
     .logo { 
       padding-bottom: 0;

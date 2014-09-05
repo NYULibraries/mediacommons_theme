@@ -139,22 +139,22 @@ nav[role="navigation"].global {
         color: nth($black, 4);
         margin-right: .5em;
         > ul {
-            min-width: 300px;
-            //@include inline-block-list;
+             min-width: 200px;
+         
             position: absolute;
             z-index: 100;
             @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
             @include border-bottom-left-radius(5px);
             @include border-bottom-right-radius(5px);
             right: .5em;
-            top: 1.66em;
+            top: 1.5rem;
             > li {
                 //@include inline-block-list-item(1em);
+                padding-top: 20px;
                 > a {
                     padding: 0.3em 0.5em;
                     display: block;
                 }
-
                 float: none;
                 list-style-image: none;
                 list-style-type: none;
@@ -230,6 +230,7 @@ nav[role="navigation"].global {
                 z-index: 5;
                 float: left;
                 padding-right: 0;
+                @include border-radius(5px);
                 ul[aria-hidden="true"] {
                     display: none;
                 }
@@ -258,10 +259,9 @@ nav[role="navigation"].global {
                     height: $globalnav-height;
                     display: block;
                 }
-
                 ul {
                     right: 0;
-                   
+                    top: $globalnav-height;
                     li,li:first-child {
                         padding: 0;
                         a {
@@ -270,7 +270,7 @@ nav[role="navigation"].global {
                         }
                     }
                     li:first-child {
-                        padding-top: 20px;
+                        padding-top: 5px;
                     }
                 }
             }
@@ -278,6 +278,8 @@ nav[role="navigation"].global {
                 height: auto;
                 padding-bottom: .25em;
                 @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
+                @include border-bottom-left-radius(5px);
+                @include border-bottom-right-radius(5px);
             }
             ul.open > li {
                 display: block;

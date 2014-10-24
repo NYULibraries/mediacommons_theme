@@ -66,11 +66,12 @@ stylesheets[all][] = css/projects.css
 
 
 ; Optionally add some JavaScripts to your theme.
-
-scripts[] = js/script.js
-scripts[] = js/mc.js
 scripts[] = js/underscore-min.js
+
+scripts[] = js/mc.js
+scripts[] = js/script.js
 scripts[] = js/modernizr.custom.23042.js
+
 
 
 ; This section lists the regions defined in Zen's default page.tpl.php and

@@ -46,6 +46,10 @@ nav[role="navigation"].global {
                     color: nth($black, 6);
                     text-decoration: underline;
                 }
+                &:link, &:visited {
+                    color: nth($black, 6);
+                    text-decoration: none;
+                }
             }
         }
     }
@@ -125,10 +129,25 @@ nav[role="navigation"].global {
             }
         }
         &.logged-in {
-            li.first, li:first-child {
-                // overriding horizontal lists mixin
-                padding-left: 1em;
-                padding-right: 1em;
+            li {
+                padding: 0px;
+                a {
+                    padding: 10px;
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:link, &:visited {
+                        text-decoration: none;
+                    }
+                }
+               
+            }
+             ul.level2 a:hover {
+                    text-decoration: underline;
+                }
+            li.first{
+               
+                padding-top: 10px;
             }
         }
         // Hide join link when logged in. todo: work this into drupal
@@ -139,8 +158,7 @@ nav[role="navigation"].global {
         color: nth($black, 4);
         margin-right: .5em;
         > ul {
-             min-width: 200px;
-         
+            min-width: 300px;
             position: absolute;
             z-index: 100;
             @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
@@ -260,6 +278,7 @@ nav[role="navigation"].global {
                     display: block;
                 }
                 ul {
+                    min-width: 200px;
                     right: 0;
                     top: $globalnav-height;
                     li,li:first-child {

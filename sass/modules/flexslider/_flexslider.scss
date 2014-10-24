@@ -1,0 +1,76 @@
+/*  Flexslider needs to have the flexslider library installed in 
+sites/all/libraries in order for anything to work. 
+*/
+
+ul.slides {
+    //position: relative;
+    .flex-caption {
+        position: absolute;
+        padding: 5px;
+        background-color: white;
+        color: black;
+        top: 20px;
+        a {
+            color: black;
+            display: block;
+        }
+    }
+    .field-name-field-project {
+        > div {
+            display: inline-block;
+        }
+        .field-label {
+            text-transform: uppercase;
+        }
+    }
+    li {
+        position: relative;
+    }
+    img {
+        width: 100% !important;
+        height: auto !important;
+    }
+    .group-meta {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+         background-color: rgba(240, 240, 240, .95);
+         color: black;
+         max-width: 60%;
+         border-top: 4px solid #e57f57;
+         border-bottom: 4px solid #e57f57;
+           
+    }
+    .field-name-field-project {
+        margin: 10px 20px 5px;
+         // background-color: rgba(155, 155, 155, 0.9);
+         font-size: .7rem;
+        line-height: 1.2;
+        color: black;
+    }
+    .field-name-field-link {
+        margin: 5px 20px 10px;
+        font-size: 1.2rem;
+    }
+    .field-name-field-body {
+        margin: 10px 20px;
+        font-size: .9rem;
+    }
+}
+
+.flex-control-thumbs li {
+    position: relative;
+    .flex-caption {
+        // margin-top: -30px;
+        position: absolute;
+      
+        color: black;
+        bottom: 0px;
+        
+        display: block;
+        pointer-events: none;
+        color: black;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+}

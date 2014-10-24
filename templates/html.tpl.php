@@ -16,7 +16,6 @@
 <head>
   <?php print $head; ?>
   <title><?php print $head_title; ?></title>
-
   <?php if ($default_mobile_metatags): ?>
     <meta name="MobileOptimized" content="width">
     <meta name="HandheldFriendly" content="true">
@@ -64,9 +63,10 @@
   <?php endif; ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
-  <?php print $page_bottom; ?>
   <?php print $scripts; ?>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <?php print $page_bottom; ?>
+  
+
   
 </body>
 </html>

@@ -10,10 +10,12 @@
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <header>
     <?php print render($title_prefix); ?>
-    <?php if ($title): ?>
+   
+     <?php if (isset($title)): ?>
       <h3<?php print $title_attributes; ?>>
         <?php print $title; ?>
         <?php if ($new): ?>
+
           <mark class="new"><?php print $new; ?></mark>
         <?php endif; ?>
       </h3>
@@ -26,7 +28,7 @@
       <?php print '<div class="field-user-avatar">' . $user_avatar . '</div>'; ?>
       <div>
         <div class="nameHolder">By <?php print $author; ?></div>
-        <?php if ($organization): ?>
+        <?php if (isset($organization)): ?>
           <span class="p-org org"><?php print $organization; ?></span>
         <?php endif; ?>
         </div>
@@ -43,7 +45,7 @@
     print render($content);
   ?>
 
-  <?php if ($signature): ?>
+   <?php if (isset($signature)): ?>
     <footer class="user-signature clearfix">
       <?php print $signature; ?>
     </footer>

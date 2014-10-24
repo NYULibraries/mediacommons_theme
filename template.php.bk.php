@@ -20,7 +20,13 @@ function mediacommons_theme( &$existing, $type, $theme, $path ) {
      // 'mediacommons_preprocess_user_login'
     ),
   );
-
+  // $hooks['user_register_form'] = array(
+  //   'render element' => 'form',
+  //   'template' => 'user-register-form',
+  //   'preprocess functions' => array(
+  //     'mediacommons_preprocess_user_register_form'
+  //   ),
+  // );
   return $hooks;
 }
 
@@ -32,10 +38,12 @@ function mediacommons_preprocess_html( &$vars ) {
   if ( !empty( $specialBodyClass ) ) {
     $vars['classes_array'][] = $specialBodyClass;
   }
-  if (($key = array_search('no-sidebars', $vars['classes_array'])) !== false) {
+
+ if (($key = array_search('no-sidebars', $vars['classes_array'])) !== false) {
     unset($vars['classes_array'][$key]);
-  }
 }
+}
+
 function mediacommons_preprocess_image_style(&$variables) {
     if ($variables['style_name'] == 'profile_page_pic') {
         $variables['attributes']['class'][] = 'u-photo photo';
@@ -48,6 +56,8 @@ function mediacommons_user_menu() {
     'access callback' => 'user_is_anonymous',
     'type' => MENU_DEFAULT_LOCAL_TASK,
   );
+
+  // return $items;
 }
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
@@ -267,6 +277,7 @@ function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
   }
   return '<ul role="menubar" class="' . $variables['menu_parent_name'] . ' level' . $variables['level'] . '"' . $extra . '>' . $variables['tree'] . '</ul>';
 }
+
 /**
  * Implements hook_menu_link().
  */
@@ -330,4 +341,3 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-?>

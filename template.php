@@ -309,8 +309,9 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
         $element['#attributes']['class'][] = 'logged-out' ;
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+        $formLogin = drupal_get_form( 'user_login' );
         $pop = '<ul class="login-area" aria-hidden="true" style="">
-        <li role="menuitem">' . render( drupal_get_form( 'user_login' ) ) . '</li></ul>';
+        <li role="menuitem">' . render($formLogin ) . '</li></ul>';
         return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
       }
     }
@@ -325,7 +326,8 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   ////
   // Define special variables for use in hook_menu_tree
-  $element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'] ;
+  $menname = $element['#original_link']['menu_name'];
+  $element['#attributes']['data-menu-parent-name'] = $menname;
   $element['#attributes']['data-level'] = $element['#original_link']['depth'];
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }

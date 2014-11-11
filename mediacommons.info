@@ -67,7 +67,7 @@ stylesheets[all][] = css/projects.css
 
 ; Optionally add some JavaScripts to your theme.
 scripts[] = js/underscore-min.js
-
+scripts[] = js/jquery-ui.min.js
 scripts[] = js/mc.js
 scripts[] = js/script.js
 scripts[] = js/modernizr.custom.23042.js

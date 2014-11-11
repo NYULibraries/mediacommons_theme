@@ -35,11 +35,9 @@
   <?php endif; ?>
 
 <div id="content">
-
-    <?php  
-    print render($page['homepage_top']);
-    print render($page['homepage_bottom']);
-   ?> 
+  <?php  print render($page['homepage_top']);  ?>
+   <section class="featured-more">  
+     <?php  print render($page['homepage_bottom']); ?> </section>
 </div>
   <?php if (isset($page['homepage_sidebar'])) : ?>
           <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>

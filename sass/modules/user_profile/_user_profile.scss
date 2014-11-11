@@ -3,9 +3,10 @@
 //////////////////////////////
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
-
-.block-views .view-content {
-    padding: .5em 0 1em 0;
+.UserPageOnly {
+    .block-views .view-content {
+        padding: .5em 0 1em 0;
+    }
 }
 
 .field-name-metadata-for-spoke .h-card {
@@ -94,7 +95,7 @@ h2.block-title {
 }
 
 .profile {
-    >h3 {
+    > h3 {
         display: none;
     }
     ul {
@@ -150,7 +151,6 @@ h2.block-title {
         display: inline-block;
         padding: 0;
     }
-   
     & li.views-row-first {
         padding: 0 0 2.5%  0;
     }
@@ -210,7 +210,6 @@ h2.block-title {
             max-width: ms(14);
         }
         [role="complementary"] {
-            // width of the side content — see modular scale notes in base/typography/_typography_variables
             float: right;
             // max-width: ms(12);
             padding: 0;

@@ -20,7 +20,7 @@
     display: none !important;
   }  
   @include respond-to("full navigation") {
-    margin: $globalnav-height auto 0 auto;
+    margin: ($globalnav-height + .8) auto 0 auto;
     width: 94.5%;
     max-width: 60em;
     fieldset {

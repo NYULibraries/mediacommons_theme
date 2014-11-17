@@ -7,6 +7,12 @@
  * @see https://drupal.org/node/1728110
  */
 ?>
+<?php
+
+/**
+ * Why doesn't Drupal see this file?
+ */
+?>
 <?php if ($user_picture): ?>
   <span class="user-picture">
     <?php print $user_picture; ?>

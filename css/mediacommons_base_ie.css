@@ -312,7 +312,7 @@ em .wf-droidserif-i7-active b {
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .view-homepage-featured-posts li .field-name-field-project, [role="navigation"].main {
+.wf-droidsans-n4-active input.cancel, .featured-more li .field-name-field-project, [role="navigation"].main {
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -320,7 +320,7 @@ em .wf-droidserif-i7-active b {
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .view-homepage-featured-posts li .field-name-field-project, .view-homepage-featured-posts li .wf-droidsans-n4-active .field-name-field-project, .wf-droidsans-n4-active [role="navigation"].main {
+.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .featured-more li .field-name-field-project, .featured-more li .wf-droidsans-n4-active .field-name-field-project, .wf-droidsans-n4-active [role="navigation"].main {
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 
@@ -1017,74 +1017,78 @@ a.control:active {
   width: auto;
   overflow: hidden;
 }
-
-/* line 22, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li {
+/* line 20, ../sass/modules/homepage/_homepage.scss */
+.featured-more article img {
+  width: 100%;
+  height: auto;
+}
+/* line 24, ../sass/modules/homepage/_homepage.scss */
+.featured-more article {
+  padding-bottom: 1em;
+}
+/* line 27, ../sass/modules/homepage/_homepage.scss */
+.featured-more li {
   width: 48%;
   line-height: 1;
   margin-bottom: 1em;
 }
-/* line 23, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .view-mode-homepage_featured_articles {
-  padding-bottom: 1em;
-}
-/* line 36, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li:nth-child(odd) {
+/* line 38, ../sass/modules/homepage/_homepage.scss */
+.featured-more li:nth-child(odd) {
   clear: left;
   float: left;
 }
-/* line 40, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li:nth-child(even) {
+/* line 42, ../sass/modules/homepage/_homepage.scss */
+.featured-more li:nth-child(even) {
   clear: right;
   float: right;
 }
-/* line 45, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .field-type-image {
+/* line 47, ../sass/modules/homepage/_homepage.scss */
+.featured-more li .field-type-image {
   line-height: 1;
 }
-/* line 47, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .field-type-image img {
+/* line 49, ../sass/modules/homepage/_homepage.scss */
+.featured-more li .field-type-image img {
   width: 100%;
   height: auto;
 }
-/* line 56, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .field-name-field-project {
+/* line 58, ../sass/modules/homepage/_homepage.scss */
+.featured-more li .field-name-field-project {
   font-size: .8rem;
   text-transform: uppercase;
   line-height: 1.6;
   color: #666;
 }
-/* line 70, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .field-name-field-link {
+/* line 72, ../sass/modules/homepage/_homepage.scss */
+.featured-more li .field-name-field-link {
   font-size: 1.1rem;
   line-height: 1.2;
   padding: 4px 0;
 }
-/* line 79, ../sass/modules/homepage/_homepage.scss */
-.view-homepage-featured-posts li .field-name-field-description, .view-homepage-featured-posts li .field-name-field-body {
+/* line 81, ../sass/modules/homepage/_homepage.scss */
+.featured-more li .field-name-field-description, .featured-more li .field-name-field-body {
   font-size: 1rem;
   line-height: 1.2;
 }
 
-/* line 91, ../sass/modules/homepage/_homepage.scss */
+/* line 93, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey {
   padding: .5rem 1rem;
 }
-/* line 93, ../sass/modules/homepage/_homepage.scss */
+/* line 95, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .survey-question {
   font-size: 1.4rem;
   margin: 1rem 0 1rem;
   line-height: 1.3;
 }
-/* line 100, ../sass/modules/homepage/_homepage.scss */
+/* line 102, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-item {
   margin: 1em 0;
 }
-/* line 103, ../sass/modules/homepage/_homepage.scss */
+/* line 105, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-name-title {
   font-size: 1.2rem;
 }
-/* line 110, ../sass/modules/homepage/_homepage.scss */
+/* line 111, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey a.username {
   font-size: .9rem;
   display: block;

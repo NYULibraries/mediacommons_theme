@@ -6,3 +6,6 @@
 .settings/*
 
 userupdaterule02.php
+
+templates/not_used/*
+*.lock

@@ -45,7 +45,7 @@
  */
 ?>
 
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>  
+<div class="peoplelist <?php print $classes; ?>"<?php print $attributes; ?>>  
   <div class="field-label">Contributors: </div>
   <div class="field-items"<?php print $content_attributes; ?>>
   	<?php 

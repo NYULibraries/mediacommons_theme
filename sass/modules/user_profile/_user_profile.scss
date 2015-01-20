@@ -3,11 +3,6 @@
 //////////////////////////////
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
-.UserPageOnly {
-    .block-views .view-content {
-        padding: .5em 0 1em 0;
-    }
-}
 
 .field-name-metadata-for-spoke .h-card {
     padding: .5rem .5rem 0rem 0rem;
@@ -54,6 +49,12 @@ h2.block-title {
             font-size: .9rem;
         }
     }
+    .title {
+        // margin: 0.2rem 0;
+        // font-size: .9rem;
+        // color: nth($black, 2);
+        display: inline-block;
+    }
     .field-user-avatar, .prof-img-hold {
         float: left;
         a {
@@ -79,6 +80,10 @@ h2.block-title {
             content: "by\20";
         }
     }
+    .contact-info {
+        clear: left;
+        margin-top: 1em;
+    }
     .p-name.u-url {
         font-weight: bold;
     }
@@ -88,16 +93,15 @@ h2.block-title {
             // mdash encoded http://css-tricks.com/snippets/html/glyphs/
        
         }
+        display: inline-block;
     }
     .h-adr {
         display: block;
     }
 }
 
-.profile {
-    > h3 {
-        display: none;
-    }
+/* ONLY user profile page */
+.profile.view-mode-full {
     ul {
         list-style-type: none;
         padding: 0;
@@ -107,14 +111,29 @@ h2.block-title {
         margin-top: 2rem;
         margin-bottom: .7em;
     }
+    .h-adr {
+        & > div {
+            display: inline-block;
+        }
+        & > div:nth-child(2) {
+            &:before {
+                content: ",\20";
+            }
+        }
+        & > div:nth-child(3) {
+            &:before {
+                content: ",\20";
+            }
+        }
+    }
     header.h-card {
         margin-bottom: 1em;
         padding: 0;
         font-size: 1rem;
-        line-height: 1.1;
+        line-height: 1.7;
         .u-photo {
             float: left;
-            margin: 0 .5em .1em 0;
+            margin: 0 .5em 1em 0;
             @extend %user-photo-treatment;
         }
         .p-name {
@@ -124,11 +143,7 @@ h2.block-title {
             margin-bottom: .2em;
             color: nth($black, 1);
         }
-        .p-country-name {
-            &:before {
-                content: ",\20";
-            }
-        }
+        
     }
     .contact-info {
         clear: left;
@@ -174,6 +189,7 @@ h2.block-title {
             }
         }
         .views-field-title {
+            //background-color: tomato;
             margin: 0.2rem 0;
             font-size: .9rem;
             color: nth($black, 2);

@@ -79,93 +79,6 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
 
 }
 
-/**
- * Implement template_preprocess_comment().
- */
-function mediacommons_preprocess_comment(&$variables) {
-  $comment = $variables['elements']['#comment'];
-  $node = $variables['elements']['#node'];
-  $variables['comment'] = $comment;
-  $variables['node'] = $node;
-  $variables['author'] = theme('username', array('account' => $comment));
-
-  $variables['created'] = format_date($comment->created, 'long');
-
-  // Avoid calling format_date() twice on the same timestamp.
-  if ($comment->changed == $comment->created) {
-    $variables['changed'] = $variables['created'];
-  }
-  else {
-    $variables['changed'] = format_date($comment->changed);
-  }
-
-  $variables['new'] = !empty($comment->new) ? t('new') : '';
- // $variables['picture'] = theme_get_setting('toggle_comment_user_picture') ? theme('user_picture', array('account' => $comment)) : '';
-  $variables['signature'] = $comment->signature;
-
-  $uri = entity_uri('comment', $comment);
-  $uri['options'] += array('attributes' => array(
-    'class' => array('permalink'),
-    'rel' => 'bookmark',
-  ));
-
-  $variables['title'] = l($comment->subject, $uri['path'], $uri['options']);
-  $variables['permalink'] = l(t('Permalink'), $uri['path'], $uri['options']);
-  $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
- 
-  $user_avatar='';
-  //loading 'profile2' information
-  $profile=profile2_load_by_user($comment->uid,'mediacommonsprofile');   
-  if(is_object($profile)){
-      //Showing 'profile2' image field picture instead of drupal default user image
-      if(is_array($profile->field_user_avatar)&& count($profile->field_user_avatar)>0){
-        $file_url=$profile->field_user_avatar['und'][0]['uri'];
-               //Applying image style to that image 
-         $user_avatar= theme('image_style', array('style_name' => 'user_avatar_comments', 'path' =>$file_url));
-        }
-        $organization = $profile->field_organization['und'][0]['value'];
-    }
-    $variables['user_avatar'] = $user_avatar;
-    //$variables['organization'] = $organization;
-   
-  // Preprocess fields.
-  field_attach_preprocess('comment', $comment, $variables['elements'], $variables);
-
-  // Helpful $content variable for templates.
-  foreach (element_children($variables['elements']) as $key) {
-    $variables['content'][$key] = $variables['elements'][$key];
-  }
-
-  // Set status to a string representation of comment->status.
-  if (isset($comment->in_preview)) {
-    $variables['status'] = 'comment-preview';
-  }
-  else {
-    $variables['status'] = ($comment->status == COMMENT_NOT_PUBLISHED) ? 'comment-unpublished' : 'comment-published';
-  }
-
-  // Gather comment classes.
-  // 'comment-published' class is not needed, it is either 'comment-preview' or
-  // 'comment-unpublished'.
-  if ($variables['status'] != 'comment-published') {
-    $variables['classes_array'][] = $variables['status'];
-  }
-  if ($variables['new']) {
-    $variables['classes_array'][] = 'comment-new';
-  }
-  if (!$comment->uid) {
-    $variables['classes_array'][] = 'comment-by-anonymous';
-  }
-  else {
-    if ($comment->uid == $variables['node']->uid) {
-      $variables['classes_array'][] = 'comment-by-node-author';
-    }
-    if ($comment->uid == $variables['user']->uid) {
-      $variables['classes_array'][] = 'comment-by-viewer';
-    }
-  }
-  // dpm($variables);
-}
 
 
 /**
@@ -195,7 +108,7 @@ function mediacommons_preprocess_page( &$vars ) {
 /**
 * Begin User Profiles
 */
-function mediacommons_field__minimal__ds_user_picture (&$vars) {
+function mediacommons_field__minimal__ds_user_picture ($vars) {
     // Retrieve the user picture string and regex the link away
     $string = $vars['items'][0]['#markup'];
     $string2 = preg_replace('#<a.*?>(.*?)</a>#i', '\1', $string) ;
@@ -219,8 +132,10 @@ function mediacommons_field__minimal__field_profile_email ($vars) {
   //TODO - validate email address
   return '<li><a class="u-email email"  href="mailto:' . $vars['items'][0]['#markup'] . '" rel="external me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
-function mediacommons_field__minimal__field_profile_url ($vars) {
-  return '<li><a class="u-url url www"  href="'.  $vars['items'][0]['#href'] . '" rel="external me"><span>' . $vars['items'][0]['#title'] . '</span></a></li>';
+function mediacommons_field__minimal__field_url ($vars) {
+  //return dpm($vars);
+
+  return '<li><a class="u-url url www"  href="'.  $vars['items'][0]['#element']['url'] . '" rel="external me"><span>' . $vars['items'][0]['#element']['title'] . '</span></a></li>';
 }
 function mediacommons_field__minimal__field_profile_phone ($vars) {
   $phone = preg_replace('/\D+/', '', $vars['items'][0]['#title']);

@@ -138,7 +138,7 @@ function mediacommons_field__field_twitter ($vars) {
 }
 function mediacommons_field__field_email ($vars) {
   //TODO - validate email address
-  return '<li><a class="u-email email"  href="mailto:' . $vars['items'][0]['#markup'] . '" rel="external me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
+  return '<li><a class="u-email email" rel="external me"  href="mailto:' . $vars['element']['#items'][0]['email'] . '"><span>' . $vars['element']['#items'][0]['email'] . '</span></a></li>';
 }
 function mediacommons_field__field_url ($vars) {
   return '<li><a class="u-url url www"  href="'.  $vars['items'][0]['#element']['url'] . '" rel="external me"><span>' . $vars['items'][0]['#element']['title'] . '</span></a></li>';

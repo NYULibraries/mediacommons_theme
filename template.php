@@ -110,6 +110,11 @@ function mediacommons_preprocess_page( &$vars ) {
 /**
 * Begin User Profiles
 */
+function mediacommons_preprocess_username(&$vars) {
+    //putting back what drupal core messed with (truncated to 15 characters)
+    $vars['name'] = check_plain($vars['name_raw']);
+}
+
 function mediacommons_field__minimal__ds_user_picture ($vars) {
     // Retrieve the user picture string and regex the link away
     $string = $vars['items'][0]['#markup'];

@@ -2,10 +2,10 @@
 // EXTENDABLES: Common reusable classes. Go extend yourself!
 //////////////////////////////
 %clearfix {
-    overflow:hidden;
-    width:auto;
-
+    overflow: hidden;
+    width: auto;
 }
+
 %element-invisible {
     // http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
     position: absolute !important;
@@ -43,6 +43,15 @@
     word-wrap: break-word;
 }
 
+%date-treatment {
+    font-size: .7em;
+    font-size: .7rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+    color: nth($black, 2);
+   // font-family: "Droid Sans", $header-font-family;
+}
+
 %user-photo-treatment {
     width: 4.524em;
     height: 4.524em;
@@ -63,4 +72,4 @@
     overflow: hidden;
     text-align: center;
     background: nth($black, 4);
-} 
+}

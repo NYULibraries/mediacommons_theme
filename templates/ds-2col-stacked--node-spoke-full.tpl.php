@@ -11,7 +11,7 @@
   <?php print render($title_suffix['contextual_links']); ?>
 <?php endif; ?>
 
-<?php print "<header>"; ?>
+<?php print '<header class="spoke-header">'; ?>
   <?php print $header; ?>
 <?php print "</header>"; ?>
 

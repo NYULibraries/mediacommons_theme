@@ -198,6 +198,7 @@ aside + h2 {
 }
 
 .peoplelist {
+   
     font-size: .7em;
     line-height: 1.5;
     text-transform: uppercase;
@@ -207,13 +208,19 @@ aside + h2 {
     a:link, a:visited {
         color: nth($black, 2);
     }
-    .field-label {
+    li {
+        &:after {
+            content: ",\20";
+        }
+        &:last-child:after {
+            content: "";
+        }
+    }
+    .field-label, li, ul, .field-items {
         display: inline-block;
         font-weight: normal;
         margin-right: 5px;
-    }
-    .field-items {
-        display: inline-block;
+        margin-bottom: 0;
     }
 }
 

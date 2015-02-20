@@ -11,7 +11,7 @@
     
 <?php 
 //foreach ($rows as $id => $row): ?>
-	<div class="h-card vcard">
+<div class="h-card vcard">
     <?php print $rows; ?>
 </div>
 <?php //endforeach; ?>

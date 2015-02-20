@@ -4,18 +4,14 @@
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
 
-
 article.spoke .h-card {
     margin: .5rem .5rem 0rem 0rem;
-   
-    padding: 1rem 0 0 0 ;
+    padding: 1rem 0 0 0;
     // background-color: red;
     .u-photo-small {
         margin-top: -1rem;
     }
-    .field-name-author-byline {
-
-    }
+    .field-name-author-byline {}
 }
 
 h2.block-title {
@@ -110,11 +106,11 @@ h2.block-title {
     }
     .h-adr {
         display: block;
-        >span:after {
-             content: ",\20";
+        > span:after {
+            content: ",\20";
         }
-        >span:last-child:after {
-             content: "";
+        > span:last-child:after {
+            content: "";
         }
     }
 }
@@ -182,50 +178,30 @@ h2.block-title {
     & li.views-row-first {
         padding: 0 0 2.5%  0;
     }
-    .leftside li {
-        margin-bottom: .5em;
-        text-indent: 0;
-        margin-left: 0;
-        padding: 2.5% 0;
-        border-bottom: 1px solid nth($secondary, 4);
-        line-height: 1.3;
-        .views-field-created {
-            font-style: italic;
-            font-size: .7rem;
-            // margin: .3rem 0 .2rem;
-            color: nth($black, 2);
-            display: inline-block;
-            &:before {
-                content: "\20\2014\20";
-                // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-           
-            }
+    .node-spoke.node-teaser {
+        h2 {
+            margin-top: 0;
         }
-        .views-field-title {
-            //background-color: tomato;
-            margin: 0.2rem 0;
+    }
+    .field-name-posts-from-user {
+        .node-spoke {
+            border-bottom: 1px solid nth($secondary, 4);
+        }
+    }
+    [role="complementary"] {
+        padding: 0;
+        margin: 1em 0;
+        > div {
+            padding: 1rem;
             font-size: .9rem;
-            color: nth($black, 2);
-        }
-        &.comment {
-            .views-field-title {
-                margin: 0.2rem 0;
-                font-size: .7rem;
-                color: nth($black, 2);
-            }
-        }
-        .views-field-subject {
-            font-size: .9rem;
-            // margin: .3rem 0 .2rem;
-            display: inline-block;
-        }
-        .views-field-comment-body {
-            font-size: .7rem;
-            line-height: 1.4;
-            margin: 0.8rem 0 0 0;
+            line-height: 1.5;
             p {
-                margin: 0.3em 0 0 0;
+                margin: 0 0 .8em 0;
             }
+        }
+        > ul {
+            padding: .5em;
+            margin: 0;
         }
     }
     @include respond-to("wide") {
@@ -240,13 +216,7 @@ h2.block-title {
         }
         [role="complementary"] {
             float: right;
-            // max-width: ms(12);
-            padding: 0;
-            margin-top: 1em;
-            > ul {
-                padding: .5em;
-                margin: 0;
-            }
+            clear: right;
         }
         .contact-info {
             li {
@@ -301,7 +271,8 @@ h2.block-title {
             }
         }
         [role="complementary"] {
-            margin: 1em 0 2em;
+            margin: 2em 0 1em;
+            float: none;
         }
     }
 }

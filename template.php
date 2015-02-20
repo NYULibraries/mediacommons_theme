@@ -155,6 +155,9 @@ function mediacommons_field__field_phone ($vars) {
 function mediacommons_field__post_date ($vars) {
   return '<time>' . $vars['items'][0]['#markup'] . '</time>';
 }
+//function mediacommons_views_view_field__created($vars) {
+  //return '<time>' . $vars['items'][0]['#markup'] . '</time>';
+//}
 function mediacommons_field__field_title($vars) {
   return '<span class="p-job-title title">' . $vars['items'][0]['#markup'] . '</span>';
 }
@@ -168,7 +171,7 @@ function mediacommons_field__field_country($vars) {
   return '<span class="p-country-name">' . $vars['items'][0]['#markup'] . '</span>';
 }
 
-function mediacommons_field__minimal__field_research_interests__user($vars){
+function mediacommons_field__field_research_interests__user($vars){
   $output = '<aside role="complementary" class="research_interests">';
   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {
@@ -186,7 +189,16 @@ function mediacommons_field__field_bio__user($vars){
   $output .= '</div></aside>';
   return $output;
 }
-function mediacommons_field__minimal__field_tags($vars){
+function mediacommons_field__field_plan__user($vars){
+  $output = '<aside role="complementary" class="plan"><header>';
+  $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
+  $output .=  $vars['items'][0]['#markup'];
+  $output .= '</div></aside>';
+  return $output;
+}
+
+
+function mediacommons_field__field_tags($vars){
   //dpm($vars);
   $output = '<div class="tags-block-spoke">' ;
   $output .= '<h2>' . $vars['label'] . '</h2><ul class="tags">';

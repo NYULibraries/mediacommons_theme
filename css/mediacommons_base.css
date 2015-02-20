@@ -321,7 +321,7 @@ em .wf-droidserif-i7-active b {
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .featured-more li .field-name-field-project, [role="navigation"].main {
+.wf-droidsans-n4-active input.cancel, .featured-moreX li .field-name-field-project, [role="navigation"].main {
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -329,7 +329,7 @@ em .wf-droidserif-i7-active b {
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .featured-more li .field-name-field-project, .featured-more li .wf-droidsans-n4-active .field-name-field-project, .wf-droidsans-n4-active [role="navigation"].main {
+.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .featured-moreX li .field-name-field-project, .featured-moreX li .wf-droidsans-n4-active .field-name-field-project, .wf-droidsans-n4-active [role="navigation"].main {
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 
@@ -1012,71 +1012,71 @@ a.control:active {
 }
 
 /* line 9, ../sass/modules/homepage/_homepage.scss */
-.featured-more {
+.featured-moreX {
   margin: 3rem 0 3rem;
 }
 /* line 10, ../sass/modules/homepage/_homepage.scss */
-.featured-more header {
+.featured-moreX header {
   font-weight: bold;
   padding: 10px 0;
   border-top: 3px solid #666;
 }
 /* line 16, ../sass/modules/homepage/_homepage.scss */
-.featured-more .item-list ul {
+.featured-moreX .item-list ul {
   width: auto;
   overflow: hidden;
 }
 /* line 20, ../sass/modules/homepage/_homepage.scss */
-.featured-more article img {
+.featured-moreX article img {
   width: 100%;
   height: auto;
 }
 /* line 24, ../sass/modules/homepage/_homepage.scss */
-.featured-more article {
+.featured-moreX article {
   padding-bottom: 1em;
 }
 /* line 27, ../sass/modules/homepage/_homepage.scss */
-.featured-more li {
+.featured-moreX li {
   width: 48%;
   line-height: 1;
   margin-bottom: 1em;
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 27, ../sass/modules/homepage/_homepage.scss */
-  .featured-more li {
+  .featured-moreX li {
     width: 100%;
     float: none !important;
     clear: both !important;
   }
 }
 /* line 38, ../sass/modules/homepage/_homepage.scss */
-.featured-more li:nth-child(odd) {
+.featured-moreX li:nth-child(odd) {
   clear: left;
   float: left;
 }
 /* line 42, ../sass/modules/homepage/_homepage.scss */
-.featured-more li:nth-child(even) {
+.featured-moreX li:nth-child(even) {
   clear: right;
   float: right;
 }
 /* line 47, ../sass/modules/homepage/_homepage.scss */
-.featured-more li .field-type-image {
+.featured-moreX li .field-type-image {
   line-height: 1;
 }
 /* line 49, ../sass/modules/homepage/_homepage.scss */
-.featured-more li .field-type-image img {
+.featured-moreX li .field-type-image img {
   width: 100%;
   height: auto;
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 47, ../sass/modules/homepage/_homepage.scss */
-  .featured-more li .field-type-image {
+  .featured-moreX li .field-type-image {
     width: 30%;
     float: left !important;
   }
 }
 /* line 58, ../sass/modules/homepage/_homepage.scss */
-.featured-more li .field-name-field-project {
+.featured-moreX li .field-name-field-project {
   font-size: .8rem;
   text-transform: uppercase;
   line-height: 1.6;
@@ -1084,30 +1084,30 @@ a.control:active {
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 58, ../sass/modules/homepage/_homepage.scss */
-  .featured-more li .field-name-field-project {
+  .featured-moreX li .field-name-field-project {
     margin-left: 33%;
   }
 }
 /* line 72, ../sass/modules/homepage/_homepage.scss */
-.featured-more li .field-name-field-link {
+.featured-moreX li .field-name-field-link {
   font-size: 1.1rem;
   line-height: 1.2;
   padding: 4px 0;
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 72, ../sass/modules/homepage/_homepage.scss */
-  .featured-more li .field-name-field-link {
+  .featured-moreX li .field-name-field-link {
     margin-left: 33%;
   }
 }
 /* line 81, ../sass/modules/homepage/_homepage.scss */
-.featured-more li .field-name-field-description, .featured-more li .field-name-field-body {
+.featured-moreX li .field-name-field-description, .featured-moreX li .field-name-field-body {
   font-size: 1rem;
   line-height: 1.2;
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 81, ../sass/modules/homepage/_homepage.scss */
-  .featured-more li .field-name-field-description, .featured-more li .field-name-field-body {
+  .featured-moreX li .field-name-field-description, .featured-moreX li .field-name-field-body {
     margin-left: 33%;
   }
 }

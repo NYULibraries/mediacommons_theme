@@ -269,11 +269,8 @@ function mediacommons_preprocess_menu_tree( &$variables ) {
  * Implements hook_menu_tree().
  */
 function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
-  $extra = '';
-  if ( $variables['level'] == "2" ) {
-    $extra = ' aria-hidden="true" style="display:none;"';
-  }
-  return '<ul role="menubar" class="' . $variables['menu_parent_name'] . ' level' . $variables['level'] . '"' . $extra . '>' . $variables['tree'] . '</ul>';
+
+  return '<ul role="menubar" class="' . $variables['menu_parent_name'] . ' level' . $variables['level'] . '">' . $variables['tree'] . '</ul>';
 }
 /**
  * Implements hook_menu_link().
@@ -324,9 +321,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
       }
     }
     $element['#localized_options']['html'] = true;
-  } else if ( $element['#original_link']['depth'] == '2' ) {
-      $element['#localized_options']['attributes']['class'][] = "level2";
-    }
+  } 
   $sub_menu = '';
   if ( $element['#below'] ) {
     $sub_menu = drupal_render( $element['#below'] );
@@ -334,8 +329,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   ////
   // Define special variables for use in hook_menu_tree
-  $menname = $element['#original_link']['menu_name'];
-  $element['#attributes']['data-menu-parent-name'] = $menname;
+  $element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'];
   $element['#attributes']['data-level'] = $element['#original_link']['depth'];
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }

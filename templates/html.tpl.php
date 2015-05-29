@@ -22,6 +22,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   <?php endif; ?>
 
+<link rel="shortcut icon" href="<?php print base_path() . path_to_theme(); ?>/favicon.ico" type="image/x-icon" />
+
   <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Droid+Sans:400,700:latin', 'Droid+Serif:400,700,400italic,700italic:latin' ] }

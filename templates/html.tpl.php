@@ -23,23 +23,7 @@
   <?php endif; ?>
 
 <link rel="shortcut icon" href="<?php print base_path() . path_to_theme(); ?>/favicon.ico" type="image/x-icon" />
-
-  <script type="text/javascript">
-      WebFontConfig = {
-        google: { families: [ 'Droid+Sans:400,700:latin', 'Droid+Serif:400,700,400italic,700italic:latin' ] }
-      };
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })(); 
-    </script>
-
-  <meta http-equiv="cleartype" content="on">
+ <meta http-equiv="cleartype" content="on">
 
   <?php print $styles; ?>
 
@@ -56,6 +40,22 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
+
+    <script type="text/javascript">
+      WebFontConfig = {
+        google: { families: [ 'Droid+Sans:400,700:latin', 'Droid+Serif:400,700,400italic,700italic:latin' ] }
+      };
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })(); 
+    </script>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>

@@ -1,10 +1,10 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent. v1
 //////////////////////////////
-
 @import "_global_nav_variables";
 
-#admin-menu, #admin-menu .dropdown {
+#admin-menu,
+#admin-menu .dropdown {
     display: none;
 }
 
@@ -13,7 +13,7 @@
     position: relative;
 }
 
-nav[role="navigation"].global {
+nav.global {
     //$experimental-support-for-svg: true;
     @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
     width: 100%;
@@ -46,7 +46,8 @@ nav[role="navigation"].global {
                     color: nth($black, 6);
                     text-decoration: underline;
                 }
-                &:link, &:visited {
+                &:link,
+                &:visited {
                     color: nth($black, 6);
                     text-decoration: none;
                 }
@@ -54,7 +55,7 @@ nav[role="navigation"].global {
         }
     }
     // top level lists
-    >ul {
+    > ul {
         width: 100%;
         position: relative;
         // all deeper than one level
@@ -62,6 +63,7 @@ nav[role="navigation"].global {
             float: left;
             width: auto;
             position: relative;
+            // background-color: fuchsia;
             > li {
                 > a {
                     padding: .3em 0.5em;
@@ -72,9 +74,11 @@ nav[role="navigation"].global {
     // State
     ul[aria-hidden="true"] {
         display: none;
+        overflow: hidden;
     }
     ul[aria-hidden="false"] {
         display: inline-block;
+        overflow: visible;
     }
     li.sites_nav {
         // Nav among MC projects
@@ -136,17 +140,16 @@ nav[role="navigation"].global {
                     &:hover {
                         text-decoration: none;
                     }
-                    &:link, &:visited {
+                    &:link,
+                    &:visited {
                         text-decoration: none;
                     }
                 }
-               
             }
-             ul.level2 a:hover {
-                    text-decoration: underline;
-                }
-            li.first{
-               
+            ul a:hover {
+                text-decoration: underline;
+            }
+            li.first {
                 padding-top: 10px;
             }
         }
@@ -183,7 +186,8 @@ nav[role="navigation"].global {
                 form {
                     font-size: .875em;
                     margin: 0 1em;
-                    input[type="text"], input[type="password"] {
+                    input[type="text"],
+                    input[type="password"] {
                         max-width: 100%;
                         width: 100%;
                         display: block;
@@ -229,7 +233,8 @@ nav[role="navigation"].global {
     @include respond-to("narrow navigation") {
         padding: 0 2%;
         font-size: 1.3rem;
-        ul.level1 {
+        // top level navigation
+        > ul {
             width: auto;
             position: relative;
             height: $globalnav-height;
@@ -249,11 +254,9 @@ nav[role="navigation"].global {
                 float: left;
                 padding-right: 0;
                 @include border-radius(5px);
-                ul[aria-hidden="true"] {
-                    display: none;
-                }
-                ul[aria-hidden="false"] {
-                    display: block;
+                > ul {
+                    @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+                    @include border-radius(0 0 5px 5px);
                 }
                 li:before {
                     content: " ";
@@ -281,7 +284,8 @@ nav[role="navigation"].global {
                     min-width: 200px;
                     right: 0;
                     top: $globalnav-height;
-                    li,li:first-child {
+                    li,
+                    li:first-child {
                         padding: 0;
                         a {
                             padding: .4em 1em;

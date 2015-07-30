@@ -131,8 +131,14 @@ function mediacommons_field__field_skype ($vars) {
   return '<li><a class="u-url url skype" href="skype:'. $vars['items'][0]['#markup'] . '" rel="me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
 function mediacommons_field__field_organization ($vars) {
- 
-  return '<span class="p-org">' . $vars['items'][0]['#markup'] . '</span>';
+  
+    if (isset($vars['items'][0]['#title'])) {
+    return '<span class="p-org"><a href="'. $GLOBALS['base_path'] . $vars['items'][0]['#href'] .'">' . $vars['items'][0]['#title'] . '</a></span>';
+  } else if (isset($vars['items'][0]['#markup'])) {
+    return '<span class="p-org">' . $vars['items'][0]['#markup'] . '</span>';
+  } else {
+    return '<span class="p-org">Organization N/A</span>';
+  }
 }
 
 function mediacommons_field__field_aim ($vars) {
@@ -162,7 +168,16 @@ function mediacommons_field__field_title($vars) {
   return '<span class="p-job-title title">' . $vars['items'][0]['#markup'] . '</span>';
 }
 function mediacommons_field__field_city($vars) {
-  return '<span class="p-locality">' . $vars['items'][0]['#markup'] . '</span>';
+
+     if (isset($vars['items'][0]['#title'])) {
+    return '<span class="p-locality"><a href="'. $GLOBALS['base_path'] . $vars['items'][0]['#href'] .'">' . $vars['items'][0]['#title'] . '</a></span>';
+
+  }
+   if (isset($vars['items'][0]['#markup'])) {
+    return '<span class="p-locality">' . $vars['items'][0]['#markup'] . '</span>';
+    } else {
+    return '<span class="p-locality">City Not available</span>';
+    }
 }
 function mediacommons_field__field_state($vars) {
   return '<span class="p-region">' . $vars['items'][0]['#markup'] . '</span>';
@@ -269,8 +284,12 @@ function mediacommons_preprocess_menu_tree( &$variables ) {
  * Implements hook_menu_tree().
  */
 function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
-
-  return '<ul role="menubar" class="' . $variables['menu_parent_name'] . ' level' . $variables['level'] . '">' . $variables['tree'] . '</ul>';
+  // here is where you can affect the <ul> elements
+  if ($variables['level'] =="2") {
+    return '<ul aria-hidden="true">' . $variables['tree'] . '</ul>';
+  } else {
+    return '<ul role="menubar" >' . $variables['tree'] . '</ul>';
+  }
 }
 /**
  * Implements hook_menu_link().
@@ -329,7 +348,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   ////
   // Define special variables for use in hook_menu_tree
-  $element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'];
+  //$element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'];
   $element['#attributes']['data-level'] = $element['#original_link']['depth'];
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }

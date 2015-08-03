@@ -42,13 +42,14 @@ nav.global {
                 color: nth($black, 5);
                 text-indent: 0;
                 padding: .5em;
-                &:hover {
-                    color: nth($black, 6);
+                // important is for overriding the project specific colors
+                &:hover, &:focus  {
+                    color: nth($black, 6) !important;
                     text-decoration: underline;
                 }
                 &:link,
                 &:visited {
-                    color: nth($black, 6);
+                    color: nth($black, 6) !important;
                     text-decoration: none;
                 }
             }

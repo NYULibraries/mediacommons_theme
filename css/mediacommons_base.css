@@ -1323,42 +1323,42 @@ nav.global ul li a {
   text-indent: 0;
   padding: .5em;
 }
-/* line 45, ../sass/modules/global_nav/_global_nav.scss */
-nav.global ul li a:hover {
-  color: #e9e9e9;
+/* line 46, ../sass/modules/global_nav/_global_nav.scss */
+nav.global ul li a:hover, nav.global ul li a:focus {
+  color: #e9e9e9 !important;
   text-decoration: underline;
 }
-/* line 49, ../sass/modules/global_nav/_global_nav.scss */
+/* line 50, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:link, nav.global ul li a:visited {
-  color: #e9e9e9;
+  color: #e9e9e9 !important;
   text-decoration: none;
 }
-/* line 58, ../sass/modules/global_nav/_global_nav.scss */
+/* line 59, ../sass/modules/global_nav/_global_nav.scss */
 nav.global > ul {
   width: 100%;
   position: relative;
 }
-/* line 62, ../sass/modules/global_nav/_global_nav.scss */
+/* line 63, ../sass/modules/global_nav/_global_nav.scss */
 nav.global > ul ul {
   float: left;
   width: auto;
   position: relative;
 }
-/* line 68, ../sass/modules/global_nav/_global_nav.scss */
+/* line 69, ../sass/modules/global_nav/_global_nav.scss */
 nav.global > ul ul > li > a {
   padding: .3em 0.5em;
 }
-/* line 75, ../sass/modules/global_nav/_global_nav.scss */
+/* line 76, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="true"] {
   display: none;
   overflow: hidden;
 }
-/* line 79, ../sass/modules/global_nav/_global_nav.scss */
+/* line 80, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="false"] {
   display: inline-block;
   overflow: visible;
 }
-/* line 85, ../sass/modules/global_nav/_global_nav.scss */
+/* line 86, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink {
   max-width: 100%;
   padding: .125em 1em 0 0;
@@ -1369,29 +1369,29 @@ nav.global li.sites_nav .logolink {
   font-size: 1.2em;
   line-height: 1;
 }
-/* line 94, ../sass/modules/global_nav/_global_nav.scss */
+/* line 95, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink:hover {
   text-decoration: none;
 }
-/* line 97, ../sass/modules/global_nav/_global_nav.scss */
+/* line 98, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink span {
   display: none;
 }
-/* line 102, ../sass/modules/global_nav/_global_nav.scss */
+/* line 103, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav li:before {
   content: "|";
   color: #c8c8c8;
   font-size: .75em;
 }
-/* line 107, ../sass/modules/global_nav/_global_nav.scss */
+/* line 108, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav li > a {
   padding: .5em 0.5em;
 }
-/* line 111, ../sass/modules/global_nav/_global_nav.scss */
+/* line 112, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav li:first-child:before {
   content: " ";
 }
-/* line 118, ../sass/modules/global_nav/_global_nav.scss */
+/* line 119, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils {
   position: absolute;
   overflow: visible;
@@ -1400,13 +1400,13 @@ nav.global li.utils {
   color: #c8c8c8;
   margin-right: .5em;
 }
-/* line 123, ../sass/modules/global_nav/_global_nav.scss */
+/* line 124, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils [aria-haspopup="true"] > a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 125, ../sass/modules/global_nav/_global_nav.scss */
+/* line 126, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils [aria-haspopup="true"] > a.open {
   -moz-border-radius-bottomleft: 0px;
   -webkit-border-bottom-left-radius: 0px;
@@ -1426,31 +1426,31 @@ nav.global li.utils [aria-haspopup="true"] > a.open {
   border-bottom: none;
   height: 3.6em;
 }
-/* line 136, ../sass/modules/global_nav/_global_nav.scss */
+/* line 137, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in li {
   padding: 0px;
 }
-/* line 138, ../sass/modules/global_nav/_global_nav.scss */
+/* line 139, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in li a {
   padding: 10px;
 }
-/* line 140, ../sass/modules/global_nav/_global_nav.scss */
+/* line 141, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in li a:hover {
   text-decoration: none;
 }
-/* line 143, ../sass/modules/global_nav/_global_nav.scss */
+/* line 144, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in li a:link, nav.global li.utils.logged-in li a:visited {
   text-decoration: none;
 }
-/* line 149, ../sass/modules/global_nav/_global_nav.scss */
+/* line 150, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in ul a:hover {
   text-decoration: underline;
 }
-/* line 152, ../sass/modules/global_nav/_global_nav.scss */
+/* line 153, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils.logged-in li.first {
   padding-top: 10px;
 }
-/* line 163, ../sass/modules/global_nav/_global_nav.scss */
+/* line 164, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul {
   min-width: 300px;
   position: absolute;
@@ -1470,7 +1470,7 @@ nav.global li.utils > ul {
   right: .5em;
   top: 1.5rem;
 }
-/* line 172, ../sass/modules/global_nav/_global_nav.scss */
+/* line 173, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li {
   padding-top: 20px;
   float: none;
@@ -1481,17 +1481,17 @@ nav.global li.utils > ul > li {
   max-width: 300px;
   text-indent: 0em;
 }
-/* line 175, ../sass/modules/global_nav/_global_nav.scss */
+/* line 176, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li > a {
   padding: 0.3em 0.5em;
   display: block;
 }
-/* line 186, ../sass/modules/global_nav/_global_nav.scss */
+/* line 187, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form {
   font-size: .875em;
   margin: 0 1em;
 }
-/* line 189, ../sass/modules/global_nav/_global_nav.scss */
+/* line 190, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form input[type="text"],
 nav.global li.utils > ul > li form input[type="password"] {
   max-width: 100%;
@@ -1499,26 +1499,26 @@ nav.global li.utils > ul > li form input[type="password"] {
   display: block;
   margin: 0 0 1em 0;
 }
-/* line 196, ../sass/modules/global_nav/_global_nav.scss */
+/* line 197, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form .description {
   display: none;
   white-space: normal;
   font-size: .875em;
   line-height: 1.2em;
 }
-/* line 202, ../sass/modules/global_nav/_global_nav.scss */
+/* line 203, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form label {
   display: none;
 }
-/* line 205, ../sass/modules/global_nav/_global_nav.scss */
+/* line 206, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form #edit-submit {
   float: right;
 }
-/* line 208, ../sass/modules/global_nav/_global_nav.scss */
+/* line 209, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 211, ../sass/modules/global_nav/_global_nav.scss */
+/* line 212, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form .social-login {
   margin: .5em 0;
   overflow: hidden;
@@ -1527,13 +1527,13 @@ nav.global li.utils > ul > li form .social-login {
   font-size: .7em;
   line-height: 1.2em;
 }
-/* line 218, ../sass/modules/global_nav/_global_nav.scss */
+/* line 219, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form .social-login input#edit-submit-twitter {
   max-width: 46%;
   padding: 5px;
   float: left;
 }
-/* line 223, ../sass/modules/global_nav/_global_nav.scss */
+/* line 224, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
   max-width: 52%;
   float: right;
@@ -1545,13 +1545,13 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     padding: 0 2%;
     font-size: 1.3rem;
   }
-  /* line 237, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 238, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul {
     width: auto;
     position: relative;
     height: 1.925em;
   }
-  /* line 241, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 242, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav {
     width: 16em;
     height: 1.925em;
@@ -1565,15 +1565,15 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     -webkit-border-radius: 5px;
     border-radius: 5px;
   }
-  /* line 242, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 243, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav a.logolink {
     padding: .25em 0em .25em 0;
   }
-  /* line 244, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 245, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav a.logolink:before {
     content: "\e002 \e00b";
   }
-  /* line 257, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 258, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav > ul {
     background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzEyNDc2ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNDc2ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
     background-size: 100%;
@@ -1585,15 +1585,15 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     -webkit-border-radius: 0;
     border-radius: 0 0 5px 5px;
   }
-  /* line 261, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 262, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav li:before {
     content: " ";
   }
-  /* line 265, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 266, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.sites_nav .menu-mcglobalnav a {
     padding: .4em 1em;
   }
-  /* line 270, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 271, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils {
     width: auto;
     height: 1.925em;
@@ -1604,33 +1604,33 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     float: right;
     padding-right: 0;
   }
-  /* line 279, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 280, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils a.login-link {
     height: 1.925em;
     display: block;
   }
-  /* line 283, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 284, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils ul {
     min-width: 200px;
     right: 0;
     top: 1.925em;
   }
-  /* line 287, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 288, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils ul li,
   nav.global > ul li.utils ul li:first-child {
     padding: 0;
   }
-  /* line 290, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 291, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils ul li a,
   nav.global > ul li.utils ul li:first-child a {
     padding: .4em 1em;
     display: block;
   }
-  /* line 295, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 296, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul li.utils ul li:first-child {
     padding-top: 5px;
   }
-  /* line 300, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 301, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul ul.open {
     height: auto;
     padding-bottom: .25em;
@@ -1647,19 +1647,19 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     -webkit-border-bottom-right-radius: 5px;
     border-bottom-right-radius: 5px;
   }
-  /* line 307, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 308, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul ul.open > li {
     display: block;
     float: none;
     width: 100%;
     clear: left;
   }
-  /* line 312, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 313, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul ul.open > li:hover {
     background-color: #12476e;
     color: #e9e9e9;
   }
-  /* line 316, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 317, ../sass/modules/global_nav/_global_nav.scss */
   nav.global > ul ul.open > li a {
     font-size: 1rem;
     display: block;

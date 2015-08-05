@@ -416,24 +416,31 @@ i, em {
   font-style: italic;
 }
 
-/* line 75, ../sass/base/typography/_typography.scss */
+/* line 74, ../sass/base/typography/_typography.scss */
+sup {
+  position: relative;
+  top: -.3em;
+  font-size: .9em;
+}
+
+/* line 79, ../sass/base/typography/_typography.scss */
 hr {
   height: 0.1em;
   background: #cccccc;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-/* line 82, ../sass/base/typography/_typography.scss */
+/* line 86, ../sass/base/typography/_typography.scss */
 p, ul, ol, hr, table, form, fieldset {
   margin: 0 0 1em 0;
 }
 
-/* line 87, ../sass/base/typography/_typography.scss */
+/* line 91, ../sass/base/typography/_typography.scss */
 li {
   list-style-position: inside;
 }
 
-/* line 93, ../sass/base/typography/_typography.scss */
+/* line 97, ../sass/base/typography/_typography.scss */
 blockquote {
   margin: 1em 1.5em 1em 0;
   border-width: 0 0 0 0.25em;
@@ -450,12 +457,12 @@ blockquote {
   -webkit-border-radius: 0.5em;
   border-radius: 0.5em;
 }
-/* line 104, ../sass/base/typography/_typography.scss */
+/* line 108, ../sass/base/typography/_typography.scss */
 blockquote em {
   font-weight: normal;
 }
 
-/* line 109, ../sass/base/typography/_typography.scss */
+/* line 113, ../sass/base/typography/_typography.scss */
 figcaption {
   font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
   font-weight: normal;
@@ -465,7 +472,7 @@ figcaption {
   color: #666666;
 }
 
-/* line 116, ../sass/base/typography/_typography.scss */
+/* line 120, ../sass/base/typography/_typography.scss */
 article,
 article > p,
 article section > p {
@@ -481,13 +488,13 @@ article section > p {
   */
 }
 
-/* line 131, ../sass/base/typography/_typography.scss */
+/* line 135, ../sass/base/typography/_typography.scss */
 article.comment {
   font-size: 0.8rem;
   line-height: 1.3rem;
 }
 
-/* line 135, ../sass/base/typography/_typography.scss */
+/* line 139, ../sass/base/typography/_typography.scss */
 article footer + p:first-letter,
 article section > h2 + p:first-letter,
 article section > p:first-child:first-letter,
@@ -503,7 +510,7 @@ h1 + p:first-letter {
   color: inherit;
 }
 
-/* line 150, ../sass/base/typography/_typography.scss */
+/* line 154, ../sass/base/typography/_typography.scss */
 time {
   display: block;
   text-align: left;
@@ -519,7 +526,7 @@ time:before {
   content: "";
 }
 
-/* line 161, ../sass/base/typography/_typography.scss */
+/* line 165, ../sass/base/typography/_typography.scss */
 pre {
   margin: 1em;
   padding: 2em;
@@ -538,7 +545,7 @@ pre {
   background-image: linear-gradient(to bottom, #cccccc, #eeeeee);
 }
 
-/* line 172, ../sass/base/typography/_typography.scss */
+/* line 176, ../sass/base/typography/_typography.scss */
 address {
   font-style: normal;
   display: inline;
@@ -1212,19 +1219,19 @@ a.control:active {
   font-weight: normal;
   font-style: normal;
 }
-/* line 6, ../sass/modules/global_nav/_global_nav.scss */
+/* line 5, ../sass/modules/global_nav/_global_nav.scss */
 #admin-menu,
 #admin-menu .dropdown {
   display: none;
 }
 
-/* line 11, ../sass/modules/global_nav/_global_nav.scss */
+/* line 10, ../sass/modules/global_nav/_global_nav.scss */
 #block-system-user-menu {
   outline: none;
   position: relative;
 }
 
-/* line 16, ../sass/modules/global_nav/_global_nav.scss */
+/* line 15, ../sass/modules/global_nav/_global_nav.scss */
 nav.global {
   background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzE3NTg4OCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzEyNDc2ZSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
   background-size: 100%;
@@ -1242,7 +1249,7 @@ nav.global {
   z-index: 2000;
   padding: 0.3em 1% 0 1%;
 }
-/* line 29, ../sass/modules/global_nav/_global_nav.scss */
+/* line 28, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul {
   margin: 0;
   padding: 0;
@@ -1274,13 +1281,13 @@ nav.global ul li:last-child {
 nav.global ul li.last {
   padding-right: 0;
 }
-/* line 33, ../sass/modules/global_nav/_global_nav.scss */
+/* line 32, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li {
   text-indent: 0;
   margin: 0;
   padding: 0;
 }
-/* line 37, ../sass/modules/global_nav/_global_nav.scss */
+/* line 36, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a {
   font-size: .775em;
   line-height: 1.5;
@@ -1290,7 +1297,7 @@ nav.global ul li a {
   text-indent: 0;
   padding: .5em;
 }
-/* line 46, ../sass/modules/global_nav/_global_nav.scss */
+/* line 45, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:hover, nav.global ul li a:focus {
   color: #e9e9e9 !important;
   text-decoration: underline;

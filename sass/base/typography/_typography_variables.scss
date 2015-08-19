@@ -24,7 +24,7 @@ $ms-ratio: $major-sixth;    // 1:1.667
 // MS-LIST: 0.6em 1em 1.35em 1.66667em 2.25em 2.77778em 3.75em 4.62963em 6.25em 7.71605em 10.41667em 12.86008em 17.36111em 21.43347em 28.93519em 35.72245em 48.22531em 59.53742em 80.37551em 99.22903em 133.95919em 165.38172em'
 
 $h1-border-width: false;
-$h1-font-size:  ms(4); // 2.77778em
+$h1-font-size:  ms(3); // 2.25em
 $h1-line-height: 1.1em;
 $h1-padding: 0em;
 $h1-padding-pos: top;
@@ -33,7 +33,7 @@ $h1-margin-pos: bottom;
 $h1-color: nth($black, 2);
 
 $h2-border-width: false;
-$h2-font-size: ms(3); // 2.25em
+$h2-font-size:  ms(2); // 1.66667em
 $h2-line-height: 1.1;
 $h2-padding: .25em;
 $h2-padding-pos: top;
@@ -42,7 +42,7 @@ $h2-margin: 0;
 $h2-color: nth($black, 2);
 
 $h3-border-width: false;
-$h3-font-size: ms(2); // 1.66667em
+$h3-font-size: ms(1); // 1.35em
 $h3-line-height: 1.1em;
 $h3-padding:  .25em;
 $h3-padding-pos: top;
@@ -51,7 +51,7 @@ $h3-margin: -.25em;
 $h3-color: nth($black, 2);
 
 $h4-border-width: false;
-$h4-font-size: ms(1); // 1.35em
+$h4-font-size: ms(0); // 1em
 $h4-line-height: 1.1em;
 $h4-font-bold: true;
 $h4-padding: .25em;
@@ -61,7 +61,7 @@ $h4-margin: -.25em;
 $h4-color: nth($black, 2);
 
 $h5-border-width: false;
-$h5-font-size: ms(1); // 1.35em
+$h5-font-size:  ms(0); // 1em
 $h5-line-height: 1.1em;
 $h5-padding: .25em;
 $h5-padding-pos: top;
@@ -99,7 +99,7 @@ $h1-font-bold: false !default; // normal
 $h1-font-italic: false !default; // normal
 $h1-font-uppercase: false !default; // normal
 $h1-font-variant: false !default; // normal
-$h1-font-size: 2.5em !default;
+$h1-font-size: 2em !default;
 $h1-line-height: 1.125em !default;
 $h1-padding: 1em !default;
 $h1-padding-pos: top !default;

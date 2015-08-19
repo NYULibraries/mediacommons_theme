@@ -127,19 +127,25 @@ function mediacommons_field__field_profile_name($vars) {
     return '<h1 class="p-name fn">' . $vars['items'][0]['#markup'] . '</h1>';
   }
 }
+function mediacommons_field__field_body__spoke($vars) {
+   $specialBodyClass   = theme_get_setting( 'special_body_class' ) ? theme_get_setting( 'special_body_class' ) : "" ;
+   if (isset($vars['items']) && ($specialBodyClass == "imr" || $specialBodyClass == "intransition")) {
+    return "<h2>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
+  } 
+}
 function mediacommons_field__field_skype ($vars) {
   return '<li><a class="u-url url skype" href="skype:'. $vars['items'][0]['#markup'] . '" rel="me"><span>' . $vars['items'][0]['#markup'] . '</span></a></li>';
 }
-function mediacommons_field__field_organization ($vars) {
+// function mediacommons_field__field_organization ($vars) {
   
-    if (isset($vars['items'][0]['#title'])) {
-    return '<span class="p-org"><a href="'. $GLOBALS['base_path'] . $vars['items'][0]['#href'] .'">' . $vars['items'][0]['#title'] . '</a></span>';
-  } else if (isset($vars['items'][0]['#markup'])) {
-    return '<span class="p-org">' . $vars['items'][0]['#markup'] . '</span>';
-  } else {
-    return '<span class="p-org">Organization N/A</span>';
-  }
-}
+//     if (isset($vars['items'][0]['#title'])) {
+//     return '<span class="p-org"><a href="'. $GLOBALS['base_path'] . $vars['items'][0]['#href'] .'">' . $vars['items'][0]['#title'] . '</a></span>';
+//   } else if (isset($vars['items'][0]['#markup'])) {
+//     return '<span class="p-org">' . $vars['items'][0]['#markup'] . '</span>';
+//   } else {
+//     return '<span class="p-org">Organization N/A</span>';
+//   }
+// }
 
 function mediacommons_field__field_aim ($vars) {
   return '<li><span class="p-aim">' . $vars['items'][0]['#markup'] . '</span></li>';

@@ -59,13 +59,10 @@ h2.block-title {
         font-size: 1.1rem;
         [role="complementary"] & {
             font-size: .9rem;
+            padding-bottom: 5px;
         }
     }
     .title {
-        // margin: 0.2rem 0;
-        // font-size: .9rem;
-        // color: nth($black, 2);
-        display: inline-block;
     }
     .field-user-avatar, .prof-img-hold {
         float: left;
@@ -105,7 +102,6 @@ h2.block-title {
             // mdash encoded http://css-tricks.com/snippets/html/glyphs/
        
         }
-        display: inline-block;
     }
     .h-adr {
         display: block;

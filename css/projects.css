@@ -1,150 +1,188 @@
 /*   */
-/* line 29, ../sass/projects.scss */
+/* line 25, ../sass/projects.scss */
 body.mc a:link,
 body.mc a:visited {
   color: #196195;
 }
-/* line 33, ../sass/projects.scss */
+/* line 29, ../sass/projects.scss */
 body.mc a[href]:hover,
 body.mc a[href]:focus {
   color: #124569;
   text-decoration: underline;
 }
-/* line 38, ../sass/projects.scss */
+/* line 34, ../sass/projects.scss */
 body.mc a[href]:active {
   color: #0a283e;
 }
-/* line 47, ../sass/projects.scss */
+/* line 43, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 51, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.mc [role="complementary"] {
   background-color: #f4eee7;
 }
-/* line 53, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 body.mc [role="complementary"] header {
   background-color: #e4d7c5;
 }
 
 /*   */
 /*   */
-/* line 29, ../sass/projects.scss */
+/* line 25, ../sass/projects.scss */
 body.tne a:link,
 body.tne a:visited {
   color: #1db7b7;
 }
-/* line 33, ../sass/projects.scss */
+/* line 29, ../sass/projects.scss */
 body.tne a[href]:hover,
 body.tne a[href]:focus {
   color: #168b8b;
   text-decoration: underline;
 }
-/* line 38, ../sass/projects.scss */
+/* line 34, ../sass/projects.scss */
 body.tne a[href]:active {
   color: #0f5f5f;
 }
-/* line 47, ../sass/projects.scss */
+/* line 43, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 51, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.tne [role="complementary"] {
   background-color: #f8efe9;
 }
-/* line 53, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 body.tne [role="complementary"] header {
   background-color: #edd8c6;
 }
 
 /*   */
 /*   */
-/* line 29, ../sass/projects.scss */
+/* line 25, ../sass/projects.scss */
 body.imr a:link,
 body.imr a:visited {
   color: #e25025;
 }
-/* line 33, ../sass/projects.scss */
+/* line 29, ../sass/projects.scss */
 body.imr a[href]:hover,
 body.imr a[href]:focus {
   color: #bb3e19;
   text-decoration: underline;
 }
-/* line 38, ../sass/projects.scss */
+/* line 34, ../sass/projects.scss */
 body.imr a[href]:active {
   color: #8e2f13;
 }
-/* line 47, ../sass/projects.scss */
+/* line 43, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 51, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.imr [role="complementary"] {
   background-color: #ebfcf2;
 }
-/* line 53, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #c8f7dc;
 }
 
 /*   */
 /*   */
-/* line 29, ../sass/projects.scss */
+/* line 25, ../sass/projects.scss */
 body.int a:link,
 body.int a:visited {
   color: #782a71;
 }
-/* line 33, ../sass/projects.scss */
+/* line 29, ../sass/projects.scss */
 body.int a[href]:hover,
 body.int a[href]:focus {
   color: #521d4d;
   text-decoration: underline;
 }
-/* line 38, ../sass/projects.scss */
+/* line 34, ../sass/projects.scss */
 body.int a[href]:active {
   color: #2c102a;
 }
-/* line 47, ../sass/projects.scss */
+/* line 43, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 51, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.int [role="complementary"] {
   background-color: #eff0e8;
 }
-/* line 53, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 body.int [role="complementary"] header {
   background-color: #d9ddc9;
 }
 
 /*   */
 /*   */
-/* line 29, ../sass/projects.scss */
+/* line 25, ../sass/projects.scss */
 body.alt a:link,
 body.alt a:visited {
   color: #be1e2d;
 }
-/* line 33, ../sass/projects.scss */
+/* line 29, ../sass/projects.scss */
 body.alt a[href]:hover,
 body.alt a[href]:focus {
   color: #921723;
   text-decoration: underline;
 }
-/* line 38, ../sass/projects.scss */
+/* line 34, ../sass/projects.scss */
 body.alt a[href]:active {
   color: #661018;
 }
-/* line 47, ../sass/projects.scss */
+/* line 43, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 51, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.alt [role="complementary"] {
   background-color: #ebf8e9;
 }
-/* line 53, ../sass/projects.scss */
+/* line 49, ../sass/projects.scss */
 body.alt [role="complementary"] header {
   background-color: #cceec6;
 }
 
 /*   */
+/* line 58, ../sass/projects.scss */
+body.imr.front #content {
+  width: auto;
+  float: none;
+}
+/* line 62, ../sass/projects.scss */
+body.imr.front .hubhead {
+  float: left;
+  width: 38%;
+}
+/* line 65, ../sass/projects.scss */
+body.imr.front .hubhead .field-name-title h2 {
+  font-size: 30px;
+}
+/* line 69, ../sass/projects.scss */
+body.imr.front .daterange {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 73, ../sass/projects.scss */
+body.imr.front .caption {
+  font-size: .7em;
+}
+/* line 76, ../sass/projects.scss */
+body.imr.front .field-name-post-date {
+  display: none;
+}
+/* line 79, ../sass/projects.scss */
+body.imr.front .field-name-field-spokes {
+  float: right;
+  width: 60%;
+}
+
+/* line 112, ../sass/projects.scss */
+body.imr .node-hub.view-mode-teaser {
+  border-bottom: 1px solid gray;
+  padding: 1em 0;
+}

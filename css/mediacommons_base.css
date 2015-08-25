@@ -349,7 +349,7 @@ blockquote .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h4 {
 /* line 7, ../sass/base/typography/_typography.scss */
 h1 {
   font-weight: normal;
-  font-size: 2.77778em;
+  font-size: 2.25em;
   line-height: 1.1em;
   padding-top: 0em;
   margin-bottom: -0.25em;
@@ -359,7 +359,7 @@ h1 {
 /* line 17, ../sass/base/typography/_typography.scss */
 h2 {
   font-weight: normal;
-  font-size: 2.25em;
+  font-size: 1.66667em;
   line-height: 1.1;
   padding-top: 0.25em;
   margin-bottom: 0;
@@ -369,7 +369,7 @@ h2 {
 /* line 27, ../sass/base/typography/_typography.scss */
 h3 {
   font-weight: normal;
-  font-size: 1.66667em;
+  font-size: 1.35em;
   line-height: 1.1em;
   padding-top: 0.25em;
   margin-bottom: -0.25em;
@@ -379,7 +379,7 @@ h3 {
 /* line 37, ../sass/base/typography/_typography.scss */
 h4 {
   font-weight: bold;
-  font-size: 1.35em;
+  font-size: 1em;
   line-height: 1.1em;
   padding-top: 0.25em;
   margin-bottom: -0.25em;
@@ -389,7 +389,7 @@ h4 {
 /* line 47, ../sass/base/typography/_typography.scss */
 h5 {
   font-weight: normal;
-  font-size: 1.35em;
+  font-size: 1em;
   line-height: 1.1em;
   padding-top: 0.25em;
   margin-bottom: -0.25em;
@@ -2224,7 +2224,7 @@ ul.slides .field-name-field-body {
 /* line 18, ../sass/modules/content/_content.scss */
 .page-taxonomy .term-listing-heading .page-title, .page-taxonomy .term-listing-heading .label-inline {
   display: inline-block;
-  font-size: 2.77778em;
+  font-size: 2.25em;
   line-height: 1.1em;
   margin-top: 0;
   color: #5a5a5a;
@@ -2616,25 +2616,25 @@ ul.action-links li a {
 /* line 57, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] header {
   padding: .5rem 1rem;
-  background: #e57f57;
+  background: #c8c8c8;
   color: #232323;
   font-size: 1.1rem;
   line-height: 1.3;
   margin-bottom: 0;
 }
-/* line 64, ../sass/modules/hub_list/_hub_list.scss */
+/* line 65, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] header > div {
   font-style: italic;
   color: #232323;
 }
-/* line 68, ../sass/modules/hub_list/_hub_list.scss */
+/* line 69, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] header span {
   display: block;
   color: #333;
   font-style: italic;
   font-size: .7em;
 }
-/* line 74, ../sass/modules/hub_list/_hub_list.scss */
+/* line 75, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] header h2, [role="complementary"] header h1 {
   color: #232323;
   font-size: 1.1rem;
@@ -2642,125 +2642,125 @@ ul.action-links li a {
   padding: 0;
   margin: 0;
 }
-/* line 83, ../sass/modules/hub_list/_hub_list.scss */
+/* line 84, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub, [role="complementary"] .view-all-spokes-in-this-spokes-hub,
 [role="complementary"] #block-views-mc-recent-comments-block {
   margin-left: 0px;
 }
-/* line 86, ../sass/modules/hub_list/_hub_list.scss */
+/* line 87, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub .view-content, [role="complementary"] .view-all-spokes-in-this-spokes-hub .view-content,
 [role="complementary"] #block-views-mc-recent-comments-block .view-content {
   padding: 1rem;
 }
-/* line 88, ../sass/modules/hub_list/_hub_list.scss */
+/* line 89, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub .view-content > div, [role="complementary"] .view-all-spokes-in-this-spokes-hub .view-content > div,
 [role="complementary"] #block-views-mc-recent-comments-block .view-content > div {
   line-height: 1.3;
   margin-bottom: .8rem;
 }
-/* line 94, ../sass/modules/hub_list/_hub_list.scss */
+/* line 95, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 99, ../sass/modules/hub_list/_hub_list.scss */
+/* line 100, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li {
   text-indent: 0;
   margin: 0;
   line-height: 1.4;
 }
-/* line 103, ../sass/modules/hub_list/_hub_list.scss */
+/* line 104, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a {
   padding: .5em 0;
   display: block;
 }
-/* line 107, ../sass/modules/hub_list/_hub_list.scss */
+/* line 108, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover {
   color: #919191;
   cursor: default;
   text-decoration: none;
 }
-/* line 111, ../sass/modules/hub_list/_hub_list.scss */
+/* line 112, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active a, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active span, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover a, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover span {
   color: #232323;
 }
-/* line 115, ../sass/modules/hub_list/_hub_list.scss */
+/* line 116, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li > h3 {
   vertical-align: top;
   font-size: 1.2em;
   padding: .5em 0;
   margin: 0;
 }
-/* line 125, ../sass/modules/hub_list/_hub_list.scss */
+/* line 126, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].bio > div {
   padding: 1rem;
   font-size: .7rem;
   line-height: 1.5;
 }
-/* line 129, ../sass/modules/hub_list/_hub_list.scss */
+/* line 130, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].bio > div p {
   margin: 0 0 .8em 0;
 }
-/* line 134, ../sass/modules/hub_list/_hub_list.scss */
+/* line 135, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .responsive-disclosure {
   display: none;
 }
 @media (min-width: 50.0625em) {
-  /* line 138, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 139, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"] span.responsive-disclosure {
     display: none;
   }
-  /* line 141, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 142, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"] nav {
     display: block;
   }
 }
 
-/* line 158, ../sass/modules/hub_list/_hub_list.scss */
+/* line 159, ../sass/modules/hub_list/_hub_list.scss */
 aside + h2 {
   clear: both;
 }
 
 /*****************************/
-/* line 164, ../sass/modules/hub_list/_hub_list.scss */
+/* line 165, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .hub-title {
   font-size: 1.5em;
   padding: .2em 0 0 0;
   margin: 0 0 .3em 0;
   color: #232323;
 }
-/* line 170, ../sass/modules/hub_list/_hub_list.scss */
+/* line 171, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub p {
   margin: 0 0 .2em 0;
 }
-/* line 173, ../sass/modules/hub_list/_hub_list.scss */
+/* line 174, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .all-spokes {
   position: relative;
   z-index: 10;
 }
-/* line 177, ../sass/modules/hub_list/_hub_list.scss */
+/* line 178, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.3;
 }
-/* line 182, ../sass/modules/hub_list/_hub_list.scss */
+/* line 183, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period a:link, .node-hub .field-name-field-period a:visited {
   color: #5a5a5a;
 }
-/* line 185, ../sass/modules/hub_list/_hub_list.scss */
+/* line 186, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-label {
   display: inline-block;
   font-weight: normal;
   margin-right: 5px;
 }
-/* line 190, ../sass/modules/hub_list/_hub_list.scss */
+/* line 191, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
 
-/* line 200, ../sass/modules/hub_list/_hub_list.scss */
+/* line 201, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist {
   font-size: .7em;
   line-height: 1.5;
@@ -2769,19 +2769,19 @@ aside + h2 {
   color: #5a5a5a;
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
-/* line 208, ../sass/modules/hub_list/_hub_list.scss */
+/* line 209, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist a:link, .peoplelist a:visited {
   color: #5a5a5a;
 }
-/* line 212, ../sass/modules/hub_list/_hub_list.scss */
+/* line 213, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:after {
   content: ",\20";
 }
-/* line 215, ../sass/modules/hub_list/_hub_list.scss */
+/* line 216, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:last-child:after {
   content: "";
 }
-/* line 219, ../sass/modules/hub_list/_hub_list.scss */
+/* line 220, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .field-label, .peoplelist li, .peoplelist ul, .peoplelist .field-items {
   display: inline-block;
   font-weight: normal;
@@ -2789,31 +2789,31 @@ aside + h2 {
   margin-bottom: 0;
 }
 
-/* line 227, ../sass/modules/hub_list/_hub_list.scss */
+/* line 228, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
   padding: .8em 0;
   line-height: 1.5;
   border-bottom: 1px solid #f6dec7;
 }
-/* line 228, ../sass/modules/hub_list/_hub_list.scss */
+/* line 229, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke.clearfix:after, .node-spoke.view-mode-teaser.clearfix:after {
   clear: left;
 }
-/* line 234, ../sass/modules/hub_list/_hub_list.scss */
+/* line 235, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .contextual-links-wrapper, .node-spoke.view-mode-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 238, ../sass/modules/hub_list/_hub_list.scss */
+/* line 239, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .thumb, .node-spoke.view-mode-teaser .thumb {
   float: left;
   margin-right: 10px;
 }
-/* line 242, ../sass/modules/hub_list/_hub_list.scss */
+/* line 243, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke a:link, .view-mode-toc_spoke a:visited, .node-spoke.view-mode-teaser a:link, .node-spoke.view-mode-teaser a:visited {
   color: #5a5a5a;
 }
-/* line 245, ../sass/modules/hub_list/_hub_list.scss */
+/* line 246, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2, .node-spoke.view-mode-teaser h2 {
   font-size: 1.1rem;
   margin-top: 0;
@@ -2821,36 +2821,36 @@ aside + h2 {
   padding-bottom: .1em;
   margin-left: 110px;
 }
-/* line 251, ../sass/modules/hub_list/_hub_list.scss */
+/* line 252, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2 a:link, .view-mode-toc_spoke h2 a:visited, .node-spoke.view-mode-teaser h2 a:link, .node-spoke.view-mode-teaser h2 a:visited {
   color: #232323;
 }
-/* line 255, ../sass/modules/hub_list/_hub_list.scss */
+/* line 256, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke time, .node-spoke.view-mode-teaser time {
   margin-left: 110px;
 }
-/* line 258, ../sass/modules/hub_list/_hub_list.scss */
+/* line 259, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .field-name-author, .node-spoke.view-mode-teaser .field-name-author {
   font-size: .8em;
   margin-left: 110px;
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
-/* line 264, ../sass/modules/hub_list/_hub_list.scss */
+/* line 265, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .toc-spoke-date, .node-spoke.view-mode-teaser .toc-spoke-date {
   margin-left: 110px;
 }
-/* line 267, ../sass/modules/hub_list/_hub_list.scss */
+/* line 268, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke span, .node-spoke.view-mode-teaser span {
   display: inline-block;
   margin-right: .3em;
 }
 
-/* line 274, ../sass/modules/hub_list/_hub_list.scss */
+/* line 275, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 278, ../sass/modules/hub_list/_hub_list.scss */
+/* line 279, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
@@ -2960,97 +2960,90 @@ h2.block-title {
 /* line 60, ../sass/modules/user_profile/_user_profile.scss */
 [role="complementary"] .h-card .p-name {
   font-size: .9rem;
+  padding-bottom: 5px;
 }
-/* line 64, ../sass/modules/user_profile/_user_profile.scss */
-.h-card .title {
-  display: inline-block;
-}
-/* line 70, ../sass/modules/user_profile/_user_profile.scss */
+/* line 71, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar, .h-card .prof-img-hold {
   float: left;
 }
-/* line 72, ../sass/modules/user_profile/_user_profile.scss */
+/* line 73, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar a, .h-card .prof-img-hold a {
   display: block;
 }
-/* line 79, ../sass/modules/user_profile/_user_profile.scss */
+/* line 80, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 82, ../sass/modules/user_profile/_user_profile.scss */
+/* line 83, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 84, ../sass/modules/user_profile/_user_profile.scss */
+/* line 85, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 91, ../sass/modules/user_profile/_user_profile.scss */
+/* line 92, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 95, ../sass/modules/user_profile/_user_profile.scss */
+/* line 96, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .contact-info {
   clear: left;
   margin-top: 1em;
 }
-/* line 99, ../sass/modules/user_profile/_user_profile.scss */
+/* line 100, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 102, ../sass/modules/user_profile/_user_profile.scss */
-.h-card .p-org {
-  display: inline-block;
-}
-/* line 103, ../sass/modules/user_profile/_user_profile.scss */
+/* line 104, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-org:before {
   content: "\20\2014\20";
 }
-/* line 110, ../sass/modules/user_profile/_user_profile.scss */
+/* line 111, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
-/* line 112, ../sass/modules/user_profile/_user_profile.scss */
+/* line 113, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr > span:after {
   content: ",\20";
 }
-/* line 115, ../sass/modules/user_profile/_user_profile.scss */
+/* line 116, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr > span:last-child:after {
   content: "";
 }
 
 /* ONLY user profile page */
-/* line 123, ../sass/modules/user_profile/_user_profile.scss */
+/* line 124, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full ul {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
 }
-/* line 128, ../sass/modules/user_profile/_user_profile.scss */
+/* line 129, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 133, ../sass/modules/user_profile/_user_profile.scss */
+/* line 134, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div {
   display: inline-block;
 }
-/* line 137, ../sass/modules/user_profile/_user_profile.scss */
+/* line 138, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div:nth-child(2):before {
   content: ",\20";
 }
-/* line 142, ../sass/modules/user_profile/_user_profile.scss */
+/* line 143, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div:nth-child(3):before {
   content: ",\20";
 }
-/* line 147, ../sass/modules/user_profile/_user_profile.scss */
+/* line 148, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full header.h-card {
   margin-bottom: 1em;
   padding: 0;
   font-size: 1rem;
   line-height: 1.7;
 }
-/* line 152, ../sass/modules/user_profile/_user_profile.scss */
+/* line 153, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full header.h-card .p-name {
   font-size: 2rem;
   padding: 0;
@@ -3058,125 +3051,125 @@ h2.block-title {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 160, ../sass/modules/user_profile/_user_profile.scss */
+/* line 161, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .contact-info {
   clear: left;
   margin-top: 1em;
 }
-/* line 164, ../sass/modules/user_profile/_user_profile.scss */
+/* line 165, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .contact-info li {
   display: inline-block;
   margin-right: 1%;
   line-height: 1.6;
 }
-/* line 169, ../sass/modules/user_profile/_user_profile.scss */
+/* line 170, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .author {
   font-style: italic;
 }
-/* line 171, ../sass/modules/user_profile/_user_profile.scss */
+/* line 172, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .author:before {
   content: "\2014\20";
 }
-/* line 177, ../sass/modules/user_profile/_user_profile.scss */
+/* line 178, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full ul.tags li:first-child {
   display: inline-block;
   padding: 0;
 }
-/* line 181, ../sass/modules/user_profile/_user_profile.scss */
+/* line 182, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full li.views-row-first {
   padding: 0 0 2.5%  0;
 }
-/* line 185, ../sass/modules/user_profile/_user_profile.scss */
+/* line 186, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .node-spoke.node-teaser h2 {
   margin-top: 0;
 }
-/* line 190, ../sass/modules/user_profile/_user_profile.scss */
+/* line 191, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .field-name-posts-from-user .node-spoke {
   border-bottom: 1px solid #f6dec7;
 }
-/* line 194, ../sass/modules/user_profile/_user_profile.scss */
+/* line 195, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full [role="complementary"] {
   padding: 0;
   margin: 1em 0;
 }
-/* line 197, ../sass/modules/user_profile/_user_profile.scss */
+/* line 198, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full [role="complementary"] > div {
   padding: 1rem;
   font-size: .9rem;
   line-height: 1.5;
 }
-/* line 201, ../sass/modules/user_profile/_user_profile.scss */
+/* line 202, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full [role="complementary"] > div p {
   margin: 0 0 .8em 0;
 }
-/* line 205, ../sass/modules/user_profile/_user_profile.scss */
+/* line 206, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full [role="complementary"] > ul {
   padding: .5em;
   margin: 0;
 }
 @media (min-width: 50.0625em) {
-  /* line 211, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 212, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .leftside {
     width: 60%;
     float: left;
   }
-  /* line 215, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 216, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full section.comments, .profile.view-mode-full section {
     padding: 0 1em 0 0;
     margin: 0 2em 1em 0;
     max-width: 35.72245em;
   }
-  /* line 220, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 221, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full [role="complementary"] {
     float: right;
     clear: right;
   }
-  /* line 225, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 226, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li {
     margin-bottom: 0;
     float: none;
     text-indent: 0;
   }
-  /* line 229, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 230, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a {
     width: auto;
     text-indent: .1em;
   }
-  /* line 234, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 235, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a.u-email {
     text-indent: .2em;
   }
-  /* line 237, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 238, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a:hover, .profile.view-mode-full .contact-info li a:visited {
     text-decoration: none;
   }
-  /* line 239, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 240, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a:hover span, .profile.view-mode-full .contact-info li a:visited span {
     text-decoration: underline;
   }
-  /* line 246, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 247, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a span {
     display: inline-block;
   }
 }
 @media (min-width: 15em) and (max-width: 50.0625em) {
-  /* line 255, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 256, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info {
     margin-top: 2em;
     display: table;
     width: 100%;
   }
-  /* line 259, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 260, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li {
     padding: 0 2% 0 0;
     font-size: 1.4em;
     display: table-cell;
   }
-  /* line 264, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 265, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li:last-child {
     padding: 0;
   }
-  /* line 267, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 268, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li a {
     width: auto;
     text-align: center;
@@ -3230,11 +3223,11 @@ h2.block-title {
     background-image: -webkit-linear-gradient(45deg, #d7d7d7, #dedede);
     background-image: linear-gradient(45deg, #d7d7d7, #dedede);
   }
-  /* line 271, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 272, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full .contact-info li span {
     display: none;
   }
-  /* line 276, ../sass/modules/user_profile/_user_profile.scss */
+  /* line 277, ../sass/modules/user_profile/_user_profile.scss */
   .profile.view-mode-full [role="complementary"] {
     margin: 2em 0 1em;
     float: none;
@@ -3431,25 +3424,25 @@ h2.block-title {
 }
 
 /* line 5, ../sass/layout/_spoke.scss */
-[role="article"].spoke header.spoke-header {
+.spoke .spoke-header {
   margin: 0 0 1em 0;
 }
-/* line 7, ../sass/layout/_spoke.scss */
-[role="article"].spoke header.spoke-header h1 {
+/* line 8, ../sass/layout/_spoke.scss */
+.spoke h1 {
   margin: .5em 0 .33em 0;
 }
 /* line 11, ../sass/layout/_spoke.scss */
-[role="article"].spoke .vcard {
+.spoke .vcard {
   display: block;
 }
 /* line 14, ../sass/layout/_spoke.scss */
-[role="article"].spoke section.video > figure.video {
+.spoke section.video > figure.video {
   clear: both;
   float: left;
 }
 @media (min-width: 15em) and (max-width: 50.0625em) {
   /* line 19, ../sass/layout/_spoke.scss */
-  [role="article"].spoke section.video.part-of-hub {
+  .spoke section.video.part-of-hub {
     padding-top: 1em;
   }
 }

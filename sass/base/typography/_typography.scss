@@ -159,7 +159,7 @@ time {
     @include type-size($time-font-size, $time-line-height);
     letter-spacing: $time-letter-spacing;
     color: $time-color;
-    @include content-before-after($time-content);
+    //@include content-before-after($time-content);
 }
 
 pre {

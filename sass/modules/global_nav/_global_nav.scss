@@ -2,7 +2,6 @@
 // MODULES: Component styles that are layout independent. v1
 //////////////////////////////
 @import "_global_nav_variables";
-
 #admin-menu,
 #admin-menu .dropdown {
     display: none;
@@ -43,7 +42,8 @@ nav.global {
                 text-indent: 0;
                 padding: .5em;
                 // important is for overriding the project specific colors
-                &:hover, &:focus  {
+                &:hover,
+                &:focus {
                     color: nth($black, 6) !important;
                     text-decoration: underline;
                 }
@@ -258,6 +258,11 @@ nav.global {
                 > ul {
                     @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
                     @include border-radius(0 0 5px 5px);
+                    // display:none !important;
+                    // background-color: fuchsia;
+                    // &[aria-hidden="false"] {
+                    //      display:inline-block !important;
+                    // }
                 }
                 li:before {
                     content: " ";

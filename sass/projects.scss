@@ -2,9 +2,14 @@
 @import "toolkit/colors";
 @import "color-schemer";
 
+/// homepage -- hub -- credits under title
+$homepage-credits: 0.75rem !default;
+
 $map: (mc: #196195, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
 $black-value: #333333;
 $black: tint-stack($black-value);
+$type-color-value: #232323;
+$type-color: tint-stack($type-color-value);
 
 @each $header, $col in $map {
     /*   */
@@ -63,8 +68,19 @@ body.imr.front {
         float: left;
         width: 38%;
         .field-name-title h2 {
-            font-size: 30px;
+            font-size: 39px;
+            padding-top: 0;
+            color: nth($type-color, 1);
         }
+    }
+    .node-hub {
+        //border-top: 1px solid nth($type-color, 3);
+   
+    }
+    .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
+        border-bottom: 1px solid nth($type-color, 4);
+        border-bottom: none;
+        padding: 0 0 .3em;
     }
     .daterange {
         font-weight: bold;
@@ -74,7 +90,20 @@ body.imr.front {
         font-size: .7em;
     }
     .field-name-post-date {
-      display: none;
+        // display: none;
+        margin-left: 0;
+        display: inline-block;
+    }
+    .field-name-author {
+        margin-left: 0;
+        display: inline-block;
+    }
+    .thumb {
+        min-width: 100px;
+        background-color: black;
+    }
+    .field-name-field-body {
+        font-size: $homepage-credits;
     }
     .field-name-field-spokes {
         float: right;
@@ -104,13 +133,13 @@ body.imr.front {
         //         content: "Friday";
         //     }
         // }
+   
     }
-
 }
 
 body.imr {
-.node-hub.view-mode-teaser {
-      border-bottom: 1px solid gray;
-      padding: 1em 0;
-    } 
-  }
+    .node-hub.view-mode-teaser {
+        border-bottom: 1px solid gray;
+        padding: 1em 0;
+    }
+}

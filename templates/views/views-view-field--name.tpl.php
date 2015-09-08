@@ -2,10 +2,8 @@
 
 /**
  * @file
- * Default simple view template to output only image markup 
- * for profile image
- *
- * @ingroup views_templates
+ * Used for author byline for spoke
+ * 
  */
 ?><div class="p-name fn">
 <?php 

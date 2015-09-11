@@ -156,38 +156,38 @@ body.imr.front #content {
 /* line 67, ../sass/projects.scss */
 body.imr.front .hubhead {
   float: left;
-  width: 38%;
+  width: 32%;
 }
 /* line 70, ../sass/projects.scss */
-body.imr.front .hubhead .field-name-title h2 {
-  font-size: 39px;
+body.imr.front .hubhead .field-name-title h1.hub-title {
+  font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 80, ../sass/projects.scss */
+/* line 74, ../sass/projects.scss */
+body.imr.front .hubhead .field-name-title h1.hub-title a {
+  color: black;
+}
+/* line 83, ../sass/projects.scss */
 body.imr.front .view-mode-toc_spoke, body.imr.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
-  padding: 0 0 .3em;
+  padding: 0 0 .5em;
 }
-/* line 85, ../sass/projects.scss */
+/* line 88, ../sass/projects.scss */
 body.imr.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 89, ../sass/projects.scss */
+/* line 92, ../sass/projects.scss */
 body.imr.front .caption {
   font-size: .7em;
 }
-/* line 92, ../sass/projects.scss */
-body.imr.front .field-name-post-date {
+/* line 96, ../sass/projects.scss */
+body.imr.front .field-name-post-date, body.imr.front .field-name-author {
   margin-left: 0;
-  display: inline-block;
-}
-/* line 97, ../sass/projects.scss */
-body.imr.front .field-name-author {
-  margin-left: 0;
-  display: inline-block;
+  display: block;
+  float: left;
 }
 /* line 101, ../sass/projects.scss */
 body.imr.front .thumb {
@@ -202,9 +202,23 @@ body.imr.front .field-name-field-body {
 body.imr.front .field-name-field-spokes {
   float: right;
   width: 60%;
+  width: 66%;
+  border-left: 1px solid black;
+  padding-left: 22px;
+}
+/* line 141, ../sass/projects.scss */
+body.imr.front .timerangeheader {
+  float: right;
+  width: 66%;
+  background-color: #0C304A;
+  background-color: #333;
+  font-size: .8rem;
+  color: #fff;
+  padding-left: .5rem;
+  margin-bottom: 1rem;
 }
 
-/* line 141, ../sass/projects.scss */
+/* line 154, ../sass/projects.scss */
 body.imr .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;

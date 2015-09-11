@@ -27,6 +27,7 @@
  * @ingroup views_templates
  */
 ?>
+My parent hub template file
 <?php if ($rows): ?>
     <?php print $rows; ?>
 <?php endif; 

@@ -6,6 +6,11 @@
     }
 }
 
+.hubhead img {
+    width: 100% !important;
+    height: auto;
+}
+
 .featured-item-list {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -50,14 +55,14 @@
         font-size: 1.3em;
         line-height: 1.2;
         padding-bottom: 7px;
-        padding-top:0;
+        padding-top: 0;
         a:link, a:visited {
-            color:black !important;
+            color: black !important;
         }
     }
     .peoplelist {
         a:link, a:visited {
-             color: $time-color !important;
+            color: $time-color !important;
         }
     }
     header {

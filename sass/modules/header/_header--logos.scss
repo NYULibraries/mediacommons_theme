@@ -57,11 +57,13 @@
 [role="banner"] {
     @include respond-to("narrow navigation") {
         h1 {
-            float: left;
+           // float: left;
             position: absolute;
+             position: relative;
             left: 2.5em;
             // needs to lie on top of project nav and search dropdowns
             z-index: 1000;
+            background-color: red;
         }
         .logo {
             background: image-url("mc-logos/mediacommons-logos3.svg");

@@ -66,11 +66,14 @@ body.imr.front {
     }
     .hubhead {
         float: left;
-        width: 38%;
-        .field-name-title h2 {
-            font-size: 39px;
+        width: 32%;
+        .field-name-title h1.hub-title {
+            font-size: 31px;
             padding-top: 0;
             color: nth($type-color, 1);
+            a {
+                color: black;
+            }
         }
     }
     .node-hub {
@@ -80,7 +83,7 @@ body.imr.front {
     .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
         border-bottom: 1px solid nth($type-color, 4);
         border-bottom: none;
-        padding: 0 0 .3em;
+        padding: 0 0 .5em;
     }
     .daterange {
         font-weight: bold;
@@ -89,14 +92,11 @@ body.imr.front {
     .caption {
         font-size: .7em;
     }
-    .field-name-post-date {
-        // display: none;
+
+     .field-name-post-date, .field-name-author {
         margin-left: 0;
-        display: inline-block;
-    }
-    .field-name-author {
-        margin-left: 0;
-        display: inline-block;
+        display: block;
+        float:left;
     }
     .thumb {
         min-width: 100px;
@@ -108,6 +108,9 @@ body.imr.front {
     .field-name-field-spokes {
         float: right;
         width: 60%;
+        width: 66%;
+        border-left: 1px solid black;
+        padding-left: 22px;
         // .node-spoke:nth-child(1) {
         //     .thumb::before {
         //         content: "Monday";
@@ -134,6 +137,16 @@ body.imr.front {
         //     }
         // }
    
+    }
+    .timerangeheader {
+        float: right;
+        width: 66%;
+        background-color: #0C304A;
+        background-color: #333;
+        font-size: .8rem;
+        color: #fff;
+        padding-left: .5rem;
+        margin-bottom: 1rem;
     }
 }
 

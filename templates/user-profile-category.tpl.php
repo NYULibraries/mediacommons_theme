@@ -25,6 +25,6 @@
  */
 ?>
 
-
+template: user-profile-category
 <?php print $profile_items; ?>
 

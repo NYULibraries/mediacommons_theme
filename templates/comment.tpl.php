@@ -10,8 +10,7 @@
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
   <header>
     <?php print render($title_prefix); ?>
-   
-     <?php if (isset($title)): ?>
+    <?php if (isset($title)): ?>
       <h3<?php print $title_attributes; ?>>
         <?php print $title; ?>
         <?php if ($new): ?>
@@ -45,11 +44,7 @@
     print render($content);
   ?>
 
-   <?php if (isset($signature)): ?>
-    <footer class="user-signature clearfix">
-      <?php print $signature; ?>
-    </footer>
-  <?php endif; ?>
+
 
   <?php print render($content['links']) ?>
 </article>

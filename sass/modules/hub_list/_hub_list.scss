@@ -67,7 +67,7 @@ h1.hub-title {
 
 [role="complementary"] {
     background: nth($black, 5);
-    header {
+    header, header.blockheader {
         padding: .5rem 1rem;
         // background: nth($primary, 2);
         background: nth($black, 4);

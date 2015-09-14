@@ -21,7 +21,6 @@
             background: nth($secondary, 4);
         }
     }
-    
     h3 {
         margin: 0;
         padding: 0;
@@ -76,6 +75,43 @@
         }
         .form-type-select {
             padding: 0;
+        }
+    }
+}
+
+ul.links.inline li {
+    float: left;
+}
+
+#block-views-comments-recent-block .item-list {
+    padding: .5rem 1rem;
+    header {
+        background-color: inherit;
+        padding: 0;
+        font-size: .8rem;
+    }
+    > ul > li {
+        border-bottom: 1px solid gray;
+    }
+    .title-commented-upon {
+        font-size: .8rem;
+        margin-top: 1rem;
+    }
+    .field-name-comment-body {
+        line-height: 1.3;
+        font-size: .8rem;
+    }
+    time {
+        span {
+            font-size: inherit;
+            display: inline;
+        }
+    }
+    .h-card {
+        padding: 0;
+        span {
+            font-size: inherit;
+            display: inline;
         }
     }
 }

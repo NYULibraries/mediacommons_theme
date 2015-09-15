@@ -4,13 +4,12 @@
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
 
-article.spoke .h-card {
+article.spoke .field-name-byline-contributors {
     margin: .5rem .5rem .5rem 0rem;
     padding: 1rem 0 0 0;
-    .u-photo-small {
-        margin-top: -1rem;
-    }
-    .field-name-author-byline {}
+    background-color: pink;
+   
+   
     .p-name, .p-org {
         display: inline-block;
         font-size: 1rem;
@@ -62,8 +61,7 @@ h2.block-title {
             padding-bottom: 5px;
         }
     }
-    .title {
-    }
+    .title {}
     .field-user-avatar, .prof-img-hold {
         float: left;
         a {
@@ -96,13 +94,6 @@ h2.block-title {
     .p-name.u-url {
         font-weight: bold;
     }
-    .p-org {
-        &:before {
-            content: "\20\2014\20";
-            // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-       
-        }
-    }
     .h-adr {
         display: block;
         > span:after {
@@ -111,6 +102,14 @@ h2.block-title {
         > span:last-child:after {
             content: "";
         }
+    }
+}
+
+.p-org {
+    &:before {
+        content: "\20\2014\20";
+        // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+   
     }
 }
 
@@ -163,6 +162,7 @@ h2.block-title {
         line-height: 1.6;
     }
     .author {
+        background-color: red;
         font-style: italic;
         &:before {
             content: "\2014\20";

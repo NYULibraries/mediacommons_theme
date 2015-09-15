@@ -2563,49 +2563,46 @@ figure.embedded.video iframe {
 }
 
 /* line 7, ../sass/modules/user_profile/_user_profile.scss */
-article.spoke .h-card {
+article.spoke .field-name-byline-contributors {
   margin: .5rem .5rem .5rem 0rem;
   padding: 1rem 0 0 0;
+  background-color: pink;
 }
-/* line 10, ../sass/modules/user_profile/_user_profile.scss */
-article.spoke .h-card .u-photo-small {
-  margin-top: -1rem;
-}
-/* line 14, ../sass/modules/user_profile/_user_profile.scss */
-article.spoke .h-card .p-name, article.spoke .h-card .p-org {
+/* line 13, ../sass/modules/user_profile/_user_profile.scss */
+article.spoke .field-name-byline-contributors .p-name, article.spoke .field-name-byline-contributors .p-org {
   display: inline-block;
   font-size: 1rem;
 }
 
-/* line 20, ../sass/modules/user_profile/_user_profile.scss */
+/* line 19, ../sass/modules/user_profile/_user_profile.scss */
 h2.block-title {
   font-size: 1.5rem;
   margin-bottom: .5rem;
 }
 
-/* line 26, ../sass/modules/user_profile/_user_profile.scss */
+/* line 25, ../sass/modules/user_profile/_user_profile.scss */
 .page-taxonomy .h-card {
   padding-left: 0;
 }
-/* line 29, ../sass/modules/user_profile/_user_profile.scss */
+/* line 28, ../sass/modules/user_profile/_user_profile.scss */
 .page-taxonomy .p-job-title, .page-taxonomy .p-org, .page-taxonomy .views-label-field-research-interests {
   display: inline-block;
   line-height: 1.4;
 }
 
-/* line 36, ../sass/modules/user_profile/_user_profile.scss */
+/* line 35, ../sass/modules/user_profile/_user_profile.scss */
 .u-photo {
   float: left;
   margin: 0 .5em 1em 0;
 }
 
-/* line 42, ../sass/modules/user_profile/_user_profile.scss */
+/* line 41, ../sass/modules/user_profile/_user_profile.scss */
 .u-photo-small {
   float: left;
 }
 
 /* for contributors lists as well as profile */
-/* line 49, ../sass/modules/user_profile/_user_profile.scss */
+/* line 48, ../sass/modules/user_profile/_user_profile.scss */
 .h-card {
   width: auto;
   overflow: hidden;
@@ -2613,101 +2610,102 @@ h2.block-title {
   font-size: .9rem;
   line-height: 1.2;
 }
-/* line 54, ../sass/modules/user_profile/_user_profile.scss */
+/* line 53, ../sass/modules/user_profile/_user_profile.scss */
 [role="complementary"] .h-card {
   font-size: .7rem;
 }
-/* line 58, ../sass/modules/user_profile/_user_profile.scss */
+/* line 57, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name {
   font-size: 1.1rem;
 }
-/* line 60, ../sass/modules/user_profile/_user_profile.scss */
+/* line 59, ../sass/modules/user_profile/_user_profile.scss */
 [role="complementary"] .h-card .p-name {
   font-size: .9rem;
   padding-bottom: 5px;
 }
-/* line 67, ../sass/modules/user_profile/_user_profile.scss */
+/* line 65, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar, .h-card .prof-img-hold {
   float: left;
 }
-/* line 69, ../sass/modules/user_profile/_user_profile.scss */
+/* line 67, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .field-user-avatar a, .h-card .prof-img-hold a {
   display: block;
 }
-/* line 76, ../sass/modules/user_profile/_user_profile.scss */
+/* line 74, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child {
   margin: 1em 0;
 }
-/* line 79, ../sass/modules/user_profile/_user_profile.scss */
+/* line 77, ../sass/modules/user_profile/_user_profile.scss */
 .h-card > .u-url:first-child .u-photo {
   margin: 0;
 }
-/* line 81, ../sass/modules/user_profile/_user_profile.scss */
+/* line 79, ../sass/modules/user_profile/_user_profile.scss */
 .comments .h-card > .u-url:first-child .u-photo, .spoke .h-card > .u-url:first-child .u-photo {
   float: left;
 }
-/* line 88, ../sass/modules/user_profile/_user_profile.scss */
+/* line 86, ../sass/modules/user_profile/_user_profile.scss */
 .h-card address:before {
   content: "by\20";
 }
-/* line 92, ../sass/modules/user_profile/_user_profile.scss */
+/* line 90, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .contact-info {
   clear: left;
   margin-top: 1em;
 }
-/* line 96, ../sass/modules/user_profile/_user_profile.scss */
+/* line 94, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .p-name.u-url {
   font-weight: bold;
 }
-/* line 100, ../sass/modules/user_profile/_user_profile.scss */
-.h-card .p-org:before {
-  content: "\20\2014\20";
-}
-/* line 106, ../sass/modules/user_profile/_user_profile.scss */
+/* line 97, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr {
   display: block;
 }
-/* line 108, ../sass/modules/user_profile/_user_profile.scss */
+/* line 99, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr > span:after {
   content: ",\20";
 }
-/* line 111, ../sass/modules/user_profile/_user_profile.scss */
+/* line 102, ../sass/modules/user_profile/_user_profile.scss */
 .h-card .h-adr > span:last-child:after {
   content: "";
 }
 
+/* line 109, ../sass/modules/user_profile/_user_profile.scss */
+.p-org:before {
+  content: "\20\2014\20";
+}
+
 /* ONLY user profile page */
-/* line 119, ../sass/modules/user_profile/_user_profile.scss */
+/* line 118, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full ul {
   list-style-type: none;
   padding: 0;
   margin-top: 0;
 }
-/* line 124, ../sass/modules/user_profile/_user_profile.scss */
+/* line 123, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full h2 {
   margin-top: 2rem;
   margin-bottom: .7em;
 }
-/* line 129, ../sass/modules/user_profile/_user_profile.scss */
+/* line 128, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div {
   display: inline-block;
 }
-/* line 133, ../sass/modules/user_profile/_user_profile.scss */
+/* line 132, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div:nth-child(2):before {
   content: ",\20";
 }
-/* line 138, ../sass/modules/user_profile/_user_profile.scss */
+/* line 137, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .h-adr > div:nth-child(3):before {
   content: ",\20";
 }
-/* line 143, ../sass/modules/user_profile/_user_profile.scss */
+/* line 142, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full header.h-card {
   margin-bottom: 1em;
   padding: 0;
   font-size: 1rem;
   line-height: 1.7;
 }
-/* line 148, ../sass/modules/user_profile/_user_profile.scss */
+/* line 147, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full header.h-card .p-name {
   font-size: 2rem;
   padding: 0;
@@ -2715,19 +2713,20 @@ h2.block-title {
   margin-bottom: .2em;
   color: #232323;
 }
-/* line 156, ../sass/modules/user_profile/_user_profile.scss */
+/* line 155, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .contact-info {
   clear: left;
   margin-top: 1em;
 }
-/* line 160, ../sass/modules/user_profile/_user_profile.scss */
+/* line 159, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .contact-info li {
   display: inline-block;
   margin-right: 1%;
   line-height: 1.6;
 }
-/* line 165, ../sass/modules/user_profile/_user_profile.scss */
+/* line 164, ../sass/modules/user_profile/_user_profile.scss */
 .profile.view-mode-full .author {
+  background-color: red;
   font-style: italic;
 }
 /* line 167, ../sass/modules/user_profile/_user_profile.scss */
@@ -2895,10 +2894,6 @@ body {
   margin: .5em 0 .33em 0;
 }
 /* line 11, ../sass/layout/_spoke.scss */
-.spoke .vcard {
-  display: block;
-}
-/* line 14, ../sass/layout/_spoke.scss */
 .spoke section.video > figure.video {
   clear: both;
   float: left;

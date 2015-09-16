@@ -211,13 +211,28 @@ aside + h2 {
     @extend %date-treatment;
 }
 
+.spoke-header {
+    .label-inline {
+        font-size: .7rem;
+        float: left;
+        font-weight: normal;
+        margin-right: 5px;
+        margin-bottom: 0;
+        line-height:1.5;
+    }
+}
+
 .peoplelist {
-    font-size: .7em;
+    font-size: .7rem;
     line-height: 1.5;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     color: #fff;
     color: nth($black, 2);
     font-family: "Droid Sans", $header-font-family;
+    .view-content {
+        width: auto;
+        overflow: auto;
+    }
     a:link, a:visited {
         color: nth($black, 2);
     }
@@ -229,11 +244,18 @@ aside + h2 {
             content: "";
         }
     }
-    .field-label, li, ul, .field-items {
-        display: inline-block;
-        font-weight: normal;
+    .item {
+        float: left;
         margin-right: 5px;
-        margin-bottom: 0;
+        &:after {
+            content: ",\20";
+        }
+        &:last-child:after {
+            content: "";
+        }
+        .p-name, .p-org {
+            float: left;
+        }
     }
 }
 

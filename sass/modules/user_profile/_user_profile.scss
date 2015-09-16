@@ -8,11 +8,18 @@ article.spoke .field-name-byline-contributors {
     margin: .5rem .5rem .5rem 0rem;
     padding: 1rem 0 0 0;
     background-color: pink;
-   
-   
     .p-name, .p-org {
         display: inline-block;
         font-size: 1rem;
+    }
+}
+
+.field-name-field-contributors {
+    .field-label {
+        float: left;
+    }
+    .field-items > div {
+        float: left;
     }
 }
 

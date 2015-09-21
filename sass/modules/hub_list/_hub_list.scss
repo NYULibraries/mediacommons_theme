@@ -211,16 +211,6 @@ aside + h2 {
     @extend %date-treatment;
 }
 
-.spoke-header {
-    .label-inline {
-        font-size: .7rem;
-        float: left;
-        font-weight: normal;
-        margin-right: 5px;
-        margin-bottom: 0;
-        line-height:1.5;
-    }
-}
 
 .peoplelist {
     font-size: .7rem;
@@ -300,8 +290,8 @@ aside + h2 {
         margin-left: 110px;
     }
     span {
-        display: inline-block;
-        margin-right: .3em;
+        // display: inline-block;
+        // margin-right: .3em;
     }
 }
 

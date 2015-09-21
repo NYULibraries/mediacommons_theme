@@ -4,24 +4,29 @@
 
 // Use h-card microformats to add semantic meaning to the markup: http://microformats.org/wiki/h-card
 
-article.spoke .field-name-byline-contributors {
-    margin: .5rem .5rem .5rem 0rem;
-    padding: 1rem 0 0 0;
-    background-color: pink;
+.node-spoke.node-teaser, .spoke-header {
+    .label-inline {
+        float: left;
+        font-size: .75rem;
+    }
+    font-size: .75rem;
+}
+
+.view-mode-forbyline {
+    font-size: .75rem;
+    &:after {
+        content: ",\20";
+    }
+    &:last-child:after {
+        content: "";
+    }
     .p-name, .p-org {
-        display: inline-block;
-        font-size: 1rem;
+        display: inline;
+        // float: left;
+   
     }
 }
 
-.field-name-field-contributors {
-    .field-label {
-        float: left;
-    }
-    .field-items > div {
-        float: left;
-    }
-}
 
 h2.block-title {
     font-size: 1.5rem;

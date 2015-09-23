@@ -223,10 +223,21 @@ aside + h2 {
         width: auto;
         overflow: auto;
     }
+    .field-label {
+        display: inline-block;
+        padding-right: .25rem;
+    }
     a:link, a:visited {
         color: nth($black, 2);
+        
+
+    }
+    ul {
+         display: inline-block;
     }
     li {
+        padding-right: .25rem;
+        display:inline-block;
         &:after {
             content: ",\20";
         }

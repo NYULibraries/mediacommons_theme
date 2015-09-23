@@ -172,24 +172,7 @@ function mediacommons_field__post_date ($vars) {
 function mediacommons_field__field_title($vars) {
   return '<span class="p-job-title title">' . $vars['items'][0]['#markup'] . '</span>';
 }
-function mediacommons_field__field_city($vars) {
 
-     if (isset($vars['items'][0]['#title'])) {
-    return '<span class="p-locality"><a href="'. $GLOBALS['base_path'] . $vars['items'][0]['#href'] .'">' . $vars['items'][0]['#title'] . '</a></span>';
-
-  }
-   if (isset($vars['items'][0]['#markup'])) {
-    return '<span class="p-locality">' . $vars['items'][0]['#markup'] . '</span>';
-    } else {
-    return '<span class="p-locality">City Not available</span>';
-    }
-}
-function mediacommons_field__field_state($vars) {
-  return '<span class="p-region">' . $vars['items'][0]['#markup'] . '</span>';
-}
-function mediacommons_field__field_country($vars) {
-  return '<span class="p-country-name">' . $vars['items'][0]['#markup'] . '</span>';
-}
 
 function mediacommons_field__field_research_interests__user($vars){
   $output = '<aside role="complementary" class="research_interests">';
@@ -233,18 +216,26 @@ function mediacommons_field__field_tags($vars){
 /**
 * End User Profile
 */
-// function mediacommons_field__field_contributors($vars){
-//   //dpm($vars);
-//   $output = '<div class="peoplelist contributors-lh">' ;
-//   $output .= '<div class="field-label">' . $vars['label'] . ':</div><ul >';
-//   foreach (element_children($vars['items']) as $key) {
-//     $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
-//     $output .= $vars['items'][$key]['#title'];
-//     $output .= '</a></li>';
-//   }
-//    $output .= '</ul></div>';
-//    return $output;
-// }
+ function mediacommons_field__field_contributors__spoke($vars){
+      //dpm($vars);
+  // CUrrently used just for spoke teasers - simple list 
+  $output ='';
+  $output .= '<div class="peoplelist contributors">' ;
+     if (isset($vars['items'][0]['#title'])) {
+ 
+  
+   $output .= '<div class="field-label">' . $vars['label'] . ':</div><ul >';
+   foreach (element_children($vars['items']) as $key) {
+     $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+     $output .= $vars['items'][$key]['#title'];
+     $output .= '</a></li>';
+   }
+   
+  } 
+  
+ $output .= '</ul></div>';
+   return $output;
+ }
 
 
 function mediacommons_field__field_curators_editors($vars){

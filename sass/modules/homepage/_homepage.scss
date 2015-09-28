@@ -34,12 +34,13 @@
         -webkit-flex: 0 1 32%;
         flex: 0 1 32%;
         margin: 1% 0;
-        @media (max-width: 961px) {
+        @include respond-to("tablet-lh") {
             -webkit-flex: 0 1 49%;
             flex: 0 1 49%;
             margin: 1% 0;
         }
-        @include respond-to("mobile content") {
+
+        @include respond-to("mobile-lh") {
             -webkit-flex: 1 1 100%;
             flex: 1 1 100%;
             margin: 1% 0;
@@ -48,6 +49,13 @@
         overflow: hidden;
     }
 }
+
+@include respond-to("mobile-lh") {
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: 1% 0;
+}
+
 
 .featured-more {
     margin: 3rem 0 3rem;

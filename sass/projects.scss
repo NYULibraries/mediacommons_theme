@@ -1,6 +1,17 @@
+$breakpoint-no-query-fallbacks: false;
+
 @import "toolkit";
-@import "toolkit/colors";
+@import "compass/";
+@import "compass/reset";
+@import "compass/typography";
+@import "compass/css3";
+@import "compass/css3/deprecated-support";
+@import "modular-scale";
 @import "color-schemer";
+@import "respond-to";
+@import "breakpoint";
+
+@import "layout/breakpoints/_breakpoints";
 
 /// homepage -- hub -- credits under title
 $homepage-credits: 0.75rem !default;
@@ -59,14 +70,12 @@ $type-color: tint-stack($type-color-value);
     /*   */
 }
 
-body.imr.front {
+body.front {
     #content {
         width: auto;
         float: none;
     }
     .hubhead {
-        float: left;
-        width: 32%;
         .field-name-title h1.hub-title {
             font-size: 31px;
             padding-top: 0;
@@ -76,6 +85,13 @@ body.imr.front {
             }
         }
     }
+    @include respond-to("desktop-lh") {
+        .hubhead {
+            float: left;
+            width: 32%;
+        }
+    }
+
     .node-hub {
         //border-top: 1px solid nth($type-color, 3);
    
@@ -92,11 +108,10 @@ body.imr.front {
     .caption {
         font-size: .7em;
     }
-
-     .field-name-post-date, .field-name-author {
+    .field-name-post-date, .field-name-author {
         margin-left: 0;
         display: block;
-        float:left;
+        float: left;
     }
     .thumb {
         min-width: 100px;
@@ -104,13 +119,16 @@ body.imr.front {
     }
     .field-name-field-body {
         font-size: $homepage-credits;
+        margin-bottom: 1rem;
     }
     .field-name-field-spokes {
-        float: right;
-        width: 60%;
-        width: 66%;
-        border-left: 1px solid black;
-        padding-left: 22px;
+        @include respond-to("desktop-lh") {
+            float: right;
+            width: 66%;
+            border-left: 1px solid black;
+            padding-left: 22px;
+        }
+
         // .node-spoke:nth-child(1) {
         //     .thumb::before {
         //         content: "Monday";
@@ -139,25 +157,29 @@ body.imr.front {
    
     }
     .timerangeheader {
-        float: right;
-        width: 66%;
+        padding: 4px;
         background-color: #0C304A;
         background-color: #333;
         font-size: .8rem;
         color: #fff;
-        padding-left: .5rem;
         margin-bottom: 1rem;
+        @include respond-to("desktop-lh") {
+            float: right;
+            width: 66%;
+            padding: 2px;
+            padding-left: .5rem;
+        }
     }
 }
 
-body.imr {
+body {
     .node-hub.view-mode-teaser {
         border-bottom: 1px solid gray;
         padding: 1em 0;
         &:first-child {
             padding: 0 0 1em;
         }
-         &:last-child {
+        &:last-child {
             border: none;
         }
     }

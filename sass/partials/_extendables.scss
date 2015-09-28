@@ -49,14 +49,13 @@
     line-height: 1.5;
     text-transform: uppercase;
     color: nth($black, 2);
-   // font-family: "Droid Sans", $header-font-family;
+    // font-family: "Droid Sans", $header-font-family;
 }
 
 %user-photo-treatment {
     width: 4.524em;
     height: 4.524em;
     @include border-radius(3em);
-    border: 0.33em solid rgba(nth($black, 4), 1);
     overflow: hidden;
     text-align: center;
     background: nth($black, 4);
@@ -68,7 +67,6 @@
     width: 3rem;
     height: 3rem;
     @include border-radius(3em);
-    border: 0.33em solid rgba(nth($black, 4), 1);
     overflow: hidden;
     text-align: center;
     background: nth($black, 4);

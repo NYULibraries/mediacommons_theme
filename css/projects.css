@@ -24,7 +24,7 @@ body.mc [role="complementary"] {
 }
 /* line 54, ../sass/projects.scss */
 body.mc [role="complementary"] header {
-  background-color: #e5d7c6;
+  background-color: #e4d7c5;
 }
 
 /*   */
@@ -50,11 +50,11 @@ body.tne [role="navigation"].main ul.main li {
 }
 /* line 52, ../sass/projects.scss */
 body.tne [role="complementary"] {
-  background-color: #f8f0e9;
+  background-color: #f8efe9;
 }
 /* line 54, ../sass/projects.scss */
 body.tne [role="complementary"] header {
-  background-color: #edd8c7;
+  background-color: #edd8c6;
 }
 
 /*   */
@@ -80,11 +80,11 @@ body.imr [role="navigation"].main ul.main li {
 }
 /* line 52, ../sass/projects.scss */
 body.imr [role="complementary"] {
-  background-color: #ecfdf3;
+  background-color: #ebfcf2;
 }
 /* line 54, ../sass/projects.scss */
 body.imr [role="complementary"] header {
-  background-color: #c9f8dc;
+  background-color: #c8f7dc;
 }
 
 /*   */
@@ -92,7 +92,7 @@ body.imr [role="complementary"] header {
 /* line 30, ../sass/projects.scss */
 body.int a:link,
 body.int a:visited {
-  color: #782A71;
+  color: #782a71;
 }
 /* line 34, ../sass/projects.scss */
 body.int a[href]:hover,
@@ -110,11 +110,11 @@ body.int [role="navigation"].main ul.main li {
 }
 /* line 52, ../sass/projects.scss */
 body.int [role="complementary"] {
-  background-color: #eff1e8;
+  background-color: #eff0e8;
 }
 /* line 54, ../sass/projects.scss */
 body.int [role="complementary"] header {
-  background-color: #d9ddca;
+  background-color: #d9ddc9;
 }
 
 /*   */
@@ -144,7 +144,7 @@ body.alt [role="complementary"] {
 }
 /* line 54, ../sass/projects.scss */
 body.alt [role="complementary"] header {
-  background-color: #cdefc7;
+  background-color: #cceec6;
 }
 
 /*   */
@@ -222,4 +222,12 @@ body.imr.front .timerangeheader {
 body.imr .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;
+}
+/* line 157, ../sass/projects.scss */
+body.imr .node-hub.view-mode-teaser:first-child {
+  padding: 0 0 1em;
+}
+/* line 160, ../sass/projects.scss */
+body.imr .node-hub.view-mode-teaser:last-child {
+  border: none;
 }

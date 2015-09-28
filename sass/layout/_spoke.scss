@@ -3,10 +3,19 @@
 //////////////////////////////
 .spoke {
     .spoke-header {
-        margin: 0 0 1em 0;
+        margin: 0 0 2em 0;
+        .label-inline {
+            float: left;
+            font-size: .75rem;
+            line-height: 1.5
+        }
+        font-size: .75rem;
     }
     h1 {
-        margin: .5em 0 .33em 0;
+        font-size: 1.8rem;
+        padding: .4em 0 .2em 0;
+        margin: 0 0 .1em 0;
+        color: nth($black, 1);
     }
     section.video > figure.video {
         clear: both;

@@ -129,7 +129,7 @@ function mediacommons_field__field_profile_name($vars) {
 function mediacommons_field__field_body__spoke($vars) {
    $specialBodyClass   = theme_get_setting( 'special_body_class' ) ? theme_get_setting( 'special_body_class' ) : "" ;
    if (isset($vars['items']) && ($specialBodyClass == "imr" || $specialBodyClass == "intransition")) {
-    return "<h2>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
+    return "<h2 class='curatorsnote'>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
   } 
 }
 function mediacommons_field__field_skype ($vars) {

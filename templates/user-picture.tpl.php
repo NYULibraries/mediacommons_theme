@@ -10,11 +10,9 @@
 <?php
 
 /**
- * Why doesn't Drupal see this file?
+ * Why doesn't Drupal see this file?  This is called from comments
  */
 ?>
-<?php if ($user_picture): ?>template: user-picture.tpl.php
   <span class="user-picture">
     <?php print $user_picture; ?>
   </span>
-<?php endif; ?>

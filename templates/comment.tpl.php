@@ -24,7 +24,7 @@
     <?php print render($title_suffix); ?>
     <?php print '<time>'. $created . '</time>'; ?>
     <div class="h-card vcard">
-      <?php // print '<div class="field-user-avatar">' . $user_avatar . '</div>'; ?>
+      <?php  print '<div class="field-user-avatar photo u-photo-small">' . $picture . '</div>'; ?>
       <div>
         <div class="nameHolder">By <?php print $author; ?></div>
         <?php if (isset($organization)): ?>

@@ -7,9 +7,15 @@
         .label-inline {
             float: left;
             font-size: .75rem;
-            line-height: 1.5
+            line-height: 1.5;
         }
         font-size: .75rem;
+    }
+    .curatorsnote {
+        @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
+        @include type-size($h2-font-size, $h2-line-height);
+        color: $h2-color;
+        margin-bottom: .5em;
     }
     h1 {
         font-size: 1.8rem;

@@ -172,6 +172,7 @@ h1.hub-title {
 aside + h2 {
     clear: both;
 }
+
 .view-contributors-this-hub {
     padding: .5rem 1rem;
 }
@@ -214,10 +215,9 @@ aside + h2 {
     @extend %date-treatment;
 }
 
-
 .peoplelist {
-    font-size: .75rem;
-    line-height: 1.5;
+    font-size: .8rem;
+    line-height: 1.25;
     // text-transform: uppercase;
     color: #fff;
     color: nth($black, 2);
@@ -232,15 +232,13 @@ aside + h2 {
     }
     a:link, a:visited {
         color: nth($black, 2);
-        
-
     }
     ul {
-         display: inline-block;
+        display: inline-block;
     }
     li {
         padding-right: .25rem;
-        display:inline-block;
+        display: inline-block;
         &:after {
             content: ",\20";
         }
@@ -286,27 +284,20 @@ aside + h2 {
         margin-top: 0;
         padding-top: 0;
         padding-bottom: 0;
-        margin-left: 110px;
         line-height: 1.25;
         a:link, a:visited {
             color: nth($black, 1);
         }
     }
-    time {
-        margin-left: 110px;
-    }
     .field-name-author {
         // margin-top: 0em;
         font-size: .8em;
-        margin-left: 110px;
         font-family: "Droid Sans", $header-font-family;
-    }
-    .toc-spoke-date {
-        margin-left: 110px;
     }
     span {
         // display: inline-block;
         // margin-right: .3em;
+   
     }
 }
 
@@ -320,8 +311,4 @@ aside + h2 {
         line-height: 1.5;
         clear: left;
     }
-}
-
-body.fieldguide {
-    // put any special styles in here.
 }

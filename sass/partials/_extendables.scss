@@ -53,14 +53,23 @@
 }
 
 %user-photo-treatment {
-    width: 4.524em;
-    height: 4.524em;
+    width: 55px;
+    height: 55px;
     @include border-radius(3em);
     overflow: hidden;
     text-align: center;
     background: nth($black, 4);
 }
-
+%user-photo-treatment-comments {
+    display: block;
+    margin: 0 .5em 0em 0;
+    width: 40px;
+    height: 40px;
+    @include border-radius(3em);
+    overflow: hidden;
+    text-align: center;
+    background: nth($black, 4);
+}
 %user-photo-teaser-treatment {
     display: block;
     margin: 0 .5em 0em 0;

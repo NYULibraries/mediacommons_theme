@@ -11,6 +11,9 @@
         }
         font-size: .75rem;
     }
+    .spoke-body {
+        line-height: 1.4375rem;
+    }
     .curatorsnote {
         @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
         @include type-size($h2-font-size, $h2-line-height);

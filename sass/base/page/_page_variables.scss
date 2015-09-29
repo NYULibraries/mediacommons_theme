@@ -10,8 +10,6 @@ $header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill San
 $blockquote-font-family: $header-font-family;
 //$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
 
-$body-font-size: 16px; 
-$body-line-height: 1.5em;
 
 ///// body
 //$body-background-color: nth($black , 6);
@@ -85,8 +83,6 @@ $body-background-color: #fefefe !default;
 $body-background-rgba: rgba(255,255,255,0.9) !default;
 $body-margin: 0 2.5% !default;
 $body-padding: 0 2.5% !default;
-$body-font-size: 100% !default;
-$body-line-height: 1.875em !default;
 $body-color: #333 !default;
 $body-border-width: 0 1px 0 1px !default;
 $body-border-style: solid !default;

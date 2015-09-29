@@ -20,12 +20,12 @@ html {
     }
 
     @include respond-to("extra wide content") {
-        @include type-size($body-font-size + 5);
-        // 21px
+        @include type-size($body-font-size + 1);
+        // 17px
     }
 
     @include respond-to("wide content") {
-        @include type-size($body-font-size + 2);
+        @include type-size($body-font-size + 1);
         // 18px
     }
 
@@ -35,23 +35,23 @@ html {
     }
 
     @include respond-to("medium content") {
-        @include type-size($body-font-size - 2);
-        // 14px
+        @include type-size($body-font-size - 1);
+         // 15px
     }
 
     @include respond-to("medium only content") {
-        @include type-size($body-font-size - 2);
-        // 14px
+        @include type-size($body-font-size - 1);
+        // 15px
     }
 
     @include respond-to("narrow content") {
-        @include type-size($body-font-size - 3);
-        // 13px
+        @include type-size($body-font-size - 1);
+         // 15px
     }
 
     @include respond-to("mobile content") {
-        @include type-size($body-font-size - 4);
-        // 12px
+        @include type-size($body-font-size - 1);
+         // 15px
     }
 }
 
@@ -103,7 +103,7 @@ body {
     //max-width:ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
     margin: 1em auto 0;
     width: 94.5%;
-    max-width: 60em;
+    max-width: 64rem;
 
     @include respond-to("mobile tablet") {
         // padding: 0 3%;

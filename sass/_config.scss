@@ -10,8 +10,8 @@ $header-font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill San
 $blockquote-font-family: $header-font-family;
 //$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
 
-$body-font-size: 16px; 
-$body-line-height: 1.5em;
+$body-font-size: 16px !default;
+$body-line-height: 1.25 !default;
 
 ///// body
 $body-background-color: lighten(nth($black , 6), 10%);
@@ -63,8 +63,8 @@ $time-font-bold: false; // normal
 $time-font-italic: false; // normal
 $time-font-uppercase: false; // uppercase
 $time-font-variant: false; // normal
-$time-font-size: 1em;
-$time-line-height: 1.5em;
+$time-font-size: .9rem;
+$time-line-height: 1.1;
 $time-letter-spacing: 0.05em;
 $time-color: nth($black , 2);
 $time-content: '';

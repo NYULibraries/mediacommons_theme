@@ -144,7 +144,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.25;
   color: #333333;
   border-color: transparent;
 }
@@ -1572,7 +1572,7 @@ body.int .logo {
   padding: 6px 0 0 0;
   margin: 2.725em auto 0 auto;
   width: 94.5%;
-  max-width: 60em;
+  max-width: 64rem;
 }
 /* line 14, ../sass/modules/header/_header.scss */
 [role="banner"] button {
@@ -2807,14 +2807,14 @@ html {
 /* line 58, ../sass/layout/_page.scss */
 body {
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.25;
 }
 
 /* line 100, ../sass/layout/_page.scss */
 [role="main"] {
   margin: 1em auto 0;
   width: 94.5%;
-  max-width: 60em;
+  max-width: 64rem;
   margin: 3em auto 0;
 }
 
@@ -2874,6 +2874,10 @@ body {
   line-height: 1.5;
 }
 /* line 14, ../sass/layout/_spoke.scss */
+.spoke .spoke-body {
+  line-height: 1.4375rem;
+}
+/* line 17, ../sass/layout/_spoke.scss */
 .spoke .curatorsnote {
   font-weight: normal;
   font-size: 1.66667em;
@@ -2881,14 +2885,14 @@ body {
   color: #5a5a5a;
   margin-bottom: .5em;
 }
-/* line 20, ../sass/layout/_spoke.scss */
+/* line 23, ../sass/layout/_spoke.scss */
 .spoke h1 {
   font-size: 1.8rem;
   padding: .4em 0 .2em 0;
   margin: 0 0 .1em 0;
   color: #232323;
 }
-/* line 26, ../sass/layout/_spoke.scss */
+/* line 29, ../sass/layout/_spoke.scss */
 .spoke section.video > figure.video {
   clear: both;
   float: left;

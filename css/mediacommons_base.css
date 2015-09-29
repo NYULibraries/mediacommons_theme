@@ -144,7 +144,7 @@ body {
   margin: 0 auto;
   padding: 0;
   font-size: 16px;
-  line-height: 1.1;
+  line-height: 1.25;
   color: #333333;
   border-color: transparent;
 }
@@ -1855,7 +1855,7 @@ body.int .logo {
   [role="banner"] {
     margin: 2.725em auto 0 auto;
     width: 94.5%;
-    max-width: 60em;
+    max-width: 64rem;
   }
   /* line 26, ../sass/modules/header/_header.scss */
   [role="banner"] fieldset {
@@ -3277,13 +3277,13 @@ h1.p-name {
 @media (min-width: 80.0625em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 21px;
+    font-size: 17px;
   }
 }
 @media (min-width: 66.3125em) and (max-width: 80em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 18px;
+    font-size: 17px;
   }
 }
 @media (min-width: 50.0625em) and (max-width: 61.25em) {
@@ -3295,25 +3295,25 @@ h1.p-name {
 @media (min-width: 42.5625em) and (max-width: 50em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (min-width: 32.8125em) and (max-width: 42.5em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 @media (min-width: 30.0625em) and (max-width: 32.75em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 16, ../sass/layout/_page.scss */
   html {
-    font-size: 12px;
+    font-size: 15px;
   }
 }
 
@@ -3321,56 +3321,56 @@ h1.p-name {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1.1;
+    line-height: 1.25;
   }
 }
 @media (min-width: 80.0625em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1.1;
+    line-height: 1.25;
   }
 }
 @media (min-width: 66.3125em) and (max-width: 80em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1.26666;
+    line-height: 1.41666;
   }
 }
 @media (min-width: 50.0625em) and (max-width: 61.25em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.15;
   }
 }
 @media (min-width: 42.5625em) and (max-width: 50em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.15;
   }
 }
 @media (min-width: 32.8125em) and (max-width: 42.5em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.15;
   }
 }
 @media (min-width: 30.0625em) and (max-width: 32.75em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.15;
   }
 }
 @media (min-width: 15em) and (max-width: 30em) {
   /* line 58, ../sass/layout/_page.scss */
   body {
     font-size: 1rem;
-    line-height: 0.93334;
+    line-height: 1.08334;
   }
 }
 
@@ -3378,7 +3378,7 @@ h1.p-name {
 [role="main"] {
   margin: 1em auto 0;
   width: 94.5%;
-  max-width: 60em;
+  max-width: 64rem;
 }
 @media (min-width: 15em) and (max-width: 50.0625em) {
   /* line 100, ../sass/layout/_page.scss */
@@ -3464,6 +3464,10 @@ h1.p-name {
   line-height: 1.5;
 }
 /* line 14, ../sass/layout/_spoke.scss */
+.spoke .spoke-body {
+  line-height: 1.4375rem;
+}
+/* line 17, ../sass/layout/_spoke.scss */
 .spoke .curatorsnote {
   font-weight: normal;
   font-size: 1.66667em;
@@ -3471,20 +3475,20 @@ h1.p-name {
   color: #5a5a5a;
   margin-bottom: .5em;
 }
-/* line 20, ../sass/layout/_spoke.scss */
+/* line 23, ../sass/layout/_spoke.scss */
 .spoke h1 {
   font-size: 1.8rem;
   padding: .4em 0 .2em 0;
   margin: 0 0 .1em 0;
   color: #232323;
 }
-/* line 26, ../sass/layout/_spoke.scss */
+/* line 29, ../sass/layout/_spoke.scss */
 .spoke section.video > figure.video {
   clear: both;
   float: left;
 }
 @media (min-width: 15em) and (max-width: 50.0625em) {
-  /* line 31, ../sass/layout/_spoke.scss */
+  /* line 34, ../sass/layout/_spoke.scss */
   .spoke section.video.part-of-hub {
     padding-top: 1em;
   }

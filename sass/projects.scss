@@ -2,8 +2,6 @@ $breakpoint-no-query-fallbacks: false;
 
 @import "toolkit";
 @import "compass/";
-@import "compass/reset";
-@import "compass/typography";
 @import "compass/css3";
 @import "compass/css3/deprecated-support";
 @import "modular-scale";
@@ -118,7 +116,7 @@ body.front {
         background-color: black;
     }
     .field-name-field-body {
-        font-size: $homepage-credits;
+        //font-size: $homepage-credits;
         margin-bottom: 1rem;
     }
     .field-name-field-spokes {
@@ -183,4 +181,7 @@ body {
             border: none;
         }
     }
+}
+body.fieldguide {
+    // put any special styles in here.
 }

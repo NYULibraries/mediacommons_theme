@@ -948,7 +948,7 @@ a.control:active {
 
 /* line 9, ../sass/modules/homepage/_homepage.scss */
 .hubhead img {
-  width: 100% !important;
+  max-width: 100% !important;
   height: auto;
 }
 
@@ -1783,7 +1783,7 @@ body.tne .logo {
   background-position: 0 49%;
 }
 /* line 50, ../sass/modules/header/_header--logos.scss */
-body.alt-ac .logo {
+body.alt .logo {
   background-position: 0 75%;
 }
 /* line 53, ../sass/modules/header/_header--logos.scss */
@@ -1824,7 +1824,7 @@ body.int .logo {
     background-position: 0 60%;
   }
   /* line 88, ../sass/modules/header/_header--logos.scss */
-  body.alt-ac [role="banner"] .logo {
+  body.alt [role="banner"] .logo {
     background-position: 0 70%;
     padding: 22% 0 0% 0;
   }

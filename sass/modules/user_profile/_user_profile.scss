@@ -43,16 +43,32 @@ h2.block-title {
     }
 }
 
-.u-photo {
-    float: left;
-    margin: 0 .5em 1em 0;
-    @extend %user-photo-treatment;
+.view-mode-user_teaser {
+    .field-name-ds-user-picture img {
+        float: left;
+        margin: 0 .5em 1em 0;
+        @extend %user-photo-treatment-teaser;
+    }
+}
+
+.user-profile.view-mode-full {
+    .field-name-ds-user-picture img {
+        float: left;
+        margin: 0 1em 1em 0;
+        @extend %user-photo-treatment-large;
+    }
 }
 
 .u-photo-small {
     float: left;
     //  margin: 0 .5em 1em 0;
-    @extend %user-photo-teaser-treatment;
+    @extend %user-photo-treatment-teaser;
+}
+
+img[src*="identicon"] {
+    -webkit-filter: grayscale(0.9);
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);
 }
 
 /* for contributors lists as well as profile */
@@ -72,11 +88,11 @@ h2.block-title {
             display: block;
         }
         img {
-            @extend %user-photo-teaser-treatment;
+            @extend %user-photo-treatment-teaser;
         }
     }
     > .u-url:first-child {
-        @extend %user-photo-treatment;
+        @extend %user-photo-treatment-teaser;
         margin: 1em 0;
         .u-photo {
             margin: 0;
@@ -116,6 +132,10 @@ h2.block-title {
     }
 }
 
+.view-contributors-this-hub {
+    padding: 1rem 0;
+}
+
 h1.p-name {
     font-size: 1.1rem;
 }
@@ -153,6 +173,9 @@ h1.p-name {
                 content: ",\20";
             }
         }
+    }
+    .u-photo {
+        @extend %user-photo-treatment-large;
     }
     header.h-card {
         margin-bottom: 1em;

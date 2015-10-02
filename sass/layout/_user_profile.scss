@@ -51,7 +51,7 @@ body.meco {
     border-bottom: 1px solid gray;
     text-indent: 0;
     img {
-        @extend %user-photo-teaser-treatment;
+        @extend %user-photo-treatment-teaser;
     }
     .roles {
         text-transform: uppercase;

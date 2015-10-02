@@ -82,8 +82,7 @@ h1.hub-title {
         span {
             display: block;
             color: #333;
-            font-style: italic;
-            font-size: .7em;
+            font-size: 1.1rem;
         }
         h2, h1 {
             color: nth($black, 1);
@@ -173,10 +172,6 @@ aside + h2 {
     clear: both;
 }
 
-.view-contributors-this-hub {
-    padding: .5rem 1rem;
-}
-
 /*****************************/
 .node-hub {
     .hub-title {
@@ -221,7 +216,7 @@ aside + h2 {
     // text-transform: uppercase;
     color: #fff;
     color: nth($black, 2);
-    font-family: "Droid Sans", $header-font-family;
+    font-family: $header-font-family;
     .view-content {
         width: auto;
         overflow: auto;

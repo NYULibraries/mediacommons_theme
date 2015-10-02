@@ -13,6 +13,10 @@
     }
     .spoke-body {
         line-height: 1.4375rem;
+        .body-text img {
+            max-width: 100%;
+            height: auto;
+        }
     }
     .curatorsnote {
         @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);

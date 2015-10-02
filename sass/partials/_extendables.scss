@@ -52,13 +52,13 @@
     // font-family: "Droid Sans", $header-font-family;
 }
 
-%user-photo-treatment {
-    width: 55px;
-    height: 55px;
-    @include border-radius(3em);
+%user-photo-treatment-large {
+    width: 90px;
+    height: 90px;
+    @include border-radius(4em);
     overflow: hidden;
     text-align: center;
-    background: nth($black, 4);
+    //background: nth($black, 4);
 }
 %user-photo-treatment-comments {
     display: block;
@@ -70,7 +70,7 @@
     text-align: center;
     background: nth($black, 4);
 }
-%user-photo-teaser-treatment {
+%user-photo-treatment-teaser {
     display: block;
     margin: 0 .5em 0em 0;
     width: 3rem;

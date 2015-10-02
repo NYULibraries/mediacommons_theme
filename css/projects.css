@@ -30,6 +30,36 @@ body.mc [role="complementary"] header {
 /*   */
 /*   */
 /* line 39, ../sass/projects.scss */
+body.fg a:link,
+body.fg a:visited {
+  color: goldenrod;
+}
+/* line 43, ../sass/projects.scss */
+body.fg a[href]:hover,
+body.fg a[href]:focus {
+  color: #ae8319;
+  text-decoration: underline;
+}
+/* line 48, ../sass/projects.scss */
+body.fg a[href]:active {
+  color: #816213;
+}
+/* line 57, ../sass/projects.scss */
+body.fg [role="navigation"].main ul.main li {
+  font-size: .9em;
+}
+/* line 61, ../sass/projects.scss */
+body.fg [role="complementary"] {
+  background-color: #eaedfb;
+}
+/* line 63, ../sass/projects.scss */
+body.fg [role="complementary"] header {
+  background-color: #c7cef5;
+}
+
+/*   */
+/*   */
+/* line 39, ../sass/projects.scss */
 body.tne a:link,
 body.tne a:visited {
   color: #1db7b7;

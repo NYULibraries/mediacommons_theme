@@ -449,7 +449,6 @@ time {
   font-weight: normal;
   font-size: 0.9rem;
   line-height: 1.1;
-  letter-spacing: 0.05em;
   color: #5a5a5a;
 }
 
@@ -1755,7 +1754,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
 /* to prevent the logo from disappearing due to override */
 /* line 22, ../sass/modules/header/_header--logos.scss */
 .logo:focus, .logo:hover {
-  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444081965');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444167311');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1768,7 +1767,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
   height: 4.4rem;
   display: block;
   margin: 0 0 1em 0;
-  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444081965');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444167311');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1797,7 +1796,7 @@ body.tne .logo {
 }
 /* line 62, ../sass/modules/header/_header--logos.scss */
 body.alt .logo {
-  background-position: 0 53%;
+  background-position: 0 59%;
 }
 /* line 65, ../sass/modules/header/_header--logos.scss */
 body.int .logo {

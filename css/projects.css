@@ -42,17 +42,17 @@ body.mc .node-spoke.node-teaser .thumb {
 /* line 39, ../sass/projects.scss */
 body.fieldguide a:link,
 body.fieldguide a:visited {
-  color: #388a24;
+  color: #d89b00;
 }
 /* line 43, ../sass/projects.scss */
 body.fieldguide a[href]:hover,
 body.fieldguide a[href]:focus {
-  color: #286219;
+  color: #a57600;
   text-decoration: underline;
 }
 /* line 48, ../sass/projects.scss */
 body.fieldguide a[href]:active {
-  color: #17390f;
+  color: #725200;
 }
 /* line 57, ../sass/projects.scss */
 body.fieldguide [role="navigation"].main ul.main li {
@@ -60,11 +60,11 @@ body.fieldguide [role="navigation"].main ul.main li {
 }
 /* line 61, ../sass/projects.scss */
 body.fieldguide [role="complementary"] {
-  background-color: #f2e8e9;
+  background-color: #e5e8fb;
 }
 /* line 63, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
-  background-color: #e1c8cb;
+  background-color: #bfc4f5;
 }
 /* line 68, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
@@ -245,14 +245,14 @@ body.int .node-spoke.node-teaser .thumb {
   background-position-y: -20px;
 }
 
-/* line 88, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
 
-/* line 94, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -260,76 +260,76 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
 }
 
-/* line 102, ../sass/projects.scss */
+/* line 100, ../sass/projects.scss */
 body.fieldguide {
   /* on fieldguide, hide all images for now */
 }
-/* line 104, ../sass/projects.scss */
+/* line 102, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb, body.fieldguide .field-name-field-representative-image {
   display: none;
 }
-/* line 108, ../sass/projects.scss */
+/* line 106, ../sass/projects.scss */
 body.fieldguide.front .timerangeheader {
   background-color: black;
 }
-/* line 121, ../sass/projects.scss */
+/* line 119, ../sass/projects.scss */
 body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
 
-/* line 129, ../sass/projects.scss */
+/* line 127, ../sass/projects.scss */
 body.front #content {
   width: auto;
   float: none;
 }
-/* line 134, ../sass/projects.scss */
+/* line 132, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 138, ../sass/projects.scss */
+/* line 136, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title a {
   color: black;
 }
 @media (min-width: 52.5625em) {
-  /* line 144, ../sass/projects.scss */
+  /* line 142, ../sass/projects.scss */
   body.front .hubhead {
     float: left;
     width: 32%;
   }
 }
-/* line 154, ../sass/projects.scss */
+/* line 152, ../sass/projects.scss */
 body.front .view-mode-toc_spoke, body.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
   padding: 0 0 .5em;
 }
-/* line 159, ../sass/projects.scss */
+/* line 157, ../sass/projects.scss */
 body.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 163, ../sass/projects.scss */
+/* line 161, ../sass/projects.scss */
 body.front .caption {
   font-size: .7em;
 }
-/* line 166, ../sass/projects.scss */
+/* line 164, ../sass/projects.scss */
 body.front .field-name-post-date, body.front .field-name-author {
   margin-left: 0;
   display: block;
   float: left;
 }
-/* line 171, ../sass/projects.scss */
+/* line 169, ../sass/projects.scss */
 body.front .thumb {
   min-width: 100px;
 }
-/* line 174, ../sass/projects.scss */
+/* line 172, ../sass/projects.scss */
 body.front .field-name-field-body {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 178, ../sass/projects.scss */
+  /* line 176, ../sass/projects.scss */
   body.front .field-name-field-spokes {
     float: right;
     width: 66%;
@@ -337,7 +337,7 @@ body.front .field-name-field-body {
     padding-left: 22px;
   }
 }
-/* line 213, ../sass/projects.scss */
+/* line 211, ../sass/projects.scss */
 body.front .timerangeheader {
   padding: 4px;
   background-color: #0C304A;
@@ -347,7 +347,7 @@ body.front .timerangeheader {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 213, ../sass/projects.scss */
+  /* line 211, ../sass/projects.scss */
   body.front .timerangeheader {
     float: right;
     width: 66%;
@@ -356,16 +356,16 @@ body.front .timerangeheader {
   }
 }
 
-/* line 230, ../sass/projects.scss */
+/* line 228, ../sass/projects.scss */
 body .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;
 }
-/* line 233, ../sass/projects.scss */
+/* line 231, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:first-child {
   padding: 0 0 1em;
 }
-/* line 236, ../sass/projects.scss */
+/* line 234, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:last-child {
   border: none;
 }

@@ -28,7 +28,7 @@ body.mc [role="complementary"] header {
 }
 /* line 68, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-mc.svg');
+  background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -40,35 +40,35 @@ body.mc .node-spoke.node-teaser .thumb {
 /*   */
 /*   */
 /* line 39, ../sass/projects.scss */
-body.fg a:link,
-body.fg a:visited {
+body.fieldguide a:link,
+body.fieldguide a:visited {
   color: #388a24;
 }
 /* line 43, ../sass/projects.scss */
-body.fg a[href]:hover,
-body.fg a[href]:focus {
+body.fieldguide a[href]:hover,
+body.fieldguide a[href]:focus {
   color: #286219;
   text-decoration: underline;
 }
 /* line 48, ../sass/projects.scss */
-body.fg a[href]:active {
+body.fieldguide a[href]:active {
   color: #17390f;
 }
 /* line 57, ../sass/projects.scss */
-body.fg [role="navigation"].main ul.main li {
+body.fieldguide [role="navigation"].main ul.main li {
   font-size: .9em;
 }
 /* line 61, ../sass/projects.scss */
-body.fg [role="complementary"] {
+body.fieldguide [role="complementary"] {
   background-color: #f2e8e9;
 }
 /* line 63, ../sass/projects.scss */
-body.fg [role="complementary"] header {
+body.fieldguide [role="complementary"] header {
   background-color: #e1c8cb;
 }
 /* line 68, ../sass/projects.scss */
-body.fg .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-fg.svg?1444145625');
+body.fieldguide .node-spoke.node-teaser .thumb {
+  background: url('../images/default_images/spoke-default-fieldguide.svg?1444145625');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -108,7 +108,7 @@ body.tne [role="complementary"] header {
 }
 /* line 68, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-tne.svg?1444145368');
+  background: url('../images/default_images/spoke-default-tne.svg?1444145368');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -148,7 +148,7 @@ body.imr [role="complementary"] header {
 }
 /* line 68, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-imr.svg?1444148114');
+  background: url('../images/default_images/spoke-default-imr.svg?1444148384');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -188,7 +188,7 @@ body.int [role="complementary"] header {
 }
 /* line 68, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1444142145');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -228,7 +228,7 @@ body.alt [role="complementary"] header {
 }
 /* line 68, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
-  background: url('../images/spoke-default-alt.svg?1444147155');
+  background: url('../images/default_images/spoke-default-alt.svg?1444147155');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -261,19 +261,19 @@ body.imr .node-spoke.node-teaser .thumb {
 }
 
 /* line 102, ../sass/projects.scss */
-body.fg {
+body.fieldguide {
   /* on fieldguide, hide all images for now */
 }
 /* line 104, ../sass/projects.scss */
-body.fg .node-spoke.node-teaser .thumb, body.fg .field-name-field-representative-image {
+body.fieldguide .node-spoke.node-teaser .thumb, body.fieldguide .field-name-field-representative-image {
   display: none;
 }
 /* line 108, ../sass/projects.scss */
-body.fg.front .timerangeheader {
+body.fieldguide.front .timerangeheader {
   background-color: black;
 }
 /* line 121, ../sass/projects.scss */
-body.fg.front .hubhead .field-name-title h1.hub-title {
+body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
 

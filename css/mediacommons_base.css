@@ -1755,7 +1755,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
 /* to prevent the logo from disappearing due to override */
 /* line 22, ../sass/modules/header/_header--logos.scss */
 .logo:focus, .logo:hover {
-  background: url('../images/mc-logos/mediacommons-logos2.svg?1415148016');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444079854');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1768,7 +1768,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
   height: 4.4rem;
   display: block;
   margin: 0 0 1em 0;
-  background: url('../images/mc-logos/mediacommons-logos2.svg?1415148016');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444079854');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1782,32 +1782,36 @@ body.mc .logo {
   background-position: 0 0%;
 }
 /* line 51, ../sass/modules/header/_header--logos.scss */
+body.fg .logo {
+  background-position: 0 100%;
+}
+/* line 54, ../sass/modules/header/_header--logos.scss */
 body.imr .logo {
-  background-position: 0 23%;
+  background-position: 0 17%;
   height: 4.7rem;
   padding: 0;
 }
-/* line 56, ../sass/modules/header/_header--logos.scss */
-body.tne .logo {
-  background-position: 0 49%;
-}
 /* line 59, ../sass/modules/header/_header--logos.scss */
-body.alt .logo {
-  background-position: 0 75%;
+body.tne .logo {
+  background-position: 0 36%;
 }
 /* line 62, ../sass/modules/header/_header--logos.scss */
+body.alt .logo {
+  background-position: 0 53%;
+}
+/* line 65, ../sass/modules/header/_header--logos.scss */
 body.int .logo {
-  background-position: 0 100%;
+  background-position: 0 72%;
 }
 
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 69, ../sass/modules/header/_header--logos.scss */
+  /* line 72, ../sass/modules/header/_header--logos.scss */
   [role="banner"] h1 {
     position: absolute;
     left: 2.5em;
     z-index: 1000;
   }
-  /* line 75, ../sass/modules/header/_header--logos.scss */
+  /* line 78, ../sass/modules/header/_header--logos.scss */
   [role="banner"] .logo {
     background: url('../images/mc-logos/mediacommons-logos3.svg?1415148073');
     background-repeat: no-repeat;
@@ -1816,28 +1820,28 @@ body.int .logo {
     padding: 16% 0 0% 0;
     height: auto;
   }
-  /* line 82, ../sass/modules/header/_header--logos.scss */
+  /* line 85, ../sass/modules/header/_header--logos.scss */
   body.mc [role="banner"] .logo {
     background-position: 0 1%;
   }
-  /* line 85, ../sass/modules/header/_header--logos.scss */
+  /* line 88, ../sass/modules/header/_header--logos.scss */
   body.mediacommons [role="banner"] .logo {
     background-position: 0 -2%;
   }
-  /* line 88, ../sass/modules/header/_header--logos.scss */
+  /* line 91, ../sass/modules/header/_header--logos.scss */
   body.imr [role="banner"] .logo {
     height: 4rem;
   }
-  /* line 94, ../sass/modules/header/_header--logos.scss */
+  /* line 97, ../sass/modules/header/_header--logos.scss */
   body.tne [role="banner"] .logo {
     background-position: 0 60%;
   }
-  /* line 97, ../sass/modules/header/_header--logos.scss */
+  /* line 100, ../sass/modules/header/_header--logos.scss */
   body.alt [role="banner"] .logo {
     background-position: 0 70%;
     padding: 22% 0 0% 0;
   }
-  /* line 101, ../sass/modules/header/_header--logos.scss */
+  /* line 104, ../sass/modules/header/_header--logos.scss */
   body.int [role="banner"] .logo {
     background-position: 0 92%;
   }

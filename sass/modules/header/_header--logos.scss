@@ -20,7 +20,7 @@
 
 /* to prevent the logo from disappearing due to override */
 .logo:focus, .logo:hover {
-    background: image-url("mc-logos/mediacommons-logos2.svg");
+    background: image-url("mc-logos/mediacommons-logos-full.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 10em;
@@ -33,7 +33,7 @@
     height: 4.4rem;
     display: block;
     margin: 0 0 1em 0;
-    background: image-url("mc-logos/mediacommons-logos2.svg");
+    background: image-url("mc-logos/mediacommons-logos-full.svg");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 10em;
@@ -48,19 +48,22 @@
     body.mc & {
         background-position: 0 0%;
     }
+    body.fg & {
+        background-position: 0 100%;
+    }
     body.imr & {
-        background-position: 0 23%;
+        background-position: 0 17%;
         height: 4.7rem;
         padding: 0;
     }
     body.tne & {
-        background-position: 0 49%;
+        background-position: 0 36%;
     }
     body.alt & {
-        background-position: 0 75%;
+        background-position: 0 53%;
     }
     body.int & {
-        background-position: 0 100%;
+        background-position: 0 72%;
     }
 }
 

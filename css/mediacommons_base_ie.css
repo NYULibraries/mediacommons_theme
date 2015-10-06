@@ -1529,7 +1529,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
 /* to prevent the logo from disappearing due to override */
 /* line 22, ../sass/modules/header/_header--logos.scss */
 .logo:focus, .logo:hover {
-  background: url('../images/mc-logos/mediacommons-logos2.svg?1415148016');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444079854');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1542,7 +1542,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
   height: 4.4rem;
   display: block;
   margin: 0 0 1em 0;
-  background: url('../images/mc-logos/mediacommons-logos2.svg?1415148016');
+  background: url('../images/mc-logos/mediacommons-logos-full.svg?1444079854');
   background-repeat: no-repeat;
   background-size: 100%;
   width: 10em;
@@ -1556,22 +1556,26 @@ body.mc .logo {
   background-position: 0 0%;
 }
 /* line 51, ../sass/modules/header/_header--logos.scss */
+body.fg .logo {
+  background-position: 0 100%;
+}
+/* line 54, ../sass/modules/header/_header--logos.scss */
 body.imr .logo {
-  background-position: 0 23%;
+  background-position: 0 17%;
   height: 4.7rem;
   padding: 0;
 }
-/* line 56, ../sass/modules/header/_header--logos.scss */
-body.tne .logo {
-  background-position: 0 49%;
-}
 /* line 59, ../sass/modules/header/_header--logos.scss */
-body.alt .logo {
-  background-position: 0 75%;
+body.tne .logo {
+  background-position: 0 36%;
 }
 /* line 62, ../sass/modules/header/_header--logos.scss */
+body.alt .logo {
+  background-position: 0 53%;
+}
+/* line 65, ../sass/modules/header/_header--logos.scss */
 body.int .logo {
-  background-position: 0 100%;
+  background-position: 0 72%;
 }
 
 /* line 9, ../sass/modules/header/_header.scss */

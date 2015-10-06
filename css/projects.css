@@ -26,23 +26,33 @@ body.mc [role="complementary"] {
 body.mc [role="complementary"] header {
   background-color: #e4d7c5;
 }
+/* line 68, ../sass/projects.scss */
+body.mc .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-mc.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
 
 /*   */
 /*   */
 /* line 39, ../sass/projects.scss */
 body.fg a:link,
 body.fg a:visited {
-  color: goldenrod;
+  color: #388a24;
 }
 /* line 43, ../sass/projects.scss */
 body.fg a[href]:hover,
 body.fg a[href]:focus {
-  color: #ae8319;
+  color: #286219;
   text-decoration: underline;
 }
 /* line 48, ../sass/projects.scss */
 body.fg a[href]:active {
-  color: #816213;
+  color: #17390f;
 }
 /* line 57, ../sass/projects.scss */
 body.fg [role="navigation"].main ul.main li {
@@ -50,11 +60,21 @@ body.fg [role="navigation"].main ul.main li {
 }
 /* line 61, ../sass/projects.scss */
 body.fg [role="complementary"] {
-  background-color: #eaedfb;
+  background-color: #f2e8e9;
 }
 /* line 63, ../sass/projects.scss */
 body.fg [role="complementary"] header {
-  background-color: #c7cef5;
+  background-color: #e1c8cb;
+}
+/* line 68, ../sass/projects.scss */
+body.fg .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-fg.svg?1444145625');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
 
 /*   */
@@ -86,6 +106,16 @@ body.tne [role="complementary"] {
 body.tne [role="complementary"] header {
   background-color: #edd8c6;
 }
+/* line 68, ../sass/projects.scss */
+body.tne .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-tne.svg?1444145368');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
 
 /*   */
 /*   */
@@ -115,6 +145,16 @@ body.imr [role="complementary"] {
 /* line 63, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #c8f7dc;
+}
+/* line 68, ../sass/projects.scss */
+body.imr .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-imr.svg?1444148114');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
 
 /*   */
@@ -146,6 +186,16 @@ body.int [role="complementary"] {
 body.int [role="complementary"] header {
   background-color: #d9ddc9;
 }
+/* line 68, ../sass/projects.scss */
+body.int .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-int.svg?1444142145');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
 
 /*   */
 /*   */
@@ -176,62 +226,110 @@ body.alt [role="complementary"] {
 body.alt [role="complementary"] header {
   background-color: #cceec6;
 }
+/* line 68, ../sass/projects.scss */
+body.alt .node-spoke.node-teaser .thumb {
+  background: url('../images/spoke-default-alt.svg?1444147155');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+  box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
 
 /*   */
-/* line 72, ../sass/projects.scss */
+/* line 81, ../sass/projects.scss */
+body.int .node-spoke.node-teaser .thumb {
+  background-size: 150%;
+  background-position-x: -10px;
+  background-position-y: -20px;
+}
+
+/* line 88, ../sass/projects.scss */
+body.int .node-spoke.node-teaser .thumb {
+  background-size: 224%;
+  background-position-x: 3px;
+  background-position-y: -77px;
+}
+
+/* line 94, ../sass/projects.scss */
+body.imr .node-spoke.node-teaser .thumb {
+  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}
+
+/* line 102, ../sass/projects.scss */
+body.fg {
+  /* on fieldguide, hide all images for now */
+}
+/* line 104, ../sass/projects.scss */
+body.fg .node-spoke.node-teaser .thumb, body.fg .field-name-field-representative-image {
+  display: none;
+}
+/* line 108, ../sass/projects.scss */
+body.fg.front .timerangeheader {
+  background-color: black;
+}
+/* line 121, ../sass/projects.scss */
+body.fg.front .hubhead .field-name-title h1.hub-title {
+  font-size: 37px;
+}
+
+/* line 129, ../sass/projects.scss */
 body.front #content {
   width: auto;
   float: none;
 }
-/* line 77, ../sass/projects.scss */
+/* line 134, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 81, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title a {
   color: black;
 }
 @media (min-width: 52.5625em) {
-  /* line 87, ../sass/projects.scss */
+  /* line 144, ../sass/projects.scss */
   body.front .hubhead {
     float: left;
     width: 32%;
   }
 }
-/* line 97, ../sass/projects.scss */
+/* line 154, ../sass/projects.scss */
 body.front .view-mode-toc_spoke, body.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
   padding: 0 0 .5em;
 }
-/* line 102, ../sass/projects.scss */
+/* line 159, ../sass/projects.scss */
 body.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 106, ../sass/projects.scss */
+/* line 163, ../sass/projects.scss */
 body.front .caption {
   font-size: .7em;
 }
-/* line 109, ../sass/projects.scss */
+/* line 166, ../sass/projects.scss */
 body.front .field-name-post-date, body.front .field-name-author {
   margin-left: 0;
   display: block;
   float: left;
 }
-/* line 114, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 body.front .thumb {
   min-width: 100px;
-  background-color: black;
 }
-/* line 118, ../sass/projects.scss */
+/* line 174, ../sass/projects.scss */
 body.front .field-name-field-body {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 122, ../sass/projects.scss */
+  /* line 178, ../sass/projects.scss */
   body.front .field-name-field-spokes {
     float: right;
     width: 66%;
@@ -239,7 +337,7 @@ body.front .field-name-field-body {
     padding-left: 22px;
   }
 }
-/* line 157, ../sass/projects.scss */
+/* line 213, ../sass/projects.scss */
 body.front .timerangeheader {
   padding: 4px;
   background-color: #0C304A;
@@ -249,7 +347,7 @@ body.front .timerangeheader {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 157, ../sass/projects.scss */
+  /* line 213, ../sass/projects.scss */
   body.front .timerangeheader {
     float: right;
     width: 66%;
@@ -258,16 +356,16 @@ body.front .timerangeheader {
   }
 }
 
-/* line 174, ../sass/projects.scss */
+/* line 230, ../sass/projects.scss */
 body .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;
 }
-/* line 177, ../sass/projects.scss */
+/* line 233, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:first-child {
   padding: 0 0 1em;
 }
-/* line 180, ../sass/projects.scss */
+/* line 236, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:last-child {
   border: none;
 }

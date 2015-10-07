@@ -14,19 +14,19 @@ body.mc a[href]:focus {
 body.mc a[href]:active {
   color: #0a283e;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.mc [role="complementary"] {
   background-color: #f4eee7;
 }
-/* line 63, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.mc [role="complementary"] header {
   background-color: #e4d7c5;
 }
-/* line 68, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
@@ -36,37 +36,61 @@ body.mc .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
+/* line 73, ../sass/projects.scss */
+body.mc.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.mc.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.mc input[type="search"]:-moz-placeholder, body.mc input[name="search_block_form"]:-moz-placeholder {
+  color: #955f19;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.mc input[type="search"]::-moz-placeholder, body.mc input[name="search_block_form"]::-moz-placeholder {
+  color: #955f19;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.mc input[type="search"]:-ms-input-placeholder, body.mc input[name="search_block_form"]:-ms-input-placeholder {
+  color: #955f19;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.mc input[type="search"]::-webkit-input-placeholder, body.mc input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #955f19;
+}
 
 /*   */
 /*   */
 /* line 39, ../sass/projects.scss */
 body.fieldguide a:link,
 body.fieldguide a:visited {
-  color: #d89b00;
+  color: #8b6800;
 }
 /* line 43, ../sass/projects.scss */
 body.fieldguide a[href]:hover,
 body.fieldguide a[href]:focus {
-  color: #a57600;
+  color: #584200;
   text-decoration: underline;
 }
 /* line 48, ../sass/projects.scss */
 body.fieldguide a[href]:active {
-  color: #725200;
+  color: #251c00;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.fieldguide [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.fieldguide [role="complementary"] {
-  background-color: #e5e8fb;
+  background-color: #e2e3f2;
+}
+/* line 58, ../sass/projects.scss */
+body.fieldguide [role="complementary"] header {
+  background-color: #bfc0e2;
 }
 /* line 63, ../sass/projects.scss */
-body.fieldguide [role="complementary"] header {
-  background-color: #bfc4f5;
-}
-/* line 68, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-fieldguide.svg?1444145625');
   background-repeat: no-repeat;
@@ -75,6 +99,30 @@ body.fieldguide .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
+/* line 73, ../sass/projects.scss */
+body.fieldguide.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.fieldguide.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.fieldguide input[type="search"]:-moz-placeholder, body.fieldguide input[name="search_block_form"]:-moz-placeholder {
+  color: #00068b;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.fieldguide input[type="search"]::-moz-placeholder, body.fieldguide input[name="search_block_form"]::-moz-placeholder {
+  color: #00068b;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.fieldguide input[type="search"]:-ms-input-placeholder, body.fieldguide input[name="search_block_form"]:-ms-input-placeholder {
+  color: #00068b;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.fieldguide input[type="search"]::-webkit-input-placeholder, body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #00068b;
 }
 
 /*   */
@@ -94,19 +142,19 @@ body.tne a[href]:focus {
 body.tne a[href]:active {
   color: #0f5f5f;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.tne [role="complementary"] {
   background-color: #f8efe9;
 }
-/* line 63, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.tne [role="complementary"] header {
   background-color: #edd8c6;
 }
-/* line 68, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-tne.svg?1444145368');
   background-repeat: no-repeat;
@@ -115,6 +163,30 @@ body.tne .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
+/* line 73, ../sass/projects.scss */
+body.tne.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.tne.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.tne input[type="search"]:-moz-placeholder, body.tne input[name="search_block_form"]:-moz-placeholder {
+  color: #b7631d;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.tne input[type="search"]::-moz-placeholder, body.tne input[name="search_block_form"]::-moz-placeholder {
+  color: #b7631d;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.tne input[type="search"]:-ms-input-placeholder, body.tne input[name="search_block_form"]:-ms-input-placeholder {
+  color: #b7631d;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.tne input[type="search"]::-webkit-input-placeholder, body.tne input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #b7631d;
 }
 
 /*   */
@@ -134,19 +206,19 @@ body.imr a[href]:focus {
 body.imr a[href]:active {
   color: #8e2f13;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.imr [role="complementary"] {
   background-color: #ebfcf2;
 }
-/* line 63, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #c8f7dc;
 }
-/* line 68, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-imr.svg?1444148384');
   background-repeat: no-repeat;
@@ -155,6 +227,30 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
+/* line 73, ../sass/projects.scss */
+body.imr.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.imr.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.imr input[type="search"]:-moz-placeholder, body.imr input[name="search_block_form"]:-moz-placeholder {
+  color: #25e274;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.imr input[type="search"]::-moz-placeholder, body.imr input[name="search_block_form"]::-moz-placeholder {
+  color: #25e274;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.imr input[type="search"]:-ms-input-placeholder, body.imr input[name="search_block_form"]:-ms-input-placeholder {
+  color: #25e274;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.imr input[type="search"]::-webkit-input-placeholder, body.imr input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #25e274;
 }
 
 /*   */
@@ -174,19 +270,19 @@ body.int a[href]:focus {
 body.int a[href]:active {
   color: #2c102a;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.int [role="complementary"] {
   background-color: #eff0e8;
 }
-/* line 63, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.int [role="complementary"] header {
   background-color: #d9ddc9;
 }
-/* line 68, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-int.svg?1444142145');
   background-repeat: no-repeat;
@@ -195,6 +291,30 @@ body.int .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+}
+/* line 73, ../sass/projects.scss */
+body.int.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.int.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.int input[type="search"]:-moz-placeholder, body.int input[name="search_block_form"]:-moz-placeholder {
+  color: #68782a;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.int input[type="search"]::-moz-placeholder, body.int input[name="search_block_form"]::-moz-placeholder {
+  color: #68782a;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.int input[type="search"]:-ms-input-placeholder, body.int input[name="search_block_form"]:-ms-input-placeholder {
+  color: #68782a;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.int input[type="search"]::-webkit-input-placeholder, body.int input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #68782a;
 }
 
 /*   */
@@ -214,19 +334,19 @@ body.alt a[href]:focus {
 body.alt a[href]:active {
   color: #661018;
 }
-/* line 57, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 61, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.alt [role="complementary"] {
   background-color: #ebf8e9;
 }
-/* line 63, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.alt [role="complementary"] header {
   background-color: #cceec6;
 }
-/* line 68, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-alt.svg?1444147155');
   background-repeat: no-repeat;
@@ -236,23 +356,47 @@ body.alt .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
+/* line 73, ../sass/projects.scss */
+body.alt.front .timerangeheader {
+  background-color: #333333;
+}
+/* line 76, ../sass/projects.scss */
+body.alt.front .field-name-field-spokes {
+  border-left: 1px solid #333333;
+}
+/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.alt input[type="search"]:-moz-placeholder, body.alt input[name="search_block_form"]:-moz-placeholder {
+  color: #36be1e;
+}
+/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.alt input[type="search"]::-moz-placeholder, body.alt input[name="search_block_form"]::-moz-placeholder {
+  color: #36be1e;
+}
+/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.alt input[type="search"]:-ms-input-placeholder, body.alt input[name="search_block_form"]:-ms-input-placeholder {
+  color: #36be1e;
+}
+/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+body.alt input[type="search"]::-webkit-input-placeholder, body.alt input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #36be1e;
+}
 
 /*   */
-/* line 81, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 150%;
   background-position-x: -10px;
   background-position-y: -20px;
 }
 
-/* line 87, ../sass/projects.scss */
+/* line 99, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
 
-/* line 93, ../sass/projects.scss */
+/* line 105, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -260,76 +404,84 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
 }
 
-/* line 100, ../sass/projects.scss */
+/* line 112, ../sass/projects.scss */
 body.fieldguide {
   /* on fieldguide, hide all images for now */
 }
-/* line 102, ../sass/projects.scss */
+/* line 115, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb, body.fieldguide .field-name-field-representative-image {
   display: none;
 }
-/* line 106, ../sass/projects.scss */
-body.fieldguide.front .timerangeheader {
-  background-color: black;
+/* line 118, ../sass/projects.scss */
+body.fieldguide [role="banner"] {
+  border-bottom: 1px solid #a47b00;
 }
-/* line 119, ../sass/projects.scss */
+/* line 123, ../sass/projects.scss */
 body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
-
 /* line 127, ../sass/projects.scss */
+body.fieldguide.front .field-name-field-spokes {
+  border-left: 1px solid #a47b00;
+}
+/* line 129, ../sass/projects.scss */
+body.fieldguide.front .field-name-field-spokes .field-item {
+  margin-bottom: .5rem;
+}
+
+/* line 137, ../sass/projects.scss */
 body.front #content {
   width: auto;
   float: none;
 }
-/* line 132, ../sass/projects.scss */
+/* line 142, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 136, ../sass/projects.scss */
+/* line 146, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title a {
   color: black;
 }
 @media (min-width: 52.5625em) {
-  /* line 142, ../sass/projects.scss */
+  /* line 152, ../sass/projects.scss */
   body.front .hubhead {
     float: left;
     width: 32%;
   }
 }
-/* line 152, ../sass/projects.scss */
+/* line 162, ../sass/projects.scss */
 body.front .view-mode-toc_spoke, body.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
   padding: 0 0 .5em;
 }
-/* line 157, ../sass/projects.scss */
+/* line 167, ../sass/projects.scss */
 body.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 161, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 body.front .caption {
   font-size: .7em;
 }
-/* line 164, ../sass/projects.scss */
+/* line 174, ../sass/projects.scss */
 body.front .field-name-post-date, body.front .field-name-author {
   margin-left: 0;
   display: block;
   float: left;
 }
-/* line 169, ../sass/projects.scss */
+/* line 179, ../sass/projects.scss */
 body.front .thumb {
   min-width: 100px;
 }
-/* line 172, ../sass/projects.scss */
+/* line 182, ../sass/projects.scss */
 body.front .field-name-field-body {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 176, ../sass/projects.scss */
+  /* line 186, ../sass/projects.scss */
   body.front .field-name-field-spokes {
     float: right;
     width: 66%;
@@ -337,7 +489,7 @@ body.front .field-name-field-body {
     padding-left: 22px;
   }
 }
-/* line 211, ../sass/projects.scss */
+/* line 221, ../sass/projects.scss */
 body.front .timerangeheader {
   padding: 4px;
   background-color: #0C304A;
@@ -347,7 +499,7 @@ body.front .timerangeheader {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 211, ../sass/projects.scss */
+  /* line 221, ../sass/projects.scss */
   body.front .timerangeheader {
     float: right;
     width: 66%;
@@ -356,16 +508,16 @@ body.front .timerangeheader {
   }
 }
 
-/* line 228, ../sass/projects.scss */
+/* line 238, ../sass/projects.scss */
 body .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;
 }
-/* line 231, ../sass/projects.scss */
+/* line 241, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:first-child {
   padding: 0 0 1em;
 }
-/* line 234, ../sass/projects.scss */
+/* line 244, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:last-child {
   border: none;
 }

@@ -84,6 +84,12 @@ h1.hub-title {
             color: #333;
             font-size: 1.1rem;
         }
+        span:last-child {
+            font-weight: bold;
+            a {
+                 color: nth($black, 1);
+            }
+        }
         h2, h1 {
             color: nth($black, 1);
             font-size: 1.1rem;
@@ -118,12 +124,30 @@ h1.hub-title {
                 display: block;
             }
             a.active, a.active:hover {
-                color: nth($black, 3);
+                color: nth($black, 2);
                 cursor: default;
                 text-decoration: none;
                 a, span {
                     color: nth($black, 1);
                 }
+            }
+            a.active {
+                position: relative;
+                background: #eee;
+            }
+            a.active:after {
+                right: 100%;
+                top: 50%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+                // border-color: rgba(136, 183, 213, 0);
+                border-right-color: #eee;
+                border-width: 30px;
+                margin-top: -30px;
             }
             > h3 {
                 vertical-align: top;

@@ -2634,6 +2634,14 @@ h1.hub-title a:link {
   font-size: 1.1rem;
 }
 /* line 87, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"] header span:last-child, [role="complementary"] header.blockheader span:last-child {
+  font-weight: bold;
+}
+/* line 89, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"] header span:last-child a, [role="complementary"] header.blockheader span:last-child a {
+  color: #232323;
+}
+/* line 93, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] header h2, [role="complementary"] header h1, [role="complementary"] header.blockheader h2, [role="complementary"] header.blockheader h1 {
   color: #232323;
   font-size: 1.1rem;
@@ -2641,205 +2649,224 @@ h1.hub-title a:link {
   padding: 0;
   margin: 0;
 }
-/* line 96, ../sass/modules/hub_list/_hub_list.scss */
+/* line 102, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub, [role="complementary"] .view-all-spokes-in-this-spokes-hub,
 [role="complementary"] #block-views-mc-recent-comments-block {
   margin-left: 0px;
 }
-/* line 99, ../sass/modules/hub_list/_hub_list.scss */
+/* line 105, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub .view-content, [role="complementary"] .view-all-spokes-in-this-spokes-hub .view-content,
 [role="complementary"] #block-views-mc-recent-comments-block .view-content {
   padding: 1rem;
 }
-/* line 101, ../sass/modules/hub_list/_hub_list.scss */
+/* line 107, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .contrib-list.view-all-spokes-in-this-spokes-hub .view-content > div, [role="complementary"] .view-all-spokes-in-this-spokes-hub .view-content > div,
 [role="complementary"] #block-views-mc-recent-comments-block .view-content > div {
   line-height: 1.3;
   margin-bottom: .8rem;
 }
-/* line 107, ../sass/modules/hub_list/_hub_list.scss */
+/* line 113, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul {
   list-style: none;
   margin: 0;
   padding: 0;
   width: 100%;
 }
-/* line 112, ../sass/modules/hub_list/_hub_list.scss */
+/* line 118, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li {
   text-indent: 0;
   margin: 0;
   line-height: 1.4;
 }
-/* line 116, ../sass/modules/hub_list/_hub_list.scss */
+/* line 122, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a {
   padding: .5em 0;
   display: block;
 }
-/* line 120, ../sass/modules/hub_list/_hub_list.scss */
+/* line 126, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover {
-  color: #919191;
+  color: #5a5a5a;
   cursor: default;
   text-decoration: none;
 }
-/* line 124, ../sass/modules/hub_list/_hub_list.scss */
+/* line 130, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active a, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active span, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover a, [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover span {
   color: #232323;
 }
-/* line 128, ../sass/modules/hub_list/_hub_list.scss */
+/* line 134, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active {
+  position: relative;
+  background: #eee;
+}
+/* line 138, ../sass/modules/hub_list/_hub_list.scss */
+[role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:after {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-right-color: #eee;
+  border-width: 30px;
+  margin-top: -30px;
+}
+/* line 152, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li > h3 {
   vertical-align: top;
   font-size: 1.2em;
   padding: .5em 0;
   margin: 0;
 }
-/* line 138, ../sass/modules/hub_list/_hub_list.scss */
+/* line 162, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].bio > div {
   padding: 1rem;
   font-size: .7rem;
   line-height: 1.5;
 }
-/* line 142, ../sass/modules/hub_list/_hub_list.scss */
+/* line 166, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"].bio > div p {
   margin: 0 0 .8em 0;
 }
-/* line 147, ../sass/modules/hub_list/_hub_list.scss */
+/* line 171, ../sass/modules/hub_list/_hub_list.scss */
 [role="complementary"] .responsive-disclosure {
   display: none;
 }
 @media (min-width: 50.0625em) {
-  /* line 151, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 175, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"] span.responsive-disclosure {
     display: none;
   }
-  /* line 154, ../sass/modules/hub_list/_hub_list.scss */
+  /* line 178, ../sass/modules/hub_list/_hub_list.scss */
   [role="complementary"] nav {
     display: block;
   }
 }
 
-/* line 171, ../sass/modules/hub_list/_hub_list.scss */
+/* line 195, ../sass/modules/hub_list/_hub_list.scss */
 aside + h2 {
   clear: both;
 }
 
 /*****************************/
-/* line 177, ../sass/modules/hub_list/_hub_list.scss */
+/* line 201, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .hub-title {
   font-size: 1.5em;
   padding: .2em 0 0 0;
   margin: 0 0 .3em 0;
   color: #232323;
 }
-/* line 183, ../sass/modules/hub_list/_hub_list.scss */
+/* line 207, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub p {
   margin: 0 0 .2em 0;
 }
-/* line 186, ../sass/modules/hub_list/_hub_list.scss */
+/* line 210, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .all-spokes {
   position: relative;
   z-index: 10;
 }
-/* line 190, ../sass/modules/hub_list/_hub_list.scss */
+/* line 214, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.3;
 }
-/* line 195, ../sass/modules/hub_list/_hub_list.scss */
+/* line 219, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period a:link, .node-hub .field-name-field-period a:visited {
   color: #5a5a5a;
 }
-/* line 198, ../sass/modules/hub_list/_hub_list.scss */
+/* line 222, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-label {
   display: inline-block;
   font-weight: normal;
   margin-right: 5px;
 }
-/* line 203, ../sass/modules/hub_list/_hub_list.scss */
+/* line 227, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
 
-/* line 213, ../sass/modules/hub_list/_hub_list.scss */
+/* line 237, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist {
   font-size: .85rem;
   line-height: 1.25;
   color: #5a5a5a;
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
-/* line 218, ../sass/modules/hub_list/_hub_list.scss */
+/* line 242, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-content {
   width: auto;
   overflow: auto;
 }
-/* line 222, ../sass/modules/hub_list/_hub_list.scss */
+/* line 246, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .field-label {
   display: inline;
   padding-right: .25rem;
 }
-/* line 226, ../sass/modules/hub_list/_hub_list.scss */
+/* line 250, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist a:link, .peoplelist a:visited {
   color: #5a5a5a;
 }
-/* line 229, ../sass/modules/hub_list/_hub_list.scss */
+/* line 253, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist ul {
   display: inline;
 }
-/* line 232, ../sass/modules/hub_list/_hub_list.scss */
+/* line 256, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li {
   padding-right: .25rem;
   display: inline-block;
 }
-/* line 235, ../sass/modules/hub_list/_hub_list.scss */
+/* line 259, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:after {
   content: ",\20";
 }
-/* line 238, ../sass/modules/hub_list/_hub_list.scss */
+/* line 262, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:last-child:after {
   content: "";
 }
-/* line 242, ../sass/modules/hub_list/_hub_list.scss */
+/* line 266, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .item {
   float: left;
   margin-right: 5px;
 }
-/* line 245, ../sass/modules/hub_list/_hub_list.scss */
+/* line 269, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .item:after {
   content: ",\20";
 }
-/* line 248, ../sass/modules/hub_list/_hub_list.scss */
+/* line 272, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .item:last-child:after {
   content: "";
 }
-/* line 251, ../sass/modules/hub_list/_hub_list.scss */
+/* line 275, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .item .p-name, .peoplelist .item .p-org {
   float: left;
 }
 
-/* line 257, ../sass/modules/hub_list/_hub_list.scss */
+/* line 281, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
   padding: .8em 0;
   line-height: 1.5;
   border-bottom: 1px solid #f6dec7;
 }
-/* line 258, ../sass/modules/hub_list/_hub_list.scss */
+/* line 282, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke.clearfix:after, .node-spoke.view-mode-teaser.clearfix:after {
   clear: left;
 }
-/* line 264, ../sass/modules/hub_list/_hub_list.scss */
+/* line 288, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .contextual-links-wrapper, .node-spoke.view-mode-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 268, ../sass/modules/hub_list/_hub_list.scss */
+/* line 292, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .thumb, .node-spoke.view-mode-teaser .thumb {
   float: left;
   margin-right: 10px;
 }
-/* line 272, ../sass/modules/hub_list/_hub_list.scss */
+/* line 296, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke a:link, .view-mode-toc_spoke a:visited, .node-spoke.view-mode-teaser a:link, .node-spoke.view-mode-teaser a:visited {
   color: #5a5a5a;
 }
-/* line 275, ../sass/modules/hub_list/_hub_list.scss */
+/* line 299, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2, .node-spoke.view-mode-teaser h2 {
   font-size: 1.1rem;
   margin-top: 0;
@@ -2847,22 +2874,22 @@ aside + h2 {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 281, ../sass/modules/hub_list/_hub_list.scss */
+/* line 305, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke h2 a:link, .view-mode-toc_spoke h2 a:visited, .node-spoke.view-mode-teaser h2 a:link, .node-spoke.view-mode-teaser h2 a:visited {
   color: #232323;
 }
-/* line 285, ../sass/modules/hub_list/_hub_list.scss */
+/* line 309, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .field-name-author, .node-spoke.view-mode-teaser .field-name-author {
   font-size: .8em;
   font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 
-/* line 298, ../sass/modules/hub_list/_hub_list.scss */
+/* line 322, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 302, ../sass/modules/hub_list/_hub_list.scss */
+/* line 326, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;

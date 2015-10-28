@@ -20,10 +20,7 @@
 
 /* to prevent the logo from disappearing due to override */
 .logo:focus, .logo:hover {
-    background: image-url("mc-logos/mediacommons-logos-full.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 10em;
+  
     -webkit-filter: saturate(1.3);
 }
 

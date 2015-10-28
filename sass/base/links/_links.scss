@@ -28,8 +28,6 @@ a {
     @include border-outline(border, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color);
   }
   &:focus {
-   // background: yellow;
- background: transparent;
     outline: none;
   }
 }

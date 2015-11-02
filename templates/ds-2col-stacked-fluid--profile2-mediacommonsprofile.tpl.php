@@ -4,7 +4,7 @@
  * @file
  * Display Suite 2 column stacked template.
  */
-?>
+?>Profile 2 - can delete this template?  ds-2col-stacked....
 <<?php print $layout_wrapper; print $layout_attributes; ?> class="profile <?php print $classes;?> clearfix">
 
   <?php if (isset($title_suffix['contextual_links'])): ?>

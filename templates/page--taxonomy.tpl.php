@@ -36,8 +36,8 @@
 
   <?php print render($page['content']); ?> 
   </article>
- <?php if (isset($page['sidebar_first'])) : ?>
-          <aside role="complementary"><?php print render($page['sidebar_first']); ?>
+ <?php if (isset($page['sidebar_second'])) : ?>
+          <aside role="complementary"><?php print render($page['sidebar_second']); ?>
           </aside>
   <?php endif; ?> </main>
   

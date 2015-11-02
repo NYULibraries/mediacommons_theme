@@ -86,6 +86,10 @@ $type-color: tint-stack($type-color-value);
                 color: nth($tertiary, 1);
             }
         }
+        .pager a:active {
+            color: #fff;
+            background-color: $primary-color;
+        } 
     }
     /*   */
 }

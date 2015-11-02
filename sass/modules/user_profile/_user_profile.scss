@@ -75,12 +75,12 @@ img[src*="identicon"] {
 .h-card {
     width: auto;
     overflow: hidden;
-    padding: .5rem .5rem .5rem 1rem;
+    padding: .5rem 0;
     font-size: .9rem;
     [role="complementary"] & {
         font-size: .7rem;
     }
-    line-height: 1.2;
+    line-height: 1.4;
     .title {}
     .field-user-avatar, .prof-img-hold {
         float: left;
@@ -111,6 +111,10 @@ img[src*="identicon"] {
         clear: left;
         margin-top: 1em;
     }
+    .p-name {
+        font-size: 1.2rem;
+       
+    }
     .p-name.u-url {
         font-weight: bold;
     }
@@ -130,10 +134,14 @@ img[src*="identicon"] {
         font-size: .9rem;
         padding-bottom: 5px;
     }
+    .h-card {
+        padding: .5rem .5rem .5rem 1rem;
+    }
 }
 
 .view-contributors-this-hub {
     padding: 1rem 0;
+    .view-empty {padding: 0 1em;}
 }
 
 h1.p-name {

@@ -5,6 +5,6 @@
 @import "_pagination_variables";
 @import "_pagination_extendables";
 
-.pagination {
+.pager {
   @extend %pagination;
 }

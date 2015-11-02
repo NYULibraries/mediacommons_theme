@@ -3,11 +3,22 @@
 //////////////////////////////
 
 %pagination {
+  margin-top: 3rem;
   font-family: $pagination-font-family;
   li {
     display: $pagination-li-display;
     @include margin-padding(margin, $pagination-li-margin, $pagination-li-margin-pos);
     text-indent: $pagination-text-indent;
+  }
+  .pager-current {
+    display: $pagination-a-display;
+    @include margin-padding(padding, $pagination-a-padding);
+    line-height: $pagination-a-line-height;
+    @include margin-padding(margin, $pagination-a-margin);
+    @include border-outline(border, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
+    @include border-radius($pagination-a-border-radius);
+    background-clip: padding-box;
+    box-shadow: inset 0px 0px 0px 3px $pagination-link-background-color
   }
   a {
     display: $pagination-a-display;

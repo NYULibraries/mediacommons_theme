@@ -36,7 +36,7 @@
 
   <?php 
 
-    if ($title): print '<h1>' . $title . '</h1>'; endif;
+    if ($title): print '<h1 class="page-title">' . $title . '</h1>'; endif;
 
     print render($page['content']); ?> 
   </article>

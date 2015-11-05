@@ -6,7 +6,7 @@
  *
  * @ingroup views_templates
  */
-?>
+?>taxonomy term profile
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>

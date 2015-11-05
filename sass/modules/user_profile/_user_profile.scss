@@ -37,9 +37,9 @@ h2.block-title {
         padding-left: 0;
     }
     .p-job-title, .p-org, .views-label-field-research-interests {
-        display: inline-block;
+       // display: inline-block;
         // padding: .2em .2em .2em 0;
-        line-height: 1.4;
+        //line-height: 1.4;
     }
 }
 
@@ -156,8 +156,8 @@ h1.p-name {
    
     }
     a:link, a:visited{
-        color: black !important;
-     
+        color: rgb(51,51,51) !important;
+        box-shadow: inset 0px -1px 0px 0px #ddd;
         
     }
 }

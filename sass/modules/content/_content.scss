@@ -27,6 +27,7 @@ ul.tags {
     padding: 0;
     margin-top: .5em;
     li {
+        font-family: $header-font-family;
         display: inline-block;
         list-style-type: none;
         line-height: 2.25em;
@@ -41,7 +42,7 @@ ul.tags {
         a {
             @include border-radius(5px);
             padding: 4px 8px;
-            @include background-image(linear-gradient(top, lighten(nth($black, 5), 7%), lighten(nth($black, 5), 5%)));
+            @include background-image(linear-gradient(top, lighten(nth($black, 4), 7%), lighten(nth($black, 4), 5%)));
         }
     }
 }

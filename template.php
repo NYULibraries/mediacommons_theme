@@ -109,6 +109,14 @@ function mediacommons_preprocess_page( &$vars ) {
     unset($vars['page']['content']['system_main']['no_content']);
   }
 
+ 
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $term = taxonomy_term_load(arg(2));
+    $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
+  }
+
+
+
 }
 
 /**
@@ -169,6 +177,30 @@ function mediacommons_field__field_title($vars) {
 
 
 function mediacommons_field__field_research_interests__user($vars){
+  $output = '<aside role="complementary" class="research_interests">';
+  $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
+  foreach (element_children($vars['items']) as $key) {
+    $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $output .= $vars['items'][$key]['#title'];
+    $output .= '</a></li>';
+  }
+  $output .= '</ul></aside>';
+  return $output;
+}
+function mediacommons_field__field_taxonomy__spoke($vars){
+  $output = '<div class="tags">';
+ 
+  $output .= '<div class="label-inline">' . $vars['label'] . '</div><ul class="tags">';
+  foreach (element_children($vars['items']) as $key) {
+    $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $output .= $vars['items'][$key]['#title'];
+    $output .= '</a></li>';
+  }
+  $output .= '</ul></div>';
+  return $output;
+}
+
+function mediacommons_field__field_taxonomy__user($vars){
   $output = '<aside role="complementary" class="research_interests">';
   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
   foreach (element_children($vars['items']) as $key) {

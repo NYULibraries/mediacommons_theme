@@ -71,11 +71,13 @@ b, strong {
 i, em {
     font-style: italic;
 }
+
 sup {
     position: relative;
     top: -.3em;
     font-size: .9em;
 }
+
 hr {
     @include border-outline(border, $hr-border-width, $hr-border-style, $hr-border-color);
     height: $hr-height;
@@ -84,8 +86,8 @@ hr {
 }
 
 p, ul, ol, hr, table, form, fieldset {
-  //  @include margin-padding(margin, $element-margin);
-    margin: 0 0 1em 0 ;
+    //  @include margin-padding(margin, $element-margin);
+    margin: 0 0 1em 0;
 }
 
 li {
@@ -157,7 +159,7 @@ time {
     font-family: $time-font-family;
     @include bold-italic-uppercase-variant($time-font-bold, $time-font-italic, $time-font-uppercase, $time-font-variant);
     @include type-size($time-font-size, $time-line-height);
-   // letter-spacing: $time-letter-spacing;
+    // letter-spacing: $time-letter-spacing;
     color: $time-color;
     //@include content-before-after($time-content);
 }

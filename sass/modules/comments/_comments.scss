@@ -2,6 +2,11 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
+.views-field-comment-count {
+    background: nth($secondary, 5);
+    display: none;
+}
+
 .comments {
     margin-bottom: 2em;
     line-height: 1.2;

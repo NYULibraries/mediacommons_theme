@@ -162,3 +162,39 @@ ul.links.inline li {
         }
     }
 }
+
+.view-comments-from-user {
+    color: nth($black, 2);
+    font-family: $header-font-family;
+    .comment-item {
+        border-bottom: 1px solid nth($black, 4);
+        padding-top: .8em;
+    }
+    a:link, a:visited {
+        color: nth($black, 2);
+    }
+    .views-field-title {
+        font-size: .9rem;
+        a:link, a:visited {
+            color: nth($black, 1) !important;
+        }
+    }
+    h2.comment-title {
+        // font-weight: bold;
+        font-size: 1.1rem;
+        padding-bottom: 0.25em;
+        a:link, a:visited {
+            color: nth($black, 1) !important;
+        }
+    }
+    .views-field-comment-body {
+        color: nth($black, 2);
+        font-size: .9rem;
+        font-family: $body-font-family;
+    }
+    .views-field-created {
+        font-size: .9rem;
+        padding-bottom: 5px;
+    }
+    .views-field-title {}
+}

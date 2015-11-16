@@ -66,7 +66,7 @@ aside + h2 {
 }
 
 .peoplelist {
-    font-size: .85rem;
+    font-size: .8rem;
     line-height: 1.25;
     color: nth($black, 2);
     font-family: $header-font-family;
@@ -77,7 +77,8 @@ aside + h2 {
     .field-label {
         display: inline-block;
         padding-right: .25rem;
-        font-size: 0.85rem;
+        // font-size: 0.85rem;
+   
     }
     a:link, a:active, a:visited {
         color: nth($black, 2) !important;
@@ -88,7 +89,7 @@ aside + h2 {
     li {
         padding-right: .25rem;
         display: inline-block;
-        font-size: 0.85rem;
+        // font-size: 0.85rem;
         &:after {
             content: ",\20";
         }
@@ -101,6 +102,7 @@ aside + h2 {
         margin-right: 5px;
     }
     .item {
+        /* for spoke pages, when there is an org */
         float: left;
         margin-right: 5px;
         &:after {
@@ -111,9 +113,6 @@ aside + h2 {
         }
         .p-name, .p-org {
             float: left;
-        }
-        .p-name {
-            margin-right: 5px;
         }
     }
 }
@@ -133,7 +132,7 @@ aside + h2 {
 
 .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
     time {
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         display: block;
     }
     &.clearfix:after {
@@ -141,7 +140,7 @@ aside + h2 {
     }
     padding: .8em 0;
     line-height: 1.5;
-    border-bottom: 1px solid nth($secondary, 4);
+    border-bottom: 1px solid nth($black, 4);
     .contextual-links-wrapper {
         /* the edit option cog breaks links in left floated aside otherwise */
         left: 0;

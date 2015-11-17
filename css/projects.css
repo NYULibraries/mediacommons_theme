@@ -1,32 +1,32 @@
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.mc a:link,
 body.mc a:visited {
   color: #196195;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.mc a[href]:hover,
 body.mc a[href]:focus {
   color: #124569;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.mc a[href]:active {
   color: #0a283e;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.mc [role="complementary"] {
   background-color: #f4eee7;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.mc [role="complementary"] header {
-  background-color: #e4d7c5;
+  background-color: #e5d7c6;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
@@ -36,31 +36,31 @@ body.mc .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.mc.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.mc.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]:-moz-placeholder, body.mc input[name="search_block_form"]:-moz-placeholder {
   color: #955f19;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]::-moz-placeholder, body.mc input[name="search_block_form"]::-moz-placeholder {
   color: #955f19;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]:-ms-input-placeholder, body.mc input[name="search_block_form"]:-ms-input-placeholder {
   color: #955f19;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]::-webkit-input-placeholder, body.mc input[name="search_block_form"]::-webkit-input-placeholder {
   color: #955f19;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.mc .pager a:active {
   color: #fff;
   background-color: #196195;
@@ -68,36 +68,36 @@ body.mc .pager a:active {
 
 /*   */
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.fieldguide a:link,
 body.fieldguide a:visited {
   color: #8b6800;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.fieldguide a[href]:hover,
 body.fieldguide a[href]:focus {
   color: #584200;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.fieldguide a[href]:active {
   color: #251c00;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.fieldguide [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.fieldguide [role="complementary"] {
-  background-color: #e2e3f2;
+  background-color: #e4e4f3;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
-  background-color: #bfc0e2;
+  background-color: #bfc1e2;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-fieldguide.svg?1444145625');
+  background: url('../images/default_images/spoke-default-fieldguide.svg?1446649989');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -105,31 +105,31 @@ body.fieldguide .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.fieldguide.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.fieldguide.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]:-moz-placeholder, body.fieldguide input[name="search_block_form"]:-moz-placeholder {
   color: #00068b;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]::-moz-placeholder, body.fieldguide input[name="search_block_form"]::-moz-placeholder {
   color: #00068b;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]:-ms-input-placeholder, body.fieldguide input[name="search_block_form"]:-ms-input-placeholder {
   color: #00068b;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]::-webkit-input-placeholder, body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
   color: #00068b;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.fieldguide .pager a:active {
   color: #fff;
   background-color: #8b6800;
@@ -137,36 +137,36 @@ body.fieldguide .pager a:active {
 
 /*   */
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.tne a:link,
 body.tne a:visited {
   color: #1db7b7;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.tne a[href]:hover,
 body.tne a[href]:focus {
   color: #168b8b;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.tne a[href]:active {
   color: #0f5f5f;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.tne [role="complementary"] {
-  background-color: #f8efe9;
+  background-color: #f8f0e9;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.tne [role="complementary"] header {
-  background-color: #edd8c6;
+  background-color: #edd8c7;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-tne.svg?1444145368');
+  background: url('../images/default_images/spoke-default-tne.svg?1446649989');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -174,31 +174,31 @@ body.tne .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.tne.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.tne.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]:-moz-placeholder, body.tne input[name="search_block_form"]:-moz-placeholder {
   color: #b7631d;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]::-moz-placeholder, body.tne input[name="search_block_form"]::-moz-placeholder {
   color: #b7631d;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]:-ms-input-placeholder, body.tne input[name="search_block_form"]:-ms-input-placeholder {
   color: #b7631d;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]::-webkit-input-placeholder, body.tne input[name="search_block_form"]::-webkit-input-placeholder {
   color: #b7631d;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.tne .pager a:active {
   color: #fff;
   background-color: #1db7b7;
@@ -206,36 +206,36 @@ body.tne .pager a:active {
 
 /*   */
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.imr a:link,
 body.imr a:visited {
   color: #e25025;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.imr a[href]:hover,
 body.imr a[href]:focus {
   color: #bb3e19;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.imr a[href]:active {
   color: #8e2f13;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.imr [role="complementary"] {
-  background-color: #ebfcf2;
+  background-color: #ecfdf3;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.imr [role="complementary"] header {
-  background-color: #c8f7dc;
+  background-color: #c9f8dc;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-imr.svg?1444148384');
+  background: url('../images/default_images/spoke-default-imr.svg?1446649989');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -243,31 +243,31 @@ body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.imr.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.imr.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]:-moz-placeholder, body.imr input[name="search_block_form"]:-moz-placeholder {
   color: #25e274;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]::-moz-placeholder, body.imr input[name="search_block_form"]::-moz-placeholder {
   color: #25e274;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]:-ms-input-placeholder, body.imr input[name="search_block_form"]:-ms-input-placeholder {
   color: #25e274;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]::-webkit-input-placeholder, body.imr input[name="search_block_form"]::-webkit-input-placeholder {
   color: #25e274;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.imr .pager a:active {
   color: #fff;
   background-color: #e25025;
@@ -275,36 +275,36 @@ body.imr .pager a:active {
 
 /*   */
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.int a:link,
 body.int a:visited {
-  color: #782a71;
+  color: #782A71;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.int a[href]:hover,
 body.int a[href]:focus {
   color: #521d4d;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.int a[href]:active {
   color: #2c102a;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.int [role="complementary"] {
-  background-color: #eff0e8;
+  background-color: #eff1e8;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.int [role="complementary"] header {
-  background-color: #d9ddc9;
+  background-color: #d9ddca;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1446649989');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -312,68 +312,68 @@ body.int .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.int.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.int.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]:-moz-placeholder, body.int input[name="search_block_form"]:-moz-placeholder {
   color: #68782a;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]::-moz-placeholder, body.int input[name="search_block_form"]::-moz-placeholder {
   color: #68782a;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]:-ms-input-placeholder, body.int input[name="search_block_form"]:-ms-input-placeholder {
   color: #68782a;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]::-webkit-input-placeholder, body.int input[name="search_block_form"]::-webkit-input-placeholder {
   color: #68782a;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.int .pager a:active {
   color: #fff;
-  background-color: #782a71;
+  background-color: #782A71;
 }
 
 /*   */
 /*   */
-/* line 39, ../sass/projects.scss */
+/* line 47, ../sass/projects.scss */
 body.alt a:link,
 body.alt a:visited {
   color: #be1e2d;
 }
-/* line 43, ../sass/projects.scss */
+/* line 52, ../sass/projects.scss */
 body.alt a[href]:hover,
 body.alt a[href]:focus {
   color: #921723;
   text-decoration: underline;
 }
-/* line 48, ../sass/projects.scss */
+/* line 58, ../sass/projects.scss */
 body.alt a[href]:active {
   color: #661018;
 }
-/* line 52, ../sass/projects.scss */
+/* line 63, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 56, ../sass/projects.scss */
+/* line 68, ../sass/projects.scss */
 body.alt [role="complementary"] {
   background-color: #ebf8e9;
 }
-/* line 58, ../sass/projects.scss */
+/* line 71, ../sass/projects.scss */
 body.alt [role="complementary"] header {
-  background-color: #cceec6;
+  background-color: #cdefc7;
 }
-/* line 63, ../sass/projects.scss */
+/* line 78, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-alt.svg?1444147155');
+  background: url('../images/default_images/spoke-default-alt.svg?1446649989');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -381,52 +381,51 @@ body.alt .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
   box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
 }
-/* line 73, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.alt.front .timerangeheader {
   background-color: #333333;
 }
-/* line 76, ../sass/projects.scss */
+/* line 93, ../sass/projects.scss */
 body.alt.front .field-name-field-spokes {
   border-left: 1px solid #333333;
 }
-/* line 61, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]:-moz-placeholder, body.alt input[name="search_block_form"]:-moz-placeholder {
   color: #36be1e;
 }
-/* line 64, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]::-moz-placeholder, body.alt input[name="search_block_form"]::-moz-placeholder {
   color: #36be1e;
 }
-/* line 67, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]:-ms-input-placeholder, body.alt input[name="search_block_form"]:-ms-input-placeholder {
   color: #36be1e;
 }
-/* line 56, ../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.3/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]::-webkit-input-placeholder, body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #36be1e;
 }
-/* line 89, ../sass/projects.scss */
+/* line 109, ../sass/projects.scss */
 body.alt .pager a:active {
   color: #fff;
   background-color: #be1e2d;
 }
 
 /*   */
-/* line 97, ../sass/projects.scss */
+/* line 119, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 150%;
   background-position-x: -10px;
   background-position-y: -20px;
 }
-
-/* line 103, ../sass/projects.scss */
+/* line 125, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
 
-/* line 109, ../sass/projects.scss */
+/* line 132, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -434,84 +433,207 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
 }
 
-/* line 116, ../sass/projects.scss */
+/* line 139, ../sass/projects.scss */
 body.fieldguide {
   /* on fieldguide, hide all images for now */
 }
-/* line 119, ../sass/projects.scss */
+/* line 159, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb, body.fieldguide .field-name-field-representative-image {
   display: none;
 }
-/* line 122, ../sass/projects.scss */
+/* line 163, ../sass/projects.scss */
 body.fieldguide [role="banner"] {
-  border-bottom: 1px solid #a47b00;
+  border-bottom: 2px solid #d8a100;
+  border-top: 10px solid #d8a100;
+  padding-top: .8rem;
 }
-/* line 127, ../sass/projects.scss */
+/* line 169, ../sass/projects.scss */
+body.fieldguide [role="complementary"] {
+  background-color: #f3eee4;
+}
+/* line 172, ../sass/projects.scss */
+body.fieldguide [role="complementary"] header {
+  background-color: #e2d9bf;
+}
+/* line 177, ../sass/projects.scss */
+body.fieldguide .styleguide {
+  color: #5F4C16;
+}
+/* line 180, ../sass/projects.scss */
+body.fieldguide .styleguide li {
+  padding: 5px;
+}
+/* line 184, ../sass/projects.scss */
+body.fieldguide .styleguide .primary {
+  background-color: #8b6800;
+}
+/* line 187, ../sass/projects.scss */
+body.fieldguide .styleguide .primary h1 {
+  background-color: #8b6800;
+  color: #5F4C16;
+}
+/* line 193, ../sass/projects.scss */
+body.fieldguide .styleguide .primary ul li:nth-child(1) {
+  background-color: #8b6800;
+}
+/* line 197, ../sass/projects.scss */
+body.fieldguide .styleguide .primary ul li:nth-child(2) {
+  background-color: #a88e40;
+}
+/* line 201, ../sass/projects.scss */
+body.fieldguide .styleguide .primary ul li:nth-child(3) {
+  background-color: #c5b480;
+}
+/* line 205, ../sass/projects.scss */
+body.fieldguide .styleguide .primary ul li:nth-child(4) {
+  background-color: #e2d9bf;
+}
+/* line 209, ../sass/projects.scss */
+body.fieldguide .styleguide .primary ul li:nth-child(5) {
+  background-color: #eee8d9;
+}
+/* line 215, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary {
+  background-color: #00068b;
+}
+/* line 219, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary ul li:nth-child(1) {
+  background-color: #00068b;
+}
+/* line 223, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary ul li:nth-child(2) {
+  background-color: #4044a8;
+}
+/* line 227, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary ul li:nth-child(3) {
+  background-color: #8083c5;
+}
+/* line 231, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary ul li:nth-child(4) {
+  background-color: #bfc1e2;
+}
+/* line 235, ../sass/projects.scss */
+body.fieldguide .styleguide .secondary ul li:nth-child(5) {
+  background-color: #d9daee;
+}
+/* line 241, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary {
+  background-color: #ffcc33;
+}
+/* line 245, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary ul li:nth-child(1) {
+  background-color: #ffbf00;
+}
+/* line 249, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary ul li:nth-child(2) {
+  background-color: #ffcf40;
+}
+/* line 253, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary ul li:nth-child(3) {
+  background-color: #ffdf80;
+}
+/* line 257, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary ul li:nth-child(4) {
+  background-color: #ffefbf;
+}
+/* line 261, ../sass/projects.scss */
+body.fieldguide .styleguide .tertiary ul li:nth-child(5) {
+  background-color: #fff5d9;
+}
+/* line 267, ../sass/projects.scss */
+body.fieldguide .styleguide .four {
+  background-color: #333bff;
+}
+/* line 271, ../sass/projects.scss */
+body.fieldguide .styleguide .four ul li:nth-child(1) {
+  background-color: #000aff;
+}
+/* line 275, ../sass/projects.scss */
+body.fieldguide .styleguide .four ul li:nth-child(2) {
+  background-color: #4047ff;
+}
+/* line 279, ../sass/projects.scss */
+body.fieldguide .styleguide .four ul li:nth-child(3) {
+  background-color: #8085ff;
+}
+/* line 283, ../sass/projects.scss */
+body.fieldguide .styleguide .four ul li:nth-child(4) {
+  background-color: #bfc2ff;
+}
+/* line 287, ../sass/projects.scss */
+body.fieldguide .styleguide .four ul li:nth-child(5) {
+  background-color: #d9daff;
+}
+/* line 296, ../sass/projects.scss */
 body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
-/* line 131, ../sass/projects.scss */
-body.fieldguide.front .field-name-field-spokes {
-  border-left: 1px solid #a47b00;
+/* line 301, ../sass/projects.scss */
+body.fieldguide.front .timerangeheader {
+  background-color: #be8e00;
 }
-/* line 133, ../sass/projects.scss */
+/* line 305, ../sass/projects.scss */
+body.fieldguide.front .field-name-field-spokes {
+  border-left: 1px solid #a57b00;
+}
+/* line 308, ../sass/projects.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
 }
 
-/* line 141, ../sass/projects.scss */
+/* line 316, ../sass/projects.scss */
 body.front #content {
   width: auto;
   float: none;
 }
-/* line 146, ../sass/projects.scss */
+/* line 322, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 150, ../sass/projects.scss */
+/* line 327, ../sass/projects.scss */
 body.front .hubhead .field-name-title h1.hub-title a {
   color: black;
 }
 @media (min-width: 52.5625em) {
-  /* line 156, ../sass/projects.scss */
+  /* line 334, ../sass/projects.scss */
   body.front .hubhead {
     float: left;
     width: 32%;
   }
 }
-/* line 166, ../sass/projects.scss */
+/* line 346, ../sass/projects.scss */
 body.front .view-mode-toc_spoke, body.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
   padding: 0 0 .5em;
 }
-/* line 171, ../sass/projects.scss */
+/* line 352, ../sass/projects.scss */
 body.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 175, ../sass/projects.scss */
+/* line 357, ../sass/projects.scss */
 body.front .caption {
   font-size: .7em;
 }
-/* line 178, ../sass/projects.scss */
+/* line 361, ../sass/projects.scss */
 body.front .field-name-post-date, body.front .field-name-author {
   margin-left: 0;
   display: block;
   float: left;
 }
-/* line 183, ../sass/projects.scss */
+/* line 367, ../sass/projects.scss */
 body.front .thumb {
   min-width: 100px;
 }
-/* line 186, ../sass/projects.scss */
+/* line 371, ../sass/projects.scss */
 body.front .field-name-field-body {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 190, ../sass/projects.scss */
+  /* line 376, ../sass/projects.scss */
   body.front .field-name-field-spokes {
     float: right;
     width: 66%;
@@ -519,7 +641,7 @@ body.front .field-name-field-body {
     padding-left: 22px;
   }
 }
-/* line 225, ../sass/projects.scss */
+/* line 413, ../sass/projects.scss */
 body.front .timerangeheader {
   padding: 4px;
   background-color: #0C304A;
@@ -529,7 +651,7 @@ body.front .timerangeheader {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 225, ../sass/projects.scss */
+  /* line 413, ../sass/projects.scss */
   body.front .timerangeheader {
     float: right;
     width: 66%;
@@ -538,16 +660,16 @@ body.front .timerangeheader {
   }
 }
 
-/* line 242, ../sass/projects.scss */
+/* line 431, ../sass/projects.scss */
 body .node-hub.view-mode-teaser {
   border-bottom: 1px solid gray;
   padding: 1em 0;
 }
-/* line 245, ../sass/projects.scss */
+/* line 435, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:first-child {
   padding: 0 0 1em;
 }
-/* line 248, ../sass/projects.scss */
+/* line 439, ../sass/projects.scss */
 body .node-hub.view-mode-teaser:last-child {
   border: none;
 }

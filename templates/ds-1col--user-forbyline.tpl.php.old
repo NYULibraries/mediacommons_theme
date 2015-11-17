@@ -7,7 +7,7 @@
 ?>
 <<?php print "span"; print $layout_attributes; ?> class="ds-1col <?php print $classes;?>">
 
-
+User for byline template
   <?php print $ds_content; ?>
 </<?php print "span" ?>>
 

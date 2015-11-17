@@ -16,50 +16,64 @@ $homepage-credits: 0.75rem !default;
 
 $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
 $black-value: #333333;
+
 $black: tint-stack($black-value);
 $type-color-value: #232323;
+
 $type-color: tint-stack($type-color-value);
 
 @each $header, $col in $map {
     /*   */
     $primary-color: $col;
     $cs-primary: $primary-color !global;
+
     // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
     $cs-scheme: tetrad !global;
+
     // Options: mono, complement, triad, tetrad, analogic, accented-analogic
     $cs-hue-offset: 20 !global;
+
     // Options: 0-100;
     $cs-brightness-offset: 0 !global;
+
     // Options: 0-100;
     $cs-color-model: ryb !global;
-    $primary: tint-stack(cs-primary());
-    $secondary: tint-stack(cs-secondary());
-    $tertiary: tint-stack(cs-tertiary());
+    $primary: tint-stack(cs-primary()) !global;
+    $secondary: tint-stack(cs-secondary()) !global;
+    $tertiary: tint-stack(cs-tertiary()) !global;
+
     body.#{$header} {
         a:link,
         a:visited {
             color: $col;
         }
+
         a[href]:hover,
         a[href]:focus {
             color: darken($col, 10%);
             text-decoration: underline;
         }
+
         a[href]:active {
             color: darken($col, 20%);
         }
+
         [role="navigation"].main ul.main {
             li {
                 font-size: .9em;
             }
         }
+
         [role="complementary"] {
             background-color: lighten(nth($tertiary, 5), 3%);
+
             header {
                 background-color: nth($tertiary, 4);
             }
         }
+
         $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
+
         .node-spoke.node-teaser .thumb {
             background: image-url($spoke-default-thumb);
             background-repeat: no-repeat;
@@ -69,41 +83,49 @@ $type-color: tint-stack($type-color-value);
             box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
             box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
         }
+
         &.front {
             .timerangeheader {
                 background-color: nth($black, 1);
             }
+
             .field-name-field-spokes {
                 //border-left: 1px solid nth($secondary, 3);
                 border-left: 1px solid nth($black, 1);
+
                 //box-shadow: -1px 0px 0px 0px nth($black, 1);
            
             }
         }
+
         // style placeholder text see '_header--search_mixins.scss' placeholder mixin
         input[type="search"], input[name="search_block_form"] {
             @include input-placeholder {
                 color: nth($tertiary, 1);
             }
         }
+
         .pager a:active {
             color: #fff;
             background-color: $primary-color;
-        } 
+        }
     }
+
     /*   */
 }
 
-body.int .node-spoke.node-teaser .thumb {
-    background-size: 150%;
-    background-position-x: -10px;
-    background-position-y: -20px;
-}
+body.int {
+    .node-spoke.node-teaser .thumb {
+        background-size: 150%;
+        background-position-x: -10px;
+        background-position-y: -20px;
+    }
 
-body.int .node-spoke.node-teaser .thumb {
-    background-size: 224%;
-    background-position-x: 3px;
-    background-position-y: -77px;
+    .node-spoke.node-teaser .thumb {
+        background-size: 224%;
+        background-position-x: 3px;
+        background-position-y: -77px;
+    }
 }
 
 body.imr .node-spoke.node-teaser .thumb {
@@ -115,21 +137,173 @@ body.imr .node-spoke.node-teaser .thumb {
 
 body.fieldguide {
     $fg_primary: map-get($map, fieldguide);
+    $cs-primary: $fg_primary !global;
+
+    // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+    $cs-scheme: complement !global;
+
+    $cs-hue-offset: 20 !global;
+
+    // Options: 0-100;
+    $cs-brightness-offset: 100 !global;
+
+    // Options: 0-100;
+    $cs-color-model: ryb !global;
+    $primary: tint-stack(cs-primary()) !global;
+    $secondary: tint-stack(cs-secondary()) !global;
+    $tertiary: tint-stack(cs-tertiary()) !global;
+    $quadrary: tint-stack(cs-quadrary()) !global;
+
     /* on fieldguide, hide all images for now */
     .node-spoke.node-teaser .thumb, .field-name-field-representative-image {
         display: none;
     }
+
     [role="banner"] {
-        border-bottom: 1px solid lighten($fg_primary, 5%);
+        border-bottom: 2px solid lighten($fg_primary, 15%);
+        border-top: 10px solid lighten($fg_primary, 15%);
+        padding-top: .8rem;
     }
+
+    [role="complementary"] {
+        background-color: lighten(nth($primary, 5), 3%);
+
+        header {
+            background-color: nth($primary, 4);
+        }
+    }
+
+    .styleguide {
+        color: #5F4C16;
+
+        li {
+            padding: 5px;
+        }
+
+        .primary {
+            background-color: nth($primary, 1);
+
+            h1 {
+                background-color: nth($primary, 1);
+                color: #5F4C16;
+            }
+
+            ul {
+                li:nth-child(1) {
+                    background-color: nth($primary, 1);
+                }
+
+                li:nth-child(2) {
+                    background-color: nth($primary, 2);
+                }
+
+                li:nth-child(3) {
+                    background-color: nth($primary, 3);
+                }
+
+                li:nth-child(4) {
+                    background-color: nth($primary, 4);
+                }
+
+                li:nth-child(5) {
+                    background-color: nth($primary, 5);
+                }
+            }
+        }
+
+        .secondary {
+            background-color: nth($secondary, 1);
+
+            ul {
+                li:nth-child(1) {
+                    background-color: nth($secondary, 1);
+                }
+
+                li:nth-child(2) {
+                    background-color: nth($secondary, 2);
+                }
+
+                li:nth-child(3) {
+                    background-color: nth($secondary, 3);
+                }
+
+                li:nth-child(4) {
+                    background-color: nth($secondary, 4);
+                }
+
+                li:nth-child(5) {
+                    background-color: nth($secondary, 5);
+                }
+            }
+        }
+
+        .tertiary {
+            background-color: lighten(nth($tertiary, 1), 10%);
+
+            ul {
+                li:nth-child(1) {
+                    background-color: nth($tertiary, 1);
+                }
+
+                li:nth-child(2) {
+                    background-color: nth($tertiary, 2);
+                }
+
+                li:nth-child(3) {
+                    background-color: nth($tertiary, 3);
+                }
+
+                li:nth-child(4) {
+                    background-color: nth($tertiary, 4);
+                }
+
+                li:nth-child(5) {
+                    background-color: nth($tertiary, 5);
+                }
+            }
+        }
+
+        .four {
+            background-color: lighten(nth($quadrary, 1), 10%);
+
+            ul {
+                li:nth-child(1) {
+                    background-color: nth($quadrary, 1);
+                }
+
+                li:nth-child(2) {
+                    background-color: nth($quadrary, 2);
+                }
+
+                li:nth-child(3) {
+                    background-color: nth($quadrary, 3);
+                }
+
+                li:nth-child(4) {
+                    background-color: nth($quadrary, 4);
+                }
+
+                li:nth-child(5) {
+                    background-color: nth($quadrary, 5);
+                }
+            }
+        }
+    }
+
     &.front {
         .hubhead {
             .field-name-title h1.hub-title {
                 font-size: 37px;
             }
         }
+
+        .timerangeheader {
+            background-color: lighten($fg_primary, 10%);
+        }
+
         .field-name-field-spokes {
             border-left: 1px solid lighten($fg_primary, 5%);
+
             .field-item {
                 margin-bottom: .5rem;
             }
@@ -142,16 +316,19 @@ body.front {
         width: auto;
         float: none;
     }
+
     .hubhead {
         .field-name-title h1.hub-title {
             font-size: 31px;
             padding-top: 0;
             color: nth($type-color, 1);
+
             a {
                 color: black;
             }
         }
     }
+
     @include respond-to("desktop-lh") {
         .hubhead {
             float: left;
@@ -159,34 +336,42 @@ body.front {
         }
     }
 
+
     .node-hub {
         //border-top: 1px solid nth($type-color, 3);
    
     }
+
     .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
         border-bottom: 1px solid nth($type-color, 4);
         border-bottom: none;
         padding: 0 0 .5em;
     }
+
     .daterange {
         font-weight: bold;
         text-transform: uppercase;
     }
+
     .caption {
         font-size: .7em;
     }
+
     .field-name-post-date, .field-name-author {
         margin-left: 0;
         display: block;
         float: left;
     }
+
     .thumb {
         min-width: 100px;
     }
+
     .field-name-field-body {
         //font-size: $homepage-credits;
         margin-bottom: 1rem;
     }
+
     .field-name-field-spokes {
         @include respond-to("desktop-lh") {
             float: right;
@@ -194,6 +379,7 @@ body.front {
             border-left: 1px solid black;
             padding-left: 22px;
         }
+
 
         // .node-spoke:nth-child(1) {
         //     .thumb::before {
@@ -222,6 +408,7 @@ body.front {
         // }
    
     }
+
     .timerangeheader {
         padding: 4px;
         background-color: #0C304A;
@@ -229,6 +416,7 @@ body.front {
         font-size: .8rem;
         color: #fff;
         margin-bottom: 1rem;
+
         @include respond-to("desktop-lh") {
             float: right;
             width: 66%;
@@ -242,9 +430,11 @@ body {
     .node-hub.view-mode-teaser {
         border-bottom: 1px solid gray;
         padding: 1em 0;
+
         &:first-child {
             padding: 0 0 1em;
         }
+
         &:last-child {
             border: none;
         }

@@ -1181,20 +1181,20 @@ body.alt .styleguide .four ul li:nth-child(5) {
 
 /*   */
 /* line 217, ../sass/projects.scss */
-body.imr [role="complementary"], body.ac [role="complementary"] {
+body.imr [role="complementary"], body.alt [role="complementary"] {
   background: #dedede;
 }
 /* line 219, ../sass/projects.scss */
-body.imr [role="complementary"] header, body.ac [role="complementary"] header {
+body.imr [role="complementary"] header, body.alt [role="complementary"] header {
   background: #c8c8c8;
 }
 /* line 222, ../sass/projects.scss */
-body.imr [role="complementary"] a.active, body.ac [role="complementary"] a.active {
+body.imr [role="complementary"] a.active, body.alt [role="complementary"] a.active {
   position: relative;
   background: #eee;
 }
 /* line 226, ../sass/projects.scss */
-body.imr [role="complementary"] a.active:after, body.ac [role="complementary"] a.active:after {
+body.imr [role="complementary"] a.active:after, body.alt [role="complementary"] a.active:after {
   right: 100%;
   top: 50%;
   border: solid transparent;

@@ -3,11 +3,11 @@
 //////////////////////////////
 
 footer#footer {
-  border-top: 1px solid nth($black, 1);
+  // border-top: 1px solid nth($black, 1);
   padding: 2em;
-  margin-top: 4em;
+  //margin-top: 4em;
   text-align: center;
-  display:block;
+  display: block;
   .powered {
     font-size: .8em;
   }
@@ -24,6 +24,5 @@ footer#footer {
         padding: 0 .5em;
       }
     }
-   
   }
 }

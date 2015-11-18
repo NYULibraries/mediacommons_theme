@@ -11,6 +11,16 @@
 footer {
     @extend %clearfix;
     // https://github.com/team-sass/toolkit#clearfix
+    width: 94.5%;
+    max-width: 64rem;
+
+    @include respond-to("mobile tablet") {
+        // padding: 0 3%;
+        width: 94%;
+    }
+    @include respond-to("desktop-lh") {
+         margin: 3em auto 0;
+    }
 }
 
 html {
@@ -100,7 +110,7 @@ body {
 [role="main"] {
     @extend %clearfix;
     // https://github.com/team-sass/toolkit#clearfix
-    //max-width:ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
+    // max-width:ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
     margin: 1em auto 0;
     width: 94.5%;
     max-width: 64rem;

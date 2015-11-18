@@ -23,420 +23,429 @@ $type-color-value: #232323;
 $type-color: tint-stack($type-color-value);
 
 @each $header, $col in $map {
-    /*   */
-    $primary-color: $col;
-    $cs-primary: $primary-color !global;
-
-    // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-    $cs-scheme: tetrad !global;
-
-    // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-    $cs-hue-offset: 20 !global;
-
-    // Options: 0-100;
-    $cs-brightness-offset: 0 !global;
-
-    // Options: 0-100;
-    $cs-color-model: ryb !global;
-    $primary: tint-stack(cs-primary()) !global;
-    $secondary: tint-stack(cs-secondary()) !global;
-    $tertiary: tint-stack(cs-tertiary()) !global;
-
-    body.#{$header} {
-        a:link,
-        a:visited {
-            color: $col;
-        }
-
-        a[href]:hover,
-        a[href]:focus {
-            color: darken($col, 10%);
-            text-decoration: underline;
-        }
-
-        a[href]:active {
-            color: darken($col, 20%);
-        }
-
-        [role="navigation"].main ul.main {
-            li {
-                font-size: .9em;
-            }
-        }
-
-        [role="complementary"] {
-            background-color: lighten(nth($tertiary, 5), 3%);
-
-            header {
-                background-color: nth($tertiary, 4);
-            }
-        }
-
-        $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
-
-        .node-spoke.node-teaser .thumb {
-            background: image-url($spoke-default-thumb);
-            background-repeat: no-repeat;
-            background-size: 100%;
-            background-position-x: 0px;
-            background-position-y: 0px;
-            box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
-            box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
-        }
-
-        &.front {
-            .timerangeheader {
-                background-color: nth($black, 1);
-            }
-
-            .field-name-field-spokes {
-                //border-left: 1px solid nth($secondary, 3);
-                border-left: 1px solid nth($black, 1);
-
-                //box-shadow: -1px 0px 0px 0px nth($black, 1);
-           
-            }
-        }
-
-        // style placeholder text see '_header--search_mixins.scss' placeholder mixin
-        input[type="search"], input[name="search_block_form"] {
-            @include input-placeholder {
-                color: nth($tertiary, 1);
-            }
-        }
-
-        .pager a:active {
-            color: #fff;
-            background-color: $primary-color;
-        }
+  /*   */
+  $primary-color: $col;
+  $cs-primary: $primary-color !global;
+  // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+  $cs-scheme: triad !global;
+  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $cs-hue-offset: 20 !global;
+  // Options: 0-100;
+  $cs-brightness-offset: 0 !global;
+  // Options: 0-100;
+  $cs-color-model: ryb !global;
+  $primary: tint-stack(cs-primary()) !global;
+  $secondary: tint-stack(cs-secondary()) !global;
+  $tertiary: tint-stack(cs-tertiary()) !global;
+  $quadrary: tint-stack(cs-quadrary()) !global;
+  body.#{$header} {
+    a:link,
+    a:visited {
+      color: $col;
     }
+    a[href]:hover,
+    a[href]:focus {
+      color: darken($col, 10%);
+      text-decoration: underline;
+    }
+    a[href]:active {
+      color: darken($col, 20%);
+    }
+    [role="navigation"].main ul.main {
+      li {
+        font-size: .9em;
+      }
+    }
+    [role="banner"] {
+      // border-top: 10px solid lighten($col, 5%);
+      margin: 2.7rem auto 0 auto;
+    }
+    nav.global {
+      box-shadow: 0px 3px lighten($col, 20%);
+      border-bottom: 3px solid $col;
+      height: 2.1rem;
+    }
+    footer#footer {
+      border-top: 3px solid lighten($col, 9%);
+      box-shadow: 0px -3px lighten($col, 15%);
+    }
+    [role="complementary"] {
+      background-color: lighten(nth($tertiary, 5), 3%);
+      header {
+        background-color: nth($tertiary, 4);
+      }
+    }
+    $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
+    .node-spoke.node-teaser .thumb {
+      background: image-url($spoke-default-thumb);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position-x: 0px;
+      background-position-y: 0px;
+      box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+      box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+    }
+    &.front {
+      .timerangeheader {
+        background-color: nth($black, 1);
+      }
+      .field-name-field-spokes {
+        border-left: 1px solid lighten($col, 15%);
+      }
+      .featured-more header {
+        border-top: 1px solid lighten($col, 9%);
+      }
+    }
+    // style placeholder text see '_header--search_mixins.scss' placeholder mixin
+    input[type="search"], input[name="search_block_form"] {
+      @include input-placeholder {
+        // color: nth($tertiary, 1);
+        color: nth($black, 4);
+      }
+    }
+    .pager a:active {
+      color: #fff;
+      background-color: $primary-color;
+    }
+    // .comments {
+    //     article {
+    //         padding: 2.5%;
+    //         border: transparent 1px solid;
+    //         &:nth-of-type(odd) {
+    //             background: nth($secondary, 5);
+    //         }
+    //         &:nth-of-type(even) {
+    //             background: nth($secondary, 4);
+    //         }
+    //     }
+    // }
+    .styleguide {
+      color: #5F4C16;
+      li {
+        padding: 5px;
+      }
+      .primary {
+        background-color: nth($primary, 1);
+        h1 {
+          background-color: nth($primary, 1);
+          color: #5F4C16;
+        }
+        ul {
+          li:nth-child(1) {
+            background-color: nth($primary, 1);
+          }
+          li:nth-child(2) {
+            background-color: nth($primary, 2);
+          }
+          li:nth-child(3) {
+            background-color: nth($primary, 3);
+          }
+          li:nth-child(4) {
+            background-color: nth($primary, 4);
+          }
+          li:nth-child(5) {
+            background-color: nth($primary, 5);
+          }
+        }
+      }
+      .secondary {
+        background-color: nth($secondary, 1);
+        ul {
+          li:nth-child(1) {
+            background-color: nth($secondary, 1);
+          }
+          li:nth-child(2) {
+            background-color: nth($secondary, 2);
+          }
+          li:nth-child(3) {
+            background-color: nth($secondary, 3);
+          }
+          li:nth-child(4) {
+            background-color: nth($secondary, 4);
+          }
+          li:nth-child(5) {
+            background-color: nth($secondary, 5);
+          }
+        }
+      }
+      .tertiary {
+        background-color: lighten(nth($tertiary, 1), 10%);
+        ul {
+          li:nth-child(1) {
+            background-color: nth($tertiary, 1);
+          }
+          li:nth-child(2) {
+            background-color: nth($tertiary, 2);
+          }
+          li:nth-child(3) {
+            background-color: nth($tertiary, 3);
+          }
+          li:nth-child(4) {
+            background-color: nth($tertiary, 4);
+          }
+          li:nth-child(5) {
+            background-color: nth($tertiary, 5);
+          }
+        }
+      }
+      .four {
+        background-color: lighten(nth($quadrary, 1), 10%);
+        ul {
+          li:nth-child(1) {
+            background-color: nth($quadrary, 1);
+          }
+          li:nth-child(2) {
+            background-color: nth($quadrary, 2);
+          }
+          li:nth-child(3) {
+            background-color: nth($quadrary, 3);
+          }
+          li:nth-child(4) {
+            background-color: nth($quadrary, 4);
+          }
+          li:nth-child(5) {
+            background-color: nth($quadrary, 5);
+          }
+        }
+      }
+    }
+  }
+  /*   */
+}
 
-    /*   */
+body.imr, body.ac {
+  [role="complementary"] {
+    background: #dedede;
+    header {
+      background: #c8c8c8;
+    }
+    a.active {
+      position: relative;
+      background: #eee;
+    }
+    a.active:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      // border-color: rgba(136, 183, 213, 0);
+      border-right-color: #eee;
+      border-width: 30px;
+      margin-top: -30px;
+    }
+  }
 }
 
 body.int {
-    .node-spoke.node-teaser .thumb {
-        background-size: 150%;
-        background-position-x: -10px;
-        background-position-y: -20px;
-    }
-
-    .node-spoke.node-teaser .thumb {
-        background-size: 224%;
-        background-position-x: 3px;
-        background-position-y: -77px;
-    }
+  .node-spoke.node-teaser .thumb {
+    background-size: 150%;
+    background-position-x: -10px;
+    background-position-y: -20px;
+  }
+  .node-spoke.node-teaser .thumb {
+    background-size: 224%;
+    background-position-x: 3px;
+    background-position-y: -77px;
+  }
 }
 
 body.imr .node-spoke.node-teaser .thumb {
-    box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
-    background-size: 100%;
-    background-position-x: 0px;
-    background-position-y: 0px;
+  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
 }
 
 body.fieldguide {
-    $fg_primary: map-get($map, fieldguide);
-    $cs-primary: $fg_primary !global;
-
-    // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-    $cs-scheme: complement !global;
-
-    $cs-hue-offset: 20 !global;
-
-    // Options: 0-100;
-    $cs-brightness-offset: 100 !global;
-
-    // Options: 0-100;
-    $cs-color-model: ryb !global;
-    $primary: tint-stack(cs-primary()) !global;
-    $secondary: tint-stack(cs-secondary()) !global;
-    $tertiary: tint-stack(cs-tertiary()) !global;
-    $quadrary: tint-stack(cs-quadrary()) !global;
-
-    /* on fieldguide, hide all images for now */
-    .node-spoke.node-teaser .thumb, .field-name-field-representative-image {
-        display: none;
+  $fg_primary: map-get($map, fieldguide);
+  $fg_neutral: $fg_primary;
+  // : $fg_primary;
+  $cs-primary: $fg_primary !global;
+  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $cs-scheme: complement !global;
+  $cs-hue-offset: 20 !global;
+  // Options: 0-100;
+  $cs-brightness-offset: 100 !global;
+  // Options: 0-100;
+  $cs-color-model: ryb !global;
+  $primary: tint-stack(cs-primary()) !global;
+  $neutral-tint-stack: tint-stack($fg_neutral) !global;
+  $secondary: tint-stack(cs-secondary()) !global;
+  $tertiary: tint-stack(cs-tertiary()) !global;
+  $quadrary: tint-stack(cs-quadrary()) !global;
+  /* on fieldguide, hide all images for now */
+  .node-spoke.node-teaser .thumb, .field-name-field-representative-image {
+    display: none;
+  }
+  [role="banner"] {
+    // border-bottom: 2px solid lighten($fg_primary, 15%);
+    // border-top: 10px solid lighten($fg_primary, 15%);
+    // padding-top: .8rem;
+ 
+  }
+  // nav.global {
+  //     box-shadow: 0px 3px lighten(nth($primary, 1), 15%);
+  //     border-bottom: 3px solid lighten(nth($primary, 1), 15%);
+  // }
+  [role="complementary"] {
+    background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
+    header {
+      background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
     }
-
-    [role="banner"] {
-        border-bottom: 2px solid lighten($fg_primary, 15%);
-        border-top: 10px solid lighten($fg_primary, 15%);
-        padding-top: .8rem;
+  }
+  .comments {
+    article {
+      padding: 2.5%;
+      border: transparent 1px solid;
+      &:nth-of-type(odd) {
+        background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
+      }
+      &:nth-of-type(even) {
+        background-color: lighten(set-saturation(nth($neutral-tint-stack, 4), 50%), 6%);
+      }
     }
-
-    [role="complementary"] {
-        background-color: lighten(nth($primary, 5), 3%);
-
-        header {
-            background-color: nth($primary, 4);
-        }
+  }
+  .logo {
+    background-position: 0 0%;
+    width: 18rem;
+    height: 4.8rem;
+    background: image-url("mc-logos/fieldguidelogo.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0 0 1em 0;
+  }
+  &.front {
+    .hubhead {
+      .field-name-title h1.hub-title {
+        font-size: 37px;
+      }
     }
-
-    .styleguide {
-        color: #5F4C16;
-
-        li {
-            padding: 5px;
-        }
-
-        .primary {
-            background-color: nth($primary, 1);
-
-            h1 {
-                background-color: nth($primary, 1);
-                color: #5F4C16;
-            }
-
-            ul {
-                li:nth-child(1) {
-                    background-color: nth($primary, 1);
-                }
-
-                li:nth-child(2) {
-                    background-color: nth($primary, 2);
-                }
-
-                li:nth-child(3) {
-                    background-color: nth($primary, 3);
-                }
-
-                li:nth-child(4) {
-                    background-color: nth($primary, 4);
-                }
-
-                li:nth-child(5) {
-                    background-color: nth($primary, 5);
-                }
-            }
-        }
-
-        .secondary {
-            background-color: nth($secondary, 1);
-
-            ul {
-                li:nth-child(1) {
-                    background-color: nth($secondary, 1);
-                }
-
-                li:nth-child(2) {
-                    background-color: nth($secondary, 2);
-                }
-
-                li:nth-child(3) {
-                    background-color: nth($secondary, 3);
-                }
-
-                li:nth-child(4) {
-                    background-color: nth($secondary, 4);
-                }
-
-                li:nth-child(5) {
-                    background-color: nth($secondary, 5);
-                }
-            }
-        }
-
-        .tertiary {
-            background-color: lighten(nth($tertiary, 1), 10%);
-
-            ul {
-                li:nth-child(1) {
-                    background-color: nth($tertiary, 1);
-                }
-
-                li:nth-child(2) {
-                    background-color: nth($tertiary, 2);
-                }
-
-                li:nth-child(3) {
-                    background-color: nth($tertiary, 3);
-                }
-
-                li:nth-child(4) {
-                    background-color: nth($tertiary, 4);
-                }
-
-                li:nth-child(5) {
-                    background-color: nth($tertiary, 5);
-                }
-            }
-        }
-
-        .four {
-            background-color: lighten(nth($quadrary, 1), 10%);
-
-            ul {
-                li:nth-child(1) {
-                    background-color: nth($quadrary, 1);
-                }
-
-                li:nth-child(2) {
-                    background-color: nth($quadrary, 2);
-                }
-
-                li:nth-child(3) {
-                    background-color: nth($quadrary, 3);
-                }
-
-                li:nth-child(4) {
-                    background-color: nth($quadrary, 4);
-                }
-
-                li:nth-child(5) {
-                    background-color: nth($quadrary, 5);
-                }
-            }
-        }
+    .timerangeheader {
+      background-color: $fg_primary;
     }
-
-    &.front {
-        .hubhead {
-            .field-name-title h1.hub-title {
-                font-size: 37px;
-            }
-        }
-
-        .timerangeheader {
-            background-color: lighten($fg_primary, 10%);
-        }
-
-        .field-name-field-spokes {
-            border-left: 1px solid lighten($fg_primary, 5%);
-
-            .field-item {
-                margin-bottom: .5rem;
-            }
-        }
+    .field-name-field-spokes {
+      // border-left: 1px solid lighten($fg_primary, 15%);
+      .field-item {
+        margin-bottom: .5rem;
+      }
     }
+  }
 }
 
 body.front {
-    #content {
-        width: auto;
-        float: none;
+  #content {
+    width: auto;
+    float: none;
+  }
+  .hubhead {
+    .field-name-title h1.hub-title {
+      font-size: 31px;
+      padding-top: 0;
+      color: nth($type-color, 1);
+      a {
+        color: black;
+      }
     }
-
+  }
+  @include respond-to("desktop-lh") {
     .hubhead {
-        .field-name-title h1.hub-title {
-            font-size: 31px;
-            padding-top: 0;
-            color: nth($type-color, 1);
-
-            a {
-                color: black;
-            }
-        }
+      float: left;
+      width: 32%;
     }
+  }
 
+  .node-hub {
+    //border-top: 1px solid nth($type-color, 3);
+ 
+  }
+  .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
+    border-bottom: 1px solid nth($type-color, 4);
+    border-bottom: none;
+    padding: 0 0 .5em;
+  }
+  .daterange {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .caption {
+    font-size: .7em;
+  }
+  .field-name-post-date, .field-name-author {
+    margin-left: 0;
+    display: block;
+    float: left;
+  }
+  .thumb {
+    min-width: 100px;
+  }
+  .field-name-field-body {
+    //font-size: $homepage-credits;
+    margin-bottom: 1rem;
+  }
+  .field-name-field-spokes {
     @include respond-to("desktop-lh") {
-        .hubhead {
-            float: left;
-            width: 32%;
-        }
+      float: right;
+      width: 66%;
+      border-left: 1px solid black;
+      padding-left: 22px;
     }
 
-
-    .node-hub {
-        //border-top: 1px solid nth($type-color, 3);
-   
+    // .node-spoke:nth-child(1) {
+    //     .thumb::before {
+    //         content: "Monday";
+    //     }
+    // }
+    // .node-spoke:nth-child(2) {
+    //     &::before {
+    //         content: "Tuesday";
+    //     }
+    // }
+    // .node-spoke:nth-child(3) {
+    //     &::before {
+    //         content: "Wednesday";
+    //     }
+    // }
+    // .node-spoke:nth-child(4) {
+    //     &::before {
+    //         content: "Thursday";
+    //     }
+    // }
+    // .node-spoke:nth-child(5) {
+    //     &::before {
+    //         content: "Friday";
+    //     }
+    // }
+ 
+  }
+  .timerangeheader {
+    padding: 4px;
+    background-color: #0C304A;
+    background-color: #333;
+    font-size: .8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    @include respond-to("desktop-lh") {
+      float: right;
+      width: 66%;
+      padding: 2px;
+      padding-left: .5rem;
     }
-
-    .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
-        border-bottom: 1px solid nth($type-color, 4);
-        border-bottom: none;
-        padding: 0 0 .5em;
-    }
-
-    .daterange {
-        font-weight: bold;
-        text-transform: uppercase;
-    }
-
-    .caption {
-        font-size: .7em;
-    }
-
-    .field-name-post-date, .field-name-author {
-        margin-left: 0;
-        display: block;
-        float: left;
-    }
-
-    .thumb {
-        min-width: 100px;
-    }
-
-    .field-name-field-body {
-        //font-size: $homepage-credits;
-        margin-bottom: 1rem;
-    }
-
-    .field-name-field-spokes {
-        @include respond-to("desktop-lh") {
-            float: right;
-            width: 66%;
-            border-left: 1px solid black;
-            padding-left: 22px;
-        }
-
-
-        // .node-spoke:nth-child(1) {
-        //     .thumb::before {
-        //         content: "Monday";
-        //     }
-        // }
-        // .node-spoke:nth-child(2) {
-        //     &::before {
-        //         content: "Tuesday";
-        //     }
-        // }
-        // .node-spoke:nth-child(3) {
-        //     &::before {
-        //         content: "Wednesday";
-        //     }
-        // }
-        // .node-spoke:nth-child(4) {
-        //     &::before {
-        //         content: "Thursday";
-        //     }
-        // }
-        // .node-spoke:nth-child(5) {
-        //     &::before {
-        //         content: "Friday";
-        //     }
-        // }
-   
-    }
-
-    .timerangeheader {
-        padding: 4px;
-        background-color: #0C304A;
-        background-color: #333;
-        font-size: .8rem;
-        color: #fff;
-        margin-bottom: 1rem;
-
-        @include respond-to("desktop-lh") {
-            float: right;
-            width: 66%;
-            padding: 2px;
-            padding-left: .5rem;
-        }
-    }
+  }
 }
 
 body {
-    .node-hub.view-mode-teaser {
-        border-bottom: 1px solid gray;
-        padding: 1em 0;
-
-        &:first-child {
-            padding: 0 0 1em;
-        }
-
-        &:last-child {
-            border: none;
-        }
+  .node-hub.view-mode-teaser {
+    border-bottom: 1px solid gray;
+    padding: 1em 0;
+    &:first-child {
+      padding: 0 0 1em;
     }
+    &:last-child {
+      border: none;
+    }
+  }
 }

@@ -3,183 +3,183 @@
 //////////////////////////////
 
 .skip-to-nav {
-    @include respond-to("full navigation") {
-        @include element-invisible;
-    }
+  @include respond-to("full navigation") {
+    @include element-invisible;
+  }
 }
 
-footer {
-    @extend %clearfix;
-    // https://github.com/team-sass/toolkit#clearfix
-    width: 94.5%;
-    max-width: 64rem;
+footer#footer {
+  @extend %clearfix;
+  // https://github.com/team-sass/toolkit#clearfix
+  width: 94.5%;
+  max-width: 64rem;
+  margin: 3em auto 0;
+  @include respond-to("mobile tablet") {
+    padding: 20px 0;
+    width: 100%;
+  }
 
-    @include respond-to("mobile tablet") {
-        // padding: 0 3%;
-        width: 94%;
-    }
-    @include respond-to("desktop-lh") {
-         margin: 3em auto 0;
-    }
+  @include respond-to("desktop-lh") {}
 }
 
 html {
-    @include respond-to("desktop content") {
-        @include type-size($body-font-size);
-        // 16px
-    }
+  @include respond-to("desktop content") {
+    @include type-size($body-font-size);
+    // 16px
+  }
 
-    @include respond-to("extra wide content") {
-        @include type-size($body-font-size + 1);
-        // 17px
-    }
+  @include respond-to("extra wide content") {
+    @include type-size($body-font-size + 1);
+    // 17px
+  }
 
-    @include respond-to("wide content") {
-        @include type-size($body-font-size + 1);
-        // 18px
-    }
+  @include respond-to("wide content") {
+    @include type-size($body-font-size + 1);
+    // 18px
+  }
 
-    @include respond-to("medium wide content") {
-        @include type-size($body-font-size - 1);
-        // 15px
-    }
+  @include respond-to("medium wide content") {
+    @include type-size($body-font-size - 1);
+    // 15px
+  }
 
-    @include respond-to("medium content") {
-        @include type-size($body-font-size - 1);
-         // 15px
-    }
+  @include respond-to("medium content") {
+    @include type-size($body-font-size - 1);
+    // 15px
+  }
 
-    @include respond-to("medium only content") {
-        @include type-size($body-font-size - 1);
-        // 15px
-    }
+  @include respond-to("medium only content") {
+    @include type-size($body-font-size - 1);
+    // 15px
+  }
 
-    @include respond-to("narrow content") {
-        @include type-size($body-font-size - 1);
-         // 15px
-    }
+  @include respond-to("narrow content") {
+    @include type-size($body-font-size - 1);
+    // 15px
+  }
 
-    @include respond-to("mobile content") {
-        @include type-size($body-font-size - 1);
-         // 15px
-    }
+  @include respond-to("mobile content") {
+    @include type-size($body-font-size - 1);
+    // 15px
+  }
 }
 
 body {
-    @include respond-to("desktop content") {
-        @include type-size(1rem, $body-line-height);
-        // 16px/1.5em
-    }
+  @include respond-to("desktop content") {
+    @include type-size(1rem, $body-line-height);
+    // 16px/1.5em
+  }
 
-    @include respond-to("extra wide content") {
-        @include type-size(1rem, $body-line-height + 0);
-        // 21px/1.7em
-    }
+  @include respond-to("extra wide content") {
+    @include type-size(1rem, $body-line-height + 0);
+    // 21px/1.7em
+  }
 
-    @include respond-to("wide content") {
-        @include type-size(1rem, $body-line-height + 0.16666);
-        // 18px/1.6666em
-    }
+  @include respond-to("wide content") {
+    @include type-size(1rem, $body-line-height + 0.16666);
+    // 18px/1.6666em
+  }
 
-    @include respond-to("medium wide content") {
-        @include type-size(1rem, $body-line-height - 0.1);
-        // 15px/1.4em
-    }
+  @include respond-to("medium wide content") {
+    @include type-size(1rem, $body-line-height - 0.1);
+    // 15px/1.4em
+  }
 
-    @include respond-to("medium content") {
-        @include type-size(1rem, $body-line-height - 0.1);
-        // 14px/1.4em
-    }
+  @include respond-to("medium content") {
+    @include type-size(1rem, $body-line-height - 0.1);
+    // 14px/1.4em
+  }
 
-    @include respond-to("medium only content") {
-        @include type-size(1rem, $body-line-height - 0.1);
-        // 14px/1.4em
-    }
+  @include respond-to("medium only content") {
+    @include type-size(1rem, $body-line-height - 0.1);
+    // 14px/1.4em
+  }
 
-    @include respond-to("narrow content") {
-        @include type-size(1rem, $body-line-height - 0.1);
-        // 13px/1.4em
-    }
+  @include respond-to("narrow content") {
+    @include type-size(1rem, $body-line-height - 0.1);
+    // 13px/1.4em
+  }
 
-    @include respond-to("mobile content") {
-        @include type-size(1rem, $body-line-height - 0.16666);
-        // 12px/1.333em
-    }
+  @include respond-to("mobile content") {
+    @include type-size(1rem, $body-line-height - 0.16666);
+    // 12px/1.333em
+  }
 }
 
 [role="main"] {
-    @extend %clearfix;
-    // https://github.com/team-sass/toolkit#clearfix
-    // max-width:ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
-    margin: 1em auto 0;
-    width: 94.5%;
-    max-width: 64rem;
+  @extend %clearfix;
+  // https://github.com/team-sass/toolkit#clearfix
+  // max-width:ms(14) + ms(12) -see modular scale notes in base/typography/_typography_variables
+  margin: 1em auto 0;
+  width: 94.5%;
+  max-width: 64rem;
+  @include respond-to("mobile tablet") {
+    // padding: 0 3%;
+    width: 94%;
+  }
 
-    @include respond-to("mobile tablet") {
-        // padding: 0 3%;
-        width: 94%;
-    }
-    @include respond-to("desktop-lh") {
-         margin: 3em auto 0;
-    }
+  @include respond-to("desktop-lh") {
+    margin: 3em auto 0;
+  }
 }
 
 [role="complementary"] {
-    float: none;
-    width: 100%;
-    clear: left;
-    @include respond-to("wide") {
-        // width: ms(12);
-        width: 35%;
-        // width of the side content — see modular scale notes in base/typography/_typography_variables
-        float: right;
-        clear: none;
-        ul[role="menu"] {
-            li {
-                > a:first-child {
-                    width: 25%;
-                }
-                > h3 {
-                    width: 75%;
-                }
-            }
+  float: none;
+  width: 100%;
+  clear: left;
+  @include respond-to("wide") {
+    // width: ms(12);
+    width: 35%;
+    // width of the side content - see modular scale notes in base/typography/_typography_variables
+    float: right;
+    clear: none;
+    ul[role="menu"] {
+      li {
+        > a:first-child {
+          width: 25%;
         }
+        > h3 {
+          width: 75%;
+        }
+      }
     }
+  }
 }
 
 #content {
-    // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-    float: none;
-    width: 100%;
-    // background-color: purple;
-    @include respond-to("wide") {
-        float: left;
-        width: 60%;
-        // background-color: blue;
-        max-width: ms(17);
-    }
-    h1.page-title {
-        margin-bottom: .5rem;
-    }
+  // width of the optimal line measure - see modular scale notes in base/typography/_typography_variables
+  float: none;
+  width: 100%;
+  // background-color: purple;
+  @include respond-to("wide") {
+    float: left;
+    width: 60%;
+    // background-color: blue;
+    max-width: ms(17);
+  }
+
+  h1.page-title {
+    margin-bottom: .5rem;
+  }
 }
 
 .spoke {
-    @extend %clearfix;
-    // https://github.com/team-sass/toolkit#clearfix
-    //max-width:ms(14) + ms(12) — see modular scale notes in base/typography/_typography_variables
-    margin: 0 auto;
+  @extend %clearfix;
+  // https://github.com/team-sass/toolkit#clearfix
+  //max-width:ms(14) + ms(12) - see modular scale notes in base/typography/_typography_variables
+  margin: 0 auto;
+  width: 100%;
+  max-width: 100%;
+  float: none;
+  .spoke-body, section.curators-note {
     width: 100%;
-    max-width: 100%;
-    float: none;
-    .spoke-body, section.curators-note {
-        width: 100%;
-        margin: 0;
-        @include respond-to("wide") {
-            max-width: ms(14);
-            width: 60%;
-            // width of the optimal line measure — see modular scale notes in base/typography/_typography_variables
-            float: left;
-            margin: 0;
-        }
+    margin: 0;
+    @include respond-to("wide") {
+      max-width: ms(14);
+      width: 60%;
+      // width of the optimal line measure - see modular scale notes in base/typography/_typography_variables
+      float: left;
+      margin: 0;
     }
+  }
 }

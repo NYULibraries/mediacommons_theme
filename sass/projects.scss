@@ -63,7 +63,6 @@ $type-color: tint-stack($type-color-value);
     nav.global {
       box-shadow: 0px 3px lighten($col, 20%);
       border-bottom: 3px solid $col;
-      height: 2.1rem;
     }
     footer#footer {
       border-top: 3px solid lighten($col, 9%);
@@ -281,16 +280,10 @@ body.fieldguide {
   .node-spoke.node-teaser .thumb, .field-name-field-representative-image {
     display: none;
   }
-  [role="banner"] {
-    // border-bottom: 2px solid lighten($fg_primary, 15%);
-    // border-top: 10px solid lighten($fg_primary, 15%);
-    // padding-top: .8rem;
- 
+  nav.global {
+    box-shadow: 0px 3px #b98a00;
+    border-bottom: 3px solid #d7a100;
   }
-  // nav.global {
-  //     box-shadow: 0px 3px lighten(nth($primary, 1), 15%);
-  //     border-bottom: 3px solid lighten(nth($primary, 1), 15%);
-  // }
   [role="complementary"] {
     background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
     header {
@@ -318,6 +311,22 @@ body.fieldguide {
     background-size: 100%;
     margin: 0 0 1em 0;
   }
+  @include respond-to("narrow navigation") {
+    .logo {
+      width: 16rem;
+      height: 2.5rem;
+      padding: 0;
+      background: image-url("mc-logos/fieldguidelogo-mobile.svg");
+      background-repeat: no-repeat;
+      background-size: auto 100%;
+      margin-bottom: 0;
+    }
+    nav.global {
+      box-shadow: none;
+      border-bottom: 3px solid #C49A1E;
+    }
+  }
+
   &.front {
     .hubhead {
       .field-name-title h1.hub-title {

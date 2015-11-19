@@ -3,113 +3,127 @@
 //////////////////////////////
 
 [role="search"] {
-    display: inline-block;
-    float: right;
-    padding: 0;
+  display: inline-block;
+  float: right;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  fieldset {
     margin: 0;
-    background-color: transparent;
-    fieldset {
-        margin: 0;
-        border: none;
-    }
-    input[type="submit"] {
-        font-family: $icon-font-name;
-        // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
-   
-    }
-    label,  label span {
-        display: none;
-    }
+    border: none;
+  }
+  input[type="submit"] {
+    font-family: $icon-font-name;
+    // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
+ 
+  }
+  label, label span {
+    display: none;
+  }
 }
 
 // style placeholder text see '_header--search_mixins.scss' placeholder mixin
 input[type="search"], input[name="search_block_form"] {
-    padding-left: .75em;
-    font-family: $header-font-family;
-    @include input-placeholder {
-        color: nth($primary, 2);
-    }
+  padding-left: .75em;
+  font-family: $header-font-family;
+  @include input-placeholder {
+    color: nth($primary, 2);
+  }
 }
 
 .wf-droidsans-n4-active input[type="search"] {
-    font-family: $heading-font-name, $header-font-family;
+  font-family: $heading-font-name, $header-font-family;
 }
 
 @include respond-to("full navigation") {
-    [role="search"] label {
-        display: none;
-    }
-    [role="search"] label span {
-        display: none;
-    }
+  [role="search"] label {
+    display: none;
+  }
+  [role="search"] label span {
+    display: none;
+  }
 }
 
 
 @include respond-to("narrow navigation") {
-    [role="search"] {
-        margin: 0;
-        display: block;
-        float: none;
-        position: relative;
-        background-color: transparent;
-        label span {
-            display: none;
-        }
-        label {
-            height: 2.5em;
-            width: 2.5em;
-            text-align: center;
-            padding-top: .6em;
-            margin: 0 2%;
-            display: block;
-            float: right;
-            @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
-            @include border-radius(5px);
-            border: 1px solid;
-            border-color: #ddd #bbb #999;
-        }
-        fieldset {
-            clear: both;
-            background-color: nth($black, 5);
-         
-             @include box-shadow(inset nth($black, 4) 0px -2px 0px 0px, inset nth($black, 4) 0px 1px 0px 0px);
-            border: none;
-            margin: 10px 0 0 0;
-            width: 100%;
-            padding: 0px;
-            position: relative;
-            left: 0;
-            top: 10px;
-            height: 0;
-            display: none;
-        }
-        &.open label {
-            // margin-bottom: .25em;
-       
-        }
-        &.open fieldset {
-            padding: 10px;
-            height: 65px;
-        }
-        input[type="search"] {
-            width: 85%;
-            padding: 8px;
-            font-size: 1.4rem;
-            &:focus {
-                // -moz-box-shadow: none;
-                // -webkit-box-shadow: none;
-                // box-shadow: none;
-                outline: none;
-                border-color: #ccc;
-            }
-        }
-        input[type="submit"] {
-            height: 2.5em;
-            width: 2.5em;
-            margin-top: 5px;
-        }
-        fieldset[aria-hidden="true"] {
-            width: 15%;
-        }
+  [role="search"] {
+    margin: 0;
+    display: block;
+    float: none;
+    position: relative;
+    background-color: transparent;
+    label span {
+      display: none;
     }
+    label {
+      height: 2.5em;
+      width: 2.5em;
+      text-align: center;
+      padding-top: .6em;
+      margin: 0 2%;
+      display: block;
+      float: right;
+      @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
+      @include border-radius(5px);
+      border: 1px solid;
+      border-color: #ddd #bbb #999;
+    }
+    fieldset {
+      clear: both;
+      border: none;
+      margin: 0px 0 0 0;
+      width: 100%;
+      padding: 0px;
+      position: relative;
+      left: 0;
+      top: 0px;
+      height: 0;
+      display: none;
+    }
+    .search-contain {
+      padding: 10px;
+      margin: 10px 0 0 0;
+      background-color: nth($black, 5);
+      @include box-shadow(inset nth($black, 4) 0px -2px 0px 0px, inset nth($black, 4) 0px 1px 0px 0px);
+    }
+    &.open label {
+      // margin-bottom: .25em;
+   
+    }
+    &.open input[type="submit"] {
+      border: none;
+      background: none;
+      font-size: 1.5rem;
+      padding: 0;
+      width: auto;
+      height: auto;
+      margin-top: 0px;
+      padding: .5rem 0 0 .5rem;
+    }
+    &.open fieldset {
+      height: 80px;
+    }
+    input[type="search"] {
+      width: 85%;
+      padding: 8px 12px;
+      font-size: 1.6rem;
+      &:focus {
+        // -moz-box-shadow: none;
+        // -webkit-box-shadow: none;
+        // box-shadow: none;
+        outline: none;
+        border-color: none;
+        // LMH put focus color here?
+     
+      }
+    }
+    input[type="submit"] {
+      height: 2.5em;
+      width: 2.5em;
+      margin-top: 5px;
+    }
+    fieldset[aria-hidden="true"] {
+      width: 15%;
+    }
+  }
 }

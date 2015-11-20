@@ -2,7 +2,6 @@
 // MODULES: Component styles that are layout independent. v1
 //////////////////////////////
 @import "_global_nav_variables";
-@import "_global_nav_utils";
 
 #admin-menu,
 #admin-menu .dropdown {
@@ -30,8 +29,8 @@ nav.global {
 
   // ALL LISTS
   ul {
-    //
-    background-color: fuchsia;
+    @include horizontal-list(0.5em);
+
     overflow: visible;
     margin: 0;
 
@@ -75,16 +74,9 @@ nav.global {
       float: left;
       width: auto;
       position: relative;
-      background-color: pink;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row nowrap;
-      flex-flow: row nowrap;
 
+      // background-color: fuchsia;
       > li {
-        -webkit-flex: 1 0 auto;
-        flex: 1 0 auto;
-
         > a {
           padding: .3em 0.5em;
         }
@@ -99,7 +91,7 @@ nav.global {
   }
 
   ul[aria-hidden="false"] {
-    display: block;
+    display: inline-block;
     overflow: visible;
   }
 
@@ -125,22 +117,165 @@ nav.global {
     }
 
     li {
-      // &:before {
-      //   content: "|";
-      //   color: nth($black, 4);
-      //   font-size: .75em;
-      // }
-
-      > a {
-        padding: .5em .5em;
+      &:before {
+        content: "|";
+        color: nth($black, 4);
+        font-size: .75em;
       }
 
-      // &:first-child {
-      //   &:before {
-      //     content: " ";
-      //   }
-      // }
-   
+      > a {
+        padding: .5em 0.5em;
+      }
+
+      &:first-child {
+        &:before {
+          content: " ";
+        }
+      }
+    }
+  }
+
+  // Utilities -- login, user preferences
+  li.utils {
+    // @include horizontal-list(1em);
+    position: absolute;
+    overflow: visible;
+    right: 0;
+
+    [aria-haspopup="true"] > a {
+      @include border-radius(5px);
+
+      &.open {
+        @include border-bottom-radius(0px);
+
+        padding-bottom: 2em;
+
+        @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+        background-image: none;
+        z-index: 200;
+        border-bottom: none;
+        height: 3.6em;
+      }
+    }
+
+    &.logged-in {
+      li {
+        padding: 0px;
+
+        a {
+          padding: 10px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:link,
+          &:visited {
+            text-decoration: none;
+          }
+        }
+      }
+
+      ul a:hover {
+        text-decoration: underline;
+      }
+
+      li.first {
+        padding-top: 10px;
+      }
+    }
+
+    // Hide join link when logged in. todo: work this into drupal
+    // .logged-in & .last {
+    //     display: none;
+    // }
+    padding: 0;
+    color: nth($black, 4);
+    margin-right: .5em;
+
+    > ul {
+      position: absolute;
+      z-index: 100;
+
+      @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+      @include border-bottom-left-radius(5px);
+
+      @include border-bottom-right-radius(5px);
+
+      right: .5em;
+      top: 1.5rem;
+
+      > li {
+        //@include inline-block-list-item(1em);
+        padding-top: 20px;
+
+        > a {
+          padding: 0.3em 0.5em;
+          display: block;
+        }
+
+        float: none;
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0;
+        vertical-align: middle;
+        max-width: 300px;
+        text-indent: 0em;
+
+        form {
+          font-size: .875em;
+          margin: 1em;
+
+          input[type="text"],
+          input[type="password"] {
+            width: 250px;
+            display: block;
+            margin: 0 0 1em 0;
+          }
+
+          .description {
+            display: none;
+            white-space: normal;
+            font-size: .875em;
+            line-height: 1.2em;
+          }
+
+          label {
+            display: none;
+          }
+
+          #edit-submit {
+            float: right;
+          }
+
+          .button-link {
+            line-height: 1.2em;
+          }
+
+          .social-login {
+            margin: .5em 0;
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            font-size: .7em;
+            line-height: 1.2em;
+
+            input#edit-submit-twitter {
+              max-width: 46%;
+              padding: 5px;
+              float: left;
+            }
+
+            input#edit-submit-facebook {
+              max-width: 52%;
+              float: right;
+              padding: 5px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -184,6 +319,13 @@ nav.global {
           @include border-radius(0 0 5px 5px);
 
           padding-top: .2em;
+
+          // display:none !important;
+          // background-color: fuchsia;
+          // &[aria-hidden="false"] {
+          //      display:inline-block !important;
+          // }
+       
         }
 
         li > a {
@@ -205,6 +347,41 @@ nav.global {
         .menu-mcglobalnav {
           a {
             padding: .4em 1em;
+          }
+        }
+      }
+
+      li.utils {
+        width: auto;
+        height: $globalnav-height;
+        display: block;
+        clear: none;
+        position: absolute;
+        z-index: 15;
+        float: right;
+        padding-right: 0;
+
+        a.login-link {
+          height: $globalnav-height;
+          display: block;
+        }
+
+        ul {
+          right: 0;
+          top: $globalnav-height;
+
+          li,
+          li:first-child {
+            padding: 0;
+
+            a {
+              padding: .4em 1em;
+              display: block;
+            }
+          }
+
+          li:first-child {
+            padding-top: 5px;
           }
         }
       }

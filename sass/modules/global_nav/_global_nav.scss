@@ -195,7 +195,6 @@ nav.global {
     margin-right: .5em;
 
     > ul {
-      min-width: 300px;
       position: absolute;
       z-index: 100;
 
@@ -227,12 +226,11 @@ nav.global {
 
         form {
           font-size: .875em;
-          margin: 0 1em;
+          margin: 1em;
 
           input[type="text"],
           input[type="password"] {
-            max-width: 100%;
-            width: 100%;
+            width: 250px;
             display: block;
             margin: 0 0 1em 0;
           }
@@ -369,7 +367,6 @@ nav.global {
         }
 
         ul {
-          min-width: 200px;
           right: 0;
           top: $globalnav-height;
 

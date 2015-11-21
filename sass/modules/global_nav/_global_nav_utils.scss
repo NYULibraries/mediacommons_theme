@@ -1,179 +1,181 @@
-// Utilities -- login, user preferences
-li.utils {
-  // @include horizontal-list(1em);
-  position: absolute;
-  overflow: visible;
-  right: 0;
+nav.global {
+  // Utilities -- login, user preferences
+  li.utils {
+    // @include horizontal-list(1em);
+    position: absolute;
+    overflow: visible;
+    right: 0;
 
-  [aria-haspopup="true"] > a {
-    @include border-radius(5px);
+    [aria-haspopup="true"] > a {
+      @include border-radius(5px);
 
-    &.open {
-      @include border-bottom-radius(0px);
+      &.open {
+        @include border-bottom-radius(0px);
 
-      padding-bottom: 2em;
+        padding-bottom: 2em;
+
+        @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+        background-image: none;
+        z-index: 200;
+        border-bottom: none;
+        height: 3.6em;
+      }
+    }
+
+    a.login-link {
+      padding: .7em 1em 0 1em;
+    }
+
+    &.logged-in {
+      li {
+        padding: 0px;
+
+        a {
+          padding: 10px;
+          min-width: 14em;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:link,
+          &:visited {
+            text-decoration: none;
+          }
+        }
+      }
+
+      ul a:hover {
+        text-decoration: underline;
+      }
+
+      li.first {
+        padding-top: 10px;
+      }
+    }
+
+    // Hide join link when logged in. todo: work this into drupal
+    // .logged-in & .last {
+    //     display: none;
+    // }
+    padding: 0;
+    color: nth($black, 4);
+    margin-right: .5em;
+
+    > ul {
+      position: absolute;
+      z-index: 100;
 
       @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
 
-      background-image: none;
-      z-index: 200;
-      border-bottom: none;
-      height: 3.6em;
-    }
-  }
+      @include border-bottom-left-radius(5px);
 
-  &.logged-in {
-    li {
-      padding: 0px;
+      @include border-bottom-right-radius(5px);
 
-      a {
-        padding: 10px;
+      right: 1.5em;
+      top: $globalnav-height;
 
-        &:hover {
-          text-decoration: none;
+      > li {
+        //@include inline-block-list-item(1em);
+        padding-top: 20px;
+
+        > a {
+          padding: 0.3em 0.5em;
+          display: block;
         }
 
-        &:link,
-        &:visited {
-          text-decoration: none;
+        float: none;
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0;
+        vertical-align: middle;
+        max-width: 300px;
+        text-indent: 0em;
+
+        form {
+          font-size: .875em;
+          margin: 1.5em 1em;
+
+          input[type="text"],
+          input[type="password"] {
+            width: 250px;
+            display: block;
+            margin: 0 0 1em 0;
+          }
+
+          .description {
+            display: none;
+            white-space: normal;
+            font-size: .875em;
+            line-height: 1.2em;
+          }
+
+          label {
+            display: none;
+          }
+
+          #edit-submit {
+            float: right;
+          }
+
+          .button-link {
+            line-height: 1.2em;
+          }
+
+          .social-login {
+            margin: .5em 0;
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            font-size: .7em;
+            line-height: 1.2em;
+
+            input#edit-submit-twitter {
+              max-width: 46%;
+              padding: 5px;
+              float: left;
+            }
+
+            input#edit-submit-facebook {
+              max-width: 52%;
+              float: right;
+              padding: 5px;
+            }
+          }
         }
       }
     }
-
-    ul a:hover {
-      text-decoration: underline;
-    }
-
-    li.first {
-      padding-top: 10px;
-    }
   }
 
-  // Hide join link when logged in. todo: work this into drupal
-  // .logged-in & .last {
-  //     display: none;
-  // }
-  padding: 0;
-  color: nth($black, 4);
-  margin-right: .5em;
+  @include respond-to("narrow navigation") {
+    li.utils {
+      width: auto;
+      height: $globalnav-height;
+      display: block;
+      clear: none;
+      position: absolute;
+      z-index: 15;
+      float: right;
+      padding-right: 0;
 
-  > ul {
-    position: absolute;
-    z-index: 100;
-
-    @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
-
-    @include border-bottom-left-radius(5px);
-
-    @include border-bottom-right-radius(5px);
-
-    right: .5em;
-    top: 1.5rem;
-
-    > li {
-      //@include inline-block-list-item(1em);
-      padding-top: 20px;
-
-      > a {
-        padding: 0.3em 0.5em;
+      a.login-link {
+        height: $globalnav-height;
         display: block;
       }
 
-      float: none;
-      list-style-image: none;
-      list-style-type: none;
-      margin-left: 0;
-      vertical-align: middle;
-      max-width: 300px;
-      text-indent: 0em;
+      ul {
+        right: 0;
+        top: $globalnav-height;
 
-      form {
-        font-size: .875em;
-        margin: 1em;
+        li {
+          // padding: 0;
 
-        input[type="text"],
-        input[type="password"] {
-          width: 250px;
-          display: block;
-          margin: 0 0 1em 0;
-        }
-
-        .description {
-          display: none;
-          white-space: normal;
-          font-size: .875em;
-          line-height: 1.2em;
-        }
-
-        label {
-          display: none;
-        }
-
-        #edit-submit {
-          float: right;
-        }
-
-        .button-link {
-          line-height: 1.2em;
-        }
-
-        .social-login {
-          margin: .5em 0;
-          overflow: hidden;
-          width: 100%;
-          display: block;
-          font-size: .7em;
-          line-height: 1.2em;
-
-          input#edit-submit-twitter {
-            max-width: 46%;
-            padding: 5px;
-            float: left;
-          }
-
-          input#edit-submit-facebook {
-            max-width: 52%;
-            float: right;
-            padding: 5px;
+          a {
+            padding: .4em 1em;
+            display: block;
           }
         }
-      }
-    }
-  }
-}
-
-@include respond-to("narrow navigation") {
-  li.utils {
-    width: auto;
-    height: $globalnav-height;
-    display: block;
-    clear: none;
-    position: absolute;
-    z-index: 15;
-    float: right;
-    padding-right: 0;
-
-    a.login-link {
-      height: $globalnav-height;
-      display: block;
-    }
-
-    ul {
-      right: 0;
-      top: $globalnav-height;
-
-      li,
-      li:first-child {
-        padding: 0;
-
-        a {
-          padding: .4em 1em;
-          display: block;
-        }
-      }
-
-      li:first-child {
-        padding-top: 5px;
       }
     }
   }

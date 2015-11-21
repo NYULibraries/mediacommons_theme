@@ -2,6 +2,7 @@
 // MODULES: Component styles that are layout independent. v1
 //////////////////////////////
 @import "_global_nav_variables";
+
 @import "_global_nav_utils";
 
 #admin-menu,
@@ -26,13 +27,13 @@ nav.global {
   top: 0;
   left: 0;
   z-index: 2000;
-  padding: $globalnav-top-pad 1% 0 1%;
 
-  // ALL LISTS
+  // padding: $globalnav-top-pad 1% 0 1%;
+  // padding: 0 1% 0 1%;
+  padding: 0;
+
+  // ALL LIST padding: 0 1% 0 1%;S
   ul {
-    //
-    background-color: fuchsia;
-    overflow: visible;
     margin: 0;
 
     li {
@@ -41,13 +42,13 @@ nav.global {
       padding: 0;
 
       a {
-        font-size: .775em;
+        font-size: .8rem;
         line-height: 1.5;
         font-weight: normal;
         font-weight: 400;
         color: nth($black, 5);
         text-indent: 0;
-        padding: .5em;
+        display: block;
 
         // important is for overriding the project specific colors
         &:hover,
@@ -65,32 +66,24 @@ nav.global {
     }
   }
 
-  // top level lists
-  > ul {
-    width: 100%;
-    position: relative;
+  // // top level lists
+  // > ul {
+  //   // width: 100%;
+  //   // position: relative;
 
-    // all deeper than one level
-    ul {
-      float: left;
-      width: auto;
-      position: relative;
-      background-color: pink;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-flex-flow: row nowrap;
-      flex-flow: row nowrap;
+  //   // all deeper than one level
+  //   ul[aria-hidden="false"] {
+  //     float: left;
+  //     width: auto;
+  //     position: relative;
 
-      > li {
-        -webkit-flex: 1 0 auto;
-        flex: 1 0 auto;
-
-        > a {
-          padding: .3em 0.5em;
-        }
-      }
-    }
-  }
+  //     > li {
+  //       > a {
+  //         display: block;
+  //       }
+  //     }
+  //   }
+  // }
 
   // State
   ul[aria-hidden="true"] {
@@ -99,15 +92,15 @@ nav.global {
   }
 
   ul[aria-hidden="false"] {
-    display: block;
+    //display: block;
     overflow: visible;
   }
 
   li.sites_nav {
     // Nav among MC projects
     .logolink {
-      max-width: 100%;
-      padding: .125em 1em 0 0;
+      width: 12rem;
+      padding: .35em 1em 0 0;
       display: block;
       float: left;
       overflow: hidden;
@@ -124,117 +117,103 @@ nav.global {
       }
     }
 
-    li {
-      // &:before {
-      //   content: "|";
-      //   color: nth($black, 4);
-      //   font-size: .75em;
-      // }
-
-      > a {
-        padding: .5em .5em;
-      }
-
-      // &:first-child {
-      //   &:before {
-      //     content: " ";
-      //   }
-      // }
-   
-    }
-  }
-
-  @include respond-to("narrow navigation") {
-    padding: 0 2%;
-    font-size: 1.3rem;
-
-    ul li {
-      float: none;
-    }
-
-    // top level navigation
-    > ul {
+    ul {
+      float: left;
       width: auto;
       position: relative;
-      height: $globalnav-height;
+    }
 
-      li.sites_nav {
-        a.logolink {
-          padding: .25em 0em .2em 0;
+    @include respond-to("full navigation") {
+      ul {
+        height: $globalnav-height;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
 
-          &:before {
-            content: "\e002 \e00b";
+        // -ms-flex-align: center;
+        // -webkit-align-items: center;
+        // -webkit-box-align: center;
+        // align-items: center;
+
+        > li {
+          -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+
+          > a.menu__link {
+            padding: .7em .7em 0;
           }
         }
+      }
+    }
+  }
+}
 
-        width: 16em;
-        height: $globalnav-height;
-        display: block;
-        clear: left;
-        position: relative;
-        z-index: 5;
-        float: left;
-        padding-right: 0;
+@include respond-to("narrow navigation") {
+  // top level navigation
+  // > ul {
+  //   width: auto;
+  //   position: relative;
+  //   height: $globalnav-height;
+  //}
 
-        @include border-radius(5px);
+  nav.global li.sites_nav {
+    padding: 0 0 0 3%;
+    font-size: 1.3rem;
+    height: $globalnav-height;
+    display: block;
+    position: relative;
+    z-index: 5;
+    float: left;
 
-        > ul {
-          @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+    ul {
+      // Channel links
 
-          @include border-radius(0 0 5px 5px);
+      @include border-radius(0 0 5px 5px);
 
-          padding-top: .2em;
-        }
+      background-color: $globalnav-background-gradient-end;
 
-        li > a {
+      // height: 0px;
+      // display: none;
+
+      > li {
+        -webkit-flex: 1 1 auto;
+        flex: 1 1 auto;
+
+        a {
+          width: 16em;
           padding: 1em 2.5em 1em 1em;
           display: block;
           border-bottom: 1px solid darken($globalnav-background-gradient-end, 6%);
           box-shadow: 0px 1px lighten($globalnav-background-gradient-end, 4%);
         }
 
-        li:last-child > a {
+        &:last-child > a {
           border: none;
           box-shadow: none;
         }
-
-        li:before {
-          content: " ";
-        }
-
-        .menu-mcglobalnav {
-          a {
-            padding: .4em 1em;
-          }
-        }
       }
 
-      ul.open {
-        height: auto;
-        padding-bottom: .25em;
+      // }
+   
+    }
 
-        @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
+    &.open ul {
+      height: auto;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column nowrap;
+      flex-flow: column nowrap;
+      clear: left;
+    }
 
-        @include border-bottom-left-radius(5px);
+    a.logolink {
+      padding: .25em 0em .2em 0;
+      width: 14rem;
+      font-size: 1.3rem;
 
-        @include border-bottom-right-radius(5px);
-      }
-
-      ul.open > li {
-        display: block;
-        float: none;
-        width: 100%;
-        clear: left;
-
-        &:hover {
-          background-color: $globalnav-background-gradient-end;
-          color: nth($black, 6);
-        }
-
-        a {
-          font-size: 1rem;
-          display: block;
-        }
+      &:before {
+        content: "\e002 \e00b";
       }
     }
   }

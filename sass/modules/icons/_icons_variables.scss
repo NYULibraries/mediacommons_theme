@@ -3,30 +3,11 @@
 //////////////////////////////
 
 // Icon fonts
-$icon-font-name: 'MediaCommons-Icon-Font';
-$icon-font-file-name: 'MediaCommons-Icon-Font/MediaCommons-Icon-Font';
+$icon-font-name: "MediaCommons-Icon-Font";
+$icon-font-file-name: "MediaCommons-Icon-Font/MediaCommons-Icon-Font";
 
-//  See: Icon fonts, HAML and Sass http://gist.io/4731881 
-$icons:
-  ('.mc-logo' '\e002') 
-  ('.icon-contract-arrow-m' '\e00a')
-  ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') 
-  ('.icon-expand-arrow-s' '\e00f') 
-  ('[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
-  ('[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
-  ('[href^="mailto"]' '\e006') 
-  ('[rel*="external"][href^="http"]' '\e602')
-  ('[href^="skype:"]' '\e603') 
-  ('[href^="tel:"]' '\e008')
-  ('[rel*="me"][href*="twitter.com"]' '\e604')
-  ('.icon-user' '\e01f')
-  ('.icon-users' '\e020') 
-  ('.icon-add-user' '\e01e') 
-  ('[role="search"] label' '\e016')
-  ('[role="search"].open label' '\e012')
-  ('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600')
-  ;
+//  See: Icon fonts, HAML and Sass http://gist.io/4731881
+$icons: (".mc-logo" "") (".icon-contract-arrow-m" "") (".icon-expand-arrow-m" "") (".icon-contract-arrow-s" "") (".icon-expand-arrow-s" "") ('[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' "") ('[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' "") ('[href^="mailto"]' "") ('[rel*="external"][href^="http"]' "") ('[href^="skype:"]' "") ('[href^="tel:"]' "") ('[rel*="me"][href*="twitter.com"]' "") (".icon-user" "") (".icon-users" "") (".icon-add-user" "") ('[role="search"] label' "") ('[role="search"].open label' "") ('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' "");
 
 // To add more than one selectors to use the same class you need to add the :before or :after psuedo class (see the @each mixin in $icon_mixins for the pseudo class) 
 // ('.swf:before, a[href$=".swf"]' '\e014')
-   

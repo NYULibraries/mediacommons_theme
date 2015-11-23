@@ -69,7 +69,7 @@
   @include respond-to("narrow navigation") {
     h1 {
       position: absolute;
-      left: 2em;
+      left: 4.5rem;
       // needs to lie on top of project nav and search dropdowns
       z-index: 1000;
     }

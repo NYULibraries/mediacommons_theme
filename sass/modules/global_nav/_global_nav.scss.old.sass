@@ -1,0 +1,418 @@
+//////////////////////////////
+// MODULES: Component styles that are layout independent. v1
+//////////////////////////////
+@import "_global_nav_variables";
+
+#admin-menu,
+#admin-menu .dropdown {
+  display: none;
+}
+
+#block-system-user-menu {
+  outline: none;
+  position: relative;
+}
+
+nav.global {
+  //$experimental-support-for-svg: true;
+  @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
+
+  width: 100%;
+  height: $globalnav-height;
+  font-family: $heading-font-name;
+  font-size: $ms-base;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  padding: $globalnav-top-pad 1% 0 1%;
+
+  // ALL LISTS
+  ul {
+    @include horizontal-list(0.5em);
+
+    overflow: visible;
+    margin: 0;
+
+    li {
+      text-indent: 0;
+      margin: 0;
+      padding: 0;
+
+      a {
+        font-size: .775em;
+        line-height: 1.5;
+        font-weight: normal;
+        font-weight: 400;
+        color: nth($black, 5);
+        text-indent: 0;
+        padding: .5em;
+
+        // important is for overriding the project specific colors
+        &:hover,
+        &:focus {
+          color: nth($black, 6) !important;
+          text-decoration: underline;
+        }
+
+        &:link,
+        &:visited {
+          color: nth($black, 6) !important;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  // top level lists
+  > ul {
+    width: 100%;
+    position: relative;
+
+    // all deeper than one level
+    ul {
+      float: left;
+      width: auto;
+      position: relative;
+
+      // background-color: fuchsia;
+      > li {
+        > a {
+          padding: .3em 0.5em;
+        }
+      }
+    }
+  }
+
+  // State
+  ul[aria-hidden="true"] {
+    display: none;
+    overflow: hidden;
+  }
+
+  ul[aria-hidden="false"] {
+    display: inline-block;
+    overflow: visible;
+  }
+
+  li.sites_nav {
+    // Nav among MC projects
+    .logolink {
+      max-width: 100%;
+      padding: .125em 1em 0 0;
+      display: block;
+      float: left;
+      overflow: hidden;
+      margin: 0;
+      font-size: 1.2em;
+      line-height: 1;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      span {
+        display: none;
+      }
+    }
+
+    li {
+      &:before {
+        content: "|";
+        color: nth($black, 4);
+        font-size: .75em;
+      }
+
+      > a {
+        padding: .5em 0.5em;
+      }
+
+      &:first-child {
+        &:before {
+          content: " ";
+        }
+      }
+    }
+  }
+
+  // Utilities -- login, user preferences
+  li.utils {
+    // @include horizontal-list(1em);
+    position: absolute;
+    overflow: visible;
+    right: 0;
+
+    [aria-haspopup="true"] > a {
+      @include border-radius(5px);
+
+      &.open {
+        @include border-bottom-radius(0px);
+
+        padding-bottom: 2em;
+
+        @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+        background-image: none;
+        z-index: 200;
+        border-bottom: none;
+        height: 3.6em;
+      }
+    }
+
+    &.logged-in {
+      li {
+        padding: 0px;
+
+        a {
+          padding: 10px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:link,
+          &:visited {
+            text-decoration: none;
+          }
+        }
+      }
+
+      ul a:hover {
+        text-decoration: underline;
+      }
+
+      li.first {
+        padding-top: 10px;
+      }
+    }
+
+    // Hide join link when logged in. todo: work this into drupal
+    // .logged-in & .last {
+    //     display: none;
+    // }
+    padding: 0;
+    color: nth($black, 4);
+    margin-right: .5em;
+
+    > ul {
+      position: absolute;
+      z-index: 100;
+
+      @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+      @include border-bottom-left-radius(5px);
+
+      @include border-bottom-right-radius(5px);
+
+      right: .5em;
+      top: 1.5rem;
+
+      > li {
+        //@include inline-block-list-item(1em);
+        padding-top: 20px;
+
+        > a {
+          padding: 0.3em 0.5em;
+          display: block;
+        }
+
+        float: none;
+        list-style-image: none;
+        list-style-type: none;
+        margin-left: 0;
+        vertical-align: middle;
+        max-width: 300px;
+        text-indent: 0em;
+
+        form {
+          font-size: .875em;
+          margin: 1em;
+
+          input[type="text"],
+          input[type="password"] {
+            width: 250px;
+            display: block;
+            margin: 0 0 1em 0;
+          }
+
+          .description {
+            display: none;
+            white-space: normal;
+            font-size: .875em;
+            line-height: 1.2em;
+          }
+
+          label {
+            display: none;
+          }
+
+          #edit-submit {
+            float: right;
+          }
+
+          .button-link {
+            line-height: 1.2em;
+          }
+
+          .social-login {
+            margin: .5em 0;
+            overflow: hidden;
+            width: 100%;
+            display: block;
+            font-size: .7em;
+            line-height: 1.2em;
+
+            input#edit-submit-twitter {
+              max-width: 46%;
+              padding: 5px;
+              float: left;
+            }
+
+            input#edit-submit-facebook {
+              max-width: 52%;
+              float: right;
+              padding: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include respond-to("narrow navigation") {
+    padding: 0 2%;
+    font-size: 1.3rem;
+
+    ul li {
+      float: none;
+    }
+
+    // top level navigation
+    > ul {
+      width: auto;
+      position: relative;
+      height: $globalnav-height;
+
+      li.sites_nav {
+        a.logolink {
+          padding: .25em 0em .2em 0;
+
+          &:before {
+            content: "\e002 \e00b";
+          }
+        }
+
+        width: 16em;
+        height: $globalnav-height;
+        display: block;
+        clear: left;
+        position: relative;
+        z-index: 5;
+        float: left;
+        padding-right: 0;
+
+        @include border-radius(5px);
+
+        > ul {
+          @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-end));
+
+          @include border-radius(0 0 5px 5px);
+
+          padding-top: .2em;
+
+          // display:none !important;
+          // background-color: fuchsia;
+          // &[aria-hidden="false"] {
+          //      display:inline-block !important;
+          // }
+       
+        }
+
+        li > a {
+          padding: 1em 2.5em 1em 1em;
+          display: block;
+          border-bottom: 1px solid darken($globalnav-background-gradient-end, 6%);
+          box-shadow: 0px 1px lighten($globalnav-background-gradient-end, 4%);
+        }
+
+        li:last-child > a {
+          border: none;
+          box-shadow: none;
+        }
+
+        li:before {
+          content: " ";
+        }
+
+        .menu-mcglobalnav {
+          a {
+            padding: .4em 1em;
+          }
+        }
+      }
+
+      li.utils {
+        width: auto;
+        height: $globalnav-height;
+        display: block;
+        clear: none;
+        position: absolute;
+        z-index: 15;
+        float: right;
+        padding-right: 0;
+
+        a.login-link {
+          height: $globalnav-height;
+          display: block;
+        }
+
+        ul {
+          right: 0;
+          top: $globalnav-height;
+
+          li,
+          li:first-child {
+            padding: 0;
+
+            a {
+              padding: .4em 1em;
+              display: block;
+            }
+          }
+
+          li:first-child {
+            padding-top: 5px;
+          }
+        }
+      }
+
+      ul.open {
+        height: auto;
+        padding-bottom: .25em;
+
+        @include background-image(linear-gradient(top, $globalnav-background-gradient-end, $globalnav-background-gradient-start));
+
+        @include border-bottom-left-radius(5px);
+
+        @include border-bottom-right-radius(5px);
+      }
+
+      ul.open > li {
+        display: block;
+        float: none;
+        width: 100%;
+        clear: left;
+
+        &:hover {
+          background-color: $globalnav-background-gradient-end;
+          color: nth($black, 6);
+        }
+
+        a {
+          font-size: 1rem;
+          display: block;
+        }
+      }
+    }
+  }
+}

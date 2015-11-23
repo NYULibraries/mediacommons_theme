@@ -57,8 +57,7 @@ $type-color: tint-stack($type-color-value);
       }
     }
     [role="banner"] {
-      // border-top: 10px solid lighten($col, 5%);
-      margin: 2.7rem auto 0 auto;
+      margin: 3.25rem auto 0 auto;
     }
     nav.global {
       box-shadow: 0px 3px lighten($col, 20%);
@@ -89,7 +88,15 @@ $type-color: tint-stack($type-color-value);
         background-color: nth($black, 1);
       }
       .field-name-field-spokes {
-        border-left: 1px solid lighten($col, 15%);
+        @include respond-to("full navigation") {
+          border-left: 1px solid lighten($col, 15%);
+        }
+
+        @include respond-to("narrow navigation") {
+          border-left: 4px solid lighten($col, 15%);
+          padding-left: 7px;
+          margin-top: 20px;
+        }
       }
       .featured-more header {
         border-top: 1px solid lighten($col, 9%);

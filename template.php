@@ -118,7 +118,12 @@ function mediacommons_preprocess_page( &$vars ) {
 
 
 }
-
+function mediacommons_preprocess_node(&$vars) {
+// give project names as classes to the items on the umbrella site front page
+  if ($vars['type'] == 'front_page_post') {
+    $vars['classes_array'][] =  'node-' . $vars['field_project'][0]['value'];
+  }
+}
 /**
  * Begin User Profiles
  */

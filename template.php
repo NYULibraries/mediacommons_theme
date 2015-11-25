@@ -114,9 +114,10 @@ function mediacommons_preprocess_page( &$vars ) {
     $term = taxonomy_term_load( arg( 2 ) );
     $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-
-
-
+  $special_body_class = theme_get_setting( 'special_body_class' );
+  if ($special_body_class == 'mc' ) { 
+    $vars['theme_hook_suggestions'][] = 'page__front__mc';
+  }
 }
 function mediacommons_preprocess_node(&$vars) {
 // give project names as classes to the items on the umbrella site front page

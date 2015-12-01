@@ -1,9 +1,22 @@
 .front.mc [role="main"] {
+  max-width: 84rem;
   margin: 0em auto 0;
-
   .button.skip-arrow {
     // there is no primary nav on homepage, so hide responsive hamburger button
     display: none;
+  }
+  .featured-more {
+    margin-top: 0;
+  }
+  .fieldguide_toc {
+    padding: 10px;
+  }
+  #content {
+    float: left;
+    width: 60%;
+  }
+  .block.fieldguide_toc {
+    border-top: 4px solid #d7a100;
   }
 }
 
@@ -15,42 +28,81 @@
 .node-front-page-post {
   background: #222;
   position: relative;
-
   .group-meta {
     position: absolute;
-    top: 0px;
+    top: -2px;
     left: 0px;
     margin-right: 10px;
-
     @extend %sans;
   }
-
   .field-name-field-project {
     background: rgba(0, 0, 0, 0.5);
     display: inline-block;
+    float: left;
     margin-bottom: .5em;
+    padding: 1px 12px 0;
+    text-transform: uppercase;
+    font-size: .9rem;
+    line-height: 1.3;
   }
-
   .field-name-field-rlink {
     background: #000;
     background: rgba(0, 0, 0, 0.5);
     margin-left: 10px;
-
+    display: inline-block;
+    float: left;
+    clear: left;
     a {
       color: white !important;
       display: block;
-      padding: 15px;
+      padding: 10px;
       font-size: 1.5rem;
       line-height: 1.2;
     }
   }
-
+  .field-name-field-body {
+    background: rgba(0, 0, 0, 0.5);
+    margin: 10px 0 0 10px;
+    padding: 10px;
+    color: #bbb;
+    display: inline-block;
+    float: left;
+    clear: left;
+  }
   .field-name-field-featured-image-thumb {
     img {
       display: block;
       width: 100%;
       height: auto;
     }
+  }
+}
+
+.flexhold {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+  section {
+    //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
+    -ms-flex: 0 0 66%;
+    -webkit-flex: 0 0 66%;
+    flex: 0 0 66%;
+    // margin: 1% 0;
+    //background-color: pink;
+ 
+  }
+  aside {
+    -ms-flex: 0 1 32%;
+    -webkit-flex: 0 1 32%;
+    flex: 0 1 32%;
+    // margin: 1% 0;
+ 
   }
 }
 
@@ -65,7 +117,6 @@
   -webkit-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
-
   .featured-item:empty {
     height: 0;
     border: none;
@@ -73,33 +124,28 @@
     box-shadow: none;
     margin: 0;
   }
-
   .featured-item {
     -ms-flex: 0 1 32%;
     -webkit-flex: 0 1 32%;
     flex: 0 1 32%;
     margin: 1% 0;
-
     // &:first-child {
     //   background: orange;
     //   -ms-flex: 2 1 64%;
     //   -webkit-flex: 2 1 64%;
     //   flex: 2 1 64%;
     // }
-
     @include respond-to("tablet-lh") {
       -webkit-flex: 0 1 49%;
       flex: 0 1 49%;
       margin: 1% 0;
     }
 
-
     @include respond-to("mobile-lh") {
       -webkit-flex: 1 1 100%;
       flex: 1 1 100%;
       margin: 1% 0;
     }
-
 
     overflow: hidden;
   }
@@ -114,30 +160,25 @@
 
 .featured-more {
   margin: 3rem 0 3rem;
-
   h2 {
     font-size: 1.3em;
     line-height: 1.2;
     padding-bottom: 7px;
     padding-top: 0;
-
     a:link, a:visited {
       color: black !important;
     }
   }
-
   .peoplelist {
     a:link, a:visited {
       color: $time-color !important;
     }
   }
-
   header {
     font-weight: bold;
     padding: 10px 0;
     border-top: 1px solid #666;
   }
-
   img {
     width: 100% !important;
     height: auto !important;
@@ -147,29 +188,23 @@
 [role="complementary"] {
   .view-simple-for-survey {
     padding: .5rem 1rem;
-
     .survey-question {
       font-size: 1.4rem;
       margin: 1rem 0 1rem;
       line-height: 1.3;
-
       // color: #111;
    
     }
-
     .field-item {
       margin: 1em 0;
     }
-
     .field-name-title {
       font-size: 1.2rem;
-
       a:link {
         //color: #5a5a5a;
      
       }
     }
-
     a.username {
       font-size: .9rem;
       display: block;

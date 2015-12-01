@@ -116,7 +116,9 @@ function mediacommons_preprocess_page( &$vars ) {
   }
   $special_body_class = theme_get_setting( 'special_body_class' );
   if ($special_body_class == 'mc' ) { 
-    $vars['theme_hook_suggestions'][] = 'page__front__mc';
+    if (in_array("page__front", $vars['theme_hook_suggestions'])) {
+        $vars['theme_hook_suggestions'][] = 'page__front__mc';
+    }
   }
 }
 function mediacommons_preprocess_node(&$vars) {

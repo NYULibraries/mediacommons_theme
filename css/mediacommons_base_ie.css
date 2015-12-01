@@ -951,32 +951,50 @@ a.control:active {
 
 /* line 1, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] {
+  max-width: 84rem;
   margin: 0em auto 0;
 }
-/* line 3, ../sass/modules/homepage/_homepage.scss */
+/* line 4, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .button.skip-arrow {
   display: none;
 }
+/* line 8, ../sass/modules/homepage/_homepage.scss */
+.front.mc [role="main"] .featured-more {
+  margin-top: 0;
+}
+/* line 11, ../sass/modules/homepage/_homepage.scss */
+.front.mc [role="main"] .fieldguide_toc {
+  padding: 10px;
+}
+/* line 14, ../sass/modules/homepage/_homepage.scss */
+.front.mc [role="main"] #content {
+  float: left;
+  width: 60%;
+}
+/* line 18, ../sass/modules/homepage/_homepage.scss */
+.front.mc [role="main"] .block.fieldguide_toc {
+  border-top: 4px solid #d7a100;
+}
 
-/* line 9, ../sass/modules/homepage/_homepage.scss */
+/* line 23, ../sass/modules/homepage/_homepage.scss */
 .hubhead img {
   max-width: 100% !important;
   height: auto;
 }
 
-/* line 14, ../sass/modules/homepage/_homepage.scss */
+/* line 28, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post {
   background: #222;
   position: relative;
 }
-/* line 17, ../sass/modules/homepage/_homepage.scss */
+/* line 31, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .group-meta {
   position: absolute;
   top: -2px;
   left: 0px;
   margin-right: 10px;
 }
-/* line 24, ../sass/modules/homepage/_homepage.scss */
+/* line 38, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-project {
   background: rgba(0, 0, 0, 0.5);
   display: inline-block;
@@ -987,7 +1005,7 @@ a.control:active {
   font-size: .9rem;
   line-height: 1.3;
 }
-/* line 34, ../sass/modules/homepage/_homepage.scss */
+/* line 48, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-rlink {
   background: #000;
   background: rgba(0, 0, 0, 0.5);
@@ -996,7 +1014,7 @@ a.control:active {
   float: left;
   clear: left;
 }
-/* line 41, ../sass/modules/homepage/_homepage.scss */
+/* line 55, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-rlink a {
   color: white !important;
   display: block;
@@ -1004,7 +1022,7 @@ a.control:active {
   font-size: 1.5rem;
   line-height: 1.2;
 }
-/* line 49, ../sass/modules/homepage/_homepage.scss */
+/* line 63, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-body {
   background: rgba(0, 0, 0, 0.5);
   margin: 10px 0 0 10px;
@@ -1014,14 +1032,39 @@ a.control:active {
   float: left;
   clear: left;
 }
-/* line 59, ../sass/modules/homepage/_homepage.scss */
+/* line 73, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-featured-image-thumb img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 67, ../sass/modules/homepage/_homepage.scss */
+/* line 81, ../sass/modules/homepage/_homepage.scss */
+.flexhold {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -ms-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-pack: justify;
+}
+/* line 91, ../sass/modules/homepage/_homepage.scss */
+.flexhold section {
+  -ms-flex: 0 0 66%;
+  -webkit-flex: 0 0 66%;
+  flex: 0 0 66%;
+}
+/* line 100, ../sass/modules/homepage/_homepage.scss */
+.flexhold aside {
+  -ms-flex: 0 1 32%;
+  -webkit-flex: 0 1 32%;
+  flex: 0 1 32%;
+}
+
+/* line 109, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1034,7 +1077,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 78, ../sass/modules/homepage/_homepage.scss */
+/* line 120, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1042,7 +1085,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 85, ../sass/modules/homepage/_homepage.scss */
+/* line 127, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1051,56 +1094,56 @@ a.control:active {
   overflow: hidden;
 }
 
-/* line 119, ../sass/modules/homepage/_homepage.scss */
+/* line 161, ../sass/modules/homepage/_homepage.scss */
 .featured-more {
   margin: 3rem 0 3rem;
 }
-/* line 121, ../sass/modules/homepage/_homepage.scss */
+/* line 163, ../sass/modules/homepage/_homepage.scss */
 .featured-more h2 {
   font-size: 1.3em;
   line-height: 1.2;
   padding-bottom: 7px;
   padding-top: 0;
 }
-/* line 126, ../sass/modules/homepage/_homepage.scss */
+/* line 168, ../sass/modules/homepage/_homepage.scss */
 .featured-more h2 a:link, .featured-more h2 a:visited {
   color: black !important;
 }
-/* line 131, ../sass/modules/homepage/_homepage.scss */
+/* line 173, ../sass/modules/homepage/_homepage.scss */
 .featured-more .peoplelist a:link, .featured-more .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 135, ../sass/modules/homepage/_homepage.scss */
+/* line 177, ../sass/modules/homepage/_homepage.scss */
 .featured-more header {
   font-weight: bold;
   padding: 10px 0;
   border-top: 1px solid #666;
 }
-/* line 140, ../sass/modules/homepage/_homepage.scss */
+/* line 182, ../sass/modules/homepage/_homepage.scss */
 .featured-more img {
   width: 100% !important;
   height: auto !important;
 }
 
-/* line 147, ../sass/modules/homepage/_homepage.scss */
+/* line 189, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey {
   padding: .5rem 1rem;
 }
-/* line 149, ../sass/modules/homepage/_homepage.scss */
+/* line 191, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .survey-question {
   font-size: 1.4rem;
   margin: 1rem 0 1rem;
   line-height: 1.3;
 }
-/* line 156, ../sass/modules/homepage/_homepage.scss */
+/* line 198, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-item {
   margin: 1em 0;
 }
-/* line 159, ../sass/modules/homepage/_homepage.scss */
+/* line 201, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-name-title {
   font-size: 1.2rem;
 }
-/* line 166, ../sass/modules/homepage/_homepage.scss */
+/* line 208, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey a.username {
   font-size: .9rem;
   display: block;

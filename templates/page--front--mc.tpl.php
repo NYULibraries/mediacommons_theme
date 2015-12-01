@@ -1,15 +1,11 @@
 <a id="main-content"></a>
-<header  role="banner"> <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
-    <button type="button" class="skip-arrow"></button>
+<header  role="banner"> 
+ 
     <h1><a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>
 
 
   <?php print render($page['search']); ?>
-  <nav id="main-nav" class="nav main" role="navigation">
-    <?php if ($main_menu ) : ?>
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main')))); ?>
-    <?php endif; ?>
-  </nav>
+ 
 </header>
 
   <?php if ($action_links): ?>
@@ -35,14 +31,14 @@
   <?php endif; ?>
 
 <div id="content"> 
-  <div class="flexhold">MC umbrella
+  <div class="flexhold">
   <section class="featured-hed"><?php  print render($page['homepage_top']);  ?></section>
   <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside></div>
    <section class="featured-more">  
      <?php  print render($page['homepage_bottom']); ?> </section>
 </div>
   <?php if (isset($page['homepage_sidebar'])) : ?>
-          
+          <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
   <?php endif; ?> 
 
   

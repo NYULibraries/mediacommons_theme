@@ -24,86 +24,71 @@ $type-color: tint-stack($type-color-value);
 $mcpress-color: #659e42;
 
 .node-mcpress {
-  border-top: 2px solid $mcpress-color;
+  border-top: 4px solid $mcpress-color;
+  .field-name-field-project {
+    background-color: $mcpress-color;
+  }
 }
 
 @each $header, $col in $map {
   /*   */
   $primary-color: $col;
   $cs-primary: $primary-color !global;
-
   // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
   $cs-scheme: triad !global;
-
   // Options: mono, complement, triad, tetrad, analogic, accented-analogic
   $cs-hue-offset: 20 !global;
-
   // Options: 0-100;
   $cs-brightness-offset: 0 !global;
-
   // Options: 0-100;
   $cs-color-model: ryb !global;
   $primary: tint-stack(cs-primary()) !global;
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
-
   $h: ".node-#{$header}";
-
   #{$h} {
-    border-top: 2px solid $col;
-
+    border-top: 4px solid $col;
     .field-name-field-project {
       background-color: $col;
     }
   }
-
   body.#{$header} {
     a:link,
     a:visited {
       color: $col;
     }
-
     a[href]:hover,
     a[href]:focus {
       color: darken($col, 10%);
       text-decoration: underline;
     }
-
     a[href]:active {
       color: darken($col, 20%);
     }
-
     [role="navigation"].main ul.main {
       li {
         font-size: .9em;
       }
     }
-
     [role="banner"] {
       margin: 3.25rem auto 0 auto;
     }
-
     nav.global {
       box-shadow: 0px 3px lighten($col, 20%);
       border-bottom: 3px solid $col;
     }
-
     footer#footer {
       border-top: 3px solid lighten($col, 9%);
       box-shadow: 0px -3px lighten($col, 15%);
     }
-
     [role="complementary"] {
       background-color: lighten(nth($tertiary, 5), 3%);
-
       header {
         background-color: nth($tertiary, 4);
       }
     }
-
     $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
-
     .node-spoke.node-teaser .thumb {
       background: image-url($spoke-default-thumb);
       background-repeat: no-repeat;
@@ -113,17 +98,14 @@ $mcpress-color: #659e42;
       box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
       box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
     }
-
     &.front {
       .timerangeheader {
         background-color: nth($black, 1);
       }
-
       .field-name-field-spokes {
         @include respond-to("full navigation") {
           border-left: 1px solid lighten($col, 15%);
         }
-
 
         @include respond-to("narrow navigation") {
           border-left: 4px solid lighten($col, 15%);
@@ -131,12 +113,10 @@ $mcpress-color: #659e42;
           margin-top: 20px;
         }
       }
-
       .featured-more header {
         border-top: 1px solid lighten($col, 9%);
       }
     }
-
     // style placeholder text see '_header--search_mixins.scss' placeholder mixin
     input[type="search"], input[name="search_block_form"] {
       @include input-placeholder {
@@ -144,12 +124,10 @@ $mcpress-color: #659e42;
         color: nth($black, 4);
       }
     }
-
     .pager a:active {
       color: #fff;
       background-color: $primary-color;
     }
-
     // .comments {
     //     article {
     //         padding: 2.5%;
@@ -164,114 +142,88 @@ $mcpress-color: #659e42;
     // }
     .styleguide {
       color: #5F4C16;
-
       li {
         padding: 5px;
       }
-
       .primary {
         background-color: nth($primary, 1);
-
         h1 {
           background-color: nth($primary, 1);
           color: #5F4C16;
         }
-
         ul {
           li:nth-child(1) {
             background-color: nth($primary, 1);
           }
-
           li:nth-child(2) {
             background-color: nth($primary, 2);
           }
-
           li:nth-child(3) {
             background-color: nth($primary, 3);
           }
-
           li:nth-child(4) {
             background-color: nth($primary, 4);
           }
-
           li:nth-child(5) {
             background-color: nth($primary, 5);
           }
         }
       }
-
       .secondary {
         background-color: nth($secondary, 1);
-
         ul {
           li:nth-child(1) {
             background-color: nth($secondary, 1);
           }
-
           li:nth-child(2) {
             background-color: nth($secondary, 2);
           }
-
           li:nth-child(3) {
             background-color: nth($secondary, 3);
           }
-
           li:nth-child(4) {
             background-color: nth($secondary, 4);
           }
-
           li:nth-child(5) {
             background-color: nth($secondary, 5);
           }
         }
       }
-
       .tertiary {
         background-color: lighten(nth($tertiary, 1), 10%);
-
         ul {
           li:nth-child(1) {
             background-color: nth($tertiary, 1);
           }
-
           li:nth-child(2) {
             background-color: nth($tertiary, 2);
           }
-
           li:nth-child(3) {
             background-color: nth($tertiary, 3);
           }
-
           li:nth-child(4) {
             background-color: nth($tertiary, 4);
           }
-
           li:nth-child(5) {
             background-color: nth($tertiary, 5);
           }
         }
       }
-
       .four {
         background-color: lighten(nth($quadrary, 1), 10%);
-
         ul {
           li:nth-child(1) {
             background-color: nth($quadrary, 1);
           }
-
           li:nth-child(2) {
             background-color: nth($quadrary, 2);
           }
-
           li:nth-child(3) {
             background-color: nth($quadrary, 3);
           }
-
           li:nth-child(4) {
             background-color: nth($quadrary, 4);
           }
-
           li:nth-child(5) {
             background-color: nth($quadrary, 5);
           }
@@ -279,23 +231,19 @@ $mcpress-color: #659e42;
       }
     }
   }
-
   /*   */
 }
 
 body.imr, body.alt {
   [role="complementary"] {
     background: #dedede;
-
     header {
       background: #c8c8c8;
     }
-
     a.active {
       position: relative;
       background: #eee;
     }
-
     a.active:after {
       right: 100%;
       top: 50%;
@@ -305,7 +253,6 @@ body.imr, body.alt {
       width: 0;
       position: absolute;
       pointer-events: none;
-
       // border-color: rgba(136, 183, 213, 0);
       border-right-color: #eee;
       border-width: 30px;
@@ -320,7 +267,6 @@ body.int {
     background-position-x: -10px;
     background-position-y: -20px;
   }
-
   .node-spoke.node-teaser .thumb {
     background-size: 224%;
     background-position-x: 3px;
@@ -338,17 +284,13 @@ body.imr .node-spoke.node-teaser .thumb {
 body.fieldguide {
   $fg_primary: map-get($map, fieldguide);
   $fg_neutral: $fg_primary;
-
   // : $fg_primary;
   $cs-primary: $fg_primary !global;
-
   // Options: mono, complement, triad, tetrad, analogic, accented-analogic
   $cs-scheme: complement !global;
   $cs-hue-offset: 20 !global;
-
   // Options: 0-100;
   $cs-brightness-offset: 100 !global;
-
   // Options: 0-100;
   $cs-color-model: ryb !global;
   $primary: tint-stack(cs-primary()) !global;
@@ -356,40 +298,32 @@ body.fieldguide {
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
-
   /* on fieldguide, hide all images for now */
   .node-spoke.node-teaser .thumb, .field-name-field-representative-image {
     display: none;
   }
-
   nav.global {
     box-shadow: 0px 3px #b98a00;
     border-bottom: 3px solid #d7a100;
   }
-
   [role="complementary"] {
     background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
-
     header {
       background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
     }
   }
-
   .comments {
     article {
       padding: 2.5%;
       border: transparent 1px solid;
-
       &:nth-of-type(odd) {
         background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
       }
-
       &:nth-of-type(even) {
         background-color: lighten(set-saturation(nth($neutral-tint-stack, 4), 50%), 6%);
       }
     }
   }
-
   .logo {
     background-position: 0 0%;
     width: 18rem;
@@ -399,7 +333,6 @@ body.fieldguide {
     background-size: 100%;
     margin: 0 0 1em 0;
   }
-
   @include respond-to("narrow navigation") {
     .logo {
       width: 16rem;
@@ -410,13 +343,11 @@ body.fieldguide {
       background-size: auto 100%;
       margin-bottom: 0;
     }
-
     nav.global {
       box-shadow: none;
       border-bottom: 3px solid #C49A1E;
     }
   }
-
 
   &.front {
     .hubhead {
@@ -424,11 +355,9 @@ body.fieldguide {
         font-size: 37px;
       }
     }
-
     .timerangeheader {
       background-color: $fg_primary;
     }
-
     .field-name-field-spokes {
       // border-left: 1px solid lighten($fg_primary, 15%);
       .field-item {
@@ -443,19 +372,16 @@ body.front {
     width: auto;
     float: none;
   }
-
   .hubhead {
     .field-name-title h1.hub-title {
       font-size: 31px;
       padding-top: 0;
       color: nth($type-color, 1);
-
       a {
         color: black;
       }
     }
   }
-
   @include respond-to("desktop-lh") {
     .hubhead {
       float: left;
@@ -463,42 +389,34 @@ body.front {
     }
   }
 
-
   .node-hub {
     //border-top: 1px solid nth($type-color, 3);
  
   }
-
   .view-mode-toc_spoke, .node-spoke.view-mode-teaser {
     border-bottom: 1px solid nth($type-color, 4);
     border-bottom: none;
     padding: 0 0 .5em;
   }
-
   .daterange {
     font-weight: bold;
     text-transform: uppercase;
   }
-
   .caption {
     font-size: .7em;
   }
-
   .field-name-post-date, .field-name-author {
     margin-left: 0;
     display: block;
     float: left;
   }
-
   .thumb {
     min-width: 100px;
   }
-
   .field-name-field-body {
     //font-size: $homepage-credits;
     margin-bottom: 1rem;
   }
-
   .field-name-field-spokes {
     @include respond-to("desktop-lh") {
       float: right;
@@ -506,7 +424,6 @@ body.front {
       border-left: 1px solid black;
       padding-left: 22px;
     }
-
 
     // .node-spoke:nth-child(1) {
     //     .thumb::before {
@@ -535,7 +452,6 @@ body.front {
     // }
  
   }
-
   .timerangeheader {
     padding: 4px;
     background-color: #0C304A;
@@ -543,7 +459,6 @@ body.front {
     font-size: .8rem;
     color: #fff;
     margin-bottom: 1rem;
-
     @include respond-to("desktop-lh") {
       float: right;
       width: 66%;
@@ -557,11 +472,9 @@ body {
   .node-hub.view-mode-teaser {
     border-bottom: 1px solid gray;
     padding: 1em 0;
-
     &:first-child {
       padding: 0 0 1em;
     }
-
     &:last-child {
       border: none;
     }

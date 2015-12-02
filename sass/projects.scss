@@ -30,6 +30,15 @@ $mcpress-color: #659e42;
   }
 }
 
+$fg-color: #d7a100;
+
+.node-fg {
+  border-top: 4px solid $fg-color;
+  .field-name-field-project {
+    background-color: $fg-color;
+  }
+}
+
 @each $header, $col in $map {
   /*   */
   $primary-color: $col;

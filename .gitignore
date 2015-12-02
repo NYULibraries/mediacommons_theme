@@ -9,3 +9,5 @@ userupdaterule02.php
 
 templates/not_used/*
 *.lock
+
+design/files/*

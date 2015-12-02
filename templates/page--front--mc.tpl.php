@@ -32,12 +32,14 @@
 
 <div id="content"> 
   <div class="flexhold">
-  <section class="featured-hed"><?php  print render($page['homepage_top']);  ?></section>
-  <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside></div>
-   <section class="featured-more">  
+  <section class="featured-hed"></section>
+
+   <section class="featured-more">  <?php  print render($page['homepage_top']);  ?>
      <?php  print render($page['homepage_bottom']); ?> </section>
+  <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
+     </div>
 </div>
-  <?php if (isset($page['homepage_sidebar'])) : ?>
+  <?php if (isset($page['homepage_sidebarx '])) : ?>
           <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
   <?php endif; ?> 
 

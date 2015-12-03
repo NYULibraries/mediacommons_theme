@@ -94,8 +94,15 @@
       color: white !important;
       display: block;
       padding: 10px;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 1.2;
+    }
+  }
+  &.view-mode-full {
+    .field-name-field-rlink {
+      a {
+        font-size: 1.8rem;
+      }
     }
   }
   .field-name-field-body {

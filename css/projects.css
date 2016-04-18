@@ -1512,17 +1512,3 @@ body.front .timerangeheader {
 .int .node-hub.view-mode-teaser .field-name-field-body {
   display: none;
 }
-
-/* line 485, ../sass/projects.scss */
-body .node-hub.view-mode-teaser {
-  border-bottom: 1px solid gray;
-  padding: 1em 0;
-}
-/* line 488, ../sass/projects.scss */
-body .node-hub.view-mode-teaser:first-child {
-  padding: 0 0 1em;
-}
-/* line 491, ../sass/projects.scss */
-body .node-hub.view-mode-teaser:last-child {
-  border: none;
-}

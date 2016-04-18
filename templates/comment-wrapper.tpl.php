@@ -26,5 +26,11 @@ $comment_form = render($content['comment_form']);
    <div class="form-wrap">
     <?php print $comment_form; ?>
   </div>
-  <?php endif; ?>
+  <?php else; ?>
+<header> <h2 class="comments__form-title title comment-form"><?php print t('Add new comment'); ?></h2></header>
+   <div class="form-wrap">
+    Login to add a comment
+  </div>
+
+   <?php endif; ?>
 </section>

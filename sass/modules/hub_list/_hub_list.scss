@@ -188,3 +188,16 @@ aside + h2 {
     clear: left;
   }
 }
+
+body {
+  .node-hub.view-mode-teaser {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    &:first-child {
+      padding: 0 0 1em;
+    }
+    &:last-child {
+      border: none;
+    }
+  }
+}

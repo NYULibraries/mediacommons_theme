@@ -480,16 +480,3 @@ body.front {
 .int .node-hub.view-mode-teaser .field-name-field-body {
   display: none;
 }
-
-body {
-  .node-hub.view-mode-teaser {
-    border-bottom: 1px solid gray;
-    padding: 1em 0;
-    &:first-child {
-      padding: 0 0 1em;
-    }
-    &:last-child {
-      border: none;
-    }
-  }
-}

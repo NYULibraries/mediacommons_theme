@@ -1,0 +1,13 @@
+body.int {
+  .node-hub.view-mode-teaser .field-name-field-body {
+    display: none;
+  }
+
+  time, .date-display-range {
+    display: none !important;
+  }
+
+  .comment time {
+    display: block !important;
+  }
+}

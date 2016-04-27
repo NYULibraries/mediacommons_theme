@@ -251,9 +251,8 @@
     }
   }
   header {
-    font-weight: bold;
-    padding: 10px 0;
-    border-top: 1px solid #666;
+   margin-bottom: 40px;
+    @extend %sans;
   }
   img {
     width: 100% !important;

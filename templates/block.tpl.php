@@ -9,7 +9,7 @@
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 	<?php if (!empty($block->subject)): ?>
-  <header class="blockheader"><?php print $block->subject; ?></header>
+  <header class="blockheader"><div><?php print $block->subject; ?></div></header>
 <?php endif; ?>
 <?php print $content; ?>
 </div>

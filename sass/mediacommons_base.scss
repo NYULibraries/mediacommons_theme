@@ -65,4 +65,12 @@ $breakpoint-no-query-fallbacks: false;
 @import "layout/_spoke";
 @import "layout/_user_profile";
 
-
+img[src *= "default_images"] {
+    // border: 1px solid #222;
+}
+.view-list-of-all-hubs, .hubhead {
+	img[src *= "default_images"] {
+	    display:none !important;
+	    height:0;
+	}
+}

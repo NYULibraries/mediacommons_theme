@@ -2,12 +2,37 @@ body.int {
   .node-hub.view-mode-teaser .field-name-field-body {
     display: none;
   }
-
-  time, .date-display-range {
+  time,
+  .date-display-range {
     display: none !important;
   }
-
   .comment time {
     display: block !important;
+  }
+}
+
+body.imr, body.int {
+  .featured-item-list .featured-item {
+    position: relative;
+  }
+  .featuredhub-info {
+    position: absolute;
+    bottom: 20px;
+    max-width: 88%;
+    left: 20px;
+    time {
+      padding: 0px 3px;
+      background-color: rgba(50, 50, 50, .8);
+      color: #ebebeb !important;
+      margin-bottom: 3px;
+      display: inline-block;
+    }
+    h2 {
+      background-color: rgba(50, 50, 50, .95);
+      padding: 8px;
+      a {
+        color: #ebebeb !important;
+      }
+    }
   }
 }

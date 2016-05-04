@@ -3256,3 +3256,9 @@ body.meco .profile aside > h2 {
   display: none !important;
   height: 0;
 }
+
+/* line 77, ../sass/mediacommons_base.scss */
+#page .manualcrop-preview img {
+  max-width: none !important;
+  border: 2px solid red;
+}

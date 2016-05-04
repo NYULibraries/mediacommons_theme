@@ -1607,31 +1607,38 @@ body.int .comment time {
   display: block !important;
 }
 
-/* line 15, ../sass/projects/_int.scss */
-body.imr .featured-item-list .featured-item, body.int .featured-item-list .featured-item {
+/* line 16, ../sass/projects/_int.scss */
+body.imr .featured-item-list .featured-item,
+body.int .featured-item-list .featured-item {
   position: relative;
 }
-/* line 18, ../sass/projects/_int.scss */
-body.imr .featuredhub-info, body.int .featuredhub-info {
+/* line 19, ../sass/projects/_int.scss */
+body.imr .featuredhub-info,
+body.int .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 23, ../sass/projects/_int.scss */
-body.imr .featuredhub-info time, body.int .featuredhub-info time {
+/* line 24, ../sass/projects/_int.scss */
+body.imr .featuredhub-info time,
+body.int .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(50, 50, 50, 0.8);
   color: #ebebeb !important;
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 30, ../sass/projects/_int.scss */
-body.imr .featuredhub-info h2, body.int .featuredhub-info h2 {
+/* line 31, ../sass/projects/_int.scss */
+body.imr .featuredhub-info h2,
+body.int .featuredhub-info h2 {
   background-color: rgba(50, 50, 50, 0.95);
   padding: 8px;
+  font-size: 18px;
+  line-height: 1.4;
 }
-/* line 33, ../sass/projects/_int.scss */
-body.imr .featuredhub-info h2 a, body.int .featuredhub-info h2 a {
+/* line 34, ../sass/projects/_int.scss */
+body.imr .featuredhub-info h2 a,
+body.int .featuredhub-info h2 a {
   color: #ebebeb !important;
 }

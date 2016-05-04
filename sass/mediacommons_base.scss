@@ -74,3 +74,7 @@ img[src *= "default_images"] {
 	    height:0;
 	}
 }
+#page .manualcrop-preview  img { 
+	max-width: none !important;	
+	border: 2px solid red; 
+	}

@@ -33,15 +33,14 @@
   <?php endif; ?>
 
  <article id="content">
-
   <?php 
 
     if ($title): print '<h1 class="page-title">' . $title . '</h1>'; endif;
 
     print render($page['content']); ?> 
   </article>
- <?php if (isset($page['sidebar_first'])) : ?>
-          <aside role="complementary"><?php print render($page['sidebar_first']); ?>
+ <?php if (isset($page['sidebar_basicpage1'])) : ?>
+          <aside role="complementary"><?php print render($page['sidebar_basicpage1']); ?>
           </aside>
   <?php endif; ?> </main>
   

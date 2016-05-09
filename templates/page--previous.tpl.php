@@ -19,7 +19,7 @@
   <?php endif; ?>
 
 <main role="main">
-
+<h1 class="page-title">Archive: all hubs </h1>
    <?php if ($tabs) : ?>
   <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>
@@ -33,12 +33,15 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
- <article id="content">  
-  <?php print render($page['content']); ?> 
+ <article id="contentwide "> 
+
+    <?php  if ($title): 
+    print '<h1 class="page-title">' . $title . '</h1>'; 
+    endif; ?>
+    
+    <?php print render($page['content']); ?> 
   </article>
- <?php if (isset($page['sidebar_previous_clusters'])) : ?>
-  <aside role="complementary"><?php print render($page['sidebar_previous_clusters']); ?></aside>
-  <?php endif; ?> </main>
+</main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>

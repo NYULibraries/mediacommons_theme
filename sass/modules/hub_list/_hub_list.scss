@@ -1,4 +1,9 @@
 /* MODULES: Component styles that are layout independent */
+.page-previous {
+  h1.page-title {
+    margin-bottom: 30px;
+  }
+}
 .field-name-post-date {
   margin-left: 110px;
 }
@@ -22,7 +27,9 @@ aside + h2 {
   clear: both;
 }
 
+
 /*****************************/
+
 .node-hub {
   .hub-title {
     font-size: 1.5em;
@@ -56,7 +63,8 @@ aside + h2 {
     border-bottom: 1px solid #edd8c6;
   }
   .field-name-field-period {
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: nth($black, 2);
     }
     .field-label {
@@ -70,7 +78,36 @@ aside + h2 {
   }
 }
 
-.field-name-field-period, .field-name-post-date {
+.view-mode-hub_teaser_for_archive_page {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 4px solid #ccc;
+  &:first-child {
+     border-top: 4px solid #ccc;
+      padding-top: 40px;
+  }
+  display: flex;
+  .field-name-field-representative-image {
+    float: left;
+    flex: 0 0 32%;
+  
+    height: auto;
+    margin-right: 40px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .group-rightside {
+    flex: 1 1 auto;
+  }
+  .field-name-field-spokes {
+    margin-top: 20px;
+  }
+}
+
+.field-name-field-period,
+.field-name-post-date {
   @extend %date-treatment;
 }
 
@@ -87,9 +124,10 @@ aside + h2 {
     display: inline-block;
     padding-right: .25rem;
     // font-size: 0.85rem;
- 
   }
-  a:link, a:active, a:visited {
+  a:link,
+  a:active,
+  a:visited {
     color: nth($black, 2) !important;
   }
   ul {
@@ -113,7 +151,8 @@ aside + h2 {
     /* for spoke pages, when there is an org */
     float: left;
     margin-right: 5px;
-    .p-name, .p-org {
+    .p-name,
+    .p-org {
       float: left;
     }
     &:after {
@@ -132,13 +171,28 @@ aside + h2 {
     padding-top: 0;
     padding-bottom: 0;
     line-height: 1.25;
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: nth($black, 1);
     }
   }
 }
 
-.view-mode-toc_spoke, .node-spoke.view-mode-teaser {
+h2.spoke-title {
+  font-size: 1.1rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.25;
+  // background-color: red;
+  a:link,
+  a:visited {
+    color: nth($black, 1) !important;
+  }
+}
+
+.view-mode-toc_spoke,
+.node-spoke.view-mode-teaser {
   time {
     font-size: 0.8rem;
     display: block;
@@ -153,23 +207,7 @@ aside + h2 {
     /* the edit option cog breaks links in left floated aside otherwise */
     left: 0;
   }
-  // .thumb {
-  //     float: left;
-  //     margin-right: 10px;
-  // }
-  a:link, a:visited {
-    color: nth($black, 2);
-  }
-  h2 {
-    font-size: 1.1rem;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 1.25;
-    a:link, a:visited {
-      color: nth($black, 1);
-    }
-  }
+
   .field-name-author {
     // margin-top: 0em;
     font-size: .8em;

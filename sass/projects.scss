@@ -287,7 +287,6 @@ body.fieldguide {
         padding: 3px 29px;
       }
     }
-  
     .field-name-field-spokes {
       // border-left: 1px solid lighten($fg_primary, 15%);
       // background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
@@ -298,29 +297,26 @@ body.fieldguide {
   }
 }
 
+body .hub-title {
+  font-size: 31px;
+  padding-top: 0;
+  color: nth($type-color, 1);
+  a:link,
+  a:visited {
+    color: #111;
+  }
+}
+
 body.front {
   #content {
     width: auto;
     float: none;
-  }
-  .hubhead {
-    .field-name-title h1.hub-title {
-      font-size: 31px;
-      padding-top: 0;
-      color: nth($type-color, 1);
-      a {
-        color: black;
-      }
-    }
   }
   @include respond-to("desktop-lh") {
     .hubhead {
       float: left;
       width: 32%;
     }
-  }
-  .node-hub {
-    //border-top: 1px solid nth($type-color, 3);
   }
   .view-mode-toc_spoke,
   .node-spoke.view-mode-teaser {

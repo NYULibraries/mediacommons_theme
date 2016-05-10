@@ -937,66 +937,68 @@ body.fieldguide.front .hubhead .field-name-title h1.hub-title {
 body.fieldguide.front .timerangeheader > * {
   padding: 3px 29px;
 }
-/* line 294, ../sass/projects.scss */
+/* line 293, ../sass/projects.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
 }
 
-/* line 302, ../sass/projects.scss */
-body.front #content {
-  width: auto;
-  float: none;
-}
-/* line 307, ../sass/projects.scss */
-body.front .hubhead .field-name-title h1.hub-title {
+/* line 300, ../sass/projects.scss */
+body .hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
+/* line 304, ../sass/projects.scss */
+body .hub-title a:link,
+body .hub-title a:visited {
+  color: #111;
+}
+
 /* line 311, ../sass/projects.scss */
-body.front .hubhead .field-name-title h1.hub-title a {
-  color: black;
+body.front #content {
+  width: auto;
+  float: none;
 }
 @media (min-width: 52.5625em) {
-  /* line 317, ../sass/projects.scss */
+  /* line 316, ../sass/projects.scss */
   body.front .hubhead {
     float: left;
     width: 32%;
   }
 }
-/* line 325, ../sass/projects.scss */
+/* line 321, ../sass/projects.scss */
 body.front .view-mode-toc_spoke,
 body.front .node-spoke.view-mode-teaser {
   border-bottom: 1px solid #c8c8c8;
   border-bottom: none;
   padding: 0 0 .5em;
 }
-/* line 331, ../sass/projects.scss */
+/* line 327, ../sass/projects.scss */
 body.front .daterange {
   font-weight: bold;
   text-transform: uppercase;
 }
-/* line 335, ../sass/projects.scss */
+/* line 331, ../sass/projects.scss */
 body.front .caption {
   font-size: .7em;
 }
-/* line 338, ../sass/projects.scss */
+/* line 334, ../sass/projects.scss */
 body.front .field-name-post-date,
 body.front .field-name-author {
   margin-left: 0;
   display: block;
   float: left;
 }
-/* line 344, ../sass/projects.scss */
+/* line 340, ../sass/projects.scss */
 body.front .thumb {
   min-width: 100px;
 }
-/* line 347, ../sass/projects.scss */
+/* line 343, ../sass/projects.scss */
 body.front .field-name-field-body {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 351, ../sass/projects.scss */
+  /* line 347, ../sass/projects.scss */
   body.front .field-name-field-spokes {
     float: right;
     width: 66%;
@@ -1004,7 +1006,7 @@ body.front .field-name-field-body {
     padding-left: 22px;
   }
 }
-/* line 384, ../sass/projects.scss */
+/* line 380, ../sass/projects.scss */
 body.front .timerangeheader {
   background-color: #333;
   font-size: .8rem;
@@ -1012,7 +1014,7 @@ body.front .timerangeheader {
   margin-bottom: 1rem;
 }
 @media (min-width: 52.5625em) {
-  /* line 384, ../sass/projects.scss */
+  /* line 380, ../sass/projects.scss */
   body.front .timerangeheader {
     float: right;
     width: 66%;

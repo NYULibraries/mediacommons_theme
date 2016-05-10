@@ -192,11 +192,11 @@ textarea[required] {
 }
 
 /* line 5, ../sass/base/webfonts/_webfonts_extendables.scss */
-body, .view-mc-recent-comments li .views-field-comment-body {
+.view-mc-recent-comments li .views-field-comment-body {
   font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
 }
 /* line 7, ../sass/base/webfonts/_webfonts_extendables.scss */
-.wf-droidserif-n4-active body, .wf-droidserif-n4-active .view-mc-recent-comments li .views-field-comment-body, .view-mc-recent-comments li .wf-droidserif-n4-active .views-field-comment-body {
+.wf-droidserif-n4-active .view-mc-recent-comments li .views-field-comment-body, .view-mc-recent-comments li .wf-droidserif-n4-active .views-field-comment-body {
   font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
 }
 
@@ -251,7 +251,7 @@ em .wf-droidserif-i7-active b {
 }
 
 /* line 32, ../sass/base/webfonts/_webfonts_extendables.scss */
-.wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
+body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
@@ -259,7 +259,7 @@ em .wf-droidserif-i7-active b {
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
-.wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
+.wf-droidsans-n4-active body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
@@ -294,7 +294,7 @@ h1 {
 h2 {
   font-weight: normal;
   font-size: 1.66667em;
-  line-height: 1.1;
+  line-height: 1.25;
   padding-top: 0.25em;
   margin-bottom: 0;
   color: #5a5a5a;
@@ -2492,7 +2492,7 @@ ul.action-links li a {
 .comments .title {
   font-weight: normal;
   font-size: 1.66667em;
-  line-height: 1.1;
+  line-height: 1.25;
   color: #5a5a5a;
   margin-bottom: .5em;
 }
@@ -2837,26 +2837,26 @@ ul.links.inline li {
 }
 
 /* MODULES: Component styles that are layout independent */
-/* line 3, ../sass/modules/hub_list/_hub_list.scss */
+/* line 4, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous h1.page-title {
   margin-bottom: 30px;
 }
 
-/* line 7, ../sass/modules/hub_list/_hub_list.scss */
+/* line 9, ../sass/modules/hub_list/_hub_list.scss */
 .field-name-post-date {
   margin-left: 110px;
 }
 
-/* line 11, ../sass/modules/hub_list/_hub_list.scss */
+/* line 13, ../sass/modules/hub_list/_hub_list.scss */
 .field-name-field-spokes img {
   display: block;
 }
 
-/* line 15, ../sass/modules/hub_list/_hub_list.scss */
+/* line 17, ../sass/modules/hub_list/_hub_list.scss */
 body.front [role="directory"].toc {
   margin: 0;
 }
-/* line 17, ../sass/modules/hub_list/_hub_list.scss */
+/* line 19, ../sass/modules/hub_list/_hub_list.scss */
 body.front [role="directory"].toc h1.hub-title {
   font-size: 2em;
   padding: .4em 0 0 0;
@@ -2865,79 +2865,78 @@ body.front [role="directory"].toc h1.hub-title {
   background-color: yellow;
 }
 
-/* line 26, ../sass/modules/hub_list/_hub_list.scss */
+/* line 28, ../sass/modules/hub_list/_hub_list.scss */
 aside + h2 {
   clear: both;
 }
 
 /*****************************/
-/* line 34, ../sass/modules/hub_list/_hub_list.scss */
+/* line 36, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .hub-title {
   font-size: 1.5em;
   padding: .2em 0 0 0;
   margin: 0 0 .3em 0;
   color: #232323;
 }
-/* line 40, ../sass/modules/hub_list/_hub_list.scss */
+/* line 42, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub p {
   margin: 0 0 .2em 0;
 }
-/* line 43, ../sass/modules/hub_list/_hub_list.scss */
+/* line 45, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .all-spokes {
   position: relative;
   z-index: 10;
 }
-/* line 47, ../sass/modules/hub_list/_hub_list.scss */
+/* line 49, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.3;
 }
-/* line 53, ../sass/modules/hub_list/_hub_list.scss */
+/* line 55, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.view-mode-teaser .field-name-field-representative-image img {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 60, ../sass/modules/hub_list/_hub_list.scss */
+/* line 62, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .view-mode-teaser {
   margin: 0;
   padding: 1.5em 0;
   border-bottom: 1px solid #edd8c6;
 }
-/* line 66, ../sass/modules/hub_list/_hub_list.scss */
+/* line 68, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period a:link,
 .node-hub .field-name-field-period a:visited {
   color: #5a5a5a;
 }
-/* line 70, ../sass/modules/hub_list/_hub_list.scss */
+/* line 72, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-label {
   display: inline-block;
   font-weight: normal;
   margin-right: 5px;
 }
-/* line 75, ../sass/modules/hub_list/_hub_list.scss */
+/* line 77, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
 
-/* line 81, ../sass/modules/hub_list/_hub_list.scss */
+/* line 83, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-hub_teaser_for_archive_page {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 4px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
   display: flex;
 }
-/* line 85, ../sass/modules/hub_list/_hub_list.scss */
+/* line 87, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-hub_teaser_for_archive_page:first-child {
-  border-top: 4px solid #ccc;
-  padding-top: 40px;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
 }
-/* line 90, ../sass/modules/hub_list/_hub_list.scss */
+/* line 92, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-hub_teaser_for_archive_page .field-name-field-representative-image {
-  float: left;
-  flex: 0 0 32%;
+  flex: 0 0 22%;
   height: auto;
-  margin-right: 40px;
+  margin-right: 25px;
 }
 /* line 96, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-hub_teaser_for_archive_page .field-name-field-representative-image img {
@@ -2953,72 +2952,85 @@ aside + h2 {
   margin-top: 20px;
 }
 
-/* line 114, ../sass/modules/hub_list/_hub_list.scss */
+/* line 109, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-spoke_teaser_simplest {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+/* line 115, ../sass/modules/hub_list/_hub_list.scss */
+.view-mode-spoke_teaser_simplest:last-child {
+  border-bottom: none;
+}
+
+/* line 125, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist {
   font-size: .8rem;
-  line-height: 1.25;
   color: #5a5a5a;
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  line-height: 1.5;
 }
-/* line 119, ../sass/modules/hub_list/_hub_list.scss */
+/* line 129, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-content {
   width: auto;
   overflow: auto;
+  background-color: yellow;
 }
-/* line 123, ../sass/modules/hub_list/_hub_list.scss */
+/* line 134, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .field-label {
   display: inline-block;
-  padding-right: .25rem;
+  padding-right: .2rem;
 }
-/* line 128, ../sass/modules/hub_list/_hub_list.scss */
+/* line 139, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist a:link,
 .peoplelist a:active,
 .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 133, ../sass/modules/hub_list/_hub_list.scss */
+/* line 144, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist ul {
   display: inline;
 }
-/* line 136, ../sass/modules/hub_list/_hub_list.scss */
+/* line 147, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li {
   padding-right: .25rem;
   display: inline-block;
 }
-/* line 139, ../sass/modules/hub_list/_hub_list.scss */
+/* line 150, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:after {
   content: ",\20";
 }
-/* line 142, ../sass/modules/hub_list/_hub_list.scss */
+/* line 153, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:last-child:after {
   content: "";
 }
-/* line 146, ../sass/modules/hub_list/_hub_list.scss */
+/* line 157, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .label {
   float: left;
   margin-right: 5px;
 }
-/* line 150, ../sass/modules/hub_list/_hub_list.scss */
+/* line 161, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline {
   /* for spoke pages, when there is an org */
   float: left;
   margin-right: 5px;
 }
-/* line 154, ../sass/modules/hub_list/_hub_list.scss */
+/* line 165, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline .p-name,
 .peoplelist .view-mode-user_byline .p-org {
   float: left;
 }
-/* line 158, ../sass/modules/hub_list/_hub_list.scss */
+/* line 169, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:after {
   content: ",\20";
 }
-/* line 161, ../sass/modules/hub_list/_hub_list.scss */
+/* line 172, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:last-child:after {
   content: "";
 }
 
-/* line 168, ../sass/modules/hub_list/_hub_list.scss */
+/* line 179, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3026,13 +3038,13 @@ aside + h2 {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 174, ../sass/modules/hub_list/_hub_list.scss */
+/* line 185, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title a:link,
 .node .node-teaser-title a:visited {
   color: #232323;
 }
 
-/* line 181, ../sass/modules/hub_list/_hub_list.scss */
+/* line 192, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3040,65 +3052,65 @@ h2.spoke-title {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 188, ../sass/modules/hub_list/_hub_list.scss */
+/* line 199, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title a:link,
 h2.spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 194, ../sass/modules/hub_list/_hub_list.scss */
+/* line 205, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke,
 .node-spoke.view-mode-teaser {
   padding: .8em 0;
   line-height: 1.5;
   border-bottom: 1px solid #c8c8c8;
 }
-/* line 196, ../sass/modules/hub_list/_hub_list.scss */
+/* line 207, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke time,
 .node-spoke.view-mode-teaser time {
   font-size: 0.8rem;
   display: block;
 }
-/* line 200, ../sass/modules/hub_list/_hub_list.scss */
+/* line 211, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke.clearfix:after,
 .node-spoke.view-mode-teaser.clearfix:after {
   clear: left;
 }
-/* line 206, ../sass/modules/hub_list/_hub_list.scss */
+/* line 217, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .contextual-links-wrapper,
 .node-spoke.view-mode-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 211, ../sass/modules/hub_list/_hub_list.scss */
+/* line 221, ../sass/modules/hub_list/_hub_list.scss */
 .view-mode-toc_spoke .field-name-author,
 .node-spoke.view-mode-teaser .field-name-author {
   font-size: .8em;
   font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
 }
 
-/* line 219, ../sass/modules/hub_list/_hub_list.scss */
+/* line 229, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 223, ../sass/modules/hub_list/_hub_list.scss */
+/* line 233, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
   clear: left;
 }
 
-/* line 231, ../sass/modules/hub_list/_hub_list.scss */
+/* line 241, ../sass/modules/hub_list/_hub_list.scss */
 body .node-hub.view-mode-teaser {
   border-bottom: 1px solid #ccc;
   padding: 1em 0;
 }
-/* line 234, ../sass/modules/hub_list/_hub_list.scss */
+/* line 244, ../sass/modules/hub_list/_hub_list.scss */
 body .node-hub.view-mode-teaser:first-child {
   padding: 0 0 1em;
 }
-/* line 237, ../sass/modules/hub_list/_hub_list.scss */
+/* line 247, ../sass/modules/hub_list/_hub_list.scss */
 body .node-hub.view-mode-teaser:last-child {
   border: none;
 }
@@ -3766,7 +3778,7 @@ footer#footer {
 .spoke .curatorsnote {
   font-weight: normal;
   font-size: 1.66667em;
-  line-height: 1.1;
+  line-height: 1.25;
   color: #5a5a5a;
   margin-bottom: .5em;
 }

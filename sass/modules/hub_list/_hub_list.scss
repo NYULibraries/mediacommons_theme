@@ -1,9 +1,11 @@
 /* MODULES: Component styles that are layout independent */
+
 .page-previous {
   h1.page-title {
     margin-bottom: 30px;
   }
 }
+
 .field-name-post-date {
   margin-left: 110px;
 }
@@ -79,20 +81,18 @@ aside + h2 {
 }
 
 .view-mode-hub_teaser_for_archive_page {
-  margin-bottom: 40px;
-  padding-bottom: 40px;
-  border-bottom: 4px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
   &:first-child {
-     border-top: 4px solid #ccc;
-      padding-top: 40px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
   }
   display: flex;
   .field-name-field-representative-image {
-    float: left;
-    flex: 0 0 32%;
-  
+    flex: 0 0 22%;
     height: auto;
-    margin-right: 40px;
+    margin-right: 25px;
     img {
       width: 100%;
       height: auto;
@@ -106,6 +106,17 @@ aside + h2 {
   }
 }
 
+.view-mode-spoke_teaser_simplest {
+  float: left;
+  clear: left;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
 .field-name-field-period,
 .field-name-post-date {
   @extend %date-treatment;
@@ -113,16 +124,16 @@ aside + h2 {
 
 .peoplelist {
   font-size: .8rem;
-  line-height: 1.25;
   color: nth($black, 2);
-  font-family: $header-font-family;
+  line-height: 1.5;
   .view-content {
     width: auto;
     overflow: auto;
+    background-color: yellow;
   }
   .field-label {
     display: inline-block;
-    padding-right: .25rem;
+    padding-right: .2rem;
     // font-size: 0.85rem;
   }
   a:link,
@@ -207,7 +218,6 @@ h2.spoke-title {
     /* the edit option cog breaks links in left floated aside otherwise */
     left: 0;
   }
-
   .field-name-author {
     // margin-top: 0em;
     font-size: .8em;

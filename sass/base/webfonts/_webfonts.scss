@@ -8,7 +8,7 @@
 // Google fonts using webfont loader JS to load font and add the class to the html tag once it's loaded
 
 body {
-  @extend %serif; 
+  @extend %sans; 
 }
 .wf-droidsans-n4-active {
   #{headings()},

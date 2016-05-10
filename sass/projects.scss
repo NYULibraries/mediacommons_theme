@@ -110,11 +110,13 @@ $col in $map {
           background-color: lighten($col, 29%);
           background-color: $col;
           color: $body-color;
+           color: #fff;
           text-transform: uppercase;
           font-size: .8rem;
           line-height: 1.3;
-          padding: 1px 12px 0;
+          padding: 0px 12px 1px;
           float: left;
+          margin-top: -1px;
         }
       }
       .field-name-field-spokes {
@@ -133,7 +135,7 @@ $col in $map {
         div {
           background-color: lighten($col, 29%);
           background-color: $col;
-          // color: white;
+          color: white;
           text-transform: uppercase;
           font-size: .9rem;
           line-height: 1.3;

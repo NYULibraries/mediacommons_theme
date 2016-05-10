@@ -262,24 +262,19 @@ function mediacommons_field__field_tags( $vars ) {
   $output .= '</ul></div>';
   return $output;
 }
-/**
- * End User Profile
- */
+
 function mediacommons_field__field_contributors__spoke( $vars ) {
   //dpm($vars);
-  // CUrrently used just for spoke teasers - simple list
+  // Currently used for spoke teasers and spoke teaser simplest 
+
   $output ='';
   $output .= '<div class="peoplelist contributors">' ;
   if ( isset( $vars['items'][0]['#title'] ) ) {
-
-
-    $output .= '<div class="field-label">' . $vars['label'] . ':</div><ul >';
+    $output .= '<div class="field-label">' . $vars['label'] . '</div><ul >';
     foreach ( element_children( $vars['items'] ) as $key ) {
       $output .= '<li>' . drupal_render( $vars['items'][$key] ) . '</li>';
     }
-
   }
-
   $output .= '</ul></div>';
   return $output;
 }
@@ -309,7 +304,6 @@ function mediacommons_field__field_co_editor( $vars ) {
   $output .= '</ul></div>';
   return $output;
 }
-//field--field-tags.tpl.php
 /* navigation */
 
 function mediacommons_preprocess_menu_tree( &$variables ) {

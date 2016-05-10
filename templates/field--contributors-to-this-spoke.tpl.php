@@ -15,7 +15,7 @@
 ?>
 
 <div class="peoplelist clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="label">By:</div> 
+  <div class="label">by</div> 
  	<?php foreach ($items as $delta => $item): ?>
       <?php print render($item); ?>
  	<?php endforeach; ?>

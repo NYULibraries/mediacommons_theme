@@ -15,6 +15,7 @@
 }
 
 body.front [role="directory"].toc {
+   background-color: fuchsia;
   margin: 0;
   h1.hub-title {
     font-size: 2em;
@@ -79,13 +80,19 @@ aside + h2 {
     }
   }
 }
-
+.node-spoke.node-teaser:last-child{
+  border-bottom: none;
+  margin-bottom: 20px;
+}
 .view-mode-hub_teaser_for_archive_page {
+
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
+  border-bottom: 3px solid rgba(120, 42, 113, 0.33);
   &:first-child {
     border-top: 1px solid #ccc;
+    border-top: 3px solid rgba(120, 42, 113, 0.33);
     padding-top: 20px;
   }
   display: flex;
@@ -98,24 +105,31 @@ aside + h2 {
       height: auto;
     }
   }
+  .thumb {
+    width: 80px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
   .group-rightside {
     flex: 1 1 auto;
   }
   .field-name-field-spokes {
-    margin-top: 20px;
+    margin-top: 10px;
+  }
+  body.fieldguide & {
+    h2.spoke-title,
+    .peoplelist {
+      display: inline-block;
+    }
+    .node-spoke.view-mode-teaser {
+      border-bottom: 1px solid rgba(204, 204, 204, 0.44);
+    }
   }
 }
 
-.view-mode-spoke_teaser_simplest {
-  float: left;
-  clear: left;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  &:last-child {
-    border-bottom: none;
-  }
-}
+
 
 .field-name-field-period,
 .field-name-post-date {
@@ -189,20 +203,23 @@ aside + h2 {
   }
 }
 
+.node-spoke.node-teaser {
+  font-size: .75rem;
+}
+
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 1.25;
-  // background-color: red;
   a:link,
   a:visited {
     color: nth($black, 1) !important;
   }
+
 }
 
-.view-mode-toc_spoke,
 .node-spoke.view-mode-teaser {
   time {
     font-size: 0.8rem;

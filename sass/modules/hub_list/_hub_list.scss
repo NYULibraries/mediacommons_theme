@@ -1,30 +1,5 @@
 /* MODULES: Component styles that are layout independent */
 
-.page-previous {
-  h1.page-title {
-    margin-bottom: 30px;
-  }
-}
-
-.field-name-post-date {
-  margin-left: 110px;
-}
-
-.field-name-field-spokes img {
-  display: block;
-}
-
-body.front [role="directory"].toc {
-  margin: 0;
-  h1.hub-title {
-    font-size: 2em;
-    padding: .4em 0 0 0;
-    margin: 0 0 .1em 0;
-    color: nth($black, 1);
-    background-color: yellow;
-  }
-}
-
 aside + h2 {
   clear: both;
 }
@@ -42,27 +17,9 @@ aside + h2 {
   p {
     margin: 0 0 .2em 0;
   }
-  .all-spokes {
-    position: relative;
-    z-index: 10;
-  }
   .field-name-field-body {
     margin: .5rem 0 0 0;
     line-height: 1.3;
-  }
-  &.view-mode-teaser {
-    .field-name-field-representative-image {
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-  }
-  .view-mode-teaser {
-    margin: 0;
-    padding: 1.5em 0;
-    border-bottom: 1px solid #edd8c6;
   }
   .field-name-field-period {
     a:link,
@@ -78,48 +35,131 @@ aside + h2 {
       display: inline-block;
     }
   }
+  &.view-mode-teaser {
+    border-bottom: 1px solid #ccc;
+    padding: 1em 0;
+    &:first-child {
+      padding: 0 0 1em;
+    }
+    &:last-child {
+      border: none;
+    }
+    .field-name-field-representative-image {
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  &.view-mode-full {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .group-flex1 {
+      flex: 1 0 400px;
+    }
+    .group-flex2 {
+      flex: 1 0 auto;
+      // margin-left: 2%;
+    }
+  }
+  &.node-teaser {
+    display: flex;
+    .group-flex1 {
+      flex: 0 0 25%;
+    }
+    .group-flex2 {
+      flex: 1 0 auto;
+      padding-left: 15px;
+    }
+  }
 }
 
-.view-mode-hub_teaser_for_archive_page {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  &:first-child {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
+.node-spoke {
+  &.node-teaser:last-child {
+    border-bottom: none;
+    margin-bottom: 10px;
   }
-  display: flex;
-  .field-name-field-representative-image {
-    flex: 0 0 22%;
-    height: auto;
-    margin-right: 25px;
+  &.view-mode-teaser {
+    time {
+      font-size: 0.8rem;
+      display: block;
+    }
+    &.clearfix:after {
+      clear: left;
+    }
+    padding: .8em 0;
+    line-height: 1.5;
+    border-bottom: 1px solid nth($black, 4);
+    margin: 0;
+    .contextual-links-wrapper {
+      /* the edit option cog breaks links in left floated aside otherwise */
+      left: 0;
+    }
+    .field-name-author {
+      // margin-top: 0em;
+      font-size: .8em;
+      font-family: $header-font-family;
+    }
+  }
+  &.view-mode-full {
+    .field-name-field-attached-images {
+      float: left;
+      margin-right: 10px;
+    }
+    .field-name-field-body {
+      margin: .5rem 0 0 0;
+      line-height: 1.5;
+      clear: left;
+    }
+  }
+}
+
+body.fieldguide .node-hub.node-teaser {
+  h2.spoke-title,
+  .peoplelist {
+    display: inline-block;
+  }
+}
+
+.page-previous {
+  h1.page-title {
+    margin-bottom: 30px;
+  }
+  .thumb {
+    width: 80px;
     img {
       width: 100%;
       height: auto;
     }
   }
-  .group-rightside {
-    flex: 1 1 auto;
-  }
-  .field-name-field-spokes {
-    margin-top: 20px;
+}
+
+.node {
+  .node-teaser-title {
+    font-size: 1.1rem;
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 1.25;
+    a:link,
+    a:visited {
+      color: nth($black, 1);
+    }
   }
 }
 
-.view-mode-spoke_teaser_simplest {
-  float: left;
-  clear: left;
-  margin-bottom: 10px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-  &:last-child {
-    border-bottom: none;
+h2.spoke-title {
+  font-size: 1.1rem;
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 1.25;
+  a:link,
+  a:visited {
+    color: nth($black, 1) !important;
   }
-}
-
-.field-name-field-period,
-.field-name-post-date {
-  @extend %date-treatment;
 }
 
 .peoplelist {
@@ -171,81 +211,6 @@ aside + h2 {
     }
     &:last-child:after {
       content: "";
-    }
-  }
-}
-
-.node {
-  .node-teaser-title {
-    font-size: 1.1rem;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 1.25;
-    a:link,
-    a:visited {
-      color: nth($black, 1);
-    }
-  }
-}
-
-h2.spoke-title {
-  font-size: 1.1rem;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 1.25;
-  // background-color: red;
-  a:link,
-  a:visited {
-    color: nth($black, 1) !important;
-  }
-}
-
-.view-mode-toc_spoke,
-.node-spoke.view-mode-teaser {
-  time {
-    font-size: 0.8rem;
-    display: block;
-  }
-  &.clearfix:after {
-    clear: left;
-  }
-  padding: .8em 0;
-  line-height: 1.5;
-  border-bottom: 1px solid nth($black, 4);
-  .contextual-links-wrapper {
-    /* the edit option cog breaks links in left floated aside otherwise */
-    left: 0;
-  }
-  .field-name-author {
-    // margin-top: 0em;
-    font-size: .8em;
-    font-family: $header-font-family;
-  }
-}
-
-.node-spoke.view-mode-full {
-  .field-name-field-attached-images {
-    float: left;
-    margin-right: 10px;
-  }
-  .field-name-field-body {
-    margin: .5rem 0 0 0;
-    line-height: 1.5;
-    clear: left;
-  }
-}
-
-body {
-  .node-hub.view-mode-teaser {
-    border-bottom: 1px solid #ccc;
-    padding: 1em 0;
-    &:first-child {
-      padding: 0 0 1em;
-    }
-    &:last-child {
-      border: none;
     }
   }
 }

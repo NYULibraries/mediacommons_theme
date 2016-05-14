@@ -2,10 +2,42 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 
-.views-field-comment-count {
-  background: nth($secondary, 5);
-  display: none;
+
+.comment-count {
+    position: relative;
+    width:auto;
+    max-width: 40px;
+    min-width: 20px;
+    /*height: 21px;*/
+    margin: 0px 0 20px;
+    text-align: center;
+    font: 14px/1.6 Arial, sans-serif;
+    color: #fff;
+    background: #eee;
+    float:right;
+    // display: none;
 }
+
+.comment-count:before {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    border-width: 0 0 8px 13px;
+    border-style: solid;
+    border-color: transparent #dedede;
+}
+
+.comment-count:after {
+   content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 9px;
+    border-width: 0 0 8px 4px;
+    border-style: solid;
+    border-color: transparent #fff;
+}
+
 
 .comments {
   margin-bottom: 2em;
@@ -133,8 +165,8 @@ ul.links.inline li {
     margin: 0;
   }
   li {
-    width: auto;
-    overflow: hidden;
+    // width: auto;
+    // overflow: hidden;
     padding: .5rem .5rem .5rem 0rem;
     font-size: .7rem;
     line-height: 1.2;

@@ -1,4 +1,5 @@
-.front.mc [role="banner"], .front.mc footer#footer {
+.front.mc [role="banner"],
+.front.mc footer#footer {
   max-width: 84rem;
   margin: 3em auto 0;
 }
@@ -47,7 +48,6 @@
       text-transform: uppercase;
       font-size: .9rem;
       // line-height: 1.3;
-   
     }
     .hub-title {
       clear: both;
@@ -173,14 +173,12 @@
     flex: 0 0 75%;
     // margin: 1% 0;
     //background-color: pink;
- 
   }
   aside {
     -ms-flex: 0 1 24%;
     -webkit-flex: 0 1 24%;
     flex: 0 1 24%;
     // margin: 1% 0;
- 
   }
 }
 
@@ -212,15 +210,14 @@
       flex: 0 1 49%;
       margin: 1% 0;
     }
-
     @include respond-to("mobile-lh") {
       -webkit-flex: 1 1 100%;
       flex: 1 1 100%;
       margin: 1% 0;
     }
-
     overflow: hidden;
   }
+  
 }
 
 @include respond-to("mobile-lh") {
@@ -229,7 +226,6 @@
   margin: 1% 0;
 }
 
-
 .featured-more {
   margin: 3rem 0 3rem;
   h2 {
@@ -237,17 +233,19 @@
     line-height: 1.2;
     padding-bottom: 7px;
     padding-top: 0;
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: black !important;
     }
   }
   .peoplelist {
-    a:link, a:visited {
+    a:link,
+    a:visited {
       color: $time-color !important;
     }
   }
   header {
-   margin-bottom: 40px;
+    margin-bottom: 40px;
     @extend %sans;
   }
   img {
@@ -265,7 +263,6 @@
       margin: 1rem 0 1rem;
       line-height: 1.3;
       // color: #111;
-   
     }
     .field-item {
       margin: 1em 0;
@@ -274,7 +271,6 @@
       font-size: 1.2rem;
       a:link {
         //color: #5a5a5a;
-     
       }
     }
     a.username {

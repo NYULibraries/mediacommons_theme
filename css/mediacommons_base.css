@@ -942,39 +942,40 @@ a.control:active {
 }
 
 /* line 1, ../sass/modules/homepage/_homepage.scss */
-.front.mc [role="banner"], .front.mc footer#footer {
+.front.mc [role="banner"],
+.front.mc footer#footer {
   max-width: 84rem;
   margin: 3em auto 0;
 }
 
-/* line 7, ../sass/modules/homepage/_homepage.scss */
+/* line 8, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="banner"] .logo {
   width: 22.5rem;
 }
 
-/* line 13, ../sass/modules/homepage/_homepage.scss */
+/* line 14, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="complementary"] {
   background-color: #fff;
 }
 
-/* line 18, ../sass/modules/homepage/_homepage.scss */
+/* line 19, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] {
   max-width: 84rem;
   margin: 0em auto 0;
 }
-/* line 21, ../sass/modules/homepage/_homepage.scss */
+/* line 22, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .button.skip-arrow {
   display: none;
 }
-/* line 25, ../sass/modules/homepage/_homepage.scss */
+/* line 26, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .featured-more {
   margin-top: 0;
 }
-/* line 28, ../sass/modules/homepage/_homepage.scss */
+/* line 29, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] #content {
   max-width: none;
 }
-/* line 33, ../sass/modules/homepage/_homepage.scss */
+/* line 34, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc {
   background-color: fuchsia;
   border-top: 4px solid #d7a100;
@@ -982,7 +983,7 @@ a.control:active {
   padding: 0 10px 10px 10px;
   margin-top: 15px;
 }
-/* line 39, ../sass/modules/homepage/_homepage.scss */
+/* line 40, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc .field-name-field-project {
   background: #d7a100;
   margin: 0px 0 0 -10px;
@@ -1122,14 +1123,14 @@ a.control:active {
   -webkit-flex: 0 0 75%;
   flex: 0 0 75%;
 }
-/* line 178, ../sass/modules/homepage/_homepage.scss */
+/* line 177, ../sass/modules/homepage/_homepage.scss */
 .flexhold aside {
   -ms-flex: 0 1 24%;
   -webkit-flex: 0 1 24%;
   flex: 0 1 24%;
 }
 
-/* line 187, ../sass/modules/homepage/_homepage.scss */
+/* line 185, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1142,7 +1143,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 198, ../sass/modules/homepage/_homepage.scss */
+/* line 196, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1150,7 +1151,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 205, ../sass/modules/homepage/_homepage.scss */
+/* line 203, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1159,7 +1160,7 @@ a.control:active {
   overflow: hidden;
 }
 @media (min-width: 37.5em) and (max-width: 52.5em) {
-  /* line 205, ../sass/modules/homepage/_homepage.scss */
+  /* line 203, ../sass/modules/homepage/_homepage.scss */
   .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1167,7 +1168,7 @@ a.control:active {
   }
 }
 @media (min-width: 0em) and (max-width: 37.4375em) {
-  /* line 205, ../sass/modules/homepage/_homepage.scss */
+  /* line 203, ../sass/modules/homepage/_homepage.scss */
   .featured-item-list .featured-item {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
@@ -1180,55 +1181,57 @@ a.control:active {
   flex: 1 1 100%;
   margin: 1% 0;
 }
-/* line 233, ../sass/modules/homepage/_homepage.scss */
+/* line 229, ../sass/modules/homepage/_homepage.scss */
 .featured-more {
   margin: 3rem 0 3rem;
 }
-/* line 235, ../sass/modules/homepage/_homepage.scss */
+/* line 231, ../sass/modules/homepage/_homepage.scss */
 .featured-more h2 {
   font-size: 1.3em;
   line-height: 1.2;
   padding-bottom: 7px;
   padding-top: 0;
 }
-/* line 240, ../sass/modules/homepage/_homepage.scss */
-.featured-more h2 a:link, .featured-more h2 a:visited {
+/* line 236, ../sass/modules/homepage/_homepage.scss */
+.featured-more h2 a:link,
+.featured-more h2 a:visited {
   color: black !important;
 }
-/* line 245, ../sass/modules/homepage/_homepage.scss */
-.featured-more .peoplelist a:link, .featured-more .peoplelist a:visited {
+/* line 242, ../sass/modules/homepage/_homepage.scss */
+.featured-more .peoplelist a:link,
+.featured-more .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 249, ../sass/modules/homepage/_homepage.scss */
+/* line 247, ../sass/modules/homepage/_homepage.scss */
 .featured-more header {
   margin-bottom: 40px;
 }
-/* line 253, ../sass/modules/homepage/_homepage.scss */
+/* line 251, ../sass/modules/homepage/_homepage.scss */
 .featured-more img {
   width: 100% !important;
   height: auto !important;
   display: block;
 }
 
-/* line 261, ../sass/modules/homepage/_homepage.scss */
+/* line 259, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey {
   padding: .5rem 1rem;
 }
-/* line 263, ../sass/modules/homepage/_homepage.scss */
+/* line 261, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .survey-question {
   font-size: 1.4rem;
   margin: 1rem 0 1rem;
   line-height: 1.3;
 }
-/* line 270, ../sass/modules/homepage/_homepage.scss */
+/* line 267, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-item {
   margin: 1em 0;
 }
-/* line 273, ../sass/modules/homepage/_homepage.scss */
+/* line 270, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-name-title {
   font-size: 1.2rem;
 }
-/* line 280, ../sass/modules/homepage/_homepage.scss */
+/* line 276, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey a.username {
   font-size: .9rem;
   display: block;
@@ -2906,7 +2909,6 @@ aside + h2 {
 /* line 50, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.view-mode-full .field-name-field-representative-image img[src*="default"],
 .node-hub.view-mode-full .field-name-field-representative-image img[src*="default_images"] {
-  border: 1px solid pink;
   display: none;
 }
 /* line 57, ../sass/modules/hub_list/_hub_list.scss */

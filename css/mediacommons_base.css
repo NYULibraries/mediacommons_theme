@@ -976,13 +976,12 @@ a.control:active {
 }
 /* line 33, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc {
-  background-color: fuchsia;
   border-top: 4px solid #d7a100;
   background-color: #f4ebe7;
   padding: 0 10px 10px 10px;
   margin-top: 15px;
 }
-/* line 39, ../sass/modules/homepage/_homepage.scss */
+/* line 38, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc .field-name-field-project {
   background: #d7a100;
   margin: 0px 0 0 -10px;
@@ -993,36 +992,36 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 52, ../sass/modules/homepage/_homepage.scss */
+/* line 51, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.1rem;
 }
-/* line 56, ../sass/modules/homepage/_homepage.scss */
+/* line 55, ../sass/modules/homepage/_homepage.scss */
 .front.mc [role="main"] .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }
 
-/* line 62, ../sass/modules/homepage/_homepage.scss */
+/* line 61, ../sass/modules/homepage/_homepage.scss */
 .hubhead img {
   max-width: 100% !important;
   height: auto;
   width: 100%;
 }
 
-/* line 68, ../sass/modules/homepage/_homepage.scss */
+/* line 67, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post {
   background: #222;
   position: relative;
 }
-/* line 71, ../sass/modules/homepage/_homepage.scss */
+/* line 70, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .group-meta {
   position: absolute;
   top: -2px;
   left: 0px;
   margin-right: 10px;
 }
-/* line 78, ../sass/modules/homepage/_homepage.scss */
+/* line 77, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-project {
   background: rgba(0, 0, 0, 0.7);
   display: inline-block;
@@ -1033,7 +1032,7 @@ a.control:active {
   font-size: .9rem;
   line-height: 1.3;
 }
-/* line 88, ../sass/modules/homepage/_homepage.scss */
+/* line 87, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-rlink {
   background: #000;
   background: rgba(0, 0, 0, 0.7);
@@ -1042,7 +1041,7 @@ a.control:active {
   float: left;
   clear: left;
 }
-/* line 95, ../sass/modules/homepage/_homepage.scss */
+/* line 94, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-rlink a {
   color: white !important;
   display: block;
@@ -1050,11 +1049,11 @@ a.control:active {
   font-size: 1.2rem;
   line-height: 1.2;
 }
-/* line 105, ../sass/modules/homepage/_homepage.scss */
+/* line 104, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post.view-mode-full .field-name-field-rlink a {
   font-size: 1.8rem;
 }
-/* line 110, ../sass/modules/homepage/_homepage.scss */
+/* line 109, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-body {
   background: rgba(0, 0, 0, 0.7);
   margin: 10px 0 0 10px;
@@ -1064,14 +1063,14 @@ a.control:active {
   float: left;
   clear: left;
 }
-/* line 120, ../sass/modules/homepage/_homepage.scss */
+/* line 119, ../sass/modules/homepage/_homepage.scss */
 .node-front-page-post .field-name-field-featured-image-thumb img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 128, ../sass/modules/homepage/_homepage.scss */
+/* line 127, ../sass/modules/homepage/_homepage.scss */
 .hometophold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1083,13 +1082,13 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 138, ../sass/modules/homepage/_homepage.scss */
+/* line 137, ../sass/modules/homepage/_homepage.scss */
 .hometophold .hometopleft {
   -ms-flex: 0 0 66%;
   -webkit-flex: 0 0 66%;
   flex: 0 0 66%;
 }
-/* line 143, ../sass/modules/homepage/_homepage.scss */
+/* line 142, ../sass/modules/homepage/_homepage.scss */
 .hometophold .hometopright {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1098,13 +1097,13 @@ a.control:active {
   padding: 10px;
   border-top: 4px solid #144E78;
 }
-/* line 152, ../sass/modules/homepage/_homepage.scss */
+/* line 151, ../sass/modules/homepage/_homepage.scss */
 .hometophold .hometopright .special {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-/* line 159, ../sass/modules/homepage/_homepage.scss */
+/* line 158, ../sass/modules/homepage/_homepage.scss */
 .flexhold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1116,20 +1115,20 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 169, ../sass/modules/homepage/_homepage.scss */
+/* line 168, ../sass/modules/homepage/_homepage.scss */
 .flexhold section {
   -ms-flex: 0 0 75%;
   -webkit-flex: 0 0 75%;
   flex: 0 0 75%;
 }
-/* line 178, ../sass/modules/homepage/_homepage.scss */
+/* line 177, ../sass/modules/homepage/_homepage.scss */
 .flexhold aside {
   -ms-flex: 0 1 24%;
   -webkit-flex: 0 1 24%;
   flex: 0 1 24%;
 }
 
-/* line 187, ../sass/modules/homepage/_homepage.scss */
+/* line 186, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1142,7 +1141,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 198, ../sass/modules/homepage/_homepage.scss */
+/* line 197, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1150,7 +1149,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 205, ../sass/modules/homepage/_homepage.scss */
+/* line 204, ../sass/modules/homepage/_homepage.scss */
 .featured-item-list .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1159,7 +1158,7 @@ a.control:active {
   overflow: hidden;
 }
 @media (min-width: 37.5em) and (max-width: 52.5em) {
-  /* line 205, ../sass/modules/homepage/_homepage.scss */
+  /* line 204, ../sass/modules/homepage/_homepage.scss */
   .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1167,7 +1166,7 @@ a.control:active {
   }
 }
 @media (min-width: 0em) and (max-width: 37.4375em) {
-  /* line 205, ../sass/modules/homepage/_homepage.scss */
+  /* line 204, ../sass/modules/homepage/_homepage.scss */
   .featured-item-list .featured-item {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
@@ -1180,55 +1179,55 @@ a.control:active {
   flex: 1 1 100%;
   margin: 1% 0;
 }
-/* line 233, ../sass/modules/homepage/_homepage.scss */
+/* line 232, ../sass/modules/homepage/_homepage.scss */
 .featured-more {
   margin: 3rem 0 3rem;
 }
-/* line 235, ../sass/modules/homepage/_homepage.scss */
+/* line 234, ../sass/modules/homepage/_homepage.scss */
 .featured-more h2 {
   font-size: 1.3em;
   line-height: 1.2;
   padding-bottom: 7px;
   padding-top: 0;
 }
-/* line 240, ../sass/modules/homepage/_homepage.scss */
+/* line 239, ../sass/modules/homepage/_homepage.scss */
 .featured-more h2 a:link, .featured-more h2 a:visited {
   color: black !important;
 }
-/* line 245, ../sass/modules/homepage/_homepage.scss */
+/* line 244, ../sass/modules/homepage/_homepage.scss */
 .featured-more .peoplelist a:link, .featured-more .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 249, ../sass/modules/homepage/_homepage.scss */
+/* line 248, ../sass/modules/homepage/_homepage.scss */
 .featured-more header {
   margin-bottom: 40px;
 }
-/* line 253, ../sass/modules/homepage/_homepage.scss */
+/* line 252, ../sass/modules/homepage/_homepage.scss */
 .featured-more img {
   width: 100% !important;
   height: auto !important;
   display: block;
 }
 
-/* line 261, ../sass/modules/homepage/_homepage.scss */
+/* line 260, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey {
   padding: .5rem 1rem;
 }
-/* line 263, ../sass/modules/homepage/_homepage.scss */
+/* line 262, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .survey-question {
   font-size: 1.4rem;
   margin: 1rem 0 1rem;
   line-height: 1.3;
 }
-/* line 270, ../sass/modules/homepage/_homepage.scss */
+/* line 269, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-item {
   margin: 1em 0;
 }
-/* line 273, ../sass/modules/homepage/_homepage.scss */
+/* line 272, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey .field-name-title {
   font-size: 1.2rem;
 }
-/* line 280, ../sass/modules/homepage/_homepage.scss */
+/* line 279, ../sass/modules/homepage/_homepage.scss */
 [role="complementary"] .view-simple-for-survey a.username {
   font-size: .9rem;
   display: block;

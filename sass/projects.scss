@@ -86,7 +86,7 @@ $col in $map {
       box-shadow: 0px -3px lighten($col, 15%);
     }
     [role="complementary"] {
-      > div {
+      > div, .block-views {
         background-color: lighten(nth($tertiary, 5), 3%);
       }
       header {

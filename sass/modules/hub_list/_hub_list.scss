@@ -35,23 +35,6 @@ aside + h2 {
       display: inline-block;
     }
   }
-  &.view-mode-teaser {
-    border-bottom: 1px solid #ccc;
-    padding: 1em 0;
-    &:first-child {
-      padding: 0 0 1em;
-    }
-    &:last-child {
-      border: none;
-    }
-    .field-name-field-representative-image {
-      img {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-    }
-  }
   &.view-mode-full {
     display: flex;
     flex-wrap: wrap;
@@ -63,36 +46,62 @@ aside + h2 {
       flex: 1 0 auto;
       // margin-left: 2%;
     }
+    .field-name-field-representative-image {
+      img[src *="default"],
+      img[src *="default_images"] {
+        border: 1px solid pink;
+        display: none;
+      }
+    }
   }
   &.node-teaser {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 4px solid #ccc;
+    padding: 1em 0;
     .group-flex1 {
-      flex: 0 0 25%;
+      flex: 1 0 33%;
+      min-width: 300px;
     }
     .group-flex2 {
-      flex: 1 0 auto;
-      padding-left: 15px;
+      flex: 1 0 64%;
+      // min-width: 500px;
+    }
+    &:first-child {
+      padding: 0 0 1em;
+    }
+    &:last-child {
+      border: none;
+    }
+    .field-name-field-representative-image {
+      padding-right: 35px;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
     }
   }
 }
 
 .node-spoke {
-  &.node-teaser:last-child {
-    border-bottom: none;
-    margin-bottom: 10px;
-  }
-  &.view-mode-teaser {
-    time {
-      font-size: 0.8rem;
-      display: block;
-    }
-    &.clearfix:after {
-      clear: left;
-    }
+  &.node-teaser {
     padding: .8em 0;
     line-height: 1.5;
     border-bottom: 1px solid nth($black, 4);
     margin: 0;
+    time {
+      font-size: 0.8rem;
+      display: block;
+    }
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 10px;
+    }
+    &.clearfix:after {
+      clear: left;
+    }
     .contextual-links-wrapper {
       /* the edit option cog breaks links in left floated aside otherwise */
       left: 0;

@@ -125,6 +125,11 @@ function mediacommons_preprocess_page( &$vars ) {
         $vars['theme_hook_suggestions'][] = 'page__front__tne';
     }
   }
+  if ($special_body_class == 'int' ) { 
+    if (in_array("page__front", $vars['theme_hook_suggestions'])) {
+        $vars['theme_hook_suggestions'][] = 'page__front__int';
+    }
+  }
 }
 function mediacommons_preprocess_node(&$vars) {
 // give project names as classes to the items on the umbrella site front page

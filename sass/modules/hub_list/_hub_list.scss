@@ -47,7 +47,7 @@ aside + h2 {
       // margin-left: 2%;
     }
     .field-name-field-representative-image {
-    /*   img[src *="default"], */
+      /*   img[src *="default"], */
       img[src *="default_images"] {
         display: none;
       }
@@ -81,6 +81,9 @@ aside + h2 {
         height: auto;
         display: block;
       }
+    }
+    .spokes {
+      margin-top: 20px;
     }
   }
 }
@@ -209,7 +212,6 @@ h2.spoke-title {
   }
   .view-mode-user_byline {
     /* for spoke pages, when there is an org */
-  
     float: left;
     margin-right: 5px;
     .p-name,
@@ -229,9 +231,9 @@ h2.spoke-title {
   > header {
     float: left;
     line-height: 2rem;
-
     font-size: .8rem;
-    /* padding-left: 10px; */
+    padding-left: 10px;
+    color: #888;
   }
   >.view-content {
     clear: both;
@@ -239,9 +241,17 @@ h2.spoke-title {
 }
 
 body .view-filters {
-  float: right;
+  // float: right;
+  text-align: right;
+  background-color: #F7F7F7;
   form {
     margin: 0;
+  }
+  .views-exposed-widgets {
+    margin: 0;
+    padding-right: 10px;
+    padding-top: 7px;
+    border: 1px solid #eeeeee;
   }
   .views-exposed-form {
     label {

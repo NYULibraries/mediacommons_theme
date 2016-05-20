@@ -288,7 +288,7 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
 function mediacommons_field__field_curators_editors( $vars ) {
   //dpm($vars);
   $output = '<div class="peoplelist">' ;
-  $output .= '<div class="field-label">' . $vars['label'] . ':</div><ul >';
+  $output .= '<div class="field-label">' . $vars['label'] . '</div><ul >';
   foreach ( element_children( $vars['items'] ) as $key ) {
     $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];
@@ -300,7 +300,7 @@ function mediacommons_field__field_curators_editors( $vars ) {
 function mediacommons_field__field_co_editor( $vars ) {
   //dpm($vars);
   $output = '<div class="peoplelist">' ;
-  $output .= '<div class="field-label">' . $vars['label'] . ':</div><ul >';
+  $output .= '<div class="field-label">' . $vars['label'] . '</div><ul >';
   foreach ( element_children( $vars['items'] ) as $key ) {
     $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];

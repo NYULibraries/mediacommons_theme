@@ -27,9 +27,12 @@
  * @ingroup views_templates
  */
 ?>
-<?php if(!empty(trim($rows))): ?>
-<div class="comment-count">
-  <?php print $rows; ?></div>
+<?php if (isset($rows)) : ?>
+ <?php $rows = trim($rows) ?>
+ <?php if (!empty($rows)) : ?>
+   <div class="comment-count">
+     <?php print $rows; ?>
+   </div>
+ <?php endif; ?>
 <?php endif; ?>
 
-<?php /* class view */ ?>

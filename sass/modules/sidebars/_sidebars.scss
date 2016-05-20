@@ -31,7 +31,7 @@
       margin: 0;
     }
   }
-  .block-views {
+  .block-views, .block-multiblock {
     background: nth($black, 5);
     margin-bottom: 20px;
     .view-content {
@@ -118,4 +118,12 @@
   //         display: none;
   //     }
   // }
+}
+.view-all-organizations .view-content a {
+  display: inline-block;
+  padding: 0px 3px;
+  background-color: rgba(255,255,255,.4);
+  border: 1px solid white;
+  margin-bottom: 7px;
+  font-size: .85rem;
 }

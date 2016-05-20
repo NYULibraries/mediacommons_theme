@@ -19,7 +19,6 @@
   <?php endif; ?>
 
 <main role="main">
-<h1 class="page-title">Archive: all hubs </h1>
    <?php if ($tabs) : ?>
   <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>

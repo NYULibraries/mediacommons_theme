@@ -2,6 +2,11 @@ body.front.int {
   .field-name-field-body {
     display: none;
   }
+  .featured-item-list .featured-item {
+    flex: 0 1 49%;
+    background-color: purple;
+    padding: 5px 0
+  }
 }
 
 body.int {

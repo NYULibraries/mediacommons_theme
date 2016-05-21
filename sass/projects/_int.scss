@@ -4,8 +4,22 @@ body.front.int {
   }
   .featured-item-list .featured-item {
     flex: 0 1 49%;
-    background-color: purple;
+    background-color: #772970;
     padding: 5px 0
+  }
+  header.hubhead {
+    position: relative;
+    .peoplelist {
+      display: none;
+    }
+  }
+  .hub-title {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    a {
+      background-color: rgba(255,255,255,.8);
+    }
   }
 }
 

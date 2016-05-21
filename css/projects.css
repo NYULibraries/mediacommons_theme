@@ -685,30 +685,48 @@ body.front.int .field-name-field-body {
 /* line 5, ../sass/projects/_int.scss */
 body.front.int .featured-item-list .featured-item {
   flex: 0 1 49%;
-  background-color: purple;
+  background-color: #772970;
   padding: 5px 0;
 }
-
-/* line 13, ../sass/projects/_int.scss */
-body.int .node-hub.view-mode-teaser .field-name-field-body {
+/* line 10, ../sass/projects/_int.scss */
+body.front.int header.hubhead {
+  position: relative;
+}
+/* line 12, ../sass/projects/_int.scss */
+body.front.int header.hubhead .peoplelist {
   display: none;
 }
 /* line 16, ../sass/projects/_int.scss */
+body.front.int .hub-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* line 20, ../sass/projects/_int.scss */
+body.front.int .hub-title a {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* line 27, ../sass/projects/_int.scss */
+body.int .node-hub.view-mode-teaser .field-name-field-body {
+  display: none;
+}
+/* line 30, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 20, ../sass/projects/_int.scss */
+/* line 34, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
 
-/* line 27, ../sass/projects/_int.scss */
+/* line 41, ../sass/projects/_int.scss */
 body.imr .featured-item-list .featured-item,
 body.int .featured-item-list .featured-item {
   position: relative;
 }
-/* line 30, ../sass/projects/_int.scss */
+/* line 44, ../sass/projects/_int.scss */
 body.imr .featuredhub-info,
 body.int .featuredhub-info {
   position: absolute;
@@ -716,7 +734,7 @@ body.int .featuredhub-info {
   max-width: 88%;
   left: 20px;
 }
-/* line 35, ../sass/projects/_int.scss */
+/* line 49, ../sass/projects/_int.scss */
 body.imr .featuredhub-info time,
 body.int .featuredhub-info time {
   padding: 0px 3px;
@@ -725,7 +743,7 @@ body.int .featuredhub-info time {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 42, ../sass/projects/_int.scss */
+/* line 56, ../sass/projects/_int.scss */
 body.imr .featuredhub-info h2,
 body.int .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
@@ -733,7 +751,7 @@ body.int .featuredhub-info h2 {
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 45, ../sass/projects/_int.scss */
+/* line 59, ../sass/projects/_int.scss */
 body.imr .featuredhub-info h2 a,
 body.int .featuredhub-info h2 a {
   color: #ebebeb !important;

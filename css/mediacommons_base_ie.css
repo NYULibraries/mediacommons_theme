@@ -2450,55 +2450,59 @@ ul.links.inline li {
 [role="complementary"] .block-views .view-content > div,
 [role="complementary"] .block-multiblock .view-content > div {
   line-height: 1.3;
-  margin-bottom: .8rem;
 }
-/* line 64, ../sass/modules/sidebars/_sidebars.scss */
+/* line 44, ../sass/modules/sidebars/_sidebars.scss */
+[role="complementary"] .block-views .h-card,
+[role="complementary"] .block-multiblock .h-card {
+  padding: 0;
+}
+/* line 66, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li {
   line-height: 1.4;
 }
-/* line 68, ../sass/modules/sidebars/_sidebars.scss */
+/* line 70, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a {
   padding: .5em 0;
   display: block;
 }
-/* line 72, ../sass/modules/sidebars/_sidebars.scss */
+/* line 74, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover {
   color: #232323;
   cursor: default;
   text-decoration: none;
 }
-/* line 77, ../sass/modules/sidebars/_sidebars.scss */
+/* line 79, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active a,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active span,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover a,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover span {
   color: #232323;
 }
-/* line 92, ../sass/modules/sidebars/_sidebars.scss */
+/* line 94, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div {
   padding: 1rem;
   font-size: .7rem;
   line-height: 1.5;
 }
-/* line 96, ../sass/modules/sidebars/_sidebars.scss */
+/* line 98, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div p {
   margin: 0 0 .8em 0;
 }
-/* line 101, ../sass/modules/sidebars/_sidebars.scss */
+/* line 103, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .responsive-disclosure {
   display: none;
 }
-/* line 105, ../sass/modules/sidebars/_sidebars.scss */
+/* line 107, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] span.responsive-disclosure {
   display: none;
 }
-/* line 108, ../sass/modules/sidebars/_sidebars.scss */
+/* line 110, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] nav {
   display: block;
 }
 
-/* line 124, ../sass/modules/sidebars/_sidebars.scss */
+/* line 127, ../sass/modules/sidebars/_sidebars.scss */
 .taxonomy-group .view-content a {
   display: inline-block;
   padding: 0px 3px;
@@ -2508,7 +2512,7 @@ ul.links.inline li {
   font-size: .85rem;
 }
 
-/* line 133, ../sass/modules/sidebars/_sidebars.scss */
+/* line 137, ../sass/modules/sidebars/_sidebars.scss */
 .block-views .more-link {
   padding: .5rem .5rem 1rem 0;
   margin: 0 1rem 1rem 1rem;
@@ -2516,7 +2520,7 @@ ul.links.inline li {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: .85rem;
 }
-/* line 139, ../sass/modules/sidebars/_sidebars.scss */
+/* line 143, ../sass/modules/sidebars/_sidebars.scss */
 .block-views .more-link a {
   display: block;
 }
@@ -2994,7 +2998,7 @@ img[src*="identicon"] {
 
 /* line 148, ../sass/modules/user_profile/_user_profile.scss */
 .view-contributors-this-hub {
-  padding: 1rem 0;
+  padding: 0.5rem 0 0;
 }
 /* line 150, ../sass/modules/user_profile/_user_profile.scss */
 .view-contributors-this-hub .view-empty {

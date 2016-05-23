@@ -125,11 +125,12 @@ body.alt {
       background: #dedede;
     }
     header {
-      background: #c8c8c8;
+      // background: #c8c8c8;
     }
     a.active {
       position: relative;
       background: #eee;
+      padding-left: 15px;
     }
     a.active:after {
       right: 100%;

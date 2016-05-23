@@ -543,18 +543,14 @@ body.imr [role="complementary"] > div,
 body.alt [role="complementary"] > div {
   background: #dedede;
 }
-/* line 127, ../sass/projects.scss */
-body.imr [role="complementary"] header,
-body.alt [role="complementary"] header {
-  background: #c8c8c8;
-}
 /* line 130, ../sass/projects.scss */
 body.imr [role="complementary"] a.active,
 body.alt [role="complementary"] a.active {
   position: relative;
   background: #eee;
+  padding-left: 15px;
 }
-/* line 134, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.imr [role="complementary"] a.active:after,
 body.alt [role="complementary"] a.active:after {
   right: 100%;
@@ -570,20 +566,20 @@ body.alt [role="complementary"] a.active:after {
   margin-top: -30px;
 }
 
-/* line 152, ../sass/projects.scss */
+/* line 153, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 150%;
   background-position-x: -10px;
   background-position-y: -20px;
 }
-/* line 157, ../sass/projects.scss */
+/* line 158, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
 
-/* line 164, ../sass/projects.scss */
+/* line 165, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -591,42 +587,42 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-y: 0px;
 }
 
-/* line 171, ../sass/projects.scss */
+/* line 172, ../sass/projects.scss */
 body.fieldguide {
   /* on fieldguide, hide all images for now */
 }
-/* line 189, ../sass/projects.scss */
+/* line 190, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb,
 body.fieldguide .field-name-field-representative-image {
   display: none;
 }
-/* line 193, ../sass/projects.scss */
+/* line 194, ../sass/projects.scss */
 body.fieldguide nav.global {
   box-shadow: 0px 3px #b98a00;
   border-bottom: 3px solid #d7a100;
 }
-/* line 197, ../sass/projects.scss */
+/* line 198, ../sass/projects.scss */
 body.fieldguide [role="complementary"] {
   background-color: #f5f0e0;
 }
-/* line 199, ../sass/projects.scss */
+/* line 200, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #ece2c5;
 }
-/* line 204, ../sass/projects.scss */
+/* line 205, ../sass/projects.scss */
 body.fieldguide .comments article {
   padding: 2.5%;
   border: transparent 1px solid;
 }
-/* line 207, ../sass/projects.scss */
+/* line 208, ../sass/projects.scss */
 body.fieldguide .comments article:nth-of-type(odd) {
   background-color: #f5f0e0;
 }
-/* line 210, ../sass/projects.scss */
+/* line 211, ../sass/projects.scss */
 body.fieldguide .comments article:nth-of-type(even) {
   background-color: #efe7d0;
 }
-/* line 215, ../sass/projects.scss */
+/* line 216, ../sass/projects.scss */
 body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
@@ -637,7 +633,7 @@ body.fieldguide .logo {
   margin: 0 0 1em 0;
 }
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 225, ../sass/projects.scss */
+  /* line 226, ../sass/projects.scss */
   body.fieldguide .logo {
     width: 16rem;
     height: 2.5rem;
@@ -647,32 +643,32 @@ body.fieldguide .logo {
     background-size: auto 100%;
     margin-bottom: 0;
   }
-  /* line 234, ../sass/projects.scss */
+  /* line 235, ../sass/projects.scss */
   body.fieldguide nav.global {
     box-shadow: none;
     border-bottom: 3px solid #C49A1E;
   }
 }
-/* line 241, ../sass/projects.scss */
+/* line 242, ../sass/projects.scss */
 body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
-/* line 246, ../sass/projects.scss */
+/* line 247, ../sass/projects.scss */
 body.fieldguide.front .timerangeheader > * {
   padding: 3px 29px;
 }
-/* line 256, ../sass/projects.scss */
+/* line 257, ../sass/projects.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
 }
 
-/* line 263, ../sass/projects.scss */
+/* line 264, ../sass/projects.scss */
 body .hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 267, ../sass/projects.scss */
+/* line 268, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;

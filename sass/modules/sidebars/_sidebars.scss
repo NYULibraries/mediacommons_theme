@@ -31,7 +31,8 @@
       margin: 0;
     }
   }
-  .block-views, .block-multiblock {
+  .block-views,
+  .block-multiblock {
     background: nth($black, 5);
     margin-bottom: 20px;
     .view-content {
@@ -119,11 +120,23 @@
   //     }
   // }
 }
-.view-all-organizations .view-content a {
-  display: inline-block;
-  padding: 0px 3px;
-  background-color: rgba(255,255,255,.4);
-  border: 1px solid white;
-  margin-bottom: 7px;
+.taxonomy-group  {
+  .view-content a {
+    display: inline-block;
+    padding: 0px 3px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid white;
+    margin-bottom: 7px;
+    font-size: .85rem;
+  }
+}
+.block-views .more-link {
+  padding: .5rem .5rem 1rem 0;
+  margin: 0 1rem 1rem 1rem;
+  text-align: right;
+  border-top: 1px solid rgba(0,0,0,.1);
   font-size: .85rem;
+  a {
+    display: block;
+  }
 }

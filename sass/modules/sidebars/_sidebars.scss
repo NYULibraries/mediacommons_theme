@@ -31,8 +31,7 @@
       margin: 0;
     }
   }
-  .block-views,
-  .block-multiblock {
+  .block {
     background: nth($black, 5);
     margin-bottom: 20px;
     .view-content {
@@ -134,7 +133,7 @@
   }
 }
 
-.block-views .more-link {
+.block .more-link {
   padding: .5rem .5rem 1rem 0;
   margin: 0 1rem 1rem 1rem;
   text-align: right;

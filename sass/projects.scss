@@ -99,7 +99,7 @@ $col in $map {
     }
     [role="complementary"] {
       > div,
-      .block-views {
+      .block {
         background-color: lighten(nth($tertiary, 5), 3%);
       }
       header {

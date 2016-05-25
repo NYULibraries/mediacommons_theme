@@ -2792,75 +2792,71 @@ ul.links.inline li {
   margin: 0;
 }
 /* line 34, ../sass/modules/sidebars/_sidebars.scss */
-[role="complementary"] .block-views,
-[role="complementary"] .block-multiblock {
+[role="complementary"] .block {
   background: #dedede;
   margin-bottom: 20px;
 }
-/* line 38, ../sass/modules/sidebars/_sidebars.scss */
-[role="complementary"] .block-views .view-content,
-[role="complementary"] .block-multiblock .view-content {
+/* line 37, ../sass/modules/sidebars/_sidebars.scss */
+[role="complementary"] .block .view-content {
   padding: 1rem;
 }
-/* line 40, ../sass/modules/sidebars/_sidebars.scss */
-[role="complementary"] .block-views .view-content > div,
-[role="complementary"] .block-multiblock .view-content > div {
+/* line 39, ../sass/modules/sidebars/_sidebars.scss */
+[role="complementary"] .block .view-content > div {
   line-height: 1.3;
 }
-/* line 44, ../sass/modules/sidebars/_sidebars.scss */
-[role="complementary"] .block-views .h-card,
-[role="complementary"] .block-multiblock .h-card {
+/* line 43, ../sass/modules/sidebars/_sidebars.scss */
+[role="complementary"] .block .h-card {
   padding: 0;
 }
-/* line 66, ../sass/modules/sidebars/_sidebars.scss */
+/* line 65, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li {
   line-height: 1.4;
 }
-/* line 70, ../sass/modules/sidebars/_sidebars.scss */
+/* line 69, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a {
   padding: .5em 0;
   display: block;
 }
-/* line 74, ../sass/modules/sidebars/_sidebars.scss */
+/* line 73, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover {
   color: #232323;
   cursor: default;
   text-decoration: none;
 }
-/* line 79, ../sass/modules/sidebars/_sidebars.scss */
+/* line 78, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active a,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active span,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover a,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li a.active:hover span {
   color: #232323;
 }
-/* line 94, ../sass/modules/sidebars/_sidebars.scss */
+/* line 93, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div {
   padding: 1rem;
   font-size: .7rem;
   line-height: 1.5;
 }
-/* line 98, ../sass/modules/sidebars/_sidebars.scss */
+/* line 97, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div p {
   margin: 0 0 .8em 0;
 }
-/* line 103, ../sass/modules/sidebars/_sidebars.scss */
+/* line 102, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .responsive-disclosure {
   display: none;
 }
 @media (min-width: 50.0625em) {
-  /* line 107, ../sass/modules/sidebars/_sidebars.scss */
+  /* line 106, ../sass/modules/sidebars/_sidebars.scss */
   [role="complementary"] span.responsive-disclosure {
     display: none;
   }
-  /* line 110, ../sass/modules/sidebars/_sidebars.scss */
+  /* line 109, ../sass/modules/sidebars/_sidebars.scss */
   [role="complementary"] nav {
     display: block;
   }
 }
 
-/* line 127, ../sass/modules/sidebars/_sidebars.scss */
+/* line 126, ../sass/modules/sidebars/_sidebars.scss */
 .taxonomy-group .view-content a {
   display: inline-block;
   padding: 0px 3px;
@@ -2870,16 +2866,16 @@ ul.links.inline li {
   font-size: .85rem;
 }
 
-/* line 137, ../sass/modules/sidebars/_sidebars.scss */
-.block-views .more-link {
+/* line 136, ../sass/modules/sidebars/_sidebars.scss */
+.block .more-link {
   padding: .5rem .5rem 1rem 0;
   margin: 0 1rem 1rem 1rem;
   text-align: right;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: .85rem;
 }
-/* line 143, ../sass/modules/sidebars/_sidebars.scss */
-.block-views .more-link a {
+/* line 142, ../sass/modules/sidebars/_sidebars.scss */
+.block .more-link a {
   display: block;
 }
 

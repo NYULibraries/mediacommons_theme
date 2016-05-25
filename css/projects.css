@@ -72,7 +72,7 @@ body.mc footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.mc [role="complementary"] > div,
-body.mc [role="complementary"] .block-views {
+body.mc [role="complementary"] .block {
   background-color: #f4ebe7;
 }
 /* line 105, ../sass/projects.scss */
@@ -171,7 +171,7 @@ body.fieldguide footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.fieldguide [role="complementary"] > div,
-body.fieldguide [role="complementary"] .block-views {
+body.fieldguide [role="complementary"] .block {
   background-color: #e2e9f2;
 }
 /* line 105, ../sass/projects.scss */
@@ -270,7 +270,7 @@ body.tne footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.tne [role="complementary"] > div,
-body.tne [role="complementary"] .block-views {
+body.tne [role="complementary"] .block {
   background-color: #f8ebe9;
 }
 /* line 105, ../sass/projects.scss */
@@ -369,7 +369,7 @@ body.imr footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.imr [role="complementary"] > div,
-body.imr [role="complementary"] .block-views {
+body.imr [role="complementary"] .block {
   background-color: #effceb;
 }
 /* line 105, ../sass/projects.scss */
@@ -468,7 +468,7 @@ body.int footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.int [role="complementary"] > div,
-body.int [role="complementary"] .block-views {
+body.int [role="complementary"] .block {
   background-color: #f0f0e8;
 }
 /* line 105, ../sass/projects.scss */
@@ -567,7 +567,7 @@ body.alt footer#footer {
 }
 /* line 101, ../sass/projects.scss */
 body.alt [role="complementary"] > div,
-body.alt [role="complementary"] .block-views {
+body.alt [role="complementary"] .block {
   background-color: #f2f8e9;
 }
 /* line 105, ../sass/projects.scss */

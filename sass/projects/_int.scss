@@ -2,11 +2,6 @@ body.front.int {
   .field-name-field-body {
     display: none;
   }
-  .featured-item-list .featured-item {
-    flex: 0 1 49%;
-    background-color: #772970;
-    padding: 5px 0
-  }
   header.hubhead {
     position: relative;
     .peoplelist {
@@ -18,10 +13,11 @@ body.front.int {
     top: 10px;
     left: 10px;
     a {
-      background-color: rgba(255,255,255,.8);
+      background-color: rgba(255, 255, 255, .8);
     }
   }
 }
+
 
 body.int {
   .node-hub.view-mode-teaser .field-name-field-body {
@@ -36,31 +32,3 @@ body.int {
   }
 }
 
-body.imr,
-body.int {
-  .featured-item-list .featured-item {
-    position: relative;
-  }
-  .featuredhub-info {
-    position: absolute;
-    bottom: 20px;
-    max-width: 88%;
-    left: 20px;
-    time {
-      padding: 0px 3px;
-      background-color: rgba(0, 0, 0, 0.7);
-      color: #ebebeb !important;
-      margin-bottom: 3px;
-      display: inline-block;
-    }
-    h2 {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 8px;
-      a {
-        color: #ebebeb !important;
-      }
-      font-size: 18px;
-      line-height: 1.4
-    }
-  }
-}

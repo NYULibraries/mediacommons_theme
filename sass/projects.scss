@@ -57,17 +57,22 @@ $col in $map {
     }
   }
   body.#{$header} {
-    &.front {
-      .featured-more {
-        border-top: 2px solid $col;
-        .blockheader div {
-          color:white; 
-          background: $col;
-          display:inline-block;
-          padding: 0 6px;
-        }
+    .featured-more {
+      border-top: 2px solid $col;
+      .blockheader div {
+        color: white;
+        background: $col;
+        display: inline-block;
+        padding: 0 6px;
       }
-
+      img {
+        width: 100% !important;
+        height: auto !important;
+        display: block;
+      }
+    }
+    .featured-item {
+      background-color: $col;
     }
     a:link,
     a:visited {
@@ -281,6 +286,35 @@ body .hub-title {
   a:link,
   a:visited {
     color: #111;
+  }
+}
+
+.featured-item-list .featured-item {
+  flex: 0 1 49%;
+  padding: 5px 0;
+  position: relative;
+}
+
+.featuredhub-info {
+  position: absolute;
+  bottom: 20px;
+  max-width: 88%;
+  left: 20px;
+  time {
+    padding: 0px 3px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ebebeb !important;
+    margin-bottom: 3px;
+    display: inline-block;
+  }
+  h2 {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 8px;
+    a {
+      color: #ebebeb !important;
+    }
+    font-size: 18px;
+    line-height: 1.4
   }
 }
 

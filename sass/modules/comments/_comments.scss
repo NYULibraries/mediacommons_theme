@@ -3,7 +3,7 @@
 //////////////////////////////
 
 
-.comment-count {
+.comment-count-xx {
     position: relative;
     width:auto;
     max-width: 40px;
@@ -18,7 +18,7 @@
     // display: none;
 }
 
-.comment-count:before {
+.comment-count-xx:before {
     content: "";
     position: absolute;
     bottom: -8px;
@@ -28,7 +28,7 @@
     border-color: transparent #dedede;
 }
 
-.comment-count:after {
+.comment-count-xx:after {
    content: "";
     position: absolute;
     bottom: -8px;

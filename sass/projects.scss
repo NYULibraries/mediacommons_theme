@@ -15,10 +15,7 @@ $black-value: #333333;
 $black: tint-stack($black-value);
 $type-color-value: #232323;
 $type-color: tint-stack($type-color-value);
-
 $body-color: #333333;
-
-
 @each $header,
 $col in $map {
   /*   */
@@ -149,118 +146,6 @@ body.alt {
   }
 }
 
-body.int {
-  .node-spoke.node-teaser .thumb {
-    background-size: 150%;
-    background-position-x: -10px;
-    background-position-y: -20px;
-  }
-  .node-spoke.node-teaser .thumb {
-    background-size: 224%;
-    background-position-x: 3px;
-    background-position-y: -77px;
-  }
-}
-
-body.imr .node-spoke.node-teaser .thumb {
-  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
-  background-size: 100%;
-  background-position-x: 0px;
-  background-position-y: 0px;
-}
-
-body.fieldguide {
-  $fg_primary: map-get($map, fieldguide);
-  $fg_neutral: $fg_primary;
-  // : $fg_primary;
-  $cs-primary: $fg_primary !global;
-  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-  $cs-scheme: complement !global;
-  $cs-hue-offset: 20 !global;
-  // Options: 0-100;
-  $cs-brightness-offset: 100 !global;
-  // Options: 0-100;
-  $cs-color-model: ryb !global;
-  $primary: tint-stack(cs-primary()) !global;
-  $neutral-tint-stack: tint-stack($fg_neutral) !global;
-  $secondary: tint-stack(cs-secondary()) !global;
-  $tertiary: tint-stack(cs-tertiary()) !global;
-  $quadrary: tint-stack(cs-quadrary()) !global;
-  /* on fieldguide, hide all images for now */
-  .node-spoke.node-teaser .thumb,
-  .field-name-field-representative-image {
-    display: none;
-  }
-  nav.global {
-    box-shadow: 0px 3px #b98a00;
-    border-bottom: 3px solid #d7a100;
-  }
-  [role="complementary"] {
-    background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
-    header {
-      background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
-    }
-  }
-  .comments {
-    article {
-      padding: 2.5%;
-      border: transparent 1px solid;
-      &:nth-of-type(odd) {
-        background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
-      }
-      &:nth-of-type(even) {
-        background-color: lighten(set-saturation(nth($neutral-tint-stack, 4), 50%), 6%);
-      }
-    }
-  }
-  .logo {
-    background-position: 0 0%;
-    width: 18rem;
-    height: 4.8rem;
-    background: image-url("mc-logos/fieldguidelogo.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    margin: 0 0 1em 0;
-  }
-  @include respond-to("narrow navigation") {
-    .logo {
-      width: 16rem;
-      height: 2.5rem;
-      padding: 0;
-      background: image-url("mc-logos/fieldguidelogo-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      margin-bottom: 0;
-    }
-    nav.global {
-      box-shadow: none;
-      border-bottom: 3px solid #C49A1E;
-    }
-  }
-  &.front {
-    .hubhead {
-      .field-name-title h1.hub-title {
-        font-size: 37px;
-      }
-    }
-    .timerangeheader {
-      > * {
-        // background-color: lighten(set-saturation(nth($primary, 4), 50%), 1%);
-        // background-color: #D7A100;
-        // color: #111111;
-        padding: 3px 29px;
-      }
-    }
-    .field-name-field-spokes {
-      // border-left: 1px solid lighten($fg_primary, 15%);
-      // background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
-      .field-item {
-        margin-bottom: .5rem;
-      }
-    }
-  }
-}
-
 body .hub-title {
   font-size: 31px;
   padding-top: 0;
@@ -270,7 +155,6 @@ body .hub-title {
     color: #111;
   }
 }
-
 
 .featuredhub-info {
   position: absolute;
@@ -296,6 +180,7 @@ body .hub-title {
 }
 
 @import "projects/int";
-
-
+@import "projects/alt";
+@import "projects/fieldguide";
+@import "projects/tne";
 @import "projects/imr";

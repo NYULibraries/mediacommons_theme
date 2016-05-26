@@ -6,3 +6,11 @@
     margin: 1% 0;
   }
 }
+
+
+body.imr .node-spoke.node-teaser .thumb {
+  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
+}

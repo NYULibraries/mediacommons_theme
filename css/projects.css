@@ -1,71 +1,71 @@
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-mc {
   border-top: 4px solid #196195;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-mc .field-name-field-project {
   background-color: #196195;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.mc .featured-more {
   border-top: 2px solid #196195;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.mc .featured-more .blockheader div {
   color: white;
   background-color: #196195;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.mc .featured-item {
   background: #0a283e;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.mc a:link,
 body.mc a:visited {
   color: #196195;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.mc a[href]:hover,
 body.mc a[href]:focus {
   color: #124569;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.mc a[href]:active {
   color: #0a283e;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.mc [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.mc nav.global {
   box-shadow: 0px 3px #3797dd;
   border-bottom: 3px solid #196195;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.mc footer#footer {
   border-top: 3px solid #207bbc;
   box-shadow: 0px -3px #248cd7;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.mc [role="complementary"] > div,
 body.mc [role="complementary"] .block {
   background-color: #f4ebe7;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.mc [role="complementary"] header {
   background-color: #e4d1c5;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
@@ -95,80 +95,80 @@ body.mc input[type="search"]::-webkit-input-placeholder,
 body.mc input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.mc .pager a:active {
   color: #fff;
   background-color: #196195;
 }
 
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-fieldguide {
   border-top: 4px solid #8b6800;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-fieldguide .field-name-field-project {
   background-color: #8b6800;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.fieldguide .featured-more {
   border-top: 2px solid #8b6800;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.fieldguide .featured-more .blockheader div {
   color: white;
   background-color: #8b6800;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.fieldguide .featured-item {
   background: #251c00;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.fieldguide a:link,
 body.fieldguide a:visited {
   color: #8b6800;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.fieldguide a[href]:hover,
 body.fieldguide a[href]:focus {
   color: #584200;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.fieldguide a[href]:active {
   color: #251c00;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.fieldguide [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.fieldguide [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.fieldguide nav.global {
   box-shadow: 0px 3px #f1b400;
   border-bottom: 3px solid #8b6800;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.fieldguide footer#footer {
   border-top: 3px solid #b98a00;
   box-shadow: 0px -3px #d7a100;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.fieldguide [role="complementary"] > div,
 body.fieldguide [role="complementary"] .block {
   background-color: #e2e9f2;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #bfcee2;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-fieldguide.svg?1444145625');
   background-repeat: no-repeat;
@@ -198,80 +198,80 @@ body.fieldguide input[type="search"]::-webkit-input-placeholder,
 body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.fieldguide .pager a:active {
   color: #fff;
   background-color: #8b6800;
 }
 
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-tne {
   border-top: 4px solid #1db7b7;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-tne .field-name-field-project {
   background-color: #1db7b7;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.tne .featured-more {
   border-top: 2px solid #1db7b7;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.tne .featured-more .blockheader div {
   color: white;
   background-color: #1db7b7;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.tne .featured-item {
   background: #0f5f5f;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.tne a:link,
 body.tne a:visited {
   color: #1db7b7;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.tne a[href]:hover,
 body.tne a[href]:focus {
   color: #168b8b;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.tne a[href]:active {
   color: #0f5f5f;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.tne [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.tne nav.global {
   box-shadow: 0px 3px #56e4e4;
   border-bottom: 3px solid #1db7b7;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.tne footer#footer {
   border-top: 3px solid #25dddd;
   box-shadow: 0px -3px #40e1e1;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.tne [role="complementary"] > div,
 body.tne [role="complementary"] .block {
   background-color: #f8ebe9;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.tne [role="complementary"] header {
   background-color: #edcdc6;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-tne.svg?1444145368');
   background-repeat: no-repeat;
@@ -301,80 +301,80 @@ body.tne input[type="search"]::-webkit-input-placeholder,
 body.tne input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.tne .pager a:active {
   color: #fff;
   background-color: #1db7b7;
 }
 
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-imr {
   border-top: 4px solid #e25025;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-imr .field-name-field-project {
   background-color: #e25025;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.imr .featured-more {
   border-top: 2px solid #e25025;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.imr .featured-more .blockheader div {
   color: white;
   background-color: #e25025;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.imr .featured-item {
   background: #8e2f13;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.imr a:link,
 body.imr a:visited {
   color: #e25025;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.imr a[href]:hover,
 body.imr a[href]:focus {
   color: #bb3e19;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.imr a[href]:active {
   color: #8e2f13;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.imr [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.imr nav.global {
   box-shadow: 0px 3px #ee987f;
   border-bottom: 3px solid #e25025;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.imr footer#footer {
   border-top: 3px solid #e7714e;
   box-shadow: 0px -3px #eb8669;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.imr [role="complementary"] > div,
 body.imr [role="complementary"] .block {
   background-color: #effceb;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #d5f7c8;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-imr.svg?1444148384');
   background-repeat: no-repeat;
@@ -404,80 +404,80 @@ body.imr input[type="search"]::-webkit-input-placeholder,
 body.imr input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.imr .pager a:active {
   color: #fff;
   background-color: #e25025;
 }
 
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-int {
   border-top: 4px solid #782a71;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-int .field-name-field-project {
   background-color: #782a71;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.int .featured-more {
   border-top: 2px solid #782a71;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.int .featured-more .blockheader div {
   color: white;
   background-color: #782a71;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.int .featured-item {
   background: #2c102a;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.int a:link,
 body.int a:visited {
   color: #782a71;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.int a[href]:hover,
 body.int a[href]:focus {
   color: #521d4d;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.int a[href]:active {
   color: #2c102a;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.int [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.int nav.global {
   box-shadow: 0px 3px #bf49b5;
   border-bottom: 3px solid #782a71;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.int footer#footer {
   border-top: 3px solid #9a3691;
   box-shadow: 0px -3px #b13ea6;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.int [role="complementary"] > div,
 body.int [role="complementary"] .block {
   background-color: #f0f0e8;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.int [role="complementary"] header {
   background-color: #ddddc9;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-int.svg?1444142145');
   background-repeat: no-repeat;
@@ -507,80 +507,80 @@ body.int input[type="search"]::-webkit-input-placeholder,
 body.int input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.int .pager a:active {
   color: #fff;
   background-color: #782a71;
 }
 
 /*   */
-/* line 40, ../sass/projects.scss */
+/* line 37, ../sass/projects.scss */
 .node-alt {
   border-top: 4px solid #be1e2d;
 }
-/* line 42, ../sass/projects.scss */
+/* line 39, ../sass/projects.scss */
 .node-alt .field-name-field-project {
   background-color: #be1e2d;
 }
 
-/* line 47, ../sass/projects.scss */
+/* line 44, ../sass/projects.scss */
 body.alt .featured-more {
   border-top: 2px solid #be1e2d;
 }
-/* line 49, ../sass/projects.scss */
+/* line 46, ../sass/projects.scss */
 body.alt .featured-more .blockheader div {
   color: white;
   background-color: #be1e2d;
   display: inline-block;
   padding: 0 6px;
 }
-/* line 56, ../sass/projects.scss */
+/* line 53, ../sass/projects.scss */
 body.alt .featured-item {
   background: #661018;
 }
-/* line 59, ../sass/projects.scss */
+/* line 56, ../sass/projects.scss */
 body.alt a:link,
 body.alt a:visited {
   color: #be1e2d;
 }
-/* line 63, ../sass/projects.scss */
+/* line 60, ../sass/projects.scss */
 body.alt a[href]:hover,
 body.alt a[href]:focus {
   color: #921723;
   text-decoration: underline;
 }
-/* line 68, ../sass/projects.scss */
+/* line 65, ../sass/projects.scss */
 body.alt a[href]:active {
   color: #661018;
 }
-/* line 72, ../sass/projects.scss */
+/* line 69, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 76, ../sass/projects.scss */
+/* line 73, ../sass/projects.scss */
 body.alt [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 79, ../sass/projects.scss */
+/* line 76, ../sass/projects.scss */
 body.alt nav.global {
   box-shadow: 0px 3px #e55d69;
   border-bottom: 3px solid #be1e2d;
 }
-/* line 83, ../sass/projects.scss */
+/* line 80, ../sass/projects.scss */
 body.alt footer#footer {
   border-top: 3px solid #de2c3d;
   box-shadow: 0px -3px #e24755;
 }
-/* line 88, ../sass/projects.scss */
+/* line 85, ../sass/projects.scss */
 body.alt [role="complementary"] > div,
 body.alt [role="complementary"] .block {
   background-color: #f2f8e9;
 }
-/* line 92, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.alt [role="complementary"] header {
   background-color: #dfeec6;
 }
-/* line 97, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-alt.svg?1444147155');
   background-repeat: no-repeat;
@@ -610,25 +610,25 @@ body.alt input[type="search"]::-webkit-input-placeholder,
 body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 114, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.alt .pager a:active {
   color: #fff;
   background-color: #be1e2d;
 }
 
-/* line 124, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.imr [role="complementary"] > div,
 body.alt [role="complementary"] > div {
   background: #dedede;
 }
-/* line 130, ../sass/projects.scss */
+/* line 127, ../sass/projects.scss */
 body.imr [role="complementary"] a.active,
 body.alt [role="complementary"] a.active {
   position: relative;
   background: #eee;
   padding-left: 15px;
 }
-/* line 135, ../sass/projects.scss */
+/* line 132, ../sass/projects.scss */
 body.imr [role="complementary"] a.active:after,
 body.alt [role="complementary"] a.active:after {
   right: 100%;
@@ -644,122 +644,26 @@ body.alt [role="complementary"] a.active:after {
   margin-top: -30px;
 }
 
-/* line 153, ../sass/projects.scss */
-body.int .node-spoke.node-teaser .thumb {
-  background-size: 150%;
-  background-position-x: -10px;
-  background-position-y: -20px;
-}
-/* line 158, ../sass/projects.scss */
-body.int .node-spoke.node-teaser .thumb {
-  background-size: 224%;
-  background-position-x: 3px;
-  background-position-y: -77px;
-}
-
-/* line 165, ../sass/projects.scss */
-body.imr .node-spoke.node-teaser .thumb {
-  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
-  background-size: 100%;
-  background-position-x: 0px;
-  background-position-y: 0px;
-}
-
-/* line 172, ../sass/projects.scss */
-body.fieldguide {
-  /* on fieldguide, hide all images for now */
-}
-/* line 190, ../sass/projects.scss */
-body.fieldguide .node-spoke.node-teaser .thumb,
-body.fieldguide .field-name-field-representative-image {
-  display: none;
-}
-/* line 194, ../sass/projects.scss */
-body.fieldguide nav.global {
-  box-shadow: 0px 3px #b98a00;
-  border-bottom: 3px solid #d7a100;
-}
-/* line 198, ../sass/projects.scss */
-body.fieldguide [role="complementary"] {
-  background-color: #f5f0e0;
-}
-/* line 200, ../sass/projects.scss */
-body.fieldguide [role="complementary"] header {
-  background-color: #ece2c5;
-}
-/* line 205, ../sass/projects.scss */
-body.fieldguide .comments article {
-  padding: 2.5%;
-  border: transparent 1px solid;
-}
-/* line 208, ../sass/projects.scss */
-body.fieldguide .comments article:nth-of-type(odd) {
-  background-color: #f5f0e0;
-}
-/* line 211, ../sass/projects.scss */
-body.fieldguide .comments article:nth-of-type(even) {
-  background-color: #efe7d0;
-}
-/* line 216, ../sass/projects.scss */
-body.fieldguide .logo {
-  background-position: 0 0%;
-  width: 18rem;
-  height: 4.8rem;
-  background: url('../images/mc-logos/fieldguidelogo.svg?1447863348');
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin: 0 0 1em 0;
-}
-@media (min-width: 15em) and (max-width: 50em) {
-  /* line 226, ../sass/projects.scss */
-  body.fieldguide .logo {
-    width: 16rem;
-    height: 2.5rem;
-    padding: 0;
-    background: url('../images/mc-logos/fieldguidelogo-mobile.svg?1447954703');
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    margin-bottom: 0;
-  }
-  /* line 235, ../sass/projects.scss */
-  body.fieldguide nav.global {
-    box-shadow: none;
-    border-bottom: 3px solid #C49A1E;
-  }
-}
-/* line 242, ../sass/projects.scss */
-body.fieldguide.front .hubhead .field-name-title h1.hub-title {
-  font-size: 37px;
-}
-/* line 247, ../sass/projects.scss */
-body.fieldguide.front .timerangeheader > * {
-  padding: 3px 29px;
-}
-/* line 257, ../sass/projects.scss */
-body.fieldguide.front .field-name-field-spokes .field-item {
-  margin-bottom: .5rem;
-}
-
-/* line 264, ../sass/projects.scss */
+/* line 149, ../sass/projects.scss */
 body .hub-title {
   font-size: 31px;
   padding-top: 0;
   color: #232323;
 }
-/* line 268, ../sass/projects.scss */
+/* line 153, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 275, ../sass/projects.scss */
+/* line 159, ../sass/projects.scss */
 .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 280, ../sass/projects.scss */
+/* line 164, ../sass/projects.scss */
 .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -767,14 +671,14 @@ body .hub-title a:visited {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 287, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 290, ../sass/projects.scss */
+/* line 174, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #ebebeb !important;
 }
@@ -816,10 +720,106 @@ body.int .comment time {
   display: block !important;
 }
 
+/* line 35, ../sass/projects/_int.scss */
+body.int .node-spoke.node-teaser .thumb {
+  background-size: 150%;
+  background-position-x: -10px;
+  background-position-y: -20px;
+}
+/* line 40, ../sass/projects/_int.scss */
+body.int .node-spoke.node-teaser .thumb {
+  background-size: 224%;
+  background-position-x: 3px;
+  background-position-y: -77px;
+}
+
+/* line 1, ../sass/projects/_fieldguide.scss */
+body.fieldguide {
+  /* on fieldguide, hide all images for now */
+}
+/* line 19, ../sass/projects/_fieldguide.scss */
+body.fieldguide .node-spoke.node-teaser .thumb,
+body.fieldguide .field-name-field-representative-image {
+  display: none;
+}
+/* line 23, ../sass/projects/_fieldguide.scss */
+body.fieldguide nav.global {
+  box-shadow: 0px 3px #b98a00;
+  border-bottom: 3px solid #d7a100;
+}
+/* line 27, ../sass/projects/_fieldguide.scss */
+body.fieldguide [role="complementary"] {
+  background-color: #f5f0e0;
+}
+/* line 29, ../sass/projects/_fieldguide.scss */
+body.fieldguide [role="complementary"] header {
+  background-color: #ece2c5;
+}
+/* line 34, ../sass/projects/_fieldguide.scss */
+body.fieldguide .comments article {
+  padding: 2.5%;
+  border: transparent 1px solid;
+}
+/* line 37, ../sass/projects/_fieldguide.scss */
+body.fieldguide .comments article:nth-of-type(odd) {
+  background-color: #f5f0e0;
+}
+/* line 40, ../sass/projects/_fieldguide.scss */
+body.fieldguide .comments article:nth-of-type(even) {
+  background-color: #efe7d0;
+}
+/* line 45, ../sass/projects/_fieldguide.scss */
+body.fieldguide .logo {
+  background-position: 0 0%;
+  width: 18rem;
+  height: 4.8rem;
+  background: url('../images/mc-logos/fieldguidelogo.svg?1447863348');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 0 1em 0;
+}
+@media (min-width: 15em) and (max-width: 50em) {
+  /* line 55, ../sass/projects/_fieldguide.scss */
+  body.fieldguide .logo {
+    width: 16rem;
+    height: 2.5rem;
+    padding: 0;
+    background: url('../images/mc-logos/fieldguidelogo-mobile.svg?1447954703');
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    margin-bottom: 0;
+  }
+  /* line 64, ../sass/projects/_fieldguide.scss */
+  body.fieldguide nav.global {
+    box-shadow: none;
+    border-bottom: 3px solid #C49A1E;
+  }
+}
+/* line 71, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .hubhead .field-name-title h1.hub-title {
+  font-size: 37px;
+}
+/* line 76, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .timerangeheader > * {
+  padding: 3px 29px;
+}
+/* line 86, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .field-name-field-spokes .field-item {
+  margin-bottom: .5rem;
+}
+
 /* line 2, ../sass/projects/_imr.scss */
 .imr #contentwide .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
   flex: 0 1 32%;
   margin: 1% 0;
+}
+
+/* line 11, ../sass/projects/_imr.scss */
+body.imr .node-spoke.node-teaser .thumb {
+  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+  background-size: 100%;
+  background-position-x: 0px;
+  background-position-y: 0px;
 }

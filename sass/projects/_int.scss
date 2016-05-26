@@ -31,4 +31,15 @@ body.int {
     display: block !important;
   }
 }
-
+body.int {
+  .node-spoke.node-teaser .thumb {
+    background-size: 150%;
+    background-position-x: -10px;
+    background-position-y: -20px;
+  }
+  .node-spoke.node-teaser .thumb {
+    background-size: 224%;
+    background-position-x: 3px;
+    background-position-y: -77px;
+  }
+}

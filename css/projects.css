@@ -743,32 +743,37 @@ body.fieldguide .field-name-field-representative-image {
   display: none;
 }
 /* line 23, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .hub-title {
+  font-size: 2rem;
+}
+/* line 26, ../sass/projects/_fieldguide.scss */
 body.fieldguide nav.global {
   box-shadow: 0px 3px #b98a00;
   border-bottom: 3px solid #d7a100;
 }
-/* line 27, ../sass/projects/_fieldguide.scss */
-body.fieldguide [role="complementary"] {
-  background-color: #f5f0e0;
-}
-/* line 29, ../sass/projects/_fieldguide.scss */
+/* line 31, ../sass/projects/_fieldguide.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #ece2c5;
 }
 /* line 34, ../sass/projects/_fieldguide.scss */
+body.fieldguide [role="complementary"] > div,
+body.fieldguide [role="complementary"] .block {
+  background-color: #f5f0e0;
+}
+/* line 43, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article {
   padding: 2.5%;
   border: transparent 1px solid;
 }
-/* line 37, ../sass/projects/_fieldguide.scss */
+/* line 46, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article:nth-of-type(odd) {
   background-color: #f5f0e0;
 }
-/* line 40, ../sass/projects/_fieldguide.scss */
+/* line 49, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article:nth-of-type(even) {
   background-color: #efe7d0;
 }
-/* line 45, ../sass/projects/_fieldguide.scss */
+/* line 54, ../sass/projects/_fieldguide.scss */
 body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
@@ -779,7 +784,7 @@ body.fieldguide .logo {
   margin: 0 0 1em 0;
 }
 @media (min-width: 15em) and (max-width: 50em) {
-  /* line 55, ../sass/projects/_fieldguide.scss */
+  /* line 64, ../sass/projects/_fieldguide.scss */
   body.fieldguide .logo {
     width: 16rem;
     height: 2.5rem;
@@ -789,23 +794,65 @@ body.fieldguide .logo {
     background-size: auto 100%;
     margin-bottom: 0;
   }
-  /* line 64, ../sass/projects/_fieldguide.scss */
+  /* line 73, ../sass/projects/_fieldguide.scss */
   body.fieldguide nav.global {
     box-shadow: none;
     border-bottom: 3px solid #C49A1E;
   }
 }
-/* line 71, ../sass/projects/_fieldguide.scss */
+/* line 80, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .hubhead .field-name-title h1.hub-title {
   font-size: 37px;
 }
-/* line 76, ../sass/projects/_fieldguide.scss */
+/* line 85, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .timerangeheader > * {
   padding: 3px 29px;
 }
-/* line 86, ../sass/projects/_fieldguide.scss */
+/* line 95, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
+}
+/* line 101, ../sass/projects/_fieldguide.scss */
+body.fieldguide .view-list-of-all-hubs .group-flex1 {
+  display: none;
+}
+/* line 105, ../sass/projects/_fieldguide.scss */
+body.fieldguide .node-spoke.node-teaser {
+  border-bottom: none;
+  padding-bottom: .5rem;
+}
+
+/* line 111, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta {
+  display: flex;
+  align-items: baseline;
+}
+/* line 114, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta time {
+  order: 2;
+  padding: 0 5px 0 0;
+}
+/* line 116, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta time::before {
+  content: "|\00a0";
+}
+/* line 121, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta .comment-count {
+  order: 3;
+  font-size: .8rem;
+}
+/* line 124, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta .comment-count::before {
+  content: "|";
+}
+/* line 127, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta .comment-count::after {
+  content: " comments";
+}
+/* line 130, ../sass/projects/_fieldguide.scss */
+.spoke-teaser-meta .comment-count a:link {
+  color: #5a5a5a;
+  font-size: .8rem;
 }
 
 /* line 2, ../sass/projects/_imr.scss */

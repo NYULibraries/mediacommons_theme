@@ -20,14 +20,23 @@ body.fieldguide {
   .field-name-field-representative-image {
     display: none;
   }
+  &.front .hub-title {
+    font-size: 2rem;
+  }
   nav.global {
     box-shadow: 0px 3px #b98a00;
     border-bottom: 3px solid #d7a100;
   }
   [role="complementary"] {
-    background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
     header {
       background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
+    }
+    > div,
+    .block {
+      background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
+    }
+    header {
+      //    background-color: nth($tertiary, 4);
     }
   }
   .comments {
@@ -86,6 +95,41 @@ body.fieldguide {
       .field-item {
         margin-bottom: .5rem;
       }
+    }
+  }
+  .view-list-of-all-hubs {
+    .group-flex1 {
+      display: none;
+    }
+  }
+  .node-spoke.node-teaser {
+    border-bottom: none;
+    padding-bottom: .5rem;
+  }
+}
+
+.spoke-teaser-meta {
+  display: flex;
+  align-items: baseline;
+  time {
+    order: 2;
+    &::before {
+      content: "|\00a0";
+    }
+    padding: 0 5px 0 0;
+  }
+  .comment-count {
+    order: 3;
+    font-size: .8rem;
+    &::before {
+      content: "|";
+    }
+    &::after {
+      content: " comments";
+    }
+    a:link {
+      color: #5a5a5a;
+      font-size: .8rem;
     }
   }
 }

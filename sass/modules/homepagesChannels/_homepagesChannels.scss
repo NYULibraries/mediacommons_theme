@@ -35,6 +35,22 @@
    }
  }
  
+
+ .featured-item-list .featured-item {
+  flex: 0 1 49%;
+  padding: 5px 0;
+  position: relative;
+}
+
  .featured-more {
    margin: 3rem 0 3rem;
+   header {
+     margin-bottom: 40px;
+     @extend %sans;
+   }
+   img {
+     width: 100% !important;
+     height: auto !important;
+     display: block;
+   }
  }

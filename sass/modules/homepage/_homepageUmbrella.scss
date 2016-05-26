@@ -1,4 +1,18 @@
+ $mcpress-color: #659e42;
+ $fg-color: #d7a100;
  .front.mc {
+   .node-mcpress {
+     border-top: 4px solid $mcpress-color;
+     .field-name-field-project {
+       background-color: $mcpress-color;
+     }
+   }
+   .node-fg {
+     border-top: 4px solid $fg-color;
+     .field-name-field-project {
+       background-color: $fg-color;
+     }
+   }
    [role="banner"],
    footer#footer {
      max-width: 84rem;
@@ -11,6 +25,29 @@
    }
    [role="complementary"] {
      background-color: #fff;
+     .view-simple-for-survey {
+       padding: .5rem 1rem;
+       .survey-question {
+         font-size: 1.4rem;
+         margin: 1rem 0 1rem;
+         line-height: 1.3;
+         // color: #111;
+       }
+       .field-item {
+         margin: 1em 0;
+       }
+       .field-name-title {
+         font-size: 1.2rem;
+         a:link {
+           //color: #5a5a5a;
+         }
+       }
+       a.username {
+         font-size: .9rem;
+         display: block;
+         color: nth($black, 3);
+       }
+     }
    }
    [role="main"] {
      max-width: 84rem;
@@ -245,30 +282,4 @@
    -webkit-flex: 1 1 100%;
    flex: 1 1 100%;
    margin: 1% 0;
- }
- 
- [role="complementary"] {
-   .view-simple-for-survey {
-     padding: .5rem 1rem;
-     .survey-question {
-       font-size: 1.4rem;
-       margin: 1rem 0 1rem;
-       line-height: 1.3;
-       // color: #111;
-     }
-     .field-item {
-       margin: 1em 0;
-     }
-     .field-name-title {
-       font-size: 1.2rem;
-       a:link {
-         //color: #5a5a5a;
-       }
-     }
-     a.username {
-       font-size: .9rem;
-       display: block;
-       color: nth($black, 3);
-     }
-   }
  }

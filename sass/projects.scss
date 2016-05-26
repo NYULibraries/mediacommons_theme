@@ -15,22 +15,9 @@ $black-value: #333333;
 $black: tint-stack($black-value);
 $type-color-value: #232323;
 $type-color: tint-stack($type-color-value);
-$mcpress-color: #659e42;
-$body-color: #333333;
-.node-mcpress {
-  border-top: 4px solid $mcpress-color;
-  .field-name-field-project {
-    background-color: $mcpress-color;
-  }
-}
 
-$fg-color: #d7a100;
-.node-fg {
-  border-top: 4px solid $fg-color;
-  .field-name-field-project {
-    background-color: $fg-color;
-  }
-}
+$body-color: #333333;
+
 
 @each $header,
 $col in $map {
@@ -61,18 +48,13 @@ $col in $map {
       border-top: 2px solid $col;
       .blockheader div {
         color: white;
-        background: $col;
+        background-color: $col;
         display: inline-block;
         padding: 0 6px;
       }
-      img {
-        width: 100% !important;
-        height: auto !important;
-        display: block;
-      }
     }
     .featured-item {
-      background-color: $col;
+      background: darken($col, 20%);
     }
     a:link,
     a:visited {
@@ -289,11 +271,6 @@ body .hub-title {
   }
 }
 
-.featured-item-list .featured-item {
-  flex: 0 1 49%;
-  padding: 5px 0;
-  position: relative;
-}
 
 .featuredhub-info {
   position: absolute;
@@ -319,3 +296,6 @@ body .hub-title {
 }
 
 @import "projects/int";
+
+
+@import "projects/imr";

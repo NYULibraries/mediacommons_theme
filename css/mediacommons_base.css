@@ -3095,21 +3095,21 @@ aside + h2 {
   clear: left;
 }
 
-/* line 133, ../sass/modules/hub_list/_hub_list.scss */
+/* line 132, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous h1.page-title {
   margin-bottom: 30px;
 }
-/* line 136, ../sass/modules/hub_list/_hub_list.scss */
+/* line 135, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb {
   width: 80px;
 }
-/* line 138, ../sass/modules/hub_list/_hub_list.scss */
+/* line 137, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb img {
   width: 100%;
   height: auto;
 }
 
-/* line 146, ../sass/modules/hub_list/_hub_list.scss */
+/* line 145, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3117,13 +3117,13 @@ aside + h2 {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 152, ../sass/modules/hub_list/_hub_list.scss */
+/* line 151, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title a:link,
 .node .node-teaser-title a:visited {
   color: #232323;
 }
 
-/* line 159, ../sass/modules/hub_list/_hub_list.scss */
+/* line 158, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3131,78 +3131,84 @@ h2.spoke-title {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 165, ../sass/modules/hub_list/_hub_list.scss */
+/* line 164, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title a:link,
 h2.spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 171, ../sass/modules/hub_list/_hub_list.scss */
+/* line 169, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist {
   font-size: .8rem;
   color: #5a5a5a;
   line-height: 1.5;
 }
-/* line 175, ../sass/modules/hub_list/_hub_list.scss */
-.peoplelist .view-content {
-  width: auto;
-  overflow: auto;
-  background-color: yellow;
+/* line 173, ../sass/modules/hub_list/_hub_list.scss */
+.peoplelist span {
+  white-space: nowrap;
 }
-/* line 180, ../sass/modules/hub_list/_hub_list.scss */
+/* line 175, ../sass/modules/hub_list/_hub_list.scss */
+.peoplelist span::after {
+  content: ", ";
+}
+/* line 178, ../sass/modules/hub_list/_hub_list.scss */
+.peoplelist span:last-child::after {
+  content: "";
+}
+/* line 184, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .field-label {
   display: inline-block;
   padding-right: .2rem;
 }
-/* line 185, ../sass/modules/hub_list/_hub_list.scss */
+/* line 189, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist a:link,
 .peoplelist a:active,
 .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 190, ../sass/modules/hub_list/_hub_list.scss */
+/* line 194, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist ul {
   display: inline;
 }
-/* line 193, ../sass/modules/hub_list/_hub_list.scss */
+/* line 197, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li {
   padding-right: .25rem;
   display: inline-block;
 }
-/* line 196, ../sass/modules/hub_list/_hub_list.scss */
+/* line 200, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:after {
   content: ",\20";
 }
-/* line 199, ../sass/modules/hub_list/_hub_list.scss */
+/* line 203, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:last-child:after {
   content: "";
 }
-/* line 203, ../sass/modules/hub_list/_hub_list.scss */
+/* line 207, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .label {
   float: left;
   margin-right: 5px;
 }
-/* line 207, ../sass/modules/hub_list/_hub_list.scss */
+/* line 211, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline {
   /* for spoke pages, when there is an org */
   float: left;
   margin-right: 5px;
 }
-/* line 211, ../sass/modules/hub_list/_hub_list.scss */
+/* line 215, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline .p-name,
 .peoplelist .view-mode-user_byline .p-org {
   float: left;
 }
-/* line 215, ../sass/modules/hub_list/_hub_list.scss */
+/* line 219, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:after {
   content: ",\20";
 }
-/* line 218, ../sass/modules/hub_list/_hub_list.scss */
+/* line 222, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:last-child:after {
   content: "";
 }
 
-/* line 225, ../sass/modules/hub_list/_hub_list.scss */
+/* line 229, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 2rem;
@@ -3210,38 +3216,38 @@ h2.spoke-title a:visited {
   padding-left: 10px;
   color: #888;
 }
-/* line 232, ../sass/modules/hub_list/_hub_list.scss */
+/* line 236, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 237, ../sass/modules/hub_list/_hub_list.scss */
+/* line 241, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
   background-color: #F7F7F7;
 }
-/* line 241, ../sass/modules/hub_list/_hub_list.scss */
+/* line 245, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 244, ../sass/modules/hub_list/_hub_list.scss */
+/* line 248, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
   border: 1px solid #eeeeee;
 }
-/* line 251, ../sass/modules/hub_list/_hub_list.scss */
+/* line 255, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {
   display: none;
 }
-/* line 254, ../sass/modules/hub_list/_hub_list.scss */
+/* line 258, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   font-size: .8rem;
 }
-/* line 259, ../sass/modules/hub_list/_hub_list.scss */
+/* line 263, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-submit-button {
   display: none;
 }

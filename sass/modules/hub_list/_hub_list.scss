@@ -128,7 +128,6 @@ aside + h2 {
   }
 }
 
-
 .page-previous {
   h1.page-title {
     margin-bottom: 30px;
@@ -167,16 +166,21 @@ h2.spoke-title {
     color: nth($black, 1) !important;
   }
 }
-
 .peoplelist {
   font-size: .8rem;
   color: nth($black, 2);
   line-height: 1.5;
-  .view-content {
-    width: auto;
-    overflow: auto;
-    background-color: yellow;
+  span {
+    white-space: nowrap;
+    &::after {
+      content: ", ";  }
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
   }
+
   .field-label {
     display: inline-block;
     padding-right: .2rem;

@@ -272,17 +272,16 @@ function mediacommons_field__field_tags( $vars ) {
 
 function mediacommons_field__field_contributors__spoke( $vars ) {
   //dpm($vars);
-  // Currently used for spoke teasers and spoke teaser simplest 
-
+  //  Used for spoke teasers and spoke teaser simplest 
   $output ='';
-  $output .= '<div class="peoplelist contributors">' ;
+  $output .= '<div class="peoplelist">' ;
   if ( isset( $vars['items'][0]['#title'] ) ) {
-    $output .= '<div class="field-label">' . $vars['label'] . '</div><ul >';
+    $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
-      $output .= '<li>' . drupal_render( $vars['items'][$key] ) . '</li>';
+      $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
     }
   }
-  $output .= '</ul></div>';
+  $output .= '</div>';
   return $output;
 }
 

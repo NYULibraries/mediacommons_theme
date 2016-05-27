@@ -109,27 +109,32 @@ body.fieldguide {
 }
 
 .spoke-teaser-meta {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: baseline;
+  font-size: .8rem;
+  .peoplelist {
+    // flex: 0 0 auto;
+    float:left;
+  }
   time {
-    order: 2;
+    // flex: 0 1 auto;
+    //  order: 2;
+    line-height: 1.5;
+     float:left;
     &::before {
       content: "|\00a0";
     }
     padding: 0 5px 0 0;
   }
   .comment-count {
-    order: 3;
-    font-size: .8rem;
+    //order: 3;
     &::before {
       content: "|";
     }
-    &::after {
-      content: " comments";
-    }
     a:link {
       color: #5a5a5a;
-      font-size: .8rem;
+      //font-size: .8rem;
     }
   }
 }

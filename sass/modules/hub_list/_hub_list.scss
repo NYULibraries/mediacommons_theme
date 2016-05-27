@@ -166,6 +166,41 @@ h2.spoke-title {
     color: nth($black, 1) !important;
   }
 }
+
+.spoke-teaser-meta {
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: baseline;
+  width:auto;
+  overflow:hidden;
+  font-size: .8rem;
+  .peoplelist {
+    // flex: 0 0 auto;
+    float: left;
+  }
+  time {
+    // flex: 0 1 auto;
+    //  order: 2;
+    line-height: 1.5;
+    float: left;
+    &::before {
+      content: "|\00a0";
+    }
+    padding: 0 5px 0 0;
+  }
+  .comment-count {
+    //order: 3;
+     float: left;
+    &::before {
+      content: "|";
+    }
+    a:link {
+      color: #5a5a5a;
+      //font-size: .8rem;
+    }
+  }
+}
+
 .peoplelist {
   font-size: .8rem;
   color: nth($black, 2);
@@ -173,14 +208,14 @@ h2.spoke-title {
   span {
     white-space: nowrap;
     &::after {
-      content: ", ";  }
+      content: ", ";
+    }
     &:last-child {
       &::after {
         content: "";
       }
     }
   }
-
   .field-label {
     display: inline-block;
     padding-right: .2rem;

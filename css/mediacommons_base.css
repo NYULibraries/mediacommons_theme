@@ -3137,78 +3137,111 @@ h2.spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 169, ../sass/modules/hub_list/_hub_list.scss */
+/* line 170, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta {
+  width: auto;
+  overflow: hidden;
+  font-size: .8rem;
+}
+/* line 177, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta .peoplelist {
+  float: left;
+}
+/* line 181, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta time {
+  line-height: 1.5;
+  float: left;
+  padding: 0 5px 0 0;
+}
+/* line 186, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta time::before {
+  content: "|\00a0";
+}
+/* line 191, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta .comment-count {
+  float: left;
+}
+/* line 194, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta .comment-count::before {
+  content: "|";
+}
+/* line 197, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta .comment-count a:link {
+  color: #5a5a5a;
+}
+
+/* line 204, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist {
   font-size: .8rem;
   color: #5a5a5a;
   line-height: 1.5;
 }
-/* line 173, ../sass/modules/hub_list/_hub_list.scss */
+/* line 208, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist span {
   white-space: nowrap;
 }
-/* line 175, ../sass/modules/hub_list/_hub_list.scss */
+/* line 210, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist span::after {
   content: ", ";
 }
-/* line 178, ../sass/modules/hub_list/_hub_list.scss */
+/* line 214, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist span:last-child::after {
   content: "";
 }
-/* line 184, ../sass/modules/hub_list/_hub_list.scss */
+/* line 219, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .field-label {
   display: inline-block;
   padding-right: .2rem;
 }
-/* line 189, ../sass/modules/hub_list/_hub_list.scss */
+/* line 224, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist a:link,
 .peoplelist a:active,
 .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 194, ../sass/modules/hub_list/_hub_list.scss */
+/* line 229, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist ul {
   display: inline;
 }
-/* line 197, ../sass/modules/hub_list/_hub_list.scss */
+/* line 232, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li {
   padding-right: .25rem;
   display: inline-block;
 }
-/* line 200, ../sass/modules/hub_list/_hub_list.scss */
+/* line 235, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:after {
   content: ",\20";
 }
-/* line 203, ../sass/modules/hub_list/_hub_list.scss */
+/* line 238, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist li:last-child:after {
   content: "";
 }
-/* line 207, ../sass/modules/hub_list/_hub_list.scss */
+/* line 242, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .label {
   float: left;
   margin-right: 5px;
 }
-/* line 211, ../sass/modules/hub_list/_hub_list.scss */
+/* line 246, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline {
   /* for spoke pages, when there is an org */
   float: left;
   margin-right: 5px;
 }
-/* line 215, ../sass/modules/hub_list/_hub_list.scss */
+/* line 250, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline .p-name,
 .peoplelist .view-mode-user_byline .p-org {
   float: left;
 }
-/* line 219, ../sass/modules/hub_list/_hub_list.scss */
+/* line 254, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:after {
   content: ",\20";
 }
-/* line 222, ../sass/modules/hub_list/_hub_list.scss */
+/* line 257, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist .view-mode-user_byline:last-child:after {
   content: "";
 }
 
-/* line 229, ../sass/modules/hub_list/_hub_list.scss */
+/* line 264, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 2rem;
@@ -3216,38 +3249,38 @@ h2.spoke-title a:visited {
   padding-left: 10px;
   color: #888;
 }
-/* line 236, ../sass/modules/hub_list/_hub_list.scss */
+/* line 271, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 241, ../sass/modules/hub_list/_hub_list.scss */
+/* line 276, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
   background-color: #F7F7F7;
 }
-/* line 245, ../sass/modules/hub_list/_hub_list.scss */
+/* line 280, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 248, ../sass/modules/hub_list/_hub_list.scss */
+/* line 283, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
   border: 1px solid #eeeeee;
 }
-/* line 255, ../sass/modules/hub_list/_hub_list.scss */
+/* line 290, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {
   display: none;
 }
-/* line 258, ../sass/modules/hub_list/_hub_list.scss */
+/* line 293, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   font-size: .8rem;
 }
-/* line 263, ../sass/modules/hub_list/_hub_list.scss */
+/* line 298, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-submit-button {
   display: none;
 }

@@ -822,33 +822,6 @@ body.fieldguide .node-spoke.node-teaser {
   padding-bottom: .5rem;
 }
 
-/* line 111, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta {
-  font-size: .8rem;
-}
-/* line 116, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta .peoplelist {
-  float: left;
-}
-/* line 120, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta time {
-  line-height: 1.5;
-  float: left;
-  padding: 0 5px 0 0;
-}
-/* line 125, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta time::before {
-  content: "|\00a0";
-}
-/* line 132, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta .comment-count::before {
-  content: "|";
-}
-/* line 135, ../sass/projects/_fieldguide.scss */
-.spoke-teaser-meta .comment-count a:link {
-  color: #5a5a5a;
-}
-
 /* line 2, ../sass/projects/_imr.scss */
 .imr #contentwide .featured-item {
   -ms-flex: 0 1 32%;

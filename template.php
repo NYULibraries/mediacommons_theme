@@ -284,7 +284,30 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
   $output .= '</div>';
   return $output;
 }
+function mediacommons_field__minimal__field_spokes__hub( $vars ) {
+  //  Used for homepage for In Media Res
+  $special_body_class = theme_get_setting( 'special_body_class' );
+ 
+  if ($special_body_class == 'imr' ) { 
 
+    $ArrP = $vars['element']['#object']-> {'field_period'};
+    $d1 = format_date( $ArrP['und']['0']['value'], 'custom','F j, Y');
+    $d2 = format_date( $ArrP['und']['0']['value2'], 'custom','F j, Y');
+    //dpm($vars['element']);
+    //dpm( $ArrP);
+
+    $output ='';
+    $output .= '<time class="date-display-range ">'. $d1 . ' to ' . $d2 . '</time>' ;
+    if ( isset( $vars['items'][0] ) ) {
+      $output .= '<div class="spokes">' ;
+      foreach ( element_children( $vars['items'] ) as $key ) {
+        $output .= drupal_render( $vars['items'][$key] ) ;
+      }
+      $output .= '</div>' ;
+    }
+    return $output;
+  }
+}
 
 function mediacommons_field__field_curators_editors( $vars ) {
   //dpm($vars);

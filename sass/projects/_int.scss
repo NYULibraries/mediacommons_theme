@@ -13,7 +13,25 @@
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   body.int {
+    .logo {
+      background-image: image-url("mc-logos/intransition_logo.svg");
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 31rem;
+      height: 2.8rem;
+      display: block;
+      margin-bottom: 1rem;
+    }
     &.front {
+      @media (min-width: 50.0625em) {
+        #content {
+          width: 70%;
+        }
+        [role="complementary"] {
+          width: 28%;
+        }
+      }
       .field-name-field-body {
         display: none;
       }
@@ -27,14 +45,14 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        padding:4px;
+        padding: 4px;
         line-height: 1.5;
         a {
           background-color: rgba(255, 255, 255, .8);
         }
       }
       .featured-item {
-       background-color: nth($tertiary, 4);
+        background-color: nth($tertiary, 4);
       }
     }
     .node-hub.view-mode-teaser .field-name-field-body {

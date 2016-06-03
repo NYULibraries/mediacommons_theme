@@ -680,19 +680,40 @@ body .hub-title a:visited {
   color: #ebebeb !important;
 }
 
-/* line 17, ../sass/projects/_int.scss */
+/* line 16, ../sass/projects/_int.scss */
+body.int .logo {
+  background-image: url('../images/mc-logos/intransition_logo.svg?1464983603');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 31rem;
+  height: 2.8rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+@media (min-width: 50.0625em) {
+  /* line 28, ../sass/projects/_int.scss */
+  body.int.front #content {
+    width: 70%;
+  }
+  /* line 31, ../sass/projects/_int.scss */
+  body.int.front [role="complementary"] {
+    width: 28%;
+  }
+}
+/* line 35, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
-/* line 20, ../sass/projects/_int.scss */
+/* line 38, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 22, ../sass/projects/_int.scss */
+/* line 40, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 26, ../sass/projects/_int.scss */
+/* line 44, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
@@ -700,34 +721,34 @@ body.int.front .hub-title {
   padding: 4px;
   line-height: 1.5;
 }
-/* line 32, ../sass/projects/_int.scss */
+/* line 50, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 36, ../sass/projects/_int.scss */
+/* line 54, ../sass/projects/_int.scss */
 body.int.front .featured-item {
   background-color: #ddddc9;
 }
-/* line 40, ../sass/projects/_int.scss */
+/* line 58, ../sass/projects/_int.scss */
 body.int .node-hub.view-mode-teaser .field-name-field-body {
   display: none;
 }
-/* line 43, ../sass/projects/_int.scss */
+/* line 61, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 47, ../sass/projects/_int.scss */
+/* line 65, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 50, ../sass/projects/_int.scss */
+/* line 68, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 150%;
   background-position-x: -10px;
   background-position-y: -20px;
 }
-/* line 55, ../sass/projects/_int.scss */
+/* line 73, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;

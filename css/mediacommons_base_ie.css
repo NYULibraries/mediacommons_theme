@@ -1784,10 +1784,6 @@ body.tne .logo {
 body.alt .logo {
   background-position: 0 59%;
 }
-/* line 63, ../sass/modules/header/_header--logos.scss */
-body.int .logo {
-  background-position: 0 79%;
-}
 
 /* line 9, ../sass/modules/header/_header.scss */
 [role="banner"] {

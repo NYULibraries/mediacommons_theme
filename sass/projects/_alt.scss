@@ -1,0 +1,33 @@
+  $aa_primary: map-get($map, alt);
+  $primary_stack: tint-stack($aa_primary) !global;
+  $neutral_stack: tint-stack(#333333) !global;
+  body.alt {
+    [role="complementary"] {
+      > div,
+      .block {
+        background-color: lighten(nth($neutral_stack, 5), 3%);
+        a.active {
+          position: relative;
+          background-color: nth($primary_stack, 5);
+          padding-left: 15px;
+        }
+        a.active:after {
+          right: 100%;
+          top: 50%;
+          border: solid transparent;
+          content: " ";
+          height: 0;
+          width: 0;
+          position: absolute;
+          pointer-events: none;
+          // border-color: rgba(136, 183, 213, 0);
+          border-right-color:  nth($primary_stack, 5);
+          border-width: 30px;
+          margin-top: -30px;
+        }
+      }
+      header {
+        background-color: nth($neutral_stack, 4);
+      }
+    }
+  }

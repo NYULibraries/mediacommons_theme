@@ -11,13 +11,15 @@ $breakpoint-no-query-fallbacks: false;
 /// homepage -- hub -- credits under title
 $homepage-credits: 0.75rem !default;
 $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+//$map: (mc: #196195, fieldguide: #d7a100, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+
+
 $black-value: #333333;
 $black: tint-stack($black-value);
 $type-color-value: #232323;
 $type-color: tint-stack($type-color-value);
 $body-color: #333333;
-@each $header,
-$col in $map {
+@each $header, $col in $map {
   /*   */
   $primary-color: $col;
   $cs-primary: $primary-color !global;
@@ -51,7 +53,7 @@ $col in $map {
       }
     }
     .featured-item {
-      background: darken($col, 20%);
+      background: darken($col, 10%);
     }
     a:link,
     a:visited {
@@ -115,8 +117,6 @@ $col in $map {
   }
 }
 
-body.imr,
-body.alt {
   [role="complementary"] {
     > div {
       background: #dedede;
@@ -144,7 +144,7 @@ body.alt {
       margin-top: -30px;
     }
   }
-}
+
 
 body .hub-title {
   font-size: 31px;

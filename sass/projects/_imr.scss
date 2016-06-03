@@ -1,43 +1,52 @@
-body.imr {
-  #contentwide {
-    .featured-item {
-      -ms-flex: 0 1 32%;
-      -webkit-flex: 0 1 32%;
-      flex: 0 1 32%;
-      margin: 1% 0;
-    }
-    .node-hub.view-mode-full {
-      .group-flex1 {
-        flex: 0 0 49%;
-      }
-      .group-flex2 {
-        flex: 0 1 49%;
-        border-left: 2px solid #e25025;
-        border-top: 2px solid #e25025;
-        padding-left: 10px;
-      }
-    }
-    .hubhead .field-name-field-period {
-      display:none;
-    }
-    time.date-display-range {
-      background-color: #e25025;
-   
-      padding: 1px 15px 1px 10px;
-      color:white;
-      margin-left: -10px;
-      float:left;
-     
-    }
-    .spokes {
-      clear:left;
-      margin-top: 35px;
-    }
-  }
-  .node-spoke.node-teaser .thumb {
-    box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
-    background-size: 100%;
-    background-position-x: 0px;
-    background-position-y: 0px;
-  }
-}
+ $fg_primary: map-get($map, imr);
+ $neutral_stack: tint-stack(#333333) !global;
+ body.imr {
+   #contentwide {
+     .featured-item {
+       -ms-flex: 0 1 32%;
+       -webkit-flex: 0 1 32%;
+       flex: 0 1 32%;
+       margin: 1% 0;
+     }
+     .node-hub.view-mode-full {
+       .group-flex1 {
+         flex: 0 0 49%;
+       }
+       .group-flex2 {
+         flex: 0 1 49%;
+         border-left: 2px solid #e25025;
+         border-top: 2px solid #e25025;
+         padding-left: 10px;
+       }
+     }
+     .hubhead .field-name-field-period {
+       display: none;
+     }
+     time.date-display-range {
+       background-color: #e25025;
+       padding: 1px 15px 1px 10px;
+       color: white;
+       margin-left: -10px;
+       float: left;
+     }
+     .spokes {
+       clear: left;
+       margin-top: 35px;
+     }
+   }
+   .node-spoke.node-teaser .thumb {
+     box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+     background-size: 100%;
+     background-position-x: 0px;
+     background-position-y: 0px;
+   }
+   [role="complementary"] {
+     > div,
+     .block {
+       background-color: lighten(nth($neutral_stack, 5), 3%);
+     }
+     header {
+       background-color: nth($neutral_stack, 4);
+     }
+   }
+ }

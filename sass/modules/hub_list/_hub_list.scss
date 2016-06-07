@@ -75,7 +75,11 @@ aside + h2 {
       // border: none;
     }
     .field-name-field-representative-image {
-      padding-right: 35px;
+      margin-right: 35px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: -18px;
+      min-height: 7rem;
       img {
         width: 100%;
         height: auto;
@@ -171,8 +175,8 @@ h2.spoke-title {
   // display: flex;
   // flex-wrap: wrap;
   // align-items: baseline;
-  width:auto;
-  overflow:hidden;
+  width: auto;
+  overflow: hidden;
   font-size: .8rem;
   .peoplelist {
     // flex: 0 0 auto;
@@ -190,7 +194,7 @@ h2.spoke-title {
   }
   .comment-count {
     //order: 3;
-     float: left;
+    float: left;
     &::before {
       content: "|";
     }

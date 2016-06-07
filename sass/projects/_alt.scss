@@ -1,7 +1,11 @@
   $aa_primary: map-get($map, alt);
   $primary_stack: tint-stack($aa_primary) !global;
   $neutral_stack: tint-stack(#333333) !global;
+  $spoke-default-thumb: "default_images/spoke-default-alt.svg";
   body.alt {
+    .node-hub.node-teaser .field-name-field-representative-image {
+      background: image-url($spoke-default-thumb);
+    }
     [role="complementary"] {
       > div,
       .block {
@@ -21,7 +25,7 @@
           position: absolute;
           pointer-events: none;
           // border-color: rgba(136, 183, 213, 0);
-          border-right-color:  nth($primary_stack, 5);
+          border-right-color: nth($primary_stack, 5);
           border-width: 30px;
           margin-top: -30px;
         }

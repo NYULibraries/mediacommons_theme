@@ -731,25 +731,29 @@ body.int li.featured-item {
 /* line 78, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* line 6, ../sass/projects/_alt.scss */
 body.alt .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-alt.svg?1444147155');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/* line 10, ../sass/projects/_alt.scss */
+/* line 12, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] > div,
 body.alt [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 13, ../sass/projects/_alt.scss */
+/* line 15, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] > div a.active,
 body.alt [role="complementary"] .block a.active {
   position: relative;
   background-color: #f5dddf;
   padding-left: 15px;
 }
-/* line 18, ../sass/projects/_alt.scss */
+/* line 20, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] > div a.active:after,
 body.alt [role="complementary"] .block a.active:after {
   right: 100%;
@@ -764,7 +768,7 @@ body.alt [role="complementary"] .block a.active:after {
   border-width: 30px;
   margin-top: -30px;
 }
-/* line 33, ../sass/projects/_alt.scss */
+/* line 35, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] header {
   background-color: #cccccc;
 }
@@ -923,6 +927,8 @@ body.fieldguide .node-spoke.node-teaser {
 /* line 3, ../sass/projects/_tne.scss */
 body.tne .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* line 6, ../sass/projects/_imr.scss */
@@ -979,4 +985,7 @@ body.imr [role="complementary"] header {
 /* line 53, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-imr.svg?1444148384');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
 }

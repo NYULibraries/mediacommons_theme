@@ -77,5 +77,7 @@
     }
     .node-hub.node-teaser .field-name-field-representative-image {
       background: image-url($spoke-default-thumb);
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }

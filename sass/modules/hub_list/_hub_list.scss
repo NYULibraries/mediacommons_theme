@@ -46,12 +46,6 @@ aside + h2 {
       flex: 1 1 auto;
       // margin-left: 2%;
     }
-    .field-name-field-representative-image {
-      /*   img[src *="default"], */
-      img[src *="default_images"] {
-        display: none;
-      }
-    }
   }
   &.node-teaser {
     display: flex;
@@ -76,9 +70,6 @@ aside + h2 {
     }
     .field-name-field-representative-image {
       margin-right: 35px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: -18px;
       min-height: 7rem;
       img {
         width: 100%;

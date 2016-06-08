@@ -11,3 +11,9 @@ templates/not_used/*
 *.lock
 
 design/files/*
+
+# Intellij stuff
+.idea/
+
+# Emacs
+*~

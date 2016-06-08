@@ -413,12 +413,31 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   if ( $element['#below'] ) {
     $sub_menu = drupal_render( $element['#below'] );
   }
+
+  // We need $element['#href'] that are paths relative to the main domain to be
+  // changed to absolute URLs so that l() will consider them "external" and won't
+  // prepend $base_url to them.
+  // e.g. If we are current in "/alt-ac/", we want menu link to TNE to be
+  // "http://media-commons.org/tne" and not "/alt-ac/tne".
+  if ( ! url_is_external( $element['#href'] ) ) {
+    $element['#href'] = get_absolute_url_for_site( $element['#href'] );
+  }
+
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
   ////
   // Define special variables for use in hook_menu_tree
   //$element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'];
   $element['#attributes']['data-level'] = $element['#original_link']['depth'];
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+function get_absolute_url_for_site($relative_path) {
+  // NOTE: gethostname() does not work for local /etc/hosts/ aliases.
+  $hostname = $_SERVER['SERVER_NAME'];
+  $protocol = $_SERVER['HTTPS'] ? 'https' : 'http';
+  $port     = $_SERVER['SERVER_PORT'] === '80' ? '' : ':' . $_SERVER['SERVER_PORT'];
+
+  return "${protocol}://${hostname}${port}" . "${relative_path}";
 }
 
 ?>

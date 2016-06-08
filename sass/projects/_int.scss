@@ -14,15 +14,24 @@
   $tertiary: tint-stack(cs-tertiary()) !global;
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
   body.int {
-    .logo {
-      background-image: image-url("mc-logos/intransition_logo.svg");
-      background-position: left top;
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 31rem;
-      height: 2.8rem;
-      display: block;
-      margin-bottom: 1rem;
+    @media (min-width: 800px) {
+      [role="banner"] .logo {
+        background-image: image-url("mc-logos/intransition_logo.svg");
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 31rem;
+        height: 2.8rem;
+        display: block;
+        margin-bottom: 1rem;
+      }
+    }
+    @media (min-width: 550px) and (max-width: 799px) {
+      [role="banner"] .logo {
+        background-image: image-url("mc-logos/intransition_logo.svg");
+        width: 27rem;
+        background-position: 0 4px;
+      }
     }
     &.front {
       @media (min-width: 50.0625em) {

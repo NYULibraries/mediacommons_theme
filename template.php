@@ -9,7 +9,7 @@
  * @see https://drupal.org/node/1728096
  */
 
-const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_HOST]/';
+const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_DOMAIN]/';
 
 function mediacommons_theme( &$existing, $type, $theme, $path ) {
   $hooks = zen_theme( $existing, $type, $theme, $path );

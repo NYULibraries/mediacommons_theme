@@ -93,8 +93,7 @@ function mediacommons_form_comment_form_alter( &$form, &$form_state ) {
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function mediacommons_preprocess_page( &$vars ) {
-  /** Remove logo */
-  // $vars['logo'] = null;
+  $special_body_class = theme_get_setting( 'special_body_class' );
 
   if ( isset( $vars['node'] ) ) {
     // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
@@ -114,17 +113,20 @@ function mediacommons_preprocess_page( &$vars ) {
     $term = taxonomy_term_load( arg( 2 ) );
     $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-  $special_body_class = theme_get_setting( 'special_body_class' );
+  
   if ($special_body_class == 'mc' ) { 
     if (in_array("page__front", $vars['theme_hook_suggestions'])) {
         $vars['theme_hook_suggestions'][] = 'page__front__mc';
     }
   } 
-
-
   if ($special_body_class == 'imr' ) { 
     if (in_array("page__front", $vars['theme_hook_suggestions'])) {
         $vars['theme_hook_suggestions'][] = 'page__front__imr';
+    }
+  }
+  if ($special_body_class == 'int' ) { 
+    if (in_array("page__spoke", $vars['theme_hook_suggestions'])) {
+        $vars['theme_hook_suggestions'][] = 'page__spoke__int';
     }
   }
 }

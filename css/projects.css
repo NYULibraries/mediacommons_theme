@@ -162,7 +162,7 @@ body.fieldguide [role="complementary"] header {
 }
 /* line 92, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-fieldguide.svg?1444145625');
+  background: url('../images/default_images/spoke-default-fieldguide.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -261,7 +261,7 @@ body.tne [role="complementary"] header {
 }
 /* line 92, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-tne.svg?1444145368');
+  background: url('../images/default_images/spoke-default-tne.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -360,7 +360,7 @@ body.imr [role="complementary"] header {
 }
 /* line 92, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-imr.svg?1444148384');
+  background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -459,7 +459,7 @@ body.int [role="complementary"] header {
 }
 /* line 92, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -558,7 +558,7 @@ body.alt [role="complementary"] header {
 }
 /* line 92, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-alt.svg?1444147155');
+  background: url('../images/default_images/spoke-default-alt.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -659,7 +659,7 @@ body .hub-title a:visited {
 @media (min-width: 800px) {
   /* line 18, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
-    background-image: url('../images/mc-logos/intransition_logo.svg?1464983603');
+    background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     background-position: left top;
     background-repeat: no-repeat;
     background-size: contain;
@@ -672,7 +672,7 @@ body .hub-title a:visited {
 @media (min-width: 550px) and (max-width: 799px) {
   /* line 30, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
-    background-image: url('../images/mc-logos/intransition_logo.svg?1464983603');
+    background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     width: 27rem;
     background-position: 0 4px;
   }
@@ -732,7 +732,7 @@ body.int .node-spoke.node-teaser .thumb {
 }
 /* line 80, ../sass/projects/_int.scss */
 body.int li.featured-item {
-  background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: -18px;
@@ -740,14 +740,57 @@ body.int li.featured-item {
 }
 /* line 87, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+/* line 95, ../sass/projects/_int.scss */
+.intransition_full .review-title {
+  margin: .5em 0;
+  font-size: 1rem;
+}
+/* line 99, ../sass/projects/_int.scss */
+.intransition_full .review-byline {
+  font-size: 1.3rem;
+}
+/* line 102, ../sass/projects/_int.scss */
+.intransition_full .int-full-sections {
+  width: auto;
+  overflow: hidden;
+  margin: 2em 0;
+}
+@media (min-width: 830px) {
+  /* line 108, ../sass/projects/_int.scss */
+  .intransition_full .group-1 {
+    float: left;
+    width: 49%;
+    margin-right: 1%;
+    background-color: gray;
+    margin-bottom: 2em;
+  }
+  /* line 115, ../sass/projects/_int.scss */
+  .intransition_full .group-2 {
+    float: right;
+    width: 48%;
+    margin-left: 1%;
+  }
+  /* line 120, ../sass/projects/_int.scss */
+  .intransition_full .group-3 {
+    float: left;
+    width: 48%;
+    margin-right: 2%;
+  }
+}
+/* line 126, ../sass/projects/_int.scss */
+.intransition_full .group-footer {
+  clear: both;
+  margin-top: 4em;
+}
+
 /* line 6, ../sass/projects/_alt.scss */
 body.alt .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-alt.svg?1444147155');
+  background: url('../images/default_images/spoke-default-alt.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -824,7 +867,7 @@ body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
   height: 4.8rem;
-  background: url('../images/mc-logos/fieldguidelogo.svg?1447863348');
+  background: url('../images/mc-logos/fieldguidelogo.svg?1465491556');
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0 0 1em 0;
@@ -835,7 +878,7 @@ body.fieldguide .logo {
     width: 16rem;
     height: 2.5rem;
     padding: 0;
-    background: url('../images/mc-logos/fieldguidelogo-mobile.svg?1447954703');
+    background: url('../images/mc-logos/fieldguidelogo-mobile.svg?1465491556');
     background-repeat: no-repeat;
     background-size: auto 100%;
     margin-bottom: 0;
@@ -936,7 +979,7 @@ body.fieldguide .node-spoke.node-teaser {
 
 /* line 3, ../sass/projects/_tne.scss */
 body.tne .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-int.svg?1444142145');
+  background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -994,7 +1037,7 @@ body.imr [role="complementary"] header {
 }
 /* line 53, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-imr.svg?1444148384');
+  background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;

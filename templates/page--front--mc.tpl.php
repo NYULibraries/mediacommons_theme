@@ -30,24 +30,21 @@
           <?php print $messages; ?>
   <?php endif; ?>
 
-<div id="content"> 
+  <div id="content"> 
   <div class="flexhold">
   <section class="featured-hed"></section>
 
-   <section class="featured-more">  
-    <div class="hometophold">
-   <div class="hometopleft"><?php  print render($page['homepage_top']);  ?></div>
-  <div class="hometopright"><p><span class="special">Welcome</span> Fermentum posuere parturient egestas suscipit mi mi ad faucibus viverra habitasse dictumst vestibulum convallis condimentum parturient.Per ac euismod varius per elit eget at parturient nibh laoreet leo vulputate a mi vestibulum ullamcorper justo consectetur ad a nec.</p>
+  <section class="featured-more">  
+  <div class="hometophold">
+  <div class="hometopleft"><?php  print render($page['umb_homepage_top']);  ?></div>
+  <div class="hometopright"><p><span class="special">Placeholder!  Welcome</span> Fermentum posuere parturient egestas suscipit mi mi ad faucibus viverra habitasse dictumst vestibulum convallis condimentum parturient.Per ac euismod varius per elit eget at parturient nibh laoreet leo vulputate a mi vestibulum ullamcorper justo consectetur ad a nec.</p>
     <p><a href="#">Elit mi justo volutpat</a></p></div>
-
-    </div>
-     <?php  print render($page['homepage_bottom']); ?> </section>
-  <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
+  </div>
+     <?php  print render($page['umb_homepage_bottom']); ?> </section>
+  <aside role="complementary"><?php print render($page['umb_homepage_sidebar']); ?></aside>
      </div>
 </div>
-  <?php if (isset($page['homepage_sidebarx '])) : ?>
-          <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
-  <?php endif; ?> 
+
 
   
 

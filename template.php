@@ -9,6 +9,7 @@
  * @see https://drupal.org/node/1728096
  */
 
+const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_DOMAIN]/';
 
 function mediacommons_theme( &$existing, $type, $theme, $path ) {
   $hooks = zen_theme( $existing, $type, $theme, $path );
@@ -93,8 +94,7 @@ function mediacommons_form_comment_form_alter( &$form, &$form_state ) {
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function mediacommons_preprocess_page( &$vars ) {
-  /** Remove logo */
-  // $vars['logo'] = null;
+  $special_body_class = theme_get_setting( 'special_body_class' );
 
   if ( isset( $vars['node'] ) ) {
     // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
@@ -114,17 +114,20 @@ function mediacommons_preprocess_page( &$vars ) {
     $term = taxonomy_term_load( arg( 2 ) );
     $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-  $special_body_class = theme_get_setting( 'special_body_class' );
+  
   if ($special_body_class == 'mc' ) { 
     if (in_array("page__front", $vars['theme_hook_suggestions'])) {
         $vars['theme_hook_suggestions'][] = 'page__front__mc';
     }
   } 
-
-
   if ($special_body_class == 'imr' ) { 
     if (in_array("page__front", $vars['theme_hook_suggestions'])) {
         $vars['theme_hook_suggestions'][] = 'page__front__imr';
+    }
+  }
+  if ($special_body_class == 'int' ) { 
+    if (in_array("page__spoke", $vars['theme_hook_suggestions'])) {
+        $vars['theme_hook_suggestions'][] = 'page__spoke__int';
     }
   }
 }
@@ -414,13 +417,14 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
     $sub_menu = drupal_render( $element['#below'] );
   }
 
-  // We need $element['#href'] that are paths relative to the main domain to be
-  // changed to absolute URLs so that l() will consider them "external" and won't
-  // prepend $base_url to them.
-  // e.g. If we are current in "/alt-ac/", we want menu link to TNE to be
-  // "http://media-commons.org/tne" and not "/alt-ac/tne".
-  if ( ! url_is_external( $element['#href'] ) ) {
-    $element['#href'] = get_absolute_url_for_site( $element['#href'] );
+  // Links to the various Media Commons sites use a domain placeholder that needs
+  // to be filled in with the current host name.  We can't use relative paths
+  // for various reasons, and don't want to hardcode the domain because this site
+  // needs to run on other hosts like dev, stage, and various localhosts.
+  // See https://jira.nyu.edu/browse/MC-188
+  // "Link URLs in global navigation bar have hardcoded hostnames"
+  if ( strpos( $element['#href'], MEDIACOMMONS_DOMAIN_PLACEHOLDER ) === 0 ) {
+     $element['#href'] = get_url_for_mediacommons_site( $element[ '#href'] );
   }
 
   $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
@@ -431,7 +435,9 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-function get_absolute_url_for_site($relative_path) {
+function get_url_for_mediacommons_site( $placeholder_url) {
+  $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
+
   // NOTE: gethostname() does not work for local /etc/hosts/ aliases.
   $hostname = $_SERVER['SERVER_NAME'];
 
@@ -448,7 +454,7 @@ function get_absolute_url_for_site($relative_path) {
 
   $port = $_SERVER['SERVER_PORT'] === '80' ? '' : ':' . $_SERVER['SERVER_PORT'];
 
-  return "${protocol}://${hostname}${port}" . "${relative_path}";
+  return "${protocol}://${hostname}${port}/" . "${relative_path}";
 }
 
 ?>

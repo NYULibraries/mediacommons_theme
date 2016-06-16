@@ -273,6 +273,20 @@ function mediacommons_field__field_tags( $vars ) {
   return $output;
 }
 
+function mediacommons_field__minimal__field_reviewer__review( $vars ) {
+  //dpm($vars);
+
+  $output ='';
+  $output .= '<h3 class="review-byline peoplelist">' ;
+  if ( isset( $vars['items'][0]['#title'] ) ) {
+    $output .= $vars['label'] . ' ';
+    foreach ( element_children( $vars['items'] ) as $key ) {
+      $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
+    }
+  }
+  $output .= '</h3>';
+  return $output;
+}
 function mediacommons_field__field_contributors__spoke( $vars ) {
   //dpm($vars);
   //  Used for spoke teasers and spoke teaser simplest 

@@ -17,6 +17,14 @@
     iframe {
       max-width: 100%;
     }
+    .node-spoke {
+      &.node-teaser {
+        border-bottom: 1px solid nth($tertiary, 5);
+      }
+    }
+    .featured-more header {
+      margin-bottom: 20px;
+    }
     @media (min-width: 800px) {
       [role="banner"] .logo {
         background-image: image-url("mc-logos/intransition_logo.svg");
@@ -39,7 +47,7 @@
     &.front {
       @media (min-width: 50.0625em) {
         #content {
-          width: 70%;
+          width: 66%;
         }
         [role="complementary"] {
           width: 28%;
@@ -58,11 +66,15 @@
         position: absolute;
         top: 10px;
         left: 10px;
-        padding: 4px;
         line-height: 1.5;
+        font-size: 1.4rem;
         a {
           background-color: rgba(255, 255, 255, .8);
+          padding: 4px 7px;
         }
+      }
+      .spoke-title {
+        font-size: 1.25rem;
       }
     }
     .node-hub.view-mode-teaser .field-name-field-body {

@@ -660,8 +660,16 @@ body .hub-title a:visited {
 body.int iframe {
   max-width: 100%;
 }
+/* line 21, ../sass/projects/_int.scss */
+body.int .node-spoke.node-teaser {
+  border-bottom: 1px solid #eaeadf;
+}
+/* line 25, ../sass/projects/_int.scss */
+body.int .featured-more header {
+  margin-bottom: 20px;
+}
 @media (min-width: 800px) {
-  /* line 21, ../sass/projects/_int.scss */
+  /* line 29, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
     background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     background-position: left top;
@@ -674,7 +682,7 @@ body.int iframe {
   }
 }
 @media (min-width: 550px) and (max-width: 799px) {
-  /* line 33, ../sass/projects/_int.scss */
+  /* line 41, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
     background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     width: 27rem;
@@ -682,59 +690,64 @@ body.int iframe {
   }
 }
 @media (min-width: 50.0625em) {
-  /* line 41, ../sass/projects/_int.scss */
+  /* line 49, ../sass/projects/_int.scss */
   body.int.front #content {
-    width: 70%;
+    width: 66%;
   }
-  /* line 44, ../sass/projects/_int.scss */
+  /* line 52, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
     width: 28%;
   }
 }
-/* line 48, ../sass/projects/_int.scss */
+/* line 56, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
-/* line 51, ../sass/projects/_int.scss */
+/* line 59, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 53, ../sass/projects/_int.scss */
+/* line 61, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 57, ../sass/projects/_int.scss */
+/* line 65, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
   left: 10px;
-  padding: 4px;
   line-height: 1.5;
+  font-size: 1.4rem;
 }
-/* line 63, ../sass/projects/_int.scss */
+/* line 71, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
+  padding: 4px 7px;
 }
-/* line 68, ../sass/projects/_int.scss */
+/* line 76, ../sass/projects/_int.scss */
+body.int.front .spoke-title {
+  font-size: 1.25rem;
+}
+/* line 80, ../sass/projects/_int.scss */
 body.int .node-hub.view-mode-teaser .field-name-field-body {
   display: none;
 }
-/* line 71, ../sass/projects/_int.scss */
+/* line 83, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 75, ../sass/projects/_int.scss */
+/* line 87, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 78, ../sass/projects/_int.scss */
+/* line 90, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 83, ../sass/projects/_int.scss */
+/* line 95, ../sass/projects/_int.scss */
 body.int li.featured-item {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-size: cover;
@@ -742,50 +755,50 @@ body.int li.featured-item {
   background-position-y: -18px;
   min-height: 7rem;
 }
-/* line 90, ../sass/projects/_int.scss */
+/* line 102, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 98, ../sass/projects/_int.scss */
+/* line 110, ../sass/projects/_int.scss */
 .intransition_full .review-title {
   margin: .5em 0;
   font-size: 1rem;
 }
-/* line 102, ../sass/projects/_int.scss */
+/* line 114, ../sass/projects/_int.scss */
 .intransition_full .review-byline {
   font-size: 1.3rem;
 }
-/* line 105, ../sass/projects/_int.scss */
+/* line 117, ../sass/projects/_int.scss */
 .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 111, ../sass/projects/_int.scss */
+  /* line 123, ../sass/projects/_int.scss */
   .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 117, ../sass/projects/_int.scss */
+  /* line 129, ../sass/projects/_int.scss */
   .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 122, ../sass/projects/_int.scss */
+  /* line 134, ../sass/projects/_int.scss */
   .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 128, ../sass/projects/_int.scss */
+/* line 140, ../sass/projects/_int.scss */
 .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;

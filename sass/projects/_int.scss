@@ -14,6 +14,9 @@
   $tertiary: tint-stack(cs-tertiary()) !global;
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
   body.int {
+    iframe {
+      max-width: 100%;
+    }
     @media (min-width: 800px) {
       [role="banner"] .logo {
         background-image: image-url("mc-logos/intransition_logo.svg");

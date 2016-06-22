@@ -35,7 +35,18 @@ aside + h2 {
       display: inline-block;
     }
   }
-
+  &.view-mode-full {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .group-flex1 {
+      flex: 1 0 400px;
+    }
+    .group-flex2 {
+      flex: 1 1 auto;
+      // margin-left: 2%;
+    }
+  }
   &.node-teaser {
     display: flex;
     flex-wrap: wrap;
@@ -52,7 +63,7 @@ aside + h2 {
     }
     &:first-child {
       // padding: 0 0 1em;
-      border-top: 1px solid #cccccc;
+      // border-top: 1px solid #cccccc;
     }
     &:last-child {
       // border: none;
@@ -70,6 +81,10 @@ aside + h2 {
       margin-top: 20px;
     }
   }
+}
+
+.view-list-of-all-hubs .node-hub.node-teaser {
+  padding: 2em 0;
 }
 
 .node-spoke {
@@ -178,7 +193,8 @@ h2.spoke-title {
     &::before {
       content: "|";
     }
-    a:link {
+    a:link,
+    a:visited {
       color: #5a5a5a;
       //font-size: .8rem;
     }
@@ -247,10 +263,10 @@ h2.spoke-title {
 .view-list-of-all-hubs {
   > header {
     float: left;
-    line-height: 2rem;
+    line-height: 1rem;
     font-size: .8rem;
     padding-left: 10px;
-    color: #888;
+    padding-top: 10px;
   }
   >.view-content {
     clear: both;
@@ -273,6 +289,9 @@ body .view-filters {
   .views-exposed-form {
     label {
       display: none;
+    }
+    .form-item {
+      margin-bottom: 4px;
     }
     .views-exposed-widget {
       float: none;

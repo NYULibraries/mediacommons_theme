@@ -305,7 +305,7 @@ function mediacommons_field__minimal__field_spokes__hub( $vars ) {
   //  Used for homepage for In Media Res
   $special_body_class = theme_get_setting( 'special_body_class' );
  
-  if ($special_body_class == 'imr' ) { 
+  if ($special_body_class == 'imr' && (drupal_is_front_page())) { 
 
     $ArrP = $vars['element']['#object']-> {'field_period'};
     $d1 = format_date( $ArrP['und']['0']['value'], 'custom','F j, Y');
@@ -314,7 +314,7 @@ function mediacommons_field__minimal__field_spokes__hub( $vars ) {
     //dpm( $ArrP);
 
     $output ='';
-    $output .= '<time class="date-display-range ">'. $d1 . ' to ' . $d2 . '</time>' ;
+    $output .= '<time datetime="' . format_date( $ArrP['und']['0']['value'], 'custom','Y-m-d') . '" class="date-display-range">'. $d1 . ' to ' . $d2 . '</time>' ;
     if ( isset( $vars['items'][0] ) ) {
       $output .= '<div class="spokes">' ;
       foreach ( element_children( $vars['items'] ) as $key ) {

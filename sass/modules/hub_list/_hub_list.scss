@@ -35,18 +35,7 @@ aside + h2 {
       display: inline-block;
     }
   }
-  &.view-mode-full {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    .group-flex1 {
-      flex: 1 0 400px;
-    }
-    .group-flex2 {
-      flex: 1 1 auto;
-      // margin-left: 2%;
-    }
-  }
+
   &.node-teaser {
     display: flex;
     flex-wrap: wrap;

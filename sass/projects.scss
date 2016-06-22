@@ -51,6 +51,30 @@ $col in $map {
         padding: 0 6px;
       }
     }
+    .view-list-of-all-hubs {
+      .view-filters {
+        // float: right;
+        text-align: right;
+        background-color: tint(nth($primary, 5), 50%);
+        box-shadow: 0px 2px 2px #ccc;
+        .views-exposed-widgets {
+          margin: 0;
+          padding-right: 10px;
+          padding-top: 7px;
+          border: none;
+          border-bottom: 5px solid nth($primary, 1);
+        }
+      }
+      .node-hub.node-teaser {
+        border-bottom: 5px solid nth($primary-color, 1);
+        &:last-child {
+          border-bottom: none;
+        }
+        .hub-title {
+          font-size: 1.5rem;
+        }
+      }
+    }
     a:link,
     a:visited {
       color: $col;
@@ -142,7 +166,6 @@ $col in $map {
 }
 
 body .hub-title {
-  font-size: 31px;
   padding-top: 0;
   color: nth($type-color, 1);
   a:link,

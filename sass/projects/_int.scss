@@ -1,48 +1,51 @@
   $int_primary: map-get($map, int);
-  $primary-color: $int_primary;
-  $cs-primary: $primary-color;
-  // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-  $cs-scheme: triad;
-  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-  $cs-hue-offset: 20;
-  // Options: 0-100;
-  $cs-brightness-offset: 0;
-  // Options: 0-100;
-  $cs-color-model: ryb;
-  $primary: tint-stack(cs-primary()) !global;
-  $secondary: tint-stack(cs-secondary()) !global;
-  $tertiary: tint-stack(cs-tertiary()) !global;
-  $spoke-default-thumb: "default_images/spoke-default-int.svg";
-  body.int {
-    iframe {
-      max-width: 100%;
-    }
-    .node-spoke {
-      &.node-teaser {
-        border-bottom: 1px solid nth($tertiary, 5);
+$primary-color: $int_primary;
+$cs-primary: $primary-color;
+// Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+$cs-scheme: triad;
+// Options: mono, complement, triad, tetrad, analogic, accented-analogic
+$cs-hue-offset: 20;
+// Options: 0-100;
+$cs-brightness-offset: 0;
+// Options: 0-100;
+$cs-color-model: ryb;
+$primary: tint-stack(cs-primary()) !global;
+$secondary: tint-stack(cs-secondary()) !global;
+$tertiary: tint-stack(cs-tertiary()) !global;
+$spoke-default-thumb: "default_images/spoke-default-int.svg";
+body.int {
+  iframe {
+    max-width: 100%;
+  }
+  .node-spoke {
+    &.node-teaser {
+      border-bottom: 1px solid nth($tertiary, 5);
+      &:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
       }
     }
-    .featured-more header {
-      margin-bottom: 20px;
+  }
+  .featured-more header {
+    margin-bottom: 20px;
+  }
+  @media (min-width: 800px) {
+    [role="banner"] .logo {
+      background-image: image-url("mc-logos/intransition_logo.svg");
+      background-position: left top;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 31rem;
+      height: 2.8rem;
+      display: block;
+      margin-bottom: 1rem;
     }
-    @media (min-width: 800px) {
-      [role="banner"] .logo {
-        background-image: image-url("mc-logos/intransition_logo.svg");
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 31rem;
-        height: 2.8rem;
-        display: block;
-        margin-bottom: 1rem;
-      }
-    }
-    @media (min-width: 550px) and (max-width: 799px) {
-      [role="banner"] .logo {
-        background-image: image-url("mc-logos/intransition_logo.svg");
-        width: 27rem;
-        background-position: 0 4px;
-      }
+  }
+  @media (min-width: 550px) and (max-width: 799px) {
+    [role="banner"] .logo {
+      background-image: image-url("mc-logos/intransition_logo.svg");
+      width: 27rem;
+      background-position: 0 4px;
     }
     &.front {
       @media (min-width: 50.0625em) {
@@ -77,20 +80,12 @@
         font-size: 1.25rem;
       }
     }
-    .node-hub.view-mode-teaser .field-name-field-body {
-      display: none;
-    }
     time,
     .date-display-range {
       display: none !important;
     }
     .comment time {
       display: block !important;
-    }
-    .node-spoke.node-teaser .thumb {
-      background-size: 224%;
-      background-position-x: 3px;
-      background-position-y: -77px;
     }
     li.featured-item {
       background: image-url($spoke-default-thumb);
@@ -99,13 +94,25 @@
       background-position-y: -18px;
       min-height: 7rem;
     }
-    .node-hub.node-teaser .field-name-field-representative-image {
-      background: image-url($spoke-default-thumb);
-      background-repeat: no-repeat;
-      background-size: cover;
+    .node-spoke.node-teaser .thumb {
+      background-size: 224%;
+      background-position-x: 3px;
+      background-position-y: -77px;
+    }
+    .node-hub.node-teaser {
+      .field-name-field-body {
+        display: none;
+      }
+      .field-name-field-representative-image {
+        background: image-url($spoke-default-thumb);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .hub-title {
+        font-size: 1.4rem;
+      }
     }
   }
-  
   .intransition_full {
     .review-title {
       margin: .5em 0;
@@ -140,5 +147,25 @@
     .group-footer {
       clear: both;
       margin-top: 4em;
+    }
+  }
+  body.int {
+    .view-filters {
+      form {
+        margin: 0;
+      }
+      .views-exposed-form {
+        label {
+          display: none;
+        }
+        .views-exposed-widget {
+          float: none;
+          padding: 0;
+          font-size: .8rem;
+        }
+        .views-submit-button {
+          display: none;
+        }
+      }
     }
   }

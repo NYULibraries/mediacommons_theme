@@ -1010,16 +1010,17 @@ a.control:active {
 }
 /* line 62, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] #content {
+  width: 100%;
   max-width: none;
 }
-/* line 67, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 66, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc {
   border-top: 4px solid #d7a100;
   background-color: #f4ebe7;
   padding: 0 10px 10px 10px;
   margin-top: 15px;
 }
-/* line 72, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 71, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .field-name-field-project {
   background: #d7a100;
   margin: 0px 0 0 -10px;
@@ -1030,16 +1031,16 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 84, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 83, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.1rem;
 }
-/* line 88, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 87, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }
-/* line 93, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 92, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1051,19 +1052,19 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 103, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 102, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold section {
   -ms-flex: 0 0 75%;
   -webkit-flex: 0 0 75%;
   flex: 0 0 75%;
 }
-/* line 111, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 110, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold aside {
   -ms-flex: 0 1 24%;
   -webkit-flex: 0 1 24%;
   flex: 0 1 24%;
 }
-/* line 118, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 117, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1076,7 +1077,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 129, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 128, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1084,7 +1085,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 136, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 135, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1093,7 +1094,7 @@ a.control:active {
   overflow: hidden;
 }
 @media (min-width: 600px) and (max-width: 840px) {
-  /* line 136, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 135, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1101,16 +1102,17 @@ a.control:active {
   }
 }
 @media (min-width: 0px) and (max-width: 599px) {
-  /* line 136, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 135, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
     margin: 1% 0;
   }
 }
-/* line 154, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 153, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more {
   margin: 3rem 0 3rem;
+  border-top: none;
 }
 /* line 156, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more h2 {

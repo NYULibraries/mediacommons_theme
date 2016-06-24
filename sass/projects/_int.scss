@@ -29,6 +29,11 @@
     .featured-more header {
       margin-bottom: 20px;
     }
+    &.front {
+      .field-name-field-body {
+        display: none;
+      }
+    }
     @media (min-width: 800px) {
       [role="banner"] .logo {
         background-image: image-url("mc-logos/intransition_logo.svg");
@@ -47,73 +52,71 @@
         width: 27rem;
         background-position: 0 4px;
       }
-      &.front {
-        @media (min-width: 50.0625em) {
-          #content {
-            width: 66%;
-          }
-          [role="complementary"] {
-            width: 28%;
-          }
+    }
+    &.front {
+      @media (min-width: 50.0625em) {
+        #content {
+          width: 66%;
         }
-        .field-name-field-body {
+        [role="complementary"] {
+          width: 28%;
+        }
+      }
+      header.hubhead {
+        position: relative;
+        .peoplelist {
           display: none;
         }
-        header.hubhead {
-          position: relative;
-          .peoplelist {
-            display: none;
-          }
-        }
-        .hub-title {
-          position: absolute;
-          top: 10px;
-          left: 10px;
-          line-height: 1.5;
-          font-size: 1.4rem;
-          a {
-            background-color: rgba(255, 255, 255, .8);
-            padding: 4px 7px;
-          }
-        }
-        .spoke-title {
-          font-size: 1.25rem;
+      }
+      .hub-title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        line-height: 1.5;
+        font-size: 1.4rem;
+        a {
+          background-color: rgba(255, 255, 255, .8);
+          padding: 4px 7px;
         }
       }
-      time,
-      .date-display-range {
-        display: none !important;
+      .spoke-title {
+        font-size: 1.25rem;
       }
-      .comment time {
-        display: block !important;
+    }
+    time,
+    .date-display-range {
+      display: none !important;
+    }
+    .comment time {
+      display: block !important;
+    }
+    li.featured-item {
+      background: image-url($spoke-default-thumb);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: -18px;
+      min-height: 7rem;
+    }
+    .node-spoke.node-teaser .thumb {
+      background-size: 224%;
+      background-position-x: 3px;
+      background-position-y: -77px;
+    }
+    .node-hub.node-teaser {
+      .field-name-field-body {
+        display: none;
       }
-      li.featured-item {
+      .field-name-field-representative-image {
         background: image-url($spoke-default-thumb);
-        background-size: cover;
         background-repeat: no-repeat;
-        background-position-y: -18px;
-        min-height: 7rem;
+        background-size: cover;
       }
-      .node-spoke.node-teaser .thumb {
-        background-size: 224%;
-        background-position-x: 3px;
-        background-position-y: -77px;
-      }
-      .node-hub.node-teaser {
-        .field-name-field-body {
-          display: none;
-        }
-        .field-name-field-representative-image {
-          background: image-url($spoke-default-thumb);
-          background-repeat: no-repeat;
-          background-size: cover;
-        }
-        .hub-title {
-          font-size: 1.4rem;
-        }
+      .hub-title {
+        font-size: 1.4rem;
       }
     }
     .intransition_full {
+      /* special horizontal homepage layout */
       .review-title {
         margin: .5em 0;
         font-size: 1rem;
@@ -147,27 +150,6 @@
       .group-footer {
         clear: both;
         margin-top: 4em;
-      }
-    }
-  }
-  
-  body.int {
-    .view-filters {
-      form {
-        margin: 0;
-      }
-      .views-exposed-form {
-        label {
-          display: none;
-        }
-        .views-exposed-widget {
-          float: none;
-          padding: 0;
-          font-size: .8rem;
-        }
-        .views-submit-button {
-          display: none;
-        }
       }
     }
   }

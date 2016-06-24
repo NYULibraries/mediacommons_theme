@@ -1,39 +1,43 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
-
 [role="navigation"].main {
-  clear: left;
-  padding: 0;
   @extend %sans;
-  ul.main {
+  @include respond-to("full navigation") {
+    // 801 and up 
+    background-color: pink;
+    clear: left;
     padding: 0;
-    display: block;
-    float: left;
-    @include horizontal-list;
-    li {
-      margin: 0;
-      text-indent: 0;
-      font-size: 1.15em;
-      display: inline-block;
-      &:before {
-        content: "\20\00b7\20";
-        // middot encoded http://css-tricks.com/snippets/html/glyphs/
-        color: #999;
-      }
-      &:first-child:before {
-        content: "\20";
+    ul {
+      display: block;
+      float: left;
+      @include horizontal-list;
+      li {
+        margin: 0;
+        text-indent: 0;
+        font-size: 1.15em;
+        display: inline-block;
+        &:before {
+          content: "\20\00b7\20";
+          // middot encoded http://css-tricks.com/snippets/html/glyphs/
+          color: #999;
+        }
+        &:first-child:before {
+          content: "\20";
+        }
       }
     }
   }
   @include respond-to("narrow navigation") {
+    // 240 to 800
+    background-color: red;
     position: relative;
     float: none;
     clear: both;
     left: 0;
     margin: 0;
     padding-top: 10px;
-    ul.main {
+    ul {
       display: none;
       &[aria-hidden="false"] {
         display: block;
@@ -66,13 +70,12 @@
       }
     }
   }
-
   @include respond-to("tablet") {
+    // 525 to 801
+    background-color: fuchsia;
     margin: 0;
-    ul.main {
-      font-size: 1.5em;
-      padding: 0;
-      border-top: 1px #ccc solid;
+    ul {
+      border-top: 1px yellow solid;
       li {
         float: left;
         display: inline-block;
@@ -80,11 +83,8 @@
         border-right: 1px #ccc solid;
         padding: 0;
         width: 50%;
-        &:before {
-          content: "";
-        }
         &:first-child {
-          border-top: 0px #ccc solid;
+          border-top: none;
         }
       }
     }

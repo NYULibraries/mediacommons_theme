@@ -20,7 +20,7 @@
      -ms-flex: 0 1 32%;
      -webkit-flex: 0 1 32%;
      flex: 0 1 32%;
-     margin: 1% 0;
+    // margin: 1% 0;
      @include respond-to("tablet-lh") {
        -webkit-flex: 0 1 49%;
        flex: 0 1 49%;

@@ -1055,7 +1055,7 @@ body.fieldguide .logo {
   background-size: 100%;
   margin: 0 0 1em 0;
 }
-@media (min-width: 15em) and (max-width: 50em) {
+@media (min-width: 240px) and (max-width: 800px) {
   /* line 65, ../sass/projects/_fieldguide.scss */
   body.fieldguide .logo {
     width: 16rem;

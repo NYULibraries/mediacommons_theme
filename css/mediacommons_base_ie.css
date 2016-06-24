@@ -1251,7 +1251,6 @@ a.control:active {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
   flex: 0 1 32%;
-  margin: 1% 0;
   overflow: hidden;
 }
 
@@ -1808,14 +1807,14 @@ body.alt .logo {
   margin: 0;
 }
 
-/* line 5, ../sass/modules/main_nav/_main_nav.scss */
+/* line 4, ../sass/modules/main_nav/_main_nav.scss */
 [role="navigation"].main {
+  background-color: pink;
   clear: left;
   padding: 0;
 }
-/* line 9, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main {
-  padding: 0;
+/* line 11, ../sass/modules/main_nav/_main_nav.scss */
+[role="navigation"].main ul {
   display: block;
   float: left;
   margin: 0;
@@ -1825,7 +1824,7 @@ body.alt .logo {
   *zoom: 1;
 }
 /* line 62, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li {
+[role="navigation"].main ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1835,31 +1834,31 @@ body.alt .logo {
   padding-right: 4px;
 }
 /* line 49, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li:first-child {
+[role="navigation"].main ul li:first-child {
   padding-left: 0;
 }
 /* line 50, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li:last-child {
+[role="navigation"].main ul li:last-child {
   padding-right: 0;
 }
 /* line 52, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li.last {
+[role="navigation"].main ul li.last {
   padding-right: 0;
 }
-/* line 14, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li {
+/* line 15, ../sass/modules/main_nav/_main_nav.scss */
+[role="navigation"].main ul li {
   margin: 0;
   text-indent: 0;
   font-size: 1.15em;
   display: inline-block;
 }
-/* line 19, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li:before {
+/* line 20, ../sass/modules/main_nav/_main_nav.scss */
+[role="navigation"].main ul li:before {
   content: "\20\00b7\20";
   color: #999;
 }
-/* line 24, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li:first-child:before {
+/* line 25, ../sass/modules/main_nav/_main_nav.scss */
+[role="navigation"].main ul li:first-child:before {
   content: "\20";
 }
 

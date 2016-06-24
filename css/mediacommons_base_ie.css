@@ -1010,16 +1010,17 @@ a.control:active {
 }
 /* line 62, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] #content {
+  width: 100%;
   max-width: none;
 }
-/* line 67, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 66, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc {
   border-top: 4px solid #d7a100;
   background-color: #f4ebe7;
   padding: 0 10px 10px 10px;
   margin-top: 15px;
 }
-/* line 72, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 71, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .field-name-field-project {
   background: #d7a100;
   margin: 0px 0 0 -10px;
@@ -1030,16 +1031,16 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 84, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 83, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.1rem;
 }
-/* line 88, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 87, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }
-/* line 93, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 92, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1051,19 +1052,19 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 103, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 102, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold section {
   -ms-flex: 0 0 75%;
   -webkit-flex: 0 0 75%;
   flex: 0 0 75%;
 }
-/* line 111, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 110, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold aside {
   -ms-flex: 0 1 24%;
   -webkit-flex: 0 1 24%;
   flex: 0 1 24%;
 }
-/* line 118, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 117, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1076,7 +1077,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 129, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 128, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1084,7 +1085,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 136, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 135, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
@@ -1092,9 +1093,10 @@ a.control:active {
   margin: 1% 0;
   overflow: hidden;
 }
-/* line 154, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 153, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more {
   margin: 3rem 0 3rem;
+  border-top: none;
 }
 /* line 156, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more h2 {
@@ -1251,7 +1253,6 @@ a.control:active {
   -ms-flex: 0 1 32%;
   -webkit-flex: 0 1 32%;
   flex: 0 1 32%;
-  margin: 1% 0;
   overflow: hidden;
 }
 
@@ -1808,14 +1809,13 @@ body.alt .logo {
   margin: 0;
 }
 
-/* line 5, ../sass/modules/main_nav/_main_nav.scss */
+/* line 4, ../sass/modules/main_nav/_main_nav.scss */
 [role="navigation"].main {
   clear: left;
   padding: 0;
 }
-/* line 9, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main {
-  padding: 0;
+/* line 10, ../sass/modules/main_nav/_main_nav.scss */
+[role="navigation"].main ul {
   display: block;
   float: left;
   margin: 0;
@@ -1825,7 +1825,7 @@ body.alt .logo {
   *zoom: 1;
 }
 /* line 62, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li {
+[role="navigation"].main ul li {
   list-style-image: none;
   list-style-type: none;
   margin-left: 0;
@@ -1835,31 +1835,31 @@ body.alt .logo {
   padding-right: 4px;
 }
 /* line 49, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li:first-child {
+[role="navigation"].main ul li:first-child {
   padding-left: 0;
 }
 /* line 50, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li:last-child {
+[role="navigation"].main ul li:last-child {
   padding-right: 0;
 }
 /* line 52, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/typography/lists/_horizontal-list.scss */
-[role="navigation"].main ul.main li.last {
+[role="navigation"].main ul li.last {
   padding-right: 0;
 }
 /* line 14, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li {
+[role="navigation"].main ul li {
   margin: 0;
   text-indent: 0;
   font-size: 1.15em;
   display: inline-block;
 }
 /* line 19, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li:before {
+[role="navigation"].main ul li:before {
   content: "\20\00b7\20";
   color: #999;
 }
 /* line 24, ../sass/modules/main_nav/_main_nav.scss */
-[role="navigation"].main ul.main li:first-child:before {
+[role="navigation"].main ul li:first-child:before {
   content: "\20";
 }
 

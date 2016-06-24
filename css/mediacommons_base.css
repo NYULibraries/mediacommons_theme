@@ -2103,11 +2103,10 @@ body.alt .logo {
 @media (min-width: 801px) {
   /* line 4, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main {
-    background-color: pink;
     clear: left;
     padding: 0;
   }
-  /* line 11, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 10, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul {
     display: block;
     float: left;
@@ -2139,19 +2138,19 @@ body.alt .logo {
   [role="navigation"].main ul li.last {
     padding-right: 0;
   }
-  /* line 15, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 14, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li {
     margin: 0;
     text-indent: 0;
     font-size: 1.15em;
     display: inline-block;
   }
-  /* line 20, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 19, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li:before {
     content: "\20\00b7\20";
     color: #999;
   }
-  /* line 25, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 24, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li:first-child:before {
     content: "\20";
   }
@@ -2159,76 +2158,52 @@ body.alt .logo {
 @media (min-width: 240px) and (max-width: 800px) {
   /* line 4, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main {
-    background-color: red;
     position: relative;
     float: none;
     clear: both;
     left: 0;
     margin: 0;
-    padding-top: 10px;
+    padding-top: 20px;
   }
-  /* line 40, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 38, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
     list-style-type: none;
     background-color: white;
     line-height: 1.5em;
     float: none;
     font-size: 1.5em;
-    padding: .25em 0 0 0;
+    padding: 0 0 0 0;
+    border-top: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+  }
+  /* line 39, ../sass/modules/main_nav/_main_nav.scss */
+  [role="navigation"].main ul[aria-hidden="true"] {
+    display: none;
   }
   /* line 42, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul[aria-hidden="false"] {
-    display: block;
-  }
-  /* line 51, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul li {
-    float: none;
-    display: block;
-    border-bottom: 1px #ccc solid;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
   }
   /* line 56, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul li:before {
-    content: "";
-  }
-  /* line 59, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul li:first-child {
-    border-top: 1px #ccc solid;
+  [role="navigation"].main ul li {
+    display: block;
+    border: 1px #ccc solid;
+    padding: 0;
+    flex: 1 1 50%;
+    min-width: 150px;
   }
   /* line 62, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li a {
     width: 100%;
     display: block;
-    padding: .5em;
+    padding: .5rem 1rem;
   }
   /* line 66, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li a:hover {
     background-color: #e9e9e9;
-  }
-}
-@media (min-width: 525px) and (max-width: 801px) {
-  /* line 4, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main {
-    background-color: fuchsia;
-    margin: 0;
-  }
-  /* line 77, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul {
-    border-top: 1px yellow solid;
-  }
-  /* line 79, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul li {
-    float: left;
-    display: inline-block;
-    border-bottom: 1px #ccc solid;
-    border-right: 1px #ccc solid;
-    padding: 0;
-    width: 50%;
-  }
-  /* line 86, ../sass/modules/main_nav/_main_nav.scss */
-  [role="navigation"].main ul li:first-child {
-    border-top: none;
   }
 }
 

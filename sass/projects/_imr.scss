@@ -18,14 +18,14 @@
          display: flex;
          flex-wrap: wrap;
          justify-content: space-between;
-         .group-flex1 {
+         .hubhead {
            flex: 1 1 49%;
            min-width: 389px;
            @media (min-width: 800px) {
              padding-right: 2%
            }
          }
-         .group-flex2 {
+         .homehub-spokes {
            flex: 1 1 49%;
            @media (max-width: 799px) {
              border-top: none !important;

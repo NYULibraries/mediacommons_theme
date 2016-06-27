@@ -1261,7 +1261,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 12, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 13, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1269,46 +1269,31 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 19, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 20, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-item-list .featured-item {
-  -ms-flex: 0 1 32%;
-  -webkit-flex: 0 1 32%;
-  flex: 0 1 32%;
+  -webkit-flex: 1 1 100%;
+  flex: 1 1 100%;
+  margin: 1% 0;
+  position: relative;
   overflow: hidden;
 }
-@media (min-width: 600px) and (max-width: 840px) {
-  /* line 19, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+@media (min-width: 600px) {
+  /* line 20, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
   .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
-    margin: 1% 0;
-  }
-}
-@media (min-width: 0px) and (max-width: 599px) {
-  /* line 19, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
-  .featured-item-list .featured-item {
-    -webkit-flex: 1 1 100%;
-    flex: 1 1 100%;
-    margin: 1% 0;
   }
 }
 
-/* line 39, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
-.featured-item-list .featured-item {
-  flex: 0 1 49%;
-  padding: 5px 0;
-  position: relative;
-}
-
-/* line 45, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 33, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more {
   margin: 5rem 0 3rem;
 }
-/* line 47, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 35, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more header {
   margin-bottom: 40px;
 }
-/* line 51, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 39, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more img {
   width: 100% !important;
   height: auto !important;

@@ -2616,20 +2616,6 @@ aside + h2 {
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
-/* line 38, ../sass/modules/hub_list/_hub_list.scss */
-.node-hub.view-mode-full {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-/* line 42, ../sass/modules/hub_list/_hub_list.scss */
-.node-hub.view-mode-full .group-flex1 {
-  flex: 1 0 400px;
-}
-/* line 45, ../sass/modules/hub_list/_hub_list.scss */
-.node-hub.view-mode-full .group-flex2 {
-  flex: 1 1 auto;
-}
 /* line 50, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser {
   display: flex;

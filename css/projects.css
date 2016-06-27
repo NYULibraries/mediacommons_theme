@@ -1186,30 +1186,30 @@ body.imr #contentwide .node-hub.view-mode-full {
   justify-content: space-between;
 }
 /* line 21, ../sass/projects/_imr.scss */
-body.imr #contentwide .node-hub.view-mode-full .group-flex1 {
+body.imr #contentwide .node-hub.view-mode-full .hubhead {
   flex: 1 1 49%;
   min-width: 389px;
 }
 @media (min-width: 800px) {
   /* line 21, ../sass/projects/_imr.scss */
-  body.imr #contentwide .node-hub.view-mode-full .group-flex1 {
+  body.imr #contentwide .node-hub.view-mode-full .hubhead {
     padding-right: 2%;
   }
 }
 /* line 28, ../sass/projects/_imr.scss */
-body.imr #contentwide .node-hub.view-mode-full .group-flex2 {
+body.imr #contentwide .node-hub.view-mode-full .homehub-spokes {
   flex: 1 1 49%;
 }
 @media (max-width: 799px) {
   /* line 28, ../sass/projects/_imr.scss */
-  body.imr #contentwide .node-hub.view-mode-full .group-flex2 {
+  body.imr #contentwide .node-hub.view-mode-full .homehub-spokes {
     border-top: none !important;
     margin-top: 20px;
   }
 }
 @media (min-width: 800px) {
   /* line 28, ../sass/projects/_imr.scss */
-  body.imr #contentwide .node-hub.view-mode-full .group-flex2 {
+  body.imr #contentwide .node-hub.view-mode-full .homehub-spokes {
     border-top: 2px solid #e25025;
   }
 }

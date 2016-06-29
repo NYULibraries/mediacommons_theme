@@ -112,9 +112,9 @@
             background-color: transparent !important;
             min-height: 440px;
           }
-          header {
-            background-color: nth($tertiary, 4);
-          }
+        }
+        header {
+          background-color: nth($tertiary, 4);
         }
       }
       $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
@@ -143,12 +143,6 @@
   }
   
   [role="complementary"] {
-    > div {
-      background: #dedede;
-    }
-    header {
-      // background: #c8c8c8;
-    }
     a.active {
       position: relative;
       background: #eee;

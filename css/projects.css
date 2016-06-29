@@ -89,9 +89,8 @@ body.mc [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.mc [role="complementary"] > div header,
-body.mc [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.mc [role="complementary"] header {
   background-color: #e4d1c5;
 }
 /* line 121, ../sass/projects.scss */
@@ -221,9 +220,8 @@ body.fieldguide [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.fieldguide [role="complementary"] > div header,
-body.fieldguide [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.fieldguide [role="complementary"] header {
   background-color: #bfcee2;
 }
 /* line 121, ../sass/projects.scss */
@@ -353,9 +351,8 @@ body.tne [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.tne [role="complementary"] > div header,
-body.tne [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.tne [role="complementary"] header {
   background-color: #edcdc6;
 }
 /* line 121, ../sass/projects.scss */
@@ -485,9 +482,8 @@ body.imr [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.imr [role="complementary"] > div header,
-body.imr [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.imr [role="complementary"] header {
   background-color: #d5f7c8;
 }
 /* line 121, ../sass/projects.scss */
@@ -617,9 +613,8 @@ body.int [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.int [role="complementary"] > div header,
-body.int [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.int [role="complementary"] header {
   background-color: #ddddc9;
 }
 /* line 121, ../sass/projects.scss */
@@ -749,9 +744,8 @@ body.alt [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
 }
-/* line 115, ../sass/projects.scss */
-body.alt [role="complementary"] > div header,
-body.alt [role="complementary"] .block header {
+/* line 116, ../sass/projects.scss */
+body.alt [role="complementary"] header {
   background-color: #dfeec6;
 }
 /* line 121, ../sass/projects.scss */
@@ -790,17 +784,13 @@ body.alt .pager a:active {
   background-color: #be1e2d;
 }
 
-/* line 146, ../sass/projects.scss */
-[role="complementary"] > div {
-  background: #dedede;
-}
-/* line 152, ../sass/projects.scss */
+/* line 147, ../sass/projects.scss */
 [role="complementary"] a.active {
   position: relative;
   background: #eee;
   padding-left: 15px;
 }
-/* line 157, ../sass/projects.scss */
+/* line 152, ../sass/projects.scss */
 [role="complementary"] a.active:after {
   right: 100%;
   top: 50%;
@@ -815,25 +805,25 @@ body.alt .pager a:active {
   margin-top: -30px;
 }
 
-/* line 173, ../sass/projects.scss */
+/* line 168, ../sass/projects.scss */
 body .hub-title {
   padding-top: 0;
   color: #232323;
 }
-/* line 176, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 182, ../sass/projects.scss */
+/* line 177, ../sass/projects.scss */
 .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 187, ../sass/projects.scss */
+/* line 182, ../sass/projects.scss */
 .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -841,14 +831,14 @@ body .hub-title a:visited {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 194, ../sass/projects.scss */
+/* line 189, ../sass/projects.scss */
 .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 197, ../sass/projects.scss */
+/* line 192, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #ebebeb !important;
 }

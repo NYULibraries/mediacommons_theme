@@ -1,204 +1,209 @@
-$breakpoint-no-query-fallbacks: false;
-@import "toolkit";
-@import "compass/";
-@import "compass/css3";
-@import "compass/css3/deprecated-support";
-@import "modular-scale";
-@import "color-schemer";
-@import "respond-to";
-@import "breakpoint";
-@import "layout/breakpoints/_breakpoints";
-/// homepage -- hub -- credits under title
-$homepage-credits: 0.75rem !default;
-$map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
-//$map: (mc: #196195, fieldguide: #d7a100, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
-$black-value: #333333;
-$black: tint-stack($black-value);
-$type-color-value: #232323;
-$type-color: tint-stack($type-color-value);
-$body-color: #333333;
-@each $header,
-$col in $map {
-  /*   */
-  $primary-color: $col;
-  $cs-primary: $primary-color !global;
-  // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-  $cs-scheme: triad !global;
-  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-  $cs-hue-offset: 20 !global;
-  // Options: 0-100;
-  $cs-brightness-offset: 0 !global;
-  // Options: 0-100;
-  $cs-color-model: ryb !global;
-  $primary: tint-stack(cs-primary()) !global;
-  $secondary: tint-stack(cs-secondary()) !global;
-  $tertiary: tint-stack(cs-tertiary()) !global;
-  $quadrary: tint-stack(cs-quadrary()) !global;
-  $h: ".node-#{$header}";
-  #{$h} {
-    border-top: 4px solid $col;
-    .field-name-field-project {
-      background-color: $col;
+  $breakpoint-no-query-fallbacks: false;
+  @import "toolkit";
+  @import "compass/";
+  @import "compass/css3";
+  @import "compass/css3/deprecated-support";
+  @import "modular-scale";
+  @import "color-schemer";
+  @import "respond-to";
+  @import "breakpoint";
+  @import "layout/breakpoints/_breakpoints";
+  /// homepage -- hub -- credits under title
+  $homepage-credits: 0.75rem !default;
+  $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+  //$map: (mc: #196195, fieldguide: #d7a100, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+  $black-value: #333333;
+  $black: tint-stack($black-value);
+  $type-color-value: #232323;
+  $type-color: tint-stack($type-color-value);
+  $body-color: #333333;
+  @each $header,
+  $col in $map {
+    /*   */
+    $primary-color: $col;
+    $cs-primary: $primary-color !global;
+    // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+    $cs-scheme: triad !global;
+    // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+    $cs-hue-offset: 20 !global;
+    // Options: 0-100;
+    $cs-brightness-offset: 0 !global;
+    // Options: 0-100;
+    $cs-color-model: ryb !global;
+    $primary: tint-stack(cs-primary()) !global;
+    $secondary: tint-stack(cs-secondary()) !global;
+    $tertiary: tint-stack(cs-tertiary()) !global;
+    $quadrary: tint-stack(cs-quadrary()) !global;
+    $h: ".node-#{$header}";
+    #{$h} {
+      border-top: 4px solid $col;
+      .field-name-field-project {
+        background-color: $col;
+      }
+    }
+    body.#{$header} {
+      .featured-more {
+        border-top: 2px solid $col;
+        .blockheader div {
+          color: white;
+          background-color: $col;
+          display: inline-block;
+          padding: 0 6px;
+        }
+      }
+      .view-list-of-all-hubs {
+        .view-filters {
+          // float: right;
+          text-align: right;
+          background-color: tint(nth($primary, 5), 50%);
+          box-shadow: 0px 2px 2px #ccc;
+          .views-exposed-widgets {
+            margin: 0;
+            padding-right: 10px;
+            padding-top: 7px;
+            border: none;
+            border-bottom: 5px solid nth($primary, 1);
+          }
+        }
+        .node-hub.node-teaser {
+          border-bottom: 5px solid nth($primary-color, 1);
+          &:last-child {
+            border-bottom: none;
+          }
+          .hub-title {
+            font-size: 1.5rem;
+          }
+        }
+      }
+      a:link,
+      a:visited {
+        color: $col;
+      }
+      a[href]:hover,
+      a[href]:focus {
+        color: darken($col, 10%);
+        text-decoration: underline;
+      }
+      a[href]:active {
+        color: darken($col, 20%);
+      }
+      [role="navigation"].main ul.main {
+        li {
+          font-size: .9em;
+        }
+      }
+      [role="banner"] {
+        margin: 3.25rem auto 0 auto;
+      }
+      nav.global {
+        box-shadow: 0px 3px lighten($col, 20%);
+        border-bottom: 3px solid $col;
+      }
+      footer#footer {
+        border-top: 3px solid lighten($col, 9%);
+        box-shadow: 0px -3px lighten($col, 15%);
+      }
+      [role="complementary"] {
+        > div,
+        .block {
+          background-color: lighten(nth($tertiary, 5), 3%);
+          &#block-block-1 {
+            // twitter widget
+            background-color: transparent !important;
+            min-height: 440px;
+          }
+          header {
+            background-color: nth($tertiary, 4);
+          }
+        }
+      }
+      $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
+      .node-spoke.node-teaser .thumb {
+        background: image-url($spoke-default-thumb);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position-x: 0px;
+        background-position-y: 0px;
+        box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
+        box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
+      }
+      // style placeholder text see '_header--search_mixins.scss' placeholder mixin
+      input[type="search"],
+      input[name="search_block_form"] {
+        @include input-placeholder {
+          // color: nth($tertiary, 1);
+          color: nth($black, 4);
+        }
+      }
+      .pager a:active {
+        color: #fff;
+        background-color: $primary-color;
+      }
     }
   }
-  body.#{$header} {
-    .featured-more {
-      border-top: 2px solid $col;
-      .blockheader div {
-        color: white;
-        background-color: $col;
-        display: inline-block;
-        padding: 0 6px;
-      }
+  
+  [role="complementary"] {
+    > div {
+      background: #dedede;
     }
-    .view-list-of-all-hubs {
-      .view-filters {
-        // float: right;
-        text-align: right;
-        background-color: tint(nth($primary, 5), 50%);
-        box-shadow: 0px 2px 2px #ccc;
-        .views-exposed-widgets {
-          margin: 0;
-          padding-right: 10px;
-          padding-top: 7px;
-          border: none;
-          border-bottom: 5px solid nth($primary, 1);
-        }
-      }
-      .node-hub.node-teaser {
-        border-bottom: 5px solid nth($primary-color, 1);
-        &:last-child {
-          border-bottom: none;
-        }
-        .hub-title {
-          font-size: 1.5rem;
-        }
-      }
+    header {
+      // background: #c8c8c8;
     }
+    a.active {
+      position: relative;
+      background: #eee;
+      padding-left: 15px;
+    }
+    a.active:after {
+      right: 100%;
+      top: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      // border-color: rgba(136, 183, 213, 0);
+      border-right-color: #eee;
+      border-width: 30px;
+      margin-top: -30px;
+    }
+  }
+  
+  body .hub-title {
+    padding-top: 0;
+    color: nth($type-color, 1);
     a:link,
     a:visited {
-      color: $col;
-    }
-    a[href]:hover,
-    a[href]:focus {
-      color: darken($col, 10%);
-      text-decoration: underline;
-    }
-    a[href]:active {
-      color: darken($col, 20%);
-    }
-    [role="navigation"].main ul.main {
-      li {
-        font-size: .9em;
-      }
-    }
-    [role="banner"] {
-      margin: 3.25rem auto 0 auto;
-    }
-    nav.global {
-      box-shadow: 0px 3px lighten($col, 20%);
-      border-bottom: 3px solid $col;
-    }
-    footer#footer {
-      border-top: 3px solid lighten($col, 9%);
-      box-shadow: 0px -3px lighten($col, 15%);
-    }
-    [role="complementary"] {
-      > div,
-      .block {
-        background-color: lighten(nth($tertiary, 5), 3%);
-      }
-      header {
-        background-color: nth($tertiary, 4);
-      }
-    }
-    $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
-    .node-spoke.node-teaser .thumb {
-      background: image-url($spoke-default-thumb);
-      background-repeat: no-repeat;
-      background-size: 100%;
-      background-position-x: 0px;
-      background-position-y: 0px;
-      box-shadow: inset 0px 0px 24px rgba(10, 10, 10, 0.1);
-      box-shadow: inset 0px 0px 3px rgba(10, 10, 10, 0.1);
-    }
-    // style placeholder text see '_header--search_mixins.scss' placeholder mixin
-    input[type="search"],
-    input[name="search_block_form"] {
-      @include input-placeholder {
-        // color: nth($tertiary, 1);
-        color: nth($black, 4);
-      }
-    }
-    .pager a:active {
-      color: #fff;
-      background-color: $primary-color;
+      color: #111;
     }
   }
-}
-
-[role="complementary"] {
-  > div {
-    background: #dedede;
-  }
-  header {
-    // background: #c8c8c8;
-  }
-  a.active {
-    position: relative;
-    background: #eee;
-    padding-left: 15px;
-  }
-  a.active:after {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
+  
+  .featuredhub-info {
     position: absolute;
-    pointer-events: none;
-    // border-color: rgba(136, 183, 213, 0);
-    border-right-color: #eee;
-    border-width: 30px;
-    margin-top: -30px;
-  }
-}
-
-body .hub-title {
-  padding-top: 0;
-  color: nth($type-color, 1);
-  a:link,
-  a:visited {
-    color: #111;
-  }
-}
-
-.featuredhub-info {
-  position: absolute;
-  bottom: 20px;
-  max-width: 88%;
-  left: 20px;
-  time {
-    padding: 0px 3px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #ebebeb !important;
-    margin-bottom: 3px;
-    display: inline-block;
-  }
-  h2 {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 8px;
-    a {
+    bottom: 20px;
+    max-width: 88%;
+    left: 20px;
+    time {
+      padding: 0px 3px;
+      background-color: rgba(0, 0, 0, 0.7);
       color: #ebebeb !important;
+      margin-bottom: 3px;
+      display: inline-block;
     }
-    font-size: 18px;
-    line-height: 1.4
+    h2 {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 8px;
+      a {
+        color: #ebebeb !important;
+      }
+      font-size: 18px;
+      line-height: 1.4
+    }
   }
-}
-
-@import "projects/int";
-@import "projects/alt";
-@import "projects/fieldguide";
-@import "projects/tne";
-@import "projects/imr";
+  
+  @import "projects/int";
+  @import "projects/alt";
+  @import "projects/fieldguide";
+  @import "projects/tne";
+  @import "projects/imr";

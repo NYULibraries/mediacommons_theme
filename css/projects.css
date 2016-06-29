@@ -83,11 +83,18 @@ body.mc [role="complementary"] > div,
 body.mc [role="complementary"] .block {
   background-color: #f4ebe7;
 }
-/* line 111, ../sass/projects.scss */
-body.mc [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.mc [role="complementary"] > div#block-block-1,
+body.mc [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.mc [role="complementary"] > div header,
+body.mc [role="complementary"] .block header {
   background-color: #e4d1c5;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
@@ -117,7 +124,7 @@ body.mc input[type="search"]::-webkit-input-placeholder,
 body.mc input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.mc .pager a:active {
   color: #fff;
   background-color: #196195;
@@ -208,11 +215,18 @@ body.fieldguide [role="complementary"] > div,
 body.fieldguide [role="complementary"] .block {
   background-color: #e2e9f2;
 }
-/* line 111, ../sass/projects.scss */
-body.fieldguide [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.fieldguide [role="complementary"] > div#block-block-1,
+body.fieldguide [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.fieldguide [role="complementary"] > div header,
+body.fieldguide [role="complementary"] .block header {
   background-color: #bfcee2;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-fieldguide.svg?1465491556');
   background-repeat: no-repeat;
@@ -242,7 +256,7 @@ body.fieldguide input[type="search"]::-webkit-input-placeholder,
 body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.fieldguide .pager a:active {
   color: #fff;
   background-color: #8b6800;
@@ -333,11 +347,18 @@ body.tne [role="complementary"] > div,
 body.tne [role="complementary"] .block {
   background-color: #f8ebe9;
 }
-/* line 111, ../sass/projects.scss */
-body.tne [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.tne [role="complementary"] > div#block-block-1,
+body.tne [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.tne [role="complementary"] > div header,
+body.tne [role="complementary"] .block header {
   background-color: #edcdc6;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-tne.svg?1465491556');
   background-repeat: no-repeat;
@@ -367,7 +388,7 @@ body.tne input[type="search"]::-webkit-input-placeholder,
 body.tne input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.tne .pager a:active {
   color: #fff;
   background-color: #1db7b7;
@@ -458,11 +479,18 @@ body.imr [role="complementary"] > div,
 body.imr [role="complementary"] .block {
   background-color: #effceb;
 }
-/* line 111, ../sass/projects.scss */
-body.imr [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.imr [role="complementary"] > div#block-block-1,
+body.imr [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.imr [role="complementary"] > div header,
+body.imr [role="complementary"] .block header {
   background-color: #d5f7c8;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;
@@ -492,7 +520,7 @@ body.imr input[type="search"]::-webkit-input-placeholder,
 body.imr input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.imr .pager a:active {
   color: #fff;
   background-color: #e25025;
@@ -583,11 +611,18 @@ body.int [role="complementary"] > div,
 body.int [role="complementary"] .block {
   background-color: #f0f0e8;
 }
-/* line 111, ../sass/projects.scss */
-body.int [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.int [role="complementary"] > div#block-block-1,
+body.int [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.int [role="complementary"] > div header,
+body.int [role="complementary"] .block header {
   background-color: #ddddc9;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
@@ -617,7 +652,7 @@ body.int input[type="search"]::-webkit-input-placeholder,
 body.int input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.int .pager a:active {
   color: #fff;
   background-color: #782a71;
@@ -708,11 +743,18 @@ body.alt [role="complementary"] > div,
 body.alt [role="complementary"] .block {
   background-color: #f2f8e9;
 }
-/* line 111, ../sass/projects.scss */
-body.alt [role="complementary"] header {
+/* line 110, ../sass/projects.scss */
+body.alt [role="complementary"] > div#block-block-1,
+body.alt [role="complementary"] .block#block-block-1 {
+  background-color: transparent !important;
+  min-height: 440px;
+}
+/* line 115, ../sass/projects.scss */
+body.alt [role="complementary"] > div header,
+body.alt [role="complementary"] .block header {
   background-color: #dfeec6;
 }
-/* line 116, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-alt.svg?1465491556');
   background-repeat: no-repeat;
@@ -742,23 +784,23 @@ body.alt input[type="search"]::-webkit-input-placeholder,
 body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 133, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.alt .pager a:active {
   color: #fff;
   background-color: #be1e2d;
 }
 
-/* line 141, ../sass/projects.scss */
+/* line 146, ../sass/projects.scss */
 [role="complementary"] > div {
   background: #dedede;
 }
-/* line 147, ../sass/projects.scss */
+/* line 152, ../sass/projects.scss */
 [role="complementary"] a.active {
   position: relative;
   background: #eee;
   padding-left: 15px;
 }
-/* line 152, ../sass/projects.scss */
+/* line 157, ../sass/projects.scss */
 [role="complementary"] a.active:after {
   right: 100%;
   top: 50%;
@@ -773,25 +815,25 @@ body.alt .pager a:active {
   margin-top: -30px;
 }
 
-/* line 168, ../sass/projects.scss */
+/* line 173, ../sass/projects.scss */
 body .hub-title {
   padding-top: 0;
   color: #232323;
 }
-/* line 171, ../sass/projects.scss */
+/* line 176, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 177, ../sass/projects.scss */
+/* line 182, ../sass/projects.scss */
 .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 182, ../sass/projects.scss */
+/* line 187, ../sass/projects.scss */
 .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -799,14 +841,14 @@ body .hub-title a:visited {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 189, ../sass/projects.scss */
+/* line 194, ../sass/projects.scss */
 .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 192, ../sass/projects.scss */
+/* line 197, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #ebebeb !important;
 }
@@ -856,7 +898,7 @@ body.int.front .field-name-field-body {
 @media (min-width: 50.0625em) {
   /* line 58, ../sass/projects/_int.scss */
   body.int.front #content {
-    width: 66%;
+    width: 70.5%;
   }
   /* line 61, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
@@ -927,7 +969,7 @@ body.int .node-hub.node-teaser .hub-title {
 }
 /* line 118, ../sass/projects/_int.scss */
 body.int .intransition_full {
-  /* special horizontal homepage layout */
+  /* special horizontal homepage layout for spokes*/
 }
 /* line 120, ../sass/projects/_int.scss */
 body.int .intransition_full .review-title {

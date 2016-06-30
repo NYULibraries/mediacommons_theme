@@ -55,24 +55,24 @@
         .view-filters {
           // float: right;
           text-align: right;
-          background-color: tint(nth($primary, 5), 50%);
+          //background-color: tint(nth($primary, 5), 50%);
           box-shadow: 0px 2px 2px #ccc;
           .views-exposed-widgets {
             margin: 0;
             padding-right: 10px;
             padding-top: 7px;
             border: none;
-            border-bottom: 5px solid nth($primary, 1);
+            border-bottom: 4px solid nth($primary, 1);
           }
         }
         .node-hub.node-teaser {
-          border-bottom: 5px solid nth($primary-color, 1);
+          border-bottom: 4px solid nth($primary-color, 1);
           &:last-child {
             border-bottom: none;
           }
-          .hub-title {
-            font-size: 1.5rem;
-          }
+          // .hub-title {
+          //   font-size: 1.5rem;
+          // }
         }
       }
       a:link,

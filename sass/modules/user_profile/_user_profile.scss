@@ -10,6 +10,10 @@
   }
 }
 
+.user .field-name-field-isreviewof {
+  font-size: .9rem;
+}
+
 .view-mode-user_byline {
   &:after {
     content: ",\20";
@@ -136,6 +140,14 @@ img[src*="identicon"] {
   }
 }
 
+.view-mode-hub_teaser_compact {
+  padding: .8em 0;
+}
+
+.node-review.view-mode-teaser {
+  padding: .8em 0;
+}
+
 #block-views-contributors-this-hub-block {
   .p-name {
     font-size: .9rem;
@@ -146,7 +158,7 @@ img[src*="identicon"] {
 }
 
 .view-contributors-this-hub {
-  padding: .5rem 0 0 ;
+  padding: .5rem 0 0;
   .view-empty {
     padding: 0 1em;
   }

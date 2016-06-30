@@ -22,7 +22,6 @@ body.mc .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #edf3f7;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -31,19 +30,15 @@ body.mc .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #196195;
+  border-bottom: 4px solid #196195;
 }
 /* line 68, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #196195;
+  border-bottom: 4px solid #196195;
 }
 /* line 70, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.mc .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.mc a:link,
@@ -153,7 +148,6 @@ body.fieldguide .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #f6f3eb;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -162,19 +156,15 @@ body.fieldguide .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #8b6800;
+  border-bottom: 4px solid #8b6800;
 }
 /* line 68, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #8b6800;
+  border-bottom: 4px solid #8b6800;
 }
 /* line 70, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.fieldguide .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.fieldguide a:link,
@@ -284,7 +274,6 @@ body.tne .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #eef9f9;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -293,19 +282,15 @@ body.tne .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #1db7b7;
+  border-bottom: 4px solid #1db7b7;
 }
 /* line 68, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #1db7b7;
+  border-bottom: 4px solid #1db7b7;
 }
 /* line 70, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.tne .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.tne a:link,
@@ -415,7 +400,6 @@ body.imr .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #fcf1ee;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -424,19 +408,15 @@ body.imr .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #e25025;
+  border-bottom: 4px solid #e25025;
 }
 /* line 68, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #e25025;
+  border-bottom: 4px solid #e25025;
 }
 /* line 70, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.imr .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.imr a:link,
@@ -546,7 +526,6 @@ body.int .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #f4eff4;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -555,19 +534,15 @@ body.int .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #782a71;
+  border-bottom: 4px solid #782a71;
 }
 /* line 68, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #782a71;
+  border-bottom: 4px solid #782a71;
 }
 /* line 70, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.int .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.int a:link,
@@ -677,7 +652,6 @@ body.alt .featured-more .blockheader div {
 /* line 55, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .view-filters {
   text-align: right;
-  background-color: #faeeef;
   box-shadow: 0px 2px 2px #ccc;
 }
 /* line 60, ../sass/projects.scss */
@@ -686,19 +660,15 @@ body.alt .view-list-of-all-hubs .view-filters .views-exposed-widgets {
   padding-right: 10px;
   padding-top: 7px;
   border: none;
-  border-bottom: 5px solid #be1e2d;
+  border-bottom: 4px solid #be1e2d;
 }
 /* line 68, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .node-hub.node-teaser {
-  border-bottom: 5px solid #be1e2d;
+  border-bottom: 4px solid #be1e2d;
 }
 /* line 70, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
-}
-/* line 73, ../sass/projects.scss */
-body.alt .view-list-of-all-hubs .node-hub.node-teaser .hub-title {
-  font-size: 1.5rem;
 }
 /* line 78, ../sass/projects.scss */
 body.alt a:link,
@@ -784,13 +754,13 @@ body.alt .pager a:active {
   background-color: #be1e2d;
 }
 
-/* line 147, ../sass/projects.scss */
+/* line 146, ../sass/projects.scss */
 [role="complementary"] a.active {
   position: relative;
   background: #eee;
   padding-left: 15px;
 }
-/* line 152, ../sass/projects.scss */
+/* line 151, ../sass/projects.scss */
 [role="complementary"] a.active:after {
   right: 100%;
   top: 50%;
@@ -805,25 +775,25 @@ body.alt .pager a:active {
   margin-top: -30px;
 }
 
-/* line 168, ../sass/projects.scss */
+/* line 167, ../sass/projects.scss */
 body .hub-title {
   padding-top: 0;
   color: #232323;
 }
-/* line 171, ../sass/projects.scss */
+/* line 170, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 177, ../sass/projects.scss */
+/* line 176, ../sass/projects.scss */
 .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 182, ../sass/projects.scss */
+/* line 181, ../sass/projects.scss */
 .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -831,14 +801,14 @@ body .hub-title a:visited {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 189, ../sass/projects.scss */
+/* line 188, ../sass/projects.scss */
 .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 192, ../sass/projects.scss */
+/* line 191, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #ebebeb !important;
 }
@@ -850,22 +820,33 @@ body.int iframe {
 /* line 21, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser {
   border-bottom: 1px solid #eaeadf;
+  border-bottom: none;
 }
-/* line 23, ../sass/projects/_int.scss */
+/* line 24, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-/* line 29, ../sass/projects/_int.scss */
+/* line 30, ../sass/projects/_int.scss */
 body.int .featured-more header {
   margin-bottom: 20px;
 }
-/* line 33, ../sass/projects/_int.scss */
+/* line 34, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
+/* line 37, ../sass/projects/_int.scss */
+body.int.front .field-name-field-representative-image a {
+  display: block;
+  margin: 0;
+  line-height: .5;
+}
+/* line 43, ../sass/projects/_int.scss */
+body.int .homehub-spokes {
+  margin-top: .8em;
+}
 @media (min-width: 800px) {
-  /* line 38, ../sass/projects/_int.scss */
+  /* line 47, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
     background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     background-position: left top;
@@ -878,7 +859,7 @@ body.int.front .field-name-field-body {
   }
 }
 @media (min-width: 550px) and (max-width: 799px) {
-  /* line 50, ../sass/projects/_int.scss */
+  /* line 59, ../sass/projects/_int.scss */
   body.int [role="banner"] .logo {
     background-image: url('../images/mc-logos/intransition_logo.svg?1465491556');
     width: 27rem;
@@ -886,24 +867,24 @@ body.int.front .field-name-field-body {
   }
 }
 @media (min-width: 50.0625em) {
-  /* line 58, ../sass/projects/_int.scss */
+  /* line 67, ../sass/projects/_int.scss */
   body.int.front #content {
     width: 70.5%;
   }
-  /* line 61, ../sass/projects/_int.scss */
+  /* line 70, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
     width: 28%;
   }
 }
-/* line 65, ../sass/projects/_int.scss */
+/* line 74, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 67, ../sass/projects/_int.scss */
+/* line 76, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 71, ../sass/projects/_int.scss */
+/* line 80, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
@@ -911,25 +892,25 @@ body.int.front .hub-title {
   line-height: 1.5;
   font-size: 1.4rem;
 }
-/* line 77, ../sass/projects/_int.scss */
+/* line 86, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4px 7px;
 }
-/* line 82, ../sass/projects/_int.scss */
+/* line 91, ../sass/projects/_int.scss */
 body.int.front .spoke-title {
   font-size: 1.25rem;
 }
-/* line 86, ../sass/projects/_int.scss */
+/* line 95, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 90, ../sass/projects/_int.scss */
+/* line 99, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 93, ../sass/projects/_int.scss */
+/* line 102, ../sass/projects/_int.scss */
 body.int li.featured-item {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-size: cover;
@@ -937,67 +918,67 @@ body.int li.featured-item {
   background-position-y: -18px;
   min-height: 7rem;
 }
-/* line 100, ../sass/projects/_int.scss */
+/* line 109, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 106, ../sass/projects/_int.scss */
+/* line 115, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-body {
   display: none;
 }
-/* line 109, ../sass/projects/_int.scss */
+/* line 118, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 114, ../sass/projects/_int.scss */
+/* line 123, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .hub-title {
   font-size: 1.4rem;
 }
-/* line 118, ../sass/projects/_int.scss */
+/* line 127, ../sass/projects/_int.scss */
 body.int .intransition_full {
   /* special horizontal homepage layout for spokes*/
 }
-/* line 120, ../sass/projects/_int.scss */
+/* line 129, ../sass/projects/_int.scss */
 body.int .intransition_full .review-title {
   margin: .5em 0;
   font-size: 1rem;
 }
-/* line 124, ../sass/projects/_int.scss */
+/* line 133, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline {
   font-size: 1.3rem;
 }
-/* line 127, ../sass/projects/_int.scss */
+/* line 136, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 133, ../sass/projects/_int.scss */
+  /* line 142, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 139, ../sass/projects/_int.scss */
+  /* line 148, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 144, ../sass/projects/_int.scss */
+  /* line 153, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 150, ../sass/projects/_int.scss */
+/* line 159, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;

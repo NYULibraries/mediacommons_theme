@@ -210,6 +210,9 @@ ul.links.inline li {
   .comment-item {
     border-bottom: 1px solid nth($black, 4);
     padding-top: .8em;
+    &:last-child {
+      border-bottom: none;
+    }
   }
   a:link, a:visited {
     color: nth($black, 2);

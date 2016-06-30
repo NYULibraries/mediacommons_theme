@@ -30,7 +30,7 @@ $h1-padding: 0em;
 $h1-padding-pos: top;
 $h1-margin: -.25em;
 $h1-margin-pos: bottom;
-$h1-color: nth($black, 2);
+$h1-color: nth($black, 1);
 
 $h2-border-width: false;
 $h2-font-size:  ms(2); // 1.66667em
@@ -39,7 +39,7 @@ $h2-padding: .25em;
 $h2-padding-pos: top;
 $h2-margin-pos: bottom;
 $h2-margin: 0;
-$h2-color: nth($black, 2);
+$h2-color: nth($black, 1);
 
 $h3-border-width: false;
 $h3-font-size: ms(1); // 1.35em

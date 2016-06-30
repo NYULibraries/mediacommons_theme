@@ -20,6 +20,7 @@
     .node-spoke {
       &.node-teaser {
         border-bottom: 1px solid nth($tertiary, 5);
+        border-bottom: none;
         &:last-child {
           border-bottom: none;
           margin-bottom: 0;
@@ -33,6 +34,14 @@
       .field-name-field-body {
         display: none;
       }
+      .field-name-field-representative-image a {
+        display: block;
+        margin: 0; 
+        line-height: .5;
+      }
+    }
+    .homehub-spokes {
+      margin-top: .8em;
     }
     @media (min-width: 800px) {
       [role="banner"] .logo {

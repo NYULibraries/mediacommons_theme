@@ -1,13 +1,11 @@
 //////////////////////////////
 // SUB-MODULES: Component styles that are layout independent 
 //////////////////////////////
-
 [role="search"] {
   display: inline-block;
   float: right;
   padding: 0;
-  margin: 0;
-  background-color: transparent;
+  margin: 4px 0 0 0;
   fieldset {
     margin: 0;
     border: none;
@@ -15,20 +13,29 @@
   input[type="submit"] {
     font-family: $icon-font-name;
     // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
- 
+    height: 36px;
+    width: 2.5em;
   }
-  label, label span {
+  label,
+  label span {
     display: none;
   }
 }
 
 // style placeholder text see '_header--search_mixins.scss' placeholder mixin
-input[type="search"], input[name="search_block_form"] {
+input[type="search"] {
   padding-left: .75em;
-  font-family: $header-font-family;
   @include input-placeholder {
     color: nth($primary, 2);
   }
+}
+
+input[type="search"] {
+  font-size: 1.3rem;
+}
+
+input[name="search_block_form"] {
+  //background-color: red;
 }
 
 .wf-droidsans-n4-active input[type="search"] {
@@ -43,7 +50,6 @@ input[type="search"], input[name="search_block_form"] {
     display: none;
   }
 }
-
 
 @include respond-to("narrow navigation") {
   [role="search"] {
@@ -88,7 +94,6 @@ input[type="search"], input[name="search_block_form"] {
     }
     &.open label {
       // margin-bottom: .25em;
-   
     }
     &.open input[type="submit"] {
       border: none;
@@ -114,7 +119,6 @@ input[type="search"], input[name="search_block_form"] {
         outline: none;
         border-color: none;
         // LMH put focus color here?
-     
       }
     }
     input[type="submit"] {

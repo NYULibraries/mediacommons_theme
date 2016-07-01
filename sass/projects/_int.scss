@@ -30,13 +30,24 @@
     .featured-more header {
       margin-bottom: 20px;
     }
+    //  @media (max-width: 799px) {
+    .featuredhub-info {
+      position: relative;
+      bottom: 0px;
+      max-width: 100%;
+      left: 0px;
+      h2 {
+        //background-color: #222;
+      }
+    }
+    //  }
     &.front {
       .field-name-field-body {
         display: none;
       }
       .field-name-field-representative-image a {
         display: block;
-        margin: 0; 
+        margin: 0;
         line-height: .5;
       }
     }
@@ -100,10 +111,11 @@
       display: block !important;
     }
     li.featured-item {
-      background: image-url($spoke-default-thumb);
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-y: -18px;
+      //background: image-url($spoke-default-thumb);
+      background-color: #efefef;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position-y: -18px;
       min-height: 7rem;
     }
     .node-spoke.node-teaser .thumb {

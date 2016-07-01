@@ -127,9 +127,11 @@ body {
   float: none;
   width: 100%;
   clear: left;
+  margin-top: 100px;
   @include respond-to("wide") {
     // width: ms(12);
     width: 35%;
+    margin-top: 0;
     // width of the side content - see modular scale notes in base/typography/_typography_variables
     float: right;
     clear: none;

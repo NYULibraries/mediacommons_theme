@@ -247,7 +247,7 @@ body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-a
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
 .wf-droidsans-n4-active input.cancel, .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .front.mc .featured-more header, .node-front-page-post .group-meta, .hometophold .hometopright, .featured-more header, [role="navigation"].main, .view-mc-recent-comments {
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidsans-n4-active body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
@@ -255,7 +255,7 @@ body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-a
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
 .wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .front.mc [role="main"] .block.fieldguide_toc .blockheader .wf-droidsans-n4-active div, .wf-droidsans-n4-active .front.mc .featured-more header, .front.mc .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active .node-front-page-post .group-meta, .node-front-page-post .wf-droidsans-n4-active .group-meta, .wf-droidsans-n4-active .hometophold .hometopright, .hometophold .wf-droidsans-n4-active .hometopright, .wf-droidsans-n4-active .featured-more header, .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active [role="navigation"].main, .wf-droidsans-n4-active .view-mc-recent-comments {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
 /* line 38, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -1783,82 +1783,88 @@ nav.global li.sites_nav ul {
     content: "\e002 \e00b";
   }
 }
-/* line 5, ../sass/modules/header/_header--search.scss */
+/* line 4, ../sass/modules/header/_header--search.scss */
 [role="search"] {
   display: inline-block;
   float: right;
   padding: 0;
-  margin: 0;
-  background-color: transparent;
+  margin: 4px 0 0 0;
 }
-/* line 11, ../sass/modules/header/_header--search.scss */
+/* line 9, ../sass/modules/header/_header--search.scss */
 [role="search"] fieldset {
   margin: 0;
   border: none;
 }
-/* line 15, ../sass/modules/header/_header--search.scss */
+/* line 13, ../sass/modules/header/_header--search.scss */
 [role="search"] input[type="submit"] {
   font-family: "MediaCommons-Icon-Font";
+  height: 36px;
+  width: 2.5em;
 }
-/* line 20, ../sass/modules/header/_header--search.scss */
-[role="search"] label, [role="search"] label span {
+/* line 19, ../sass/modules/header/_header--search.scss */
+[role="search"] label,
+[role="search"] label span {
   display: none;
 }
 
 /* line 26, ../sass/modules/header/_header--search.scss */
-input[type="search"], input[name="search_block_form"] {
+input[type="search"] {
   padding-left: .75em;
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
   /* Firefox 18- */
   /* Firefox 19+ */
 }
 /* line 121, ../sass/partials/_mixins.scss */
-input[type="search"].placeholder, input[name="search_block_form"].placeholder {
+input[type="search"].placeholder {
   color: #e57f57;
 }
 /* line 122, ../sass/partials/_mixins.scss */
-input[type="search"]:-moz-placeholder, input[name="search_block_form"]:-moz-placeholder {
+input[type="search"]:-moz-placeholder {
   color: #e57f57;
 }
 /* line 123, ../sass/partials/_mixins.scss */
-input[type="search"]::-moz-placeholder, input[name="search_block_form"]::-moz-placeholder {
+input[type="search"]::-moz-placeholder {
   color: #e57f57;
 }
 /* line 124, ../sass/partials/_mixins.scss */
-input[type="search"]:-ms-input-placeholder, input[name="search_block_form"]:-ms-input-placeholder {
+input[type="search"]:-ms-input-placeholder {
   color: #e57f57;
 }
 /* line 125, ../sass/partials/_mixins.scss */
-input[type="search"]::-webkit-input-placeholder, input[name="search_block_form"]::-webkit-input-placeholder {
+input[type="search"]::-webkit-input-placeholder {
   color: #e57f57;
 }
 /* line 126, ../sass/partials/_mixins.scss */
-input[type="search"]::input-placeholder, input[name="search_block_form"]::input-placeholder {
+input[type="search"]::input-placeholder {
   color: #e57f57;
 }
 /* line 127, ../sass/partials/_mixins.scss */
-input[type="search"]::placeholder, input[name="search_block_form"]::placeholder {
+input[type="search"]::placeholder {
   color: #e57f57;
 }
 
-/* line 34, ../sass/modules/header/_header--search.scss */
+/* line 33, ../sass/modules/header/_header--search.scss */
+input[type="search"] {
+  font-size: 1.3rem;
+}
+
+/* line 41, ../sass/modules/header/_header--search.scss */
 .wf-droidsans-n4-active input[type="search"] {
-  font-family: "Droid Sans", "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
 @media (min-width: 801px) {
-  /* line 39, ../sass/modules/header/_header--search.scss */
+  /* line 46, ../sass/modules/header/_header--search.scss */
   [role="search"] label {
     display: none;
   }
 
-  /* line 42, ../sass/modules/header/_header--search.scss */
+  /* line 49, ../sass/modules/header/_header--search.scss */
   [role="search"] label span {
     display: none;
   }
 }
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 49, ../sass/modules/header/_header--search.scss */
+  /* line 55, ../sass/modules/header/_header--search.scss */
   [role="search"] {
     margin: 0;
     display: block;
@@ -1866,11 +1872,11 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
     position: relative;
     background-color: transparent;
   }
-  /* line 55, ../sass/modules/header/_header--search.scss */
+  /* line 61, ../sass/modules/header/_header--search.scss */
   [role="search"] label span {
     display: none;
   }
-  /* line 58, ../sass/modules/header/_header--search.scss */
+  /* line 64, ../sass/modules/header/_header--search.scss */
   [role="search"] label {
     height: 2.5em;
     width: 2.5em;
@@ -1891,7 +1897,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
     border: 1px solid;
     border-color: #ddd #bbb #999;
   }
-  /* line 71, ../sass/modules/header/_header--search.scss */
+  /* line 77, ../sass/modules/header/_header--search.scss */
   [role="search"] fieldset {
     clear: both;
     border: none;
@@ -1904,7 +1910,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
     height: 0;
     display: none;
   }
-  /* line 83, ../sass/modules/header/_header--search.scss */
+  /* line 89, ../sass/modules/header/_header--search.scss */
   [role="search"] .search-contain {
     padding: 10px;
     margin: 10px 0 0 0;
@@ -1913,7 +1919,7 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
     -webkit-box-shadow: inset #c8c8c8 0px -2px 0px 0px, inset #c8c8c8 0px 1px 0px 0px;
     box-shadow: inset #c8c8c8 0px -2px 0px 0px, inset #c8c8c8 0px 1px 0px 0px;
   }
-  /* line 93, ../sass/modules/header/_header--search.scss */
+  /* line 98, ../sass/modules/header/_header--search.scss */
   [role="search"].open input[type="submit"] {
     border: none;
     background: none;
@@ -1924,28 +1930,28 @@ input[type="search"]::placeholder, input[name="search_block_form"]::placeholder 
     margin-top: 0px;
     padding: .5rem 0 0 .5rem;
   }
-  /* line 103, ../sass/modules/header/_header--search.scss */
+  /* line 108, ../sass/modules/header/_header--search.scss */
   [role="search"].open fieldset {
     height: 80px;
   }
-  /* line 106, ../sass/modules/header/_header--search.scss */
+  /* line 111, ../sass/modules/header/_header--search.scss */
   [role="search"] input[type="search"] {
     width: 85%;
     padding: 8px 12px;
     font-size: 1.6rem;
   }
-  /* line 110, ../sass/modules/header/_header--search.scss */
+  /* line 115, ../sass/modules/header/_header--search.scss */
   [role="search"] input[type="search"]:focus {
     outline: none;
     border-color: none;
   }
-  /* line 120, ../sass/modules/header/_header--search.scss */
+  /* line 124, ../sass/modules/header/_header--search.scss */
   [role="search"] input[type="submit"] {
     height: 2.5em;
     width: 2.5em;
     margin-top: 5px;
   }
-  /* line 125, ../sass/modules/header/_header--search.scss */
+  /* line 129, ../sass/modules/header/_header--search.scss */
   [role="search"] fieldset[aria-hidden="true"] {
     width: 15%;
   }
@@ -2334,7 +2340,7 @@ ul.tags {
 }
 /* line 29, ../sass/modules/content/_content.scss */
 ul.tags li {
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
   display: inline-block;
   list-style-type: none;
   line-height: 2.25em;
@@ -2750,7 +2756,7 @@ ul.links.inline li {
 /* line 207, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user {
   color: #5a5a5a;
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 210, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .comment-item {
@@ -3035,7 +3041,7 @@ aside + h2 {
 /* line 111, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
-  font-family: "Arial", "Helvetica", "Lucida Grande", "Verdana", "Gill Sans", "Droid Sans", sans-serif;
+  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 118, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
@@ -3847,56 +3853,58 @@ footer#footer {
   float: none;
   width: 100%;
   clear: left;
+  margin-top: 100px;
 }
 @media (min-width: 801px) {
   /* line 126, ../sass/layout/_page.scss */
   [role="complementary"] {
     width: 35%;
+    margin-top: 0;
     float: right;
     clear: none;
   }
-  /* line 138, ../sass/layout/_page.scss */
+  /* line 140, ../sass/layout/_page.scss */
   [role="complementary"] ul[role="menu"] li > a:first-child {
     width: 25%;
   }
-  /* line 141, ../sass/layout/_page.scss */
+  /* line 143, ../sass/layout/_page.scss */
   [role="complementary"] ul[role="menu"] li > h3 {
     width: 75%;
   }
 }
 
-/* line 149, ../sass/layout/_page.scss */
+/* line 151, ../sass/layout/_page.scss */
 #content {
   float: none;
   width: 100%;
 }
 @media (min-width: 801px) {
-  /* line 149, ../sass/layout/_page.scss */
+  /* line 151, ../sass/layout/_page.scss */
   #content {
     float: left;
     width: 60%;
     max-width: 80.37551em;
   }
 }
-/* line 161, ../sass/layout/_page.scss */
+/* line 163, ../sass/layout/_page.scss */
 #content h1.page-title {
   margin-bottom: .5rem;
 }
 
-/* line 166, ../sass/layout/_page.scss */
+/* line 168, ../sass/layout/_page.scss */
 .spoke {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   float: none;
 }
-/* line 174, ../sass/layout/_page.scss */
+/* line 176, ../sass/layout/_page.scss */
 .spoke .spoke-body, .spoke section.curators-note {
   width: 100%;
   margin: 0;
 }
 @media (min-width: 801px) {
-  /* line 174, ../sass/layout/_page.scss */
+  /* line 176, ../sass/layout/_page.scss */
   .spoke .spoke-body, .spoke section.curators-note {
     max-width: 35.72245em;
     width: 60%;

@@ -1091,7 +1091,7 @@ body.fieldguide .logo {
 }
 /* line 81, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .hubhead h1.hub-title {
-  font-size: 37px;
+  font-size: 2.3rem;
 }
 /* line 86, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .timerangeheader > * {
@@ -1114,13 +1114,40 @@ body.fieldguide.front .featured-item img {
 body.fieldguide.front .featured-item time {
   display: relative;
 }
-/* line 112, ../sass/projects/_fieldguide.scss */
+/* line 114, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
+  position: static;
+  height: 100%;
+  max-width: none;
+  bottom: 0;
+  left: 0;
+  box-shadow: inset 0px 0px 0px 2px #f1ead4;
+  background-color: #f5f0e0;
+}
+/* line 122, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
+  display: none;
+}
+/* line 125, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 {
+  background-color: inherit;
+  height: 100%;
+  padding: 0;
+}
+/* line 130, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 a {
+  display: block;
+  height: 100%;
+  padding: 20px;
+  color: black !important;
+}
+/* line 139, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-hubs-fieldguide .view-content {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-/* line 118, ../sass/projects/_fieldguide.scss */
+/* line 145, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-hubs-fieldguide .view-content a {
   flex: 0 1 49%;
   background-color: #f5f0e0;
@@ -1129,13 +1156,13 @@ body.fieldguide.front .view-recent-hubs-fieldguide .view-content a {
   padding: 0px;
   min-height: 9rem;
 }
-/* line 125, ../sass/projects/_fieldguide.scss */
+/* line 152, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-hubs-fieldguide .view-content a:hover {
   background-color: #f5e7bf;
   text-decoration: none;
   box-shadow: none;
 }
-/* line 130, ../sass/projects/_fieldguide.scss */
+/* line 157, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-hubs-fieldguide .view-content a time {
   background-color: rgba(0, 0, 0, 0.3);
   display: inline-block;
@@ -1143,7 +1170,7 @@ body.fieldguide.front .view-recent-hubs-fieldguide .view-content a time {
   padding: 0 8px;
   display: none;
 }
-/* line 137, ../sass/projects/_fieldguide.scss */
+/* line 164, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-hubs-fieldguide .view-content a h3 {
   font-size: 1.5rem;
   padding: 20px;
@@ -1151,41 +1178,30 @@ body.fieldguide.front .view-recent-hubs-fieldguide .view-content a h3 {
   padding: 10px;
   margin: 15px;
 }
-/* line 148, ../sass/projects/_fieldguide.scss */
+/* line 175, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg {
   position: static;
   max-width: none;
   flex: 0 1 49%;
 }
-/* line 152, ../sass/projects/_fieldguide.scss */
+/* line 179, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg time {
   display: none;
 }
-/* line 155, ../sass/projects/_fieldguide.scss */
+/* line 182, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a {
   display: block;
   background-color: #d7a100;
 }
-/* line 159, ../sass/projects/_fieldguide.scss */
+/* line 186, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a:hover {
   background-color: #e1b83f;
 }
-/* line 165, ../sass/projects/_fieldguide.scss */
-body.fieldguide .featuredhub-info {
-  position: relative;
-  min-height: 200px;
-  bottom: 0;
-  left: 0;
-}
-/* line 170, ../sass/projects/_fieldguide.scss */
-body.fieldguide .featuredhub-info time {
-  display: none;
-}
-/* line 175, ../sass/projects/_fieldguide.scss */
+/* line 193, ../sass/projects/_fieldguide.scss */
 body.fieldguide .view-list-of-all-hubs .group-flex1 {
   display: none;
 }
-/* line 179, ../sass/projects/_fieldguide.scss */
+/* line 197, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: .5rem;

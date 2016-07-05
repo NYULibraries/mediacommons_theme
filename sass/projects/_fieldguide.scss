@@ -79,7 +79,7 @@ body.fieldguide {
   &.front {
     .hubhead {
       h1.hub-title {
-        font-size: 37px;
+        font-size: 2.3rem;
       }
     }
     .timerangeheader {
@@ -108,6 +108,33 @@ body.fieldguide {
       }
       background-color: nth($yellow,
       1);
+    }
+    // for now, use the same one 
+    .view-recent-6-hubs {
+      .featuredhub-info {
+        position: static;
+        height: 100%;
+        max-width: none;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0px 0px 0px 2px set-saturation(nth($primary, 5), 50%);
+        background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
+        time {
+          display: none;
+        }
+        h2 {
+          background-color: inherit;
+          height: 100%;
+          padding: 0;
+          
+          a {
+            display: block;
+            height: 100%;
+            padding: 20px;
+            color: black !important;
+          }
+        }
+      }
     }
     .view-recent-hubs-fieldguide .view-content {
       display: flex;
@@ -161,15 +188,6 @@ body.fieldguide {
         }
       }
     }
-  }
-  .featuredhub-info {
-    position: relative;
-    min-height: 200px;
-    bottom: 0; 
-    left: 0; 
-     time {
-        display: none;
-      }
   }
   .view-list-of-all-hubs {
     .group-flex1 {

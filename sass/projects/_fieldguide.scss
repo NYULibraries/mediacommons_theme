@@ -1,6 +1,6 @@
 body.fieldguide {
-   $fg_primary: map-get($map, fieldguide);
- // $fg_primary: #d7a100;
+  $fg_primary: map-get($map, fieldguide);
+  // $fg_primary: #d7a100;
   $brighter-yellow: #d7a100;
   $fg_neutral: $fg_primary;
   // : $fg_primary;
@@ -78,8 +78,8 @@ body.fieldguide {
   }
   &.front {
     .hubhead {
-     h1.hub-title {
-        font-size: 37px;
+      h1.hub-title {
+        font-size: 2.3rem;
       }
     }
     .timerangeheader {
@@ -109,6 +109,33 @@ body.fieldguide {
       background-color: nth($yellow,
       1);
     }
+    // for now, use the same one 
+    .view-recent-6-hubs {
+      .featuredhub-info {
+        position: static;
+        height: 100%;
+        max-width: none;
+        bottom: 0;
+        left: 0;
+        box-shadow: inset 0px 0px 0px 2px set-saturation(nth($primary, 5), 50%);
+        background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
+        time {
+          display: none;
+        }
+        h2 {
+          background-color: inherit;
+          height: 100%;
+          padding: 0;
+          
+          a {
+            display: block;
+            height: 100%;
+            padding: 20px;
+            color: black !important;
+          }
+        }
+      }
+    }
     .view-recent-hubs-fieldguide .view-content {
       display: flex;
       justify-content: space-between;
@@ -117,19 +144,22 @@ body.fieldguide {
       flex-wrap: wrap;
       a {
         flex: 0 1 49%;
-        background-color: nth($yellow, 5);
+        background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
+        box-shadow: inset 0px 0px 0px 2px set-saturation(nth($primary, 5), 50%);
         margin-bottom: 15px;
         padding: 0px;
         min-height: 9rem;
         &:hover {
           background-color: nth($yellow, 4);
           text-decoration: none;
+          box-shadow: none;
         }
         time {
           background-color: rgba(0, 0, 0, 0.3);
           display: inline-block;
           color: white;
           padding: 0 8px;
+          display: none;
         }
         h3 {
           font-size: 1.5rem;
@@ -142,7 +172,7 @@ body.fieldguide {
         }
       }
     }
-    .featured-fgx {
+    .featured-fg {
       position: static;
       max-width: none;
       flex: 0 1 49%;

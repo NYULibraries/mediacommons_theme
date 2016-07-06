@@ -190,7 +190,7 @@ function mediacommons_field__field_phone( $vars ) {
   return '<li><a class="p-tel tel"  href="tel:+1'.   $phone  . '" rel="me"><span>' . $vars['items'][0]['#title'] . '</span></a></li>';
 }
 function mediacommons_field__post_date( $vars ) {
-  return '<time>' . $vars['items'][0]['#markup'] . '</time>';
+  return '<time class="post-date">' . $vars['items'][0]['#markup'] . '</time>';
 }
 //function mediacommons_views_view_field__created($vars) {
 //return '<time>' . $vars['items'][0]['#markup'] . '</time>';

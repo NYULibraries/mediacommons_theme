@@ -2175,8 +2175,6 @@ body.alt .logo {
   }
   /* line 38, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul {
-    display: flex;
-    flex-wrap: wrap;
     list-style-type: none;
     background-color: white;
     line-height: 1.5em;
@@ -2184,7 +2182,7 @@ body.alt .logo {
     font-size: 1.5em;
     padding: 0 0 0 0;
     border-top: 1px #ccc solid;
-    border-bottom: 1px #ccc solid;
+    box-shadow: -1px 2px 2px #000;
   }
   /* line 39, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul[aria-hidden="true"] {
@@ -2192,25 +2190,26 @@ body.alt .logo {
   }
   /* line 42, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul[aria-hidden="false"] {
-    display: flex;
-    flex-wrap: wrap;
+    display: block;
   }
-  /* line 56, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 54, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li {
     display: block;
-    border: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
     padding: 0;
-    flex: 1 1 50%;
-    min-width: 150px;
   }
-  /* line 62, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 58, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li a {
     width: 100%;
     display: block;
     padding: .5rem 1rem;
   }
-  /* line 66, ../sass/modules/main_nav/_main_nav.scss */
+  /* line 62, ../sass/modules/main_nav/_main_nav.scss */
   [role="navigation"].main ul li a:hover {
+    background-color: #e9e9e9;
+  }
+  /* line 65, ../sass/modules/main_nav/_main_nav.scss */
+  [role="navigation"].main ul li a:active {
     background-color: #e9e9e9;
   }
 }

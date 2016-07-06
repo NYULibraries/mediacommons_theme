@@ -50,9 +50,21 @@
         margin: 0;
         line-height: .5;
       }
+      .node-spoke {
+        &.node-teaser {
+          float: left;
+          width: 49%;
+          padding-right: 50px;
+        }
+      }
+      .comment-count {
+        display: none;
+      }
     }
     .homehub-spokes {
       margin-top: .8em;
+      width: auto;
+      overflow: hidden;
     }
     @media (min-width: 800px) {
       [role="banner"] .logo {
@@ -113,10 +125,8 @@
     li.featured-item {
       //background: image-url($spoke-default-thumb);
       background-color: #efefef;
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position-y: -18px;
       min-height: 7rem;
+      flex: 0 1 32%;
     }
     .node-spoke.node-teaser .thumb {
       background-size: 224%;

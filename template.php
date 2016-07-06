@@ -129,6 +129,9 @@ function mediacommons_preprocess_page( &$vars ) {
     if (in_array("page__spoke", $vars['theme_hook_suggestions'])) {
         $vars['theme_hook_suggestions'][] = 'page__spoke__int';
     }
+    if (in_array("page__front", $vars['theme_hook_suggestions'])) {
+        $vars['theme_hook_suggestions'][] = 'page__front__int';
+    }
   }
 }
 function mediacommons_preprocess_node(&$vars) {

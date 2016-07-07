@@ -953,36 +953,50 @@ body.int .intransition_full .review-title {
 }
 /* line 145, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  width: auto;
+  overflow: auto;
+  margin-bottom: 20px;
+  color: #232323;
 }
-/* line 148, ../sass/projects/_int.scss */
+/* line 151, ../sass/projects/_int.scss */
+body.int .intransition_full .review-byline .label {
+  float: left;
+  display: block;
+  padding-right: 5px;
+}
+/* line 156, ../sass/projects/_int.scss */
+body.int .intransition_full .review-byline a {
+  color: inherit;
+}
+/* line 160, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 154, ../sass/projects/_int.scss */
+  /* line 166, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 160, ../sass/projects/_int.scss */
+  /* line 172, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 165, ../sass/projects/_int.scss */
+  /* line 177, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 171, ../sass/projects/_int.scss */
+/* line 183, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;

@@ -40,10 +40,10 @@ aside + h2 {
     // flex-wrap: wrap;
     // justify-content: space-between;
     .group-flex1 {
-     // flex: 1 0 400px;
+      // flex: 1 0 400px;
     }
     .group-flex2 {
-     // flex: 1 1 auto;
+      // flex: 1 1 auto;
       // margin-left: 2%;
     }
   }
@@ -243,20 +243,22 @@ h2.spoke-title {
     float: left;
     margin-right: 5px;
   }
-  .view-mode-user_byline {
-    /* for spoke pages, when there is an org */
+}
+
+.view-mode-user_byline {
+  /* for spoke pages, when there is an org */
+  /* for reviews areas on spoke */
+  float: left;
+  margin-right: 5px;
+  .p-name,
+  .p-org {
     float: left;
-    margin-right: 5px;
-    .p-name,
-    .p-org {
-      float: left;
-    }
-    &:after {
-      content: ",\20";
-    }
-    &:last-child:after {
-      content: "";
-    }
+  }
+  &:after {
+    content: ",\20";
+  }
+  &:last-child:after {
+    content: "";
   }
 }
 

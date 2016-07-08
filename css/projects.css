@@ -754,46 +754,25 @@ body.alt .pager a:active {
   background-color: #be1e2d;
 }
 
-/* line 146, ../sass/projects.scss */
-[role="complementary"] a.active {
-  position: relative;
-  background: #eee;
-  padding-left: 15px;
-}
-/* line 151, ../sass/projects.scss */
-[role="complementary"] a.active:after {
-  right: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-  border-right-color: #eee;
-  border-width: 30px;
-  margin-top: -30px;
-}
-
-/* line 167, ../sass/projects.scss */
+/* line 147, ../sass/projects.scss */
 body .hub-title {
   padding-top: 0;
   color: #232323;
 }
-/* line 170, ../sass/projects.scss */
+/* line 150, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 176, ../sass/projects.scss */
+/* line 156, ../sass/projects.scss */
 .featuredhub-info {
   position: absolute;
   bottom: 20px;
   max-width: 88%;
   left: 20px;
 }
-/* line 181, ../sass/projects.scss */
+/* line 161, ../sass/projects.scss */
 .featuredhub-info time {
   padding: 0px 3px;
   background-color: rgba(0, 0, 0, 0.7);
@@ -801,14 +780,14 @@ body .hub-title a:visited {
   margin-bottom: 3px;
   display: inline-block;
 }
-/* line 188, ../sass/projects.scss */
+/* line 168, ../sass/projects.scss */
 .featuredhub-info h2 {
   background-color: rgba(0, 0, 0, 0.7);
   padding: 8px;
   font-size: 18px;
   line-height: 1.4;
 }
-/* line 191, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #ebebeb !important;
 }

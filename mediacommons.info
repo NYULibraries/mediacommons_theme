@@ -107,8 +107,10 @@ regions[umb_homepage_sidebar]   = Umbrella Home Page Sidebar
 regions[sidebar_first]  = First sidebar, for each Cluster page
 regions[sidebar_basicpage1]  = Top sidebar, for each basic page
 regions[sidebar_second] = Second sidebar
+
 regions[sidebar_previous_clusters] = Previous Clusters sidebar
 regions[sidebar_organization] = Sidebar, for Organization page
+regions[sidebar_tagpages] = Sidebar, for Tag page
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 

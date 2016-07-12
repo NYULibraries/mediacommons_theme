@@ -2,6 +2,9 @@
  $neutral_stack: tint-stack(#333333) !global;
  $spoke-default-thumb: "default_images/spoke-default-imr.svg";
  body.imr {
+   #block-views-mc-recent-comments-block .blockheader div:after {
+     content: " on IMR";
+   }
    #contentwide {
      .hub-title {
        font-size: 2rem;

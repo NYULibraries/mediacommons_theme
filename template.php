@@ -302,17 +302,20 @@ function mediacommons_node_view_alter(&$build) {
   if (($build['#view_mode'] == 'teaser') && ($build['#bundle'] == 'spoke')){
     // 10 is an arbitrary number. I don't know how to access the correct number of authors.  LMH 2016/07/12
     for ($i = 0; $i < 10; $i++){
-      if  ($build['field_contributors'][$i]['#title'] == 'Anonymous') {
-        $build['#node']->content = array();
-        $p_uid =  $build['field_contributors']['#items'][$i]['uid'];
-        $mname = user_load($p_uid)->realname;
-        $build['field_contributors'][$i]['#title']=  $mname  ;
-        $build['field_contributors'][$i]['#href'] .= $p_uid  ;
+      if  (isset($build['field_contributors'][$i]['#title'])) {
+        if  ($build['field_contributors'][$i]['#title'] == 'Anonymous') {
+          $build['#node']->content = array();
+          $p_uid =  $build['field_contributors']['#items'][$i]['uid'];
+          $mname = user_load($p_uid)->realname;
+          $build['field_contributors'][$i]['#title']=  $mname  ;
+          $build['field_contributors'][$i]['#href'] .= $p_uid  ;
+        }
       }
-
     }
   }
 }
+
+
 function mediacommons_field__field_contributors__spoke( $vars ) {
   //dpm($vars);
   //  Used for spoke teasers and spoke teaser simplest 

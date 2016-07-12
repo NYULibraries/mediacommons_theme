@@ -20,6 +20,11 @@ body.fieldguide {
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
   /* on fieldguide, hide all images for now */
+
+    #block-views-mc-recent-comments-block .blockheader div:after {
+      content: " on Fieldguide";
+    }
+
   .node-spoke.node-teaser .thumb,
   .field-name-field-representative-image {
     display: none;

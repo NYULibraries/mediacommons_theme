@@ -3,6 +3,9 @@
   $neutral_stack: tint-stack(#333333) !global;
   $spoke-default-thumb: "default_images/spoke-default-alt.svg";
   body.alt {
+    #block-views-mc-recent-comments-block .blockheader div:after {
+      content: " on Alt-Ac";
+    }
     .node-hub.node-teaser .field-name-field-representative-image {
       background: image-url($spoke-default-thumb);
       background-repeat: no-repeat;

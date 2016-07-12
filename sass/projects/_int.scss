@@ -14,6 +14,9 @@
   $tertiary: tint-stack(cs-tertiary()) !global;
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
   body.int {
+    #block-views-mc-recent-comments-block .blockheader div:after {
+      content: " on [in]Transition";
+    }
     iframe {
       max-width: 100%;
     }

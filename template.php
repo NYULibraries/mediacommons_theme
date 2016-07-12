@@ -38,10 +38,7 @@ function mediacommons_preprocess_html( &$vars ) {
   }
 }
 
-// this doesn't work
-// function mediacommons_preprocess_user_picture(&$variables) {
-//  $variables['user_picture'] = "bob";
-// }
+
 
 function mediacommons_preprocess_image_style( &$variables ) {
   if ( $variables['style_name'] == 'profile_page_pic' ) {
@@ -303,11 +300,16 @@ function mediacommons_node_view_alter(&$build) {
   // look at this https://www.drupal.org/node/1264386
   //dpm($build);
   if (($build['#view_mode'] == 'teaser') && ($build['#bundle'] == 'spoke')){
-    if  ($build['field_contributors'][0]['#title'] == 'Anonymous') {
-      $build['#node']->content = array();
-      $p_uid =  $build['field_contributors']['#items'][0]['uid'];
-      $mname = user_load($p_uid)->realname;
-      $build['field_contributors'][0]['#title']= $mname  ;
+    // 10 is an arbitrary number. I don't know how to access the correct number of authors.  LMH 2016/07/12
+    for ($i = 0; $i < 10; $i++){
+      if  ($build['field_contributors'][$i]['#title'] == 'Anonymous') {
+        $build['#node']->content = array();
+        $p_uid =  $build['field_contributors']['#items'][$i]['uid'];
+        $mname = user_load($p_uid)->realname;
+        $build['field_contributors'][$i]['#title']=  $mname  ;
+        $build['field_contributors'][$i]['#href'] .= $p_uid  ;
+      }
+
     }
   }
 }
@@ -319,7 +321,8 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
   if ( isset( $vars['items'][0]['#title'] ) ) {
     $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
-      $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
+     // $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
+       $output .=  drupal_render( $vars['items'][$key] ) ;
     }
   }
   $output .= '</div>';

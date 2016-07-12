@@ -1,37 +1,23 @@
 .view-all-spokes-in-this-spokes-hub {
-  header,
-  header.blockheader {
-    span {
-      display: block;
-      color: #333;
-      font-size: 1.1rem;
-    }
-    span:last-child {
-      font-weight: bold;
-      a {
-        color: nth($black, 1);
-      }
-    }
-  }
-  a.active {
-    position: relative;
-    background: #eee;
-    padding-left: 15px;
-  }
-  a.active:after {
-    right: 100%;
-    top: 50%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
-    // border-color: rgba(136, 183, 213, 0);
-    border-right-color: #eee;
-    border-width: 30px;
-    margin-top: -30px;
-  }
+  // a.active {
+  //   position: relative;
+  //   background: #eee;
+  //   padding-left: 15px;
+  // }
+  // a.active:after {
+  //   right: 100%;
+  //   top: 50%;
+  //   border: solid transparent;
+  //   content: " ";
+  //   height: 0;
+  //   width: 0;
+  //   position: absolute;
+  //   pointer-events: none;
+  //   // border-color: rgba(136, 183, 213, 0);
+  //   border-right-color: #eee;
+  //   border-width: 30px;
+  //   margin-top: -30px;
+  // }
 }
 
 .page-all-tags {
@@ -95,35 +81,65 @@
   //     }
   //   }
   // }
-  .view-all-spokes-in-this-spokes-hub ul {
-    // list-style: none;
-    // margin: 0;
-    // padding: 0;
-    // width: 100%;
-    li {
-      // text-indent: 0;
-      // margin: 0;
-      line-height: 1.4;
-      a {
-        padding: .5em 0;
+  .view-all-spokes-in-this-spokes-hub {
+    header,
+    header.blockheader {
+      span {
         display: block;
+        color: #333;
+        font-size: 1.1rem;
       }
-      a.active,
-      a.active:hover {
-        color: nth($black, 1);
-        cursor: default;
-        text-decoration: none;
-        a,
-        span {
+      span:last-child {
+        font-weight: bold;
+        a {
           color: nth($black, 1);
         }
       }
-      // > h3 {
-      //   vertical-align: top;
-      //   font-size: 1.2em;
-      //   padding: .5em 0;
-      //   margin: 0;
-      // }
+    }
+    .node-spoke.node-teaser time,
+    .comment-count {
+      display: none;
+    }
+    .peoplelist {
+      span,
+      a {
+        display: inline-block;
+      }
+    }
+    .spoke-title {
+      font-size: .9rem;
+      a {
+        //padding: .5em 0;
+        display: block;
+      }
+    }
+    ul {
+      // list-style: none;
+      // margin: 0;
+      // padding: 0;
+      // width: 100%;
+      li {
+        // text-indent: 0;
+        // margin: 0;
+        line-height: 1.4;
+      
+        // a.active,
+        // a.active:hover {
+        //   color: nth($black, 1);
+        //   cursor: default;
+        //   text-decoration: none;
+        //   a,
+        //   span {
+        //     color: nth($black, 1);
+        //   }
+        // }
+        // > h3 {
+        //   vertical-align: top;
+        //   font-size: 1.2em;
+        //   padding: .5em 0;
+        //   margin: 0;
+        // }
+      }
     }
   }
   /* On user profile page */

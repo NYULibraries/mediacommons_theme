@@ -11,31 +11,76 @@
 
 const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_DOMAIN]/';
 
+/**
+ * Implementation of hook_theme().
+ * https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_theme/7
+ */
 function mediacommons_theme( &$existing, $type, $theme, $path ) {
+
   $hooks = zen_theme( $existing, $type, $theme, $path );
 
   $hooks['user_login'] = array(
     'render element' => 'form',
     'template' => 'templates/user-login',
-    'preprocess functions' => array(
-      // 'mediacommons_preprocess_user_login'
-    ),
+  );
+  
+  $hooks['html__pjax'] = array(
+    'render element' => 'content',
+    'base hook' => 'page',
+    'template' => 'templates/html.pjax',
+  );
+
+  $hooks['page__pjax'] = array(
+    'render element' => 'content',
+    'base hook' => 'page',
+    'template' => 'templates/page.pjax',
+  );
+  
+  $hooks['node__pjax'] = array(
+    'render element' => 'content',
+    'base hook' => 'page',
+    'template' => 'templates/node.pjax',
   );
 
   return $hooks;
+  
+}
+
+function mediacommons_is_pjax() {
+  $is_pjax = &drupal_static('is_pjax');
+  if (!isset($is_pjax) && function_exists('getallheaders')) {
+    $headers = getallheaders();
+    if (isset($headers['X-Pjax']) || isset($headers['X-PJAX'])) {
+      drupal_add_http_header('uri', request_uri());
+      $is_pjax = TRUE;
+    }
+    else {
+      $params = drupal_get_query_parameters();
+      if (isset($params['pjax'])) {
+        drupal_add_http_header('uri', base_path() . request_uri());
+        $is_pjax = TRUE;
+      }
+      else {
+        $is_pjax = FALSE;
+      }
+    }
+  }
+  return $is_pjax;
 }
 
 function mediacommons_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
-
-  /*drupal_add_css(path_to_theme() . '/css/specialcase.css', array('group' => CSS_THEME));*/
   $specialBodyClass   = theme_get_setting( 'special_body_class' );
+  if (mediacommons_is_pjax()) {
+    $vars['theme_hook_suggestions'][] = 'html__pjax';
+  }
   if ( !empty( $specialBodyClass ) ) {
     $vars['classes_array'][] = $specialBodyClass;
   }
   if ( ( $key = array_search( 'no-sidebars', $vars['classes_array'] ) ) !== false ) {
     unset( $vars['classes_array'][$key] );
   }
+  
 }
 
 
@@ -92,7 +137,9 @@ function mediacommons_form_comment_form_alter( &$form, &$form_state ) {
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
 function mediacommons_preprocess_page( &$vars ) {
   $special_body_class = theme_get_setting( 'special_body_class' );
-
+  if (mediacommons_is_pjax()) {
+    $vars['theme_hook_suggestions'][] = 'page__pjax';
+  }  
   if ( isset( $vars['node'] ) ) {
     // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
     $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
@@ -133,6 +180,9 @@ function mediacommons_preprocess_node(&$vars) {
   if ($vars['type'] == 'front_page_post') {
     $vars['classes_array'][] =  'node-' . $vars['field_project'][0]['value'];
   }
+  if (mediacommons_is_pjax()) {
+    $vars['theme_hook_suggestions'][] = 'node__pjax';
+  }  
 }
 /**
  * Begin User Profiles
@@ -500,5 +550,3 @@ function get_url_for_mediacommons_site( $placeholder_url) {
 
   return "${protocol}://${hostname}${port}/" . "${relative_path}";
 }
-
-?>

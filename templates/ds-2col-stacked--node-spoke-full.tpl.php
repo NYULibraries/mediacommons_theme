@@ -21,6 +21,11 @@
 
 <?php print $right; ?>
 
+<aside role="complementary">
+	<div class="block-views block">
+		<?php print views_embed_view('all_spokes_in_this_spokes_hub', 'block_1');?>
+	</div>
+</aside>
 
   <<?php print $footer_wrapper ?> class="<?php print $footer_classes; ?>">
     <?php print $footer; ?>

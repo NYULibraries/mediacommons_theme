@@ -82,6 +82,12 @@ aside + h2 {
     }
   }
 }
+.hubhead img {
+  max-width: 100% !important;
+  height: auto;
+  width: 100%;
+  display: block;
+}
 
 .view-list-of-all-hubs .node-hub.node-teaser {
   padding: 2em 0;

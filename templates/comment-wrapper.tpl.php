@@ -30,7 +30,25 @@ $comment_form = render($content['comment_form']);
 <header> <h2 class="comments__form-title title comment-form">
   <?php print t('Add new comment'); ?></h2></header>
    <div class="form-wrap">
-    Login to add a comment
+ 
+  <?php 
+  
+  print "Please ";
+  $dest = drupal_get_destination();
+  print l(t('Log in'),'user/login', array(
+      'query' => $dest,
+    )
+  );
+  // Print Register link only if allowed to do so.
+  if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
+    print ' or ';
+    print l(t('Register'),'user/register', array(
+        'query' => $dest,
+      )
+    );
+  }
+  print " to add a comment.";
+  ?>
   </div>
 
    <?php endif; ?>

@@ -84,10 +84,15 @@
   .view-all-spokes-in-this-spokes-hub {
     header,
     header.blockheader {
+      h1 {
+        font-weight: bold;
+        font-size: 1rem;
+      }
       span {
         display: block;
         color: #333;
-        font-size: 1.1rem;
+        font-size: .9rem;
+        font-weight: normal;
       }
       span:last-child {
         font-weight: bold;
@@ -122,7 +127,6 @@
         // text-indent: 0;
         // margin: 0;
         line-height: 1.4;
-      
         // a.active,
         // a.active:hover {
         //   color: nth($black, 1);

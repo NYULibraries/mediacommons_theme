@@ -23,6 +23,7 @@
          -webkit-flex: 0 1 32%;
          flex: 0 1 32%;
        }
+
      }
      .node-hub {
        &.view-mode-full {
@@ -69,6 +70,7 @@
      .thumb {
        box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
        background-size: 100%;
+       background-size: cover;
        background-position-x: 0px;
        background-position-y: 0px;
        img {

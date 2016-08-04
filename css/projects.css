@@ -777,13 +777,13 @@ body .hub-title a:visited {
 /* line 163, ../sass/projects.scss */
 .featuredhub-info time {
   color: #444 !important;
-  margin: 3px 0;
+  margin: 5px 0 2px;
 }
 /* line 171, ../sass/projects.scss */
 .featuredhub-info h2 {
   padding: 0 0 8px 0;
   font-size: 18px;
-  line-height: 1.4;
+  line-height: 1.25;
 }
 /* line 174, ../sass/projects.scss */
 .featuredhub-info h2 a {
@@ -1009,7 +1009,7 @@ body.fieldguide {
 }
 /* line 24, ../sass/projects/_fieldguide.scss */
 body.fieldguide #block-views-mc-recent-comments-block .blockheader div:after {
-  content: " on Fieldguide";
+  content: " on Field Guide";
 }
 /* line 28, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser .thumb,

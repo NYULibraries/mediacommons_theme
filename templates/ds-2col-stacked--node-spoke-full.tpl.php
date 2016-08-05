@@ -17,6 +17,31 @@
 
 <<?php print $left_wrapper ?> class="spoke-body <?php print $left_classes; ?>">
   <?php print $left; ?>
+
+ 
+  <?php
+  // this corrects a display suite bug which does not show comment wrapper for anonymous users when there are no comments 
+  // Bug corroborated here: http://drupal.stackexchange.com/questions/85124/how-to-show-log-in-or-register-to-post-comments-message-when-no-comments-on-co
+  global $user;
+  if (!$user->uid && $comment_count == 0) {
+      print '<section id="comments" class="comments">';
+      print '<header> <h2 class="comments__form-title title comment-form">Add new comment</h2></header>';
+      $dest = drupal_get_destination();
+      print l(t('Log in'),'user/login', array(
+      'query' => $dest,
+      ));
+      // Print Register link only if allowed to do so.
+      if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
+        print ' or ';
+        print l(t('register'),'user/register', array(
+          'query' => $dest,
+        ));
+      }
+      print " to add a comment.";
+      print '</section>';
+  } ?> 
+
+
 </<?php print $left_wrapper ?>>
 
 <?php print $right; ?>

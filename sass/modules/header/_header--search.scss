@@ -10,34 +10,45 @@
     margin: 0;
     border: none;
   }
+  label,
+  label span {
+    display: none;
+  }
+  .search-contain {
+    display: flex;
+  }
+  input[type="search"] {
+    padding-left: .75em;
+    // style placeholder text see '_header--search_mixins.scss' placeholder mixin
+    @include input-placeholder {
+      color: nth($primary, 2);
+    }
+    font-size: 1.3rem;
+    -webkit-border-radius: 6px 0 0 6px;
+    -moz-border-radius: 6px 0 0 6px;
+    border-radius: 6px 0 0 6px;
+    margin: 0;
+    height: 36px;
+    border-right: none;
+    flex: 1 1 80%;
+  }
   input[type="submit"] {
     font-family: $icon-font-name;
     // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
     height: 36px;
     width: 2.5em;
-  }
-  label,
-  label span {
-    display: none;
+    -webkit-border-radius: 0px 6px 6px 0;
+    -moz-border-radius: 0px 6px 6px 0;
+    border-radius: 0px 6px 6px 0;
+    margin: 0;
+    height: 36px;
+    background-color: #efefef !important;
+    background-image: none;
+    flex: 1 0 36px;
   }
 }
 
 // style placeholder text see '_header--search_mixins.scss' placeholder mixin
-input[type="search"] {
-  padding-left: .75em;
-  @include input-placeholder {
-    color: nth($primary, 2);
-  }
-}
-
-input[type="search"] {
-  font-size: 1.3rem;
-}
-
-input[name="search_block_form"] {
-  //background-color: red;
-}
-
 .wf-droidsans-n4-active input[type="search"] {
   font-family: $heading-font-name, $header-font-family;
 }
@@ -92,26 +103,33 @@ input[name="search_block_form"] {
       background-color: nth($black, 5);
       @include box-shadow(inset nth($black, 4) 0px -2px 0px 0px, inset nth($black, 4) 0px 1px 0px 0px);
     }
-    &.open label {
-      // margin-bottom: .25em;
-    }
-    &.open input[type="submit"] {
-      border: none;
-      background: none;
-      font-size: 1.5rem;
-      padding: 0;
-      width: auto;
-      height: auto;
-      margin-top: 0px;
-      padding: .5rem 0 0 .5rem;
-    }
-    &.open fieldset {
-      height: 80px;
+    &.open {
+      input[type="submit"] {
+        height: 46px;
+        //border: none;
+        background: none;
+        font-size: 1.5rem;
+        padding: 0;
+        width: auto;
+        height: auto;
+        margin-top: 0px;
+        // padding: .5rem 0 0 .5rem;
+        border-top-width: 2px;
+        border-top-color: #999 !important;
+        border-bottom-width: 1px;
+        border-bottom-color: #c8c8c8 !important;
+      }
+      fieldset {
+        height: 80px;
+      }
     }
     input[type="search"] {
+      height: 46px;
       width: 85%;
       padding: 8px 12px;
       font-size: 1.6rem;
+      border-bottom-width: 1px;
+      border-bottom-color: #c8c8c8 !important;
       &:focus {
         // -moz-box-shadow: none;
         // -webkit-box-shadow: none;

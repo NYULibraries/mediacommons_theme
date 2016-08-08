@@ -155,12 +155,6 @@ select {
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
 }
-/* line 13, ../sass/base/forms/_forms_extendables.scss */
-input[type]:focus,
-textarea:focus,
-select:focus {
-  border-color: #666666;
-}
 
 /* line 8, ../sass/base/forms/_forms.scss */
 label {
@@ -510,12 +504,6 @@ select {
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
   border-radius: 0.25em;
-}
-/* line 13, ../sass/base/forms/_forms_extendables.scss */
-input[type]:focus,
-textarea:focus,
-select:focus {
-  border-color: #666666;
 }
 
 /* line 8, ../sass/base/forms/_forms.scss */
@@ -1675,68 +1663,82 @@ nav.global li.sites_nav ul > li > a.menu__link {
   border: none;
 }
 /* line 13, ../sass/modules/header/_header--search.scss */
-[role="search"] input[type="submit"] {
-  font-family: "MediaCommons-Icon-Font";
-  height: 36px;
-  width: 2.5em;
-}
-/* line 19, ../sass/modules/header/_header--search.scss */
 [role="search"] label,
 [role="search"] label span {
   display: none;
 }
-
-/* line 26, ../sass/modules/header/_header--search.scss */
-input[type="search"] {
+/* line 17, ../sass/modules/header/_header--search.scss */
+[role="search"] .search-contain {
+  display: flex;
+}
+/* line 20, ../sass/modules/header/_header--search.scss */
+[role="search"] input[type="search"] {
   padding-left: .75em;
   /* Firefox 18- */
   /* Firefox 19+ */
+  font-size: 1.3rem;
+  -webkit-border-radius: 6px 0 0 6px;
+  -moz-border-radius: 6px 0 0 6px;
+  border-radius: 6px 0 0 6px;
+  margin: 0;
+  height: 36px;
+  border-right: none;
+  flex: 1 1 80%;
 }
 /* line 121, ../sass/partials/_mixins.scss */
-input[type="search"].placeholder {
+[role="search"] input[type="search"].placeholder {
   color: #e57f57;
 }
 /* line 122, ../sass/partials/_mixins.scss */
-input[type="search"]:-moz-placeholder {
+[role="search"] input[type="search"]:-moz-placeholder {
   color: #e57f57;
 }
 /* line 123, ../sass/partials/_mixins.scss */
-input[type="search"]::-moz-placeholder {
+[role="search"] input[type="search"]::-moz-placeholder {
   color: #e57f57;
 }
 /* line 124, ../sass/partials/_mixins.scss */
-input[type="search"]:-ms-input-placeholder {
+[role="search"] input[type="search"]:-ms-input-placeholder {
   color: #e57f57;
 }
 /* line 125, ../sass/partials/_mixins.scss */
-input[type="search"]::-webkit-input-placeholder {
+[role="search"] input[type="search"]::-webkit-input-placeholder {
   color: #e57f57;
 }
 /* line 126, ../sass/partials/_mixins.scss */
-input[type="search"]::input-placeholder {
+[role="search"] input[type="search"]::input-placeholder {
   color: #e57f57;
 }
 /* line 127, ../sass/partials/_mixins.scss */
-input[type="search"]::placeholder {
+[role="search"] input[type="search"]::placeholder {
   color: #e57f57;
 }
-
-/* line 33, ../sass/modules/header/_header--search.scss */
-input[type="search"] {
-  font-size: 1.3rem;
+/* line 35, ../sass/modules/header/_header--search.scss */
+[role="search"] input[type="submit"] {
+  font-family: "MediaCommons-Icon-Font";
+  height: 36px;
+  width: 2.5em;
+  -webkit-border-radius: 0px 6px 6px 0;
+  -moz-border-radius: 0px 6px 6px 0;
+  border-radius: 0px 6px 6px 0;
+  margin: 0;
+  height: 36px;
+  background-color: #efefef !important;
+  background-image: none;
+  flex: 1 0 36px;
 }
 
-/* line 41, ../sass/modules/header/_header--search.scss */
+/* line 52, ../sass/modules/header/_header--search.scss */
 .wf-droidsans-n4-active input[type="search"] {
   font-family: "Droid Sans", "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
-/* line 46, ../sass/modules/header/_header--search.scss */
+/* line 57, ../sass/modules/header/_header--search.scss */
 [role="search"] label {
   display: none;
 }
 
-/* line 49, ../sass/modules/header/_header--search.scss */
+/* line 60, ../sass/modules/header/_header--search.scss */
 [role="search"] label span {
   display: none;
 }
@@ -1781,8 +1783,6 @@ body.mc .logo {
 }
 /* line 52, ../sass/modules/header/_header--logos.scss */
 body.imr .logo {
-  background-position: 0 17%;
-  height: 4.7rem;
   padding: 0;
 }
 /* line 57, ../sass/modules/header/_header--logos.scss */

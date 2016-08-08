@@ -1,16 +1,5 @@
 <a id="main-content"></a>
-<header  role="banner"> <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
-    <button type="button" class="skip-arrow"></button>
-    <h1><a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>
-
-
-  <?php print render($page['search']); ?>
-  <nav id="main-nav" class="nav main" role="navigation">
-    <?php if ($main_menu ) : ?>
-    <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main')))); ?>
-    <?php endif; ?>
-  </nav>
-</header>
+<?php  include ("head.inc");    ?>
 
   <?php if ($action_links): ?>
   <ul class="action-links">

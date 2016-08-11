@@ -17,7 +17,7 @@
 
   <div class="leftside">
     <?php print $left; ?>
- </div>
+  </div>
 
 
 <!--  <section class="rightside"> -->

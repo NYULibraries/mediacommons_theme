@@ -985,7 +985,7 @@ body.int .intransition_full .group-footer {
 
 /* line 6, ../sass/projects/_alt.scss */
 body.alt #block-views-mc-recent-comments-block .blockheader div:after {
-  content: " on Alt-Ac";
+  content: " on #alt-ac";
 }
 /* line 9, ../sass/projects/_alt.scss */
 body.alt .node-hub.node-teaser .field-name-field-representative-image {
@@ -1173,7 +1173,7 @@ body.imr .logo {
   width: 15rem;
   display: block;
   margin: 0 0 0 0;
-  background: url('../images/mc-logos/imr.svg?1470686019');
+  background: url('../images/mc-logos/imr.svg?1470691498');
   background-size: cover;
   background-repeat: no-repeat;
 }

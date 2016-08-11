@@ -285,17 +285,6 @@ function mediacommons_field__field_title( $vars ) {
 }
 
 
-function mediacommons_field__field_research_interests__user( $vars ) {
-  $output = '<aside role="complementary" class="research_interests">';
-  $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
-  foreach ( element_children( $vars['items'] ) as $key ) {
-    $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
-    $output .= $vars['items'][$key]['#title'];
-    $output .= '</a></li>';
-  }
-  $output .= '</ul></aside>';
-  return $output;
-}
 function mediacommons_field__field_taxonomy__spoke( $vars ) {
   $output = '<div class="tags">';
 
@@ -309,9 +298,10 @@ function mediacommons_field__field_taxonomy__spoke( $vars ) {
   return $output;
 }
 
+
 function mediacommons_field__field_taxonomy__user( $vars ) {
   $output = '<aside role="complementary" class="research_interests">';
-  $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags">';
+  $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags block">';
   foreach ( element_children( $vars['items'] ) as $key ) {
     $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];

@@ -111,6 +111,8 @@
             // twitter widget
             background-color: transparent !important;
             min-height: 440px;
+            // prevent layout breakage while loading
+             max-width: 300px;
           }
         }
         header {

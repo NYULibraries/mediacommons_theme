@@ -240,7 +240,7 @@ body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-a
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .featured-more header, [role="navigation"].main, .view-mc-recent-comments {
+.wf-droidsans-n4-active input.cancel, .front.mc .block.fieldguide_toc .blockheader div, .featured-more header, [role="navigation"].main, .view-mc-recent-comments {
   font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -248,7 +248,7 @@ body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-a
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .front.mc [role="main"] .block.fieldguide_toc .blockheader .wf-droidsans-n4-active div, .wf-droidsans-n4-active .featured-more header, .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active [role="navigation"].main, .wf-droidsans-n4-active .view-mc-recent-comments {
+.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .front.mc .block.fieldguide_toc .blockheader div, .front.mc .block.fieldguide_toc .blockheader .wf-droidsans-n4-active div, .wf-droidsans-n4-active .featured-more header, .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active [role="navigation"].main, .wf-droidsans-n4-active .view-mc-recent-comments {
   font-family: "Open Sans", "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
@@ -984,37 +984,32 @@ a.control:active {
   color: #919191;
 }
 /* line 53, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc .node-spoke.node-teaser {
-  border: none;
-  padding: .8em 0 0 0;
-}
-/* line 57, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] {
   max-width: 84rem;
   margin: 0em auto 0;
 }
-/* line 60, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .button.skip-arrow {
+/* line 57, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .button.skip-arrow {
   display: none;
 }
-/* line 64, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .featured-more {
+/* line 61, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .featured-more {
   margin-top: 0;
 }
-/* line 67, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] #content {
+/* line 64, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc #content {
   width: 100%;
   max-width: none;
 }
-/* line 71, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .block.fieldguide_toc {
+/* line 68, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc {
   border-top: 4px solid #d7a100;
   background-color: #f4ebe7;
   padding: 0 20px 20px 20px;
   margin-top: 15px;
 }
-/* line 76, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .block.fieldguide_toc .blockheader div {
+/* line 73, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc .blockheader div {
   background: #d7a100;
   margin: 0px 0 0 -20px;
   display: inline-block;
@@ -1024,22 +1019,28 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 87, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .block.fieldguide_toc .hub-title {
+/* line 84, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.2rem;
   line-height: 1.3;
 }
-/* line 92, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .block.fieldguide_toc .spokes {
+/* line 89, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc .spokes {
   margin-top: 20px;
   border-top: 1px solid rgba(204, 204, 204, 0.5);
 }
-/* line 96, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc [role="main"] .block.fieldguide_toc .spoke-title {
+/* line 93, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc .node-teaser {
+  background-color: fuchsia;
+  border: none;
+  padding: .8em 0 0 0;
+}
+/* line 98, ../sass/modules/homepage/_homepageUmbrella.scss */
+.front.mc .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }
-/* line 101, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 102, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1051,19 +1052,19 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 111, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 112, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold section {
   -ms-flex: 0 0 74.5%;
   -webkit-flex: 0 0 74.5%;
   flex: 0 0 74.5%;
 }
-/* line 119, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 120, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold aside {
   -ms-flex: 0 1 23%;
   -webkit-flex: 0 1 23%;
   flex: 0 1 23%;
 }
-/* line 126, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 127, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list {
   margin-top: 1%;
   display: -ms-flexbox;
@@ -1076,7 +1077,7 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 137, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 138, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1084,7 +1085,7 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 145, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item {
   background: #434242;
   background: #62676a;
@@ -1096,12 +1097,12 @@ a.control:active {
   padding-bottom: 0;
   overflow: hidden;
 }
-/* line 152, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 153, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:hover {
   cursor: pointer;
 }
 @media (min-width: 600px) and (max-width: 840px) {
-  /* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 145, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1109,34 +1110,71 @@ a.control:active {
   }
 }
 @media (min-width: 0px) and (max-width: 599px) {
-  /* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 145, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
     margin: 1% 0;
   }
 }
-/* line 178, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 179, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item p {
   margin-bottom: 0;
 }
-/* line 183, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 184, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more {
   margin: 3rem 0 3rem;
   border-top: none;
 }
+@media (min-width: 0px) and (max-width: 980px) {
+  /* line 189, ../sass/modules/homepage/_homepageUmbrella.scss */
+  .front.mc .flexhold section {
+    -webkit-flex: 1 1 100%;
+    flex: 1 1 100%;
+    margin: 1% 0;
+  }
+  /* line 194, ../sass/modules/homepage/_homepageUmbrella.scss */
+  .front.mc .flexhold aside {
+    margin: 1% 0;
+    flex: none;
+    width: 100%;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+  }
+  /* line 202, ../sass/modules/homepage/_homepageUmbrella.scss */
+  .front.mc .flexhold aside .block {
+    -webkit-flex: 0 1 49%;
+    flex: 0 1 49%;
+    margin: 1% 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 599px) {
+  /* line 210, ../sass/modules/homepage/_homepageUmbrella.scss */
+  .front.mc .flexhold aside {
+    display: block;
+  }
+  /* line 212, ../sass/modules/homepage/_homepageUmbrella.scss */
+  .front.mc .flexhold aside .block {
+    flex: none;
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+  }
+}
 
-/* line 189, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 222, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post {
   position: relative;
 }
-/* line 192, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 225, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-rlink {
   display: inline-block;
   float: left;
   clear: left;
 }
-/* line 199, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 232, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-rlink a {
   color: #fff !important;
   display: block;
@@ -1145,7 +1183,7 @@ a.control:active {
   line-height: 1.2;
   font-weight: normal;
 }
-/* line 209, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 242, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser .field-name-field-project {
   position: absolute;
   top: -2px;
@@ -1158,40 +1196,40 @@ a.control:active {
   line-height: 1.3;
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 221, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 254, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser .field-name-field-body {
   font-size: .8rem;
   margin: 0;
 }
-/* line 225, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 258, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 {
   font-size: 1rem;
   line-height: 1.4;
   margin: 0;
   padding-top: 0;
 }
-/* line 233, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 266, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 a {
   display: block;
   padding: 5px 10px 5px 0;
 }
-/* line 237, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 270, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 a:link,
 .node-front-page-post.view-mode-teaser h2 a:visited {
   color: white !important;
   color: #222 !important;
 }
-/* line 245, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 278, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full:hover {
   cursor: pointer;
 }
-/* line 250, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 283, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-group-html-element {
   position: absolute;
   top: -2px;
   left: 0px;
 }
-/* line 255, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 288, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-project {
   padding: 1px 13px 2px;
   text-transform: uppercase;
@@ -1200,7 +1238,7 @@ a.control:active {
   color: rgba(255, 255, 255, 0.7);
   float: left;
 }
-/* line 263, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 296, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full h2 {
   background: rgba(255, 255, 255, 0.7);
   font-size: 1.6rem;
@@ -1209,13 +1247,13 @@ a.control:active {
   float: left;
   clear: both;
 }
-/* line 270, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 303, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full h2 a {
   color: #222 !important;
   padding: 8px 12px;
   display: block;
 }
-/* line 276, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 309, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-body {
   background: rgba(255, 255, 255, 0.7);
   margin: 10px 0 0 10px;
@@ -1224,22 +1262,22 @@ a.control:active {
   float: left;
   clear: both;
 }
-/* line 283, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 316, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-body p:last-child {
   margin: 0;
 }
-/* line 298, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 331, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb {
   background-color: white;
 }
-/* line 300, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 333, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 308, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 341, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1252,13 +1290,13 @@ a.control:active {
   -ms-flex-pack: justify;
   margin-bottom: 20px;
 }
-/* line 319, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 352, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopleft {
   -ms-flex: 0 0 65.5%;
   -webkit-flex: 0 0 65.5%;
   flex: 0 0 65.5%;
 }
-/* line 324, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 357, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright {
   background-color: #e7eef3;
   -ms-flex: 0 1 31%;
@@ -1268,7 +1306,7 @@ a.control:active {
   padding: 25px;
   border-top: 4px solid #144E78;
 }
-/* line 334, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 367, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright .special {
   font-size: 1.1em;
   font-weight: bold;

@@ -32,8 +32,6 @@
 
   <div id="content"> 
   <div class="flexhold">
-  <section class="featured-hed"></section>
-
   <section class="featured-more">  
   <div class="hometophold">
   <div class="hometopleft"><?php  print render($page['umb_homepage_top']);  ?></div>

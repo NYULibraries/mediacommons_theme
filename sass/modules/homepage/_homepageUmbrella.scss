@@ -91,7 +91,6 @@ $hometoprightcolor: #E7EEF3;
       border-top: 1px solid rgba(204, 204, 204, 0.5);
     }
     .node-teaser {
-      background-color: fuchsia;
       border: none;
       padding: .8em 0 0 0;
     }
@@ -168,12 +167,12 @@ $hometoprightcolor: #E7EEF3;
       @include respond-to("tablet-lh") {
         -webkit-flex: 0 1 49%;
         flex: 0 1 49%;
-        margin: 1% 0;
+        margin: 20px 0;
       }
       @include respond-to("mobile-lh") {
         -webkit-flex: 1 1 100%;
         flex: 1 1 100%;
-        margin: 1% 0;
+        margin: 25px 0;
       }
       overflow: hidden;
       p {
@@ -182,27 +181,29 @@ $hometoprightcolor: #E7EEF3;
     }
   }
   .featured-more {
-    margin: 3rem 0 3rem;
+    //margin: 3rem 0 3rem;
     border-top: none;
   }
   @include respond-to("not desktop") {
-    .flexhold section {
-      -webkit-flex: 1 1 100%;
-      flex: 1 1 100%;
-      margin: 1% 0;
-    }
-    .flexhold aside {
-      margin: 1% 0;
-      flex: none;
-      width: 100%;
-      display: flex;
-      -webkit-justify-content: space-between;
-      justify-content: space-between;
-      -ms-flex-pack: justify;
-      .block {
-        -webkit-flex: 0 1 49%;
-        flex: 0 1 49%;
+    .flexhold {
+      section {
+        -webkit-flex: 1 1 100%;
+        flex: 1 1 100%;
         margin: 1% 0;
+      }
+      aside {
+        margin: 1% 0;
+        flex: none;
+        width: 100%;
+        display: flex;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: justify;
+        .block {
+          -webkit-flex: 0 1 49%;
+          flex: 0 1 49%;
+          margin: 1% 0;
+        }
       }
     }
   }
@@ -339,26 +340,32 @@ $hometoprightcolor: #E7EEF3;
 }
 
 .hometophold {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -ms-flex-wrap: wrap;
-  -webkit-justify-content: space-between;
-  justify-content: space-between;
-  -ms-flex-pack: justify;
+  @include respond-to("not-mobile-lh") {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify;
+  }
   margin-bottom: 20px;
   .hometopleft {
-    -ms-flex: 0 0 65.5%;
-    -webkit-flex: 0 0 65.5%;
-    flex: 0 0 65.5%;
+    @include respond-to("not-mobile-lh") {
+      -ms-flex: 0 0 65.5%;
+      -webkit-flex: 0 0 65.5%;
+      flex: 0 0 65.5%;
+    }
   }
   .hometopright {
     background-color: $hometoprightcolor;
-    -ms-flex: 0 1 31%;
-    -webkit-flex: 0 1 31%;
-    flex: 0 1 31%;
+    @include respond-to("not-mobile-lh") {
+      -ms-flex: 0 1 31%;
+      -webkit-flex: 0 1 31%;
+      flex: 0 1 31%;
+    }
     // margin: 1% 0;
     font-size: .9rem;
     padding: 25px;

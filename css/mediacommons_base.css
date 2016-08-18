@@ -182,7 +182,7 @@ textarea[required] {
 }
 /* line 7, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidserif-n4-active .view-mc-recent-comments li .views-field-comment-body, .view-mc-recent-comments li .wf-droidserif-n4-active .views-field-comment-body {
-  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+  font-family: "Open Sans", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
 }
 
 /* line 11, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -192,7 +192,7 @@ strong, b {
 }
 /* line 14, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidserif-n7-active strong, .wf-droidserif-n7-active b {
-  font-family: "Droid Serif";
+  font-family: "Open Sans";
 }
 
 /* line 18, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -201,7 +201,7 @@ em, i {
 }
 /* line 20, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidserif-i4-active em, .wf-droidserif-i4-active i {
-  font-family: "Droid Serif";
+  font-family: "Open Sans";
 }
 
 /* line 24, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -232,7 +232,7 @@ b .wf-droidserif-i7-active em,
 i .wf-droidserif-i7-active strong,
 .wf-droidserif-i7-active em b,
 em .wf-droidserif-i7-active b {
-  font-family: "Droid Serif";
+  font-family: "Open Sans";
 }
 
 /* line 32, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -240,16 +240,16 @@ body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-a
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .hometophold .hometopright, .featured-more header, [role="navigation"].main, .view-mc-recent-comments {
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+.wf-droidsans-n4-active input.cancel, .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .featured-more header, [role="navigation"].main, .view-mc-recent-comments {
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 34, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidsans-n4-active body, .wf-droidsans-n4-active h1, .wf-droidsans-n4-active h2, .wf-droidsans-n4-active h3, .wf-droidsans-n4-active h4, .wf-droidsans-n4-active h5, .wf-droidsans-n4-active h6,
 .wf-droidsans-n4-active button,
 .wf-droidsans-n4-active input[type="button"],
 .wf-droidsans-n4-active input[type="submit"],
-.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .front.mc [role="main"] .block.fieldguide_toc .blockheader .wf-droidsans-n4-active div, .wf-droidsans-n4-active .hometophold .hometopright, .hometophold .wf-droidsans-n4-active .hometopright, .wf-droidsans-n4-active .featured-more header, .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active [role="navigation"].main, .wf-droidsans-n4-active .view-mc-recent-comments {
-  font-family: "Droid Sans", "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+.wf-droidsans-n4-active input.cancel, .wf-droidsans-n4-active .front.mc [role="main"] .block.fieldguide_toc .blockheader div, .front.mc [role="main"] .block.fieldguide_toc .blockheader .wf-droidsans-n4-active div, .wf-droidsans-n4-active .featured-more header, .featured-more .wf-droidsans-n4-active header, .wf-droidsans-n4-active [role="navigation"].main, .wf-droidsans-n4-active .view-mc-recent-comments {
+  font-family: "Open Sans", "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
 /* line 38, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -262,7 +262,7 @@ blockquote strong, h4 {
 .wf-droidsans-n7-active h1 strong, h1 .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h2 strong, h2 .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h3 strong, h3 .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h4 strong, h4 .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h5 strong, h5 .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h6 strong, h6 .wf-droidsans-n7-active strong,
 .wf-droidsans-n7-active blockquote strong,
 blockquote .wf-droidsans-n7-active strong, .wf-droidsans-n7-active h4 {
-  font-family: "Droid Sans";
+  font-family: "Open Sans";
 }
 
 /* line 7, ../sass/base/typography/_typography.scss */
@@ -433,7 +433,7 @@ h1 + p:first-letter {
 time {
   display: block;
   text-align: left;
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
   font-weight: normal;
   font-size: 0.85rem;
   line-height: 1.25;
@@ -542,7 +542,7 @@ input[type="button"][disabled="disabled"].active,
 input[type="submit"][disabled="disabled"].active {
   width: auto;
   text-align: center;
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
   font-size: inherit;
   font-weight: normal;
   font-style: normal;
@@ -929,91 +929,91 @@ a.control:active {
   display: inline;
 }
 
-/* line 4, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 5, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .node-mcpress {
   border-top: 4px solid #659e42;
 }
-/* line 6, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 7, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .node-mcpress .field-name-field-project {
   background-color: #659e42;
 }
-/* line 10, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 11, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .node-fg {
   border-top: 4px solid #d7a100;
 }
-/* line 12, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 13, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .node-fg .field-name-field-project {
   background-color: #d7a100;
 }
-/* line 16, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 17, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="banner"],
 .front.mc footer#footer {
   max-width: 84rem;
   margin: 3em auto 0;
 }
-/* line 22, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 23, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="banner"] .logo {
   width: 22.5rem;
 }
-/* line 26, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 27, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] {
   background-color: #fff;
 }
-/* line 28, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 29, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] .view-simple-for-survey {
   padding: .5rem 1rem;
 }
-/* line 30, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 31, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] .view-simple-for-survey .survey-question {
   font-size: 1.4rem;
   margin: 1rem 0 1rem;
   line-height: 1.3;
 }
-/* line 36, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 37, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] .view-simple-for-survey .field-item {
   margin: 1em 0;
 }
-/* line 39, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 40, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] .view-simple-for-survey .field-name-title {
   font-size: 1.2rem;
 }
-/* line 45, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 46, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="complementary"] .view-simple-for-survey a.username {
   font-size: .9rem;
   display: block;
   color: #919191;
 }
-/* line 52, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 53, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .node-spoke.node-teaser {
   border: none;
   padding: .8em 0 0 0;
 }
-/* line 56, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 57, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] {
   max-width: 84rem;
   margin: 0em auto 0;
 }
-/* line 59, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 60, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .button.skip-arrow {
   display: none;
 }
-/* line 63, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 64, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .featured-more {
   margin-top: 0;
 }
-/* line 66, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 67, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] #content {
   width: 100%;
   max-width: none;
 }
-/* line 70, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 71, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc {
   border-top: 4px solid #d7a100;
   background-color: #f4ebe7;
   padding: 0 20px 20px 20px;
   margin-top: 15px;
 }
-/* line 75, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 76, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .blockheader div {
   background: #d7a100;
   margin: 0px 0 0 -20px;
@@ -1024,22 +1024,22 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 86, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 87, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.2rem;
   line-height: 1.3;
 }
-/* line 91, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 92, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .spokes {
   margin-top: 20px;
   border-top: 1px solid rgba(204, 204, 204, 0.5);
 }
-/* line 95, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 96, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc [role="main"] .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }
-/* line 100, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 101, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1051,32 +1051,32 @@ a.control:active {
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 110, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 111, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold section {
-  -ms-flex: 0 0 75%;
-  -webkit-flex: 0 0 75%;
-  flex: 0 0 75%;
+  -ms-flex: 0 0 74.5%;
+  -webkit-flex: 0 0 74.5%;
+  flex: 0 0 74.5%;
 }
-/* line 118, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 119, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .flexhold aside {
-  -ms-flex: 0 1 24%;
-  -webkit-flex: 0 1 24%;
-  flex: 0 1 24%;
+  -ms-flex: 0 1 23%;
+  -webkit-flex: 0 1 23%;
+  flex: 0 1 23%;
 }
-/* line 125, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 126, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list {
+  margin-top: 1%;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
   flex-flow: row wrap;
   -ms-flex-wrap: wrap;
-  margin-top: 0px;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
 }
-/* line 136, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 137, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:empty {
   height: 0;
   border: none;
@@ -1084,24 +1084,24 @@ a.control:active {
   box-shadow: none;
   margin: 0;
 }
-/* line 143, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item {
   background: #434242;
-  box-shadow: 0px 1px 1px 0px #222;
-  -ms-flex: 0 1 32%;
-  -webkit-flex: 0 1 32%;
-  flex: 0 1 32%;
-  margin: 1% 0;
+  background: #62676a;
+  background: #fff;
+  -ms-flex: 0 1 31%;
+  -webkit-flex: 0 1 31%;
+  flex: 0 1 31%;
+  margin: 10px 0 20px;
   padding-bottom: 0;
   overflow: hidden;
 }
-/* line 147, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 152, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:hover {
-  box-shadow: 0px 1px 3px 3pxpx #000;
   cursor: pointer;
 }
 @media (min-width: 600px) and (max-width: 840px) {
-  /* line 143, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1109,67 +1109,34 @@ a.control:active {
   }
 }
 @media (min-width: 0px) and (max-width: 599px) {
-  /* line 143, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 144, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .featured-item-list .featured-item {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
     margin: 1% 0;
   }
 }
-/* line 173, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 178, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item p {
   margin-bottom: 0;
 }
-/* line 177, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc .featured-item-list h2 {
-  border-top: 1px solid #666;
-  font-size: 1rem;
-  line-height: 1.5;
-  font-weight: normal;
-  padding-top: 0;
-}
 /* line 183, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc .featured-item-list h2 a {
-  display: block;
-  padding: 10px 15px;
-}
-/* line 187, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc .featured-item-list h2 a:link,
-.front.mc .featured-item-list h2 a:visited {
-  color: white !important;
-}
-/* line 193, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more {
   margin: 3rem 0 3rem;
   border-top: none;
 }
 
-/* line 199, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 189, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post {
-  background: #434242;
   position: relative;
 }
-/* line 202, ../sass/modules/homepage/_homepageUmbrella.scss */
-.node-front-page-post .field-name-field-project {
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.7);
-  display: inline-block;
-  float: left;
-  padding: 1px 13px 2px;
-  text-transform: uppercase;
-  font-size: .85rem;
-  line-height: 1.3;
-  color: rgba(255, 255, 255, 0.7);
-}
-/* line 215, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 192, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-rlink {
   display: inline-block;
   float: left;
   clear: left;
 }
-/* line 222, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 199, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-rlink a {
   color: #fff !important;
   display: block;
@@ -1178,33 +1145,101 @@ a.control:active {
   line-height: 1.2;
   font-weight: normal;
 }
-/* line 233, ../sass/modules/homepage/_homepageUmbrella.scss */
-.node-front-page-post.view-mode-full .field-name-field-rlink a {
-  font-size: 1.8rem;
-}
-/* line 238, ../sass/modules/homepage/_homepageUmbrella.scss */
-.node-front-page-post .field-name-field-body {
-  background: rgba(0, 0, 0, 0.7);
-  margin: 10px 0 0 10px;
-  padding: 10px;
-  color: #ddd;
+/* line 209, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-teaser .field-name-field-project {
+  position: absolute;
+  top: -2px;
+  left: 0px;
   display: inline-block;
   float: left;
-  clear: left;
-  display: none;
+  padding: 1px 13px 2px;
+  text-transform: uppercase;
+  font-size: .85rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.7);
 }
-/* line 248, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 221, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-teaser .field-name-field-body {
+  font-size: .8rem;
+  margin: 0;
+}
+/* line 225, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-teaser h2 {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin: 0;
+  padding-top: 0;
+}
+/* line 233, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-teaser h2 a {
+  display: block;
+  padding: 5px 10px 5px 0;
+}
+/* line 237, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-teaser h2 a:link,
+.node-front-page-post.view-mode-teaser h2 a:visited {
+  color: white !important;
+  color: #222 !important;
+}
+/* line 245, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full:hover {
+  cursor: pointer;
+}
+/* line 250, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full .field-group-html-element {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+}
+/* line 255, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full .field-name-field-project {
+  padding: 1px 13px 2px;
+  text-transform: uppercase;
+  font-size: .85rem;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.7);
+  float: left;
+}
+/* line 263, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full h2 {
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 1.6rem;
+  margin: 20px 0 10px 10px;
+  padding-top: 0;
+  float: left;
+  clear: both;
+}
+/* line 270, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full h2 a {
+  color: #222 !important;
+  padding: 8px 12px;
+  display: block;
+}
+/* line 276, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full .field-name-field-body {
+  background: rgba(255, 255, 255, 0.7);
+  margin: 10px 0 0 10px;
+  padding: 10px;
+  color: #222;
+  float: left;
+  clear: both;
+}
+/* line 283, ../sass/modules/homepage/_homepageUmbrella.scss */
+.node-front-page-post.view-mode-full .field-name-field-body p:last-child {
+  margin: 0;
+}
+/* line 298, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb {
   background-color: white;
 }
-/* line 250, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 300, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* line 258, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 308, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1215,23 +1250,25 @@ a.control:active {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
+  margin-bottom: 20px;
 }
-/* line 268, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 319, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopleft {
-  -ms-flex: 0 0 66%;
-  -webkit-flex: 0 0 66%;
-  flex: 0 0 66%;
+  -ms-flex: 0 0 65.5%;
+  -webkit-flex: 0 0 65.5%;
+  flex: 0 0 65.5%;
 }
-/* line 273, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 324, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright {
-  -ms-flex: 0 1 32%;
-  -webkit-flex: 0 1 32%;
-  flex: 0 1 32%;
-  background-color: #E7EEF3;
-  padding: 10px;
+  background-color: #e7eef3;
+  -ms-flex: 0 1 31%;
+  -webkit-flex: 0 1 31%;
+  flex: 0 1 31%;
+  font-size: .9rem;
+  padding: 25px;
   border-top: 4px solid #144E78;
 }
-/* line 282, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 334, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright .special {
   font-size: 1.1em;
   font-weight: bold;
@@ -1604,7 +1641,7 @@ nav.global {
   background-image: linear-gradient(to bottom, #175888, #12476e);
   width: 100%;
   height: 2.4rem;
-  font-family: "Droid Sans";
+  font-family: "Open Sans";
   font-size: 1em 2.25em;
   position: absolute;
   top: 0;
@@ -1842,7 +1879,7 @@ nav.global li.sites_nav ul {
 
 /* line 52, ../sass/modules/header/_header--search.scss */
 .wf-droidsans-n4-active input[type="search"] {
-  font-family: "Droid Sans", "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
 @media (min-width: 801px) {
@@ -2332,7 +2369,7 @@ ul.tags {
 }
 /* line 29, ../sass/modules/content/_content.scss */
 ul.tags li {
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
   display: inline-block;
   list-style-type: none;
   line-height: 2.25em;
@@ -2748,7 +2785,7 @@ ul.links.inline li {
 /* line 207, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user {
   color: #5a5a5a;
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 210, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .comment-item {
@@ -3061,7 +3098,7 @@ aside + h2 {
 /* line 117, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
-  font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+  font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 /* line 124, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
@@ -3659,7 +3696,7 @@ h1.p-name {
   .profile.view-mode-full .contact-info li a {
     width: auto;
     text-align: center;
-    font-family: "Droid Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+    font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
     font-size: inherit;
     font-weight: normal;
     font-style: normal;

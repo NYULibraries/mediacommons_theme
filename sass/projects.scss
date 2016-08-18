@@ -111,8 +111,6 @@
             // twitter widget
             background-color: transparent !important;
             min-height: 440px;
-            // prevent layout breakage while loading
-             max-width: 300px;
           }
         }
         header {
@@ -160,7 +158,7 @@
   .featuredhub-info {
     // position: absolute;
     // bottom: 20px;
-     max-width: 88%;
+    max-width: 88%;
     // left: 20px;
     time {
       // padding: 0px 3px;

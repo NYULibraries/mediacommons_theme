@@ -1,5 +1,6 @@
 $mcpress-color: #659e42;
 $fg-color: #d7a100;
+$hometoprightcolor: #E7EEF3;
 .front.mc {
   .node-mcpress {
     border-top: 4px solid $mcpress-color;
@@ -109,27 +110,27 @@ $fg-color: #d7a100;
     -ms-flex-pack: justify;
     section {
       //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
-      -ms-flex: 0 0 75%;
-      -webkit-flex: 0 0 75%;
-      flex: 0 0 75%;
+      -ms-flex: 0 0 74.5%;
+      -webkit-flex: 0 0 74.5%;
+      flex: 0 0 74.5%;
       // margin: 1% 0;
       //background-color: pink;
     }
     aside {
-      -ms-flex: 0 1 24%;
-      -webkit-flex: 0 1 24%;
-      flex: 0 1 24%;
+      -ms-flex: 0 1 23%;
+      -webkit-flex: 0 1 23%;
+      flex: 0 1 23%;
       // margin: 1% 0;
     }
   }
   .featured-item-list {
+    margin-top: 1%;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     -ms-flex-wrap: wrap;
-    margin-top: 0px;
     -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
@@ -142,11 +143,15 @@ $fg-color: #d7a100;
     }
     .featured-item {
       background: #434242;
-      // border: 1px solid #d8d8d8;
-      box-shadow: 0px 1px 1px 0px #222;
+      background: #62676a;
+      background: #fff;
+      //  border: 1px solid #d8d8d8;
+      //box-shadow: 0px 1px 1px 0px rgba(30, 30, 30, .5);
+      // box-shadow: inset 0px 0px 1px rgba(30, 30, 30, .5), 0px 1px 1px 0px rgba(30, 30, 30, .5);
+      // box-shadow: inset 0px 0px 1px rgba(30, 30, 30, .5);
       &:hover {
         // box-shadow:  1px 1px 1px 1px blue; 
-        box-shadow: 0px 1px 3px 3pxpx #000;
+        // box-shadow: 0px 1px 3px 3px #000;
         cursor: pointer;
         img {
           // width: 110% !important;
@@ -154,10 +159,10 @@ $fg-color: #d7a100;
           //margin-top: -10%;
         }
       }
-      -ms-flex: 0 1 32%;
-      -webkit-flex: 0 1 32%;
-      flex: 0 1 32%;
-      margin: 1% 0;
+      -ms-flex: 0 1 31%;
+      -webkit-flex: 0 1 31%;
+      flex: 0 1 31%;
+      margin: 10px 0 20px;
       padding-bottom: 0;
       @include respond-to("tablet-lh") {
         -webkit-flex: 0 1 49%;
@@ -174,21 +179,6 @@ $fg-color: #d7a100;
         margin-bottom: 0;
       }
     }
-    h2 {
-      border-top: 1px solid #666;
-      font-size: 1rem;
-      line-height: 1.5;
-      font-weight: normal;
-      padding-top: 0;
-      a {
-        display: block;
-        padding: 10px 15px;
-      }
-      a:link,
-      a:visited {
-        color: white !important;
-      }
-    }
   }
   .featured-more {
     margin: 3rem 0 3rem;
@@ -197,21 +187,8 @@ $fg-color: #d7a100;
 }
 
 .node-front-page-post {
-  background: #434242;
+  // background: #434242;
   position: relative;
-  .field-name-field-project {
-    position: absolute;
-    top: -2px;
-    left: 0px;
-    background: rgba(0, 0, 0, 0.7);
-    display: inline-block;
-    float: left;
-    padding: 1px 13px 2px;
-    text-transform: uppercase;
-    font-size: .85rem;
-    line-height: 1.3;
-    color: rgba(255, 255, 255, .7);
-  }
   .field-name-field-rlink {
     // background: #000;
     // background: rgba(0, 0, 0, 0.7);
@@ -228,22 +205,95 @@ $fg-color: #d7a100;
       font-weight: normal;
     }
   }
-  &.view-mode-full {
-    .field-name-field-rlink {
+  &.view-mode-teaser {
+    .field-name-field-project {
+      position: absolute;
+      top: -2px;
+      left: 0px;
+      display: inline-block;
+      float: left;
+      padding: 1px 13px 2px;
+      text-transform: uppercase;
+      font-size: .85rem;
+      line-height: 1.3;
+      color: rgba(255, 255, 255, .7);
+    }
+    .field-name-field-body {
+      font-size: .8rem;
+      margin: 0;
+    }
+    h2 {
+      //border-top: 1px solid #666;
+      // border-top: 1px solid #ddd;
+      font-size: 1rem;
+      line-height: 1.4;
+      //font-weight: 300;
+      margin: 0;
+      padding-top: 0;
       a {
-        font-size: 1.8rem;
+        display: block;
+        padding: 5px 10px 5px 0;
+      }
+      a:link,
+      a:visited {
+        color: white !important;
+        color: #222 !important;
+      }
+    }
+  }
+  &.view-mode-full {
+    &:hover {
+      // box-shadow:  1px 1px 1px 1px blue; 
+      // box-shadow: 0px 1px 3px 3px #000;
+      cursor: pointer;
+    }
+    .field-group-html-element {
+      position: absolute;
+      top: -2px;
+      left: 0px;
+    }
+    .field-name-field-project {
+      padding: 1px 13px 2px;
+      text-transform: uppercase;
+      font-size: .85rem;
+      line-height: 1.3;
+      color: rgba(255, 255, 255, .7);
+      float: left;
+    }
+    h2 {
+      background: rgba(255, 255, 255, 0.7);
+      font-size: 1.6rem;
+      margin: 20px 0 10px 10px;
+      padding-top: 0;
+      float: left;
+      clear: both;
+      a {
+        color: #222 !important;
+        padding: 8px 12px;
+        display: block;
+      }
+    }
+    .field-name-field-body {
+      background: rgba(255, 255, 255, .7);
+      margin: 10px 0 0 10px;
+      padding: 10px;
+      color: #222;
+      float: left;
+      clear: both;
+      p:last-child {
+        margin: 0;
       }
     }
   }
   .field-name-field-body {
-    background: rgba(0, 0, 0, 0.7);
-    margin: 10px 0 0 10px;
-    padding: 10px;
-    color: #ddd;
-    display: inline-block;
-    float: left;
-    clear: left;
-    display: none;
+    // background: rgba(0, 0, 0, 0.7);
+    // margin: 10px 0 0 10px;
+    // padding: 10px;
+    // color: #ddd;
+    // display: inline-block;
+    // float: left;
+    // clear: left;
+    //display: none;
   }
   .field-name-field-featured-image-thumb {
     background-color: white;
@@ -265,19 +315,21 @@ $fg-color: #d7a100;
   -webkit-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify;
+  margin-bottom: 20px;
   .hometopleft {
-    -ms-flex: 0 0 66%;
-    -webkit-flex: 0 0 66%;
-    flex: 0 0 66%;
+    -ms-flex: 0 0 65.5%;
+    -webkit-flex: 0 0 65.5%;
+    flex: 0 0 65.5%;
   }
   .hometopright {
-    -ms-flex: 0 1 32%;
-    -webkit-flex: 0 1 32%;
-    flex: 0 1 32%;
+    background-color: $hometoprightcolor;
+    -ms-flex: 0 1 31%;
+    -webkit-flex: 0 1 31%;
+    flex: 0 1 31%;
     // margin: 1% 0;
-    background-color: #E7EEF3;
-    padding: 10px;
-    @extend %sans;
+    font-size: .9rem;
+    padding: 25px;
+    // @extend %sans;
     border-top: 4px solid #144E78;
     .special {
       font-size: 1.1em;

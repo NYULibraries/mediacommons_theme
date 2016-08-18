@@ -83,13 +83,12 @@ body.mc [role="complementary"] > div#block-block-1,
 body.mc [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.mc [role="complementary"] header {
   background-color: #e4d1c5;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.mc .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-mc.svg');
   background-repeat: no-repeat;
@@ -119,7 +118,7 @@ body.mc input[type="search"]::-webkit-input-placeholder,
 body.mc input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.mc .pager a:active {
   color: #fff;
   background-color: #196195;
@@ -210,13 +209,12 @@ body.fieldguide [role="complementary"] > div#block-block-1,
 body.fieldguide [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #bfcee2;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.fieldguide .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-fieldguide.svg?1465491556');
   background-repeat: no-repeat;
@@ -246,7 +244,7 @@ body.fieldguide input[type="search"]::-webkit-input-placeholder,
 body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.fieldguide .pager a:active {
   color: #fff;
   background-color: #8b6800;
@@ -337,13 +335,12 @@ body.tne [role="complementary"] > div#block-block-1,
 body.tne [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.tne [role="complementary"] header {
   background-color: #edcdc6;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.tne .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-tne.svg?1465491556');
   background-repeat: no-repeat;
@@ -373,7 +370,7 @@ body.tne input[type="search"]::-webkit-input-placeholder,
 body.tne input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.tne .pager a:active {
   color: #fff;
   background-color: #1db7b7;
@@ -464,13 +461,12 @@ body.imr [role="complementary"] > div#block-block-1,
 body.imr [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #d5f7c8;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.imr .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;
@@ -500,7 +496,7 @@ body.imr input[type="search"]::-webkit-input-placeholder,
 body.imr input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.imr .pager a:active {
   color: #fff;
   background-color: #e25025;
@@ -591,13 +587,12 @@ body.int [role="complementary"] > div#block-block-1,
 body.int [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.int [role="complementary"] header {
   background-color: #ddddc9;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.int .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
@@ -627,7 +622,7 @@ body.int input[type="search"]::-webkit-input-placeholder,
 body.int input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.int .pager a:active {
   color: #fff;
   background-color: #782a71;
@@ -718,13 +713,12 @@ body.alt [role="complementary"] > div#block-block-1,
 body.alt [role="complementary"] .block#block-block-1 {
   background-color: transparent !important;
   min-height: 440px;
-  max-width: 300px;
 }
-/* line 118, ../sass/projects.scss */
+/* line 116, ../sass/projects.scss */
 body.alt [role="complementary"] header {
   background-color: #dfeec6;
 }
-/* line 123, ../sass/projects.scss */
+/* line 121, ../sass/projects.scss */
 body.alt .node-spoke.node-teaser .thumb {
   background: url('../images/default_images/spoke-default-alt.svg?1465491556');
   background-repeat: no-repeat;
@@ -754,44 +748,44 @@ body.alt input[type="search"]::-webkit-input-placeholder,
 body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
-/* line 140, ../sass/projects.scss */
+/* line 138, ../sass/projects.scss */
 body.alt .pager a:active {
   color: #fff;
   background-color: #be1e2d;
 }
 
-/* line 147, ../sass/projects.scss */
+/* line 145, ../sass/projects.scss */
 body .hub-title {
   padding-top: 0;
   color: #232323;
 }
-/* line 150, ../sass/projects.scss */
+/* line 148, ../sass/projects.scss */
 body .hub-title a:link,
 body .hub-title a:visited {
   color: #111;
 }
 
-/* line 156, ../sass/projects.scss */
+/* line 154, ../sass/projects.scss */
 .featured-item-list .featured-item {
   padding-bottom: 10px;
 }
 
-/* line 160, ../sass/projects.scss */
+/* line 158, ../sass/projects.scss */
 .featuredhub-info {
   max-width: 88%;
 }
-/* line 165, ../sass/projects.scss */
+/* line 163, ../sass/projects.scss */
 .featuredhub-info time {
   color: #444 !important;
   margin: 5px 0 2px;
 }
-/* line 173, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 .featuredhub-info h2 {
   padding: 0 0 8px 0;
   font-size: 18px;
   line-height: 1.25;
 }
-/* line 176, ../sass/projects.scss */
+/* line 174, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #222 !important;
 }

@@ -46,13 +46,13 @@ body.mc a:visited {
   color: #196195;
 }
 /* line 82, ../sass/projects.scss */
-body.mc a[href]:hover,
-body.mc a[href]:focus {
+body.mc a:hover,
+body.mc a:focus {
   color: #124569;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.mc a[href]:active {
+body.mc a:active {
   color: #0a283e;
 }
 /* line 91, ../sass/projects.scss */
@@ -172,13 +172,13 @@ body.fieldguide a:visited {
   color: #8b6800;
 }
 /* line 82, ../sass/projects.scss */
-body.fieldguide a[href]:hover,
-body.fieldguide a[href]:focus {
+body.fieldguide a:hover,
+body.fieldguide a:focus {
   color: #584200;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.fieldguide a[href]:active {
+body.fieldguide a:active {
   color: #251c00;
 }
 /* line 91, ../sass/projects.scss */
@@ -298,13 +298,13 @@ body.tne a:visited {
   color: #1db7b7;
 }
 /* line 82, ../sass/projects.scss */
-body.tne a[href]:hover,
-body.tne a[href]:focus {
+body.tne a:hover,
+body.tne a:focus {
   color: #168b8b;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.tne a[href]:active {
+body.tne a:active {
   color: #0f5f5f;
 }
 /* line 91, ../sass/projects.scss */
@@ -424,13 +424,13 @@ body.imr a:visited {
   color: #e25025;
 }
 /* line 82, ../sass/projects.scss */
-body.imr a[href]:hover,
-body.imr a[href]:focus {
+body.imr a:hover,
+body.imr a:focus {
   color: #bb3e19;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.imr a[href]:active {
+body.imr a:active {
   color: #8e2f13;
 }
 /* line 91, ../sass/projects.scss */
@@ -550,13 +550,13 @@ body.int a:visited {
   color: #782a71;
 }
 /* line 82, ../sass/projects.scss */
-body.int a[href]:hover,
-body.int a[href]:focus {
+body.int a:hover,
+body.int a:focus {
   color: #521d4d;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.int a[href]:active {
+body.int a:active {
   color: #2c102a;
 }
 /* line 91, ../sass/projects.scss */
@@ -676,13 +676,13 @@ body.alt a:visited {
   color: #be1e2d;
 }
 /* line 82, ../sass/projects.scss */
-body.alt a[href]:hover,
-body.alt a[href]:focus {
+body.alt a:hover,
+body.alt a:focus {
   color: #921723;
   text-decoration: underline;
 }
 /* line 87, ../sass/projects.scss */
-body.alt a[href]:active {
+body.alt a:active {
   color: #661018;
 }
 /* line 91, ../sass/projects.scss */
@@ -788,6 +788,42 @@ body .hub-title a:visited {
 /* line 174, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #222 !important;
+}
+
+@media (min-width: 981px) {
+  /* line 5, ../sass/projects/_mc.scss */
+  body.mc [role="banner"],
+  body.mc footer#footer {
+    max-width: 84rem;
+    margin: 3em auto 0;
+  }
+  /* line 11, ../sass/projects/_mc.scss */
+  body.mc [role="banner"] .logo {
+    width: 22.5rem;
+    height: 4.4rem;
+  }
+}
+@media (min-width: 0px) and (max-width: 980px) {
+  /* line 19, ../sass/projects/_mc.scss */
+  body.mc footer#footer {
+    margin: 3em auto 0;
+  }
+  /* line 22, ../sass/projects/_mc.scss */
+  body.mc [role="banner"] {
+    margin: 3em auto 30px auto;
+  }
+  /* line 24, ../sass/projects/_mc.scss */
+  body.mc [role="banner"] h1 {
+    left: 20px;
+  }
+  /* line 27, ../sass/projects/_mc.scss */
+  body.mc [role="banner"] .logo {
+    width: 21rem;
+    height: 2.5rem;
+    margin: 0;
+    padding: 0;
+    background-position: 0% 0%;
+  }
 }
 
 /* line 17, ../sass/projects/_int.scss */

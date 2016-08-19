@@ -79,12 +79,12 @@
       a:visited {
         color: $col;
       }
-      a[href]:hover,
-      a[href]:focus {
+      a:hover,
+      a:focus {
         color: darken($col, 10%);
         text-decoration: underline;
       }
-      a[href]:active {
+      a:active {
         color: darken($col, 20%);
       }
       [role="navigation"].main ul.main {
@@ -180,6 +180,7 @@
     }
   }
   
+  @import "projects/mc";
   @import "projects/int";
   @import "projects/alt";
   @import "projects/fieldguide";

@@ -41,6 +41,64 @@ h2.block-title {
   }
 }
 
+.peoplelist {
+  font-size: .8rem;
+  color: nth($black, 2);
+  line-height: 1.5;
+  span {
+    white-space: nowrap;
+    &::after {
+      content: ", ";
+    }
+    &:last-child {
+      &::after {
+        content: "";
+      }
+    }
+  }
+  .field-label {
+    display: inline-block;
+    padding-right: .2rem;
+    // font-size: 0.85rem;
+  }
+  a:link,
+  a:active,
+  a:visited {
+    color: nth($black, 2) !important;
+  }
+  .h-card {
+    display: inline-block;
+    &:after {
+      content: ",\20";
+    }
+    &:last-child:after {
+      content: "";
+    }
+  }
+  .label {
+    float: left;
+    margin-right: 5px;
+  }
+}
+
+.view-mode-user_byline {
+  /* for spoke pages, when there is an org */
+  /* for reviews areas on spoke */
+  //background-color: pink;
+  float: left;
+  margin-right: 5px;
+  .p-name,
+  .p-org {
+    float: left;
+  }
+  &:after {
+    content: ",\20";
+  }
+  &:last-child:after {
+    //content: "";
+  }
+}
+
 .view-mode-user_teaser {
   .field-name-ds-user-picture img {
     float: left;
@@ -85,13 +143,9 @@ img[src*="identicon"] {
 /* for contributors lists as well as profile */
 
 .h-card {
-  width: auto;
-  overflow: hidden;
-  padding: .5rem 0;
-  font-size: .9rem;
-  line-height: 1.3;
   .field-user-avatar,
   .prof-img-hold {
+    //  background-color: yellow;
     float: left;
     a {
       display: block;
@@ -120,14 +174,6 @@ img[src*="identicon"] {
   .contact-info {
     clear: left;
     margin-top: 1em;
-  }
-  .p-name {
-    font-size: 1.2rem;
-    padding-top: 0;
-    line-height: inherit;
-  }
-  .p-name.u-url {
-    font-weight: bold;
   }
   .h-adr {
     display: block;
@@ -223,12 +269,18 @@ h1.p-name {
     padding: 0;
     font-size: 1rem;
     line-height: 1.7;
+    width: auto;
+    overflow: hidden;
     .p-name {
       font-size: 2rem;
       padding: 0;
       margin-top: .5rem;
       margin-bottom: .2em;
       color: nth($black, 1);
+      line-height: inherit;
+    }
+    .p-name.u-url {
+      font-weight: bold;
     }
   }
   .contact-info {

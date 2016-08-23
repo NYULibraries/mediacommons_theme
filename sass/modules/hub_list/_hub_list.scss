@@ -97,7 +97,7 @@ aside + h2 {
   &.node-teaser {
     padding: .8em 0;
     line-height: 1.5;
-    border-bottom: 1px solid nth($black, 4);
+    border-bottom: 1px solid lighten(nth($black, 5), 5%);
     margin: 0;
     time {
       font-size: 0.8rem;
@@ -207,66 +207,6 @@ h2.spoke-title {
   }
 }
 
-.peoplelist {
-  font-size: .8rem;
-  color: nth($black, 2);
-  line-height: 1.5;
-  span {
-    white-space: nowrap;
-    &::after {
-      content: ", ";
-    }
-    &:last-child {
-      &::after {
-        content: "";
-      }
-    }
-  }
-  .field-label {
-    display: inline-block;
-    padding-right: .2rem;
-    // font-size: 0.85rem;
-  }
-  a:link,
-  a:active,
-  a:visited {
-    color: nth($black, 2) !important;
-  }
-  ul {
-    display: inline;
-  }
-  li {
-    padding-right: .25rem;
-    display: inline-block;
-    &:after {
-      content: ",\20";
-    }
-    &:last-child:after {
-      content: "";
-    }
-  }
-  .label {
-    float: left;
-    margin-right: 5px;
-  }
-}
-
-.view-mode-user_byline {
-  /* for spoke pages, when there is an org */
-  /* for reviews areas on spoke */
-  float: left;
-  margin-right: 5px;
-  .p-name,
-  .p-org {
-    float: left;
-  }
-  &:after {
-    content: ",\20";
-  }
-  &:last-child:after {
-    content: "";
-  }
-}
 
 .view-list-of-all-hubs {
   > header {

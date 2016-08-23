@@ -385,8 +385,7 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
   if ( isset( $vars['items'][0]['#title'] ) ) {
     $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
-     // $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
-       $output .=  drupal_render( $vars['items'][$key] ) ;
+    $output .= '<span class="h-card">' . drupal_render( $vars['items'][$key] ) . '</span> ';
     }
   }
   $output .= '</div>';

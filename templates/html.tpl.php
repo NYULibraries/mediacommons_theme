@@ -43,7 +43,8 @@
 
     <script type="text/javascript">
       WebFontConfig = {
-        google: { families: [ 'Droid+Sans:400,700:latin', 'Droid+Serif:400,700,400italic,700italic:latin' ] }
+        google: { families: [ 'Open+Sans:300,400,700:latin', 
+          'Droid+Sans:400,700:latin'] }
       };
       (function() {
         var wf = document.createElement('script');

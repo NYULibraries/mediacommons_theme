@@ -79,12 +79,12 @@
       a:visited {
         color: $col;
       }
-      a[href]:hover,
-      a[href]:focus {
+      a:hover,
+      a:focus {
         color: darken($col, 10%);
         text-decoration: underline;
       }
-      a[href]:active {
+      a:active {
         color: darken($col, 20%);
       }
       [role="navigation"].main ul.main {
@@ -111,8 +111,6 @@
             // twitter widget
             background-color: transparent !important;
             min-height: 440px;
-            // prevent layout breakage while loading
-             max-width: 300px;
           }
         }
         header {
@@ -160,7 +158,7 @@
   .featuredhub-info {
     // position: absolute;
     // bottom: 20px;
-     max-width: 88%;
+    max-width: 88%;
     // left: 20px;
     time {
       // padding: 0px 3px;
@@ -182,6 +180,7 @@
     }
   }
   
+  @import "projects/mc";
   @import "projects/int";
   @import "projects/alt";
   @import "projects/fieldguide";

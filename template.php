@@ -220,12 +220,129 @@ function mediacommons_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__pjax';
   }  
 }
+function mediacommons_preprocess_username(&$variables) {
+
+  $variables['name'] =  check_plain( $variables['name_raw'] );
+
+
+  $account = $variables['account'];
+
+  $variables['extra'] = '';
+  if (empty($account->uid)) {
+    $variables['uid'] = 0;
+    if (theme_get_setting('toggle_comment_user_verification')) {
+      $variables['extra'] = ' (' . t('not verified') . ')';
+    }
+  }
+  else {
+    $variables['uid'] = (int) $account->uid;
+  }
+
+
+  $variables['profile_access'] = user_access('access user profiles');
+  $variables['link_attributes'] = array();
+  // Populate link path and attributes if appropriate.
+  if ($variables['uid'] && $variables['profile_access']) {
+    // We are linking to a local user.
+    $variables['link_attributes'] = array('title' => t('User profile: ' . $variables['name']));
+    $variables['link_path'] = 'user/' . $variables['uid'];
+  }
+  elseif (!empty($account->homepage)) {
+    // Like the 'class' attribute, the 'rel' attribute can hold a
+    // space-separated set of values, so initialize it as an array to make it
+    // easier for other preprocess functions to append to it.
+    $variables['link_attributes'] = array('rel' => array('nofollow'));
+    $variables['link_path'] = $account->homepage;
+    $variables['homepage'] = $account->homepage;
+  }
+  // We do not want the l() function to check_plain() a second time.
+  $variables['link_options']['html'] = TRUE;
+  // Set a default class.
+  $variables['attributes_array'] = array('class' => array('username'));
+}
+function mediacommons_preprocess_comment(&$variables) {
+  $comment = $variables['elements']['#comment'];
+  $node = $variables['elements']['#node'];
+  $variables['comment'] = $comment;
+  $variables['node'] = $node;
+  $variables['author'] =  theme('username', array('account' => $comment));
+  $user = user_load($comment->uid);
+  // Get Organization of the commenter, and send that variable on to the template
+  $orgA = field_get_items('user', $user, 'field_organization');
+  if ($orgA) {$tid = $orgA[0]['tid']; }
+  $term = taxonomy_term_load($tid); // load term object
+  $term_uri = taxonomy_term_uri($term); // get array with path
+  $term_title = taxonomy_term_title($term);
+  $term_path = $term_uri['path'];
+  $link = l($term_title,$term_path);
+  $variables['organization'] = $link;
+
+  
+  $variables['created'] = format_date($comment->created);
+
+  // Avoid calling format_date() twice on the same timestamp.
+  if ($comment->changed == $comment->created) {
+    $variables['changed'] = $variables['created'];
+  }
+  else {
+    $variables['changed'] = format_date($comment->changed);
+  }
+
+  $variables['new'] = !empty($comment->new) ? t('new') : '';
+  $variables['picture'] = theme_get_setting('toggle_comment_user_picture') ? theme('user_picture', array('account' => $comment)) : '';
+  $variables['signature'] = $comment->signature;
+
+  $uri = entity_uri('comment', $comment);
+  $uri['options'] += array('attributes' => array('class' => array('permalink'), 'rel' => 'bookmark'));
+
+  $variables['title'] = l($comment->subject, $uri['path'], $uri['options']);
+  $variables['permalink'] = l(t('Permalink'), $uri['path'], $uri['options']);
+  $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
+
+  // Preprocess fields.
+  field_attach_preprocess('comment', $comment, $variables['elements'], $variables);
+
+  // Helpful $content variable for templates.
+  foreach (element_children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+
+  // Set status to a string representation of comment->status.
+  if (isset($comment->in_preview)) {
+    $variables['status'] = 'comment-preview';
+  }
+  else {
+    $variables['status'] = ($comment->status == COMMENT_NOT_PUBLISHED) ? 'comment-unpublished' : 'comment-published';
+  }
+
+  // Gather comment classes.
+  // 'comment-published' class is not needed, it is either 'comment-preview' or
+  // 'comment-unpublished'.
+  if ($variables['status'] != 'comment-published') {
+    $variables['classes_array'][] = $variables['status'];
+  }
+  if ($variables['new']) {
+    $variables['classes_array'][] = 'comment-new';
+  }
+  if (!$comment->uid) {
+    $variables['classes_array'][] = 'comment-by-anonymous';
+  }
+  else {
+    if ($comment->uid == $variables['node']->uid) {
+      $variables['classes_array'][] = 'comment-by-node-author';
+    }
+    if ($comment->uid == $variables['user']->uid) {
+      $variables['classes_array'][] = 'comment-by-viewer';
+    }
+  }
+}
+
 /**
  * Begin User Profiles
  */
-function mediacommons_preprocess_username( &$vars ) {
+function mediacommons_preprocess_usernamex( &$vars ) {
   //putting back what drupal core messed with (truncated to 15 characters)
-  $vars['name'] = check_plain( $vars['name_raw'] );
+  $vars['name'] = "bob " . check_plain( $vars['name_raw'] );
 }
 
 function mediacommons_field__minimal__ds_user_picture( $vars ) {

@@ -8,6 +8,9 @@
  */
 ?>
 <article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+
+
+
   <header>
     <?php print render($title_prefix); ?>
     <?php if (isset($title)): ?>
@@ -22,17 +25,22 @@
       <mark class="new"><?php print $new; ?></mark>
     <?php endif; ?>
     <?php print render($title_suffix); ?>
-    <?php print '<time>'. $created . '</time>'; ?>
-    <div class="h-card vcard">
+
+    <?php 
+$formatted_date = format_date($comment->created, 'custom', 'l, F j, Y  -- g:i a');
+$machine_date = format_date($comment->created, 'custom', 'Y-m-j');
+print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
+ ?>
+    <div class="h-card vcard clearfix">
       <?php  print '<div class="field-user-avatar photo u-photo-small">' . $picture . '</div>'; ?>
-      <div>
-        <div class="nameHolder">By <?php print $author; ?></div>
+   
+        <div class="nameHolder">By <span class="p-name"><?php print $author; ?> </span></div>
         <?php if (isset($organization)): ?>
           <span class="p-org org"><?php print $organization; ?></span>
         <?php endif; ?>
         </div>
       <?php //print $permalink; ?>
-    </div>
+ 
     <?php if ($status == 'comment-unpublished'): ?>
       <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
     <?php endif; ?>

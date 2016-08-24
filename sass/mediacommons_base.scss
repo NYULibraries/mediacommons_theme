@@ -1,5 +1,4 @@
 $breakpoint-no-query-fallbacks: false;
-
 @import 'toolkit';
 @import "compass/";
 @import "compass/css3";
@@ -8,25 +7,16 @@ $breakpoint-no-query-fallbacks: false;
 @import "color-schemer";
 @import 'respond-to';
 @import "breakpoint";
-
 //$breakpoint-legacy-syntax: true;
-
-
 @import "partials/_browsers";
 @import "partials/_colors";
 @import "partials/_mixins";
 @import "partials/_extendables";
 @import "partials/_functions";
-
-
-
-
 // Reset 
 //@import "compass-pattern-primer";
-
 @import "_config";
 @import "layout/_reset";
-
 @import "base/page/_page";
 @import "base/forms/_forms";
 @import "base/webfonts/_webfonts";
@@ -35,7 +25,6 @@ $breakpoint-no-query-fallbacks: false;
 @import "base/forms/_forms";
 @import "base/buttons/_buttons";
 @import "base/search/_search";
-
 // optional module imports. comment out ones you don't use
 @import "modules/pagination/_pagination";
 @import "modules/controls/_controls";
@@ -47,11 +36,12 @@ $breakpoint-no-query-fallbacks: false;
 @import "modules/homepagesChannels/_homepagesChannels";
 @import "modules/icons/_icons";
 @import "modules/global_nav/_global_nav";
-@import "modules/header/_header"; 
+@import "modules/header/_header";
 @import "modules/user_nav/_user_nav";
 @import "modules/main_nav/_main_nav";
 @import "modules/flexslider/_flexslider";
 @import "modules/content/_content";
+@import "modules/taxonomies/_taxonomies";
 @import "modules/sub_nav/_sub_nav";
 @import "modules/footer/_footer";
 @import "modules/tabs/_tabs";
@@ -61,21 +51,22 @@ $breakpoint-no-query-fallbacks: false;
 @import "modules/hub_list/_hub_list";
 @import "modules/embedded_video/_embedded_video";
 @import "modules/user_profile/_user_profile";
-
 @import "layout/_page";
 @import "layout/_spoke";
 @import "layout/_user_profile";
+img[src *="default_images"] {
+  // border: 1px solid #222;
+}
 
-img[src *= "default_images"] {
-    // border: 1px solid #222;
+.view-list-of-all-hubs,
+.hubhead {
+  img[src *="default_images"] {
+    display: none !important;
+    height: 0;
+  }
 }
-.view-list-of-all-hubs, .hubhead {
-	img[src *= "default_images"] {
-	    display:none !important;
-	    height:0;
-	}
+
+#page .manualcrop-preview img {
+  max-width: none !important;
+  border: 2px solid red;
 }
-#page .manualcrop-preview  img { 
-	max-width: none !important;	
-	border: 2px solid red; 
-	}

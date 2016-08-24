@@ -1,0 +1,37 @@
+ul.tags {
+  padding: 0;
+  margin-top: .5em;
+  li {
+    //  font-family: $header-font-family;
+    display: inline-block;
+    list-style-type: none;
+    margin: 5px 7px 5px 0;
+    a {
+      display: inline-block;
+      padding: 0px 5px;
+      background-color: lighten(nth($black, 5), 7%);
+      border: 1px solid nth($black, 4);
+      font-size: .85rem;
+      
+    }
+  }
+}
+
+.taxonomy-group {
+  .view-content a {
+    display: inline-block;
+    padding: 0px 5px;
+    background-color: rgba(255, 255, 255, .4);
+    border: 1px solid white;
+    margin-bottom: 7px;
+    font-size: .85rem;
+    &.active {
+      //  color: #666;
+      // border: 1px solid #ccc;
+      &:hover {
+        cursor: default;
+        text-decoration: none;
+      }
+    }
+  }
+}

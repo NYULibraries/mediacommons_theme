@@ -1,48 +1,26 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
-
 // Move to Taxonomy module?
 .tags-block-spoke {
-    margin-top: 2em;
-    h2 {
-        color: nth($black, 2);
-        margin: 0;
-        font-size: 18px;
-        font-size: 1.5rem;
-    }
+  margin-top: 2em;
+  h2 {
+    color: nth($black, 2);
+    margin: 0;
+    font-size: 18px;
+    font-size: 1.5rem;
+  }
 }
+
 
 /* taxonomy page */
-.page-taxonomy .term-listing-heading {
-    .page-title, .label-inline {
-        display: inline-block;
-        @include type-size($h1-font-size, $h1-line-height);
-        margin-top: 0;
-          color: $h1-color;
-    }
-}
 
-ul.tags {
-    padding: 0;
-    margin-top: .5em;
-    li {
-        font-family: $header-font-family;
-        display: inline-block;
-        list-style-type: none;
-        line-height: 2.25em;
-        margin-right: 10px;
-        &:first-child {
-            // display: block;
-            padding: 0 0 1em 0;
-        }
-        &:last-child {
-            margin-right: 0px;
-        }
-        a {
-            @include border-radius(5px);
-            padding: 4px 8px;
-            @include background-image(linear-gradient(top, lighten(nth($black, 4), 7%), lighten(nth($black, 4), 5%)));
-        }
-    }
+.page-taxonomy .term-listing-heading {
+  .page-title,
+  .label-inline {
+    display: inline-block;
+    @include type-size($h1-font-size, $h1-line-height);
+    margin-top: 0;
+    color: $h1-color;
+  }
 }

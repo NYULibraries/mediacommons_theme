@@ -39,3 +39,12 @@
     }
   }
 })(jQuery);
+
+
+jQuery(function () {
+
+    jQuery('.view-all-spokes-in-this-spokes-hub .item-list>ul>li').filter(function(index) {
+      return jQuery(this).find(".spoke-title>a").hasClass("active") === true;
+    }).addClass("active");
+
+});

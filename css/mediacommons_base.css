@@ -1094,19 +1094,11 @@ a.control:active {
   background-color: white;
   box-shadow: inset 0px 0px 1px rgba(30, 30, 30, 0.9), 0px 1px 1px 0px rgba(30, 30, 30, 0.9);
 }
-/* line 155, ../sass/modules/homepage/_homepageUmbrella.scss */
-.front.mc .featured-item-list .featured-item:hover img {
-  width: 109% !important;
-  height: auto;
-  margin-top: -5%;
-  margin-left: -5%;
-  display: block;
-}
-/* line 166, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 167, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:hover .field-name-field-body {
   color: black;
 }
-/* line 170, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 171, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item:hover h2 a:link,
 .front.mc .featured-item-list .featured-item:hover h2 a:visited {
   color: black;
@@ -1127,22 +1119,22 @@ a.control:active {
     margin: 25px 0;
   }
 }
-/* line 189, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 190, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-item-list .featured-item p {
   margin-bottom: 0;
 }
-/* line 194, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 195, ../sass/modules/homepage/_homepageUmbrella.scss */
 .front.mc .featured-more {
   border-top: none;
 }
 @media (min-width: 0px) and (max-width: 980px) {
-  /* line 200, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 201, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .flexhold section {
     -webkit-flex: 1 1 100%;
     flex: 1 1 100%;
     margin: 1% 0;
   }
-  /* line 205, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 206, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .flexhold aside {
     margin: 1% 0;
     flex: none;
@@ -1152,7 +1144,7 @@ a.control:active {
     justify-content: space-between;
     -ms-flex-pack: justify;
   }
-  /* line 213, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 214, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .flexhold aside .block {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
@@ -1160,11 +1152,11 @@ a.control:active {
   }
 }
 @media (min-width: 0px) and (max-width: 599px) {
-  /* line 222, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 223, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .flexhold aside {
     display: block;
   }
-  /* line 224, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 225, ../sass/modules/homepage/_homepageUmbrella.scss */
   .front.mc .flexhold aside .block {
     flex: none;
     display: block;
@@ -1173,16 +1165,16 @@ a.control:active {
   }
 }
 
-/* line 234, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 235, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post {
   position: relative;
   overflow: hidden;
 }
-/* line 238, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 239, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser {
   padding-bottom: 10px;
 }
-/* line 240, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 241, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser .field-name-field-project {
   position: absolute;
   z-index: 1;
@@ -1196,41 +1188,42 @@ a.control:active {
   line-height: 1.3;
   color: rgba(255, 255, 255, 0.7);
 }
-/* line 253, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 254, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 {
   border-top: 1px solid #cfd6da;
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.3;
   margin: 0;
   padding-top: 0;
 }
-/* line 261, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 262, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 a {
   display: block;
   padding: 5px 10px 5px;
 }
-/* line 265, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 266, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser h2 a:link,
 .node-front-page-post.view-mode-teaser h2 a:visited {
   color: #222;
 }
-/* line 270, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 271, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-teaser .field-name-field-body {
   font-size: .8rem;
   margin: 0;
   padding: 0px 10px;
+  line-height: 1.5;
 }
-/* line 277, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 279, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full:hover {
   cursor: pointer;
 }
-/* line 282, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 284, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-group-html-element {
   position: absolute;
   top: -2px;
   left: 0px;
 }
-/* line 287, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 289, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-project {
   padding: 1px 13px 2px;
   text-transform: uppercase;
@@ -1239,7 +1232,7 @@ a.control:active {
   color: rgba(255, 255, 255, 0.7);
   float: left;
 }
-/* line 295, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 297, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full h2 {
   background: rgba(255, 255, 255, 0.7);
   font-size: 1.6rem;
@@ -1248,13 +1241,13 @@ a.control:active {
   float: left;
   clear: both;
 }
-/* line 302, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 304, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full h2 a {
   color: #222 !important;
   padding: 8px 12px;
   display: block;
 }
-/* line 308, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 310, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-body {
   background: rgba(255, 255, 255, 0.7);
   margin: 10px 0 0 10px;
@@ -1263,15 +1256,15 @@ a.control:active {
   float: left;
   clear: both;
 }
-/* line 315, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 317, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-body p:last-child {
   margin: 0;
 }
-/* line 330, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 332, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb {
   background-color: white;
 }
-/* line 332, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 334, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post .field-name-field-featured-image-thumb img {
   display: block;
   width: 100%;
@@ -1279,12 +1272,12 @@ a.control:active {
   transition: all .1s ease;
 }
 
-/* line 341, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 343, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold {
   margin-bottom: 20px;
 }
 @media (min-width: 600px) {
-  /* line 341, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 343, ../sass/modules/homepage/_homepageUmbrella.scss */
   .hometophold {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -1298,21 +1291,21 @@ a.control:active {
   }
 }
 @media (min-width: 600px) {
-  /* line 354, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 356, ../sass/modules/homepage/_homepageUmbrella.scss */
   .hometophold .hometopleft {
     -ms-flex: 0 0 65.5%;
     -webkit-flex: 0 0 65.5%;
     flex: 0 0 65.5%;
   }
 }
-/* line 361, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright {
   background-color: #e7eef3;
   font-size: .9rem;
   border-top: 4px solid #144E78;
 }
 @media (min-width: 600px) {
-  /* line 361, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
   .hometophold .hometopright {
     -ms-flex: 0 1 31%;
     -webkit-flex: 0 1 31%;
@@ -1321,13 +1314,13 @@ a.control:active {
   }
 }
 @media (min-width: 0px) and (max-width: 599px) {
-  /* line 361, ../sass/modules/homepage/_homepageUmbrella.scss */
+  /* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
   .hometophold .hometopright {
     margin-top: 20px;
     padding: 20px;
   }
 }
-/* line 375, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 377, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright .special {
   font-size: 1.1em;
   font-weight: bold;
@@ -2399,29 +2392,6 @@ ul.slides .field-name-field-body {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 5, ../sass/modules/content/_content.scss */
-.tags-block-spoke {
-  margin-top: 2em;
-}
-/* line 7, ../sass/modules/content/_content.scss */
-.tags-block-spoke h2 {
-  color: #5a5a5a;
-  margin: 0;
-  font-size: 18px;
-  font-size: 1.5rem;
-}
-
-/* taxonomy page */
-/* line 19, ../sass/modules/content/_content.scss */
-.page-taxonomy .term-listing-heading .page-title,
-.page-taxonomy .term-listing-heading .label-inline {
-  display: inline-block;
-  font-size: 2.25em;
-  line-height: 1.1em;
-  margin-top: 0;
-  color: #232323;
-}
-
 /* line 1, ../sass/modules/taxonomies/_taxonomies.scss */
 ul.tags {
   padding: 0;
@@ -2438,7 +2408,7 @@ ul.tags li a {
   display: inline-block;
   padding: 0px 5px;
   background-color: #f0f0f0;
-  border: 1px solid #c8c8c8;
+  border: 1px solid #dedede;
   font-size: .85rem;
 }
 
@@ -2455,6 +2425,39 @@ ul.tags li a {
 .taxonomy-group .view-content a.active:hover {
   cursor: default;
   text-decoration: none;
+}
+
+/* line 39, ../sass/modules/taxonomies/_taxonomies.scss */
+.tags-block-spoke {
+  margin-top: 2em;
+}
+/* line 41, ../sass/modules/taxonomies/_taxonomies.scss */
+.tags-block-spoke h2 {
+  color: #5a5a5a;
+  margin: 0;
+  font-size: 18px;
+  font-size: 1.5rem;
+}
+
+/* at the bottom of spoke pages or also hub pages */
+/* line 49, ../sass/modules/taxonomies/_taxonomies.scss */
+.spoke-body div.tags {
+  padding-top: 10px;
+}
+/* line 52, ../sass/modules/taxonomies/_taxonomies.scss */
+.spoke-body div.tags .label-inline {
+  display: none;
+}
+
+/* taxonomy page */
+/* line 61, ../sass/modules/taxonomies/_taxonomies.scss */
+.page-taxonomy .term-listing-heading .page-title,
+.page-taxonomy .term-listing-heading .label-inline {
+  display: inline-block;
+  font-size: 2.25em;
+  line-height: 1.1em;
+  margin-top: 0;
+  color: #232323;
 }
 
 /* line 5, ../sass/modules/footer/_footer.scss */
@@ -2630,6 +2633,13 @@ ul.action-links li a {
 }
 
 /* line 19, ../sass/modules/comments/_comments.scss */
+.comment-count:empty {
+  height: 1px;
+  width: 1px;
+  display: none;
+}
+
+/* line 25, ../sass/modules/comments/_comments.scss */
 .comment-count-xx:before {
   content: "";
   position: absolute;
@@ -2640,7 +2650,7 @@ ul.action-links li a {
   border-color: transparent #dedede;
 }
 
-/* line 29, ../sass/modules/comments/_comments.scss */
+/* line 35, ../sass/modules/comments/_comments.scss */
 .comment-count-xx:after {
   content: "";
   position: absolute;
@@ -2651,106 +2661,157 @@ ul.action-links li a {
   border-color: transparent #fff;
 }
 
-/* line 39, ../sass/modules/comments/_comments.scss */
-.comments {
-  margin-bottom: 2em;
-  line-height: 1.2;
-}
-/* line 42, ../sass/modules/comments/_comments.scss */
-.comments .title {
-  font-weight: normal;
-  font-size: 1.66667em;
-  line-height: 1.25;
-  color: #232323;
-  margin-bottom: .5em;
-}
-/* line 48, ../sass/modules/comments/_comments.scss */
-.comments .comments__form-title {
-  margin-top: 2em;
-}
-/* line 51, ../sass/modules/comments/_comments.scss */
-.comments article {
-  padding: 2.5%;
-  border: transparent 1px solid;
-}
-/* line 54, ../sass/modules/comments/_comments.scss */
-.comments article:nth-of-type(odd) {
+/* line 45, ../sass/modules/comments/_comments.scss */
+.comment {
+  padding: 20px;
   background: #f9ebdd;
 }
-/* line 57, ../sass/modules/comments/_comments.scss */
-.comments article:nth-of-type(even) {
-  background: #f6dec7;
+/* line 58, ../sass/modules/comments/_comments.scss */
+.comment.odd {
+  background: #f9ebdd;
 }
-/* line 61, ../sass/modules/comments/_comments.scss */
-.comments h3 {
+/* line 62, ../sass/modules/comments/_comments.scss */
+.comment.depth-reply {
+  margin-top: 1px;
+}
+/* line 65, ../sass/modules/comments/_comments.scss */
+.comment.top-level {
+  margin-top: 20px;
+}
+/* line 70, ../sass/modules/comments/_comments.scss */
+.comment.depth-reply {
+  margin-top: 1px;
+}
+/* line 72, ../sass/modules/comments/_comments.scss */
+.comment.depth-reply .h-card .field-user-avatar img,
+.comment.depth-reply .u-photo-small {
+  height: 2em;
+  width: 2em;
+  moz-border-radius: 2em;
+  webkit-border-radius: 2em;
+  border-radius: 2em;
+}
+/* line 80, ../sass/modules/comments/_comments.scss */
+.comment.depth-reply .nameHolder {
+  padding-top: .2em;
+}
+/* line 84, ../sass/modules/comments/_comments.scss */
+.comment .nameHolder {
+  display: inline-block;
+  padding-top: 1em;
+}
+/* line 88, ../sass/modules/comments/_comments.scss */
+.comment .p-org {
+  display: inline-block;
+  padding-left: 0;
+}
+/* line 92, ../sass/modules/comments/_comments.scss */
+.comment .p-org a {
+  display: inline-block;
+}
+/* line 96, ../sass/modules/comments/_comments.scss */
+.comment time {
+  font-size: .75rem;
+  margin-bottom: 20px;
+}
+/* line 100, ../sass/modules/comments/_comments.scss */
+.comment .field-name-comment-body {
+  line-height: 1.5;
+  padding-right: 20px;
+}
+/* line 105, ../sass/modules/comments/_comments.scss */
+.comment .h-card {
+  padding: 0;
+  margin-bottom: 10px;
+}
+/* line 108, ../sass/modules/comments/_comments.scss */
+.comment .h-card a:link,
+.comment .h-card a:visited {
+  color: #5a5a5a;
+}
+/* line 113, ../sass/modules/comments/_comments.scss */
+.comment p {
+  margin: .6em 0 0;
+}
+/* line 116, ../sass/modules/comments/_comments.scss */
+.comment h3 {
   margin: 0;
   padding: 0;
   font-size: 1.35em;
   line-height: 1.1em;
-  padding-top: 0.25em;
-  margin-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 10px;
   color: #5a5a5a;
 }
-/* line 69, ../sass/modules/comments/_comments.scss */
-.comments h3 + time {
+/* line 126, ../sass/modules/comments/_comments.scss */
+.comment h3 + time {
   margin: .5em 0 .4em;
 }
-/* line 72, ../sass/modules/comments/_comments.scss */
-.comments .field-name-comment-body {
-  line-height: 1.5;
+/* line 129, ../sass/modules/comments/_comments.scss */
+.comment ul.links.inline {
+  padding: 3px 8px 0 8px;
+  margin: 20px 20px 0 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: right;
+  float: right;
 }
-/* line 75, ../sass/modules/comments/_comments.scss */
-.comments .nameHolder {
-  display: inline-block;
-  padding-top: 1em;
-}
-/* line 79, ../sass/modules/comments/_comments.scss */
-.comments .p-org {
-  display: inline-block;
-  padding-top: 1em;
-}
-/* line 82, ../sass/modules/comments/_comments.scss */
-.comments .p-org a {
+/* line 135, ../sass/modules/comments/_comments.scss */
+.comment ul.links.inline li {
   display: inline-block;
 }
-/* line 86, ../sass/modules/comments/_comments.scss */
-.comments .form-wrap {
+/* line 137, ../sass/modules/comments/_comments.scss */
+.comment ul.links.inline li a {
+  padding: 2px 5px;
+}
+/* line 140, ../sass/modules/comments/_comments.scss */
+.comment ul.links.inline li a:link,
+.comment ul.links.inline li a:visited {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 144, ../sass/modules/comments/_comments.scss */
+.comment ul.links.inline li a:hover,
+.comment ul.links.inline li a:active {
+  color: #232323 #5a5a5a #919191 #c8c8c8 #dedede #e9e9e9;
+}
+
+/* line 152, ../sass/modules/comments/_comments.scss */
+.comment-form {
   margin: 1em 0;
+  padding: 20px;
+  border: 1px solid #e4e1e1;
+  box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.3);
 }
-/* line 89, ../sass/modules/comments/_comments.scss */
-.comments .h-card {
-  padding: 0;
+/* line 157, ../sass/modules/comments/_comments.scss */
+.comment-form .form-item#edit-author--2,
+.comment-form input#edit-subject {
+  margin-bottom: 20px;
 }
-/* line 92, ../sass/modules/comments/_comments.scss */
-.comments p {
-  margin: .6em 0 0;
-}
-/* line 95, ../sass/modules/comments/_comments.scss */
-.comments .indented {
-  margin-left: 35px;
-}
-/* line 99, ../sass/modules/comments/_comments.scss */
-.comments .comment-form input#edit-subject {
+/* line 161, ../sass/modules/comments/_comments.scss */
+.comment-form input#edit-subject {
   width: 100%;
 }
-/* line 102, ../sass/modules/comments/_comments.scss */
-.comments .comment-form span.form-required {
+/* line 164, ../sass/modules/comments/_comments.scss */
+.comment-form .field-name-comment-body {
+  padding-right: 0;
+}
+/* line 167, ../sass/modules/comments/_comments.scss */
+.comment-form span.form-required {
   display: none;
 }
-/* line 105, ../sass/modules/comments/_comments.scss */
-.comments .comment-form fieldset.filter-wrapper {
+/* line 170, ../sass/modules/comments/_comments.scss */
+.comment-form fieldset.filter-wrapper {
   border: none;
 }
-/* line 108, ../sass/modules/comments/_comments.scss */
-.comments .comment-form .filter-guidelines {
+/* line 173, ../sass/modules/comments/_comments.scss */
+.comment-form .filter-guidelines {
   display: none;
 }
-/* line 111, ../sass/modules/comments/_comments.scss */
-.comments .comment-form .filter-help {
+/* line 176, ../sass/modules/comments/_comments.scss */
+.comment-form .filter-help {
   padding: 0;
 }
-/* line 114, ../sass/modules/comments/_comments.scss */
-.comments .comment-form .filter-help a {
+/* line 179, ../sass/modules/comments/_comments.scss */
+.comment-form .filter-help a {
   padding: 0 20px 0 0;
   width: 20px;
   overflow: hidden;
@@ -2758,154 +2819,182 @@ ul.action-links li a {
   text-indent: -2000em;
   height: 20px;
 }
-/* line 122, ../sass/modules/comments/_comments.scss */
-.comments .comment-form .form-type-select {
+/* line 187, ../sass/modules/comments/_comments.scss */
+.comment-form .form-type-select {
   padding: 0;
 }
-
-/* line 128, ../sass/modules/comments/_comments.scss */
-ul.links.inline {
-  text-align: right;
+/* line 190, ../sass/modules/comments/_comments.scss */
+.comment-form input#edit-submit {
   margin-right: 20px;
 }
-/* line 131, ../sass/modules/comments/_comments.scss */
-ul.links.inline li {
-  display: inline-block;
+/* line 193, ../sass/modules/comments/_comments.scss */
+.comment-form input#edit-subject {
+  margin-bottom: 20px;
+  padding: 8px;
 }
-/* line 133, ../sass/modules/comments/_comments.scss */
-ul.links.inline li a {
-  padding: 2px 5px;
+/* line 197, ../sass/modules/comments/_comments.scss */
+.comment-form textarea {
+  border-top: 2px solid #9a9a9a;
+  border-left: 2px solid #9a9a9a;
+  border-right: 2px solid #eee;
+  border-bottom: 2px solid #eeeeee;
+  padding: 12px;
 }
 
-/* line 139, ../sass/modules/comments/_comments.scss */
+/* line 206, ../sass/modules/comments/_comments.scss */
+.comments#comments {
+  border-top: 4px solid #ccc;
+  margin-bottom: 2em;
+  margin-top: 3em;
+  padding-top: 3em;
+  line-height: 1.2;
+}
+/* line 212, ../sass/modules/comments/_comments.scss */
+.comments#comments .comments-all {
+  margin-bottom: 60px;
+}
+/* line 215, ../sass/modules/comments/_comments.scss */
+.comments#comments .title {
+  font-weight: normal;
+  font-size: 1.66667em;
+  line-height: 1.25;
+  color: #232323;
+  margin-bottom: .5em;
+}
+/* line 224, ../sass/modules/comments/_comments.scss */
+.comments#comments .indented {
+  margin-left: 35px;
+}
+
+/* line 229, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list {
   padding: .5rem 1rem;
 }
-/* line 141, ../sass/modules/comments/_comments.scss */
+/* line 231, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list header {
   background-color: inherit;
   padding: 0;
   font-size: .8rem;
 }
-/* line 146, ../sass/modules/comments/_comments.scss */
+/* line 236, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list > ul > li {
   border-bottom: 1px solid gray;
 }
-/* line 149, ../sass/modules/comments/_comments.scss */
+/* line 239, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list .title-commented-upon {
   font-size: .8rem;
   margin-top: 1rem;
 }
-/* line 153, ../sass/modules/comments/_comments.scss */
+/* line 243, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list .field-name-comment-body {
   line-height: 1.3;
   font-size: .8rem;
 }
-/* line 158, ../sass/modules/comments/_comments.scss */
+/* line 248, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list time span {
   font-size: inherit;
   display: inline;
 }
-/* line 163, ../sass/modules/comments/_comments.scss */
+/* line 253, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list .h-card {
   padding: 0;
 }
-/* line 165, ../sass/modules/comments/_comments.scss */
+/* line 255, ../sass/modules/comments/_comments.scss */
 #block-views-comments-recent-block .item-list .h-card span {
   font-size: inherit;
   display: inline;
 }
 
-/* line 174, ../sass/modules/comments/_comments.scss */
+/* line 264, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments ul {
   padding: 0;
   margin: 0;
 }
-/* line 178, ../sass/modules/comments/_comments.scss */
+/* line 268, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li {
   padding: .5rem .5rem .5rem 0rem;
   font-size: .7rem;
   line-height: 1.2;
   display: block;
 }
-/* line 185, ../sass/modules/comments/_comments.scss */
+/* line 275, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-subject {
   font-size: .8rem;
   margin-bottom: .2rem;
   font-weight: bold;
 }
-/* line 190, ../sass/modules/comments/_comments.scss */
+/* line 280, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .p-name {
   display: inline-block;
 }
-/* line 193, ../sass/modules/comments/_comments.scss */
+/* line 283, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-created {
   display: inline-block;
 }
-/* line 196, ../sass/modules/comments/_comments.scss */
+/* line 286, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-name {
   display: inline-block;
 }
-/* line 200, ../sass/modules/comments/_comments.scss */
+/* line 290, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-timestamp {
   display: inline-block;
 }
-/* line 204, ../sass/modules/comments/_comments.scss */
+/* line 294, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li .views-field-title a:link,
 .view-mc-recent-comments li .views-field-title a:visited {
   color: #333333;
 }
-/* line 212, ../sass/modules/comments/_comments.scss */
+/* line 302, ../sass/modules/comments/_comments.scss */
 .view-mc-recent-comments li p {
   margin: .4rem 0;
   line-height: 1.4;
 }
 
-/* line 219, ../sass/modules/comments/_comments.scss */
+/* line 309, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user {
   color: #5a5a5a;
   font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
-/* line 222, ../sass/modules/comments/_comments.scss */
+/* line 312, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .comment-item {
   border-bottom: 1px solid #c8c8c8;
   padding-top: .8em;
 }
-/* line 225, ../sass/modules/comments/_comments.scss */
+/* line 315, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .comment-item:last-child {
   border-bottom: none;
 }
-/* line 229, ../sass/modules/comments/_comments.scss */
+/* line 319, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user a:link,
 .view-comments-from-user a:visited {
   color: #5a5a5a;
 }
-/* line 233, ../sass/modules/comments/_comments.scss */
+/* line 323, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .views-field-title {
   font-size: .9rem;
 }
-/* line 235, ../sass/modules/comments/_comments.scss */
+/* line 325, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .views-field-title a:link,
 .view-comments-from-user .views-field-title a:visited {
   color: #232323 !important;
 }
-/* line 240, ../sass/modules/comments/_comments.scss */
+/* line 330, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user h2.comment-title {
   font-size: 1.1rem;
   padding-bottom: 0.25em;
 }
-/* line 244, ../sass/modules/comments/_comments.scss */
+/* line 334, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user h2.comment-title a:link,
 .view-comments-from-user h2.comment-title a:visited {
   color: #232323 !important;
 }
-/* line 249, ../sass/modules/comments/_comments.scss */
+/* line 339, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .views-field-comment-body {
   color: #5a5a5a;
   font-size: .9rem;
   font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
 }
-/* line 254, ../sass/modules/comments/_comments.scss */
+/* line 344, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .views-field-created {
   font-size: .9rem;
   padding-bottom: 5px;
@@ -3160,49 +3249,48 @@ aside + h2 {
 /* line 106, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser:last-child {
   border-bottom: none;
-  margin-bottom: 10px;
 }
-/* line 110, ../sass/modules/hub_list/_hub_list.scss */
+/* line 109, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser.clearfix:after {
   clear: left;
 }
-/* line 113, ../sass/modules/hub_list/_hub_list.scss */
+/* line 112, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 117, ../sass/modules/hub_list/_hub_list.scss */
+/* line 116, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
   font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
-/* line 124, ../sass/modules/hub_list/_hub_list.scss */
+/* line 123, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 128, ../sass/modules/hub_list/_hub_list.scss */
+/* line 127, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
   clear: left;
 }
 
-/* line 137, ../sass/modules/hub_list/_hub_list.scss */
+/* line 136, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous h1.page-title {
   margin-bottom: 30px;
 }
-/* line 140, ../sass/modules/hub_list/_hub_list.scss */
+/* line 139, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb {
   width: 80px;
 }
-/* line 142, ../sass/modules/hub_list/_hub_list.scss */
+/* line 141, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb img {
   width: 100%;
   height: auto;
 }
 
-/* line 150, ../sass/modules/hub_list/_hub_list.scss */
+/* line 149, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3210,13 +3298,13 @@ aside + h2 {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 156, ../sass/modules/hub_list/_hub_list.scss */
+/* line 155, ../sass/modules/hub_list/_hub_list.scss */
 .node .node-teaser-title a:link,
 .node .node-teaser-title a:visited {
   color: #232323;
 }
 
-/* line 163, ../sass/modules/hub_list/_hub_list.scss */
+/* line 162, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: 0;
@@ -3224,47 +3312,47 @@ h2.spoke-title {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 169, ../sass/modules/hub_list/_hub_list.scss */
+/* line 168, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title a:link,
 h2.spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 175, ../sass/modules/hub_list/_hub_list.scss */
+/* line 174, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta {
   width: auto;
   overflow: hidden;
   font-size: .8rem;
 }
-/* line 182, ../sass/modules/hub_list/_hub_list.scss */
+/* line 181, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .peoplelist {
   float: left;
 }
-/* line 186, ../sass/modules/hub_list/_hub_list.scss */
+/* line 185, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta time {
   line-height: 1.5;
   float: left;
   padding: 0 5px 0 0;
 }
-/* line 191, ../sass/modules/hub_list/_hub_list.scss */
+/* line 190, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta time::before {
   content: "|\00a0";
 }
-/* line 196, ../sass/modules/hub_list/_hub_list.scss */
+/* line 195, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count {
   float: left;
 }
-/* line 199, ../sass/modules/hub_list/_hub_list.scss */
+/* line 198, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count::before {
   content: "|";
 }
-/* line 202, ../sass/modules/hub_list/_hub_list.scss */
+/* line 201, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count a:link,
 .spoke-teaser-meta .comment-count a:visited {
   color: #5a5a5a;
 }
 
-/* line 212, ../sass/modules/hub_list/_hub_list.scss */
+/* line 211, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 1rem;
@@ -3272,42 +3360,42 @@ h2.spoke-title a:visited {
   padding-left: 10px;
   padding-top: 10px;
 }
-/* line 219, ../sass/modules/hub_list/_hub_list.scss */
+/* line 218, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 224, ../sass/modules/hub_list/_hub_list.scss */
+/* line 223, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
   background-color: #F7F7F7;
 }
-/* line 228, ../sass/modules/hub_list/_hub_list.scss */
+/* line 227, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 231, ../sass/modules/hub_list/_hub_list.scss */
+/* line 230, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
   border: 1px solid #eeeeee;
 }
-/* line 238, ../sass/modules/hub_list/_hub_list.scss */
+/* line 237, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {
   display: none;
 }
-/* line 241, ../sass/modules/hub_list/_hub_list.scss */
+/* line 240, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .form-item {
   margin-bottom: 4px;
 }
-/* line 244, ../sass/modules/hub_list/_hub_list.scss */
+/* line 243, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   font-size: .8rem;
 }
-/* line 249, ../sass/modules/hub_list/_hub_list.scss */
+/* line 248, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-submit-button {
   display: none;
 }

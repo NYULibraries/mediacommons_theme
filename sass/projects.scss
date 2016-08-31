@@ -103,6 +103,9 @@
         border-top: 3px solid lighten($col, 9%);
         box-shadow: 0px -3px lighten($col, 15%);
       }
+      .comments#comments {
+        border-color: lighten($col, 9%);
+      }
       [role="complementary"] {
         > div,
         .block {

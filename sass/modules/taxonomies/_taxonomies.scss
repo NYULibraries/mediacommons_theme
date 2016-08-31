@@ -10,7 +10,7 @@ ul.tags {
       display: inline-block;
       padding: 0px 5px;
       background-color: lighten(nth($black, 5), 7%);
-      border: 1px solid nth($black, 4);
+      border: 1px solid nth($black, 5);
       font-size: .85rem;
       
     }
@@ -33,5 +33,36 @@ ul.tags {
         text-decoration: none;
       }
     }
+  }
+}
+
+.tags-block-spoke {
+  margin-top: 2em;
+  h2 {
+    color: nth($black, 2);
+    margin: 0;
+    font-size: 18px;
+    font-size: 1.5rem;
+  }
+}
+/* at the bottom of spoke pages or also hub pages */
+.spoke-body div.tags {
+  padding-top: 10px;
+ // margin-top: 30px;
+  .label-inline {
+    display: none;
+  }
+//  border-top: 1px solid lighten(nth($black, 5), 5%);
+}
+
+/* taxonomy page */
+
+.page-taxonomy .term-listing-heading {
+  .page-title,
+  .label-inline {
+    display: inline-block;
+    @include type-size($h1-font-size, $h1-line-height);
+    margin-top: 0;
+    color: $h1-color;
   }
 }

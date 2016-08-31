@@ -7,11 +7,18 @@
  * @see https://drupal.org/node/1728216
  */
 ?>
-<article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
-
-
-
-  <header>
+<?php 
+//dpm($comment);
+?>
+<?php 
+if ($comment->depth == 0) {
+  $depthclass = "top-level";
+}  else{
+  $depthclass = "depth-reply depth-reply-" . $comment->depth;
+}
+?>
+<article class="<?php print $classes; ?> clearfix <?php print $depthclass ;  ?>" <?php print $attributes ;  ?>>
+<header>
     <?php print render($title_prefix); ?>
     <?php if (isset($title)): ?>
       <h3<?php print $title_attributes; ?>>

@@ -272,11 +272,18 @@ function mediacommons_preprocess_comment(&$variables) {
   if ($orgA) {$tid = $orgA[0]['tid']; 
     $term = taxonomy_term_load($tid); // load term object
     $term_uri = taxonomy_term_uri($term); // get array with path
-    $term_title = taxonomy_term_title($term);
+    $term_title =  taxonomy_term_title($term);
     $term_path = $term_uri['path'];
-    $link = l($term_title,$term_path);
+    $string = "Organization: " . $term_title;
+    //$term_attributes = array('title' => $string);
+
+    $term_attributes = array('attributes'=>array('title'=>$string));
+
+
+    $link = l($term_title,$term_path, $term_attributes );
     $variables['organization'] = $link;
   }
+
 
 
   $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');

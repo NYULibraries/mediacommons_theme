@@ -36,68 +36,116 @@
   border-color: transparent #fff;
 }
 
-.comments {
+.comment {
+  padding: 20px;
+  border: transparent 1px solid;
+  &:nth-of-type(odd) {
+    background: nth($secondary, 5);
+  }
+  &:nth-of-type(even) {
+    background: nth($secondary, 4);
+  }
+  .nameHolder {
+    display: inline-block;
+    padding-top: 1em;
+  }
+  .p-org {
+    display: inline-block;
+    // padding-top: 1em;
+    padding-left: 0;
+    a {
+      display: inline-block;
+    }
+  }
+  time {
+    font-size: .75rem;
+    margin-bottom: 20px;
+  }
+  .field-name-comment-body {
+    line-height: 1.5;
+    // max-width: 39em;
+    padding-right: 20px;
+  }
+  .h-card {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  p {
+    margin: .6em 0 0;
+  }
+  h3 {
+    margin: 0;
+    padding: 0;
+    @include type-size($h3-font-size, $h3-line-height);
+    // @include margin-padding(padding, $h3-padding, $h3-padding-pos);
+    // @include margin-padding(margin, $h3-margin, $h3-margin-pos);
+    padding-top: 0;
+    margin-bottom: 10px;
+    color: $h3-color;
+  }
+  h3 + time {
+    margin: .5em 0 .4em;
+  }
+  ul.links.inline {
+    padding: 3px 8px 0 8px;
+    margin: 20px 20px 0 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+    text-align: right;
+    float: right;
+    li {
+      display: inline-block;
+      a {
+        padding: 2px 5px;
+      }
+      a:link,
+      a:visited {
+        color: rgba(0, 0, 0, .7);
+      }
+      a:hover,
+      a:active {
+        color: $black;
+      }
+    }
+  }
+}
+
+.comments#comments {
+  border-top: 4px solid #ccc;
   margin-bottom: 2em;
+  margin-top: 3em;
+  padding-top: 3em;
   line-height: 1.2;
+  .comments-all {
+    margin-bottom: 60px;
+  }
   .title {
     @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
     @include type-size($h2-font-size, $h2-line-height);
     color: $h2-color;
     margin-bottom: .5em;
   }
-  .comments__form-title {
-    margin-top: 2em;
-  }
-  article {
-    padding: 2.5%;
-    border: transparent 1px solid;
-    &:nth-of-type(odd) {
-      background: nth($secondary, 5);
-    }
-    &:nth-of-type(even) {
-      background: nth($secondary, 4);
-    }
-  }
-  h3 {
-    margin: 0;
-    padding: 0;
-    @include type-size($h3-font-size, $h3-line-height);
-    @include margin-padding(padding, $h3-padding, $h3-padding-pos);
-    @include margin-padding(margin, $h3-margin, $h3-margin-pos);
-    color: $h3-color;
-  }
-  h3 + time {
-    margin: .5em 0 .4em;
-  }
-  .field-name-comment-body {
-    line-height: 1.5;
-  }
-  .nameHolder{
-    display: inline-block;
-    padding-top: 1em;
-  }
-  .p-org {
-    display: inline-block;
-    padding-top: 1em;
-    a {
-      display: inline-block;
-    }
-  }
+  // .comments__form-title {
+  //   margin-top: 2em;
+  // }
   .form-wrap {
     margin: 1em 0;
-  }
-  .h-card {
-    padding: 0;
-  }
-  p {
-    margin: .6em 0 0;
+    padding:20px;
+    border: 1px solid #aaa;
   }
   .indented {
     margin-left: 35px;
   }
   .comment-form {
+    // background-color: blue;
+    .form-item#edit-author--2,
+    input#edit-subject {
+      margin-bottom: 20px;
+    }
     input#edit-subject {
       width: 100%;
+    }
+    .field-name-comment-body {
+      padding-right: 0;
     }
     span.form-required {
       display: none;
@@ -111,6 +159,9 @@
     .filter-help {
       padding: 0;
     }
+    input#edit-submit {
+      margin-right: 20px;
+    }
     .filter-help a {
       padding: 0 20px 0 0;
       width: 20px;
@@ -121,17 +172,6 @@
     }
     .form-type-select {
       padding: 0;
-    }
-  }
-}
-
-ul.links.inline {
-  text-align: right;
-  margin-right: 20px;
-  li {
-    display: inline-block;
-    a {
-      padding: 2px 5px;
     }
   }
 }

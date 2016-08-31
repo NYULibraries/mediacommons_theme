@@ -270,12 +270,12 @@ function mediacommons_preprocess_comment(&$variables) {
   // Get Organization of the commenter, and send that variable on to the template
   $orgA = field_get_items('user', $user, 'field_organization');
   if ($orgA) {$tid = $orgA[0]['tid']; 
-  $term = taxonomy_term_load($tid); // load term object
-  $term_uri = taxonomy_term_uri($term); // get array with path
-  $term_title = taxonomy_term_title($term);
-  $term_path = $term_uri['path'];
-  $link = l($term_title,$term_path);
-  $variables['organization'] = $link;
+    $term = taxonomy_term_load($tid); // load term object
+    $term_uri = taxonomy_term_uri($term); // get array with path
+    $term_title = taxonomy_term_title($term);
+    $term_path = $term_uri['path'];
+    $link = l($term_title,$term_path);
+    $variables['organization'] = $link;
   }
 
 

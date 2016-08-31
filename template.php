@@ -277,9 +277,10 @@ function mediacommons_preprocess_comment(&$variables) {
   $link = l($term_title,$term_path);
   $variables['organization'] = $link;
 
-  
-  $variables['created'] = format_date($comment->created);
 
+
+  $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');
+  $variables['createdmachine'] = format_date($comment->created, 'custom', 'Y-m-j');
   // Avoid calling format_date() twice on the same timestamp.
   if ($comment->changed == $comment->created) {
     $variables['changed'] = $variables['created'];

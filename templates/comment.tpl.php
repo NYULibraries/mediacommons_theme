@@ -26,11 +26,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-    <?php 
-$formatted_date = format_date($comment->created, 'custom', 'l, F j, Y  -- g:i a');
-$machine_date = format_date($comment->created, 'custom', 'Y-m-j');
-print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
- ?>
+
     <div class="h-card vcard clearfix">
       <?php  print '<div class="field-user-avatar photo u-photo-small">' . $picture . '</div>'; ?>
    
@@ -39,8 +35,8 @@ print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
           <span class="p-org org"><?php print $organization; ?></span>
         <?php endif; ?>
         </div>
-      <?php //print $permalink; ?>
- 
+    <?php //print $permalink; ?>
+    <?php print '<time datetime="'. $createdmachine . '">'. $created . '</time>'; ?>
     <?php if ($status == 'comment-unpublished'): ?>
       <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
     <?php endif; ?>

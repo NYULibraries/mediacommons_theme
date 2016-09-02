@@ -157,8 +157,36 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
       $form['#prefix'] = '';
       $form['#suffix'] = '';
   } else if ( $form_id == 'comment_node_spoke_form' ) {
-     // dpm($form);
-      $form['subject']['#size'] = "auto";
+    //dpm($form, "form ");
+   // dpm($form_state, "form state");
+  
+    $form['subject']['#size'] = "auto";
+    $form['comment_preview']['#weight'] = -5;
+    $form['comment_output_below']['#weight'] = -10;
+    
+    $form['aa_comment'] = array(
+      '#type' => 'fieldset',
+      '#title' => NULL,
+      '#collapsible' => FALSE,
+      '#weight' => 10,
+    );
+    //Author
+    $form['aa_comment']['author'] = $form['author'];
+    unset($form['author']);
+    $form['aa_comment']['author']['#weight'] = -10;
+
+    //Subject
+    $form['aa_comment']['subject'] = $form['subject'];
+    unset($form['subject']);
+    $form['aa_comment']['subject']['#weight'] = -1;
+
+    //Comment
+    $form['aa_comment']['comment_body'] = $form['comment_body'];
+    unset($form['comment_body']);
+
+    //Actions
+    $form['aa_comment']['actions'] = $form['actions'];
+    unset($form['actions']);
   }
 
 }
@@ -254,6 +282,7 @@ function mediacommons_preprocess_username(&$variables) {
   $variables['attributes_array'] = array('class' => array('username'));
 }
 function mediacommons_preprocess_comment(&$variables) {
+  // dpm($variables, 'Preprocess comment');
   $comment = $variables['elements']['#comment'];
   $node = $variables['elements']['#node'];
   $variables['comment'] = $comment;

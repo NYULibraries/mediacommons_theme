@@ -137,6 +137,7 @@ function mediacommons_user_menu() {
   );
 }
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
+  //dpm($form_id);
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t( "You may login with either your assigned username or your e-mail address." );
@@ -155,19 +156,11 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
       //dpm($form);
       $form['#prefix'] = '';
       $form['#suffix'] = '';
+  } else if ( $form_id == 'comment_node_spoke_form' ) {
+     // dpm($form);
+      $form['subject']['#size'] = "auto";
+  }
 
-    }
-
-}
-
-
-
-/**
- * Implement hook_form_comment_form_alter().
- */
-function mediacommons_form_comment_form_alter( &$form, &$form_state ) {
-  //dpm($form);
-  $form['subject']['#size'] = "auto";
 }
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */

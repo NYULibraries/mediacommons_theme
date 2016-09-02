@@ -29,7 +29,7 @@ $comment_form = render($content['comment_form']);
     <?php print $comment_form; ?>
   </div>
   <?php else: ?>
-<header> <h2 class="comments__form-title title comment-form">
+<header> <h2 class="comments__form-title title">
   <?php print t('Add new comment'); ?></h2></header>
    <div class="form-wrap">
  

@@ -52,7 +52,8 @@ if ($comment->depth == 0) {
   <?php
     // We hide the comments and links now so that we can render them later.
     hide($content['links']);
-    print render($content);
+
+     print "<div class='field-name-comment-body'>" . $comment->comment_body['und'][0]['safe_value'] . "</div>";
   ?>
 
 

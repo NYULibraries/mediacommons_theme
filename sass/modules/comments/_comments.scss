@@ -150,11 +150,15 @@
   }
 }
 
-.comment-form {
+.comment-form fieldset#edit-aa-comment {
   margin: 1em 0;
   padding: 20px;
   border: 1px solid #e4e1e1;
   box-shadow: 2px 2px 2px rgba(50, 50, 50, .3);
+}
+
+.comment-form {
+  margin: 1em 0;
   .form-item#edit-author--2,
   input#edit-subject {
     margin-bottom: 20px;
@@ -204,6 +208,14 @@
   }
 }
 
+.comments_title {
+  @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
+  @include type-size($h2-font-size, $h2-line-height);
+  color: $h2-color;
+  margin-bottom: .5em;
+  padding: .4em 0 .2em 0;
+}
+
 .comments#comments {
   border-top: 4px solid #ccc;
   margin-bottom: 2em;
@@ -213,15 +225,6 @@
   .comments-all {
     margin-bottom: 60px;
   }
-  .title {
-    @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
-    @include type-size($h2-font-size, $h2-line-height);
-    color: $h2-color;
-    margin-bottom: .5em;
-  }
-  // .comments__form-title {
-  //   margin-top: 2em;
-  // }
   .indented {
     margin-left: 35px;
   }

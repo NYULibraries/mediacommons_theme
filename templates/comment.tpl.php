@@ -8,7 +8,7 @@
  */
 ?>
 <?php 
-//dpm($comment);
+dpm($comment);
 ?>
 <?php 
 if ($comment->depth == 0) {
@@ -52,8 +52,8 @@ if ($comment->depth == 0) {
   <?php
     // We hide the comments and links now so that we can render them later.
     hide($content['links']);
-
-     print "<div class='field-name-comment-body'>" . $comment->comment_body['und'][0]['safe_value'] . "</div>";
+    $c = $comment->comment_body['und'][0]['safe_value'] ? $comment->comment_body['und'][0]['safe_value'] : $comment->comment_body['und'][0]['value'];
+     print "<div class='field-name-comment-body'>" . $c . "</div>";
   ?>
 
 

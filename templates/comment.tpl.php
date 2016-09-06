@@ -8,7 +8,7 @@
  */
 ?>
 <?php 
-dpm($comment);
+//dpm($comment);
 ?>
 <?php 
 if (isset($comment->depth)) {

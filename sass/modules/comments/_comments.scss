@@ -42,6 +42,19 @@
   border-color: transparent #fff;
 }
 
+.page-comment-reply {
+  .depth-reply {
+    margin-top: 1px;
+    margin-left: 35px;
+    &:first-of-type {
+      margin-left: 0px;
+    }
+  }
+  .links.inline {
+    display: none;
+  }
+}
+
 .comment {
   padding: 20px;
   // border: transparent 1px solid;

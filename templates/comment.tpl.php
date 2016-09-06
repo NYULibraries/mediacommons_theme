@@ -11,11 +11,22 @@
 //dpm($comment);
 ?>
 <?php 
-if ($comment->depth == 0) {
-  $depthclass = "top-level";
-}  else{
-  $depthclass = "depth-reply depth-reply-" . $comment->depth;
+if (isset($comment->depth)) {
+  if ($comment->depth == 0) {
+    $depthclass = "top-level";
+  }  else{
+    $depthclass = "depth-reply depth-reply-" . $comment->depth;
+  } 
+} else if (isset($comment->pid)) {
+  if ($comment->pid == 0) {
+    $depthclass = "top-level";
+  }  else{
+   $depthclass = "depth-reply" ;
+  }
+} else {
+   $depthclass = "no-depth-set";
 }
+
 ?>
 <article class="<?php print $classes; ?> clearfix <?php print $depthclass ;  ?>" <?php print $attributes ;  ?>>
 <header>

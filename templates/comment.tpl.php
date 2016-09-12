@@ -7,11 +7,29 @@
  * @see https://drupal.org/node/1728216
  */
 ?>
-<article class="<?php print $classes; ?> clearfix"<?php print $attributes; ?>>
+<?php 
+//dpm($comment);
+?>
+<?php 
+if (isset($comment->depth)) {
+  if ($comment->depth == 0) {
+    $depthclass = "top-level";
+  }  else{
+    $depthclass = "depth-reply depth-reply-" . $comment->depth;
+  } 
+} else if (isset($comment->pid)) {
+  if ($comment->pid == 0) {
+    $depthclass = "top-level";
+  }  else{
+   $depthclass = "depth-reply" ;
+  }
+} else {
+   $depthclass = "no-depth-set";
+}
 
-
-
-  <header>
+?>
+<article class="<?php print $classes; ?> clearfix <?php print $depthclass ;  ?>" <?php print $attributes ;  ?>>
+<header>
     <?php print render($title_prefix); ?>
     <?php if (isset($title)): ?>
       <h3<?php print $title_attributes; ?>>
@@ -26,11 +44,7 @@
     <?php endif; ?>
     <?php print render($title_suffix); ?>
 
-    <?php 
-$formatted_date = format_date($comment->created, 'custom', 'l, F j, Y  -- g:i a');
-$machine_date = format_date($comment->created, 'custom', 'Y-m-j');
-print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
- ?>
+
     <div class="h-card vcard clearfix">
       <?php  print '<div class="field-user-avatar photo u-photo-small">' . $picture . '</div>'; ?>
    
@@ -39,8 +53,8 @@ print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
           <span class="p-org org"><?php print $organization; ?></span>
         <?php endif; ?>
         </div>
-      <?php //print $permalink; ?>
- 
+    <?php //print $permalink; ?>
+    <?php print '<time datetime="'. $createdmachine . '">'. $created . '</time>'; ?>
     <?php if ($status == 'comment-unpublished'): ?>
       <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
     <?php endif; ?>
@@ -49,7 +63,8 @@ print '<time datetime="'. $machine_date . '">'. $formatted_date . '</time>';
   <?php
     // We hide the comments and links now so that we can render them later.
     hide($content['links']);
-    print render($content);
+    $c = $comment->comment_body['und'][0]['safe_value'] ? $comment->comment_body['und'][0]['safe_value'] : $comment->comment_body['und'][0]['value'];
+     print "<div class='field-name-comment-body'>" . $c . "</div>";
   ?>
 
 

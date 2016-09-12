@@ -137,6 +137,7 @@ function mediacommons_user_menu() {
   );
 }
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
+  //dpm($form_id);
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t( "You may login with either your assigned username or your e-mail address." );
@@ -155,19 +156,39 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
       //dpm($form);
       $form['#prefix'] = '';
       $form['#suffix'] = '';
+  } else if ( $form_id == 'comment_node_spoke_form' ) {
+    //dpm($form, "form ");
+   // dpm($form_state, "form state");
+  
+    $form['subject']['#size'] = "auto";
+    $form['comment_preview']['#weight'] = -5;
+    $form['comment_output_below']['#weight'] = -10;
+    
+    $form['aa_comment'] = array(
+      '#type' => 'fieldset',
+      '#title' => NULL,
+      '#collapsible' => FALSE,
+      '#weight' => 10,
+    );
+    //Author
+    $form['aa_comment']['author'] = $form['author'];
+    unset($form['author']);
+    $form['aa_comment']['author']['#weight'] = -10;
 
-    }
+    //Subject
+    $form['aa_comment']['subject'] = $form['subject'];
+    unset($form['subject']);
+    $form['aa_comment']['subject']['#weight'] = -1;
 
-}
+    //Comment
+    $form['aa_comment']['comment_body'] = $form['comment_body'];
+    unset($form['comment_body']);
 
+    //Actions
+    $form['aa_comment']['actions'] = $form['actions'];
+    unset($form['actions']);
+  }
 
-
-/**
- * Implement hook_form_comment_form_alter().
- */
-function mediacommons_form_comment_form_alter( &$form, &$form_state ) {
-  //dpm($form);
-  $form['subject']['#size'] = "auto";
 }
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
@@ -261,6 +282,7 @@ function mediacommons_preprocess_username(&$variables) {
   $variables['attributes_array'] = array('class' => array('username'));
 }
 function mediacommons_preprocess_comment(&$variables) {
+  // dpm($variables, 'Preprocess comment');
   $comment = $variables['elements']['#comment'];
   $node = $variables['elements']['#node'];
   $variables['comment'] = $comment;
@@ -269,17 +291,25 @@ function mediacommons_preprocess_comment(&$variables) {
   $user = user_load($comment->uid);
   // Get Organization of the commenter, and send that variable on to the template
   $orgA = field_get_items('user', $user, 'field_organization');
-  if ($orgA) {$tid = $orgA[0]['tid']; }
-  $term = taxonomy_term_load($tid); // load term object
-  $term_uri = taxonomy_term_uri($term); // get array with path
-  $term_title = taxonomy_term_title($term);
-  $term_path = $term_uri['path'];
-  $link = l($term_title,$term_path);
-  $variables['organization'] = $link;
+  if ($orgA) {$tid = $orgA[0]['tid']; 
+    $term = taxonomy_term_load($tid); // load term object
+    $term_uri = taxonomy_term_uri($term); // get array with path
+    $term_title =  taxonomy_term_title($term);
+    $term_path = $term_uri['path'];
+    $string = "Organization: " . $term_title;
+    //$term_attributes = array('title' => $string);
 
-  
-  $variables['created'] = format_date($comment->created);
+    $term_attributes = array('attributes'=>array('title'=>$string));
 
+
+    $link = l($term_title,$term_path, $term_attributes );
+    $variables['organization'] = $link;
+  }
+
+
+
+  $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');
+  $variables['createdmachine'] = format_date($comment->created, 'custom', 'Y-m-j');
   // Avoid calling format_date() twice on the same timestamp.
   if ($comment->changed == $comment->created) {
     $variables['changed'] = $variables['created'];

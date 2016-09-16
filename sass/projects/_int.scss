@@ -13,7 +13,36 @@
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
+  $int-logo: "mc-logos/int.svg";
   body.int {
+    [role="banner"] {
+      .logo {
+        background: image-url($int-logo);
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 31rem;
+        height: 2.8rem;
+        display: block;
+        padding: 0;
+        @include respond-to("narrow navigation") {
+          width: 67vw;
+          max-width: 380px;
+          height: 2.6rem;
+          margin-top: 10px;
+          // background-position: left 10px;
+        }
+        @media (min-width: 501px) and (max-width:599px) {
+          margin-top: 10px;
+        }
+        @media (min-width: 200px) and (max-width:500px) {
+          width: 60vw;
+          max-width: 15rem;
+          margin-top: 0px;
+          background-position: bottom;
+        }
+      }
+    }
     #block-views-mc-recent-comments-block .blockheader div:after {
       content: " on [in]Transition";
     }
@@ -56,25 +85,6 @@
     }
     .homehub-spokes {
       margin-top: .8em;
-    }
-    @media (min-width: 800px) {
-      [role="banner"] .logo {
-        background-image: image-url("mc-logos/intransition_logo.svg");
-        background-position: left top;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 31rem;
-        height: 2.8rem;
-        display: block;
-        margin-bottom: 1rem;
-      }
-    }
-    @media (min-width: 550px) and (max-width: 799px) {
-      [role="banner"] .logo {
-        background-image: image-url("mc-logos/intransition_logo.svg");
-        width: 27rem;
-        background-position: 0 4px;
-      }
     }
     &.front {
       @media (min-width: 50.0625em) {

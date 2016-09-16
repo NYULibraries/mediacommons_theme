@@ -2,7 +2,17 @@
   $primary_stack: tint-stack($aa_primary) !global;
   $neutral_stack: tint-stack(#333333) !global;
   $spoke-default-thumb: "default_images/spoke-default-alt.svg";
+  $imr-logo: "mc-logos/alt.svg";
   body.alt {
+    .logo {
+      background: image-url($imr-logo);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include respond-to("narrow navigation") {
+        background-position: bottom;
+        height: 3rem;
+      }
+    }
     #block-views-mc-recent-comments-block .blockheader div:after {
       content: " on #alt-ac";
     }

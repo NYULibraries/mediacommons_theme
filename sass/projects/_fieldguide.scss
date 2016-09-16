@@ -20,11 +20,9 @@ body.fieldguide {
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
   /* on fieldguide, hide all images for now */
-
-    #block-views-mc-recent-comments-block .blockheader div:after {
-      content: " on Field Guide";
-    }
-
+  #block-views-mc-recent-comments-block .blockheader div:after {
+    content: " on Field Guide";
+  }
   .node-spoke.node-teaser .thumb,
   .field-name-field-representative-image {
     display: none;
@@ -61,20 +59,20 @@ body.fieldguide {
     background-position: 0 0%;
     width: 18rem;
     height: 4.8rem;
-    background: image-url("mc-logos/fieldguidelogo.svg");
+    background-image: image-url("mc-logos/fieldguide.svg");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 0 0 1em 0;
   }
   @include respond-to("narrow navigation") {
     .logo {
-      width: 16rem;
       height: 2.5rem;
       padding: 0;
-      background: image-url("mc-logos/fieldguidelogo-mobile.svg");
-      background-repeat: no-repeat;
-      background-size: auto 100%;
-      margin-bottom: 0;
+      background-image: image-url("mc-logos/fieldguide.svg");
+      background-position: bottom;
+      background-size: cover;
+      width: 60vw;
+      left: 18vw;
+      max-width: 15rem;
     }
     nav.global {
       box-shadow: none;

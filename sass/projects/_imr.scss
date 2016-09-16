@@ -4,26 +4,12 @@ $spoke-default-thumb: "default_images/spoke-default-imr.svg";
 $imr-logo: "mc-logos/imr.svg";
 body.imr {
   .logo {
-    max-width: 100%;
-    // padding: 16% 0 5% 0;
-    height: 4.4rem;
-    width: 15rem;
-    display: block;
-    margin: 0 0 0 0;
     background: image-url($imr-logo);
     background-size: cover;
     background-repeat: no-repeat;
-    // box-shadow: inset 0px 0px 0px 4px fuchsia;
     @include respond-to("narrow navigation") {
       background-position: bottom;
       height: 2.5rem;
-    }
-  }
-  [role="banner"] {
-    .top-hold {
-      width: auto;
-      overflow: auto;
-      margin-bottom: 1em;
     }
   }
   #block-views-mc-recent-comments-block .blockheader div:after {

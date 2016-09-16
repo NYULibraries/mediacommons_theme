@@ -1,5 +1,15 @@
-  $spoke-default-thumb: "default_images/spoke-default-int.svg";
+  $spoke-default-thumb: "default_images/spoke-default-tne.svg";
+  $tne-logo: "mc-logos/tne.svg";
   body.tne {
+    .logo {
+      background: image-url($tne-logo);
+      background-size: cover;
+      background-repeat: no-repeat;
+      @include respond-to("narrow navigation") {
+        background-position: bottom;
+        height: 2.5rem;
+      }
+    }
     #block-views-mc-recent-comments-block .blockheader {
       div:after {
         content: " on TNE";

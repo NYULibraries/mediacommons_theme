@@ -1755,7 +1755,7 @@ nav.global li.sites_nav ul > li > a.menu__link {
   display: none;
 }
 
-/* line 6, ../sass/modules/header/_header--logos.scss */
+/* line 5, ../sass/modules/header/_header--logos.scss */
 [role="banner"] h1 {
   display: block;
   float: left;
@@ -1763,50 +1763,36 @@ nav.global li.sites_nav ul > li > a.menu__link {
   line-height: 1em;
   margin: 0;
 }
-/* line 12, ../sass/modules/header/_header--logos.scss */
+/* line 11, ../sass/modules/header/_header--logos.scss */
 [role="banner"] h1 a {
   color: #333333;
 }
 
 /* to prevent the logo from disappearing due to override */
-/* line 22, ../sass/modules/header/_header--logos.scss */
-.logo:focus, .logo:hover {
+/* line 23, ../sass/modules/header/_header--logos.scss */
+.logo:focus,
+.logo:hover {
   -webkit-filter: saturate(1.3);
 }
 
-/* line 26, ../sass/modules/header/_header--logos.scss */
+/* line 28, ../sass/modules/header/_header--logos.scss */
 .logo {
   max-width: 100%;
   height: 4.4rem;
   display: block;
-  margin: 0 0 1em 0;
-  background: url('../images/mc-logos/mediacommons-logos-full.svg?1465491556');
+  background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
   width: 10em;
 }
-/* line 36, ../sass/modules/header/_header--logos.scss */
-.mc .logo {
-  width: 37.5rem;
-}
-/* line 44, ../sass/modules/header/_header--logos.scss */
-body.mc .logo {
-  background-position: 0 0%;
-}
-/* line 52, ../sass/modules/header/_header--logos.scss */
-body.imr .logo {
-  padding: 0;
-}
-/* line 57, ../sass/modules/header/_header--logos.scss */
-body.tne .logo {
-  background-position: 0 39%;
-}
-/* line 60, ../sass/modules/header/_header--logos.scss */
-body.alt .logo {
-  background-position: 0 59%;
+
+/* line 47, ../sass/modules/header/_header--logos.scss */
+[role="banner"] .top-hold {
+  margin-bottom: 1em;
+  overflow: auto;
+  width: auto;
 }
 
-/* line 9, ../sass/modules/header/_header.scss */
+/* line 7, ../sass/modules/header/_header.scss */
 [role="banner"] {
   font-size: 1em 2.25em;
   margin: 2.4rem auto 0 auto;
@@ -1814,17 +1800,17 @@ body.alt .logo {
   width: 94.5%;
   max-width: 64rem;
 }
-/* line 16, ../sass/modules/header/_header.scss */
+/* line 12, ../sass/modules/header/_header.scss */
 [role="banner"] button {
   display: none;
 }
-/* line 20, ../sass/modules/header/_header.scss */
+/* line 15, ../sass/modules/header/_header.scss */
 [role="banner"] a.skip-to-nav {
   height: 0px !important;
   overflow: hidden;
   display: none !important;
 }
-/* line 31, ../sass/modules/header/_header.scss */
+/* line 24, ../sass/modules/header/_header.scss */
 [role="banner"] fieldset {
   margin: 0;
 }

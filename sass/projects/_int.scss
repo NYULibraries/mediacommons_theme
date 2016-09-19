@@ -18,19 +18,15 @@
     [role="banner"] {
       .logo {
         background: image-url($int-logo);
-        background-position: left top;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 31rem;
-        height: 2.8rem;
-        display: block;
-        padding: 0;
+        width: 33rem;
+        height: 3.2rem;
         @include respond-to("narrow navigation") {
           width: 67vw;
           max-width: 380px;
           height: 2.6rem;
           margin-top: 10px;
-          // background-position: left 10px;
         }
         @media (min-width: 501px) and (max-width:599px) {
           margin-top: 10px;

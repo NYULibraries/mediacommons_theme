@@ -7,6 +7,7 @@ body.imr {
     background: image-url($imr-logo);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 4.7rem;
     @include respond-to("narrow navigation") {
       background-position: bottom;
       height: 2.5rem;

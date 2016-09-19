@@ -5,6 +5,7 @@
       background: image-url($tne-logo);
       background-size: cover;
       background-repeat: no-repeat;
+      width: 20rem;
       @include respond-to("narrow navigation") {
         background-position: bottom;
         height: 2.5rem;

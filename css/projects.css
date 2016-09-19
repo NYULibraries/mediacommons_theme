@@ -821,7 +821,7 @@ body.mc [role="banner"] {
 }
 /* line 7, ../sass/projects/_mc.scss */
 body.mc [role="banner"] .logo {
-  background-image: url('../images/mc-logos/mc.svg?1474061026');
+  background-image: url('../images/mc-logos/mc.svg?1474300955');
   background-size: contain;
   width: 22.5rem;
   height: 4.4rem;
@@ -851,14 +851,11 @@ body.mc footer#footer {
 
 /* line 19, ../sass/projects/_int.scss */
 body.int [role="banner"] .logo {
-  background: url('../images/mc-logos/int.svg?1474053203');
-  background-position: left top;
+  background: url('../images/mc-logos/int.svg?1474300955');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 31rem;
-  height: 2.8rem;
-  display: block;
-  padding: 0;
+  width: 33rem;
+  height: 3.2rem;
 }
 @media (min-width: 240px) and (max-width: 800px) {
   /* line 19, ../sass/projects/_int.scss */
@@ -884,68 +881,68 @@ body.int [role="banner"] .logo {
     background-position: bottom;
   }
 }
-/* line 46, ../sass/projects/_int.scss */
+/* line 42, ../sass/projects/_int.scss */
 body.int #block-views-mc-recent-comments-block .blockheader div:after {
   content: " on [in]Transition";
 }
-/* line 49, ../sass/projects/_int.scss */
+/* line 45, ../sass/projects/_int.scss */
 body.int iframe {
   max-width: 100%;
 }
-/* line 53, ../sass/projects/_int.scss */
+/* line 49, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser {
   border-bottom: 1px solid #eaeadf;
   border-bottom: none;
 }
-/* line 56, ../sass/projects/_int.scss */
+/* line 52, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-/* line 62, ../sass/projects/_int.scss */
+/* line 58, ../sass/projects/_int.scss */
 body.int .featured-more header {
   margin-bottom: 20px;
 }
-/* line 66, ../sass/projects/_int.scss */
+/* line 62, ../sass/projects/_int.scss */
 body.int .featuredhub-info {
   position: relative;
   bottom: 0px;
   max-width: 100%;
   left: 0px;
 }
-/* line 77, ../sass/projects/_int.scss */
+/* line 73, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
-/* line 80, ../sass/projects/_int.scss */
+/* line 76, ../sass/projects/_int.scss */
 body.int.front .field-name-field-representative-image a {
   display: block;
   margin: 0;
   line-height: .5;
 }
-/* line 86, ../sass/projects/_int.scss */
+/* line 82, ../sass/projects/_int.scss */
 body.int .homehub-spokes {
   margin-top: .8em;
 }
 @media (min-width: 50.0625em) {
-  /* line 91, ../sass/projects/_int.scss */
+  /* line 87, ../sass/projects/_int.scss */
   body.int.front #content {
     width: 70.5%;
   }
-  /* line 94, ../sass/projects/_int.scss */
+  /* line 90, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
     width: 28%;
   }
 }
-/* line 98, ../sass/projects/_int.scss */
+/* line 94, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 100, ../sass/projects/_int.scss */
+/* line 96, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 104, ../sass/projects/_int.scss */
+/* line 100, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
@@ -953,59 +950,59 @@ body.int.front .hub-title {
   line-height: 1.5;
   font-size: 1.4rem;
 }
-/* line 110, ../sass/projects/_int.scss */
+/* line 106, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4px 7px;
 }
-/* line 115, ../sass/projects/_int.scss */
+/* line 111, ../sass/projects/_int.scss */
 body.int.front .spoke-title {
   font-size: 1.25rem;
 }
-/* line 119, ../sass/projects/_int.scss */
+/* line 115, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 123, ../sass/projects/_int.scss */
+/* line 119, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 126, ../sass/projects/_int.scss */
+/* line 122, ../sass/projects/_int.scss */
 body.int li.featured-item {
   background-color: #efefef;
   min-height: 7rem;
 }
-/* line 134, ../sass/projects/_int.scss */
+/* line 130, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 140, ../sass/projects/_int.scss */
+/* line 136, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-body {
   display: none;
 }
-/* line 143, ../sass/projects/_int.scss */
+/* line 139, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 148, ../sass/projects/_int.scss */
+/* line 144, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .hub-title {
   font-size: 1.4rem;
 }
-/* line 152, ../sass/projects/_int.scss */
+/* line 148, ../sass/projects/_int.scss */
 body.int .intransition_full {
   /* special horizontal homepage layout for spokes*/
 }
-/* line 154, ../sass/projects/_int.scss */
+/* line 150, ../sass/projects/_int.scss */
 body.int .intransition_full .review-title {
   margin: .5em 0;
   font-size: 1rem;
 }
-/* line 158, ../sass/projects/_int.scss */
+/* line 154, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline {
   font-size: 1.2rem;
   width: auto;
@@ -1013,44 +1010,44 @@ body.int .intransition_full .review-byline {
   margin-bottom: 20px;
   color: #232323;
 }
-/* line 164, ../sass/projects/_int.scss */
+/* line 160, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline .label {
   float: left;
   display: block;
   padding-right: 5px;
 }
-/* line 169, ../sass/projects/_int.scss */
+/* line 165, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline a {
   color: inherit;
 }
-/* line 173, ../sass/projects/_int.scss */
+/* line 169, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 179, ../sass/projects/_int.scss */
+  /* line 175, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 185, ../sass/projects/_int.scss */
+  /* line 181, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 190, ../sass/projects/_int.scss */
+  /* line 186, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 196, ../sass/projects/_int.scss */
+/* line 192, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;
@@ -1058,7 +1055,7 @@ body.int .intransition_full .group-footer {
 
 /* line 7, ../sass/projects/_alt.scss */
 body.alt .logo {
-  background: url('../images/mc-logos/alt.svg?1473959987');
+  background: url('../images/mc-logos/alt.svg?1474300955');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1134,7 +1131,7 @@ body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
   height: 4.8rem;
-  background-image: url('../images/mc-logos/fieldguide.svg?1473794792');
+  background-image: url('../images/mc-logos/fieldguide.svg?1474300955');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1143,7 +1140,7 @@ body.fieldguide .logo {
   body.fieldguide .logo {
     height: 2.5rem;
     padding: 0;
-    background-image: url('../images/mc-logos/fieldguide.svg?1473794792');
+    background-image: url('../images/mc-logos/fieldguide.svg?1474300955');
     background-position: bottom;
     background-size: cover;
     width: 60vw;
@@ -1243,9 +1240,10 @@ body.fieldguide .node-spoke.node-teaser {
 
 /* line 4, ../sass/projects/_tne.scss */
 body.tne .logo {
-  background: url('../images/mc-logos/tne.svg?1474050910');
+  background: url('../images/mc-logos/tne.svg?1474300955');
   background-size: cover;
   background-repeat: no-repeat;
+  width: 20rem;
 }
 @media (min-width: 240px) and (max-width: 800px) {
   /* line 4, ../sass/projects/_tne.scss */
@@ -1254,11 +1252,11 @@ body.tne .logo {
     height: 2.5rem;
   }
 }
-/* line 14, ../sass/projects/_tne.scss */
+/* line 15, ../sass/projects/_tne.scss */
 body.tne #block-views-mc-recent-comments-block .blockheader div:after {
   content: " on TNE";
 }
-/* line 18, ../sass/projects/_tne.scss */
+/* line 19, ../sass/projects/_tne.scss */
 body.tne .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-tne.svg?1465491556');
   background-repeat: no-repeat;
@@ -1271,9 +1269,10 @@ body.imr {
 }
 /* line 6, ../sass/projects/_imr.scss */
 body.imr .logo {
-  background: url('../images/mc-logos/imr.svg?1474058737');
+  background: url('../images/mc-logos/imr.svg?1474300955');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 4.7rem;
 }
 @media (min-width: 240px) and (max-width: 800px) {
   /* line 6, ../sass/projects/_imr.scss */
@@ -1282,44 +1281,44 @@ body.imr .logo {
     height: 2.5rem;
   }
 }
-/* line 15, ../sass/projects/_imr.scss */
+/* line 16, ../sass/projects/_imr.scss */
 body.imr #block-views-mc-recent-comments-block .blockheader div:after {
   content: " on IMR";
 }
-/* line 20, ../sass/projects/_imr.scss */
+/* line 21, ../sass/projects/_imr.scss */
 body.imr #contentwide .hub-title {
   font-size: 2rem;
   max-width: 90%;
 }
-/* line 24, ../sass/projects/_imr.scss */
+/* line 25, ../sass/projects/_imr.scss */
 body.imr #contentwide .featured-item {
   -webkit-flex: 1 1 100%;
   flex: 1 1 100%;
   margin: 1% 0;
 }
 @media (min-width: 600px) and (max-width: 840px) {
-  /* line 24, ../sass/projects/_imr.scss */
+  /* line 25, ../sass/projects/_imr.scss */
   body.imr #contentwide .featured-item {
     -webkit-flex: 0 1 49%;
     flex: 0 1 49%;
   }
 }
 @media (min-width: 841px) {
-  /* line 24, ../sass/projects/_imr.scss */
+  /* line 25, ../sass/projects/_imr.scss */
   body.imr #contentwide .featured-item {
     -ms-flex: 0 1 32%;
     -webkit-flex: 0 1 32%;
     flex: 0 1 32%;
   }
 }
-/* line 39, ../sass/projects/_imr.scss */
+/* line 40, ../sass/projects/_imr.scss */
 body.imr #contentwide .node-hub.view-mode-full {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (min-width: 800px) {
-  /* line 43, ../sass/projects/_imr.scss */
+  /* line 44, ../sass/projects/_imr.scss */
   body.imr #contentwide .node-hub.view-mode-full .hubhead {
     flex: 1 1 49%;
     min-width: 389px;
@@ -1327,7 +1326,7 @@ body.imr #contentwide .node-hub.view-mode-full {
   }
 }
 @media (max-width: 799px) {
-  /* line 50, ../sass/projects/_imr.scss */
+  /* line 51, ../sass/projects/_imr.scss */
   body.imr #contentwide .node-hub.view-mode-full .homehub-spokes {
     border-top: none !important;
     margin-top: 20px;
@@ -1335,34 +1334,34 @@ body.imr #contentwide .node-hub.view-mode-full {
   }
 }
 @media (min-width: 800px) {
-  /* line 50, ../sass/projects/_imr.scss */
+  /* line 51, ../sass/projects/_imr.scss */
   body.imr #contentwide .node-hub.view-mode-full .homehub-spokes {
     border-top: 2px solid #e25025;
     flex: 1 1 49%;
   }
 }
-/* line 60, ../sass/projects/_imr.scss */
+/* line 61, ../sass/projects/_imr.scss */
 body.imr #contentwide .node-hub.view-mode-full .homehub-spokes .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: 0;
 }
-/* line 67, ../sass/projects/_imr.scss */
+/* line 68, ../sass/projects/_imr.scss */
 body.imr #contentwide .hubhead .field-name-field-period {
   display: none;
 }
-/* line 70, ../sass/projects/_imr.scss */
+/* line 71, ../sass/projects/_imr.scss */
 body.imr #contentwide time.date-display-range {
   background-color: #e25025;
   padding: 1px 15px 1px 10px;
   color: white;
   float: left;
 }
-/* line 77, ../sass/projects/_imr.scss */
+/* line 78, ../sass/projects/_imr.scss */
 body.imr #contentwide .spokes {
   clear: left;
   margin-top: 25px;
 }
-/* line 83, ../sass/projects/_imr.scss */
+/* line 84, ../sass/projects/_imr.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -1370,22 +1369,22 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-x: 0px;
   background-position-y: 0px;
 }
-/* line 89, ../sass/projects/_imr.scss */
+/* line 90, ../sass/projects/_imr.scss */
 body.imr .node-spoke.node-teaser .thumb img {
   border: 1px solid #ddd;
   width: 80px;
   height: 60px;
 }
-/* line 97, ../sass/projects/_imr.scss */
+/* line 98, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] > div,
 body.imr [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 101, ../sass/projects/_imr.scss */
+/* line 102, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] header {
   background-color: #cccccc;
 }
-/* line 105, ../sass/projects/_imr.scss */
+/* line 106, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;

@@ -137,7 +137,7 @@ function mediacommons_user_menu() {
   );
 }
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
-  //dpm($form_id);
+ 
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t( "You may login with either your assigned username or your e-mail address." );
@@ -148,14 +148,12 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
     $form['pass']['#size'] = 28;
     $form['actions']['submit']['#value'] = t( "Login" );
   } else if ( $form_id == 'search_block_form' ) {
-      // HTML5 placeholder attribute
-      $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
-      //$form['search_block_form']['#type'] = 'search';
+    // HTML5 placeholder attribute
+    $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
+    $form['search_block_form']['#attributes']['name'] = t( 'search' );
+    $form['#prefix'] = '';
+    $form['#suffix'] = '';
 
-      //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
-      //dpm($form);
-      $form['#prefix'] = '';
-      $form['#suffix'] = '';
   } else if ( $form_id == 'comment_node_spoke_form' ) {
     //dpm($form, "form ");
    // dpm($form_state, "form state");

@@ -152,7 +152,8 @@ function mediacommons_form($variables) {
 
 function mediacommons_form_element($variables) {
   $element = &$variables['element'];
-  if ($element['#attributes']['name']!='search_block_form'){
+ // dpm($element);
+  if ($element['#name']!='search_block_form'){
 
   // This function is invoked as theme wrapper, but the rendered form element
   // may not necessarily have been processed by form_builder().

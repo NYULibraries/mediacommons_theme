@@ -1671,7 +1671,7 @@ nav.global li.sites_nav ul > li > a.menu__link {
 }
 /* line 9, ../sass/modules/header/_header--search.scss */
 [role="search"] form {
-  margin: 4px 0 0 0;
+  margin: 0 0 0 0;
 }
 /* line 12, ../sass/modules/header/_header--search.scss */
 [role="search"] fieldset {
@@ -1688,7 +1688,7 @@ nav.global li.sites_nav ul > li > a.menu__link {
   display: flex;
 }
 /* line 23, ../sass/modules/header/_header--search.scss */
-[role="search"] input[name="search"] {
+[role="search"] input[name="search_block_form"] {
   padding-left: .75em;
   /* Firefox 18- */
   /* Firefox 19+ */
@@ -1702,31 +1702,31 @@ nav.global li.sites_nav ul > li > a.menu__link {
   flex: 1 1 80%;
 }
 /* line 121, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"].placeholder {
+[role="search"] input[name="search_block_form"].placeholder {
   color: #ccc;
 }
 /* line 122, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]:-moz-placeholder {
+[role="search"] input[name="search_block_form"]:-moz-placeholder {
   color: #ccc;
 }
 /* line 123, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]::-moz-placeholder {
+[role="search"] input[name="search_block_form"]::-moz-placeholder {
   color: #ccc;
 }
 /* line 124, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]:-ms-input-placeholder {
+[role="search"] input[name="search_block_form"]:-ms-input-placeholder {
   color: #ccc;
 }
 /* line 125, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]::-webkit-input-placeholder {
+[role="search"] input[name="search_block_form"]::-webkit-input-placeholder {
   color: #ccc;
 }
 /* line 126, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]::input-placeholder {
+[role="search"] input[name="search_block_form"]::input-placeholder {
   color: #ccc;
 }
 /* line 127, ../sass/partials/_mixins.scss */
-[role="search"] input[name="search"]::placeholder {
+[role="search"] input[name="search_block_form"]::placeholder {
   color: #ccc;
 }
 /* line 38, ../sass/modules/header/_header--search.scss */
@@ -1757,6 +1757,11 @@ nav.global li.sites_nav ul > li > a.menu__link {
 /* line 63, ../sass/modules/header/_header--search.scss */
 [role="search"] label span {
   display: none;
+}
+
+/* line 66, ../sass/modules/header/_header--search.scss */
+[role="search"] form {
+  margin-top: 10px;
 }
 
 /* line 5, ../sass/modules/header/_header--logos.scss */

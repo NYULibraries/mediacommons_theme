@@ -5,7 +5,10 @@
   display: inline-block;
   float: right;
   padding: 0;
-  margin: 4px 0 0 0;
+  margin: 0;
+  form {
+    margin: 0 0 0 0;
+  }
   fieldset {
     margin: 0;
     border: none;
@@ -17,11 +20,11 @@
   .search-contain {
     display: flex;
   }
-  input[type="search"] {
+  input[name="search_block_form"] {
     padding-left: .75em;
     // style placeholder text see '_header--search_mixins.scss' placeholder mixin
     @include input-placeholder {
-      color: nth($primary, 2);
+      color: #ccc;
     }
     font-size: 1.3rem;
     -webkit-border-radius: 6px 0 0 6px;
@@ -59,6 +62,9 @@
   }
   [role="search"] label span {
     display: none;
+  }
+  [role="search"] form {
+    margin-top: 10px;
   }
 }
 
@@ -103,7 +109,7 @@
       background-color: nth($black, 5);
       @include box-shadow(inset nth($black, 4) 0px -2px 0px 0px, inset nth($black, 4) 0px 1px 0px 0px);
     }
-    &.open {
+    form.open {
       input[type="submit"] {
         height: 46px;
         //border: none;
@@ -123,7 +129,7 @@
         height: 80px;
       }
     }
-    input[type="search"] {
+    input[name="search_block_form"] {
       height: 46px;
       width: 85%;
       padding: 8px 12px;

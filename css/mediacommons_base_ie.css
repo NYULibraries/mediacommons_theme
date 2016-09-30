@@ -1667,24 +1667,28 @@ nav.global li.sites_nav ul > li > a.menu__link {
   display: inline-block;
   float: right;
   padding: 0;
-  margin: 4px 0 0 0;
+  margin: 0;
 }
 /* line 9, ../sass/modules/header/_header--search.scss */
+[role="search"] form {
+  margin: 0 0 0 0;
+}
+/* line 12, ../sass/modules/header/_header--search.scss */
 [role="search"] fieldset {
   margin: 0;
   border: none;
 }
-/* line 13, ../sass/modules/header/_header--search.scss */
+/* line 16, ../sass/modules/header/_header--search.scss */
 [role="search"] label,
 [role="search"] label span {
   display: none;
 }
-/* line 17, ../sass/modules/header/_header--search.scss */
+/* line 20, ../sass/modules/header/_header--search.scss */
 [role="search"] .search-contain {
   display: flex;
 }
-/* line 20, ../sass/modules/header/_header--search.scss */
-[role="search"] input[type="search"] {
+/* line 23, ../sass/modules/header/_header--search.scss */
+[role="search"] input[name="search_block_form"] {
   padding-left: .75em;
   /* Firefox 18- */
   /* Firefox 19+ */
@@ -1698,34 +1702,34 @@ nav.global li.sites_nav ul > li > a.menu__link {
   flex: 1 1 80%;
 }
 /* line 121, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"].placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"].placeholder {
+  color: #ccc;
 }
 /* line 122, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]:-moz-placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]:-moz-placeholder {
+  color: #ccc;
 }
 /* line 123, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]::-moz-placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]::-moz-placeholder {
+  color: #ccc;
 }
 /* line 124, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]:-ms-input-placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]:-ms-input-placeholder {
+  color: #ccc;
 }
 /* line 125, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]::-webkit-input-placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]::-webkit-input-placeholder {
+  color: #ccc;
 }
 /* line 126, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]::input-placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]::input-placeholder {
+  color: #ccc;
 }
 /* line 127, ../sass/partials/_mixins.scss */
-[role="search"] input[type="search"]::placeholder {
-  color: #e57f57;
+[role="search"] input[name="search_block_form"]::placeholder {
+  color: #ccc;
 }
-/* line 35, ../sass/modules/header/_header--search.scss */
+/* line 38, ../sass/modules/header/_header--search.scss */
 [role="search"] input[type="submit"] {
   font-family: "MediaCommons-Icon-Font";
   height: 36px;
@@ -1740,19 +1744,24 @@ nav.global li.sites_nav ul > li > a.menu__link {
   flex: 1 0 36px;
 }
 
-/* line 52, ../sass/modules/header/_header--search.scss */
+/* line 55, ../sass/modules/header/_header--search.scss */
 .wf-droidsans-n4-active input[type="search"] {
   font-family: "Open Sans", "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
-/* line 57, ../sass/modules/header/_header--search.scss */
+/* line 60, ../sass/modules/header/_header--search.scss */
 [role="search"] label {
   display: none;
 }
 
-/* line 60, ../sass/modules/header/_header--search.scss */
+/* line 63, ../sass/modules/header/_header--search.scss */
 [role="search"] label span {
   display: none;
+}
+
+/* line 66, ../sass/modules/header/_header--search.scss */
+[role="search"] form {
+  margin-top: 10px;
 }
 
 /* line 5, ../sass/modules/header/_header--logos.scss */

@@ -5,6 +5,9 @@ nav.global {
     position: absolute;
     overflow: visible;
     right: 0;
+    padding: 0;
+    color: nth($black, 4);
+    margin-right: .5em;
     [aria-haspopup="true"] > a {
       @include border-radius(5px);
       &.open {
@@ -18,7 +21,16 @@ nav.global {
       }
     }
     a.login-link {
-      padding: .7em 1em 0 1em;
+      padding: .7em 1em 0 .5em;
+    }
+    &.register {
+      right: 4.4em;
+      a {
+        padding: .7em .5rem 0 1em;
+        background: url(../images/verticalline.png?1465491556);
+        background-repeat: no-repeat;
+        background-position: right 1em;
+      }
     }
     &.logged-in {
       li {
@@ -46,9 +58,6 @@ nav.global {
     // .logged-in & .last {
     //     display: none;
     // }
-    padding: 0;
-    color: nth($black, 4);
-    margin-right: .5em;
     > ul {
       position: absolute;
       z-index: 100;

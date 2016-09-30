@@ -1397,13 +1397,13 @@ nav.global li.utils {
   color: #c8c8c8;
   margin-right: .5em;
 }
-/* line 9, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 11, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils [aria-haspopup="true"] > a {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 12, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 13, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils [aria-haspopup="true"] > a.open {
   -moz-border-radius-bottomleft: 0px;
   -webkit-border-bottom-left-radius: 0px;
@@ -1423,28 +1423,39 @@ nav.global li.utils [aria-haspopup="true"] > a.open {
   border-bottom: none;
   height: 3.6em;
 }
-/* line 26, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 23, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils a.login-link {
-  padding: .7em 1em 0 1em;
+  padding: .7em 1em 0 .5em;
 }
-/* line 31, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 26, ../sass/modules/global_nav/_global_nav_utils.scss */
+nav.global li.utils.register {
+  right: 4.4em;
+}
+/* line 28, ../sass/modules/global_nav/_global_nav_utils.scss */
+nav.global li.utils.register a {
+  padding: .7em .5rem 0 1em;
+  background: url(../images/verticalline.png?1465491556);
+  background-repeat: no-repeat;
+  background-position: right 1em;
+}
+/* line 36, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils.logged-in li {
   padding: 0px;
 }
-/* line 34, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 38, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils.logged-in li a {
   padding: 10px;
   min-width: 14em;
 }
-/* line 38, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 41, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils.logged-in li a:hover {
   text-decoration: none;
 }
-/* line 42, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 44, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils.logged-in li a:link, nav.global li.utils.logged-in li a:visited {
   text-decoration: none;
 }
-/* line 49, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 50, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils.logged-in ul a:hover {
   text-decoration: underline;
 }
@@ -1452,7 +1463,7 @@ nav.global li.utils.logged-in ul a:hover {
 nav.global li.utils.logged-in li.first {
   padding-top: 10px;
 }
-/* line 66, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 61, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul {
   position: absolute;
   z-index: 100;
@@ -1471,7 +1482,7 @@ nav.global li.utils > ul {
   right: 1.5em;
   top: 2.4rem;
 }
-/* line 79, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 69, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li {
   padding-top: 20px;
   float: none;
@@ -1482,43 +1493,43 @@ nav.global li.utils > ul > li {
   max-width: 300px;
   text-indent: 0em;
 }
-/* line 83, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 72, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li > a {
   padding: 0.3em 0.5em;
   display: block;
 }
-/* line 96, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 83, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form {
   font-size: .875em;
   margin: 1.5em 1em;
 }
-/* line 100, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 86, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form input[type="text"],
 nav.global li.utils > ul > li form input[type="password"] {
   width: 250px;
   display: block;
   margin: 0 0 1em 0;
 }
-/* line 107, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 92, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form .description {
   display: none;
   white-space: normal;
   font-size: .875em;
   line-height: 1.2em;
 }
-/* line 114, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 98, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form label {
   display: none;
 }
-/* line 118, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 101, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form #edit-submit {
   float: right;
 }
-/* line 122, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 104, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 126, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 107, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form .social-login {
   margin: .5em 0;
   overflow: hidden;
@@ -1527,13 +1538,13 @@ nav.global li.utils > ul > li form .social-login {
   font-size: .7em;
   line-height: 1.2em;
 }
-/* line 134, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 114, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form .social-login input#edit-submit-twitter {
   max-width: 46%;
   padding: 5px;
   float: left;
 }
-/* line 140, ../sass/modules/global_nav/_global_nav_utils.scss */
+/* line 119, ../sass/modules/global_nav/_global_nav_utils.scss */
 nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
   max-width: 52%;
   float: right;

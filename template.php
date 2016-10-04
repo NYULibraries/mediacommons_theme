@@ -152,7 +152,9 @@ function mediacommons_form($variables) {
 
 function mediacommons_form_element($variables) {
   $element = &$variables['element'];
- // dpm($element);
+  $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+  $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+
   if ($element['#name']!='search_block_form'){
 
   // This function is invoked as theme wrapper, but the rendered form element
@@ -183,8 +185,7 @@ function mediacommons_form_element($variables) {
   if (!isset($element['#title'])) {
     $element['#title_display'] = 'none';
   }
-  $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
-  $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+ 
 
   switch ($element['#title_display']) {
     case 'before':

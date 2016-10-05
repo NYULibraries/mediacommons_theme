@@ -695,6 +695,7 @@ function mediacommons_preprocess_menu_tree( &$variables ) {
 function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
   // here is where you can affect the <ul> elements
   if ( $variables['level'] =="2" ) {
+    // For Channel navigation 
     return '<ul aria-hidden="true">' . $variables['tree'] . '</ul>';
   } else {
     return '<ul role="menubar" >' . $variables['tree'] . '</ul>';
@@ -712,7 +713,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   //Preserve alphanumerics, everything else goes away
   $pattern = '/[^a-z]+/ ';
   $name_id = preg_replace( $pattern, '', $name_id );
-  $element['#attributes']['class'][] = 'menu-' . $element['#original_link']['mlid'] . ' '.$name_id;//
+  $element['#attributes']['class'][] = $name_id;//
 
   //  Links
   if ( $element['#original_link']['depth'] == '1' ) {
@@ -729,7 +730,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
     } else {
       // USER UTILITIES --  LOGIN, MY ACCOUNT
       $element['#attributes']['class'][] = 'utils' ;
-      $element['#attributes']['aria-haspopup'] = "true";
+    
       if ( $name_id == "myaccount" ) {
         global $user, $base_path;
         if ( user_is_anonymous() ) {
@@ -738,7 +739,8 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
         $element['#attributes']['class'][] = 'logged-in' ;
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $element['#title'] = $user->name;
-      } else {
+      } else  if ( $name_id == "login" ){
+        $element['#attributes']['aria-haspopup'] = "true";
         $element['#attributes']['class'][] = 'logged-out' ;
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );

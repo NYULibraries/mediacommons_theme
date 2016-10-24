@@ -1,5 +1,4 @@
 <?php
-
 /**
  *
  *
@@ -137,8 +136,95 @@ function mediacommons_user_menu() {
     'type' => MENU_DEFAULT_LOCAL_TASK,
   );
 }
+
+function mediacommons_form($variables) {
+  $element = $variables['element'];
+  if (isset($element['#action'])) {
+    $element['#attributes']['action'] = drupal_strip_dangerous_protocols($element['#action']);
+  }
+  element_set_attributes($element, array('method', 'id'));
+  if (empty($element['#attributes']['accept-charset'])) {
+    $element['#attributes']['accept-charset'] = "UTF-8";
+  }
+  // remove extraneous div
+  return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
+}
+
+function mediacommons_form_element($variables) {
+  $element = &$variables['element'];
+  $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+  $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+
+  if ($element['#name']!='search_block_form'){
+
+  // This function is invoked as theme wrapper, but the rendered form element
+  // may not necessarily have been processed by form_builder().
+  $element += array(
+    '#title_display' => 'before',
+  );
+
+  // Add element #id for #type 'item'.
+  if (isset($element['#markup']) && !empty($element['#id'])) {
+    $attributes['id'] = $element['#id'];
+  }
+  // Add element's #type and #name as class to aid with JS/CSS selectors.
+  $attributes['class'] = array('form-item');
+  if (!empty($element['#type'])) {
+    $attributes['class'][] = 'form-type-' . strtr($element['#type'], '_', '-');
+  }
+  if (!empty($element['#name'])) {
+    $attributes['class'][] = 'form-item-' . strtr($element['#name'], array(' ' => '-', '_' => '-', '[' => '-', ']' => ''));
+  }
+  // Add a class for disabled elements to facilitate cross-browser styling.
+  if (!empty($element['#attributes']['disabled'])) {
+    $attributes['class'][] = 'form-disabled';
+  }
+  $output = '<div' . drupal_attributes($attributes) . '>' . "\n";
+
+  // If #title is not set, we don't display any label or required marker.
+  if (!isset($element['#title'])) {
+    $element['#title_display'] = 'none';
+  }
+ 
+
+  switch ($element['#title_display']) {
+    case 'before':
+    case 'invisible':
+      $output .= ' ' . theme('form_element_label', $variables);
+      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      break;
+
+    case 'after':
+      $output .= ' ' . $prefix . $element['#children'] . $suffix;
+      $output .= ' ' . theme('form_element_label', $variables) . "\n";
+      break;
+
+    case 'none':
+    case 'attribute':
+      // Output no label and no required marker, only the children.
+      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+      break;
+  }
+
+  if (!empty($element['#description'])) {
+    $output .= '<div class="description">' . $element['#description'] . "</div>\n";
+  }
+
+  $output .= "</div>\n";
+
+  return $output;
+
+  } else {
+    // Search Only
+    // Output no label and no required marker, only the children.
+    $output = ' ' . $prefix . $element['#children'] . $suffix . "\n";
+    return $output;
+  }
+}
+//function yourthemename_preprocess_search_theme_form(&$vars, $hook) {
+
 function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
-  //dpm($form_id);
+ 
   if ( in_array( $form_id, array( 'user_login', 'user_login_block' ) ) ) {
     $form['name']['#attributes']['placeholder'] = t( 'Username or email address' );
     $form['name']['#description'] = t( "You may login with either your assigned username or your e-mail address." );
@@ -149,14 +235,14 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
     $form['pass']['#size'] = 28;
     $form['actions']['submit']['#value'] = t( "Login" );
   } else if ( $form_id == 'search_block_form' ) {
-      // HTML5 placeholder attribute
-      $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
-      //$form['search_block_form']['#type'] = 'search';
+    // HTML5 placeholder attribute
+    $form['search_block_form']['#attributes']['placeholder'] = t( 'Search...' );
+    // LMH 9/20/2016 - -you can't change the name attribute; it will break search. 
+    // $form['search_block_form']['#attributes']['name'] = t( 'search' );
 
-      //$form['search_block_form'] = str_replace('type="text"', 'type="search"', $form['search_block_form']);
-      //dpm($form);
-      $form['#prefix'] = '';
-      $form['#suffix'] = '';
+    $form['#prefix'] = '';
+    $form['#suffix'] = '';
+
   } else if ( $form_id == 'comment_node_spoke_form' ) {
     //dpm($form, "form ");
    // dpm($form_state, "form state");
@@ -539,43 +625,26 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
   $output .= '</div>';
   return $output;
 }
-
-/**
- * @TODO: Needs work
- */
-function mediacommons_field__minimal__field_spokes__hub($vars) {
-
-  // homepage
-  if (!drupal_is_front_page()) return;
-
+function mediacommons_field__minimal__field_spokes__hub( $vars ) {
   //  Used for homepage for In Media Res
-  $special_body_class = theme_get_setting('special_body_class');
+  $special_body_class = theme_get_setting( 'special_body_class' );
  
-  if ($special_body_class == 'imr') {
-    
-    // what are we trying to do here?
-    $ArrP = $vars['element']['#object']->{'field_period'};
-    
-    // problematic, use Drupals API or Entity API to get values
-    // for now let it as-is and return if empty to avoid multiple errors
-    // e.g., Notice: Undefined index: und in mediacommons_field__minimal__field_spokes__hub() (line 548 of
-    if (empty($ArrP['und'])) return;
-    
-    $d1 = format_date($ArrP['und']['0']['value'], 'custom','F j, Y');
+  if ($special_body_class == 'imr' && (drupal_is_front_page())) { 
 
-    // this assume we always have a second value; this assumption migth be wrong    
-    $d2 = format_date($ArrP['und']['0']['value2'], 'custom','F j, Y');
-    
+    $ArrP = $vars['element']['#object']-> {'field_period'};
+    $d1 = format_date( $ArrP['und']['0']['value'], 'custom','F j, Y');
+    $d2 = format_date( $ArrP['und']['0']['value2'], 'custom','F j, Y');
+    //dpm($vars['element']);
+    //dpm( $ArrP);
+
     $output ='';
-    
-    $output .= '<time datetime="' . format_date($ArrP['und']['0']['value'], 'custom','Y-m-d') . '" class="date-display-range">'. $d1 . ' to ' . $d2 . '</time>' ;
-    
-    if (isset( $vars['items'][0])) {
-      $output .= '<div class="spokes">';
-      foreach (element_children($vars['items']) as $key) {
-        $output .= drupal_render($vars['items'][$key]);
+    $output .= '<time datetime="' . format_date( $ArrP['und']['0']['value'], 'custom','Y-m-d') . '" class="date-display-range">'. $d1 . ' to ' . $d2 . '</time>' ;
+    if ( isset( $vars['items'][0] ) ) {
+      $output .= '<div class="spokes">' ;
+      foreach ( element_children( $vars['items'] ) as $key ) {
+        $output .= drupal_render( $vars['items'][$key] ) ;
       }
-      $output .= '</div>';
+      $output .= '</div>' ;
     }
     return $output;
   }
@@ -626,6 +695,7 @@ function mediacommons_preprocess_menu_tree( &$variables ) {
 function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
   // here is where you can affect the <ul> elements
   if ( $variables['level'] =="2" ) {
+    // For Channel navigation 
     return '<ul aria-hidden="true">' . $variables['tree'] . '</ul>';
   } else {
     return '<ul role="menubar" >' . $variables['tree'] . '</ul>';
@@ -643,7 +713,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   //Preserve alphanumerics, everything else goes away
   $pattern = '/[^a-z]+/ ';
   $name_id = preg_replace( $pattern, '', $name_id );
-  $element['#attributes']['class'][] = 'menu-' . $element['#original_link']['mlid'] . ' '.$name_id;//
+  $element['#attributes']['class'][] = $name_id;//
 
   //  Links
   if ( $element['#original_link']['depth'] == '1' ) {
@@ -660,7 +730,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
     } else {
       // USER UTILITIES --  LOGIN, MY ACCOUNT
       $element['#attributes']['class'][] = 'utils' ;
-      $element['#attributes']['aria-haspopup'] = "true";
+    
       if ( $name_id == "myaccount" ) {
         global $user, $base_path;
         if ( user_is_anonymous() ) {
@@ -669,7 +739,8 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
         $element['#attributes']['class'][] = 'logged-in' ;
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $element['#title'] = $user->name;
-      } else {
+      } else  if ( $name_id == "login" ){
+        $element['#attributes']['aria-haspopup'] = "true";
         $element['#attributes']['class'][] = 'logged-out' ;
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );

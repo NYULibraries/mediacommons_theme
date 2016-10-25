@@ -319,6 +319,13 @@ function mediacommons_preprocess_page( &$vars ) {
     }
   }
 }
+function mediacommons_entity_view_mode_alter(&$view_mode, $context) {
+    if (!drupal_is_front_page()) return;
+    if (theme_get_setting( 'special_body_class' ) !='imr') return;
+    if ($context['entity']->type == 'hub'){
+      $view_mode = 'hub_home_for_imr';
+    }
+}
 function mediacommons_preprocess_node(&$vars) {
 // give project names as classes to the items on the umbrella site front page
   if ($vars['type'] == 'front_page_post') {

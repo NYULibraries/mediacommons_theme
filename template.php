@@ -155,7 +155,7 @@ function mediacommons_form_element($variables) {
   $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
   $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
 
-  if ($element['#name']!='search_block_form'){
+  if (isset($element['#name']) && $element['#name']!='search_block_form'){
 
   // This function is invoked as theme wrapper, but the rendered form element
   // may not necessarily have been processed by form_builder().
@@ -635,15 +635,25 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
 
 
 function mediacommons_field__field_curators_editors( $vars ) {
-  //dpm($vars);
-  $output = '<div class="peoplelist">' ;
-  $output .= '<div class="field-label">' . $vars['label'] . '</div><ul >';
+
+  $output = '<div class="peoplelist curator">' ;
+  $output .=  '<span class="l">' . $vars['label']. '</span> '  ;
   foreach ( element_children( $vars['items'] ) as $key ) {
-    $output .= '<li><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $u = $vars['items'][$key]['#options']['entity'];
+    $tid = $u->field_organization['und'][0]['tid'];
+    $term = taxonomy_term_load($tid); // load term object
+    $term_uri = taxonomy_term_uri($term); // get array with path
+    $term_title =  taxonomy_term_title($term);
+    $term_path = $term_uri['path'];
+    $link = l($term_title,$term_path);
+    $output .= '<div class="h-card">';
+    $output .= '<span class= "p-name name fn"><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];
-    $output .= '</a></li>';
+    $output .= '</a></span>';
+    $output .=  '<span class="p-org">' . $link . '</span>';
+    $output .= '</div>';
   }
-  $output .= '</ul></div>';
+  $output .= '</div>';
   return $output;
 }
 function mediacommons_field__field_co_editor( $vars ) {

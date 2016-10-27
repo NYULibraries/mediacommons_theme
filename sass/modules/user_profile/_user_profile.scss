@@ -41,19 +41,37 @@ h2.block-title {
   }
 }
 
+.peoplelist.curator {
+  .hubhead & {
+    font-size: .9rem;
+  }
+  span {
+    &::after {
+      content: "";
+    }
+  }
+}
+
 .peoplelist {
   font-size: .8rem;
   color: nth($black, 2);
   line-height: 1.5;
+  padding-right:5px;
   span {
-    white-space: nowrap;
-    &::after {
-      content: ", ";
-    }
-    &:last-child {
+    &.l {
       &::after {
         content: "";
       }
+    }
+  }
+  .h-card {
+    white-space: nowrap;
+    display: inline-block;
+    &::after {
+      content: ",\20";
+    }
+    &:last-child::after {
+      content: "";
     }
   }
   .field-label {
@@ -65,15 +83,6 @@ h2.block-title {
   a:active,
   a:visited {
     color: nth($black, 2) !important;
-  }
-  .h-card {
-    display: inline-block;
-    &:after {
-      content: ",\20";
-    }
-    &:last-child:after {
-      content: "";
-    }
   }
   .label {
     float: left;

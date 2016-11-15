@@ -15,6 +15,7 @@ const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_DOMAIN]/';
 
 require "template-incs/comments.php";
 
+require "template-incs/footer.php";
 /**
  * Implementation of hook_theme().
  * https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_theme/7

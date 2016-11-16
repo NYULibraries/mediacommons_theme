@@ -212,6 +212,10 @@ img[src*="identicon"] {
   }
 }
 
+.field-name-posts-contributed .block-title::after {
+  content: "As author";
+}
+
 .view-contributors-this-hub {
   padding: .5rem 0 0;
   .view-empty {

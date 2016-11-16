@@ -1743,8 +1743,6 @@ nav.global li.sites_nav ul > li > a.menu__link {
 /* line 38, ../sass/modules/header/_header--search.scss */
 [role="search"] input[type="submit"] {
   font-family: "MediaCommons-Icon-Font";
-  height: 36px;
-  width: 2.5em;
   -webkit-border-radius: 0px 6px 6px 0;
   -moz-border-radius: 0px 6px 6px 0;
   border-radius: 0px 6px 6px 0;
@@ -1755,22 +1753,22 @@ nav.global li.sites_nav ul > li > a.menu__link {
   flex: 1 0 36px;
 }
 
-/* line 55, ../sass/modules/header/_header--search.scss */
+/* line 53, ../sass/modules/header/_header--search.scss */
 .wf-droidsans-n4-active input[type="search"] {
   font-family: "Open Sans", "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
 
-/* line 60, ../sass/modules/header/_header--search.scss */
+/* line 58, ../sass/modules/header/_header--search.scss */
 [role="search"] label {
   display: none;
 }
 
-/* line 63, ../sass/modules/header/_header--search.scss */
+/* line 61, ../sass/modules/header/_header--search.scss */
 [role="search"] label span {
   display: none;
 }
 
-/* line 66, ../sass/modules/header/_header--search.scss */
+/* line 64, ../sass/modules/header/_header--search.scss */
 [role="search"] form {
   margin-top: 10px;
 }

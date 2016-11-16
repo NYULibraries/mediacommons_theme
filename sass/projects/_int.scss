@@ -195,3 +195,7 @@
       }
     }
   }
+  
+  .field-name-posts-contributed.mc-int .block-title::after {
+    content: "As creator";
+  }

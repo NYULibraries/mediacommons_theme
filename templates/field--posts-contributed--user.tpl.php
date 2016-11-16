@@ -14,12 +14,8 @@
  */
 ?>
 
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>LMH Posts from user
-  <?php if (!$label_hidden): ?>
-    <?php print $label ?>
-  <?php endif; ?>
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
  <?php foreach ($items as $delta => $item): ?>
       <?php print render($item); ?>
     <?php endforeach; ?>
- 
 </div>

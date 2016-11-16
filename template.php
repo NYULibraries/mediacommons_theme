@@ -15,6 +15,7 @@ const MEDIACOMMONS_DOMAIN_PLACEHOLDER = 'http://[MEDIACOMMONS_DOMAIN]/';
 
 require "template-incs/comments.php";
 
+require "template-incs/footer.php";
 /**
  * Implementation of hook_theme().
  * https://api.drupal.org/api/drupal/modules%21system%21system.api.php/function/hook_theme/7
@@ -368,8 +369,10 @@ function mediacommons_field__field_profile_name( $vars ) {
 function mediacommons_field__field_body__spoke( $vars ) {
   $str = '<section class="body-text">';
   $specialBodyClass   = theme_get_setting( 'special_body_class' ) ? theme_get_setting( 'special_body_class' ) : "" ;
-  if ( isset( $vars['items'] ) && ( $specialBodyClass == "imr" || $specialBodyClass == "int" ) ) {
-  $str .= "<h2 class='curatorsnote'>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
+  if ( isset( $vars['items'] ) && ( $specialBodyClass == "imr" ) ) {
+    $str .= "<h2 class='curatorsnote'>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
+  } elseif ( isset( $vars['items']) && ($specialBodyClass == "int" )){
+    $str .= "<h2 class='curatorsnote'>Creator's Statement</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
   } else {
      $str .= $vars['items'][0]['#markup'];
   }

@@ -1529,27 +1529,6 @@ nav.global li.utils > ul > li form #edit-submit {
 nav.global li.utils > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 107, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login {
-  margin: .5em 0;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  font-size: .7em;
-  line-height: 1.2em;
-}
-/* line 114, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login input#edit-submit-twitter {
-  max-width: 46%;
-  padding: 5px;
-  float: left;
-}
-/* line 119, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
-  max-width: 52%;
-  float: right;
-  padding: 5px;
-}
 
 /* line 8, ../sass/modules/global_nav/_global_nav.scss */
 #admin-menu,

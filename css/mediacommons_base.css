@@ -1632,29 +1632,8 @@ nav.global li.utils > ul > li form #edit-submit {
 nav.global li.utils > ul > li form .button-link {
   line-height: 1.2em;
 }
-/* line 107, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login {
-  margin: .5em 0;
-  overflow: hidden;
-  width: 100%;
-  display: block;
-  font-size: .7em;
-  line-height: 1.2em;
-}
-/* line 114, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login input#edit-submit-twitter {
-  max-width: 46%;
-  padding: 5px;
-  float: left;
-}
-/* line 119, ../sass/modules/global_nav/_global_nav_utils.scss */
-nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
-  max-width: 52%;
-  float: right;
-  padding: 5px;
-}
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 130, ../sass/modules/global_nav/_global_nav_utils.scss */
+  /* line 112, ../sass/modules/global_nav/_global_nav_utils.scss */
   nav.global li.utils {
     width: auto;
     height: 2.4rem;
@@ -1665,17 +1644,17 @@ nav.global li.utils > ul > li form .social-login input#edit-submit-facebook {
     float: right;
     padding-right: 0;
   }
-  /* line 139, ../sass/modules/global_nav/_global_nav_utils.scss */
+  /* line 121, ../sass/modules/global_nav/_global_nav_utils.scss */
   nav.global li.utils a.login-link {
     height: 2.4rem;
     display: block;
   }
-  /* line 143, ../sass/modules/global_nav/_global_nav_utils.scss */
+  /* line 125, ../sass/modules/global_nav/_global_nav_utils.scss */
   nav.global li.utils ul {
     right: 0;
     top: 2.4rem;
   }
-  /* line 148, ../sass/modules/global_nav/_global_nav_utils.scss */
+  /* line 130, ../sass/modules/global_nav/_global_nav_utils.scss */
   nav.global li.utils ul li a {
     padding: .4em 1em;
     display: block;

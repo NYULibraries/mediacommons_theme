@@ -14,7 +14,7 @@
  */
 ?>
 
-<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>LMH Posts from user
   <?php if (!$label_hidden): ?>
     <?php print $label ?>
   <?php endif; ?>

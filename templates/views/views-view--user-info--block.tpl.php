@@ -26,7 +26,7 @@
  *
  * @ingroup views_templates
  */
-?>
+?> LMH test user info block
 <?php if ($rows): ?>
     <?php print $rows; ?>
 <?php endif; 

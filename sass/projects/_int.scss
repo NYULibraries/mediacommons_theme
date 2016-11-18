@@ -45,6 +45,17 @@
     iframe {
       max-width: 100%;
     }
+    .spoke-teaser-meta {
+      .peoplelist {
+        float: none;
+      }
+      .comment-count {
+        float: none;
+        &::before{
+          content: none;
+        }
+      }
+    }
     .node-spoke {
       &.node-teaser {
         border-bottom: 1px solid nth($tertiary, 5);

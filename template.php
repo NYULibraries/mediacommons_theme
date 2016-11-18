@@ -254,14 +254,8 @@ function mediacommons_preprocess_page( &$vars ) {
     $vars['theme_hook_suggestions'][] = 'page__pjax';
   }  
   if ( isset( $vars['node'] ) ) {
-    // If the node type is "blog_madness" the template suggestion will be "page--blog-madness.tpl.php".
     $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
-    // https://www.drupal.org/node/410908
-    if ( $vars['node']->type == 'spoke' ) {
-      // unset($vars['sidebar']);
-    }
   }
-
   if ( isset( $vars['page']['content']['system_main']['no_content'] ) ) {
     unset( $vars['page']['content']['system_main']['no_content'] );
   }
@@ -304,6 +298,7 @@ function mediacommons_preprocess_node(&$vars) {
     $vars['theme_hook_suggestions'][] = 'node__pjax';
   }  
 }
+// To do: reconsider this hook.  It may be not longer getting called. 
 function mediacommons_preprocess_username(&$variables) {
 
   $variables['name'] =  check_plain( $variables['name_raw'] );
@@ -348,10 +343,6 @@ function mediacommons_preprocess_username(&$variables) {
 /**
  * Begin User Profiles
  */
-function mediacommons_preprocess_usernamex( &$vars ) {
-  //putting back what drupal core messed with (truncated to 15 characters)
-  $vars['name'] = "bob " . check_plain( $vars['name_raw'] );
-}
 
 function mediacommons_field__minimal__ds_user_picture( $vars ) {
   // Retrieve the user picture string and regex the link away

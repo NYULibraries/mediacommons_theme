@@ -821,7 +821,7 @@ body.mc [role="banner"] {
 }
 /* line 7, ../sass/projects/_mc.scss */
 body.mc [role="banner"] .logo {
-  background-image: url('../images/mc-logos/mc.svg?1476993672');
+  background-image: url('../images/mc-logos/mc.svg?1479320464');
   background-size: contain;
   width: 22.5rem;
   height: 4.4rem;
@@ -851,7 +851,7 @@ body.mc footer#footer {
 
 /* line 19, ../sass/projects/_int.scss */
 body.int [role="banner"] .logo {
-  background: url('../images/mc-logos/int.svg?1476993672');
+  background: url('../images/mc-logos/int.svg?1479320464');
   background-repeat: no-repeat;
   background-size: cover;
   width: 33rem;
@@ -890,59 +890,71 @@ body.int iframe {
   max-width: 100%;
 }
 /* line 49, ../sass/projects/_int.scss */
+body.int .spoke-teaser-meta .peoplelist {
+  float: none;
+}
+/* line 52, ../sass/projects/_int.scss */
+body.int .spoke-teaser-meta .comment-count {
+  float: none;
+}
+/* line 54, ../sass/projects/_int.scss */
+body.int .spoke-teaser-meta .comment-count::before {
+  content: none;
+}
+/* line 60, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser {
   border-bottom: 1px solid #eaeadf;
   border-bottom: none;
 }
-/* line 52, ../sass/projects/_int.scss */
+/* line 63, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-/* line 58, ../sass/projects/_int.scss */
+/* line 69, ../sass/projects/_int.scss */
 body.int .featured-more header {
   margin-bottom: 20px;
 }
-/* line 62, ../sass/projects/_int.scss */
+/* line 73, ../sass/projects/_int.scss */
 body.int .featuredhub-info {
   position: relative;
   bottom: 0px;
   max-width: 100%;
   left: 0px;
 }
-/* line 73, ../sass/projects/_int.scss */
+/* line 84, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
-/* line 76, ../sass/projects/_int.scss */
+/* line 87, ../sass/projects/_int.scss */
 body.int.front .field-name-field-representative-image a {
   display: block;
   margin: 0;
   line-height: .5;
 }
-/* line 82, ../sass/projects/_int.scss */
+/* line 93, ../sass/projects/_int.scss */
 body.int .homehub-spokes {
   margin-top: .8em;
 }
 @media (min-width: 50.0625em) {
-  /* line 87, ../sass/projects/_int.scss */
+  /* line 98, ../sass/projects/_int.scss */
   body.int.front #content {
     width: 70.5%;
   }
-  /* line 90, ../sass/projects/_int.scss */
+  /* line 101, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
     width: 28%;
   }
 }
-/* line 94, ../sass/projects/_int.scss */
+/* line 105, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 96, ../sass/projects/_int.scss */
+/* line 107, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 100, ../sass/projects/_int.scss */
+/* line 111, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
@@ -950,59 +962,59 @@ body.int.front .hub-title {
   line-height: 1.5;
   font-size: 1.4rem;
 }
-/* line 106, ../sass/projects/_int.scss */
+/* line 117, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4px 7px;
 }
-/* line 111, ../sass/projects/_int.scss */
+/* line 122, ../sass/projects/_int.scss */
 body.int.front .spoke-title {
   font-size: 1.25rem;
 }
-/* line 115, ../sass/projects/_int.scss */
+/* line 126, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 119, ../sass/projects/_int.scss */
+/* line 130, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 122, ../sass/projects/_int.scss */
+/* line 133, ../sass/projects/_int.scss */
 body.int li.featured-item {
   background-color: #efefef;
   min-height: 7rem;
 }
-/* line 130, ../sass/projects/_int.scss */
+/* line 141, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 136, ../sass/projects/_int.scss */
+/* line 147, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-body {
   display: none;
 }
-/* line 139, ../sass/projects/_int.scss */
+/* line 150, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 144, ../sass/projects/_int.scss */
+/* line 155, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .hub-title {
   font-size: 1.4rem;
 }
-/* line 148, ../sass/projects/_int.scss */
+/* line 159, ../sass/projects/_int.scss */
 body.int .intransition_full {
   /* special horizontal homepage layout for spokes*/
 }
-/* line 150, ../sass/projects/_int.scss */
+/* line 161, ../sass/projects/_int.scss */
 body.int .intransition_full .review-title {
   margin: .5em 0;
   font-size: 1rem;
 }
-/* line 154, ../sass/projects/_int.scss */
+/* line 165, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline {
   font-size: 1.2rem;
   width: auto;
@@ -1010,57 +1022,57 @@ body.int .intransition_full .review-byline {
   margin-bottom: 20px;
   color: #232323;
 }
-/* line 160, ../sass/projects/_int.scss */
+/* line 171, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline .label {
   float: left;
   display: block;
   padding-right: 5px;
 }
-/* line 165, ../sass/projects/_int.scss */
+/* line 176, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline a {
   color: inherit;
 }
-/* line 169, ../sass/projects/_int.scss */
+/* line 180, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 175, ../sass/projects/_int.scss */
+  /* line 186, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 181, ../sass/projects/_int.scss */
+  /* line 192, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 186, ../sass/projects/_int.scss */
+  /* line 197, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 192, ../sass/projects/_int.scss */
+/* line 203, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;
 }
 
-/* line 199, ../sass/projects/_int.scss */
+/* line 210, ../sass/projects/_int.scss */
 .field-name-posts-contributed.mc-int .block-title::after {
   content: "As creator";
 }
 
 /* line 7, ../sass/projects/_alt.scss */
 body.alt .logo {
-  background: url('../images/mc-logos/alt.svg?1476993672');
+  background: url('../images/mc-logos/alt.svg?1479320464');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1136,7 +1148,7 @@ body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
   height: 4.8rem;
-  background-image: url('../images/mc-logos/fieldguide.svg?1476993672');
+  background-image: url('../images/mc-logos/fieldguide.svg?1479320464');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1145,7 +1157,7 @@ body.fieldguide .logo {
   body.fieldguide .logo {
     height: 2.5rem;
     padding: 0;
-    background-image: url('../images/mc-logos/fieldguide.svg?1476993672');
+    background-image: url('../images/mc-logos/fieldguide.svg?1479320464');
     background-position: bottom;
     background-size: cover;
     width: 60vw;
@@ -1245,7 +1257,7 @@ body.fieldguide .node-spoke.node-teaser {
 
 /* line 4, ../sass/projects/_tne.scss */
 body.tne .logo {
-  background: url('../images/mc-logos/tne.svg?1476993672');
+  background: url('../images/mc-logos/tne.svg?1479320464');
   background-size: cover;
   background-repeat: no-repeat;
   width: 20rem;
@@ -1274,7 +1286,7 @@ body.imr {
 }
 /* line 6, ../sass/projects/_imr.scss */
 body.imr .logo {
-  background: url('../images/mc-logos/imr.svg?1476993672');
+  background: url('../images/mc-logos/imr.svg?1479320464');
   background-size: cover;
   background-repeat: no-repeat;
   height: 4.7rem;

@@ -107,13 +107,14 @@
         border-color: lighten($col, 9%);
       }
       [role="complementary"] {
-        > div,
-        .block {
+        > div {
           background-color: lighten(nth($tertiary, 5), 3%);
           &#block-block-1 {
             // twitter widget
-            background-color: transparent !important;
-            min-height: 440px;
+            border-radius: 4px;
+            background: #292F33 image-url("ui/ring.svg") no-repeat center 75px;
+            min-height: 600px;
+            height: 600px;
           }
         }
         header {

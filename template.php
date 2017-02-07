@@ -591,23 +591,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
 function get_url_for_mediacommons_site( $placeholder_url) {
   $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
 
-  // NOTE: gethostname() does not work for local /etc/hosts/ aliases.
-  $hostname = $_SERVER['SERVER_NAME'];
-
-  // Don't just do `$_SERVER['HTTPS'] ? 'https' : 'http';`.  This will throw an
-  // error "Notice: Undefined index: HTTPS" which is not fatal but is printed on
-  // on the page.
-  if ( array_key_exists( 'HTTPS', $_SERVER ) ) {
-    // It's unclear from http://php.net/manual/en/reserved.variables.server.php
-    // whether the existence of the key is enough.  Test if it's "non-empty".
-    $protocol = empty( $_SERVER['HTTPS'] ) ? 'https' : 'http';
-  } else {
-    $protocol = 'http';
-  }
-
-  $port = $_SERVER['SERVER_PORT'] === '80' ? '' : ':' . $_SERVER['SERVER_PORT'];
-
-  return "${protocol}://${hostname}${port}/" . "${relative_path}";
+  return mediacommons_utilities_get_root_url() . "/${relative_path}";
 }
 
 function mediacommons_is_pjax() {

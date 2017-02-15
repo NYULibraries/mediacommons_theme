@@ -42,6 +42,10 @@
     #block-views-mc-recent-comments-block .blockheader div:after {
       content: " on [in]Transition";
     }
+    
+    #block-views-contributors-this-hub-block .blockheader div:after {
+      content: " to this Issue";
+    }
     iframe {
       max-width: 100%;
     }

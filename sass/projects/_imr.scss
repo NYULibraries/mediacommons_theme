@@ -16,6 +16,9 @@ body.imr {
   #block-views-mc-recent-comments-block .blockheader div:after {
     content: " on IMR";
   }
+  #block-views-contributors-this-hub-block .blockheader div:after {
+    content: " to this Theme Week";
+  }
   /* for homepage */
   #contentwide {
     .hub-title {

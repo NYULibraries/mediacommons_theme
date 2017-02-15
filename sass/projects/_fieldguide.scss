@@ -23,6 +23,9 @@ body.fieldguide {
   #block-views-mc-recent-comments-block .blockheader div:after {
     content: " on Field Guide";
   }
+  #block-views-contributors-this-hub-block .blockheader div:after {
+    content: " to this Survey Question";
+  }
   .node-spoke.node-teaser .thumb,
   .field-name-field-representative-image {
     display: none;

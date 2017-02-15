@@ -107,7 +107,7 @@
         border-color: lighten($col, 9%);
       }
       [role="complementary"] {
-        > div {
+        .block {
           background-color: lighten(nth($tertiary, 5), 3%);
           &#block-block-1 {
             // twitter widget

@@ -82,6 +82,7 @@ aside + h2 {
     }
   }
 }
+
 .hubhead img {
   max-width: 100% !important;
   height: auto;
@@ -97,7 +98,6 @@ aside + h2 {
   &.node-teaser {
     padding: .8em 0;
     line-height: 1.5;
-    border-bottom: 1px solid lighten(nth($black, 5), 5%);
     margin: 0;
     time {
       font-size: 0.8rem;
@@ -145,26 +145,15 @@ aside + h2 {
   }
 }
 
-.node {
-  .node-teaser-title {
-    font-size: 1.1rem;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
-    line-height: 1.25;
-    a:link,
-    a:visited {
-      color: nth($black, 1);
-    }
-  }
-}
+
 
 h2.spoke-title {
   font-size: 1.1rem;
-  margin-top: 0;
+  margin-top: -.1rem;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 1.25;
+ 
   a:link,
   a:visited {
     color: nth($black, 1) !important;
@@ -205,7 +194,6 @@ h2.spoke-title {
     }
   }
 }
-
 
 .view-list-of-all-hubs {
   > header {

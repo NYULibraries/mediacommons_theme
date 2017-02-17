@@ -20,67 +20,12 @@ body.imr {
     content: " to this Theme Week";
   }
   /* for homepage */
-  #contentwide {
-    .hub-title {
-      font-size: 2rem;
-      max-width: 90%;
-    }
-    .featured-item {
-      -webkit-flex: 1 1 100%;
-      flex: 1 1 100%;
-      margin: 1% 0;
-      @include respond-to("tablet-lh") {
-        -webkit-flex: 0 1 49%;
-        flex: 0 1 49%;
+  &.front {
+    .view-mode-hub-home {
+      .hub-title {
+        font-size: 2rem;
+        max-width: 90%;
       }
-      @include respond-to("desktop-lh") {
-        -ms-flex: 0 1 32%;
-        -webkit-flex: 0 1 32%;
-        flex: 0 1 32%;
-      }
-    }
-    .node-hub {
-      &.view-mode-full {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        .hubhead {
-          @media (min-width: 800px) {
-            flex: 1 1 49%;
-            min-width: 389px;
-            padding-right: 2%
-          }
-        }
-        .homehub-spokes {
-          @media (max-width: 799px) {
-            border-top: none !important;
-            margin-top: 20px;
-            flex: 1 0 100%;
-          }
-          @media (min-width: 800px) {
-            border-top: 2px solid #e25025;
-            flex: 1 1 49%;
-          }
-          .node-spoke.node-teaser {
-            border-bottom: none;
-            padding-bottom: 0;
-          }
-        }
-      }
-    }
-    .hubhead .field-name-field-period {
-      display: none;
-    }
-    time.date-display-range {
-      background-color: #e25025;
-      padding: 1px 15px 1px 10px;
-      color: white;
-      // margin-left: -10px;
-      float: left;
-    }
-    .spokes {
-      clear: left;
-      margin-top: 25px;
     }
   }
   .node-spoke.node-teaser {

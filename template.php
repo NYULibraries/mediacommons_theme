@@ -223,11 +223,7 @@ function mediacommons_preprocess_page(&$vars) {
       $vars['theme_hook_suggestions'][] = 'page__front__mc';
     }
   }
-  if ($special_body_class == 'imr' ) {
-    if (in_array("page__front", $vars['theme_hook_suggestions'])) {
-      $vars['theme_hook_suggestions'][] = 'page__front__imr';
-    }
-  }
+
   if ($special_body_class == 'int' ) {
     if (in_array("page__spoke", $vars['theme_hook_suggestions'])) {
       $vars['theme_hook_suggestions'][] = 'page__spoke__int';
@@ -235,18 +231,6 @@ function mediacommons_preprocess_page(&$vars) {
   }
 }
 
-function mediacommons_entity_view_mode_alter(&$view_mode, $context) {
-  if (!drupal_is_front_page()) return;
-  $class = theme_get_setting('special_body_class');
-  switch ($class) {
-    case 'imr' :
-      $type = $context['entity']->type;
-      if ($type == 'hub') {
-        $view_mode = 'hub_home_for_imr';
-      }
-      break;
-  }
-}
 
 function mediacommons_preprocess_node(&$vars) {
   // give project names as classes to the items on the umbrella site front page

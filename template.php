@@ -445,17 +445,21 @@ function mediacommons_field__field_curators_editors( $vars ) {
   $output .=  '<span class="l">' . $vars['label']. '</span> '  ;
   foreach ( element_children( $vars['items'] ) as $key ) {
     $u = $vars['items'][$key]['#options']['entity'];
-    $tid = $u->field_organization['und'][0]['tid'];
-    $term = taxonomy_term_load($tid); // load term object
-    $term_uri = taxonomy_term_uri($term); // get array with path
-    $term_title =  taxonomy_term_title($term);
-    $term_path = $term_uri['path'];
-    $link = l($term_title,$term_path);
+    if (count($u->field_organization) > 0) {
+      $tid = $u->field_organization['und'][0]['tid'];
+      $term = taxonomy_term_load($tid); // load term object
+      $term_uri = taxonomy_term_uri($term); // get array with path
+      $term_title =  taxonomy_term_title($term);
+      $term_path = $term_uri['path'];
+      $link = l($term_title,$term_path);
+    }
     $output .= '<div class="h-card">';
     $output .= '<span class= "p-name name fn"><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];
     $output .= '</a></span>';
-    $output .=  '<span class="p-org">' . $link . '</span>';
+    if (!empty($link)){
+      $output .=  '<span class="p-org">' . $link . '</span>';
+    }
     $output .= '</div>';
   }
   $output .= '</div>';

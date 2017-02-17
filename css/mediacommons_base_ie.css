@@ -2882,22 +2882,6 @@ aside + h2 {
   height: auto;
 }
 
-/* line 149, ../sass/modules/hub_list/_hub_list.scss */
-.node .node-teaser-title {
-  font-size: 1.1rem;
-  margin-top: 0;
-  padding-top: 0;
-  padding-bottom: 0;
-  line-height: 1.25;
-  background-color: red;
-  border: 5px solid yellow;
-}
-/* line 157, ../sass/modules/hub_list/_hub_list.scss */
-.node .node-teaser-title a:link,
-.node .node-teaser-title a:visited {
-  color: #232323;
-}
-
 /* line 164, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title {
   font-size: 1.1rem;

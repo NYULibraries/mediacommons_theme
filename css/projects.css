@@ -1327,7 +1327,7 @@ body.imr.front .view-mode-hub-home .hub-title {
   font-size: 2rem;
   max-width: 90%;
 }
-/* line 44, ../sass/projects/_imr.scss */
+/* line 32, ../sass/projects/_imr.scss */
 body.imr .node-spoke.node-teaser .thumb {
   box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
   background-size: 100%;
@@ -1335,22 +1335,22 @@ body.imr .node-spoke.node-teaser .thumb {
   background-position-x: 0px;
   background-position-y: 0px;
 }
-/* line 50, ../sass/projects/_imr.scss */
+/* line 38, ../sass/projects/_imr.scss */
 body.imr .node-spoke.node-teaser .thumb img {
   border: 1px solid #ddd;
   width: 80px;
   height: 60px;
 }
-/* line 58, ../sass/projects/_imr.scss */
+/* line 46, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] > div,
 body.imr [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 62, ../sass/projects/_imr.scss */
+/* line 50, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] header {
   background-color: #cccccc;
 }
-/* line 66, ../sass/projects/_imr.scss */
+/* line 54, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-imr.svg?1465491556');
   background-repeat: no-repeat;

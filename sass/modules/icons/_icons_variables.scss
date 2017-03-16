@@ -25,6 +25,7 @@ $icons:
 	('.icon-add-user' '\e01e') 
 	('[role="search"] label' '\e016')
 	('[role="search"].open label' '\e012')
+	('.cc-license' '\e900')
 	('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600');
 
 $iconsAfter: ('a.login-link:after, li[aria-haspopup="true"] > a:after',  "\e013"), ('a.login-link.open:after, li[aria-haspopup="true"] > a.open:after',  "\e012");

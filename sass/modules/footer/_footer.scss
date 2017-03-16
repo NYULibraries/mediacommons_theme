@@ -1,7 +1,6 @@
 //////////////////////////////
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
-
 footer#footer {
   // border-top: 1px solid nth($black, 1);
   padding: 2em;
@@ -11,12 +10,14 @@ footer#footer {
   .powered {
     font-size: .8em;
   }
-  ul[role=menu], ul.menu {
+  ul[role=menu],
+  ul.menu {
     margin: 0;
     padding: 0;
     list-style-type: none;
     text-align: center;
-    li, li:first-child {
+    li,
+    li:first-child {
       text-indent: 0;
       display: inline;
       margin: 0;
@@ -24,5 +25,19 @@ footer#footer {
         padding: 0 .5em;
       }
     }
+  }
+}
+
+.cc-info {
+  font-size: .9rem;
+  color: #555 !important;
+  a:link,
+  a:visited {
+    color: #555 !important;
+  }
+  .cc-license::before {
+    padding: 0 2px 0 4px;
+    display: inline-block;
+    font-size: 1rem;
   }
 }

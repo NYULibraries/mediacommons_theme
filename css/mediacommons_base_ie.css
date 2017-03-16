@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 4, ../sass/partials/_extendables.scss */
 [role="banner"], footer#footer, [role="main"], .spoke {
   overflow: hidden;
@@ -1281,7 +1280,7 @@ a.control:active {
 }
 
 /* line 5, ../sass/modules/icons/_icons_extendables.scss */
-.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, [role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, .icon-contract-arrow-l:before, [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, .icon-expand-arrow-l:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, [role="search"] label:before, [role="search"].open label:before, [role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open:before, a.login-link:after, li[aria-haspopup="true"] > a:after, a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
+.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, [role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before, [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, [role="search"] label:before, [role="search"].open label:before, .cc-license:before, [role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open:before, a.login-link:after, a.login-link.open:after {
   font-family: "MediaCommons-Icon-Font";
   speak: none;
   font-style: normal;
@@ -1293,92 +1292,97 @@ a.control:active {
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .mc-logo:before {
-  content: "";
+  content: "\e002";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-contract-arrow-m:before {
-  content: "";
+  content: "\e00a";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-expand-arrow-m:before {
-  content: "";
+  content: "\e00b";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-contract-arrow-s:before {
-  content: "";
+  content: "\e00e";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-expand-arrow-s:before {
-  content: "";
+  content: "\e00f";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
-[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, .icon-contract-arrow-l:before {
-  content: "";
+[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before {
+  content: "\e012";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
-[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, .icon-expand-arrow-l:before {
-  content: "";
+[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before {
+  content: "\e013";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="mailto"]:before {
-  content: "";
+  content: "\e006";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [rel*="external"][href^="http"]:before {
-  content: "";
+  content: "\e602";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="skype:"]:before {
-  content: "";
+  content: "\e603";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="tel:"]:before {
-  content: "";
+  content: "\e008";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [rel*="me"][href*="twitter.com"]:before {
-  content: "";
+  content: "\e604";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-user:before {
-  content: "";
+  content: "\e01f";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-users:before {
-  content: "";
+  content: "\e020";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-add-user:before {
-  content: "";
+  content: "\e01e";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [role="search"] label:before {
-  content: "";
+  content: "\e016";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [role="search"].open label:before {
-  content: "";
+  content: "\e012";
+}
+
+/* line 7, ../sass/modules/icons/_icons_mixins.scss */
+.cc-license:before {
+  content: "\e900";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open:before {
-  content: "";
+  content: "\e600";
 }
 
 /* line 14, ../sass/modules/icons/_icons_mixins.scss */
@@ -1393,8 +1397,8 @@ a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
 
 @font-face {
   font-family: "MediaCommons-Icon-Font";
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1465491556');
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1465491556#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1465491556') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1465491556') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1465491556#MediaCommons-Icon-Font') format('svg');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1489693866') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1489693866') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1489693866#MediaCommons-Icon-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2040,32 +2044,56 @@ ul.tags li a {
   color: #232323;
 }
 
-/* line 5, ../sass/modules/footer/_footer.scss */
+/* line 4, ../sass/modules/footer/_footer.scss */
 footer#footer {
   padding: 2em;
   text-align: center;
   display: block;
 }
-/* line 11, ../sass/modules/footer/_footer.scss */
+/* line 10, ../sass/modules/footer/_footer.scss */
 footer#footer .powered {
   font-size: .8em;
 }
-/* line 14, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu], footer#footer ul.menu {
+/* line 13, ../sass/modules/footer/_footer.scss */
+footer#footer ul[role=menu],
+footer#footer ul.menu {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-align: center;
 }
 /* line 19, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu] li, footer#footer ul[role=menu] li:first-child, footer#footer ul.menu li, footer#footer ul.menu li:first-child {
+footer#footer ul[role=menu] li,
+footer#footer ul[role=menu] li:first-child,
+footer#footer ul.menu li,
+footer#footer ul.menu li:first-child {
   text-indent: 0;
   display: inline;
   margin: 0;
 }
-/* line 23, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu] li a, footer#footer ul[role=menu] li:first-child a, footer#footer ul.menu li a, footer#footer ul.menu li:first-child a {
+/* line 24, ../sass/modules/footer/_footer.scss */
+footer#footer ul[role=menu] li a,
+footer#footer ul[role=menu] li:first-child a,
+footer#footer ul.menu li a,
+footer#footer ul.menu li:first-child a {
   padding: 0 .5em;
+}
+
+/* line 31, ../sass/modules/footer/_footer.scss */
+.cc-info {
+  font-size: .9rem;
+  color: #666 !important;
+}
+/* line 34, ../sass/modules/footer/_footer.scss */
+.cc-info a:link,
+.cc-info a:visited {
+  color: #666 !important;
+}
+/* line 38, ../sass/modules/footer/_footer.scss */
+.cc-info .cc-license::before {
+  padding: 0 2px 0 4px;
+  display: inline-block;
+  font-size: 1rem;
 }
 
 /* line 37, ../sass/modules/tabs/_tabs.scss */

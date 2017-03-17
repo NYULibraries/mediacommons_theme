@@ -12,7 +12,6 @@ ul.tags {
       background-color: lighten(nth($black, 5), 7%);
       border: 1px solid nth($black, 5);
       font-size: .85rem;
-      
     }
   }
 }
@@ -46,23 +45,28 @@ ul.tags {
   }
 }
 /* at the bottom of spoke pages or also hub pages */
+
 .spoke-body div.tags {
   padding-top: 10px;
- // margin-top: 30px;
   .label-inline {
     display: none;
   }
-//  border-top: 1px solid lighten(nth($black, 5), 5%);
 }
+
 
 /* taxonomy page */
 
-.page-taxonomy .term-listing-heading {
-  .page-title,
-  .label-inline {
-    display: inline-block;
-    @include type-size($h1-font-size, $h1-line-height);
-    margin-top: 0;
-    color: $h1-color;
+.page-taxonomy {
+  article h2.block-title {
+    margin-bottom: 2rem;
+  }
+  .term-listing-heading {
+    .page-title,
+    .label-inline {
+      display: inline-block;
+      @include type-size($h1-font-size, $h1-line-height);
+      margin-top: 0;
+      color: $h1-color;
+    }
   }
 }

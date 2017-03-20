@@ -17,7 +17,7 @@ body.mc {
   }
   @include respond-to("narrow navigation") {
     [role="banner"] {
-       margin: 3.25em auto 1rem;
+      margin: 3.25em auto 1rem;
       h1 {
         margin-left: 3%;
       }

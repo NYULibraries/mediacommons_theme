@@ -881,84 +881,84 @@ body.int [role="banner"] .logo {
     background-position: bottom;
   }
 }
-/* line 42, ../sass/projects/_int.scss */
-body.int #block-views-mc-recent-comments-block .blockheader div:after {
+/* line 43, ../sass/projects/_int.scss */
+body.int .mc_recent_comments .blockheader div:after {
   content: " on [in]Transition";
 }
-/* line 46, ../sass/projects/_int.scss */
+/* line 47, ../sass/projects/_int.scss */
 body.int #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Issue";
 }
-/* line 49, ../sass/projects/_int.scss */
+/* line 50, ../sass/projects/_int.scss */
 body.int iframe {
   max-width: 100%;
 }
-/* line 53, ../sass/projects/_int.scss */
+/* line 54, ../sass/projects/_int.scss */
 body.int .spoke-teaser-meta .peoplelist {
   float: none;
 }
-/* line 56, ../sass/projects/_int.scss */
+/* line 57, ../sass/projects/_int.scss */
 body.int .spoke-teaser-meta .comment-count {
   float: none;
 }
-/* line 58, ../sass/projects/_int.scss */
+/* line 59, ../sass/projects/_int.scss */
 body.int .spoke-teaser-meta .comment-count::before {
   content: none;
 }
-/* line 64, ../sass/projects/_int.scss */
+/* line 65, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser {
   border-bottom: 1px solid #eaeadf;
   border-bottom: none;
 }
-/* line 67, ../sass/projects/_int.scss */
+/* line 68, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser:last-child {
   border-bottom: none;
   margin-bottom: 0;
 }
-/* line 73, ../sass/projects/_int.scss */
+/* line 74, ../sass/projects/_int.scss */
 body.int .featured-more header {
   margin-bottom: 20px;
 }
-/* line 77, ../sass/projects/_int.scss */
+/* line 78, ../sass/projects/_int.scss */
 body.int .featuredhub-info {
   position: relative;
   bottom: 0px;
   max-width: 100%;
   left: 0px;
 }
-/* line 88, ../sass/projects/_int.scss */
+/* line 89, ../sass/projects/_int.scss */
 body.int.front .field-name-field-body {
   display: none;
 }
-/* line 91, ../sass/projects/_int.scss */
+/* line 92, ../sass/projects/_int.scss */
 body.int.front .field-name-field-representative-image a {
   display: block;
   margin: 0;
   line-height: .5;
 }
-/* line 97, ../sass/projects/_int.scss */
+/* line 98, ../sass/projects/_int.scss */
 body.int .homehub-spokes {
   margin-top: .8em;
 }
 @media (min-width: 50.0625em) {
-  /* line 102, ../sass/projects/_int.scss */
+  /* line 103, ../sass/projects/_int.scss */
   body.int.front #content {
     width: 70.5%;
   }
-  /* line 105, ../sass/projects/_int.scss */
+  /* line 106, ../sass/projects/_int.scss */
   body.int.front [role="complementary"] {
     width: 28%;
   }
 }
-/* line 109, ../sass/projects/_int.scss */
+/* line 110, ../sass/projects/_int.scss */
 body.int.front header.hubhead {
   position: relative;
 }
-/* line 111, ../sass/projects/_int.scss */
+/* line 112, ../sass/projects/_int.scss */
 body.int.front header.hubhead .peoplelist {
   display: none;
 }
-/* line 115, ../sass/projects/_int.scss */
+/* line 116, ../sass/projects/_int.scss */
 body.int.front .hub-title {
   position: absolute;
   top: 10px;
@@ -966,59 +966,59 @@ body.int.front .hub-title {
   line-height: 1.5;
   font-size: 1.4rem;
 }
-/* line 121, ../sass/projects/_int.scss */
+/* line 122, ../sass/projects/_int.scss */
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 4px 7px;
 }
-/* line 126, ../sass/projects/_int.scss */
+/* line 127, ../sass/projects/_int.scss */
 body.int.front .spoke-title {
   font-size: 1.25rem;
 }
-/* line 130, ../sass/projects/_int.scss */
+/* line 131, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 134, ../sass/projects/_int.scss */
+/* line 135, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 137, ../sass/projects/_int.scss */
+/* line 138, ../sass/projects/_int.scss */
 body.int li.featured-item {
   background-color: #efefef;
   min-height: 7rem;
 }
-/* line 145, ../sass/projects/_int.scss */
+/* line 146, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 151, ../sass/projects/_int.scss */
+/* line 152, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-body {
   display: none;
 }
-/* line 154, ../sass/projects/_int.scss */
+/* line 155, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 159, ../sass/projects/_int.scss */
+/* line 160, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .hub-title {
   font-size: 1.4rem;
 }
-/* line 163, ../sass/projects/_int.scss */
+/* line 164, ../sass/projects/_int.scss */
 body.int .intransition_full {
   /* special horizontal homepage layout for spokes*/
 }
-/* line 165, ../sass/projects/_int.scss */
+/* line 166, ../sass/projects/_int.scss */
 body.int .intransition_full .review-title {
   margin: .5em 0;
   font-size: 1rem;
 }
-/* line 169, ../sass/projects/_int.scss */
+/* line 170, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline {
   font-size: 1.2rem;
   width: auto;
@@ -1026,54 +1026,58 @@ body.int .intransition_full .review-byline {
   margin-bottom: 20px;
   color: #232323;
 }
-/* line 175, ../sass/projects/_int.scss */
+/* line 176, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline .label {
   float: left;
   display: block;
   padding-right: 5px;
 }
-/* line 180, ../sass/projects/_int.scss */
+/* line 181, ../sass/projects/_int.scss */
 body.int .intransition_full .review-byline a {
   color: inherit;
 }
-/* line 184, ../sass/projects/_int.scss */
+/* line 185, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 190, ../sass/projects/_int.scss */
+  /* line 191, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 196, ../sass/projects/_int.scss */
+  /* line 197, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
     margin-left: 1%;
   }
-  /* line 201, ../sass/projects/_int.scss */
+  /* line 202, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 207, ../sass/projects/_int.scss */
+/* line 208, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;
 }
 
-/* line 214, ../sass/projects/_int.scss */
+/* line 215, ../sass/projects/_int.scss */
 .field-name-posts-contributed.mc-int .block-title::after {
   content: "As creator";
 }
 
+/* line 6, ../sass/projects/_alt.scss */
+body.alt {
+  /* this uses underscores because it is created from a block's delta */
+}
 /* line 7, ../sass/projects/_alt.scss */
 body.alt .logo {
   background: url('../images/mc-logos/alt.svg?1485460384');
@@ -1087,75 +1091,71 @@ body.alt .logo {
     height: 3rem;
   }
 }
-/* line 16, ../sass/projects/_alt.scss */
-body.alt #block-views-mc-recent-comments-block .blockheader div:after {
+/* line 17, ../sass/projects/_alt.scss */
+body.alt .mc_recent_comments .blockheader div:after {
   content: " on #alt-ac";
 }
-/* line 19, ../sass/projects/_alt.scss */
+/* line 20, ../sass/projects/_alt.scss */
 body.alt #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Cluster";
 }
-/* line 22, ../sass/projects/_alt.scss */
+/* line 23, ../sass/projects/_alt.scss */
 body.alt .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-alt.svg?1465491556');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 28, ../sass/projects/_alt.scss */
+/* line 29, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] > div,
 body.alt [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 51, ../sass/projects/_alt.scss */
+/* line 52, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] header {
   background-color: #cccccc;
 }
 
-/* line 1, ../sass/projects/_fieldguide.scss */
-body.fieldguide {
-  /* on fieldguide, hide all images for now */
-}
-/* line 23, ../sass/projects/_fieldguide.scss */
-body.fieldguide #block-views-mc-recent-comments-block .blockheader div:after {
+/* line 24, ../sass/projects/_fieldguide.scss */
+body.fieldguide .mc_recent_comments .blockheader div:after {
   content: " on Field Guide";
 }
-/* line 26, ../sass/projects/_fieldguide.scss */
+/* line 27, ../sass/projects/_fieldguide.scss */
 body.fieldguide #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Survey Question";
 }
-/* line 29, ../sass/projects/_fieldguide.scss */
+/* line 30, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser .thumb,
 body.fieldguide .field-name-field-representative-image {
   display: none;
 }
-/* line 33, ../sass/projects/_fieldguide.scss */
+/* line 34, ../sass/projects/_fieldguide.scss */
 body.fieldguide nav.global {
   box-shadow: 0px 3px #b98a00;
   border-bottom: 3px solid #d7a100;
 }
-/* line 38, ../sass/projects/_fieldguide.scss */
+/* line 39, ../sass/projects/_fieldguide.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #ece2c5;
 }
-/* line 41, ../sass/projects/_fieldguide.scss */
+/* line 42, ../sass/projects/_fieldguide.scss */
 body.fieldguide [role="complementary"] > div,
 body.fieldguide [role="complementary"] .block {
   background-color: #f5f0e0;
 }
-/* line 50, ../sass/projects/_fieldguide.scss */
+/* line 51, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article {
   padding: 2.5%;
   border: transparent 1px solid;
 }
-/* line 53, ../sass/projects/_fieldguide.scss */
+/* line 54, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article:nth-of-type(odd) {
   background-color: #f5f0e0;
 }
-/* line 56, ../sass/projects/_fieldguide.scss */
+/* line 57, ../sass/projects/_fieldguide.scss */
 body.fieldguide .comments article:nth-of-type(even) {
   background-color: #efe7d0;
 }
-/* line 61, ../sass/projects/_fieldguide.scss */
+/* line 62, ../sass/projects/_fieldguide.scss */
 body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
@@ -1165,7 +1165,7 @@ body.fieldguide .logo {
   background-size: 100%;
 }
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 70, ../sass/projects/_fieldguide.scss */
+  /* line 71, ../sass/projects/_fieldguide.scss */
   body.fieldguide .logo {
     height: 2.5rem;
     padding: 0;
@@ -1176,38 +1176,38 @@ body.fieldguide .logo {
     left: 18vw;
     max-width: 15rem;
   }
-  /* line 80, ../sass/projects/_fieldguide.scss */
+  /* line 81, ../sass/projects/_fieldguide.scss */
   body.fieldguide nav.global {
     box-shadow: none;
     border-bottom: 3px solid #C49A1E;
   }
 }
-/* line 87, ../sass/projects/_fieldguide.scss */
+/* line 88, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .hubhead h1.hub-title {
   font-size: 2.3rem;
 }
-/* line 92, ../sass/projects/_fieldguide.scss */
+/* line 93, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .timerangeheader > * {
   padding: 3px 29px;
 }
-/* line 103, ../sass/projects/_fieldguide.scss */
+/* line 104, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
 }
-/* line 107, ../sass/projects/_fieldguide.scss */
+/* line 108, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item {
   padding: 0;
   background-color: #d7a100;
 }
-/* line 109, ../sass/projects/_fieldguide.scss */
+/* line 110, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item img {
   display: none;
 }
-/* line 112, ../sass/projects/_fieldguide.scss */
+/* line 113, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item time {
   display: relative;
 }
-/* line 120, ../sass/projects/_fieldguide.scss */
+/* line 121, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   position: static;
   height: 100%;
@@ -1218,7 +1218,7 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   display: flex;
   flex-direction: column;
 }
-/* line 129, ../sass/projects/_fieldguide.scss */
+/* line 130, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   order: 2;
   background-color: inherit;
@@ -1227,41 +1227,41 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   font-size: 0.8rem;
   color: #5a5a5a !important;
 }
-/* line 137, ../sass/projects/_fieldguide.scss */
+/* line 138, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 {
   background-color: inherit;
   padding: 0;
 }
-/* line 140, ../sass/projects/_fieldguide.scss */
+/* line 141, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 a {
   display: block;
   padding: 20px 20px 5px 20px;
   color: black !important;
 }
-/* line 184, ../sass/projects/_fieldguide.scss */
+/* line 185, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg {
   position: static;
   max-width: none;
   flex: 0 1 49%;
 }
-/* line 188, ../sass/projects/_fieldguide.scss */
+/* line 189, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg time {
   display: none;
 }
-/* line 191, ../sass/projects/_fieldguide.scss */
+/* line 192, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a {
   display: block;
   background-color: #d7a100;
 }
-/* line 194, ../sass/projects/_fieldguide.scss */
+/* line 195, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a:hover {
   background-color: #e1b83f;
 }
-/* line 201, ../sass/projects/_fieldguide.scss */
+/* line 202, ../sass/projects/_fieldguide.scss */
 body.fieldguide .view-list-of-all-hubs .group-flex1 {
   display: none;
 }
-/* line 205, ../sass/projects/_fieldguide.scss */
+/* line 206, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: .5rem;
@@ -1282,7 +1282,7 @@ body.tne .logo {
   }
 }
 /* line 15, ../sass/projects/_tne.scss */
-body.tne #block-views-mc-recent-comments-block .blockheader div:after {
+body.tne .mc_recent_comments .blockheader div:after {
   content: " on TNE";
 }
 /* line 19, ../sass/projects/_tne.scss */
@@ -1296,10 +1296,6 @@ body.tne .node-hub.node-teaser .field-name-field-representative-image {
   background-size: cover;
 }
 
-/* line 5, ../sass/projects/_imr.scss */
-body.imr {
-  /* for homepage */
-}
 /* line 6, ../sass/projects/_imr.scss */
 body.imr .logo {
   background: url('../images/mc-logos/imr.svg?1485460384');
@@ -1314,11 +1310,11 @@ body.imr .logo {
     height: 2.5rem;
   }
 }
-/* line 16, ../sass/projects/_imr.scss */
-body.imr #block-views-mc-recent-comments-block .blockheader div:after {
+/* line 17, ../sass/projects/_imr.scss */
+body.imr .mc_recent_comments .blockheader div:after {
   content: " on IMR";
 }
-/* line 19, ../sass/projects/_imr.scss */
+/* line 20, ../sass/projects/_imr.scss */
 body.imr #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Theme Week";
 }

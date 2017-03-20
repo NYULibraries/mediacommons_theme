@@ -19,8 +19,9 @@ body.fieldguide {
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
-  /* on fieldguide, hide all images for now */
-  #block-views-mc-recent-comments-block .blockheader div:after {
+  // on fieldguide, hide all images for now 
+  // this uses underscores because it is created from a block's delta 
+  .mc_recent_comments .blockheader div:after {
     content: " on Field Guide";
   }
   #block-views-contributors-this-hub-block .blockheader div:after {

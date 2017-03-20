@@ -39,10 +39,10 @@
         }
       }
     }
-    #block-views-mc-recent-comments-block .blockheader div:after {
+    // this uses underscores because it is created from a block's delta 
+    .mc_recent_comments .blockheader div:after {
       content: " on [in]Transition";
     }
-    
     #block-views-contributors-this-hub-block .blockheader div:after {
       content: " to this Issue";
     }
@@ -55,7 +55,7 @@
       }
       .comment-count {
         float: none;
-        &::before{
+        &::before {
           content: none;
         }
       }

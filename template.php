@@ -354,6 +354,17 @@ function mediacommons_field__field_taxonomy__spoke( $vars ) {
   return $output;
 }
 
+function mediacommons_field__field_taxonomy__hub( $vars ) {
+  $output = '<div class="tags">';
+  $output .= '<div class="label-inline">' . $vars['label'] . '</div><ul class="tags">';
+  foreach ( element_children( $vars['items'] ) as $key ) {
+    $output .= '<li><a href="' . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
+    $output .= $vars['items'][$key]['#title'];
+    $output .= '</a></li>';
+  }
+  $output .= '</ul></div>';
+  return $output;
+}
 function mediacommons_field__field_taxonomy__user( $vars ) {
   $output = '<aside role="complementary" class="research_interests">';
   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags block">';

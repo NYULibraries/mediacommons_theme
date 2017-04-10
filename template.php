@@ -42,27 +42,27 @@ function mediacommons_theme(&$existing, $type, $theme, $path) {
   return $hooks;
 }
 
-function mediacommons_preprocess_html(&$vars) {
+function mediacommons_preprocess_html( &$vars ) {
   // An anonymous user has a user id of zero.
-  $class   = theme_get_setting('special_body_class');
-  if (mediacommons_is_pjax()) {
+  $special_body_class   = theme_get_setting( 'special_body_class' );
+  if ( mediacommons_is_pjax() ) {
     $vars['theme_hook_suggestions'][] = 'html__pjax';
   }
-  if (!empty( $class)) {
-    $vars['classes_array'][] = $class;
+  if ( !empty( $special_body_class ) ) {
+    $vars['classes_array'][] = $special_body_class;
   }
   if ( ( $key = array_search( 'no-sidebars', $vars['classes_array'] ) ) !== false ) {
     unset( $vars['classes_array'][$key] );
   }
 }
 
-function mediacommons_preprocess_image_style(&$variables) {
-  if ($variables['style_name'] == 'profile_page_pic') {
+function mediacommons_preprocess_image_style( &$variables ) {
+  if ( $variables['style_name'] == 'profile_page_pic' ) {
     $variables['attributes']['class'][] = 'u-photo photo';
   }
-  else if ($variables['style_name'] == 'profile_pic_small') {
-    $variables['attributes']['class'][] = 'u-photo photo u-photo-small';
-  }
+  else if ( $variables['style_name'] == 'profile_pic_small' ) {
+      $variables['attributes']['class'][] = 'u-photo photo u-photo-small';
+    }
 }
 
 function mediacommons_user_menu() {
@@ -73,77 +73,77 @@ function mediacommons_user_menu() {
   );
 }
 
-function mediacommons_form($variables) {
+function mediacommons_form( $variables ) {
   $element = $variables['element'];
-  if (isset($element['#action'])) {
-    $element['#attributes']['action'] = drupal_strip_dangerous_protocols($element['#action']);
+  if ( isset( $element['#action'] ) ) {
+    $element['#attributes']['action'] = drupal_strip_dangerous_protocols( $element['#action'] );
   }
-  element_set_attributes($element, array('method', 'id'));
-  if (empty($element['#attributes']['accept-charset'])) {
+  element_set_attributes( $element, array( 'method', 'id' ) );
+  if ( empty( $element['#attributes']['accept-charset'] ) ) {
     $element['#attributes']['accept-charset'] = "UTF-8";
   }
   // remove extraneous div
-  return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
+  return '<form' . drupal_attributes( $element['#attributes'] ) . '>' . $element['#children'] . '</form>';
 }
 
-function mediacommons_form_element($variables) {
+function mediacommons_form_element( $variables ) {
   $element = &$variables['element'];
-  $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
-  $suffix = isset($element['#field_suffix']) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
-  if (isset($element['#name']) && $element['#name']!='search_block_form') {
+  $prefix = isset( $element['#field_prefix'] ) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+  $suffix = isset( $element['#field_suffix'] ) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
+  if ( isset( $element['#name'] ) && $element['#name']!='search_block_form' ) {
 
-  // This function is invoked as theme wrapper, but the rendered form element
-  // may not necessarily have been processed by form_builder().
-  $element += array(
-    '#title_display' => 'before',
-  );
+    // This function is invoked as theme wrapper, but the rendered form element
+    // may not necessarily have been processed by form_builder().
+    $element += array(
+      '#title_display' => 'before',
+    );
 
-  // Add element #id for #type 'item'.
-  if (isset($element['#markup']) && !empty($element['#id'])) {
-    $attributes['id'] = $element['#id'];
-  }
-  // Add element's #type and #name as class to aid with JS/CSS selectors.
-  $attributes['class'] = array('form-item');
-  if (!empty($element['#type'])) {
-    $attributes['class'][] = 'form-type-' . strtr($element['#type'], '_', '-');
-  }
-  if (!empty($element['#name'])) {
-    $attributes['class'][] = 'form-item-' . strtr($element['#name'], array(' ' => '-', '_' => '-', '[' => '-', ']' => ''));
-  }
-  // Add a class for disabled elements to facilitate cross-browser styling.
-  if (!empty($element['#attributes']['disabled'])) {
-    $attributes['class'][] = 'form-disabled';
-  }
-  $output = '<div' . drupal_attributes($attributes) . '>' . "\n";
+    // Add element #id for #type 'item'.
+    if ( isset( $element['#markup'] ) && !empty( $element['#id'] ) ) {
+      $attributes['id'] = $element['#id'];
+    }
+    // Add element's #type and #name as class to aid with JS/CSS selectors.
+    $attributes['class'] = array( 'form-item' );
+    if ( !empty( $element['#type'] ) ) {
+      $attributes['class'][] = 'form-type-' . strtr( $element['#type'], '_', '-' );
+    }
+    if ( !empty( $element['#name'] ) ) {
+      $attributes['class'][] = 'form-item-' . strtr( $element['#name'], array( ' ' => '-', '_' => '-', '[' => '-', ']' => '' ) );
+    }
+    // Add a class for disabled elements to facilitate cross-browser styling.
+    if ( !empty( $element['#attributes']['disabled'] ) ) {
+      $attributes['class'][] = 'form-disabled';
+    }
+    $output = '<div' . drupal_attributes( $attributes ) . '>' . "\n";
 
-  // If #title is not set, we don't display any label or required marker.
-  if (!isset($element['#title'])) {
-    $element['#title_display'] = 'none';
-  }
-  switch ($element['#title_display']) {
+    // If #title is not set, we don't display any label or required marker.
+    if ( !isset( $element['#title'] ) ) {
+      $element['#title_display'] = 'none';
+    }
+    switch ( $element['#title_display'] ) {
     case 'before':
     case 'invisible':
-      $output .= ' ' . theme('form_element_label', $variables);
+      $output .= ' ' . theme( 'form_element_label', $variables );
       $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
       break;
     case 'after':
       $output .= ' ' . $prefix . $element['#children'] . $suffix;
-      $output .= ' ' . theme('form_element_label', $variables) . "\n";
+      $output .= ' ' . theme( 'form_element_label', $variables ) . "\n";
       break;
     case 'none':
     case 'attribute':
       // Output no label and no required marker, only the children.
       $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
       break;
-  }
+    }
 
-  if (!empty($element['#description'])) {
-    $output .= '<div class="description">' . $element['#description'] . "</div>\n";
-  }
+    if ( !empty( $element['#description'] ) ) {
+      $output .= '<div class="description">' . $element['#description'] . "</div>\n";
+    }
 
-  $output .= "</div>\n";
+    $output .= "</div>\n";
 
-  return $output;
+    return $output;
 
   } else {
     // Search Only
@@ -170,8 +170,7 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
     // $form['search_block_form']['#attributes']['name'] = t( 'search' );
     $form['#prefix'] = '';
     $form['#suffix'] = '';
-  }
-  else if ($form_id == 'comment_node_spoke_form') {
+  } else if ( $form_id == 'comment_node_spoke_form' ) {
     $form['subject']['#size'] = "auto";
     $form['comment_preview']['#weight'] = -5;
     $form['comment_output_below']['#weight'] = -10;
@@ -184,28 +183,28 @@ function mediacommons_form_alter( &$form, &$form_state, $form_id ) {
     );
     //Author
     $form['aa_comment']['author'] = $form['author'];
-    unset($form['author']);
+    unset( $form['author'] );
     $form['aa_comment']['author']['#weight'] = -10;
 
     //Subject
     $form['aa_comment']['subject'] = $form['subject'];
-    unset($form['subject']);
+    unset( $form['subject'] );
     $form['aa_comment']['subject']['#weight'] = -1;
 
     //Comment
     $form['aa_comment']['comment_body'] = $form['comment_body'];
-    unset($form['comment_body']);
+    unset( $form['comment_body'] );
 
     //Actions
     $form['aa_comment']['actions'] = $form['actions'];
-    unset($form['actions']);
+    unset( $form['actions'] );
   }
 }
 
 /** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
-function mediacommons_preprocess_page(&$vars) {
-  $special_body_class = theme_get_setting('special_body_class');
-  if (mediacommons_is_pjax()) {
+function mediacommons_preprocess_page( &$vars ) {
+  $special_body_class = theme_get_setting( 'special_body_class' );
+  if ( mediacommons_is_pjax() ) {
     $vars['theme_hook_suggestions'][] = 'page__pjax';
   }
   if ( isset( $vars['node'] ) ) {
@@ -218,64 +217,64 @@ function mediacommons_preprocess_page(&$vars) {
     $term = taxonomy_term_load( arg( 2 ) );
     $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-  if ($special_body_class == 'mc' ) {
-    if (in_array("page__front", $vars['theme_hook_suggestions'])) {
+  if ( $special_body_class == 'mc' ) {
+    if ( in_array( "page__front", $vars['theme_hook_suggestions'] ) ) {
       $vars['theme_hook_suggestions'][] = 'page__front__mc';
     }
   }
 
-  if ($special_body_class == 'int' ) {
-    if (in_array("page__spoke", $vars['theme_hook_suggestions'])) {
+  if ( $special_body_class == 'int' ) {
+    if ( in_array( "page__spoke", $vars['theme_hook_suggestions'] ) ) {
       $vars['theme_hook_suggestions'][] = 'page__spoke__int';
     }
   }
 }
 
 
-function mediacommons_preprocess_node(&$vars) {
+function mediacommons_preprocess_node( &$vars ) {
   // give project names as classes to the items on the umbrella site front page
-  if ($vars['type'] == 'front_page_post') {
+  if ( $vars['type'] == 'front_page_post' ) {
     $vars['classes_array'][] =  'node-' . $vars['field_project'][0]['value'];
   }
-  if (mediacommons_is_pjax()) {
+  if ( mediacommons_is_pjax() ) {
     $vars['theme_hook_suggestions'][] = 'node__pjax';
   }
 }
 
 // To do: reconsider this hook.  It may be not longer getting called.
-function mediacommons_preprocess_username(&$variables) {
+function mediacommons_preprocess_username( &$variables ) {
   $variables['name'] =  check_plain( $variables['name_raw'] );
   $account = $variables['account'];
   $variables['extra'] = '';
-  if (empty($account->uid)) {
+  if ( empty( $account->uid ) ) {
     $variables['uid'] = 0;
-    if (theme_get_setting('toggle_comment_user_verification')) {
-      $variables['extra'] = ' (' . t('not verified') . ')';
+    if ( theme_get_setting( 'toggle_comment_user_verification' ) ) {
+      $variables['extra'] = ' (' . t( 'not verified' ) . ')';
     }
   }
   else {
     $variables['uid'] = (int) $account->uid;
   }
-  $variables['profile_access'] = user_access('access user profiles');
+  $variables['profile_access'] = user_access( 'access user profiles' );
   $variables['link_attributes'] = array();
   // Populate link path and attributes if appropriate.
-  if ($variables['uid'] && $variables['profile_access']) {
+  if ( $variables['uid'] && $variables['profile_access'] ) {
     // We are linking to a local user.
-    $variables['link_attributes'] = array('title' => t('User profile: ' . $variables['name']));
+    $variables['link_attributes'] = array( 'title' => t( 'User profile: ' . $variables['name'] ) );
     $variables['link_path'] = 'user/' . $variables['uid'];
   }
-  elseif (!empty($account->homepage)) {
+  elseif ( !empty( $account->homepage ) ) {
     // Like the 'class' attribute, the 'rel' attribute can hold a
     // space-separated set of values, so initialize it as an array to make it
     // easier for other preprocess functions to append to it.
-    $variables['link_attributes'] = array('rel' => array('nofollow'));
+    $variables['link_attributes'] = array( 'rel' => array( 'nofollow' ) );
     $variables['link_path'] = $account->homepage;
     $variables['homepage'] = $account->homepage;
   }
   // We do not want the l() function to check_plain() a second time.
   $variables['link_options']['html'] = TRUE;
   // Set a default class.
-  $variables['attributes_array'] = array('class' => array('username'));
+  $variables['attributes_array'] = array( 'class' => array( 'username' ) );
 }
 
 /**
@@ -290,24 +289,24 @@ function mediacommons_field__minimal__ds_user_picture( $vars ) {
   }
 }
 
-function mediacommons_field__field_profile_name($vars) {
-  if (isset($vars['items'])) {
+function mediacommons_field__field_profile_name( $vars ) {
+  if ( isset( $vars['items'] ) ) {
     return '<h1 class="p-name fn">' . $vars['items'][0]['#markup'] . '</h1>';
   }
 }
 
 function mediacommons_field__field_body__spoke( $vars ) {
-  $class = theme_get_setting('special_body_class');
-  if (is_null($class)) {
-    $class = '';
+  $special_body_class = theme_get_setting( 'special_body_class' );
+  if ( is_null( $special_body_class ) ) {
+    $special_body_class = '';
   }
   $str = '<section class="body-text">';
-  if (isset($vars['items']) && ($class == 'imr')) {
+  if ( isset( $vars['items'] ) && ( $special_body_class == 'imr' ) ) {
     $str .= "<h2 class='curatorsnote'>Curator's Note</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
-  } elseif ( isset( $vars['items']) && ($class == "int" )){
+  } elseif ( isset( $vars['items'] ) && ( $special_body_class == "int" ) ) {
     $str .= "<h2 class='curatorsnote'>Creator's Statement</h2><div>" . $vars['items'][0]['#markup'] . '</div>';
   } else {
-     $str .= $vars['items'][0]['#markup'];
+    $str .= $vars['items'][0]['#markup'];
   }
   $str .= '</section>';
   return $str;
@@ -412,7 +411,7 @@ function mediacommons_field__field_tags( $vars ) {
 }
 
 function mediacommons_field__minimal__field_reviewer__review( $vars ) {
-  if ($vars['element']['#view_mode'] == 'teaser'){
+  if ( $vars['element']['#view_mode'] == 'teaser' ) {
     $output ='';
     $output .= '<div class="peoplelist">' ;
     if ( isset( $vars['items'][0]['#title'] ) ) {
@@ -444,7 +443,7 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
   if ( isset( $vars['items'][0]['#title'] ) ) {
     $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
-    $output .= '<span class="h-card">' . drupal_render( $vars['items'][$key] ) . '</span> ';
+      $output .= '<span class="h-card">' . drupal_render( $vars['items'][$key] ) . '</span> ';
     }
   }
   $output .= '</div>';
@@ -452,23 +451,34 @@ function mediacommons_field__field_contributors__spoke( $vars ) {
 }
 
 function mediacommons_field__field_curators_editors( $vars ) {
+
+  $special_body_class = theme_get_setting( 'special_body_class' );
+  if ( is_null( $special_body_class ) ) {
+    $special_body_class = '';
+  }
   $output = '<div class="peoplelist curator">' ;
-  $output .=  '<span class="l">' . $vars['label']. '</span> '  ;
+  if ( $special_body_class === 'imr' ) {
+    $output .=  '<span class="l">' . "Theme week organized by " . '</span> '  ;
+  } else {
+    $output .=  '<span class="l">' . $vars['label']. '</span> '  ;
+  }
+
+
   foreach ( element_children( $vars['items'] ) as $key ) {
     $u = $vars['items'][$key]['#options']['entity'];
-    if (count($u->field_organization) > 0) {
+    if ( count( $u->field_organization ) > 0 ) {
       $tid = $u->field_organization['und'][0]['tid'];
-      $term = taxonomy_term_load($tid); // load term object
-      $term_uri = taxonomy_term_uri($term); // get array with path
-      $term_title =  taxonomy_term_title($term);
+      $term = taxonomy_term_load( $tid ); // load term object
+      $term_uri = taxonomy_term_uri( $term ); // get array with path
+      $term_title =  taxonomy_term_title( $term );
       $term_path = $term_uri['path'];
-      $link = l($term_title,$term_path);
+      $link = l( $term_title, $term_path );
     }
     $output .= '<div class="h-card">';
     $output .= '<span class= "p-name name fn"><a href="'  . $GLOBALS['base_path'] . $vars['items'][$key]['#href'] . '">';
     $output .= $vars['items'][$key]['#title'];
     $output .= '</a></span>';
-    if (!empty($link)){
+    if ( !empty( $link ) ) {
       $output .=  '<span class="p-org">' . $link . '</span>';
     }
     $output .= '</div>';
@@ -489,12 +499,12 @@ function mediacommons_field__field_co_editor( $vars ) {
   return $output;
 }
 
-function mediacommons_preprocess_menu_tree(&$variables) {
+function mediacommons_preprocess_menu_tree( &$variables ) {
   $tree = new DOMDocument();
-  @$tree->loadHTML($variables['tree']);
-  $links = $tree->getElementsByTagname('li');
-  foreach ($links as $link) {
-    $parentname = $link->getAttribute('data-menu-parent-name');
+  @$tree->loadHTML( $variables['tree'] );
+  $links = $tree->getElementsByTagname( 'li' );
+  foreach ( $links as $link ) {
+    $parentname = $link->getAttribute( 'data-menu-parent-name' );
     $level = $link->getAttribute( 'data-level' );
     break;
   }
@@ -530,9 +540,9 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   $element['#attributes']['class'][] = $name_id;//
 
   //  Links
-  if ($element['#original_link']['depth'] == '1') {
+  if ( $element['#original_link']['depth'] == '1' ) {
     // List Items
-    if (in_array( "first", $element['#attributes']['class'])) {
+    if ( in_array( "first", $element['#attributes']['class'] ) ) {
       // SITES NAV  --  LOGIN, MY ACCOUNT
       // This sets the classes for the <li> tag
       $element['#attributes']['class'][] = 'sites_nav';
@@ -543,7 +553,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
     } else {
       // USER UTILITIES --  LOGIN, MY ACCOUNT
       $element['#attributes']['class'][] = 'utils' ;
-      if ($name_id == "myaccount") {
+      if ( $name_id == "myaccount" ) {
         global $user, $base_path;
         if ( user_is_anonymous() ) {
           return;
@@ -552,16 +562,16 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
         $element['#localized_options']['attributes']['class'][] = "login-link";
         $element['#title'] = $user->name;
       }
-      else if ($name_id == "login") {
-        $element['#attributes']['aria-haspopup'] = "true";
-        $element['#attributes']['class'][] = 'logged-out' ;
-        $element['#localized_options']['attributes']['class'][] = "login-link";
-        $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
-        $formLogin = drupal_get_form( 'user_login' );
-        $pop = '<ul class="login-area" aria-hidden="true" style="">
+      else if ( $name_id == "login" ) {
+          $element['#attributes']['aria-haspopup'] = "true";
+          $element['#attributes']['class'][] = 'logged-out' ;
+          $element['#localized_options']['attributes']['class'][] = "login-link";
+          $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
+          $formLogin = drupal_get_form( 'user_login' );
+          $pop = '<ul class="login-area" aria-hidden="true" style="">
         <li role="menuitem">' . render( $formLogin ) . '</li></ul>';
-        return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
-      }
+          return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $pop . "</li>\n";
+        }
     }
     $element['#localized_options']['html'] = true;
   }
@@ -579,7 +589,7 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
     $element['#href'] = get_url_for_mediacommons_site( $element[ '#href'] );
   }
 
-  $output = l( $element['#title'], $element['#href'], $element['#localized_options']);
+  $output = l( $element['#title'], $element['#href'], $element['#localized_options'] );
 
   // Define special variables for use in hook_menu_tree
   //$element['#attributes']['data-menu-parent-name'] = $element['#original_link']['menu_name'];
@@ -587,24 +597,23 @@ function mediacommons_menu_link__menu_mcglobalnav( array $variables ) {
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-function get_url_for_mediacommons_site( $placeholder_url) {
+function get_url_for_mediacommons_site( $placeholder_url ) {
   $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
-
   return mediacommons_utilities_get_root_url() . "/${relative_path}";
 }
 
 function mediacommons_is_pjax() {
-  $is_pjax = &drupal_static('is_pjax');
-  if (!isset($is_pjax) && function_exists('getallheaders')) {
+  $is_pjax = &drupal_static( 'is_pjax' );
+  if ( !isset( $is_pjax ) && function_exists( 'getallheaders' ) ) {
     $headers = getallheaders();
-    if (isset($headers['X-Pjax']) || isset($headers['X-PJAX'])) {
-      drupal_add_http_header('uri', request_uri());
+    if ( isset( $headers['X-Pjax'] ) || isset( $headers['X-PJAX'] ) ) {
+      drupal_add_http_header( 'uri', request_uri() );
       $is_pjax = TRUE;
     }
     else {
       $params = drupal_get_query_parameters();
-      if (isset($params['pjax'])) {
-        drupal_add_http_header('uri', base_path() . request_uri());
+      if ( isset( $params['pjax'] ) ) {
+        drupal_add_http_header( 'uri', base_path() . request_uri() );
         $is_pjax = TRUE;
       }
       else {

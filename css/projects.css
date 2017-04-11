@@ -84,7 +84,7 @@ body.mc [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.mc [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -214,7 +214,7 @@ body.fieldguide [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.fieldguide [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -344,7 +344,7 @@ body.tne [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.tne [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -474,7 +474,7 @@ body.imr [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.imr [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -604,7 +604,7 @@ body.int [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.int [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -734,7 +734,7 @@ body.alt [role="complementary"] .block {
 /* line 112, ../sass/projects.scss */
 body.alt [role="complementary"] .block#block-block-1 {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1485460384') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1491840785') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -821,7 +821,7 @@ body.mc [role="banner"] {
 }
 /* line 7, ../sass/projects/_mc.scss */
 body.mc [role="banner"] .logo {
-  background-image: url('../images/mc-logos/mc.svg?1485460384');
+  background-image: url('../images/mc-logos/mc.svg?1491840785');
   background-size: contain;
   width: 22.5rem;
   height: 4.4rem;
@@ -851,7 +851,7 @@ body.mc footer#footer {
 
 /* line 19, ../sass/projects/_int.scss */
 body.int [role="banner"] .logo {
-  background: url('../images/mc-logos/int.svg?1485460384');
+  background: url('../images/mc-logos/int.svg?1491840785');
   background-repeat: no-repeat;
   background-size: cover;
   width: 33rem;
@@ -986,7 +986,6 @@ body.int .comment time {
 }
 /* line 137, ../sass/projects/_int.scss */
 body.int li.featured-item {
-  background-color: #efefef;
   min-height: 7rem;
 }
 /* line 145, ../sass/projects/_int.scss */
@@ -1076,7 +1075,7 @@ body.int .intransition_full .group-footer {
 
 /* line 7, ../sass/projects/_alt.scss */
 body.alt .logo {
-  background: url('../images/mc-logos/alt.svg?1485460384');
+  background: url('../images/mc-logos/alt.svg?1491840785');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1156,7 +1155,7 @@ body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
   height: 4.8rem;
-  background-image: url('../images/mc-logos/fieldguide.svg?1485460384');
+  background-image: url('../images/mc-logos/fieldguide.svg?1491840785');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1165,7 +1164,7 @@ body.fieldguide .logo {
   body.fieldguide .logo {
     height: 2.5rem;
     padding: 0;
-    background-image: url('../images/mc-logos/fieldguide.svg?1485460384');
+    background-image: url('../images/mc-logos/fieldguide.svg?1491840785');
     background-position: bottom;
     background-size: cover;
     width: 60vw;
@@ -1265,7 +1264,7 @@ body.fieldguide .node-spoke.node-teaser {
 
 /* line 4, ../sass/projects/_tne.scss */
 body.tne .logo {
-  background: url('../images/mc-logos/tne.svg?1485460384');
+  background: url('../images/mc-logos/tne.svg?1491840785');
   background-size: cover;
   background-repeat: no-repeat;
   width: 20rem;
@@ -1294,7 +1293,7 @@ body.tne .node-hub.node-teaser .field-name-field-representative-image {
 
 /* line 6, ../sass/projects/_imr.scss */
 body.imr .logo {
-  background: url('../images/mc-logos/imr.svg?1485460384');
+  background: url('../images/mc-logos/imr.svg?1491840785');
   background-size: cover;
   background-repeat: no-repeat;
   height: 4.7rem;

@@ -1397,8 +1397,8 @@ a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
 
 @font-face {
   font-family: "MediaCommons-Icon-Font";
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1489785091');
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1489785091#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1489785091') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1489785091') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1489785091#MediaCommons-Icon-Font') format('svg');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1491840785');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1491840785#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1491840785') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1491840785') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1491840785#MediaCommons-Icon-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1878,102 +1878,6 @@ nav.global li.sites_nav ul > li > a.menu__link {
 /* line 24, ../sass/modules/main_nav/_main_nav.scss */
 [role="navigation"].main ul li:first-child:before {
   content: "\20";
-}
-
-/*  Flexslider needs to have the flexslider JS library installed in 
-sites/all/libraries in order to work. 
-*/
-/* line 7, ../sass/modules/flexslider/_flexslider.scss */
-.flexslider {
-  border: 0;
-}
-
-/* line 12, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .flex-caption {
-  position: absolute;
-  padding: 5px;
-  background-color: white;
-  color: black;
-  top: 20px;
-}
-/* line 18, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .flex-caption a {
-  color: black;
-  display: block;
-}
-/* line 24, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-project > div {
-  display: inline-block;
-}
-/* line 27, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-project .field-label {
-  text-transform: uppercase;
-}
-/* line 31, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides li {
-  position: relative;
-}
-/* line 34, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides img {
-  width: 100% !important;
-  height: auto !important;
-}
-/* line 38, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .group-meta {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: black;
-  width: 80%;
-  transition: all 0.5s ease;
-}
-/* line 52, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-item {
-  background-color: rgba(255, 255, 255, 0.9);
-  display: inline-block;
-  padding: 5px 5px;
-  margin-bottom: 5px;
-}
-/* line 58, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-project {
-  font-size: .7rem;
-  line-height: 1.2;
-  color: black;
-}
-/* line 67, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-subtitle {
-  font-size: 1.5em;
-  font-size: .9rem;
-}
-/* line 73, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-link {
-  font-size: 1.5rem;
-  line-height: 1.2;
-}
-/* line 77, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-link a:link, ul.slides .field-name-field-link a:visited {
-  color: #111 !important;
-}
-/* line 83, ../sass/modules/flexslider/_flexslider.scss */
-ul.slides .field-name-field-body {
-  font-size: .9rem;
-  line-height: 1.4;
-}
-
-/* line 91, ../sass/modules/flexslider/_flexslider.scss */
-.flex-control-thumbs li {
-  position: relative;
-}
-/* line 93, ../sass/modules/flexslider/_flexslider.scss */
-.flex-control-thumbs li .flex-caption {
-  position: absolute;
-  color: black;
-  bottom: 0px;
-  display: block;
-  pointer-events: none;
-  color: black;
-  display: block;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* line 1, ../sass/modules/taxonomies/_taxonomies.scss */

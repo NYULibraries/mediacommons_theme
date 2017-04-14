@@ -43,7 +43,6 @@ function mediacommons_theme(&$existing, $type, $theme, $path) {
 }
 
 function mediacommons_preprocess_html( &$vars ) {
-  // An anonymous user has a user id of zero.
   $special_body_class   = theme_get_setting( 'special_body_class' );
   if ( mediacommons_is_pjax() ) {
     $vars['theme_hook_suggestions'][] = 'html__pjax';
@@ -243,6 +242,7 @@ function mediacommons_preprocess_node( &$vars ) {
 
 // To do: reconsider this hook.  It may be not longer getting called.
 function mediacommons_preprocess_username( &$variables ) {
+
   $variables['name'] =  check_plain( $variables['name_raw'] );
   $account = $variables['account'];
   $variables['extra'] = '';
@@ -439,10 +439,11 @@ function mediacommons_field__minimal__field_reviewer__review( $vars ) {
 function mediacommons_field__field_contributors__spoke( $vars ) {
   //  Used for spoke teasers and spoke teaser simplest
   $output ='';
-  $output .= '<div class="peoplelist">' ;
+  $output .= '<div class="peoplelist contributors">' ;
   if ( isset( $vars['items'][0]['#title'] ) ) {
     $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
+      
       $output .= '<span class="h-card">' . drupal_render( $vars['items'][$key] ) . '</span> ';
     }
   }

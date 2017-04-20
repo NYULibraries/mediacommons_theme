@@ -364,6 +364,7 @@ function mediacommons_field__field_taxonomy__hub( $vars ) {
   $output .= '</ul></div>';
   return $output;
 }
+
 function mediacommons_field__field_taxonomy__user( $vars ) {
   $output = '<aside role="complementary" class="research_interests">';
   $output .= '<header><h1>' . $vars['label'] . '</h1></header><ul class="tags block">';
@@ -436,8 +437,8 @@ function mediacommons_field__minimal__field_reviewer__review( $vars ) {
   return $output;
 }
 
-function mediacommons_field__field_contributors__spoke( $vars ) {
-  //  Used for spoke teasers and spoke teaser simplest
+function mediacommons_field__field_contributors( $vars ) {
+  //  Used for spoke teasers, spoke teaser simplest, hubs
   $output ='';
   $output .= '<div class="peoplelist contributors">' ;
   if ( isset( $vars['items'][0]['#title'] ) ) {

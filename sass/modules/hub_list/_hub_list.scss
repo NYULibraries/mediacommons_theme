@@ -36,15 +36,8 @@ aside + h2 {
     }
   }
   &.view-mode-full {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    .group-flex1 {
-      // flex: 1 0 400px;
-    }
-    .group-flex2 {
-      // flex: 1 1 auto;
-      // margin-left: 2%;
+    .default-image {
+      display: none;
     }
   }
   &.node-teaser {
@@ -83,11 +76,27 @@ aside + h2 {
   }
 }
 
-.hubhead img {
-  max-width: 100% !important;
-  height: auto;
-  width: 100%;
-  display: block;
+.hubhead {
+  img {
+    max-width: 100% !important;
+    height: auto;
+    width: 100%;
+    display: block;
+  }
+  time {
+    font-size: .9rem;
+  }
+}
+
+.peoplelist.curator {
+  .hubhead & {
+    font-size: .9rem;
+  }
+  span {
+    &::after {
+      content: "";
+    }
+  }
 }
 
 .view-list-of-all-hubs .node-hub.node-teaser {
@@ -145,15 +154,12 @@ aside + h2 {
   }
 }
 
-
-
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: -.1rem;
   padding-top: 0;
   padding-bottom: 0;
   line-height: 1.25;
- 
   a:link,
   a:visited {
     color: nth($black, 1) !important;

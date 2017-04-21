@@ -295,7 +295,9 @@ function mediacommons_field__field_profile_name( $vars ) {
   }
 }
 function mediacommons_field__field_organization( $vars ) {
+  if ( isset( $vars['items'] ) ) {
    return '<span class="p-org org">' . render($vars['items'][0]) . '</span>';
+  }
 }
 function mediacommons_field__field_body__spoke( $vars ) {
   $special_body_class = theme_get_setting( 'special_body_class' );

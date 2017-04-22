@@ -1,9 +1,11 @@
 .view-mode-search_result {
-
-	margin-bottom: 15px;
-	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 15px;
+  border-bottom: 1px solid #ebebeb;
+  &.node-hub {
+    padding: .8em 0;
+  }
 }
+
 .field-name-search-snippet {
-	clear:both;
+  clear: both;
+  font-size: .8rem;
 }

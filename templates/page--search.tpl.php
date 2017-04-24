@@ -9,34 +9,31 @@
 
 <main role="main">
 
-   <?php if ($tabs) : ?>
-  <div class="tabs"><?php print render($tabs); ?></div>
+  <?php if ($tabs) : ?>
+    <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>
 
   <?php if (isset($page['highlighted'])) : ?>
-            <div id="highlighted"><?php print render($page['highlighted']); ?></div>
+    <div id="highlighted"><?php print render($page['highlighted']); ?></div>
   <?php endif; ?>
 
-
- <?php if ($messages) : ?>
-          <?php print $messages; ?>
+  <?php if ($messages) : ?>
+    <?php print $messages; ?>
   <?php endif; ?>
 
-
- <?php if (isset($page['sidebar_basicpage1'])) : ?>
-    <div  class="sidebar_searchresults">
-      <?php print render($page['sidebar_basicpage1']); ?>
+  <div  class="searchresults_hold">
+  <?php if (isset($page['searchresults_sidebar'])) : ?>
+    <div  class="searchresults_sidebar">
+      <?php print render($page['searchresults_sidebar']); ?>
     </div>
   <?php endif; ?>
-
-
-<section id="content">
-  <?php 
-
-    if ($title): print '<h1 class="page-title">' . $title . '</h1>'; endif;
-
-    print render($page['content']); ?> 
-</section>
+     <div class="searchresults_content">
+    <?php 
+       // if ($title): print '<h1 class="page-title">' . $title . '</h1>'; endif;
+      print render($page['searchresults_main']); 
+      print render($page['content']); ?> 
+    </div>
+  </div>
  </main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>

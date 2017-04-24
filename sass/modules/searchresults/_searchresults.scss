@@ -9,3 +9,18 @@
   clear: both;
   font-size: .8rem;
 }
+
+.searchresults_hold {
+	display: flex;
+	flex-wrap: nowrap ;
+	
+ .searchresults_sidebar {
+		flex: 1 0 33%;
+	
+		padding-right: 30px;
+	}
+	.searchresults_content {
+		flex: 1 1 66%;
+		
+	}
+}

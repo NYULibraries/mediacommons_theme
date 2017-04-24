@@ -2288,6 +2288,21 @@ nav.global li.sites_nav ul {
   font-size: .8rem;
 }
 
+/* line 13, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* line 17, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold .searchresults_sidebar {
+  flex: 1 0 33%;
+  padding-right: 30px;
+}
+/* line 22, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold .searchresults_content {
+  flex: 1 1 66%;
+}
+
 /* line 1, ../sass/modules/taxonomies/_taxonomies.scss */
 ul.tags {
   padding: 0;

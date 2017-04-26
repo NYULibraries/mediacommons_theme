@@ -89,32 +89,32 @@ scripts[] = js/mc.js
 ; And you'll use this variable in maintenance-page.tpl.php:
 ;   <?php print $header_top; ?>
 
-regions[globalnav] 		= Global Navigation
-regions[login]     		= Login Area
+
+;regions[login]     		= Login Area
 ;regions[header]         = Header
 ;regions[navigation]     = Navigation bar
-regions[search] 		= Search
-regions[highlighted]    = Highlighted
-regions[messages]       = Messages
-regions[help]           = Help
-regions[content]        = Content
+
 regions[homepage_top]   = Home Page Top
 regions[homepage_bottom]   = Home Page Bottom
 regions[homepage_sidebar]   = Home Page Sidebar
 regions[umb_homepage_top]   = Umbrella Home Page Top
 regions[umb_homepage_bottom]   = Umbrella Home Page Bottom
 regions[umb_homepage_sidebar]   = Umbrella Home Page Sidebar
-regions[sidebar_first]  = First sidebar, for each Cluster page
-regions[sidebar_basicpage1]  = Top sidebar, for each basic page
-regions[sidebar_second] = Second sidebar
-regions[searchresults_main] = Search Results Main
-regions[searchresults_sidebar] = Search Results Sidebar
-
-regions[sidebar_previous_clusters] = Previous Clusters sidebar
+regions[sidebar_first]  = Sidebar, for each Hub page
+regions[sidebar_basicpage1]  = Sidebar, for each basic page
 regions[sidebar_organization] = Sidebar, for Organization page
 regions[sidebar_tagpages] = Sidebar, for Tag page
+regions[searchresults_main] = Search Results Main
+regions[searchresults_sidebar] = Search Results Sidebar 
+regions[globalnav] 		= Global Navigation
+regions[search] 		= Search
+regions[highlighted]    = Highlighted
+regions[messages]       = Messages
+regions[help]           = Help
+regions[content]        = Content
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
+
 
 
 ; The page_top and page_bottom regions are hidden, which means they will not

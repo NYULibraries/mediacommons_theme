@@ -13,7 +13,6 @@
  * @ingroup themeable
  */
 ?>
-
 <div class="peoplelist clearfix <?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="label">by</div> 
  	<?php foreach ($items as $delta => $item): ?>

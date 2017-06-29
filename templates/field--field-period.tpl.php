@@ -46,7 +46,7 @@
 ?>
 
 <time datetime="<?php echo format_date( $element['#items'][0]['value'], 'custom','Y-m-d'); ?>" class="date-display-range" >
-	<?php foreach ($items as $delta => $item): ?>   
-     <?php print render($item); ?>
-    <?php endforeach; ?>
+  <?php foreach ($items as $delta => $item): ?>   
+    <?php print render($item); ?>
+  <?php endforeach; ?>
 </time>

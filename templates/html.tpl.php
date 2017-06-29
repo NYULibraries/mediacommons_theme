@@ -24,9 +24,7 @@
 
 <link rel="shortcut icon" href="<?php print base_path() . path_to_theme(); ?>/favicon.ico" type="image/x-icon" />
  <meta http-equiv="cleartype" content="on">
-
   <?php print $styles; ?>
-
   <?php if ($add_html5_shim and !$add_respond_js): ?>
     <!--[if lt IE 9]>
     <script src="<?php print $base_path . $path_to_zen; ?>/js/html5.js"></script>
@@ -40,7 +38,6 @@
     <script src="<?php print $base_path . $path_to_zen; ?>/js/respond.js"></script>
     <![endif]-->
   <?php endif; ?>
-
     <script type="text/javascript">
       WebFontConfig = {
         google: { families: [ 'Open+Sans:300,400,700:latin', 
@@ -60,16 +57,11 @@
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php if ($skip_link_text && $skip_link_anchor): ?>
-   
-      <a id="skip-link" href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
-  
+    <a id="skip-link" href="#<?php print $skip_link_anchor; ?>" class="element-invisible element-focusable"><?php print $skip_link_text; ?></a>
   <?php endif; ?>
   <?php print $page_top; ?>
   <?php print $page; ?>
   <?php print $scripts; ?>
   <?php print $page_bottom; ?>
-  
-
-  
 </body>
 </html>

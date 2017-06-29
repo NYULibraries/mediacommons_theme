@@ -13,6 +13,6 @@
  * Why doesn't Drupal see this file?  This is called from comments
  */
 ?>
-  <span class="user-picture">
-    <?php print $user_picture; ?>
-  </span>
+<span class="user-picture">
+  <?php print $user_picture; ?>
+</span>

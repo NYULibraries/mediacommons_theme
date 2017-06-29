@@ -44,10 +44,8 @@
  * @ingroup themeable
  */
 ?>
-
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>  
-  	<?php 
-      foreach ($items as $i => $item): 
-      print render($item);
-      endforeach; ?>
+  <?php foreach ($items as $item): ?>      
+    <?php print render($item); ?>
+  <? endforeach; ?>
 </div>

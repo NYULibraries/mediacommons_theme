@@ -66,8 +66,5 @@ if (isset($comment->depth)) {
     $c = $comment->comment_body['und'][0]['safe_value'] ? $comment->comment_body['und'][0]['safe_value'] : $comment->comment_body['und'][0]['value'];
      print "<div class='field-name-comment-body'>" . $c . "</div>";
   ?>
-
-
-
   <?php print render($content['links']) ?>
 </article>

@@ -1,6 +1,10 @@
 $fg_primary: map-get($map, mc);
 $mc-logo: "mc-logos/mc.svg";
 body.mc {
+  [role="main"] {
+    max-width: 84rem;
+    margin: 0em auto 0;
+  }
   [role="banner"] {
     margin: 3.25em auto 3rem;
     max-width: 84rem;

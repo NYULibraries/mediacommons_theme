@@ -1,15 +1,20 @@
 .page-user-register {
- .tabs {
-    display:none;
-  }
   .page-title {
     margin-bottom: 40px;
   }
 }
 
 #user-register-form {
-  max-width: 45rem;
- 
+  max-width: 55rem;
+  input[type],
+  textarea {
+    padding: 5px 10px;
+  }
+  input[type="submit"] {
+    padding: 20px;
+    font-size: 1.1rem;
+    margin-top: 40px;
+  }
   .form-required {
     color: fuchsia;
   }
@@ -18,13 +23,12 @@
   }
   .form-item {
     margin-bottom: 35px;
-
     &.form-type-textarea {
       margin-bottom: 0;
       padding-bottom: 5px;
     }
     &.form-item-field-url-und-0-title {
-       margin-bottom: 0;
+      margin-bottom: 0;
     }
   }
   label {

@@ -3394,50 +3394,57 @@ h1.p-name {
 }
 
 /* line 2, ../sass/modules/registration/_registration.scss */
-.page-user-register .tabs {
-  display: none;
-}
-/* line 5, ../sass/modules/registration/_registration.scss */
 .page-user-register .page-title {
   margin-bottom: 40px;
 }
 
-/* line 10, ../sass/modules/registration/_registration.scss */
+/* line 7, ../sass/modules/registration/_registration.scss */
 #user-register-form {
-  max-width: 45rem;
+  max-width: 55rem;
+}
+/* line 9, ../sass/modules/registration/_registration.scss */
+#user-register-form input[type],
+#user-register-form textarea {
+  padding: 5px 10px;
 }
 /* line 13, ../sass/modules/registration/_registration.scss */
+#user-register-form input[type="submit"] {
+  padding: 20px;
+  font-size: 1.1rem;
+  margin-top: 40px;
+}
+/* line 18, ../sass/modules/registration/_registration.scss */
 #user-register-form .form-required {
   color: fuchsia;
 }
-/* line 16, ../sass/modules/registration/_registration.scss */
+/* line 21, ../sass/modules/registration/_registration.scss */
 #user-register-form .description {
   margin-top: 5px;
 }
-/* line 19, ../sass/modules/registration/_registration.scss */
+/* line 24, ../sass/modules/registration/_registration.scss */
 #user-register-form .form-item {
   margin-bottom: 35px;
 }
-/* line 22, ../sass/modules/registration/_registration.scss */
+/* line 26, ../sass/modules/registration/_registration.scss */
 #user-register-form .form-item.form-type-textarea {
   margin-bottom: 0;
   padding-bottom: 5px;
 }
-/* line 26, ../sass/modules/registration/_registration.scss */
+/* line 30, ../sass/modules/registration/_registration.scss */
 #user-register-form .form-item.form-item-field-url-und-0-title {
   margin-bottom: 0;
 }
-/* line 30, ../sass/modules/registration/_registration.scss */
+/* line 34, ../sass/modules/registration/_registration.scss */
 #user-register-form label {
   padding-bottom: 5px;
   font-weight: bold;
 }
-/* line 34, ../sass/modules/registration/_registration.scss */
+/* line 38, ../sass/modules/registration/_registration.scss */
 #user-register-form .filter-wrapper,
 #user-register-form .filter-guidelines {
   padding: 0;
 }
-/* line 38, ../sass/modules/registration/_registration.scss */
+/* line 42, ../sass/modules/registration/_registration.scss */
 #user-register-form .field-widget-text-textarea {
   margin: 35px 0;
 }

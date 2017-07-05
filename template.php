@@ -152,6 +152,9 @@ function mediacommons_form_element($variables) {
   }
 }
 
+function mediacommons_form_user_register_form_alter(&$form, &$form_state, $form_id) {
+  drupal_set_title(t('Register new account'));
+}
 function mediacommons_form_search_block_form_alter(&$form, &$form_state, $form_id) {
   // HTML5 placeholder attribute
   // Do not change the name attribute, it will break search.

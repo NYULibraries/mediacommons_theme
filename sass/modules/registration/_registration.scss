@@ -1,0 +1,41 @@
+.page-user-register {
+ .tabs {
+    display:none;
+  }
+  .page-title {
+    margin-bottom: 40px;
+  }
+}
+
+#user-register-form {
+  max-width: 45rem;
+ 
+  .form-required {
+    color: fuchsia;
+  }
+  .description {
+    margin-top: 5px;
+  }
+  .form-item {
+    margin-bottom: 35px;
+
+    &.form-type-textarea {
+      margin-bottom: 0;
+      padding-bottom: 5px;
+    }
+    &.form-item-field-url-und-0-title {
+       margin-bottom: 0;
+    }
+  }
+  label {
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  .filter-wrapper,
+  .filter-guidelines {
+    padding: 0;
+  }
+  .field-widget-text-textarea {
+    margin: 35px 0;
+  }
+}

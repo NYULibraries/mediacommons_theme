@@ -21,7 +21,7 @@
   <?php endif; ?>
   <article id="content">
     <?php if ($title) : ?>
-      <h1 class="page-title"><?php print $title ?></h1></h1>
+      <h1 class="page-title"><?php print $title ?></h1>
     <?php endif; ?>
     <?php print render($page['content']); ?>
   </article>

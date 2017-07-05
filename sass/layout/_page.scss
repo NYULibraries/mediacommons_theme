@@ -1,7 +1,6 @@
 //////////////////////////////
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
-
 .skip-to-nav {
   @include respond-to("full navigation") {
     @include element-invisible;
@@ -18,7 +17,6 @@ footer#footer {
     padding: 20px 0;
     width: 100%;
   }
-
   @include respond-to("desktop-lh") {}
 }
 
@@ -27,37 +25,30 @@ html {
     @include type-size($body-font-size);
     // 16px
   }
-
   @include respond-to("extra wide content") {
     @include type-size($body-font-size + 1);
     // 17px
   }
-
   @include respond-to("wide content") {
     @include type-size($body-font-size + 1);
     // 18px
   }
-
   @include respond-to("medium wide content") {
     @include type-size($body-font-size - 1);
     // 15px
   }
-
   @include respond-to("medium content") {
     @include type-size($body-font-size - 1);
     // 15px
   }
-
   @include respond-to("medium only content") {
     @include type-size($body-font-size - 1);
     // 15px
   }
-
   @include respond-to("narrow content") {
     @include type-size($body-font-size - 1);
     // 15px
   }
-
   @include respond-to("mobile content") {
     @include type-size($body-font-size - 1);
     // 15px
@@ -69,37 +60,30 @@ body {
     @include type-size(1rem, $body-line-height);
     // 16px/1.5em
   }
-
   @include respond-to("extra wide content") {
     @include type-size(1rem, $body-line-height + 0);
     // 21px/1.7em
   }
-
   @include respond-to("wide content") {
     @include type-size(1rem, $body-line-height + 0.16666);
     // 18px/1.6666em
   }
-
   @include respond-to("medium wide content") {
     @include type-size(1rem, $body-line-height - 0.1);
     // 15px/1.4em
   }
-
   @include respond-to("medium content") {
     @include type-size(1rem, $body-line-height - 0.1);
     // 14px/1.4em
   }
-
   @include respond-to("medium only content") {
     @include type-size(1rem, $body-line-height - 0.1);
     // 14px/1.4em
   }
-
   @include respond-to("narrow content") {
     @include type-size(1rem, $body-line-height - 0.1);
     // 13px/1.4em
   }
-
   @include respond-to("mobile content") {
     @include type-size(1rem, $body-line-height - 0.16666);
     // 12px/1.333em
@@ -117,7 +101,6 @@ body {
     // padding: 0 3%;
     width: 94%;
   }
-
   @include respond-to("desktop-lh") {
     margin: 3em auto 0;
   }
@@ -159,9 +142,22 @@ body {
     // background-color: blue;
     max-width: ms(17);
   }
-
   h1.page-title {
     margin-bottom: .5rem;
+  }
+}
+
+.messages {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, .03);
+  border-radius: 10px;
+  border: 2px solid gray;
+  line-height: 1.6;
+  &.status {
+    border-color: green;
+    background-color: rgba(0, 255, 0, .03);
   }
 }
 
@@ -173,7 +169,8 @@ body {
   width: 100%;
   max-width: 100%;
   float: none;
-  .spoke-body, section.curators-note {
+  .spoke-body,
+  section.curators-note {
     width: 100%;
     margin: 0;
     @include respond-to("wide") {

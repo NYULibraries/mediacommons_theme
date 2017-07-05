@@ -3449,7 +3449,7 @@ h1.p-name {
   margin: 35px 0;
 }
 
-/* line 5, ../sass/layout/_page.scss */
+/* line 4, ../sass/layout/_page.scss */
 .skip-to-nav {
   position: absolute !important;
   height: 1px;
@@ -3458,25 +3458,25 @@ h1.p-name {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 11, ../sass/layout/_page.scss */
+/* line 10, ../sass/layout/_page.scss */
 footer#footer {
   width: 94.5%;
   max-width: 64rem;
   margin: 3em auto 0;
 }
 
-/* line 25, ../sass/layout/_page.scss */
+/* line 23, ../sass/layout/_page.scss */
 html {
   font-size: 16px;
 }
 
-/* line 67, ../sass/layout/_page.scss */
+/* line 58, ../sass/layout/_page.scss */
 body {
   font-size: 1rem;
   line-height: 1.25;
 }
 
-/* line 109, ../sass/layout/_page.scss */
+/* line 93, ../sass/layout/_page.scss */
 [role="main"] {
   margin: 1em auto 0;
   width: 94.5%;
@@ -3484,7 +3484,7 @@ body {
   margin: 3em auto 0;
 }
 
-/* line 126, ../sass/layout/_page.scss */
+/* line 109, ../sass/layout/_page.scss */
 [role="complementary"] {
   float: none;
   width: 100%;
@@ -3495,16 +3495,16 @@ body {
   float: right;
   clear: none;
 }
-/* line 140, ../sass/layout/_page.scss */
+/* line 123, ../sass/layout/_page.scss */
 [role="complementary"] ul[role="menu"] li > a:first-child {
   width: 25%;
 }
-/* line 143, ../sass/layout/_page.scss */
+/* line 126, ../sass/layout/_page.scss */
 [role="complementary"] ul[role="menu"] li > h3 {
   width: 75%;
 }
 
-/* line 151, ../sass/layout/_page.scss */
+/* line 134, ../sass/layout/_page.scss */
 #content {
   float: none;
   width: 100%;
@@ -3512,20 +3512,37 @@ body {
   width: 60%;
   max-width: 80.37551em;
 }
-/* line 163, ../sass/layout/_page.scss */
+/* line 145, ../sass/layout/_page.scss */
 #content h1.page-title {
   margin-bottom: .5rem;
 }
 
-/* line 168, ../sass/layout/_page.scss */
+/* line 150, ../sass/layout/_page.scss */
+.messages {
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-radius: 10px;
+  border: 2px solid gray;
+  line-height: 1.6;
+}
+/* line 158, ../sass/layout/_page.scss */
+.messages.status {
+  border-color: green;
+  background-color: rgba(0, 255, 0, 0.03);
+}
+
+/* line 164, ../sass/layout/_page.scss */
 .spoke {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   float: none;
 }
-/* line 176, ../sass/layout/_page.scss */
-.spoke .spoke-body, .spoke section.curators-note {
+/* line 172, ../sass/layout/_page.scss */
+.spoke .spoke-body,
+.spoke section.curators-note {
   width: 100%;
   margin: 0;
   max-width: 35.72245em;

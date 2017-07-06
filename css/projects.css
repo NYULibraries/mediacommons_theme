@@ -1354,3 +1354,8 @@ body.imr .field-name-field-representative-image {
   background-position-y: center;
   border: 1px solid #e5e4e4;
 }
+
+/* line 62, ../sass/projects/_imr.scss */
+.not-available {
+  opacity: 0.5;
+}

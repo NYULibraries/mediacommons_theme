@@ -42,5 +42,5 @@
  */
 ?>
 <article id="hometoc" class="toc" role="directory">
-<?php print $content; ?>
+  <?php print $content; ?>
 </article>

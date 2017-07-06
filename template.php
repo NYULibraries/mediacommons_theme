@@ -38,16 +38,22 @@ function mediacommons_theme(&$existing, $type, $theme, $path) {
   return $hooks;
 }
 
-function mediacommons_preprocess_html(&$vars) {
+/**
+ * Implementation of template_preprocess_html().
+ * See: https://api.drupal.org/api/drupal/includes%21theme.inc/function/template_preprocess_html/7.x
+ */
+function mediacommons_preprocess_html(&$variables) {
   $special_body_class = mediacommons_special_body_class();
-  if (mediacommons_is_pjax()) {
-    $vars['theme_hook_suggestions'][] = 'html__pjax';
+  $no_sidebars = array_search('no-sidebars', $variables['classes_array']);
+  $is_pjax = mediacommons_is_pjax();
+  if ($is_pjax) {
+    $variables['theme_hook_suggestions'][] = 'html__pjax';
   }
   if ($special_body_class) {
-    $vars['classes_array'][] = $special_body_class;
+    $variables['classes_array'][] = $special_body_class;
   }
-  if ( ( $key = array_search( 'no-sidebars', $vars['classes_array'] ) ) !== false ) {
-    unset( $vars['classes_array'][$key] );
+  if ($no_sidebars !== false) { // should we test true instead of "!== false"
+    unset($variables['classes_array'][$no_sidebars]);
   }
 }
 
@@ -65,32 +71,36 @@ function mediacommons_preprocess_image_style(&$variables) {
   $variables['attributes']['class'][] = $class;
 }
 
-function mediacommons_user_menu() {
-  $items['user/login'] = array(
-    'title' => 'Join',
-    'access callback' => 'user_is_anonymous',
-    'type' => MENU_DEFAULT_LOCAL_TASK,
-  );
-}
-
 function mediacommons_form($variables) {
   $element = $variables['element'];
-  if ( isset( $element['#action'] ) ) {
-    $element['#attributes']['action'] = drupal_strip_dangerous_protocols( $element['#action'] );
+  if (isset($element['#action'])) {
+    $element['#attributes']['action'] = drupal_strip_dangerous_protocols($element['#action']);
   }
-  element_set_attributes( $element, array( 'method', 'id' ) );
-  if ( empty( $element['#attributes']['accept-charset'] ) ) {
-    $element['#attributes']['accept-charset'] = "UTF-8";
+  element_set_attributes($element, array('method', 'id'));
+  if (empty($element['#attributes']['accept-charset'])) {
+    $element['#attributes']['accept-charset'] = 'UTF-8';
   }
   // remove extraneous div
-  return '<form' . drupal_attributes( $element['#attributes'] ) . '>' . $element['#children'] . '</form>';
+  return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
 }
 
+// Working with this one
 function mediacommons_form_element($variables) {
+  
+  dpr(__FUNCTION__);
+
+  $output = '';
+
   $element = $variables['element'];
+  
   $prefix = isset( $element['#field_prefix'] ) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
+  
   $suffix = isset( $element['#field_suffix'] ) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
-  if ( isset( $element['#name'] ) && $element['#name']!='search_block_form' ) {
+
+  $name = isset($element['#name']) ? $element['#name'] : NULL;
+  
+  if ($name != 'search_block_form') {
+    dpr('Inside test');
     // This function is invoked as theme wrapper, but the rendered form element
     // may not necessarily have been processed by form_builder().
     $element += array(
@@ -119,42 +129,42 @@ function mediacommons_form_element($variables) {
     if ( !isset( $element['#title'] ) ) {
       $element['#title_display'] = 'none';
     }
+
     switch ( $element['#title_display'] ) {
-    case 'before':
-    case 'invisible':
-      $output .= ' ' . theme( 'form_element_label', $variables );
-      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
-      break;
-    case 'after':
-      $output .= ' ' . $prefix . $element['#children'] . $suffix;
-      $output .= ' ' . theme( 'form_element_label', $variables ) . "\n";
-      break;
-    case 'none':
-    case 'attribute':
-      // Output no label and no required marker, only the children.
-      $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
-      break;
+      case 'before':
+      case 'invisible':
+        $output .= ' ' . theme( 'form_element_label', $variables );
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+        break;
+      case 'after':
+        $output .= ' ' . $prefix . $element['#children'] . $suffix;
+        $output .= ' ' . theme( 'form_element_label', $variables ) . "\n";
+        break;
+      case 'none':
+      case 'attribute':
+        // Output no label and no required marker, only the children.
+        $output .= ' ' . $prefix . $element['#children'] . $suffix . "\n";
+        break;
     }
 
-    if ( !empty( $element['#description'] ) ) {
+    if (!empty( $element['#description'])) {
       $output .= '<div class="description">' . $element['#description'] . "</div>\n";
     }
 
-    $output .= "</div>\n";
+    $output .= "</div>";
 
-    return $output;
-
-  } else {
-    // Search Only
-    // Output no label and no required marker, only the children.
-    $output = ' ' . $prefix . $element['#children'] . $suffix . "\n";
-    return $output;
   }
+  else {
+    // Search Only; output no label and no required marker, only the children.
+    $output = ' ' . $prefix . $element['#children'] . $suffix . "\n";
+  }
+  return $output;
 }
 
 function mediacommons_form_user_register_form_alter(&$form, &$form_state, $form_id) {
   drupal_set_title(t('Register new account'));
 }
+
 function mediacommons_form_search_block_form_alter(&$form, &$form_state, $form_id) {
   // HTML5 placeholder attribute
   // Do not change the name attribute, it will break search.
@@ -164,36 +174,29 @@ function mediacommons_form_search_block_form_alter(&$form, &$form_state, $form_i
 }
 
 function mediacommons_form_comment_node_spoke_form_alter(&$form, &$form_state, $form_id) {
-  
   $form['subject']['#size'] = "auto";
   $form['comment_preview']['#weight'] = -5;
   $form['comment_output_below']['#weight'] = -10;
-
   $form['aa_comment'] = array(
     '#type' => 'fieldset',
     '#title' => NULL,
     '#collapsible' => FALSE,
     '#weight' => 10,
   );
-
   // Author
   $form['aa_comment']['author'] = $form['author'];
-  unset( $form['author'] );
-
+  unset($form['author']);
   $form['aa_comment']['author']['#weight'] = -10;
-
   // Subject
   $form['aa_comment']['subject'] = $form['subject'];
-  unset( $form['subject'] );
+  unset($form['subject']);
   $form['aa_comment']['subject']['#weight'] = -1;
-
   // Comment
   $form['aa_comment']['comment_body'] = $form['comment_body'];
-  unset( $form['comment_body'] );
-
+  unset($form['comment_body']);
   // Actions
   $form['aa_comment']['actions'] = $form['actions'];
-  unset( $form['actions'] );
+  unset($form['actions']);
 }
 
 function mediacommons_form_user_login_alter(&$form, &$form_state, $form_id) {
@@ -210,34 +213,31 @@ function mediacommons_form_user_login_block_alter(&$form, &$form_state, $form_id
   mediacommons_form_user_login_alter($form, $form_state, $form_id);
 }
 
-/** See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 */
+/** 
+ * Implementation of template_preprocess_html().
+ * See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 
+ */
 function mediacommons_preprocess_page(&$vars) {
-  
   $special_body_class = mediacommons_special_body_class();
-  
-  if (mediacommons_is_pjax()) {
+  $is_pjax = mediacommons_is_pjax();
+  if ($is_pjax) {
     $vars['theme_hook_suggestions'][] = 'page__pjax';
   }
-
   if (isset( $vars['node'])) {
     $vars['theme_hook_suggestions'][] = 'page__'. $vars['node']->type;
   }
-
   if ( isset( $vars['page']['content']['system_main']['no_content'] ) ) {
     unset( $vars['page']['content']['system_main']['no_content'] );
   }
-
   if ( arg( 0 ) == 'taxonomy' && arg( 1 ) == 'term' && is_numeric( arg( 2 ) ) ) {
     $term = taxonomy_term_load( arg( 2 ) );
     $vars['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
-
   if ( $special_body_class == 'mc' ) {
     if ( in_array( "page__front", $vars['theme_hook_suggestions'] ) ) {
       $vars['theme_hook_suggestions'][] = 'page__front__mc';
     }
   }
-
   if ( $special_body_class == 'int' ) {
     if ( in_array( "page__spoke", $vars['theme_hook_suggestions'] ) ) {
       $vars['theme_hook_suggestions'][] = 'page__spoke__int';
@@ -245,13 +245,25 @@ function mediacommons_preprocess_page(&$vars) {
   }
 }
 
-function mediacommons_preprocess_node(&$vars) {
+/** 
+ * Implementation of template_preprocess_node().
+ * See: https://api.drupal.org/api/drupal/modules%21node%21node.module/function/template_preprocess_node/7.x
+ */
+function mediacommons_preprocess_node(&$variables) {
+  // Node Object
+  $node = $variables['node'];
+  // Entity API
+  $wrapper = entity_metadata_wrapper('node', $node);
+  // Unified way of getting $node->type
+  $bundle = $wrapper->getBundle();
+  // Check for a PJAX request
+  $is_pjax = mediacommons_is_pjax();
   // give project names as classes to the items on the umbrella site front page
-  if ($vars['type'] == 'front_page_post') {
-    $vars['classes_array'][] =  'node-' . $vars['field_project'][0]['value'];
+  if ($bundle == 'front_page_post') {
+    $variables['classes_array'][] =  'node-' . $wrapper->field_project->value();
   }
-  if (mediacommons_is_pjax()) {
-    $vars['theme_hook_suggestions'][] = 'node__pjax';
+  if ($is_pjax) {
+    $variables['theme_hook_suggestions'][] = 'node__pjax';
   }
 }
 
@@ -472,7 +484,7 @@ function mediacommons_field__field_contributors($vars) {
 }
 
 function mediacommons_field__field_curators_editors($vars) {
-  $special_body_class = theme_get_setting('special_body_class');
+  $special_body_class = mediacommons_special_body_class();
   $output = '<div class="peoplelist curator">' ;
   if ($special_body_class === 'imr') {
     $output .=  '<span class="l">Theme week organized by </span>';
@@ -642,17 +654,17 @@ function mediacommons_is_pjax() {
 }
 
 function mediacommons_preprocess_block(&$variables) {
-	 $specialBodyClass   = theme_get_setting( 'special_body_class' );
-   $variables['theme_hook_suggestions'][] = 'block__' . $variables['block']->region . "__" . $specialBodyClass;
-   $variables['classes_array'][] = "mc-".$specialBodyClass;
+   $special_body_class = mediacommons_special_body_class();
+   $variables['theme_hook_suggestions'][] = 'block__' . $variables['block']->region . "__" . $special_body_class;
+   $variables['classes_array'][] = "mc-" . $special_body_class;
    /* this will show a block's parent view; otherwise not straightforward in Drupal */
    $pos = strrpos($variables['block']->delta,  "-");
    $variables['classes_array'][] =   substr($variables['block']->delta, 0, $pos)  ; 
 }
 
 function mediacommons_preprocess_field(&$variables) {
-	$specialBodyClass   = theme_get_setting( 'special_body_class' );
-	$variables['classes_array'][] = "mc-".$specialBodyClass;
+	$special_body_class = mediacommons_special_body_class();
+	$variables['classes_array'][] = "mc-" . $special_body_class;
 	if($variables['element']['#field_name'] == 'field_representative_image') {
     if( !empty($variables['element']['#field_type'])
       && !empty($variables['items'][0]['#item']['is_default'])
@@ -661,18 +673,15 @@ function mediacommons_preprocess_field(&$variables) {
         $variables['classes_array'][] = 'default-image';
     }
   }
-
 }
 
 function mediacommons_comment_post_forbidden($variables) {
   global $user;
-  
+  // Node object
   $node = $variables['node'];
-
   // Since this is expensive to compute, we cache it so that a page with many
   // comments only has to query the database once for all the links.
   $authenticated_post_comments = &drupal_static(__FUNCTION__, NULL); // aof1 move from here
-
   if (!$user->uid) {
     if (!isset($authenticated_post_comments)) {
       // We only output a link if we are certain that users will get permission
@@ -719,17 +728,10 @@ function mediacommons_preprocess_comment(&$variables) {
     $term_title =  taxonomy_term_title($term);
     $term_path = $term_uri['path'];
     $string = "Organization: " . $term_title;
-    //$term_attributes = array('title' => $string);
-
     $term_attributes = array('attributes'=>array('title'=>$string));
-
-
     $link = l($term_title,$term_path, $term_attributes );
     $variables['organization'] = $link;
   }
-
-
-
   $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');
   $variables['createdmachine'] = format_date($comment->created, 'custom', 'Y-m-j');
   // Avoid calling format_date() twice on the same timestamp.
@@ -788,6 +790,7 @@ function mediacommons_preprocess_comment(&$variables) {
     }
   }
 }
+
 function mediacommons_special_body_class() {
   $special_body_class = &drupal_static('special_body_class');
   if (!isset($special_body_class)) {

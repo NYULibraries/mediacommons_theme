@@ -11,7 +11,11 @@
 ?>
 <div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
 	<?php if (!empty($block->subject)): ?>
-  <div class="blockheader"><div><?php print $block->subject; ?></div></div>
-<?php endif; ?>
-<?php print $content; ?>
+    <div class="blockheader">
+      <div>
+        <?php print $block->subject; ?>
+      </div>
+    </div>
+  <?php endif; ?>
+  <?php print $content; ?>
 </div>

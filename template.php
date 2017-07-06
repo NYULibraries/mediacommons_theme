@@ -296,14 +296,6 @@ function mediacommons_preprocess_username(&$variables) {
 /**
  * Begin User Profiles
  */
-function mediacommons_field__minimal__ds_user_picture($vars) {
-  // Retrieve the user picture string and regex the link away
-  if ( isset( $vars['items'][0]['#markup'] ) ) {
-    $string = $vars['items'][0]['#markup'];
-    $string2 = preg_replace( '#<a.*?>(.*?)</a>#i', '\1', $string ) ;
-    return $string2;
-  }
-}
 
 function mediacommons_field__field_profile_name($vars) {
   if (isset( $vars['items'])) {

@@ -10,7 +10,7 @@
 <?php
 
 /**
- * Why doesn't Drupal see this file?  This is called from comments
+ *  This is the profile pic used in comments
  */
 ?>
 <span class="user-picture">

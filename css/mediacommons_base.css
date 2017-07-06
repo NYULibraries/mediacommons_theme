@@ -4126,32 +4126,37 @@ footer#footer {
   padding: 20px;
   margin-bottom: 20px;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, 0.03);
   border-radius: 10px;
-  border: 2px solid gray;
   line-height: 1.6;
+  border: 2px solid gray;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 /* line 158, ../sass/layout/_page.scss */
 .messages.status {
   border-color: green;
   background-color: rgba(0, 255, 0, 0.03);
 }
+/* line 162, ../sass/layout/_page.scss */
+.messages.error {
+  border-color: #FF00FF;
+  background-color: rgba(255, 0, 255, 0.03);
+}
 
-/* line 164, ../sass/layout/_page.scss */
+/* line 168, ../sass/layout/_page.scss */
 .spoke {
   margin: 0 auto;
   width: 100%;
   max-width: 100%;
   float: none;
 }
-/* line 172, ../sass/layout/_page.scss */
+/* line 176, ../sass/layout/_page.scss */
 .spoke .spoke-body,
 .spoke section.curators-note {
   width: 100%;
   margin: 0;
 }
 @media (min-width: 801px) {
-  /* line 172, ../sass/layout/_page.scss */
+  /* line 176, ../sass/layout/_page.scss */
   .spoke .spoke-body,
   .spoke section.curators-note {
     max-width: 35.72245em;

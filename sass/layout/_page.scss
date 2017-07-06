@@ -151,13 +151,17 @@ body {
   padding: 20px;
   margin-bottom: 20px;
   font-size: 1.2rem;
-  background-color: rgba(0, 0, 0, .03);
   border-radius: 10px;
-  border: 2px solid gray;
   line-height: 1.6;
+  border: 2px solid gray;
+  background-color: rgba(0, 0, 0, .03);
   &.status {
     border-color: green;
     background-color: rgba(0, 255, 0, .03);
+  }
+  &.error {
+    border-color: #FF00FF;
+    background-color: rgba(255, 0, 255, .03);
   }
 }
 

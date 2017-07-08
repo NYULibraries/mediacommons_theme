@@ -87,8 +87,6 @@ function mediacommons_form($variables) {
 // Working with this one
 function mediacommons_form_element($variables) {
   
-  dpr(__FUNCTION__);
-
   $output = '';
 
   $element = $variables['element'];
@@ -100,7 +98,7 @@ function mediacommons_form_element($variables) {
   $name = isset($element['#name']) ? $element['#name'] : NULL;
   
   if ($name != 'search_block_form') {
-    dpr('Inside test');
+
     // This function is invoked as theme wrapper, but the rendered form element
     // may not necessarily have been processed by form_builder().
     $element += array(

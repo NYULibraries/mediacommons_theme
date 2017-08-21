@@ -109,8 +109,7 @@
       [role="complementary"] {
         .block {
           background-color: lighten(nth($tertiary, 5), 3%);
-          &#block-block-1 {
-            // twitter widget
+          &.twitter-block {
             border-radius: 4px;
             background: #292F33 image-url("ui/ring.svg") no-repeat center 75px;
             min-height: 600px;

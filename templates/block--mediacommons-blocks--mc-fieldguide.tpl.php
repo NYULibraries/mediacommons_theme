@@ -9,7 +9,7 @@
  * MC Umbrella homepage widget -- list of items from Fieldguide
  */
 ?>
-<div id="<?php print $block_html_id; ?>" class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<div id="block-mediacommons-blocks-mc-fieldguide" class="fieldguide_toc <?php print $classes; ?>"<?php print $attributes; ?>>
 	<?php if (!empty($block->subject)): ?>
     <div class="blockheader">
       <div>

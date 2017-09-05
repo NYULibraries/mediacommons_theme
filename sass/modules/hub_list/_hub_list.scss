@@ -1,8 +1,9 @@
 /* MODULES: Component styles that are layout independent */
 
-aside + h2 {
+aside+h2 {
   clear: both;
 }
+
 
 
 /*****************************/
@@ -51,8 +52,7 @@ aside + h2 {
       min-width: 300px;
     }
     .group-flex2 {
-      flex: 1 0 64%;
-      // min-width: 500px;
+      flex: 1 0 64%; // min-width: 500px;
     }
     &:first-child {
       // padding: 0 0 1em;
@@ -154,7 +154,19 @@ aside + h2 {
   }
 }
 
-h2.spoke-title {
+.thumb {
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+}
+
+.spoke-title {
   font-size: 1.1rem;
   margin-top: -.1rem;
   padding-top: 0;
@@ -195,14 +207,13 @@ h2.spoke-title {
     }
     a:link,
     a:visited {
-      color: #5a5a5a;
-      //font-size: .8rem;
+      color: #5a5a5a; //font-size: .8rem;
     }
   }
 }
 
 .view-list-of-all-hubs {
-  > header {
+  >header {
     float: left;
     line-height: 1rem;
     font-size: .8rem;

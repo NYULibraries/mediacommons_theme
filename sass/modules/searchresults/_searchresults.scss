@@ -5,22 +5,51 @@
   }
 }
 
+.mc-searchresults {
+
+  .node-spoke.node-teaser {
+    position: relative;
+    overflow: hidden;
+    padding: 10px 0 25px 10px;
+   // border-top-width: 2px;
+  }
+  .spoke-title {
+    margin-top: 0;
+    a {
+      display: block;
+      padding: 0px ;
+    }
+  }
+  .search-snippet-info {
+    padding: 0px;
+    margin: 0;
+  }
+  .thumb {
+  	//border: 1px solid #ddd;
+    width: 80px;
+   	height:auto;
+    img {
+    	max-width: 100%;
+    	height:auto;
+    }
+  }
+}
+
 .field-name-search-snippet {
   clear: both;
   font-size: .8rem;
 }
 
 .searchresults_hold {
-	display: flex;
-	flex-wrap: nowrap ;
-	
- .searchresults_sidebar {
-		flex: 1 0 33%;
-	
-		padding-right: 30px;
-	}
-	.searchresults_content {
-		flex: 1 1 66%;
-		
-	}
+  display: flex;
+  flex-wrap: nowrap;
+
+  .searchresults_sidebar {
+    flex: 1 0 33%;
+
+    padding-right: 30px;
+  }
+  .searchresults_content {
+    flex: 1 1 66%;
+  }
 }

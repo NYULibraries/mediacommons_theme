@@ -1,3 +1,7 @@
+.profile h3 {
+  border-bottom: none;
+}
+
 .view-mode-search_result {
   border-bottom: 1px solid #ebebeb;
   &.node-hub {
@@ -6,18 +10,35 @@
 }
 
 .mc-searchresults {
+  .spoke-teaser-meta {
+    font-size: .9rem;
+  }
 
-  .node-spoke.node-teaser {
+  .search-result {
     position: relative;
     overflow: hidden;
-    padding: 10px 0 25px 10px;
-   // border-top-width: 2px;
+    padding: 10px 0 10px 0px;
+    border-top-width: 0px;
+    .field-name-field-project {
+      display: none;
+    }
+    &:first-child {
+      border-top-width: 4px;
+      padding-top: 30px;
+      margin-top: 20px;
+      .field-name-field-project {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
   }
+
   .spoke-title {
-    margin-top: 0;
+    margin-top: 0; //overwrite border created in user.css
+    border-bottom: none;
     a {
       display: block;
-      padding: 0px ;
+      padding: 0px;
     }
   }
   .search-snippet-info {
@@ -25,12 +46,12 @@
     margin: 0;
   }
   .thumb {
-  	//border: 1px solid #ddd;
+    //border: 1px solid #ddd;
     width: 80px;
-   	height:auto;
+    height: auto;
     img {
-    	max-width: 100%;
-    	height:auto;
+      max-width: 100%;
+      height: auto;
     }
   }
 }
@@ -52,4 +73,34 @@
   .searchresults_content {
     flex: 1 1 66%;
   }
+}
+
+.field-name-user-content,
+.field-name-user-comments {
+  .field-label {
+    display: none;
+  }
+}
+
+.mc-searchresults .node-hub {
+
+  &.node-sresults {
+    .hub-title {
+      padding-top: 0;
+      font-size: 1.1rem;
+      line-height: 1.25;
+    }
+    .thumb {
+      width: 120px;
+      height: auto;
+    }
+  }
+}
+
+.content-type:after {
+  content: "Theme Week:";
+}
+
+.peoplelist.curator .curatorlabel:after {
+  content: "Theme week organized by ";
 }

@@ -7,10 +7,9 @@
   @import "color-schemer";
   @import "respond-to";
   @import "breakpoint";
-  @import "layout/breakpoints/_breakpoints";
-  /// homepage -- hub -- credits under title
+  @import "layout/breakpoints/_breakpoints"; /// homepage -- hub -- credits under title
   $homepage-credits: 0.75rem !default;
-  $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d); 
+  $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
   $black-value: #333333;
   $black: tint-stack($black-value);
   $type-color-value: #232323;
@@ -129,11 +128,10 @@
           // color: nth($tertiary, 1);
           color: nth($black, 4);
         }
-      }
-      .pager a:active {
-        color: #fff;
-        background-color: $primary-color;
-      }
+      } // .pager a:active {
+      //   color: #fff;
+      //   background-color: $primary-color;
+      // }
     }
   }
 
@@ -172,26 +170,27 @@
     }
   }
 
-  .view-mode-teaser {
-    .field-name-field-project {
-      position: absolute;
-      z-index: 1;
-      top: -2px;
-      left: 0px;
-      display: inline-block;
-      float: left;
-      padding: 1px 13px 2px;
-      text-transform: uppercase;
-      font-size: .85rem;
-      line-height: 1.3;
-      color: rgba(255, 255, 255, .7);
-      a:link, a:visited {
-       color: rgba(255, 255, 255, .7);
-      }
+
+  .field-name-field-project {
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: 0px;
+    display: inline-block;
+    float: left;
+    padding: 1px 13px 2px;
+    text-transform: uppercase;
+    font-size: .85rem;
+    line-height: 1.3;
+    color: rgba(255, 255, 255, .7) !important;
+    a:link,
+    a:visited {
+      color: rgba(255, 255, 255, .7) !important;
     }
   }
 
- 
+
+
 
   @import "projects/mc";
   @import "projects/int";

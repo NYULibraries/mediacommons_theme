@@ -54,6 +54,27 @@
       height: auto;
     }
   }
+  .node-hub {
+
+    &.node-sresults {
+      .hub-title {
+        padding-top: 0;
+        font-size: 1.1rem;
+        line-height: 1.25;
+      }
+      .thumb {
+        width: 120px;
+        height: auto;
+      }
+    }
+  }
+}
+
+.field-name-user-content,
+.field-name-user-comments {
+  .field-label {
+    display: none;
+  }
 }
 
 .field-name-search-snippet {
@@ -72,28 +93,6 @@
   }
   .searchresults_content {
     flex: 1 1 66%;
-  }
-}
-
-.field-name-user-content,
-.field-name-user-comments {
-  .field-label {
-    display: none;
-  }
-}
-
-.mc-searchresults .node-hub {
-
-  &.node-sresults {
-    .hub-title {
-      padding-top: 0;
-      font-size: 1.1rem;
-      line-height: 1.25;
-    }
-    .thumb {
-      width: 120px;
-      height: auto;
-    }
   }
 }
 

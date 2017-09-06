@@ -2332,52 +2332,51 @@ nav.global li.sites_nav ul {
   max-width: 100%;
   height: auto;
 }
-
-/* line 59, ../sass/modules/searchresults/_searchresults.scss */
-.field-name-search-snippet {
-  clear: both;
-  font-size: .8rem;
-}
-
-/* line 64, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold {
-  display: flex;
-  flex-wrap: nowrap;
-}
-/* line 68, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold .searchresults_sidebar {
-  flex: 1 0 33%;
-  padding-right: 30px;
-}
-/* line 73, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold .searchresults_content {
-  flex: 1 1 66%;
-}
-
-/* line 80, ../sass/modules/searchresults/_searchresults.scss */
-.field-name-user-content .field-label,
-.field-name-user-comments .field-label {
-  display: none;
-}
-
-/* line 88, ../sass/modules/searchresults/_searchresults.scss */
+/* line 60, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub.node-sresults .hub-title {
   padding-top: 0;
   font-size: 1.1rem;
   line-height: 1.25;
 }
-/* line 93, ../sass/modules/searchresults/_searchresults.scss */
+/* line 65, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub.node-sresults .thumb {
   width: 120px;
   height: auto;
 }
 
-/* line 100, ../sass/modules/searchresults/_searchresults.scss */
+/* line 75, ../sass/modules/searchresults/_searchresults.scss */
+.field-name-user-content .field-label,
+.field-name-user-comments .field-label {
+  display: none;
+}
+
+/* line 80, ../sass/modules/searchresults/_searchresults.scss */
+.field-name-search-snippet {
+  clear: both;
+  font-size: .8rem;
+}
+
+/* line 85, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold {
+  display: flex;
+  flex-wrap: nowrap;
+}
+/* line 89, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold .searchresults_sidebar {
+  flex: 1 0 33%;
+  padding-right: 30px;
+}
+/* line 94, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_hold .searchresults_content {
+  flex: 1 1 66%;
+}
+
+/* line 99, ../sass/modules/searchresults/_searchresults.scss */
 .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 104, ../sass/modules/searchresults/_searchresults.scss */
+/* line 103, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:after {
   content: "Theme week organized by ";
 }

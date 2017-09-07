@@ -1939,51 +1939,76 @@ nav.global li.sites_nav ul > li > a.menu__link {
   max-width: 100%;
   height: auto;
 }
-/* line 60, ../sass/modules/searchresults/_searchresults.scss */
-.mc-searchresults .node-hub.node-sresults .hub-title {
+/* line 58, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-hub .hub-title {
   padding-top: 0;
   font-size: 1.1rem;
   line-height: 1.25;
 }
-/* line 65, ../sass/modules/searchresults/_searchresults.scss */
-.mc-searchresults .node-hub.node-sresults .thumb {
+/* line 63, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-hub .thumb {
   width: 120px;
   height: auto;
 }
+/* line 69, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-comment .peoplelist, .mc-searchresults .node-comment time {
+  font-size: .85rem;
+}
+/* line 72, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-comment .referenced-node {
+  font-size: .9rem;
+}
+/* line 74, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-comment .referenced-node a:link,
+.mc-searchresults .node-comment .referenced-node a:hover,
+.mc-searchresults .node-comment .referenced-node a:active {
+  color: inherit;
+}
+/* line 80, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-comment .comment-body {
+  font-size: .85rem;
+  margin-top: .2rem;
+}
+/* line 84, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults .node-comment .comment-title {
+  padding: 0;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
 
-/* line 75, ../sass/modules/searchresults/_searchresults.scss */
+/* line 94, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-user-content .field-label,
 .field-name-user-comments .field-label {
   display: none;
 }
 
-/* line 80, ../sass/modules/searchresults/_searchresults.scss */
+/* line 99, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-search-snippet {
   clear: both;
   font-size: .8rem;
 }
 
-/* line 85, ../sass/modules/searchresults/_searchresults.scss */
+/* line 104, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 89, ../sass/modules/searchresults/_searchresults.scss */
+/* line 108, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_sidebar {
   flex: 1 0 33%;
   padding-right: 30px;
 }
-/* line 94, ../sass/modules/searchresults/_searchresults.scss */
+/* line 113, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_content {
   flex: 1 1 66%;
 }
 
-/* line 99, ../sass/modules/searchresults/_searchresults.scss */
+/* line 118, ../sass/modules/searchresults/_searchresults.scss */
 .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 103, ../sass/modules/searchresults/_searchresults.scss */
+/* line 122, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:after {
   content: "Theme week organized by ";
 }

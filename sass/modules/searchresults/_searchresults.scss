@@ -55,17 +55,36 @@
     }
   }
   .node-hub {
-
-    &.node-sresults {
-      .hub-title {
-        padding-top: 0;
-        font-size: 1.1rem;
-        line-height: 1.25;
+    .hub-title {
+      padding-top: 0;
+      font-size: 1.1rem;
+      line-height: 1.25;
+    }
+    .thumb {
+      width: 120px;
+      height: auto;
+    }
+  }
+  .node-comment {
+    .peoplelist, time {
+      font-size: .85rem;
+    }
+    .referenced-node {
+       font-size: .9rem;
+      a:link,
+      a:hover,
+      a:active {
+        color: inherit;
       }
-      .thumb {
-        width: 120px;
-        height: auto;
-      }
+    }
+    .comment-body {
+      font-size: .85rem;
+      margin-top: .2rem;
+    }
+    .comment-title {
+      padding:0;
+      font-size: 1.1rem;
+      line-height: 1.4;
     }
   }
 }

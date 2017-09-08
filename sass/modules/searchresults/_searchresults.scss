@@ -13,22 +13,33 @@
   .spoke-teaser-meta {
     font-size: .9rem;
   }
-
+  .search-result.node-spoke.node-teaser {
+    /* overriding defaults set elsewhere */
+    padding: 30px 0 10px 0px;
+    margin-top: 30px;
+  }
   .search-result {
     position: relative;
     overflow: hidden;
-    padding: 10px 0 10px 0px;
+
     border-top-width: 0px;
+    border-top-width: 4px;
+    padding: 30px 0 10px 0px;
+    margin-top: 30px;
     .field-name-field-project {
-      display: none;
+      /* style for first of a series of project items */
+      display: block;
+      margin-bottom: 10px;
     }
-    &:first-child {
-      border-top-width: 4px;
-      padding-top: 30px;
-      margin-top: 20px;
+    &.node-imr~.node-imr,
+    &.node-fieldguide~.node-fieldguide,
+    &.node-alt~.node-alt,
+    &.node-int~.node-int {
+      border-top-width: 0px;
+      padding-top: 0px;
+      margin-top: 5px;
       .field-name-field-project {
-        display: block;
-        margin-bottom: 10px;
+        display: none;
       }
     }
   }
@@ -66,11 +77,12 @@
     }
   }
   .node-comment {
-    .peoplelist, time {
+    .peoplelist,
+    time {
       font-size: .85rem;
     }
     .referenced-node {
-       font-size: .9rem;
+      font-size: .9rem;
       a:link,
       a:hover,
       a:active {
@@ -82,7 +94,7 @@
       margin-top: .2rem;
     }
     .comment-title {
-      padding:0;
+      padding: 0;
       font-size: 1.1rem;
       line-height: 1.4;
     }
@@ -90,6 +102,7 @@
 }
 
 .field-name-user-content,
+.field-name-user-content-hubs,
 .field-name-user-comments {
   .field-label {
     display: none;
@@ -115,10 +128,14 @@
   }
 }
 
-.content-type:after {
+.peoplelist.curator .curatorlabel:after {
+  content: "Curated by ";
+}
+
+.node-imr .content-type:after {
   content: "Theme Week:";
 }
 
-.peoplelist.curator .curatorlabel:after {
+.node-imr .peoplelist.curator .curatorlabel:after {
   content: "Theme week organized by ";
 }

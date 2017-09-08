@@ -804,38 +804,47 @@ body .hub-title a:visited {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-/* line 4, ../sass/projects/_mc.scss */
+/* line 5, ../sass/projects/_mc.scss */
 body.mc [role="main"] {
   max-width: 84rem;
   margin: 0em auto 0;
 }
-/* line 8, ../sass/projects/_mc.scss */
+/* line 9, ../sass/projects/_mc.scss */
 body.mc [role="banner"] {
   margin: 3.25em auto 3rem;
   max-width: 84rem;
 }
-/* line 11, ../sass/projects/_mc.scss */
+/* line 12, ../sass/projects/_mc.scss */
 body.mc [role="banner"] .logo {
   background-image: url('../images/mc-logos/mc.svg?1500494969');
   background-size: contain;
   width: 22.5rem;
   height: 4.4rem;
 }
-/* line 18, ../sass/projects/_mc.scss */
+/* line 19, ../sass/projects/_mc.scss */
 body.mc footer#footer {
   max-width: 84rem;
   margin: 3em auto 0;
 }
+/* line 24, ../sass/projects/_mc.scss */
+body.mc [role="complementary"] > div,
+body.mc [role="complementary"] .block {
+  background-color: #e8e8e8;
+}
+/* line 28, ../sass/projects/_mc.scss */
+body.mc [role="complementary"] header {
+  background-color: #cccccc;
+}
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 23, ../sass/projects/_mc.scss */
+  /* line 33, ../sass/projects/_mc.scss */
   body.mc [role="banner"] {
     margin: 3.25em auto 1rem;
   }
-  /* line 25, ../sass/projects/_mc.scss */
+  /* line 35, ../sass/projects/_mc.scss */
   body.mc [role="banner"] h1 {
     margin-left: 3%;
   }
-  /* line 28, ../sass/projects/_mc.scss */
+  /* line 38, ../sass/projects/_mc.scss */
   body.mc [role="banner"] .logo {
     width: 60vw;
     max-width: 700px;

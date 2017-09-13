@@ -17,7 +17,7 @@
     // Bug corroborated here: http://drupal.stackexchange.com/questions/85124/how-to-show-log-in-or-register-to-post-comments-message-when-no-comments-on-co
     $log_in_link = NULL;
     $register_link = NULL;
-    $comments_link = NULL;
+    $comments_link = FALSE;
     if (user_is_anonymous() && $comment_count == 0) {
       $comments_link = TRUE;
       $query = array('query' =>  

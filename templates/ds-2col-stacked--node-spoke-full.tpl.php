@@ -1,40 +1,55 @@
-<?php
-/**
- * @file
- * Display Suite 2 column stacked template.
- */
-?>
+<!-- ds 2 column stacked template -->
 <<?php print $layout_wrapper; print $layout_attributes; ?> class="<?php print $classes;?> clearfix">
 <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
 <?php endif; ?>
-<?php print '<header class="spoke-header">'; ?>
+<header class="spoke-header">
   <?php print $header; ?>
-<?php print "</header>"; ?>
+</header>  
 <<?php print $left_wrapper ?> class="spoke-body <?php print $left_classes; ?>">
   <?php print $left; ?>
-  <?php
-  // this corrects a display suite bug which does not show comment wrapper for anonymous users when there are no comments 
-  // Bug corroborated here: http://drupal.stackexchange.com/questions/85124/how-to-show-log-in-or-register-to-post-comments-message-when-no-comments-on-co
-  global $user;
-  if (!$user->uid && $comment_count == 0) {
-      print '<section id="comments" class="comments">';
-      print '<header> <h2 class="comments__form-title title comment-form">Add new comment</h2></header>';
-      $dest = drupal_get_destination();
-      print l(t('Log in'),'user/login', array(
-      'query' => $dest,
-      ));
-      // Print Register link only if allowed to do so.
+  <?php 
+    
+    // @TODO: AOF1 - We need to move this code from here. difficult to debug.
+    
+    // this corrects a display suite bug which does not show comment wrapper for 
+    // anonymous users when there are no comments 
+    // Bug corroborated here: http://drupal.stackexchange.com/questions/85124/how-to-show-log-in-or-register-to-post-comments-message-when-no-comments-on-co
+    $log_in_link = NULL;
+    $register_link = NULL;
+    $comments_link = NULL;
+    if (user_is_anonymous() && $comment_count == 0) {
+      $comments_link = TRUE;
+      $query = array('query' =>  
+        array_merge(
+          drupal_get_destination(), // get the destination
+           array(
+            'project' => variable_get('mediacommons_project', 'mediacommons') // add project
+          )
+        )
+      );
+      
+      $log_in_link = l(t('Log in'),'user/login', $query);
       if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
-        print ' or ';
-        print l(t('register'),'user/register', array(
-          'query' => $dest,
-        ));
+        $register_link = l(t('register'),'user/register', $query);
       }
-      print " to add a comment.";
-      print '</section>';
-  } ?> 
+    }    
+  ?>
+  <?php if ($comments_link) : ?>
+    <section id="comments" class="comments">
+    <header>
+      <h2 class="comments__form-title title comment-form">Add new comment</h2>
+    </header>
+    <?php print $log_in_link ?>
+    <?php if ($register_link) : ?>
+      <span class="separator">or</span>
+      <?php print $register_link ?>
+    <?php endif; ?>
+    <span> to add a comment.</span>
+    </section>  
+  <?php endif; ?>
 </<?php print $left_wrapper ?>>
+
 <?php print $right; ?>
 <aside role="complementary">
 	<div class="block-views block">

@@ -1,40 +1,36 @@
 <a id="main-content"></a>
-<?php  include ("head.inc");    ?>
-
-  <?php if ($action_links): ?>
+<?php  include ("head.inc"); ?>
+<?php if ($action_links): ?>
   <ul class="action-links">
     <?php print render($action_links); ?>
   </ul>
-  <?php endif; ?>
-
+<?php endif; ?>
 <main role="main">
-
   <?php if ($tabs) : ?>
-    <div class="tabs"><?php print render($tabs); ?></div>
+    <div class="tabs">
+      <?php print render($tabs); ?>
+    </div>
   <?php endif; ?>
-
   <?php if (isset($page['highlighted'])) : ?>
-    <div id="highlighted"><?php print render($page['highlighted']); ?></div>
+    <div id="highlighted">
+      <?php print render($page['highlighted']); ?>
+    </div>
   <?php endif; ?>
-
   <?php if ($messages) : ?>
     <?php print $messages; ?>
   <?php endif; ?>
-
   <div  class="searchresults_hold">
-  <?php if (isset($page['searchresults_sidebar'])) : ?>
-    <div  class="searchresults_sidebar">
-      <?php print render($page['searchresults_sidebar']); ?>
-    </div>
-  <?php endif; ?>
-     <div class="searchresults_content">
-    <?php 
-       // if ($title): print '<h1 class="page-title">' . $title . '</h1>'; endif;
-      print render($page['searchresults_main']); 
-      print render($page['content']); ?> 
+    <?php if (isset($page['searchresults_sidebar'])) : ?>
+      <div  class="searchresults_sidebar">
+        <?php print render($page['searchresults_sidebar']); ?>
+      </div>
+    <?php endif; ?>
+    <div class="searchresults_content">
+      <?php print render($page['searchresults_main']); ?>
+      <?php print render($page['content']); ?>
     </div>
   </div>
- </main>
+</main>
   
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
   <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>

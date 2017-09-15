@@ -84,7 +84,6 @@ function mediacommons_form($variables) {
   return '<form' . drupal_attributes($element['#attributes']) . '>' . $element['#children'] . '</form>';
 }
 
-// Working with this one
 function mediacommons_form_element($variables) {
   
   $output = '';
@@ -265,8 +264,6 @@ function mediacommons_preprocess_node(&$variables) {
   }
 }
 
-// To do: reconsider this hook.  It may be not longer getting called.
-// @TODO: Yes, hook in-use. Remove? Test with dpr (aof1)
 function mediacommons_preprocess_username(&$variables) {
   //dpr(__FUNCTION__);
   $variables['name'] =  check_plain( $variables['name_raw'] );
@@ -420,6 +417,7 @@ function mediacommons_field__field_bio__user($vars) {
   $output .= '</div></aside>';
   return $output;
 }
+
 function mediacommons_field__field_plan__user($vars) {
   $output = '<aside role="complementary" class="plan"><header>';
   $output .= '<h1>' . $vars['label'] . '</h1></header><div>';
@@ -528,11 +526,11 @@ function mediacommons_field__field_co_editor($vars) {
 
 function mediacommons_preprocess_menu_tree(&$variables) {
   $tree = new DOMDocument();
-  @$tree->loadHTML( $variables['tree'] );
-  $links = $tree->getElementsByTagname( 'li' );
-  foreach ( $links as $link ) {
-    $parentname = $link->getAttribute( 'data-menu-parent-name' );
-    $level = $link->getAttribute( 'data-level' );
+  @$tree->loadHTML($variables['tree']);
+  $links = $tree->getElementsByTagname('li');
+  foreach ($links as $link) {
+    $parentname = $link->getAttribute('data-menu-parent-name');
+    $level = $link->getAttribute('data-level');
     break;
   }
   $variables['menu_parent_name'] = $parentname;
@@ -542,9 +540,9 @@ function mediacommons_preprocess_menu_tree(&$variables) {
 /**
  * Implements hook_menu_tree().
  */
-function mediacommons_menu_tree__menu_mcglobalnav( $variables ) {
+function mediacommons_menu_tree__menu_mcglobalnav($variables) {
   // here is where you can affect the <ul> elements
-  if ( $variables['level'] =="2" ) {
+  if ( $variables['level'] == '2') {
     // For Channel navigation
     return '<ul aria-hidden="true">' . $variables['tree'] . '</ul>';
   } else {
@@ -564,7 +562,7 @@ function mediacommons_menu_link__menu_mcglobalnav($variables) {
   //Preserve alphanumerics, everything else goes away
   $pattern = '/[^a-z]+/ ';
   $name_id = preg_replace( $pattern, '', $name_id );
-  $element['#attributes']['class'][] = $name_id;//
+  $element['#attributes']['class'][] = $name_id;
 
   //  Links
   if ( $element['#original_link']['depth'] == '1' ) {
@@ -624,33 +622,6 @@ function mediacommons_menu_link__menu_mcglobalnav($variables) {
   return '<li' . drupal_attributes( $element['#attributes'] ) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-function get_url_for_mediacommons_site($placeholder_url) {
-  $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
-  return mediacommons_utilities_get_root_url() . "/${relative_path}";
-}
-
-function mediacommons_is_pjax() {
-  $is_pjax = &drupal_static( 'is_pjax' );
-  if ( !isset( $is_pjax ) && function_exists( 'getallheaders' ) ) {
-    $headers = getallheaders();
-    if ( isset( $headers['X-Pjax'] ) || isset( $headers['X-PJAX'] ) ) {
-      drupal_add_http_header( 'uri', request_uri() );
-      $is_pjax = TRUE;
-    }
-    else {
-      $params = drupal_get_query_parameters();
-      if ( isset( $params['pjax'] ) ) {
-        drupal_add_http_header( 'uri', base_path() . request_uri() );
-        $is_pjax = TRUE;
-      }
-      else {
-        $is_pjax = FALSE;
-      }
-    }
-  }
-  return $is_pjax;
-}
-
 function mediacommons_preprocess_block(&$variables) {
    $special_body_class = mediacommons_special_body_class();
    $variables['theme_hook_suggestions'][] = 'block__' . $variables['block']->region . "__" . $special_body_class;
@@ -679,7 +650,7 @@ function mediacommons_comment_post_forbidden($variables) {
   $node = $variables['node'];
   // Since this is expensive to compute, we cache it so that a page with many
   // comments only has to query the database once for all the links.
-  $authenticated_post_comments = &drupal_static(__FUNCTION__, NULL); // aof1 move from here
+  $authenticated_post_comments = &drupal_static(__FUNCTION__, NULL);
   if (!$user->uid) {
     if (!isset($authenticated_post_comments)) {
       // We only output a link if we are certain that users will get permission
@@ -687,8 +658,15 @@ function mediacommons_comment_post_forbidden($variables) {
       $comment_roles = user_roles(TRUE, 'post comments');
       $authenticated_post_comments = isset($comment_roles[DRUPAL_AUTHENTICATED_RID]);
     }
-
     if ($authenticated_post_comments) {
+      $project = $hail = variable_get('mediacommons_project', 'mediacommons');
+      if (isset($parameters['project'])) {
+        $hail = $parameters['project'];
+      }
+
+      // http://localhost:8000/fieldguide/user/login
+      // http://localhost:8000/mediacommons/user/login?destination=node/685%23comment-form&project=fieldguide
+      
       // We cannot use drupal_get_destination() because these links
       // sometimes appear on /node and taxonomy listing pages.
       if (variable_get('comment_form_location_' . $node->type, COMMENT_FORM_BELOW) == COMMENT_FORM_SEPARATE_PAGE) {
@@ -697,7 +675,6 @@ function mediacommons_comment_post_forbidden($variables) {
       else {
         $destination = array('destination' => "node/$node->nid#comment-form");
       }
-
       if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
         // Users can register themselves.
         return t('<a href="@login">Log in</a> or <a href="@register">register</a> to reply to this comment', array('@login' => url('user/login', array('query' => $destination)), '@register' => url('user/register', array('query' => $destination))));
@@ -711,27 +688,31 @@ function mediacommons_comment_post_forbidden($variables) {
 }
 
 function mediacommons_preprocess_comment(&$variables) {
-  // dpm($variables, 'Preprocess comment');
+
   $comment = $variables['elements']['#comment'];
+
   $node = $variables['elements']['#node'];
+
   $variables['comment'] = $comment;
+
   $variables['node'] = $node;
-  $variables['author'] =  theme('username', array('account' => $comment));
+
+  $variables['author'] = theme('username', array('account' => $comment));
+
   $user = user_load($comment->uid);
+  
   // Get Organization of the commenter, and send that variable on to the template
-  $orgA = field_get_items('user', $user, 'field_organization');
-  if ($orgA) {$tid = $orgA[0]['tid']; 
-    $term = taxonomy_term_load($tid); // load term object
+  if ($orgA = field_get_items('user', $user, 'field_organization')) {
+    $term = taxonomy_term_load($orgA[0]['tid']); // load term object
     $term_uri = taxonomy_term_uri($term); // get array with path
-    $term_title =  taxonomy_term_title($term);
-    $term_path = $term_uri['path'];
-    $string = "Organization: " . $term_title;
-    $term_attributes = array('attributes'=>array('title'=>$string));
-    $link = l($term_title,$term_path, $term_attributes );
-    $variables['organization'] = $link;
+    $term_attributes = array('attributes' => array('title' => t('Organization: @title', array('@title' =>  taxonomy_term_title($term)))));
+    $variables['organization'] = l($term_attributes['attributes']['title'], $term_uri['path'], $term_attributes);
   }
+  
   $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');
+  
   $variables['createdmachine'] = format_date($comment->created, 'custom', 'Y-m-j');
+  
   // Avoid calling format_date() twice on the same timestamp.
   if ($comment->changed == $comment->created) {
     $variables['changed'] = $variables['created'];
@@ -741,14 +722,19 @@ function mediacommons_preprocess_comment(&$variables) {
   }
 
   $variables['new'] = !empty($comment->new) ? t('new') : '';
+  
   $variables['picture'] = theme_get_setting('toggle_comment_user_picture') ? theme('user_picture', array('account' => $comment)) : '';
+  
   $variables['signature'] = $comment->signature;
 
   $uri = entity_uri('comment', $comment);
+  
   $uri['options'] += array('attributes' => array('class' => array('permalink'), 'rel' => 'bookmark'));
 
   $variables['title'] = l($comment->subject, $uri['path'], $uri['options']);
+
   $variables['permalink'] = l(t('Permalink'), $uri['path'], $uri['options']);
+
   $variables['submitted'] = t('Submitted by !username on !datetime', array('!username' => $variables['author'], '!datetime' => $variables['created']));
 
   // Preprocess fields.
@@ -801,4 +787,31 @@ function mediacommons_special_body_class() {
     }
   }
   return $special_body_class;
+}
+
+function mediacommons_is_pjax() {
+  $is_pjax = &drupal_static( 'is_pjax' );
+  if ( !isset( $is_pjax ) && function_exists( 'getallheaders' ) ) {
+    $headers = getallheaders();
+    if ( isset( $headers['X-Pjax'] ) || isset( $headers['X-PJAX'] ) ) {
+      drupal_add_http_header( 'uri', request_uri() );
+      $is_pjax = TRUE;
+    }
+    else {
+      $params = drupal_get_query_parameters();
+      if ( isset( $params['pjax'] ) ) {
+        drupal_add_http_header( 'uri', base_path() . request_uri() );
+        $is_pjax = TRUE;
+      }
+      else {
+        $is_pjax = FALSE;
+      }
+    }
+  }
+  return $is_pjax;
+}
+
+function get_url_for_mediacommons_site($placeholder_url) {
+  $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
+  return mediacommons_utilities_get_root_url() . "/${relative_path}";
 }

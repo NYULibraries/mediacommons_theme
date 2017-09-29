@@ -3126,43 +3126,42 @@ aside + h2 {
   clear: both;
 }
 
-/*****************************/
-/* line 11, ../sass/modules/hub_list/_hub_list.scss */
+/* line 9, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .hub-title {
   font-size: 1.5em;
   padding: .2em 0 0 0;
   margin: 0 0 .3em 0;
   color: #232323;
 }
-/* line 17, ../sass/modules/hub_list/_hub_list.scss */
+/* line 15, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub p {
   margin: 0 0 .2em 0;
 }
-/* line 20, ../sass/modules/hub_list/_hub_list.scss */
+/* line 18, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.3;
 }
-/* line 25, ../sass/modules/hub_list/_hub_list.scss */
+/* line 23, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period a:link,
 .node-hub .field-name-field-period a:visited {
   color: #5a5a5a;
 }
-/* line 29, ../sass/modules/hub_list/_hub_list.scss */
+/* line 27, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-label {
   display: inline-block;
   font-weight: normal;
   margin-right: 5px;
 }
-/* line 34, ../sass/modules/hub_list/_hub_list.scss */
+/* line 32, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
-/* line 39, ../sass/modules/hub_list/_hub_list.scss */
+/* line 37, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.view-mode-full .default-image {
   display: none;
 }
-/* line 43, ../sass/modules/hub_list/_hub_list.scss */
+/* line 41, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser {
   display: flex;
   flex-wrap: wrap;
@@ -3170,113 +3169,108 @@ aside + h2 {
   border-bottom: 1px solid #cccccc;
   padding: 1em 0;
 }
-/* line 49, ../sass/modules/hub_list/_hub_list.scss */
+/* line 47, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .group-flex1 {
   flex: 1 0 33%;
   min-width: 300px;
 }
-/* line 53, ../sass/modules/hub_list/_hub_list.scss */
+/* line 51, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .group-flex2 {
   flex: 1 0 64%;
 }
-/* line 64, ../sass/modules/hub_list/_hub_list.scss */
+/* line 61, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .field-name-field-representative-image {
   margin-right: 35px;
   min-height: 7rem;
 }
-/* line 67, ../sass/modules/hub_list/_hub_list.scss */
+/* line 64, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .field-name-field-representative-image img {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 73, ../sass/modules/hub_list/_hub_list.scss */
+/* line 70, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .spokes {
   margin-top: 20px;
 }
 
-/* line 80, ../sass/modules/hub_list/_hub_list.scss */
+/* line 77, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead img {
   max-width: 100% !important;
   height: auto;
   width: 100%;
   display: block;
 }
-/* line 86, ../sass/modules/hub_list/_hub_list.scss */
+/* line 83, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead time {
   font-size: .9rem;
 }
 
-/* line 92, ../sass/modules/hub_list/_hub_list.scss */
+/* line 89, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead .peoplelist.curator {
   font-size: .9rem;
 }
-/* line 96, ../sass/modules/hub_list/_hub_list.scss */
+/* line 93, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist.curator span::after {
   content: "";
 }
 
-/* line 102, ../sass/modules/hub_list/_hub_list.scss */
+/* line 99, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs .node-hub.node-teaser {
   padding: 2em 0;
 }
 
-/* line 107, ../sass/modules/hub_list/_hub_list.scss */
+/* line 104, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser {
   padding: .8em 0;
   line-height: 1.5;
   margin: 0;
 }
-/* line 111, ../sass/modules/hub_list/_hub_list.scss */
-.node-spoke.node-teaser time {
-  font-size: 0.8rem;
-  display: block;
-}
-/* line 115, ../sass/modules/hub_list/_hub_list.scss */
+/* line 109, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 118, ../sass/modules/hub_list/_hub_list.scss */
+/* line 112, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser.clearfix:after {
   clear: left;
 }
-/* line 121, ../sass/modules/hub_list/_hub_list.scss */
+/* line 115, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 125, ../sass/modules/hub_list/_hub_list.scss */
+/* line 119, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
   font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
-/* line 132, ../sass/modules/hub_list/_hub_list.scss */
+/* line 126, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 136, ../sass/modules/hub_list/_hub_list.scss */
+/* line 130, ../sass/modules/hub_list/_hub_list.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
   clear: left;
 }
 
-/* line 145, ../sass/modules/hub_list/_hub_list.scss */
+/* line 139, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous h1.page-title {
   margin-bottom: 30px;
 }
-/* line 148, ../sass/modules/hub_list/_hub_list.scss */
+/* line 142, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb {
   width: 80px;
 }
-/* line 150, ../sass/modules/hub_list/_hub_list.scss */
+/* line 144, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb img {
   width: 100%;
   height: auto;
 }
 
-/* line 157, ../sass/modules/hub_list/_hub_list.scss */
+/* line 151, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title {
   font-size: 1.1rem;
   margin-top: -.1rem;
@@ -3284,47 +3278,57 @@ h2.spoke-title {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 163, ../sass/modules/hub_list/_hub_list.scss */
+/* line 157, ../sass/modules/hub_list/_hub_list.scss */
 h2.spoke-title a:link,
 h2.spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 169, ../sass/modules/hub_list/_hub_list.scss */
+/* line 163, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta {
   width: auto;
   overflow: hidden;
-  font-size: .8rem;
+  font-size: .85rem;
+}
+/* line 167, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta .peoplelist {
+  font-size: .85rem;
+  padding-right: 0;
+  display: inline-block;
+  float: left;
+}
+/* line 173, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta time {
+  float: left;
+  line-height: 1.5;
 }
 /* line 176, ../sass/modules/hub_list/_hub_list.scss */
-.spoke-teaser-meta .peoplelist {
-  float: left;
-}
-/* line 180, ../sass/modules/hub_list/_hub_list.scss */
-.spoke-teaser-meta time {
-  line-height: 1.5;
-  float: left;
-  padding: 0 5px 0 0;
-}
-/* line 185, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta time::before {
-  content: "|\00a0";
+  content: "|";
+  margin: 0 5px;
 }
-/* line 190, ../sass/modules/hub_list/_hub_list.scss */
+/* line 181, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count {
   float: left;
 }
-/* line 193, ../sass/modules/hub_list/_hub_list.scss */
+/* line 183, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count::before {
   content: "|";
+  display: inline-block;
+  margin: 0 5px;
 }
-/* line 196, ../sass/modules/hub_list/_hub_list.scss */
+/* line 188, ../sass/modules/hub_list/_hub_list.scss */
 .spoke-teaser-meta .comment-count a:link,
 .spoke-teaser-meta .comment-count a:visited {
   color: #5a5a5a;
+  font-size: .85rem;
+}
+/* line 194, ../sass/modules/hub_list/_hub_list.scss */
+.spoke-teaser-meta h2.spoke-title {
+  padding-bottom: 2px;
 }
 
-/* line 205, ../sass/modules/hub_list/_hub_list.scss */
+/* line 200, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 1rem;
@@ -3332,42 +3336,42 @@ h2.spoke-title a:visited {
   padding-left: 10px;
   padding-top: 10px;
 }
-/* line 212, ../sass/modules/hub_list/_hub_list.scss */
+/* line 207, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 217, ../sass/modules/hub_list/_hub_list.scss */
+/* line 212, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
   background-color: #F7F7F7;
 }
-/* line 221, ../sass/modules/hub_list/_hub_list.scss */
+/* line 216, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 224, ../sass/modules/hub_list/_hub_list.scss */
+/* line 219, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
   border: 1px solid #eeeeee;
 }
-/* line 231, ../sass/modules/hub_list/_hub_list.scss */
+/* line 226, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {
   display: none;
 }
-/* line 234, ../sass/modules/hub_list/_hub_list.scss */
+/* line 229, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .form-item {
   margin-bottom: 4px;
 }
-/* line 237, ../sass/modules/hub_list/_hub_list.scss */
+/* line 232, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   font-size: .8rem;
 }
-/* line 242, ../sass/modules/hub_list/_hub_list.scss */
+/* line 237, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-submit-button {
   display: none;
 }

@@ -1,11 +1,9 @@
 /* MODULES: Component styles that are layout independent */
 
-aside + h2 {
+aside+h2 {
   clear: both;
 }
 
-
-/*****************************/
 
 .node-hub {
   .hub-title {
@@ -51,8 +49,7 @@ aside + h2 {
       min-width: 300px;
     }
     .group-flex2 {
-      flex: 1 0 64%;
-      // min-width: 500px;
+      flex: 1 0 64%; // min-width: 500px;
     }
     &:first-child {
       // padding: 0 0 1em;
@@ -108,10 +105,7 @@ aside + h2 {
     padding: .8em 0;
     line-height: 1.5;
     margin: 0;
-    time {
-      font-size: 0.8rem;
-      display: block;
-    }
+
     &:last-child {
       border-bottom: none;
     }
@@ -167,42 +161,43 @@ h2.spoke-title {
 }
 
 .spoke-teaser-meta {
-  // display: flex;
-  // flex-wrap: wrap;
-  // align-items: baseline;
   width: auto;
   overflow: hidden;
-  font-size: .8rem;
+  font-size: .85rem;
   .peoplelist {
-    // flex: 0 0 auto;
+    font-size: .85rem;
+    padding-right: 0;
+    display: inline-block;
     float: left;
   }
   time {
-    // flex: 0 1 auto;
-    //  order: 2;
-    line-height: 1.5;
     float: left;
+    line-height: 1.5;
     &::before {
-      content: "|\00a0";
+      content: "|";
+      margin: 0 5px;
     }
-    padding: 0 5px 0 0;
   }
   .comment-count {
-    //order: 3;
     float: left;
     &::before {
       content: "|";
+      display: inline-block;
+      margin: 0 5px;
     }
     a:link,
     a:visited {
       color: #5a5a5a;
-      //font-size: .8rem;
+      font-size: .85rem;
     }
+  }
+  h2.spoke-title {
+    padding-bottom: 2px;
   }
 }
 
 .view-list-of-all-hubs {
-  > header {
+  >header {
     float: left;
     line-height: 1rem;
     font-size: .8rem;

@@ -1228,40 +1228,44 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   color: #5a5a5a !important;
 }
 /* line 138, ../sass/projects/_fieldguide.scss */
+body.fieldguide.front .view-recent-6-hubs .featuredhub-info .peoplelist {
+  padding: 0 20px 0px;
+}
+/* line 141, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 {
   background-color: inherit;
   padding: 0;
 }
-/* line 141, ../sass/projects/_fieldguide.scss */
+/* line 144, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 a {
   display: block;
   padding: 20px 20px 5px 20px;
   color: black !important;
 }
-/* line 185, ../sass/projects/_fieldguide.scss */
+/* line 188, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg {
   position: static;
   max-width: none;
   flex: 0 1 49%;
 }
-/* line 189, ../sass/projects/_fieldguide.scss */
+/* line 192, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg time {
   display: none;
 }
-/* line 192, ../sass/projects/_fieldguide.scss */
+/* line 195, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a {
   display: block;
   background-color: #d7a100;
 }
-/* line 195, ../sass/projects/_fieldguide.scss */
+/* line 198, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a:hover {
   background-color: #e1b83f;
 }
-/* line 202, ../sass/projects/_fieldguide.scss */
+/* line 205, ../sass/projects/_fieldguide.scss */
 body.fieldguide .view-list-of-all-hubs .group-flex1 {
   display: none;
 }
-/* line 206, ../sass/projects/_fieldguide.scss */
+/* line 209, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: .5rem;

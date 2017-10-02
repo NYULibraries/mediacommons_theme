@@ -486,7 +486,7 @@ function mediacommons_field__field_curators_editors($vars) {
     $output .=  '<span class="l">Theme week organized by </span>';
   } 
   else {
-    $output .=  '<span class="l">' . $vars['label']. '</span>';
+    $output .=  '<span class="l">' . $vars['label']. ' </span>';
   }
 
   foreach ( element_children( $vars['items'] ) as $key ) {

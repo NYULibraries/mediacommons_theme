@@ -85,17 +85,17 @@ function mediacommons_form($variables) {
 }
 
 function mediacommons_form_element($variables) {
-  
+
   $output = '';
 
   $element = $variables['element'];
-  
+
   $prefix = isset( $element['#field_prefix'] ) ? '<span class="field-prefix">' . $element['#field_prefix'] . '</span> ' : '';
-  
+
   $suffix = isset( $element['#field_suffix'] ) ? ' <span class="field-suffix">' . $element['#field_suffix'] . '</span>' : '';
 
   $name = isset($element['#name']) ? $element['#name'] : NULL;
-  
+
   if ($name != 'search_block_form') {
 
     // This function is invoked as theme wrapper, but the rendered form element
@@ -167,7 +167,7 @@ function mediacommons_form_search_block_form_alter(&$form, &$form_state, $form_i
   // Do not change the name attribute, it will break search.
   $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
   $form['#prefix'] = '';
-  $form['#suffix'] = '';  
+  $form['#suffix'] = '';
 }
 
 function mediacommons_form_comment_node_spoke_form_alter(&$form, &$form_state, $form_id) {
@@ -210,9 +210,9 @@ function mediacommons_form_user_login_block_alter(&$form, &$form_state, $form_id
   mediacommons_form_user_login_alter($form, $form_state, $form_id);
 }
 
-/** 
+/**
  * Implementation of template_preprocess_html().
- * See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7 
+ * See: http://api.drupal.org/api/drupal/includes%21theme.inc/function/template_process_page/7
  */
 function mediacommons_preprocess_page(&$vars) {
   $special_body_class = mediacommons_special_body_class();
@@ -242,7 +242,7 @@ function mediacommons_preprocess_page(&$vars) {
   }
 }
 
-/** 
+/**
  * Implementation of template_preprocess_node().
  * See: https://api.drupal.org/api/drupal/modules%21node%21node.module/function/template_preprocess_node/7.x
  */
@@ -328,7 +328,7 @@ function mediacommons_field__field_body__spoke($vars) {
     }
     else {
       $str .= $vars['items'][0]['#markup'];
-    }    
+    }
   }
   $str .= '</section>';
   return $str;
@@ -471,7 +471,7 @@ function mediacommons_field__field_contributors($vars) {
   if ( isset( $vars['items'][0]['#title'] ) ) {
     $output .= $vars['label'] . ' ';
     foreach ( element_children( $vars['items'] ) as $key ) {
-      
+
       $output .= '<span class="h-card">' . drupal_render( $vars['items'][$key] ) . '</span> ';
     }
   }
@@ -484,7 +484,7 @@ function mediacommons_field__field_curators_editors($vars) {
   $output = '<div class="peoplelist curator">' ;
   if ($special_body_class === 'imr') {
     $output .=  '<span class="l">Theme week organized by </span>';
-  } 
+  }
   else {
     $output .=  '<span class="l">' . $vars['label']. ' </span>';
   }
@@ -628,7 +628,7 @@ function mediacommons_preprocess_block(&$variables) {
    $variables['classes_array'][] = "mc-" . $special_body_class;
    /* this will show a block's parent view; otherwise not straightforward in Drupal */
    $pos = strrpos($variables['block']->delta,  "-");
-   $variables['classes_array'][] =   substr($variables['block']->delta, 0, $pos)  ; 
+   $variables['classes_array'][] =   substr($variables['block']->delta, 0, $pos)  ;
 }
 
 function mediacommons_preprocess_field(&$variables) {
@@ -666,7 +666,7 @@ function mediacommons_comment_post_forbidden($variables) {
 
       // http://localhost:8000/fieldguide/user/login
       // http://localhost:8000/mediacommons/user/login?destination=node/685%23comment-form&project=fieldguide
-      
+
       // We cannot use drupal_get_destination() because these links
       // sometimes appear on /node and taxonomy listing pages.
       if (variable_get('comment_form_location_' . $node->type, COMMENT_FORM_BELOW) == COMMENT_FORM_SEPARATE_PAGE) {
@@ -700,7 +700,7 @@ function mediacommons_preprocess_comment(&$variables) {
   $variables['author'] = theme('username', array('account' => $comment));
 
   $user = user_load($comment->uid);
-  
+
   // Get Organization of the commenter, and send that variable on to the template
   if ($orgA = field_get_items('user', $user, 'field_organization')) {
     $term = taxonomy_term_load($orgA[0]['tid']); // load term object
@@ -708,11 +708,11 @@ function mediacommons_preprocess_comment(&$variables) {
     $term_attributes = array('attributes' => array('title' => t('Organization: @title', array('@title' =>  taxonomy_term_title($term)))));
     $variables['organization'] = l($term_attributes['attributes']['title'], $term_uri['path'], $term_attributes);
   }
-  
+
   $variables['created'] = format_date($comment->created, 'custom', 'l, F j, Y —  g:i a');
-  
+
   $variables['createdmachine'] = format_date($comment->created, 'custom', 'Y-m-j');
-  
+
   // Avoid calling format_date() twice on the same timestamp.
   if ($comment->changed == $comment->created) {
     $variables['changed'] = $variables['created'];
@@ -722,13 +722,13 @@ function mediacommons_preprocess_comment(&$variables) {
   }
 
   $variables['new'] = !empty($comment->new) ? t('new') : '';
-  
+
   $variables['picture'] = theme_get_setting('toggle_comment_user_picture') ? theme('user_picture', array('account' => $comment)) : '';
-  
+
   $variables['signature'] = $comment->signature;
 
   $uri = entity_uri('comment', $comment);
-  
+
   $uri['options'] += array('attributes' => array('class' => array('permalink'), 'rel' => 'bookmark'));
 
   $variables['title'] = l($comment->subject, $uri['path'], $uri['options']);
@@ -813,5 +813,5 @@ function mediacommons_is_pjax() {
 
 function get_url_for_mediacommons_site($placeholder_url) {
   $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
-  return mediacommons_utilities_get_root_url() . "/${relative_path}";
+  return mc_get_root_url() . "/${relative_path}";
 }

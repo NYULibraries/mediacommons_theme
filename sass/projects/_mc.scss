@@ -1,5 +1,6 @@
 $fg_primary: map-get($map, mc);
 $mc-logo: "mc-logos/mc.svg";
+$neutral_stack: tint-stack(#333333) !global;
 body.mc {
   [role="main"] {
     max-width: 84rem;
@@ -18,6 +19,15 @@ body.mc {
   footer#footer {
     max-width: 84rem;
     margin: 3em auto 0;
+  }
+  [role="complementary"] {
+    >div,
+    .block {
+      background-color: lighten(nth($neutral_stack, 5), 3%);
+    }
+    header {
+      background-color: nth($neutral_stack, 4);
+    }
   }
   @include respond-to("narrow navigation") {
     [role="banner"] {

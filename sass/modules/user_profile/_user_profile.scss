@@ -42,7 +42,7 @@ h2.block-title {
 }
 
 .peoplelist {
-  font-size: .8rem;
+  font-size: .85rem;
   color: nth($black, 2);
   line-height: 1.5;
   padding-right: 5px;
@@ -65,8 +65,7 @@ h2.block-title {
   }
   .field-label {
     display: inline-block;
-    padding-right: .2rem;
-    // font-size: 0.85rem;
+    padding-right: .2rem; // font-size: 0.85rem;
   }
   a:link,
   a:active,
@@ -130,8 +129,7 @@ h2.block-title {
 }
 
 .u-photo-small {
-  float: left;
-  //  margin: 0 .5em 1em 0;
+  float: left; //  margin: 0 .5em 1em 0;
   @extend %user-photo-treatment-teaser;
 }
 
@@ -140,6 +138,9 @@ img[src*="identicon"] {
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
 }
+
+
+
 
 
 /* for contributors lists as well as profile */
@@ -156,7 +157,7 @@ img[src*="identicon"] {
       @extend %user-photo-treatment-teaser;
     }
   }
-  > .u-url:first-child {
+  >.u-url:first-child {
     @extend %user-photo-treatment-teaser;
     margin: 1em 0;
     .u-photo {
@@ -179,10 +180,10 @@ img[src*="identicon"] {
   }
   .h-adr {
     display: block;
-    > span:after {
+    >span:after {
       content: ",\20";
     }
-    > span:last-child:after {
+    >span:last-child:after {
       content: "";
     }
   }
@@ -223,25 +224,15 @@ h1.p-name {
 .p-org {
   padding-left: .25rem;
   &:before {
-    content: "\2014\20";
-    // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+    content: "\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
   }
 }
+
+
+
 
 
 /* ONLY user profile page */
-
-.node .thumb {
-  float: left;
-  margin-right: 10px;
-  line-height: 1;
-  a {
-    display: block;
-  }
-  img {
-    display: block;
-  }
-}
 
 .profile.view-mode-full {
   ul {
@@ -253,15 +244,15 @@ h1.p-name {
     margin-top: 2rem;
   }
   .h-adr {
-    & > div {
+    &>div {
       display: inline-block;
     }
-    & > div:nth-child(2) {
+    &>div:nth-child(2) {
       &:before {
         content: ",\20";
       }
     }
-    & > div:nth-child(3) {
+    &>div:nth-child(3) {
       &:before {
         content: ",\20";
       }
@@ -302,8 +293,7 @@ h1.p-name {
     background-color: red;
     font-style: italic;
     &:before {
-      content: "\2014\20";
-      // mdash encoded http://css-tricks.com/snippets/html/glyphs/
+      content: "\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
     }
   }
   ul.tags li:first-child {
@@ -321,7 +311,7 @@ h1.p-name {
   [role="complementary"] {
     padding: 0;
     margin: 1em 0;
-    > div {
+    >div {
       padding: 1rem;
       font-size: .9rem;
       line-height: 1.5;
@@ -329,7 +319,7 @@ h1.p-name {
         margin: 0 0 .8em 0;
       }
     }
-    > ul {
+    >ul {
       padding: .5em;
       margin: 0;
     }
@@ -356,8 +346,7 @@ h1.p-name {
         text-indent: 0;
         a {
           width: auto;
-          text-indent: .1em;
-          // color: nth($mc-blue, 2);
+          text-indent: .1em; // color: nth($mc-blue, 2);
           // color: nth($primary, 2);
           &.u-email {
             text-indent: .2em;
@@ -366,8 +355,7 @@ h1.p-name {
           &:visited {
             text-decoration: none;
             span {
-              text-decoration: underline;
-              // color: nth($mc-blue, 1);
+              text-decoration: underline; // color: nth($mc-blue, 1);
               // color: nth($primary, 1);
             }
           }
@@ -405,4 +393,9 @@ h1.p-name {
       float: none;
     }
   }
+}
+
+.profile .contribution-type {
+  margin-top: 20px;
+ 
 }

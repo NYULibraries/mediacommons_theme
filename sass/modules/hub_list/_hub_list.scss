@@ -5,6 +5,9 @@ aside+h2 {
 }
 
 
+
+/*****************************/
+
 .node-hub {
   .hub-title {
     font-size: 1.5em;
@@ -105,7 +108,10 @@ aside+h2 {
     padding: .8em 0;
     line-height: 1.5;
     margin: 0;
-
+    time {
+      font-size: 0.8rem;
+      display: block;
+    }
     &:last-child {
       border-bottom: none;
     }
@@ -148,7 +154,19 @@ aside+h2 {
   }
 }
 
-h2.spoke-title {
+.thumb {
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  a {
+    display: block;
+  }
+  img {
+    display: block;
+  }
+}
+
+.spoke-title {
   font-size: 1.1rem;
   margin-top: -.1rem;
   padding-top: 0;
@@ -161,38 +179,36 @@ h2.spoke-title {
 }
 
 .spoke-teaser-meta {
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: baseline;
   width: auto;
   overflow: hidden;
-  font-size: .85rem;
+  font-size: .8rem;
   .peoplelist {
-    font-size: .85rem;
-    padding-right: 0;
-    display: inline-block;
+    // flex: 0 0 auto;
     float: left;
   }
   time {
-    float: left;
+    // flex: 0 1 auto;
+    //  order: 2;
     line-height: 1.5;
+    float: left;
     &::before {
-      content: "|";
-      margin: 0 5px;
+      content: "|\00a0";
     }
+    padding: 0 5px 0 0;
   }
   .comment-count {
+    //order: 3;
     float: left;
     &::before {
       content: "|";
-      display: inline-block;
-      margin: 0 5px;
     }
     a:link,
     a:visited {
-      color: #5a5a5a;
-      font-size: .85rem;
+      color: #5a5a5a; //font-size: .8rem;
     }
-  }
-  h2.spoke-title {
-    padding-bottom: 2px;
   }
 }
 

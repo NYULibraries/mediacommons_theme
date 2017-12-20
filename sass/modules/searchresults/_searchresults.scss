@@ -1,3 +1,16 @@
+.block-facetapi header {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.searchresults_content {
+  .search-form {
+    label {
+      display: none;
+    }
+  }
+}
+
 .profile h3 {
   border-bottom: none;
 }
@@ -9,13 +22,33 @@
   }
 }
 
+
+
+
+
+
+/* thumb is for spoke and hub */
+
+.thumb {
+  //border: 1px solid #ddd;
+  width: 80px;
+  height: auto;
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 .mc-searchresults {
   .spoke-teaser-meta {
-    font-size: .9rem;
+    font-size: $spoke-teaser-meta-size;
   }
   .search-result.node-spoke.node-teaser {
     /* overriding defaults set elsewhere */
-    padding: 30px 0 10px 0px;
+    padding: 40px 0 10px 0px;
     margin-top: 30px;
   }
   .search-result {
@@ -56,19 +89,11 @@
     padding: 0px;
     margin: 0;
   }
-  .thumb {
-    //border: 1px solid #ddd;
-    width: 80px;
-    height: auto;
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+
   .node-hub {
     .hub-title {
       padding-top: 0;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
       line-height: 1.25;
     }
     .thumb {
@@ -77,12 +102,19 @@
     }
   }
   .node-comment {
+    .comment {
+      padding: 10px; // h3+time {
+      //   margin: 2px 0 2px;
+      //   background-color: red;
+      // }
+    }
     .peoplelist,
     time {
       font-size: .85rem;
+      margin-top: 2px;
     }
     .referenced-node {
-      font-size: .9rem;
+      font-size: .85rem;
       a:link,
       a:hover,
       a:active {
@@ -95,11 +127,13 @@
     }
     .comment-title {
       padding: 0;
-      font-size: 1.1rem;
+      font-size: 1rem;
       line-height: 1.4;
+      margin-bottom: 0;
     }
   }
 }
+
 
 .field-name-user-content,
 .field-name-user-content-hubs,

@@ -41,42 +41,6 @@ h2.block-title {
   }
 }
 
-.peoplelist {
-  font-size: .85rem;
-  color: nth($black, 2);
-  line-height: 1.5;
-  padding-right: 5px;
-  span {
-    &.l {
-      &::after {
-        content: "";
-      }
-    }
-  }
-  .h-card {
-    white-space: nowrap;
-    display: inline-block;
-    &::after {
-      content: ",\20";
-    }
-    &:last-child::after {
-      content: "";
-    }
-  }
-  .field-label {
-    display: inline-block;
-    padding-right: .2rem; // font-size: 0.85rem;
-  }
-  a:link,
-  a:active,
-  a:visited {
-    color: nth($black, 2) !important;
-  }
-  .label {
-    float: left;
-    margin-right: 5px;
-  }
-}
 
 .view-mode-user_byline {
   /* for spoke pages, when there is an org */

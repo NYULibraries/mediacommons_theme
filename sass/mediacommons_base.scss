@@ -49,15 +49,13 @@ $breakpoint-no-query-fallbacks: false;
 @import "modules/sidebars/_sidebars";
 // @import "modules/search/_search";
 @import "modules/hub_list/_hub_list";
+@import "modules/teasers/_spoke_teaser";
 @import "modules/embedded_video/_embedded_video";
 @import "modules/user_profile/_user_profile";
 @import "modules/registration/registration";
 @import "layout/_page";
 @import "layout/_spoke";
 @import "layout/_user_profile";
-img[src *="default_images"] {
-  // border: 1px solid #222;
-}
 
 .view-list-of-all-hubs,
 .hubhead {

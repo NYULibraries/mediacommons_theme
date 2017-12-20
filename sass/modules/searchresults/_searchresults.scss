@@ -1,10 +1,16 @@
-.block-facetapi header {
-  font-size: 1rem;
-  text-transform: uppercase;
+.block-facetapi {
+  &:not(:first-child) {
+    margin-top: 50px;
+  }
+  header {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+  }
 }
 
 .searchresults_content {
-  .search-form {
+  .form-item-keys {
     label {
       display: none;
     }
@@ -21,6 +27,9 @@
     padding: .8em 0;
   }
 }
+
+
+
 
 
 

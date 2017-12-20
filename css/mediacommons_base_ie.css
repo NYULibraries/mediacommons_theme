@@ -1874,33 +1874,38 @@ nav.global li.sites_nav ul > li > a.menu__link {
   content: "\20";
 }
 
-/* line 1, ../sass/modules/searchresults/_searchresults.scss */
+/* line 2, ../sass/modules/searchresults/_searchresults.scss */
+.block-facetapi:not(:first-child) {
+  margin-top: 50px;
+}
+/* line 5, ../sass/modules/searchresults/_searchresults.scss */
 .block-facetapi header {
   font-size: 1rem;
   text-transform: uppercase;
-}
-
-/* line 8, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_content .search-form label {
-  display: none;
+  margin-bottom: 5px;
 }
 
 /* line 14, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_content .form-item-keys label {
+  display: none;
+}
+
+/* line 20, ../sass/modules/searchresults/_searchresults.scss */
 .profile h3 {
   border-bottom: none;
 }
 
-/* line 18, ../sass/modules/searchresults/_searchresults.scss */
+/* line 24, ../sass/modules/searchresults/_searchresults.scss */
 .view-mode-search_result {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 20, ../sass/modules/searchresults/_searchresults.scss */
+/* line 26, ../sass/modules/searchresults/_searchresults.scss */
 .view-mode-search_result.node-hub {
   padding: .8em 0;
 }
 
 /* thumb is for spoke and hub */
-/* line 32, ../sass/modules/searchresults/_searchresults.scss */
+/* line 41, ../sass/modules/searchresults/_searchresults.scss */
 .thumb {
   width: 80px;
   height: auto;
@@ -1908,23 +1913,23 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-right: 10px;
   line-height: 1;
 }
-/* line 39, ../sass/modules/searchresults/_searchresults.scss */
+/* line 48, ../sass/modules/searchresults/_searchresults.scss */
 .thumb img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 46, ../sass/modules/searchresults/_searchresults.scss */
+/* line 55, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-teaser-meta {
   font-size: 0.86rem;
 }
-/* line 49, ../sass/modules/searchresults/_searchresults.scss */
+/* line 58, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-spoke.node-teaser {
   /* overriding defaults set elsewhere */
   padding: 40px 0 10px 0px;
   margin-top: 30px;
 }
-/* line 54, ../sass/modules/searchresults/_searchresults.scss */
+/* line 63, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result {
   position: relative;
   overflow: hidden;
@@ -1933,74 +1938,74 @@ nav.global li.sites_nav ul > li > a.menu__link {
   padding: 30px 0 10px 0px;
   margin-top: 30px;
 }
-/* line 62, ../sass/modules/searchresults/_searchresults.scss */
+/* line 71, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result .field-name-field-project {
   /* style for first of a series of project items */
   display: block;
   margin-bottom: 10px;
 }
-/* line 67, ../sass/modules/searchresults/_searchresults.scss */
+/* line 76, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr ~ .node-imr, .mc-searchresults .search-result.node-fieldguide ~ .node-fieldguide, .mc-searchresults .search-result.node-alt ~ .node-alt, .mc-searchresults .search-result.node-int ~ .node-int {
   border-top-width: 0px;
   padding-top: 0px;
   margin-top: 5px;
 }
-/* line 74, ../sass/modules/searchresults/_searchresults.scss */
+/* line 83, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr ~ .node-imr .field-name-field-project, .mc-searchresults .search-result.node-fieldguide ~ .node-fieldguide .field-name-field-project, .mc-searchresults .search-result.node-alt ~ .node-alt .field-name-field-project, .mc-searchresults .search-result.node-int ~ .node-int .field-name-field-project {
   display: none;
 }
-/* line 80, ../sass/modules/searchresults/_searchresults.scss */
+/* line 89, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title {
   margin-top: 0;
   border-bottom: none;
 }
-/* line 83, ../sass/modules/searchresults/_searchresults.scss */
+/* line 92, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title a {
   display: block;
   padding: 0px;
 }
-/* line 88, ../sass/modules/searchresults/_searchresults.scss */
+/* line 97, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-snippet-info {
   padding: 0px;
   margin: 0;
 }
-/* line 94, ../sass/modules/searchresults/_searchresults.scss */
+/* line 103, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .hub-title {
   padding-top: 0;
   font-size: 1.3rem;
   line-height: 1.25;
 }
-/* line 99, ../sass/modules/searchresults/_searchresults.scss */
+/* line 108, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .thumb {
   width: 120px;
   height: auto;
 }
-/* line 105, ../sass/modules/searchresults/_searchresults.scss */
+/* line 114, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment {
   padding: 10px;
 }
-/* line 111, ../sass/modules/searchresults/_searchresults.scss */
+/* line 120, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .peoplelist,
 .mc-searchresults .node-comment time {
   font-size: .85rem;
   margin-top: 2px;
 }
-/* line 116, ../sass/modules/searchresults/_searchresults.scss */
+/* line 125, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node {
   font-size: .85rem;
 }
-/* line 118, ../sass/modules/searchresults/_searchresults.scss */
+/* line 127, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node a:link,
 .mc-searchresults .node-comment .referenced-node a:hover,
 .mc-searchresults .node-comment .referenced-node a:active {
   color: inherit;
 }
-/* line 124, ../sass/modules/searchresults/_searchresults.scss */
+/* line 133, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-body {
   font-size: .85rem;
   margin-top: .2rem;
 }
-/* line 128, ../sass/modules/searchresults/_searchresults.scss */
+/* line 137, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-title {
   padding: 0;
   font-size: 1rem;
@@ -2008,45 +2013,45 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-bottom: 0;
 }
 
-/* line 141, ../sass/modules/searchresults/_searchresults.scss */
+/* line 150, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-user-content .field-label,
 .field-name-user-content-hubs .field-label,
 .field-name-user-comments .field-label {
   display: none;
 }
 
-/* line 146, ../sass/modules/searchresults/_searchresults.scss */
+/* line 155, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-search-snippet {
   clear: both;
   font-size: .8rem;
 }
 
-/* line 151, ../sass/modules/searchresults/_searchresults.scss */
+/* line 160, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 155, ../sass/modules/searchresults/_searchresults.scss */
+/* line 164, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_sidebar {
   flex: 1 0 33%;
   padding-right: 30px;
 }
-/* line 160, ../sass/modules/searchresults/_searchresults.scss */
+/* line 169, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_content {
   flex: 1 1 66%;
 }
 
-/* line 165, ../sass/modules/searchresults/_searchresults.scss */
+/* line 174, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:after {
   content: "Curated by ";
 }
 
-/* line 169, ../sass/modules/searchresults/_searchresults.scss */
+/* line 178, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 173, ../sass/modules/searchresults/_searchresults.scss */
+/* line 182, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .peoplelist.curator .curatorlabel:after {
   content: "Theme week organized by ";
 }

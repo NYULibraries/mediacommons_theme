@@ -28,7 +28,23 @@
   }
 }
 
-
+.spelling-suggestions {
+  padding: 15px 0;
+  dt,
+  dd {
+    display: inline-block;
+    font-size: .8rem;
+  }
+  dd {
+    margin-left: 10px;
+  }
+}
+.searchresults_content h2 {
+  margin-top: 1.5rem;
+}
+.page-search-site #block-search-form {
+  display: none;
+}
 
 
 

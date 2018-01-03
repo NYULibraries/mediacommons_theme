@@ -23,8 +23,8 @@ $icons:
 	('.icon-user' '\e01f')
 	('.icon-users' '\e020') 
 	('.icon-add-user' '\e01e') 
-	('[role="search"] label' '\e016')
-	('[role="search"].open label' '\e012')
+	('[role="banner"] [role="search"] label' '\e016')
+	('[role="banner"] [role="search"].open label' '\e012')
 	('.cc-license' '\e900')
 	('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600');
 

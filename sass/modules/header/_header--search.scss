@@ -2,8 +2,8 @@
 // SUB-MODULES: Component styles that are layout independent 
 //////////////////////////////
 [role="search"] {
-  display: inline-block;
-  float: right;
+
+
   padding: 0;
   margin: 0;
   form {
@@ -20,9 +20,8 @@
   .search-contain {
     display: flex;
   }
-  input[name="search_block_form"] {
-    padding-left: .75em;
-    // style placeholder text see '_header--search_mixins.scss' placeholder mixin
+  input[type="text"] {
+    padding-left: .75em; // style placeholder text see '_header--search_mixins.scss' placeholder mixin
     @include input-placeholder {
       color: #ccc;
     }
@@ -36,8 +35,7 @@
     flex: 1 1 80%;
   }
   input[type="submit"] {
-    font-family: $icon-font-name;
-    // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
+    font-family: $icon-font-name; // Uses Blank Characters http://scottkellum.com/2013/10/25/the-new-kellum-method.html
     -webkit-border-radius: 0px 6px 6px 0;
     -moz-border-radius: 0px 6px 6px 0;
     border-radius: 0px 6px 6px 0;
@@ -54,20 +52,25 @@
   font-family: $heading-font-name, $header-font-family;
 }
 
+[role="banner"] [role="search"] {
+  float: right;
+  display: inline-block;
+}
+
 @include respond-to("full navigation") {
-  [role="search"] label {
+  [role="banner"] [role="search"] label {
     display: none;
   }
-  [role="search"] label span {
+  [role="banner"] [role="search"] label span {
     display: none;
   }
-  [role="search"] form {
+  [role="banner"] [role="search"] form {
     margin-top: 10px;
   }
 }
 
 @include respond-to("narrow navigation") {
-  [role="search"] {
+  [role="banner"] [role="search"] {
     margin: 0;
     display: block;
     float: none;
@@ -109,15 +112,13 @@
     }
     form.open {
       input[type="submit"] {
-        height: 46px;
-        //border: none;
+        height: 46px; //border: none;
         background: none;
         font-size: 1.5rem;
         padding: 0;
         width: auto;
         height: auto;
-        margin-top: 0px;
-        // padding: .5rem 0 0 .5rem;
+        margin-top: 0px; // padding: .5rem 0 0 .5rem;
         border-top-width: 2px;
         border-top-color: #999 !important;
         border-bottom-width: 1px;
@@ -139,8 +140,7 @@
         // -webkit-box-shadow: none;
         // box-shadow: none;
         outline: none;
-        border-color: none;
-        // LMH put focus color here?
+        border-color: none; // LMH put focus color here?
       }
     }
     input[type="submit"] {
@@ -150,6 +150,31 @@
     }
     fieldset[aria-hidden="true"] {
       width: 15%;
+    }
+  }
+}
+
+
+.search-results-input {
+  input[type="text"] {
+    width: 100%;
+  }
+  .form-type-textfield {
+    flex: 0 0 22rem;
+  }
+  input[type="submit"] {
+
+    flex: 1 0 36px;
+    max-width: 70px;
+    margin-right: 20px;
+  }
+  .form-item-retain-filters {
+    font-size: .8rem;
+    width: auto;
+    overflow: auto;
+    margin-top: 5px;
+    label {
+      display: inline-block; // background-color: red;
     }
   }
 }

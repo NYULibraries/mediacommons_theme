@@ -1,14 +1,3 @@
-.block-facetapi {
-  &:not(:first-child) {
-    margin-top: 50px;
-  }
-  header {
-    font-size: 1rem;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-  }
-}
-
 .searchresults_content {
   .form-item-keys {
     label {
@@ -39,9 +28,11 @@
     margin-left: 10px;
   }
 }
+
 .searchresults_content h2 {
   margin-top: 1.5rem;
 }
+
 .page-search-site #block-search-form {
   display: none;
 }
@@ -52,8 +43,7 @@
 
 
 
-/* thumb is for spoke and hub */
-
+// thumb is for spoke and hub 
 .thumb {
   //border: 1px solid #ddd;
   width: 80px;
@@ -72,7 +62,7 @@
     font-size: $spoke-teaser-meta-size;
   }
   .search-result.node-spoke.node-teaser {
-    /* overriding defaults set elsewhere */
+    // overriding defaults set elsewhere 
     padding: 40px 0 10px 0px;
     margin-top: 30px;
   }
@@ -85,14 +75,15 @@
     padding: 30px 0 10px 0px;
     margin-top: 30px;
     .field-name-field-project {
-      /* style for first of a series of project items */
+      // style for first of a series of project items 
       display: block;
       margin-bottom: 10px;
-    }
-    &.node-imr~.node-imr,
-    &.node-fieldguide~.node-fieldguide,
-    &.node-alt~.node-alt,
-    &.node-int~.node-int {
+    } // The adjacent sibling combinator (+) separates two selectors and matches the second element only if it immediately follows the first element, and both are children of the same parent element.
+    &.node-imr+.node-imr,
+    &.node-fieldguide+.node-fieldguide,
+    &.node-alt+.node-alt,
+    &.node-int+.node-int,
+    &.node-tne+.node-tne {
       border-top-width: 0px;
       padding-top: 0px;
       margin-top: 5px;
@@ -178,12 +169,12 @@
   flex-wrap: nowrap;
 
   .searchresults_sidebar {
-    flex: 1 0 33%;
+    flex: 1 0 100px;
 
-    padding-right: 30px;
+    padding-right: 45px;
   }
   .searchresults_content {
-    flex: 1 1 66%;
+    flex: 1 1 70%;
   }
 }
 

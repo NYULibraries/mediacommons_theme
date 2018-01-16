@@ -9,13 +9,25 @@ body.mc {
   [role="banner"] {
     margin: 3.25em auto 3rem;
     max-width: 84rem;
+    
     .logo {
       background-image: image-url($mc-logo);
       background-size: contain;
       width: 22.5rem;
       height: 4.4rem;
     }
+    #main-nav {
+      display: none;
+    }
+    @include respond-to("narrow navigation") {
+      button.skip-arrow {
+        // there is no primary nav on homepage, so hide responsive hamburger button
+        display: none !important;
+        border-color:red;
+      }
+    }
   }
+
   footer#footer {
     max-width: 84rem;
     margin: 3em auto 0;

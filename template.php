@@ -815,3 +815,39 @@ function get_url_for_mediacommons_site($placeholder_url) {
   $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
   return mc_get_root_url() . "/${relative_path}";
 }
+/* 
+* Facets
+*/
+
+function mediacommons_facetapi_count($variables) {
+  return '<span class="facetapi-count">(' . (int) $variables['count'] . ')</span>';
+}
+function mediacommons_facetapi_deactivate_widget($variables) {
+  $sanitize = empty($variables['options']['html']);
+  $link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+  return $link_text . ' <div class="removeme icon-cross"></div>' ;
+}
+function mediacommons_facetapi_link_active($variables) {
+  $sanitize = empty($variables['options']['html']);
+  $link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+
+
+
+  // Theme function variables fro accessible markup.
+  // @see http://drupal.org/node/1316580
+  $accessible_vars = array(
+    'text' => $variables['text'],
+    'active' => TRUE,
+  );
+
+  // Builds link, passes through t() which gives us the ability to change the
+  // position of the widget on a per-language basis.
+  $replacements = array(
+    '!facetapi_deactivate_widget' => theme('facetapi_deactivate_widget', $variables),
+    '!facetapi_accessible_markup' => theme('facetapi_accessible_markup', $accessible_vars),
+  );
+  $variables['text'] = t('!facetapi_deactivate_widget !facetapi_accessible_markup', $replacements);
+  $variables['options']['html'] = TRUE;
+
+  return theme_link($variables) ;
+}

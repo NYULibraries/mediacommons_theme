@@ -43,10 +43,10 @@ $hometoprightcolor: #E7EEF3;
     max-width: 84rem;
     margin: 0em auto 0;
   }
-  .button.skip-arrow {
-    // there is no primary nav on homepage, so hide responsive hamburger button
-    display: block;
-  }
+  // .button.skip-arrow {
+  //   // there is no primary nav on homepage, so hide responsive hamburger button
+  //  // display: block;
+  // }
   .featured-more {
     margin-top: 0;
   }
@@ -66,11 +66,9 @@ $hometoprightcolor: #E7EEF3;
     justify-content: space-between;
     -ms-flex-pack: justify;
     section {
-      //  flex: none | [ <'flex-grow'> <'flex-shrink'>? || <'flex-basis'> ]
       -ms-flex: 0 0 74.5%;
       -webkit-flex: 0 0 74.5%;
       flex: 0 0 74.5%; // margin: 1% 0;
-      //background-color: pink;
     }
     aside {
       -ms-flex: 0 1 23%;
@@ -148,7 +146,7 @@ $hometoprightcolor: #E7EEF3;
       @include respond-to("mobile-lh") {
         -webkit-flex: 1 1 100%;
         flex: 1 1 100%;
-        margin: 25px 0;
+        margin: 25px 0 0;
       }
       p {
         margin-bottom: 0;

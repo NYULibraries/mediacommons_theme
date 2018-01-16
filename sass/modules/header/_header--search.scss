@@ -55,6 +55,8 @@
 [role="banner"] [role="search"] {
   float: right;
   display: inline-block;
+  width: 36%;
+  
 }
 
 @include respond-to("full navigation") {
@@ -75,6 +77,7 @@
     display: block;
     float: none;
     position: relative;
+    width:auto;
     background-color: transparent;
     label span {
       display: none;

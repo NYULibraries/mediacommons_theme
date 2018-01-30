@@ -28,15 +28,27 @@
   }
   Drupal.behaviors.mediacommons = {
     attach: function(context, settings) {
+
       $('.view-all-spokes-in-this-spokes-hub .item-list>ul>li').filter(function() {
         return $(this).find('.spoke-title>a').hasClass('active') === true;
-      }).addClass('active');      
+      }).addClass('active');
+      
       $(window).resize(_.debounce(function() { 
         Drupal.mediacommons.setUpAsideReveal() }, 100)
       );
+      
       $(window).bind('load', function() { 
         Drupal.mediacommons.setUpAsideReveal() }
       );
+      
+      $searchresults = $('#searchresults-sort')
+      
+      if ($searchresults.length) {
+    	$searchresults.change(function() {
+          window.location.href = $(this).find(':selected').val()
+    	});
+      }
+      
     }
   }
 })(jQuery);

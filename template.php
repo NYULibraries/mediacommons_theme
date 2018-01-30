@@ -851,6 +851,36 @@ function mediacommons_facetapi_link_active($variables) {
   return theme_link($variables) ;
 }
 
+/**
+ * A replacement for l()
+ *  - doesn't add the 'active' class
+ *  - retains all $_GET parameters that ApacheSolr may not be aware of
+ *  - if set, $options['query'] MUST be an array
+ *
+ * @see http://api.drupal.org/api/function/l/6
+ *   for parameters and options.
+ *
+ * @return
+ *   an HTML string containing a link to the given path.
+ */
+function mediacommons_apachesolr_l($text, $path, $options = array()) {
+  // Merge in defaults.
+  $options += array(
+    'attributes' => array(),
+    'html' => FALSE,
+    'query' => array(),
+  );
+
+  // Don't need this, and just to be safe.
+  unset($options['attributes']['title']);
+
+  // Retain GET parameters that Apache Solr knows nothing about.
+  $get = array_diff_key($_GET, array('q' => 1, 'page' => 1, 'solrsort' => 1), $options['query']);
+  $options['query'] += $get;
+
+  return check_url(url($path, $options));
+}
+
 function mediacommons_apachesolr_sort_list($vars) {
   // apachesolr_sort_list
   $vars['items'] = array_values($vars['items']);
@@ -858,17 +888,10 @@ function mediacommons_apachesolr_sort_list($vars) {
 }
 
 function mediacommons_apachesolr_sort_link($vars) {
-  $out = '';
-  // Merge in defaults.
-  $vars['options'] += array(
-    'attributes' => array(),
-    'html' => FALSE,
-    'query' => array(),
-  );
-  // Retain GET parameters that Apache Solr knows nothing about.
-  $get = array_diff_key($_GET, array('q' => 1, 'page' => 1, 'solrsort' => 1), $vars['options']['query']);
-  $vars['options']['query'] += $get;
-  //$solrsort = $vars['options']['query']['solrsort'];
-  $out = '<option value="' . $vars['path']. '">' . $vars['text'] . '</option>';
-  return $out;
+  $selected = ($vars['active']) ? ' selected' : '';
+  // path
+  $value = mediacommons_apachesolr_l($vars['text'], $vars['path'], $vars['options']);
+
+  return '<option value="' . $value. '"'. $selected .'>' . $vars['text'] . '</option>';
+
 }

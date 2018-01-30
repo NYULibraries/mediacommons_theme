@@ -1,4 +1,4 @@
-<a id="main-content"></a>
+
 <?php include ("head.inc"); ?>
   <?php if ($action_links): ?>
    <ul class="action-links">
@@ -15,7 +15,7 @@
     <?php if ($messages): ?>
       <?php print $messages; ?>
     <?php endif; ?>
-    <div id="content">
+    <div id="content"><a id="main-content"></a>
       <?php print render($page['homepage_top']); ?>
       <section class="featured-more">  
         <?php print render($page['homepage_bottom']); ?>

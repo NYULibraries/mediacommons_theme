@@ -1,4 +1,3 @@
-<a id="main-content"></a>
 <?php include ('head.inc'); ?>
 <?php if ($action_links): ?>
   <ul class="action-links">
@@ -20,7 +19,7 @@
     <?php if ($messages) : ?>
       <?php print $messages; ?>
     <?php endif; ?>
-    <article  class="toc" role="directory">
+    <article  class="toc" role="directory"><a id="main-content"></a>
       <?php print render($page['content']); ?> 
     </article>
   </div>

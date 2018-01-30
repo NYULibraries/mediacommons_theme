@@ -1,4 +1,4 @@
-<header  role="banner"> <a href="#main-nav" class="skip-to-nav">Skip to Navigation</a>
+<header  role="banner">
   <button type="button" class="skip-arrow"></button>
   <div class="top-hold">
     <h1><a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>

@@ -1,4 +1,3 @@
-<a id="main-content"></a>
 <?php include 'head.inc'; ?>
 <?php if ($action_links): ?>
   <ul class="action-links">

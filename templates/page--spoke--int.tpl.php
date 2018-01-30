@@ -5,7 +5,7 @@ if ($nid) {
  $rendered_view = node_view(node_load($nid), 'full_intransition');
 } 
 ?>
-<a id="main-content"></a>
+
 <?php  include ("head.inc");    ?>
 
   <?php if ($action_links): ?>
@@ -27,7 +27,7 @@ if ($nid) {
       <?php print $messages; ?>
   <?php endif; ?>
 
-  <article role="article" class="spoke">
+  <article role="article" class="spoke"><a id="main-content"></a>
    <?php 
   if ($nid) {
     print render($rendered_view);

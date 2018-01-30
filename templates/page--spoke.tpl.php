@@ -1,4 +1,3 @@
-<a id="main-content"></a>
 <?php include 'head.inc'; ?>
 <?php if ($action_links): ?>
   <ul class="action-links">
@@ -15,7 +14,7 @@
   <?php if ($messages) : ?>
     <?php print $messages; ?>
   <?php endif; ?>
-  <article role="article" class="spoke">
+  <article role="article" class="spoke"><a id="main-content"></a>
     <?php print render($page['content']); ?>
   </article>
 </main>

@@ -3,6 +3,7 @@
   <?php if (isset($title_suffix['contextual_links'])): ?>
     <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
+  <a id="main-content"></a>
   <header class="h-card vcard">
     <?php print $header; ?>
   </header>

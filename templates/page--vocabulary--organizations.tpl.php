@@ -1,4 +1,3 @@
-<a id="main-content"></a>
 <?php  include ("head.inc");    ?>
 
   <?php if ($action_links): ?>
@@ -23,6 +22,7 @@
   <?php endif; ?>
 
  <article id="content">
+    <a id="main-content"></a>
 
   <?php print render($page['content']); ?> 
   </article>

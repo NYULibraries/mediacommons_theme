@@ -25,7 +25,7 @@
         <?php print render($page['searchresults_sidebar']); ?>
       </div>
     <?php endif; ?>
-    <div class="searchresults_content">
+    <div id="main-content" class="searchresults_content">
       <?php print render($page['searchresults_main']); ?>
       <?php print render($page['content']); ?>
     </div>

@@ -25,6 +25,10 @@ function mediacommons_theme(&$existing, $type, $theme, $path) {
     'base hook' => 'page',
     'template' => 'templates/html.pjax',
   );
+  $hooks['apachesolrsortlist'] = array(
+    'variables' => array(),
+    'template' => 'templates/components/apachesolrsortlist',
+  );
   $hooks['page__pjax'] = array(
     'render element' => 'content',
     'base hook' => 'page',
@@ -442,7 +446,7 @@ function mediacommons_field__minimal__field_reviewer__review($vars) {
   if ( $vars['element']['#view_mode'] == 'teaser' ) {
     $output ='';
     $output .= '<div class="peoplelist">' ;
-    if ( isset( $vars['items'][0]['#title'] ) ) {
+    if (isset($vars['items'][0]['#title'])) {
       $output .= $vars['label'] . ' ';
       foreach ( element_children( $vars['items'] ) as $key ) {
         $output .= '<span>' . drupal_render( $vars['items'][$key] ) . '</span> ';
@@ -632,14 +636,11 @@ function mediacommons_preprocess_block(&$variables) {
 }
 
 function mediacommons_preprocess_field(&$variables) {
-	$special_body_class = mediacommons_special_body_class();
-	$variables['classes_array'][] = "mc-" . $special_body_class;
-	if($variables['element']['#field_name'] == 'field_representative_image') {
-    if( !empty($variables['element']['#field_type'])
-      && !empty($variables['items'][0]['#item']['is_default'])
-      && $variables['element']['#field_type']=='image'
-      && $variables['items'][0]['#item']['is_default'] == TRUE ){
-        $variables['classes_array'][] = 'default-image';
+  $special_body_class = mediacommons_special_body_class();
+  $variables['classes_array'][] = "mc-" . $special_body_class;
+  if ($variables['element']['#field_name'] == 'field_representative_image') {
+    if (!empty($variables['element']['#field_type']) && !empty($variables['items'][0]['#item']['is_default']) && $variables['element']['#field_type']=='image' && $variables['items'][0]['#item']['is_default'] == TRUE ) {
+      $variables['classes_array'][] = 'default-image';
     }
   }
 }
@@ -815,31 +816,30 @@ function get_url_for_mediacommons_site($placeholder_url) {
   $relative_path = str_replace( MEDIACOMMONS_DOMAIN_PLACEHOLDER, '', $placeholder_url );
   return mc_get_root_url() . "/${relative_path}";
 }
-/* 
-* Facets
-*/
+
+/**
+ * Facets
+ */
 
 function mediacommons_facetapi_count($variables) {
   return '<span class="facetapi-count">(' . (int) $variables['count'] . ')</span>';
 }
+
 function mediacommons_facetapi_deactivate_widget($variables) {
   $sanitize = empty($variables['options']['html']);
   $link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
   return $link_text . ' <div class="removeme icon-cross"></div>' ;
 }
+
 function mediacommons_facetapi_link_active($variables) {
   $sanitize = empty($variables['options']['html']);
   $link_text = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
-
-
-
   // Theme function variables fro accessible markup.
   // @see http://drupal.org/node/1316580
   $accessible_vars = array(
     'text' => $variables['text'],
     'active' => TRUE,
   );
-
   // Builds link, passes through t() which gives us the ability to change the
   // position of the widget on a per-language basis.
   $replacements = array(
@@ -848,6 +848,27 @@ function mediacommons_facetapi_link_active($variables) {
   );
   $variables['text'] = t('!facetapi_deactivate_widget !facetapi_accessible_markup', $replacements);
   $variables['options']['html'] = TRUE;
-
   return theme_link($variables) ;
+}
+
+function mediacommons_apachesolr_sort_list($vars) {
+  // apachesolr_sort_list
+  $vars['items'] = array_values($vars['items']);
+  return theme('apachesolrsortlist', array('items' => $vars['items']));
+}
+
+function mediacommons_apachesolr_sort_link($vars) {
+  $out = '';
+  // Merge in defaults.
+  $vars['options'] += array(
+    'attributes' => array(),
+    'html' => FALSE,
+    'query' => array(),
+  );
+  // Retain GET parameters that Apache Solr knows nothing about.
+  $get = array_diff_key($_GET, array('q' => 1, 'page' => 1, 'solrsort' => 1), $vars['options']['query']);
+  $vars['options']['query'] += $get;
+  //$solrsort = $vars['options']['query']['solrsort'];
+  $out = '<option value="' . $vars['path']. '">' . $vars['text'] . '</option>';
+  return $out;
 }

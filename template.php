@@ -367,6 +367,10 @@ function mediacommons_field__post_date($vars) {
   return '<time class="post-date">' . $vars['items'][0]['#markup'] . '</time>';
 }
 
+function mediacommons_field__field_pubdate($vars) {
+  $pubdateA = $vars['element']['#object']->field_pubdate;
+  return '<time class="pubdate">' . $vars['items'][0]['#markup'] . '</time>';
+}
 function mediacommons_field__field_title($vars) {
   return '<span class="p-job-title title">' . $vars['items'][0]['#markup'] . '</span>';
 }

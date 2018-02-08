@@ -24,7 +24,7 @@
         $('aside[role="complimentary"].part-of-hub').removeClass('open');
       }
     }
-  }
+  };
   Drupal.behaviors.mediacommons = {
     attach: function(context, settings) {
 
@@ -33,21 +33,20 @@
       }).addClass('active');
 
       $(window).resize(_.debounce(function() {
-        Drupal.mediacommons.setUpAsideReveal()
+        Drupal.mediacommons.setUpAsideReveal();
       }, 100));
 
       $(window).bind('load', function() {
-        Drupal.mediacommons.setUpAsideReveal()
+        Drupal.mediacommons.setUpAsideReveal();
       });
 
-      $searchresults = $('#searchresults-sort')
+      $searchresults = $('#searchresults-sort');
 
       if ($searchresults.length) {
         $searchresults.change(function() {
-          window.location.href = $(this).find(':selected').val()
+          window.location.href = $(this).find(':selected').val();
         });
       }
-
     }
-  }
+  };
 })(jQuery);

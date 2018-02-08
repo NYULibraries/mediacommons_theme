@@ -10,7 +10,19 @@
     margin-bottom: 5px;
   }
 }
-
+.responsive-container {
+  .responsive-disclosure {
+    //display: inline-block;
+    min-height: 15px;
+    float: left;
+    margin-right: .6em;
+  }
+  @include respond-to("desktop") {
+    .responsive-disclosure {
+      display: none;
+    }
+  }
+}
 
 .facetapi-facetapi-links {
   li {

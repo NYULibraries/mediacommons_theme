@@ -167,24 +167,26 @@
   font-size: .8rem;
 }
 
-.searchresults_hold {
-  display: flex;
-  flex-wrap: nowrap;
+@include respond-to("desktop") {
+  .searchresults_hold {
+    display: flex;
+    flex-wrap: nowrap;
 
-  .searchresults_sidebar {
-    flex: 0 0 300px;
+    .searchresults_sidebar {
+      flex: 0 0 300px;
 
-    padding-right: 45px;
+      padding-right: 45px;
+    }
+
+    .searchresults_content {
+      flex: 1 1 70%;
+      max-width: 49rem;
+    }
   }
+}
 
-  .searchresults_content {
-    flex: 1 1 70%;
-    max-width: 49rem;
-  }
-
-  .select-hold {
-    float: right;
-  }
+.select-hold {
+  float: right;
 }
 
 .peoplelist.curator .curatorlabel:not(:empty):after {

@@ -1373,7 +1373,7 @@ a.control:active {
 }
 
 /* line 5, ../sass/modules/icons/_icons_extendables.scss */
-.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, [role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before, [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, [role="banner"] [role="search"] label:before, [role="banner"] [role="search"].open label:before, .cc-license:before, .icon-cross:before, [role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open:before, a.login-link:after, a.login-link.open:after {
+.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, [role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before, [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before, .responsive-disclosure:before, .responsive-container.is-open .responsive-disclosure:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, [role="banner"] [role="search"] label:before, [role="banner"] [role="search"].open label:before, .cc-license:before, .icon-cross:before, [role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open:before, a.login-link:after, a.login-link.open:after {
   font-family: "MediaCommons-Icon-Font";
   speak: none;
   font-style: normal;
@@ -1416,6 +1416,16 @@ a.control:active {
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before {
   content: "\e013";
+}
+
+/* line 7, ../sass/modules/icons/_icons_mixins.scss */
+.responsive-disclosure:before {
+  content: "\e013";
+}
+
+/* line 7, ../sass/modules/icons/_icons_mixins.scss */
+.responsive-container.is-open .responsive-disclosure:before {
+  content: "\e012";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
@@ -2470,37 +2480,39 @@ nav.global li.sites_nav ul {
   font-size: .8rem;
 }
 
-/* line 170, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold {
-  display: flex;
-  flex-wrap: nowrap;
+@media (min-width: 981px) {
+  /* line 171, ../sass/modules/searchresults/_searchresults.scss */
+  .searchresults_hold {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  /* line 175, ../sass/modules/searchresults/_searchresults.scss */
+  .searchresults_hold .searchresults_sidebar {
+    flex: 0 0 300px;
+    padding-right: 45px;
+  }
+  /* line 181, ../sass/modules/searchresults/_searchresults.scss */
+  .searchresults_hold .searchresults_content {
+    flex: 1 1 70%;
+    max-width: 49rem;
+  }
 }
-/* line 174, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold .searchresults_sidebar {
-  flex: 0 0 300px;
-  padding-right: 45px;
-}
-/* line 180, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold .searchresults_content {
-  flex: 1 1 70%;
-  max-width: 49rem;
-}
-/* line 185, ../sass/modules/searchresults/_searchresults.scss */
-.searchresults_hold .select-hold {
+/* line 188, ../sass/modules/searchresults/_searchresults.scss */
+.select-hold {
   float: right;
 }
 
-/* line 190, ../sass/modules/searchresults/_searchresults.scss */
+/* line 192, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Curated by ";
 }
 
-/* line 194, ../sass/modules/searchresults/_searchresults.scss */
+/* line 196, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 198, ../sass/modules/searchresults/_searchresults.scss */
+/* line 200, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Theme week organized by ";
 }
@@ -2521,11 +2533,24 @@ nav.global li.sites_nav ul {
   margin-bottom: 5px;
 }
 
-/* line 16, ../sass/modules/searchresults/_facets.scss */
+/* line 14, ../sass/modules/searchresults/_facets.scss */
+.responsive-container .responsive-disclosure {
+  min-height: 15px;
+  float: left;
+  margin-right: .6em;
+}
+@media (min-width: 981px) {
+  /* line 21, ../sass/modules/searchresults/_facets.scss */
+  .responsive-container .responsive-disclosure {
+    display: none;
+  }
+}
+
+/* line 28, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links li {
   margin-bottom: 4px;
 }
-/* line 19, ../sass/modules/searchresults/_facets.scss */
+/* line 31, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link,
 .facetapi-facetapi-links a:visited {
   transition: all .2s ease;
@@ -2535,13 +2560,13 @@ nav.global li.sites_nav ul {
   font-size: .9rem;
   position: relative;
 }
-/* line 27, ../sass/modules/searchresults/_facets.scss */
+/* line 39, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link.facetapi-active,
 .facetapi-facetapi-links a:visited.facetapi-active {
   box-shadow: none;
   background-color: #ffffff;
 }
-/* line 30, ../sass/modules/searchresults/_facets.scss */
+/* line 42, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link.facetapi-active .removeme,
 .facetapi-facetapi-links a:visited.facetapi-active .removeme {
   font-size: 9px;
@@ -2551,27 +2576,27 @@ nav.global li.sites_nav ul {
   top: 5px;
   transition: all .2s ease-in-out;
 }
-/* line 40, ../sass/modules/searchresults/_facets.scss */
+/* line 52, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a.facetapi-active:hover {
   text-decoration: none !important;
 }
-/* line 42, ../sass/modules/searchresults/_facets.scss */
+/* line 54, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a.facetapi-active:hover .removeme {
   color: red !important;
 }
-/* line 47, ../sass/modules/searchresults/_facets.scss */
+/* line 59, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:not(.facetapi-active):hover {
   box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
   background-color: #EFEFEF;
   text-decoration: none !important;
 }
-/* line 54, ../sass/modules/searchresults/_facets.scss */
+/* line 66, ../sass/modules/searchresults/_facets.scss */
 body.mc .facetapi-facetapi-links a:link,
 body.mc .facetapi-facetapi-links a:visited {
   color: #222;
 }
 
-/* line 61, ../sass/modules/searchresults/_facets.scss */
+/* line 73, ../sass/modules/searchresults/_facets.scss */
 .facetapi-count {
   font-size: .8rem;
   color: gray !important;

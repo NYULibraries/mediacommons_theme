@@ -13,20 +13,13 @@
 
 
 .facetapi-facetapi-links {
-  // border: 0 solid silver;
-  // border-width: 0 0 1px 1px;
   li {
-    // background-color: #EAE9E8;
-    // border: 0 solid silver;
-    // border-width: 1px 1px 0 0;
     margin-bottom: 4px;
   }
-
-  a:link {
+  a:link,
+  a:visited {
     transition: all .2s ease;
-    background-color: #EAE9E8;
-   // box-shadow: inset 0px 0px 0px 1px #eee;
-    color: #345345;
+    background-color: #EAE9E8; // box-shadow: inset 0px 0px 0px 1px #eee;
     display: block;
     padding: 8px;
     font-size: .9rem;
@@ -34,35 +27,33 @@
     &.facetapi-active {
       box-shadow: none;
       background-color: #ffffff; //color: black;
-    
       .removeme {
-        opacity: 0;
         font-size: 9px;
-      
+        color: #999 !important;
         position: absolute;
         right: 5px;
         top: 5px;
+        transition: all .2s ease-in-out;
       }
     }
   }
   a.facetapi-active:hover {
     text-decoration: none !important;
     .removeme {
-      opacity: 1;
-        color: #cccccc !important;
+      color: red !important;
     }
   }
 
   a:not(.facetapi-active):hover {
-   // box-shadow: inset 0px 0px 0px 3px #fff;
+    // box-shadow: inset 0px 0px 0px 3px #fff;
     box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
     background-color: #EFEFEF;
     text-decoration: none !important;
   }
   body.mc & {
-    a:visited,
-    a:link {
-      color: #222 !important;
+    a:link,
+    a:visited {
+      color: #222;
     }
   }
 }

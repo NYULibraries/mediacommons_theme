@@ -70,3 +70,13 @@ $breakpoint-no-query-fallbacks: false;
   max-width: none !important;
   border: 2px solid red;
 }
+.element-invisible.element-focusable {
+	transition: all .5s;
+}
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: absolute !important;
+  
+  padding: 20px;
+  background-color:  white;
+}

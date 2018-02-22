@@ -20,6 +20,8 @@
                 });
             }
           });
+        } else {
+           $(this).closest("header").unbind('click');
         }
       });
     },

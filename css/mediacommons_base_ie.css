@@ -2143,22 +2143,34 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-bottom: 5px;
 }
 
-/* line 14, ../sass/modules/searchresults/_facets.scss */
+/* line 15, ../sass/modules/searchresults/_facets.scss */
 .responsive-container .responsive-disclosure {
   min-height: 15px;
   float: left;
   margin-right: .6em;
 }
 /* line 21, ../sass/modules/searchresults/_facets.scss */
+.responsive-container header {
+  cursor: pointer;
+}
+/* line 25, ../sass/modules/searchresults/_facets.scss */
+.responsive-container header {
+  cursor: default;
+}
+/* line 28, ../sass/modules/searchresults/_facets.scss */
 .responsive-container .responsive-disclosure {
   display: none;
 }
+/* line 31, ../sass/modules/searchresults/_facets.scss */
+.responsive-container .item-list[style] {
+  display: block !important;
+}
 
-/* line 28, ../sass/modules/searchresults/_facets.scss */
+/* line 38, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links li {
   margin-bottom: 4px;
 }
-/* line 31, ../sass/modules/searchresults/_facets.scss */
+/* line 41, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link,
 .facetapi-facetapi-links a:visited {
   transition: all .2s ease;
@@ -2168,13 +2180,13 @@ nav.global li.sites_nav ul > li > a.menu__link {
   font-size: .9rem;
   position: relative;
 }
-/* line 39, ../sass/modules/searchresults/_facets.scss */
+/* line 49, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link.facetapi-active,
 .facetapi-facetapi-links a:visited.facetapi-active {
   box-shadow: none;
   background-color: #ffffff;
 }
-/* line 42, ../sass/modules/searchresults/_facets.scss */
+/* line 52, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:link.facetapi-active .removeme,
 .facetapi-facetapi-links a:visited.facetapi-active .removeme {
   font-size: 9px;
@@ -2184,27 +2196,27 @@ nav.global li.sites_nav ul > li > a.menu__link {
   top: 5px;
   transition: all .2s ease-in-out;
 }
-/* line 52, ../sass/modules/searchresults/_facets.scss */
+/* line 62, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a.facetapi-active:hover {
   text-decoration: none !important;
 }
-/* line 54, ../sass/modules/searchresults/_facets.scss */
+/* line 64, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a.facetapi-active:hover .removeme {
   color: red !important;
 }
-/* line 59, ../sass/modules/searchresults/_facets.scss */
+/* line 69, ../sass/modules/searchresults/_facets.scss */
 .facetapi-facetapi-links a:not(.facetapi-active):hover {
   box-shadow: 1px 1px 3px 0px rgba(50, 50, 50, 0.5);
   background-color: #EFEFEF;
   text-decoration: none !important;
 }
-/* line 66, ../sass/modules/searchresults/_facets.scss */
+/* line 76, ../sass/modules/searchresults/_facets.scss */
 body.mc .facetapi-facetapi-links a:link,
 body.mc .facetapi-facetapi-links a:visited {
   color: #222;
 }
 
-/* line 73, ../sass/modules/searchresults/_facets.scss */
+/* line 83, ../sass/modules/searchresults/_facets.scss */
 .facetapi-count {
   font-size: .8rem;
   color: gray !important;

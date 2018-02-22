@@ -10,6 +10,7 @@
     margin-bottom: 5px;
   }
 }
+
 .responsive-container {
   .responsive-disclosure {
     //display: inline-block;
@@ -17,9 +18,18 @@
     float: left;
     margin-right: .6em;
   }
+  header {
+    cursor: pointer;
+  }
   @include respond-to("desktop") {
+    header {
+      cursor: default;
+    }
     .responsive-disclosure {
       display: none;
+    }
+    .item-list[style] {
+      display: block !important;
     }
   }
 }

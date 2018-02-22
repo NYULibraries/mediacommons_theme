@@ -1317,12 +1317,12 @@ a.control:active {
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .responsive-disclosure:before {
-  content: "\e013";
+  content: "\e010";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .responsive-container.is-open .responsive-disclosure:before {
-  content: "\e012";
+  content: "\e013";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
@@ -1403,7 +1403,7 @@ a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
 @font-face {
   font-family: "MediaCommons-Icon-Font";
   src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot');
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1516141987') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1516141987') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1516141987#MediaCommons-Icon-Font') format('svg');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1519316478') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1519316478') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1519316478#MediaCommons-Icon-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1916,51 +1916,56 @@ nav.global li.sites_nav ul > li > a.menu__link {
   content: "\20";
 }
 
-/* line 3, ../sass/modules/searchresults/_searchresults.scss */
+/* line 1, ../sass/modules/searchresults/_searchresults.scss */
+.searchresults_sidebar {
+  margin-bottom: 50px;
+}
+
+/* line 6, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_content .form-item-keys label {
   display: none;
 }
 
-/* line 9, ../sass/modules/searchresults/_searchresults.scss */
+/* line 12, ../sass/modules/searchresults/_searchresults.scss */
 .profile h3 {
   border-bottom: none;
 }
 
-/* line 13, ../sass/modules/searchresults/_searchresults.scss */
+/* line 16, ../sass/modules/searchresults/_searchresults.scss */
 .view-mode-search_result {
   border-bottom: 1px solid #ebebeb;
 }
-/* line 15, ../sass/modules/searchresults/_searchresults.scss */
+/* line 18, ../sass/modules/searchresults/_searchresults.scss */
 .view-mode-search_result.node-hub {
   padding: .8em 0;
 }
 
-/* line 20, ../sass/modules/searchresults/_searchresults.scss */
+/* line 23, ../sass/modules/searchresults/_searchresults.scss */
 .spelling-suggestions {
   padding: 15px 0;
 }
-/* line 22, ../sass/modules/searchresults/_searchresults.scss */
+/* line 25, ../sass/modules/searchresults/_searchresults.scss */
 .spelling-suggestions dt,
 .spelling-suggestions dd {
   display: inline-block;
   font-size: .8rem;
 }
-/* line 27, ../sass/modules/searchresults/_searchresults.scss */
+/* line 30, ../sass/modules/searchresults/_searchresults.scss */
 .spelling-suggestions dd {
   margin-left: 10px;
 }
 
-/* line 32, ../sass/modules/searchresults/_searchresults.scss */
+/* line 35, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_content h2 {
   margin-top: 1.5rem;
 }
 
-/* line 36, ../sass/modules/searchresults/_searchresults.scss */
+/* line 39, ../sass/modules/searchresults/_searchresults.scss */
 .page-search-site #block-search-form {
   display: none;
 }
 
-/* line 47, ../sass/modules/searchresults/_searchresults.scss */
+/* line 50, ../sass/modules/searchresults/_searchresults.scss */
 .thumb {
   width: 80px;
   height: auto;
@@ -1968,22 +1973,22 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-right: 10px;
   line-height: 1;
 }
-/* line 54, ../sass/modules/searchresults/_searchresults.scss */
+/* line 57, ../sass/modules/searchresults/_searchresults.scss */
 .thumb img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 61, ../sass/modules/searchresults/_searchresults.scss */
+/* line 64, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-teaser-meta {
   font-size: 0.86rem;
 }
-/* line 64, ../sass/modules/searchresults/_searchresults.scss */
+/* line 67, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-spoke.node-teaser {
   padding: 40px 0 10px 0px;
   margin-top: 30px;
 }
-/* line 69, ../sass/modules/searchresults/_searchresults.scss */
+/* line 72, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result {
   position: relative;
   overflow: hidden;
@@ -1993,79 +1998,79 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-top: 40px;
   max-width: 50em;
 }
-/* line 78, ../sass/modules/searchresults/_searchresults.scss */
+/* line 81, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result .field-name-field-project {
   display: block;
   margin-bottom: 10px;
 }
-/* line 83, ../sass/modules/searchresults/_searchresults.scss */
+/* line 86, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr + .node-imr, .mc-searchresults .search-result.node-fieldguide + .node-fieldguide, .mc-searchresults .search-result.node-alt + .node-alt, .mc-searchresults .search-result.node-int + .node-int, .mc-searchresults .search-result.node-tne + .node-tne {
   border-top-width: 0px;
   padding-top: 0px;
   margin-top: 5px;
 }
-/* line 91, ../sass/modules/searchresults/_searchresults.scss */
+/* line 94, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr + .node-imr .field-name-field-project, .mc-searchresults .search-result.node-fieldguide + .node-fieldguide .field-name-field-project, .mc-searchresults .search-result.node-alt + .node-alt .field-name-field-project, .mc-searchresults .search-result.node-int + .node-int .field-name-field-project, .mc-searchresults .search-result.node-tne + .node-tne .field-name-field-project {
   display: none;
 }
-/* line 97, ../sass/modules/searchresults/_searchresults.scss */
+/* line 100, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title {
   margin-top: 0;
   border-bottom: none;
 }
-/* line 100, ../sass/modules/searchresults/_searchresults.scss */
+/* line 103, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title a {
   display: block;
   padding: 0px;
 }
-/* line 105, ../sass/modules/searchresults/_searchresults.scss */
+/* line 108, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-snippet-info {
   padding: 0px;
   margin: 0;
 }
-/* line 111, ../sass/modules/searchresults/_searchresults.scss */
+/* line 114, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .hub-title {
   padding-top: 0;
   font-size: 1.3rem;
   line-height: 1.25;
 }
-/* line 116, ../sass/modules/searchresults/_searchresults.scss */
+/* line 119, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .thumb {
   width: 120px;
   height: auto;
 }
-/* line 122, ../sass/modules/searchresults/_searchresults.scss */
+/* line 125, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment {
   padding: 10px;
 }
-/* line 124, ../sass/modules/searchresults/_searchresults.scss */
+/* line 127, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment .h-card {
   margin-bottom: 0px;
 }
-/* line 128, ../sass/modules/searchresults/_searchresults.scss */
+/* line 131, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .peoplelist,
 .mc-searchresults .node-comment time {
   font-size: .85rem;
   margin-top: 2px;
   margin-bottom: 0;
 }
-/* line 134, ../sass/modules/searchresults/_searchresults.scss */
+/* line 137, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node {
   font-size: .85rem;
 }
-/* line 136, ../sass/modules/searchresults/_searchresults.scss */
+/* line 139, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node a:link,
 .mc-searchresults .node-comment .referenced-node a:hover,
 .mc-searchresults .node-comment .referenced-node a:active {
   color: inherit;
 }
-/* line 142, ../sass/modules/searchresults/_searchresults.scss */
+/* line 145, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-body {
   font-size: .85rem;
   margin-top: .2rem;
   display: none;
 }
-/* line 147, ../sass/modules/searchresults/_searchresults.scss */
+/* line 150, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-title {
   padding: 0;
   font-size: 1rem;
@@ -2073,51 +2078,51 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-bottom: 0;
 }
 
-/* line 160, ../sass/modules/searchresults/_searchresults.scss */
+/* line 163, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-user-content .field-label,
 .field-name-user-content-hubs .field-label,
 .field-name-user-comments .field-label {
   display: none;
 }
 
-/* line 165, ../sass/modules/searchresults/_searchresults.scss */
+/* line 168, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-search-snippet {
   clear: both;
   font-size: .8rem;
 }
 
-/* line 171, ../sass/modules/searchresults/_searchresults.scss */
+/* line 174, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 175, ../sass/modules/searchresults/_searchresults.scss */
+/* line 178, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_sidebar {
   flex: 0 0 300px;
   padding-right: 45px;
 }
-/* line 181, ../sass/modules/searchresults/_searchresults.scss */
+/* line 184, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_content {
   flex: 1 1 70%;
   max-width: 49rem;
 }
 
-/* line 188, ../sass/modules/searchresults/_searchresults.scss */
+/* line 191, ../sass/modules/searchresults/_searchresults.scss */
 .select-hold {
   float: right;
 }
 
-/* line 192, ../sass/modules/searchresults/_searchresults.scss */
+/* line 195, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Curated by ";
 }
 
-/* line 196, ../sass/modules/searchresults/_searchresults.scss */
+/* line 199, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 200, ../sass/modules/searchresults/_searchresults.scss */
+/* line 203, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Theme week organized by ";
 }

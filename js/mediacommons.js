@@ -4,13 +4,11 @@
     setUpFacetsReveal: function() {
       $(".responsive-disclosure").each(function(index) {
         if ($(this).is(':visible')) {
-
+          $(this).closest('.responsive-container').find(' .item-list').css({ "display": "none" });
           $(this).closest('header').click(function() {
-
             if ($(this).next('div').is(':visible')) {
               $(this).next('div').slideUp(300,
                 function() {
-                  // console.log("removing is open " + index);
                   $(this).closest('.responsive-container').removeClass('is-open');
                 });
             } else {

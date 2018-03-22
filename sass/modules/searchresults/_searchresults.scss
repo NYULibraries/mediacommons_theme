@@ -45,21 +45,6 @@
 
 
 
-
-// thumb is for spoke and hub 
-.thumb {
-  //border: 1px solid #ddd;
-  width: 80px;
-  height: auto;
-  float: left;
-  margin-right: 10px;
-  line-height: 1;
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
-
 .mc-searchresults {
   .spoke-teaser-meta {
     font-size: $spoke-teaser-meta-size;

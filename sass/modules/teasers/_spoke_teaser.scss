@@ -1,3 +1,27 @@
+// thumb is for spoke teasers only
+.thumb {
+  float: left;
+  margin-right: 10px;
+  line-height: 1;
+  box-shadow: inset 0px 0px 25px rgba(10, 10, 10, 0.2);
+  background-size: 100%;
+  background-size: cover;
+  background-position-x: 0px;
+  background-position-y: 0px;
+  width: 120px;
+  height: auto;
+  a {
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+
+
 .node-spoke {
   &.node-teaser {
     padding: .8em 0;
@@ -21,21 +45,10 @@
       left: 0;
     }
     .field-name-author {
-      // margin-top: 0em;
       font-size: .8em;
       font-family: $header-font-family;
     }
-    .thumb {
-      float: left;
-      margin-right: 10px;
-      line-height: 1;
-      a {
-        display: block;
-      }
-      img {
-        display: block;
-      }
-    }
+
     .peoplelist {
       font-size: $spoke-teaser-meta-size;
       float: left;
@@ -126,6 +139,7 @@
     margin-right: 5px;
   }
 }
+
 p.search-snippet {
   margin-bottom: 0;
 }

@@ -6,8 +6,6 @@ aside+h2 {
 
 
 
-/*****************************/
-
 .node-hub {
   .hub-title {
     color: nth($black, 1);
@@ -48,13 +46,15 @@ aside+h2 {
     }
   }
   &.view-mode-full {
+    .hubhead {
+       padding: 0rem 0 .4rem 0;
+    }
     .default-image {
       display: none;
     }
     .hub-title {
-
       font-size: 2em;
-      padding: .5em 0 0 0;
+      padding: .6rem 0 .5rem 0;
     }
   }
   &.node-teaser {

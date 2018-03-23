@@ -710,7 +710,7 @@ function mediacommons_preprocess_comment(&$variables) {
   if ($orgA = field_get_items('user', $user, 'field_organization')) {
     $term = taxonomy_term_load($orgA[0]['tid']); // load term object
     $term_uri = taxonomy_term_uri($term); // get array with path
-    $term_attributes = array('attributes' => array('title' => t('Organization: @title', array('@title' =>  taxonomy_term_title($term)))));
+    $term_attributes = array('attributes' => array('title' => t('@title', array('@title' =>  taxonomy_term_title($term)))));
     $variables['organization'] = l($term_attributes['attributes']['title'], $term_uri['path'], $term_attributes);
   }
 

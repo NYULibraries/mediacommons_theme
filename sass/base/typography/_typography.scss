@@ -155,8 +155,8 @@ h1 + p:first-letter {
 
 time {
     display: $time-display;
-    text-align: $time-text-align;
-    font-family: $time-font-family;
+    //text-align: $time-text-align;
+    // font-family: $time-font-family;
     @include bold-italic-uppercase-variant($time-font-bold, $time-font-italic, $time-font-uppercase, $time-font-variant);
     @include type-size($time-font-size, $time-line-height);
     // letter-spacing: $time-letter-spacing;

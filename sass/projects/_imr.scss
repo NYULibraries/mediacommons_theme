@@ -19,13 +19,10 @@ body.imr {
   #block-views-contributors-this-hub-block .blockheader div:after {
     content: " to this Theme Week";
   }
-  &.front {
-    .view-mode-hub-home {
-      .hub-title {
-        font-size: 2.1rem;
-        max-width: 90%;
-        padding: .2em 0 0 0;
-      }
+  .view-mode-hub-home {
+    .hub-title {
+      font-size: 2.5rem;
+      max-width: 90%;
     }
   }
 

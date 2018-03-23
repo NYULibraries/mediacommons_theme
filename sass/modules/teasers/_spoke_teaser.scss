@@ -52,23 +52,32 @@
 
     .peoplelist {
       font-size: $spoke-teaser-meta-size;
-      float: left;
+      @include respond-to("not-mobile-lh") {
+        float: left;
+      }
     }
+
     time {
       padding: 0 5px 0 0;
       font-size: $spoke-teaser-meta-size;
       display: block;
       line-height: 1.5;
-      float: left;
-      &::before {
-        content: "|\00a0";
+
+      @include respond-to("not-mobile-lh") {
+        float: left;
+        &::before {
+          content: "|\00a0";
+        }
       }
     }
     .comment-count {
       font-size: $spoke-teaser-meta-size;
-      float: left;
-      &::before {
-        content: "|";
+
+      @include respond-to("not-mobile-lh") {
+        float: left;
+        &::before {
+          content: "|";
+        }
       }
       a:link,
       a:visited {

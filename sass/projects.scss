@@ -7,14 +7,16 @@ $breakpoint-no-query-fallbacks: false;
 @import "color-schemer";
 @import "respond-to";
 @import "breakpoint";
-@import "layout/breakpoints/_breakpoints"; /// homepage -- hub -- credits under title
-$homepage-credits: 0.75rem !default;
+@import "layout/breakpoints/_breakpoints"; 
+
+//// Projects
 $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
 $black-value: #333333;
 $black: tint-stack($black-value);
 $type-color-value: #232323;
 $type-color: tint-stack($type-color-value);
 $body-color: #333333;
+
 @each $header,
 $col in $map {
   $primary-color: $col;
@@ -64,6 +66,7 @@ $col in $map {
         background-color: $col;
         display: inline-block;
         padding: 0 6px;
+         min-height: 1.4rem;
       }
     } 
     .view-list-of-all-hubs {
@@ -144,15 +147,6 @@ $col in $map {
     //   color: #fff;
     //   background-color: $primary-color;
     // }
-  }
-}
-
-body .hub-title {
-  padding-top: 0;
-  color: nth($type-color, 1);
-  a:link,
-  a:visited {
-    color: #111;
   }
 }
 

@@ -1,23 +1,22 @@
 //////////////////////////////
 // VARIABLES: For Theme — Overides for Compass Pattern-Primer  
 //////////////////////////////
-
 // Fonts see base/_webfonts
 // http://awesome-fontstacks.com/bundles/414-droooooid
 // added in Droid Serif and Droid Sans which are native fonts on Android Phones so they don't need to wait for the webfont version to be loaded 
-$body-font-family:"Open Sans", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
-$header-font-family: "Open Sans",  "Helvetica", "Lucida Grande", "Verdana", sans-serif;
+$body-font-family:"Georgia","Times New Roman",serif;
+$header-font-family: "Open Sans","Helvetica","Lucida Grande","Verdana",
+sans-serif;
 $blockquote-font-family: $header-font-family;
 //$monospaced-font-family: Menlo, Courier New, Courier, Mono, "Droid Sans Mono", monospace; 
-
 $body-font-size: 16px !default;
 $body-line-height: 1.25 !default;
 
 ///// body
-$body-background-color: lighten(nth($black , 6), 10%);
+$body-background-color: lighten(nth($black, 6), 10%);
 $body-background-rgba: rgba($body-background-color, 1);
 $body-border-width: false;
-$body-border-color-rgba: rgba(0,0,0,0); 
+$body-border-color-rgba: rgba(0, 0, 0, 0);
 $body-margin: 0 auto;
 $body-padding: 0;
 
@@ -42,14 +41,14 @@ $link-active-link-color: $link-color;
 
 $article-fl-float: none;
 $article-fl-font-family: inherit;
-$article-fl-font-bold: false; 
+$article-fl-font-bold: false;
 $article-fl-font-size: inherit;
 $article-fl-line-height: inherit;
 $article-fl-letter-spacing: inherit;
 $article-fl-margin: 0;
 $article-fl-margin-pos: false;
 $article-fl-background-color: inherit;
-$article-fl-color: inherit; 
+$article-fl-color: inherit;
 
 $article-font-size: inherit;
 $article-line-height: inherit;
@@ -59,13 +58,12 @@ $article-margin: 1em 0;
 $time-display: block;
 $time-text-align: left;
 //$time-font-family: $body-font-family;
-
 $time-font-family: $header-font-family;
 $time-font-bold: false; // normal
 $time-font-italic: false; // normal
 $time-font-uppercase: false; // uppercase
 $time-font-variant: false; // normal
-$time-color: nth($black , 2);
+$time-color: nth($black, 2);
 $time-content: '';
 
 $button-font-family: $header-font-family;
@@ -80,7 +78,7 @@ $button-gradient-stop-1: nth($black, 5);
 $button-gradient-stop-2: shade($button-gradient-stop-1, 3%);
 $button-hover-color: $button-color;
 $button-hover-gradient-stop-1: $button-gradient-stop-1;
-$button-hover-gradient-stop-2: tint($button-gradient-stop-1, 3%);                                                  
+$button-hover-gradient-stop-2: tint($button-gradient-stop-1, 3%);
 $button-active-color: $button-color;
 $button-active-gradient-stop-1: shade($button-gradient-stop-1, 3%);
 $button-active-gradient-stop-2: $button-gradient-stop-1;
@@ -112,7 +110,7 @@ $button-disabled-gradient-pos: $button-gradient-pos;
 
 $search-border-radius: 0.25em;
 $search-padding: 0 0.75em;
-$search-border-width: false; 
+$search-border-width: false;
 $search-border-style: solid;
 $search-border-color: #ccc;
 
@@ -130,3 +128,5 @@ $search-image-padding: 0.2em 0.2em;
 
 //// Forms
 $forms-input-width: auto;
+
+

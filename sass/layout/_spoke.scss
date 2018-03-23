@@ -2,46 +2,41 @@
 // LAYOUT: Layout dependent css and media queries only 
 //////////////////////////////
 .spoke {
-    .spoke-header {
-        margin: 0 0 2em 0;
-        .label-inline {
-            // float: left;
-            // font-size: .75rem;
-            // line-height: 1.5;
-        }
-        // font-size: .75rem;
+  .spoke-header {
+    margin: 0 0 2em 0;
+  }
+  .spoke-body {
+    line-height: 1.4375rem;
+  }
+  iframe {
+    max-width: 100%;
+  }
+  .body-text {
+    font-family: $body-font-family;
+    img {
+      max-width: 100%;
+      height: auto;
     }
-    .spoke-body {
-        line-height: 1.4375rem;
-        .body-text img {
-            max-width: 100%;
-            height: auto;
-        }
+  }
+  .curatorsnote {
+    @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
+    @include type-size($h2-font-size, $h2-line-height);
+    color: $h2-color;
+    margin-bottom: .5em;
+  }
+  h1 {
+    font-size: 1.8rem;
+    padding: .4em 0 .2em 0;
+    margin: 0 0 .1em 0;
+    color: nth($black, 1);
+  }
+  section.video>figure.video {
+    clear: both;
+    float: left;
+  }
+  @include respond-to("mobile tablet") {
+    section.video.part-of-hub {
+      padding-top: 1em;
     }
-    .curatorsnote {
-        @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
-        @include type-size($h2-font-size, $h2-line-height);
-        color: $h2-color;
-        margin-bottom: .5em;
-    }
-    h1 {
-        font-size: 1.8rem;
-        padding: .4em 0 .2em 0;
-        margin: 0 0 .1em 0;
-        color: nth($black, 1);
-    }
-    section.video > figure.video {
-        clear: both;
-        float: left;
-    }
-    @include respond-to("mobile tablet") {
-        section.video.part-of-hub {
-            padding-top: 1em;
-        }
-    }
-}
-
-section.video.part-of-hub {
-    // @extend %clearfix;
-    // https://github.com/team-sass/toolkit#clearfix
+  }
 }

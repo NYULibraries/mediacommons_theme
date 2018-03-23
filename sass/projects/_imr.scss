@@ -12,8 +12,7 @@ body.imr {
       background-position: bottom;
       height: 2.5rem;
     }
-  }
-  // this uses underscores because it is created from a block's delta
+  } // this uses underscores because it is created from a block's delta
   .mc_recent_comments .blockheader div:after {
     content: " on IMR";
   }
@@ -23,14 +22,15 @@ body.imr {
   &.front {
     .view-mode-hub-home {
       .hub-title {
-        font-size: 2rem;
+        font-size: 2.1rem;
         max-width: 90%;
+        padding: .2em 0 0 0;
       }
     }
   }
 
   [role="complementary"] {
-    > div,
+    >div,
     .block {
       background-color: lighten(nth($neutral_stack, 5), 3%);
     }
@@ -46,6 +46,7 @@ body.imr {
     border: 1px solid #e5e4e4;
   }
 }
+
 .not-available {
   opacity: 0.5;
 }

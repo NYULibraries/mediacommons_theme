@@ -177,11 +177,11 @@ textarea[required] {
 
 /* line 5, ../sass/base/webfonts/_webfonts_extendables.scss */
 .view-mc-recent-comments li .views-field-comment-body {
-  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 /* line 7, ../sass/base/webfonts/_webfonts_extendables.scss */
 .wf-droidserif-n4-active .view-mc-recent-comments li .views-field-comment-body, .view-mc-recent-comments li .wf-droidserif-n4-active .views-field-comment-body {
-  font-family: "Open Sans", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+  font-family: "Open Sans", "Georgia", "Times New Roman", serif;
 }
 
 /* line 11, ../sass/base/webfonts/_webfonts_extendables.scss */
@@ -382,7 +382,7 @@ blockquote em {
 
 /* line 115, ../sass/base/typography/_typography.scss */
 figcaption {
-  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+  font-family: "Georgia", "Times New Roman", serif;
   font-weight: normal;
   font-style: italic;
   font-size: 0.857em;
@@ -3260,7 +3260,7 @@ ul.action-links li a {
 .view-comments-from-user .views-field-comment-body {
   color: #5a5a5a;
   font-size: .9rem;
-  font-family: "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", "Droid Serif", serif;
+  font-family: "Georgia", "Times New Roman", serif;
 }
 /* line 363, ../sass/modules/comments/_comments.scss */
 .view-comments-from-user .views-field-created {
@@ -3285,11 +3285,6 @@ ul.action-links li a {
 /* line 14, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] {
   /* On user profile page */
-}
-/* line 15, ../sass/modules/sidebars/_sidebars.scss */
-[role="complementary"] .thumb {
-  width: 90px !important;
-  height: auto !important;
 }
 /* line 19, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] header,
@@ -3425,12 +3420,14 @@ aside + h2 {
 }
 
 /*****************************/
-/* line 14, ../sass/modules/hub_list/_hub_list.scss */
+/* line 12, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .hub-title {
-  font-size: 1.5em;
-  padding: .2em 0 0 0;
-  margin: 0 0 .3em 0;
   color: #232323;
+}
+/* line 14, ../sass/modules/hub_list/_hub_list.scss */
+.node-hub .hub-title a:link,
+.node-hub .hub-title a:visited {
+  color: #111;
 }
 /* line 20, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub p {
@@ -3441,26 +3438,41 @@ aside + h2 {
   margin: .5rem 0 0 0;
   line-height: 1.3;
 }
-/* line 28, ../sass/modules/hub_list/_hub_list.scss */
+/* line 27, ../sass/modules/hub_list/_hub_list.scss */
+.node-hub .field-name-field-image-rights {
+  font-size: .85rem;
+}
+/* line 29, ../sass/modules/hub_list/_hub_list.scss */
+.node-hub .field-name-field-image-rights a:link,
+.node-hub .field-name-field-image-rights a:visited {
+  text-decoration: underline;
+  color: inherit;
+}
+/* line 37, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period a:link,
 .node-hub .field-name-field-period a:visited {
   color: #5a5a5a;
 }
-/* line 32, ../sass/modules/hub_list/_hub_list.scss */
+/* line 41, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-label {
   display: inline-block;
   font-weight: normal;
   margin-right: 5px;
 }
-/* line 37, ../sass/modules/hub_list/_hub_list.scss */
+/* line 46, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub .field-name-field-period .field-items {
   display: inline-block;
 }
-/* line 42, ../sass/modules/hub_list/_hub_list.scss */
+/* line 51, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.view-mode-full .default-image {
   display: none;
 }
-/* line 46, ../sass/modules/hub_list/_hub_list.scss */
+/* line 54, ../sass/modules/hub_list/_hub_list.scss */
+.node-hub.view-mode-full .hub-title {
+  font-size: 2em;
+  padding: .5em 0 0 0;
+}
+/* line 60, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser {
   display: flex;
   flex-wrap: wrap;
@@ -3468,72 +3480,78 @@ aside + h2 {
   border-bottom: 1px solid #cccccc;
   padding: 1em 0;
 }
-/* line 52, ../sass/modules/hub_list/_hub_list.scss */
+/* line 66, ../sass/modules/hub_list/_hub_list.scss */
+.node-hub.node-teaser .hub-title {
+  font-size: 1.5em;
+  padding: .2em 0 0 0;
+  margin: 0 0 .3em 0;
+}
+/* line 71, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .group-flex1 {
   flex: 1 0 33%;
   min-width: 300px;
 }
-/* line 56, ../sass/modules/hub_list/_hub_list.scss */
+/* line 75, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .group-flex2 {
   flex: 1 0 64%;
 }
-/* line 66, ../sass/modules/hub_list/_hub_list.scss */
+/* line 85, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .field-name-field-representative-image {
   margin-right: 35px;
   min-height: 7rem;
 }
-/* line 69, ../sass/modules/hub_list/_hub_list.scss */
+/* line 88, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .field-name-field-representative-image img {
   width: 100%;
   height: auto;
   display: block;
 }
-/* line 75, ../sass/modules/hub_list/_hub_list.scss */
+/* line 94, ../sass/modules/hub_list/_hub_list.scss */
 .node-hub.node-teaser .spokes {
   margin-top: 20px;
 }
 
-/* line 82, ../sass/modules/hub_list/_hub_list.scss */
+/* line 101, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead img {
   max-width: 100% !important;
   height: auto;
   width: 100%;
   display: block;
 }
-/* line 88, ../sass/modules/hub_list/_hub_list.scss */
+/* line 107, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead time {
   font-size: .9rem;
 }
 
-/* line 94, ../sass/modules/hub_list/_hub_list.scss */
+/* line 113, ../sass/modules/hub_list/_hub_list.scss */
 .hubhead .peoplelist.curator {
   font-size: .9rem;
 }
-/* line 98, ../sass/modules/hub_list/_hub_list.scss */
+/* line 117, ../sass/modules/hub_list/_hub_list.scss */
 .peoplelist.curator span::after {
   content: "";
 }
 
-/* line 104, ../sass/modules/hub_list/_hub_list.scss */
+/* line 123, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs .node-hub.node-teaser {
   padding: 2em 0;
 }
 
-/* line 110, ../sass/modules/hub_list/_hub_list.scss */
+/* line 129, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous h1.page-title {
   margin-bottom: 30px;
 }
-/* line 113, ../sass/modules/hub_list/_hub_list.scss */
+/* line 132, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb {
   width: 80px;
 }
-/* line 115, ../sass/modules/hub_list/_hub_list.scss */
+/* line 134, ../sass/modules/hub_list/_hub_list.scss */
 .page-previous .thumb img {
   width: 100%;
   height: auto;
 }
 
-/* line 125, ../sass/modules/hub_list/_hub_list.scss */
+/* line 144, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 1rem;
@@ -3541,42 +3559,42 @@ aside + h2 {
   padding-left: 10px;
   padding-top: 10px;
 }
-/* line 132, ../sass/modules/hub_list/_hub_list.scss */
+/* line 151, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 137, ../sass/modules/hub_list/_hub_list.scss */
+/* line 156, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
   background-color: #F7F7F7;
 }
-/* line 141, ../sass/modules/hub_list/_hub_list.scss */
+/* line 160, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 144, ../sass/modules/hub_list/_hub_list.scss */
+/* line 163, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
   border: 1px solid #eeeeee;
 }
-/* line 151, ../sass/modules/hub_list/_hub_list.scss */
+/* line 170, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {
   display: none;
 }
-/* line 154, ../sass/modules/hub_list/_hub_list.scss */
+/* line 173, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .form-item {
   margin-bottom: 4px;
 }
-/* line 157, ../sass/modules/hub_list/_hub_list.scss */
+/* line 176, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-exposed-widget {
   float: none;
   padding: 0;
   font-size: .8rem;
 }
-/* line 162, ../sass/modules/hub_list/_hub_list.scss */
+/* line 181, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form .views-submit-button {
   display: none;
 }
@@ -3593,54 +3611,55 @@ body .view-filters .views-exposed-form .views-submit-button {
   background-position-y: 0px;
   width: 120px;
   height: auto;
+  max-width: 25%;
 }
-/* line 13, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 14, ../sass/modules/teasers/_spoke_teaser.scss */
 .thumb a {
   display: block;
 }
-/* line 16, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 17, ../sass/modules/teasers/_spoke_teaser.scss */
 .thumb img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-/* line 26, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 27, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser {
   padding: .8em 0;
   line-height: 1.5;
   margin: 0;
 }
-/* line 31, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 32, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .spoke-teaser-meta {
   width: auto;
   overflow: hidden;
   font-size: 0.86rem;
 }
-/* line 37, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 38, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 40, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 41, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser.clearfix:after {
   clear: left;
 }
-/* line 43, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 44, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .contextual-links-wrapper {
   /* the edit option cog breaks links in left floated aside otherwise */
   left: 0;
 }
-/* line 47, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 48, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .field-name-author {
   font-size: .8em;
   font-family: "Open Sans", "Helvetica", "Lucida Grande", "Verdana", sans-serif;
 }
-/* line 52, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 53, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .peoplelist {
   font-size: 0.86rem;
   float: left;
 }
-/* line 56, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 57, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser time {
   padding: 0 5px 0 0;
   font-size: 0.86rem;
@@ -3648,37 +3667,37 @@ body .view-filters .views-exposed-form .views-submit-button {
   line-height: 1.5;
   float: left;
 }
-/* line 62, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 63, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser time::before {
   content: "|\00a0";
 }
-/* line 66, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 67, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .comment-count {
   font-size: 0.86rem;
   float: left;
 }
-/* line 69, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 70, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .comment-count::before {
   content: "|";
 }
-/* line 72, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 73, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.node-teaser .comment-count a:link,
 .node-spoke.node-teaser .comment-count a:visited {
   color: #5a5a5a;
 }
-/* line 79, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 80, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.view-mode-full .field-name-field-attached-images {
   float: left;
   margin-right: 10px;
 }
-/* line 83, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 84, ../sass/modules/teasers/_spoke_teaser.scss */
 .node-spoke.view-mode-full .field-name-field-body {
   margin: .5rem 0 0 0;
   line-height: 1.5;
   clear: left;
 }
 
-/* line 91, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 92, ../sass/modules/teasers/_spoke_teaser.scss */
 .spoke-title {
   font-size: 1.1rem;
   margin-top: -.1rem;
@@ -3686,54 +3705,54 @@ body .view-filters .views-exposed-form .views-submit-button {
   padding-bottom: 0;
   line-height: 1.25;
 }
-/* line 97, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 98, ../sass/modules/teasers/_spoke_teaser.scss */
 .spoke-title a:link,
 .spoke-title a:visited {
   color: #232323 !important;
 }
 
-/* line 106, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 107, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist {
   font-size: .85rem;
   color: #5a5a5a;
   line-height: 1.5;
   padding-right: 5px;
 }
-/* line 113, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 114, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist span.l::after {
   content: "";
 }
-/* line 118, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 119, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist .h-card {
   white-space: nowrap;
   display: inline-block;
 }
-/* line 121, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 122, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist .h-card::after {
   content: ",\20";
 }
-/* line 124, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 125, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist .h-card:last-child::after {
   content: "";
 }
-/* line 128, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 129, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist .field-label {
   display: inline-block;
   padding-right: .2rem;
 }
-/* line 132, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 133, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist a:link,
 .peoplelist a:active,
 .peoplelist a:visited {
   color: #5a5a5a !important;
 }
-/* line 137, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 138, ../sass/modules/teasers/_spoke_teaser.scss */
 .peoplelist .label {
   float: left;
   margin-right: 5px;
 }
 
-/* line 143, ../sass/modules/teasers/_spoke_teaser.scss */
+/* line 144, ../sass/modules/teasers/_spoke_teaser.scss */
 p.search-snippet {
   margin-bottom: 0;
 }
@@ -4411,7 +4430,7 @@ footer#footer {
 @media (min-width: 801px) {
   /* line 109, ../sass/layout/_page.scss */
   [role="complementary"] {
-    width: 35%;
+    width: 31.5%;
     margin-top: 0;
     float: right;
     clear: none;
@@ -4435,7 +4454,7 @@ footer#footer {
   /* line 134, ../sass/layout/_page.scss */
   #content {
     float: left;
-    width: 60%;
+    width: 66%;
     max-width: 80.37551em;
   }
 }
@@ -4493,12 +4512,20 @@ footer#footer {
 .spoke .spoke-header {
   margin: 0 0 2em 0;
 }
-/* line 14, ../sass/layout/_spoke.scss */
+/* line 8, ../sass/layout/_spoke.scss */
 .spoke .spoke-body {
   line-height: 1.4375rem;
 }
+/* line 11, ../sass/layout/_spoke.scss */
+.spoke iframe {
+  max-width: 100%;
+}
+/* line 14, ../sass/layout/_spoke.scss */
+.spoke .body-text {
+  font-family: "Georgia", "Times New Roman", serif;
+}
 /* line 16, ../sass/layout/_spoke.scss */
-.spoke .spoke-body .body-text img {
+.spoke .body-text img {
   max-width: 100%;
   height: auto;
 }

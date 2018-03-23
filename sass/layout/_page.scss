@@ -113,7 +113,7 @@ body {
   margin-top: 100px;
   @include respond-to("wide") {
     // width: ms(12);
-    width: 35%;
+    width: 31.5%;
     margin-top: 0;
     // width of the side content - see modular scale notes in base/typography/_typography_variables
     float: right;
@@ -138,7 +138,7 @@ body {
   // background-color: purple;
   @include respond-to("wide") {
     float: left;
-    width: 60%;
+    width: 66%;
     // background-color: blue;
     max-width: ms(17);
   }

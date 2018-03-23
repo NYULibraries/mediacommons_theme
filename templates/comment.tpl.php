@@ -60,8 +60,7 @@ hide($content['links']);
       <mark class="unpublished"><?php print t('Unpublished'); ?></mark>
     <?php endif; ?>
   </header>
-  <div class="field-name-comment-body">
-    <?php print render($content); ?>
-  </div>
+  <?php print render($content); ?>
+ 
   <?php print render($content['links']) ?>
 </article>

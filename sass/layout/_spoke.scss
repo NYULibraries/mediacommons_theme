@@ -13,6 +13,9 @@
   }
   .body-text {
     font-family: $body-font-family;
+     max-width: 38em;
+     line-height: 1.5;
+     font-size: 1.1em;
     img {
       max-width: 100%;
       height: auto;

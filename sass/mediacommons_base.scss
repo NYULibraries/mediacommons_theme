@@ -66,12 +66,10 @@ $breakpoint-no-query-fallbacks: false;
   }
 }
 
-#page .manualcrop-preview img {
-  max-width: none !important;
-  border: 2px solid red;
-}
+
+// Skip to main content
 .element-invisible.element-focusable {
-	transition: all .5s;
+    transition: all .5s;
 }
 .element-invisible.element-focusable:active,
 .element-invisible.element-focusable:focus {

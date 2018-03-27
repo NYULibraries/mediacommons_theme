@@ -2681,11 +2681,11 @@ footer#footer {
   text-align: center;
   display: block;
 }
-/* line 10, ../sass/modules/footer/_footer.scss */
+/* line 8, ../sass/modules/footer/_footer.scss */
 footer#footer .powered {
   font-size: .8em;
 }
-/* line 13, ../sass/modules/footer/_footer.scss */
+/* line 11, ../sass/modules/footer/_footer.scss */
 footer#footer ul[role=menu],
 footer#footer ul.menu {
   margin: 0;
@@ -2693,7 +2693,7 @@ footer#footer ul.menu {
   list-style-type: none;
   text-align: center;
 }
-/* line 19, ../sass/modules/footer/_footer.scss */
+/* line 17, ../sass/modules/footer/_footer.scss */
 footer#footer ul[role=menu] li,
 footer#footer ul[role=menu] li:first-child,
 footer#footer ul.menu li,
@@ -2702,7 +2702,7 @@ footer#footer ul.menu li:first-child {
   display: inline;
   margin: 0;
 }
-/* line 24, ../sass/modules/footer/_footer.scss */
+/* line 22, ../sass/modules/footer/_footer.scss */
 footer#footer ul[role=menu] li a,
 footer#footer ul[role=menu] li:first-child a,
 footer#footer ul.menu li a,
@@ -2710,17 +2710,27 @@ footer#footer ul.menu li:first-child a {
   padding: 0 .5em;
 }
 
-/* line 31, ../sass/modules/footer/_footer.scss */
+/* line 30, ../sass/modules/footer/_footer.scss */
+body.mc .extras span {
+  display: inline-block;
+  line-height: 1.5;
+}
+/* line 33, ../sass/modules/footer/_footer.scss */
+body.mc .extras span:not(:last-child):after {
+  content: " | ";
+}
+
+/* line 39, ../sass/modules/footer/_footer.scss */
 .cc-info {
   font-size: .9rem;
   color: #555 !important;
 }
-/* line 34, ../sass/modules/footer/_footer.scss */
+/* line 42, ../sass/modules/footer/_footer.scss */
 .cc-info a:link,
 .cc-info a:visited {
   color: #555 !important;
 }
-/* line 38, ../sass/modules/footer/_footer.scss */
+/* line 46, ../sass/modules/footer/_footer.scss */
 .cc-info .cc-license::before {
   padding: 0 2px 0 4px;
   display: inline-block;
@@ -4666,4 +4676,24 @@ body.meco input[type="search"]::placeholder {
 /* line 66, ../sass/layout/_user_profile.scss */
 .view-user-search li .p-job-title, .view-user-search li .h-adr, .view-user-search li .p-org {
   display: inline-block;
+}
+
+/* line 63, ../sass/mediacommons_base.scss */
+.view-list-of-all-hubs img[src*="default_images"],
+.hubhead img[src*="default_images"] {
+  display: none !important;
+  height: 0;
+}
+
+/* line 71, ../sass/mediacommons_base.scss */
+.element-invisible.element-focusable {
+  transition: all .5s;
+}
+
+/* line 74, ../sass/mediacommons_base.scss */
+.element-invisible.element-focusable:active,
+.element-invisible.element-focusable:focus {
+  position: absolute !important;
+  padding: 20px;
+  background-color: white;
 }

@@ -36,12 +36,13 @@
             <?php  print render($page['umb_homepage_top']);  ?>
           </div>
           <div class="hometopright node-mc">
+          
             <div class="special">Welcome<span> to MediaCommons</span>!</div>
             <div class="maintext">
               We are a community network for scholars, students, and practitioners in media studies, promoting exploration of new forms of publishing within the field.
             </div>
-            <div>
-              <a href="/about">Read more...</a>
+            <div class="readmoreabout">
+               <a href="/about"> Read more...</a>
             </div>
           </div>
         </div>

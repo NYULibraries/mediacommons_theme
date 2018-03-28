@@ -1169,12 +1169,16 @@ a.control:active {
   background-color: #e7eef3;
   font-size: .9rem;
 }
-/* line 318, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 316, ../sass/modules/homepage/_homepageUmbrella.scss */
+.hometophold .hometopright .readmoreabout {
+  text-decoration: underline;
+}
+/* line 320, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright .special {
   font-size: 1.1em;
   font-weight: bold;
 }
-/* line 327, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 329, ../sass/modules/homepage/_homepageUmbrella.scss */
 .hometophold .hometopright .maintext {
   font-size: 1.05rem;
   line-height: 1.3;
@@ -1182,21 +1186,21 @@ a.control:active {
   margin: .2em 0;
 }
 
-/* line 361, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc {
   background-color: #f4ebe7;
   padding: 0 20px 20px 20px;
   margin-top: 15px;
 }
-/* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 365, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .view-content {
   padding: 0 !important;
 }
-/* line 366, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 368, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .thumb {
   display: none;
 }
-/* line 373, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 375, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .blockheader div {
   background: #d7a100;
   margin: 0px 0 0 -20px;
@@ -1207,23 +1211,23 @@ a.control:active {
   text-transform: uppercase;
   font-size: .9rem;
 }
-/* line 384, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 386, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .hub-title {
   clear: both;
   font-size: 1.2rem;
   line-height: 1.3;
 }
-/* line 389, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 391, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .spokes {
   margin-top: 20px;
   border-top: 1px solid rgba(204, 204, 204, 0.5);
 }
-/* line 393, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 395, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .node-teaser {
   border: none;
   padding: .8em 0 0 0;
 }
-/* line 397, ../sass/modules/homepage/_homepageUmbrella.scss */
+/* line 399, ../sass/modules/homepage/_homepageUmbrella.scss */
 .block.fieldguide_toc .spoke-title {
   font-size: .9rem;
 }

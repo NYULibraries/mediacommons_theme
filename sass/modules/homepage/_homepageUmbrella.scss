@@ -341,7 +341,7 @@ $hometoprightcolor: #E7EEF3;
         font-size: calc(.1 * 20vw);
         margin: 1em 0;
       }
-      @include respond-to("medium  content") {
+      @include respond-to("medium content") {
         // background-color: orange;
         font-size: .9rem; // font-size: calc(8px + 1vw);
         // font-size: calc(.1 *  20vw);

@@ -1182,8 +1182,6 @@ a.control:active {
 .hometophold .hometopright .maintext {
   font-size: 1.05rem;
   line-height: 1.3;
-  font-size: .9rem;
-  margin: .2em 0;
 }
 
 /* line 363, ../sass/modules/homepage/_homepageUmbrella.scss */
@@ -1587,17 +1585,17 @@ nav.global {
   z-index: 2000;
   padding: 0;
 }
-/* line 33, ../sass/modules/global_nav/_global_nav.scss */
+/* line 31, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul {
   margin: 0;
 }
-/* line 35, ../sass/modules/global_nav/_global_nav.scss */
+/* line 33, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li {
   text-indent: 0;
   margin: 0;
   padding: 0;
 }
-/* line 39, ../sass/modules/global_nav/_global_nav.scss */
+/* line 37, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a {
   font-size: .8rem;
   line-height: 1.5;
@@ -1607,26 +1605,26 @@ nav.global ul li a {
   text-indent: 0;
   display: block;
 }
-/* line 48, ../sass/modules/global_nav/_global_nav.scss */
+/* line 45, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:hover, nav.global ul li a:focus {
   color: #e9e9e9 !important;
   text-decoration: underline;
 }
-/* line 53, ../sass/modules/global_nav/_global_nav.scss */
+/* line 50, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:link, nav.global ul li a:visited {
   color: #e9e9e9 !important;
   text-decoration: none;
 }
-/* line 78, ../sass/modules/global_nav/_global_nav.scss */
+/* line 74, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="true"] {
   display: none;
   overflow: hidden;
 }
-/* line 82, ../sass/modules/global_nav/_global_nav.scss */
+/* line 78, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="false"] {
   overflow: visible;
 }
-/* line 88, ../sass/modules/global_nav/_global_nav.scss */
+/* line 84, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink {
   width: 12rem;
   padding: .5rem 1rem 0 1rem;
@@ -1637,31 +1635,39 @@ nav.global li.sites_nav .logolink {
   font-size: 1.3rem;
   line-height: 1;
 }
-/* line 97, ../sass/modules/global_nav/_global_nav.scss */
+/* line 93, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink:hover {
   text-decoration: none;
 }
-/* line 100, ../sass/modules/global_nav/_global_nav.scss */
+/* line 96, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink span {
   display: none;
 }
-/* line 104, ../sass/modules/global_nav/_global_nav.scss */
+/* line 100, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav ul {
   float: left;
   width: auto;
   position: relative;
 }
-/* line 111, ../sass/modules/global_nav/_global_nav.scss */
+/* line 105, ../sass/modules/global_nav/_global_nav.scss */
+nav.global li.sites_nav .mediacommonshomepage {
+  display: block;
+}
+/* line 109, ../sass/modules/global_nav/_global_nav.scss */
+nav.global li.sites_nav .mediacommonshomepage {
+  display: none;
+}
+/* line 112, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .leaf {
   background: url('../images/verticalline.png?1521470898');
   background-repeat: no-repeat;
   background-position: center right;
 }
-/* line 115, ../sass/modules/global_nav/_global_nav.scss */
+/* line 116, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .leaf:last-child {
   background: none;
 }
-/* line 119, ../sass/modules/global_nav/_global_nav.scss */
+/* line 120, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav ul {
   height: 2.4rem;
   display: -webkit-flex;

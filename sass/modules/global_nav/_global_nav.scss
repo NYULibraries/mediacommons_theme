@@ -25,11 +25,9 @@ nav.global {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2000;
-  // padding: $globalnav-top-pad 1% 0 1%;
+  z-index: 2000; // padding: $globalnav-top-pad 1% 0 1%;
   // padding: 0 1% 0 1%;
-  padding: 0;
-  // ALL LIST padding: 0 1% 0 1%;S
+  padding: 0; // ALL LIST padding: 0 1% 0 1%;S
   ul {
     margin: 0;
     li {
@@ -43,8 +41,7 @@ nav.global {
         font-weight: 400;
         color: nth($black, 5);
         text-indent: 0;
-        display: block;
-        // important is for overriding the project specific colors
+        display: block; // important is for overriding the project specific colors
         &:hover,
         &:focus {
           color: nth($black, 6) !important;
@@ -57,8 +54,7 @@ nav.global {
         }
       }
     }
-  }
-  // // top level lists
+  } // // top level lists
   // > ul {
   //   // width: 100%;
   //   // position: relative;
@@ -106,8 +102,13 @@ nav.global {
       width: auto;
       position: relative;
     }
+    .mediacommonshomepage {
+      display: block;
+    }
     @include respond-to("full navigation") {
-      // Each of the channel links has the class "leaf"
+      .mediacommonshomepage {
+        display: none;
+      } // Each of the channel links has the class "leaf"
       .leaf {
         background: image-url("verticalline.png");
         background-repeat: no-repeat;
@@ -121,15 +122,14 @@ nav.global {
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        // -ms-flex-align: center;
+        flex-flow: row nowrap; // -ms-flex-align: center;
         // -webkit-align-items: center;
         // -webkit-box-align: center;
         // align-items: center;
-        > li {
+        >li {
           -webkit-flex: 1 0 auto;
           flex: 1 0 auto;
-          > a.menu__link {
+          >a.menu__link {
             padding: .7em .7em 0;
           }
         }
@@ -156,10 +156,9 @@ nav.global {
     ul {
       // Channel links
       @include border-radius(0 0 5px 5px);
-      background-color: $globalnav-background-gradient-end;
-      // height: 0px;
+      background-color: $globalnav-background-gradient-end; // height: 0px;
       // display: none;
-      > li {
+      >li {
         -webkit-flex: 1 1 auto;
         flex: 1 1 auto;
         a {
@@ -169,13 +168,11 @@ nav.global {
           border-bottom: 1px solid darken($globalnav-background-gradient-end, 6%);
           box-shadow: 0px 1px lighten($globalnav-background-gradient-end, 4%);
         }
-        &:last-child > a {
+        &:last-child>a {
           border: none;
           box-shadow: none;
         }
-      }
-      // }
-   
+      } // }
     }
     &.open ul {
       height: auto;

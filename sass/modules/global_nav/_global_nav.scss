@@ -102,11 +102,11 @@ nav.global {
       width: auto;
       position: relative;
     }
-    .mediacommonshomepage {
+    .mediacommonsfrontpage {
       display: block;
     }
     @include respond-to("full navigation") {
-      .mediacommonshomepage {
+      .mediacommonsfrontpage {
         display: none;
       } // Each of the channel links has the class "leaf"
       .leaf {

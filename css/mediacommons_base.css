@@ -1824,12 +1824,12 @@ nav.global li.sites_nav ul {
   position: relative;
 }
 /* line 105, ../sass/modules/global_nav/_global_nav.scss */
-nav.global li.sites_nav .mediacommonshomepage {
+nav.global li.sites_nav .mediacommonsfrontpage {
   display: block;
 }
 @media (min-width: 801px) {
   /* line 109, ../sass/modules/global_nav/_global_nav.scss */
-  nav.global li.sites_nav .mediacommonshomepage {
+  nav.global li.sites_nav .mediacommonsfrontpage {
     display: none;
   }
   /* line 112, ../sass/modules/global_nav/_global_nav.scss */

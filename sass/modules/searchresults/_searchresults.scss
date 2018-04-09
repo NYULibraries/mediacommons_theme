@@ -9,17 +9,6 @@
   }
 }
 
-.profile h3 {
-  border-bottom: none;
-}
-
-.view-mode-search_result {
-  border-bottom: 1px solid #ebebeb;
-  &.node-hub {
-    padding: .8em 0;
-  }
-}
-
 .spelling-suggestions {
   padding: 15px 0;
   dt,
@@ -29,6 +18,24 @@
   }
   dd {
     margin-left: 10px;
+  }
+}
+
+.page-search {
+  input[type="text"] {
+    width: 100%;
+  }
+  .form-type-textfield {
+    flex: 1 1 22rem;
+    @include respond-to("desktop") {
+      max-width: 500px;
+    }
+  }
+  input[type="submit"] {
+   
+    flex: 1 0 70px;
+    max-width: 90px;
+    margin-right: 0px;
   }
 }
 
@@ -62,7 +69,9 @@
     border-top-width: 4px;
     padding: 40px 0 10px 0px;
     margin-top: 40px;
-    max-width: 50em;
+    @include respond-to("desktop") {
+      max-width: 50em;
+    }
     .field-name-field-project {
       // style for first of a series of project items 
       display: block;

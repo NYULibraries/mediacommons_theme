@@ -21,6 +21,12 @@
   header {
     cursor: pointer;
   }
+  @include respond-to("not desktop") {
+    &:not(.is-open) .item-list {
+      // when the facets load in mobile, they should start out closed
+      display: none;
+    }
+  }
   @include respond-to("desktop") {
     header {
       cursor: default;

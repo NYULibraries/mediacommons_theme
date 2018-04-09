@@ -2,26 +2,32 @@
 (function($) {
   Drupal.mediacommons = {
     setUpFacetsReveal: function() {
-      $(".responsive-disclosure").each(function(index) {
+      $(".searchresults_sidebar .responsive-disclosure").each(function(index) {
+        // visibility of arrow determined by CSS media queries
         if ($(this).is(':visible')) {
-          $(this).closest('.responsive-container').find(' .item-list').css({ "display": "none" });
-          $(this).closest('header').click(function() {
-            if ($(this).next('div').is(':visible')) {
-              $(this).next('div').slideUp(300,
+          $myContainer = $(this).closest('.responsive-container');
+          $myContainer.find('.item-list').css({ "display": "none" });
+          $('.searchresults_sidebar .responsive-container').removeClass('is-open');
+          // important to unbind all click events first
+          $(this).closest('header').unbind('click').click(function() {
+            if ($(this).next('div.item-list').is(':visible')) {
+              $(this).next('div.item-list').slideUp(300,
                 function() {
+                  //console.log("removing is-open " + index);
                   $(this).closest('.responsive-container').removeClass('is-open');
                 });
             } else {
-              $(this).next('div').slideDown(300,
+              $(this).next('div.item-list').slideDown(300,
                 function() {
                   // open class is for the arrow display
-                  //console.log("adding is open " + index);
+                  //console.log("adding is-open " + index);
                   $(this).closest('.responsive-container').addClass('is-open');
                 });
             }
           });
         } else {
-           $(this).closest("header").unbind('click');
+          $(this).closest("header").unbind('click');
+          $('.searchresults_sidebar  .responsive-container').removeClass('is-open');
         }
       });
     },
@@ -81,13 +87,14 @@
         return $(this).find('.spoke-title>a').hasClass('active') === true;
       }).addClass('active');
 
+   
       $(window).resize(_.debounce(function() {
         Drupal.mediacommons.setUpAsideReveal();
-      }, 100));
-
-      $(window).bind('load', function() {
-        Drupal.mediacommons.setUpAsideReveal();
         Drupal.mediacommons.setUpFacetsReveal();
+      }, 200));
+      $(window).bind('load', function() {
+        //Drupal.mediacommons.setUpAsideReveal();
+        //Drupal.mediacommons.setUpFacetsReveal();
       });
 
       $searchresults = $('#searchresults-sort');

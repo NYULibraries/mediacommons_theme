@@ -1,6 +1,7 @@
 .searchresults_sidebar {
   margin-bottom: 50px;
 }
+
 .searchresults_content {
   .form-item-keys {
     label {
@@ -22,8 +23,10 @@
 }
 
 .page-search {
+
   input[type="text"] {
     width: 100%;
+    -webkit-appearance: none;
   }
   .form-type-textfield {
     flex: 1 1 22rem;
@@ -32,10 +35,12 @@
     }
   }
   input[type="submit"] {
-   
     flex: 1 0 70px;
     max-width: 90px;
     margin-right: 0px;
+    @include respond-to("not desktop") {
+      -webkit-appearance: none;
+    }
   }
 }
 
@@ -47,10 +52,20 @@
   display: none;
 }
 
-
-
-
-
+.searchresults_content {
+  .locator-text {
+    display: inline-block;
+    line-height: 1.8;
+  }
+  .select-hold {
+    float: right;
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
 
 .mc-searchresults {
   .spoke-teaser-meta {
@@ -182,9 +197,6 @@
   }
 }
 
-.select-hold {
-  float: right;
-}
 
 .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Curated by ";

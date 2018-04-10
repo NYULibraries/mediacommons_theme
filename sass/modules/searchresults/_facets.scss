@@ -10,7 +10,15 @@
     margin-bottom: 5px;
   }
 }
-
+.facetapi-limit-link {
+  text-transform: uppercase;
+  text-align: right;
+  display: block;
+  font-size: .9rem;
+  &:link, &:visited{
+    color: black !important;
+  }
+}
 .responsive-container {
   .responsive-disclosure {
     //display: inline-block;

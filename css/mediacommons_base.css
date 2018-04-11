@@ -2704,6 +2704,12 @@ body.mc .facetapi-facetapi-links a:visited {
   color: gray !important;
 }
 
+/* line 5, ../sass/modules/content/_content.scss */
+[role="main"] ol,
+[role="main"] ul {
+  list-style: initial;
+}
+
 /* line 1, ../sass/modules/taxonomies/_taxonomies.scss */
 ul.tags {
   padding: 0;

@@ -1,4 +1,9 @@
 //////////////////////////////
-// MODULES: Component styles that are layout independent 
+// For user-generated content
 //////////////////////////////
-// Move to Taxonomy module?
+[role="main"] {
+  ol,
+  ul {
+    list-style: initial;
+  }
+}

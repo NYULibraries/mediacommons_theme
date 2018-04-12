@@ -2242,8 +2242,8 @@ body.mc .facetapi-facetapi-links a:visited {
 }
 
 /* line 5, ../sass/modules/content/_content.scss */
-[role="main"] ol,
-[role="main"] ul {
+.body-text ol,
+.body-text ul {
   list-style: initial;
 }
 

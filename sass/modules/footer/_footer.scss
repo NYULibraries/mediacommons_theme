@@ -26,6 +26,19 @@ footer#footer {
   }
 }
 
+.footer-nav {
+  li {
+    display: inline-block;
+  }
+
+  li:not(.first) {
+    &:before {
+      content: "\20\00b7\20";
+      color: #999;
+    }
+  }
+}
+
 body.mc .extras {
   span {
     display: inline-block;

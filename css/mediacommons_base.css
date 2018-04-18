@@ -2817,27 +2817,37 @@ footer#footer ul.menu li:first-child a {
   padding: 0 .5em;
 }
 
-/* line 30, ../sass/modules/footer/_footer.scss */
+/* line 31, ../sass/modules/footer/_footer.scss */
+.footer-nav li {
+  display: inline-block;
+}
+/* line 36, ../sass/modules/footer/_footer.scss */
+.footer-nav li:not(.first):before {
+  content: "\20\00b7\20";
+  color: #999;
+}
+
+/* line 44, ../sass/modules/footer/_footer.scss */
 body.mc .extras span {
   display: inline-block;
   line-height: 1.5;
 }
-/* line 33, ../sass/modules/footer/_footer.scss */
+/* line 47, ../sass/modules/footer/_footer.scss */
 body.mc .extras span:not(:last-child):after {
   content: " | ";
 }
 
-/* line 39, ../sass/modules/footer/_footer.scss */
+/* line 53, ../sass/modules/footer/_footer.scss */
 .cc-info {
   font-size: .9rem;
   color: #555 !important;
 }
-/* line 42, ../sass/modules/footer/_footer.scss */
+/* line 56, ../sass/modules/footer/_footer.scss */
 .cc-info a:link,
 .cc-info a:visited {
   color: #555 !important;
 }
-/* line 46, ../sass/modules/footer/_footer.scss */
+/* line 60, ../sass/modules/footer/_footer.scss */
 .cc-info .cc-license::before {
   padding: 0 2px 0 4px;
   display: inline-block;

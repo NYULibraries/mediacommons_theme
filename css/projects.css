@@ -1367,7 +1367,7 @@ body.tne #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Cluster";
 }
 /* line 22, ../sass/projects/_tne.scss */
-body.tne .node-hub.node-teaser .field-name-field-representative-image {
+body.tne .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-tne.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;

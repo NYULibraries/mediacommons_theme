@@ -8,7 +8,7 @@
 }
 /* line 39, ../sass/projects.scss */
 .node-mc.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-mc.svg?1521470924');
+  background: url('../images/default_images/spoke-default-mc.svg?1528903583');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -19,7 +19,7 @@
 
 /* line 51, ../sass/projects.scss */
 .mc .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-mc.svg?1521470924');
+  background: url('../images/default_images/spoke-default-mc.svg?1528903583');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -105,7 +105,7 @@ body.mc [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.mc [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -113,22 +113,22 @@ body.mc [role="complementary"] .block.twitter-block {
 body.mc [role="complementary"] header {
   background-color: #e4d1c5;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]:-moz-placeholder,
 body.mc input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]::-moz-placeholder,
 body.mc input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]:-ms-input-placeholder,
 body.mc input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.mc input[type="search"]::-webkit-input-placeholder,
 body.mc input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -144,7 +144,7 @@ body.mc input[name="search_block_form"]::-webkit-input-placeholder {
 }
 /* line 39, ../sass/projects.scss */
 .node-fieldguide.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-fieldguide.svg?1521470898');
+  background: url('../images/default_images/spoke-default-fieldguide.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -155,7 +155,7 @@ body.mc input[name="search_block_form"]::-webkit-input-placeholder {
 
 /* line 51, ../sass/projects.scss */
 .fieldguide .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-fieldguide.svg?1521470898');
+  background: url('../images/default_images/spoke-default-fieldguide.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -241,7 +241,7 @@ body.fieldguide [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.fieldguide [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -249,22 +249,22 @@ body.fieldguide [role="complementary"] .block.twitter-block {
 body.fieldguide [role="complementary"] header {
   background-color: #bfcee2;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]:-moz-placeholder,
 body.fieldguide input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]::-moz-placeholder,
 body.fieldguide input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]:-ms-input-placeholder,
 body.fieldguide input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.fieldguide input[type="search"]::-webkit-input-placeholder,
 body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -280,7 +280,7 @@ body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
 }
 /* line 39, ../sass/projects.scss */
 .node-tne.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-tne.svg?1521470898');
+  background: url('../images/default_images/spoke-default-tne.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -291,7 +291,7 @@ body.fieldguide input[name="search_block_form"]::-webkit-input-placeholder {
 
 /* line 51, ../sass/projects.scss */
 .tne .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-tne.svg?1521470898');
+  background: url('../images/default_images/spoke-default-tne.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -377,7 +377,7 @@ body.tne [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.tne [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -385,22 +385,22 @@ body.tne [role="complementary"] .block.twitter-block {
 body.tne [role="complementary"] header {
   background-color: #edcdc6;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]:-moz-placeholder,
 body.tne input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]::-moz-placeholder,
 body.tne input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]:-ms-input-placeholder,
 body.tne input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.tne input[type="search"]::-webkit-input-placeholder,
 body.tne input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -416,7 +416,7 @@ body.tne input[name="search_block_form"]::-webkit-input-placeholder {
 }
 /* line 39, ../sass/projects.scss */
 .node-imr.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-imr.svg?1521470898');
+  background: url('../images/default_images/spoke-default-imr.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -427,7 +427,7 @@ body.tne input[name="search_block_form"]::-webkit-input-placeholder {
 
 /* line 51, ../sass/projects.scss */
 .imr .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-imr.svg?1521470898');
+  background: url('../images/default_images/spoke-default-imr.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -513,7 +513,7 @@ body.imr [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.imr [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -521,22 +521,22 @@ body.imr [role="complementary"] .block.twitter-block {
 body.imr [role="complementary"] header {
   background-color: #d5f7c8;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]:-moz-placeholder,
 body.imr input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]::-moz-placeholder,
 body.imr input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]:-ms-input-placeholder,
 body.imr input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.imr input[type="search"]::-webkit-input-placeholder,
 body.imr input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -552,7 +552,7 @@ body.imr input[name="search_block_form"]::-webkit-input-placeholder {
 }
 /* line 39, ../sass/projects.scss */
 .node-int.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-int.svg?1521470898');
+  background: url('../images/default_images/spoke-default-int.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -563,7 +563,7 @@ body.imr input[name="search_block_form"]::-webkit-input-placeholder {
 
 /* line 51, ../sass/projects.scss */
 .int .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-int.svg?1521470898');
+  background: url('../images/default_images/spoke-default-int.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -649,7 +649,7 @@ body.int [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.int [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -657,22 +657,22 @@ body.int [role="complementary"] .block.twitter-block {
 body.int [role="complementary"] header {
   background-color: #ddddc9;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]:-moz-placeholder,
 body.int input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]::-moz-placeholder,
 body.int input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]:-ms-input-placeholder,
 body.int input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.int input[type="search"]::-webkit-input-placeholder,
 body.int input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -688,7 +688,7 @@ body.int input[name="search_block_form"]::-webkit-input-placeholder {
 }
 /* line 39, ../sass/projects.scss */
 .node-alt.node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-alt.svg?1521470898');
+  background: url('../images/default_images/spoke-default-alt.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -699,7 +699,7 @@ body.int input[name="search_block_form"]::-webkit-input-placeholder {
 
 /* line 51, ../sass/projects.scss */
 .alt .node-spoke.node-teaser .thumb {
-  background: url('../images/default_images/spoke-default-alt.svg?1521470898');
+  background: url('../images/default_images/spoke-default-alt.svg?1528903581');
   background-repeat: no-repeat;
   background-size: 100%;
   background-position-x: 0px;
@@ -785,7 +785,7 @@ body.alt [role="complementary"] .block {
 /* line 128, ../sass/projects.scss */
 body.alt [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1521470924') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1528903583') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
@@ -793,22 +793,22 @@ body.alt [role="complementary"] .block.twitter-block {
 body.alt [role="complementary"] header {
   background-color: #dfeec6;
 }
-/* line 61, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]:-moz-placeholder,
 body.alt input[name="search_block_form"]:-moz-placeholder {
   color: #cccccc;
 }
-/* line 64, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]::-moz-placeholder,
 body.alt input[name="search_block_form"]::-moz-placeholder {
   color: #cccccc;
 }
-/* line 67, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]:-ms-input-placeholder,
 body.alt input[name="search_block_form"]:-ms-input-placeholder {
   color: #cccccc;
 }
-/* line 56, ../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../.rvm/gems/ruby-2.1.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 body.alt input[type="search"]::-webkit-input-placeholder,
 body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
@@ -871,7 +871,7 @@ body.mc [role="banner"] {
 }
 /* line 13, ../sass/projects/_mc.scss */
 body.mc [role="banner"] .logo {
-  background-image: url('../images/mc-logos/mc.svg?1521470924');
+  background-image: url('../images/mc-logos/mc.svg?1528903583');
   background-size: contain;
   width: 22.5rem;
   height: 4.4rem;
@@ -921,7 +921,7 @@ body.mc [role="complementary"] header {
 
 /* line 19, ../sass/projects/_int.scss */
 body.int [role="banner"] .logo {
-  background: url('../images/mc-logos/int.svg?1521470924');
+  background: url('../images/mc-logos/int.svg?1528903583');
   background-repeat: no-repeat;
   background-size: cover;
   width: 33rem;
@@ -1070,7 +1070,7 @@ body.int .node-hub.node-teaser .field-name-field-body {
 }
 /* line 154, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-int.svg?1521470898');
+  background: url('../images/default_images/spoke-default-int.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1147,7 +1147,7 @@ body.int .intransition_full .group-footer {
 
 /* line 7, ../sass/projects/_alt.scss */
 body.alt .logo {
-  background: url('../images/mc-logos/alt.svg?1521470924');
+  background: url('../images/mc-logos/alt.svg?1528903583');
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -1168,7 +1168,7 @@ body.alt #block-views-contributors-this-hub-block .blockheader div:after {
 }
 /* line 22, ../sass/projects/_alt.scss */
 body.alt .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-alt.svg?1521470898');
+  background: url('../images/default_images/spoke-default-alt.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1227,7 +1227,7 @@ body.fieldguide .logo {
   background-position: 0 0%;
   width: 18rem;
   height: 4.8rem;
-  background-image: url('../images/mc-logos/fieldguide.svg?1521470924');
+  background-image: url('../images/mc-logos/fieldguide.svg?1528903583');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -1236,7 +1236,7 @@ body.fieldguide .logo {
   body.fieldguide .logo {
     height: 2.5rem;
     padding: 0;
-    background-image: url('../images/mc-logos/fieldguide.svg?1521470924');
+    background-image: url('../images/mc-logos/fieldguide.svg?1528903583');
     background-position: bottom;
     background-size: cover;
     width: 60vw;
@@ -1340,7 +1340,7 @@ body.fieldguide .node-spoke.node-teaser {
 
 /* line 4, ../sass/projects/_tne.scss */
 body.tne .logo {
-  background: url('../images/mc-logos/tne.svg?1521470924');
+  background: url('../images/mc-logos/tne.svg?1528903583');
   background-size: cover;
   background-repeat: no-repeat;
   width: 20rem;
@@ -1361,15 +1361,15 @@ body.tne #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Cluster";
 }
 /* line 22, ../sass/projects/_tne.scss */
-body.tne .node-hub.node-teaser .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-tne.svg?1521470898');
+body.tne .field-name-field-representative-image {
+  background: url('../images/default_images/spoke-default-tne.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 /* line 6, ../sass/projects/_imr.scss */
 body.imr .logo {
-  background: url('../images/mc-logos/imr.svg?1521470924');
+  background: url('../images/mc-logos/imr.svg?1528903583');
   background-size: cover;
   background-repeat: no-repeat;
   height: 4.7rem;
@@ -1405,7 +1405,7 @@ body.imr [role="complementary"] header {
 }
 /* line 38, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
-  background: url('../images/default_images/spoke-default-imr.svg?1521470898');
+  background: url('../images/default_images/spoke-default-imr.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: center;

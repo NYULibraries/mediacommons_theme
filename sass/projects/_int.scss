@@ -11,10 +11,17 @@
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
   $int-logo: "mc-logos/int.svg";
   .node-review.view-mode-full {
+    border-top: 4px solid #782a70;
     font-family: "Georgia", "Times New Roman", serif;
     max-width: 38em;
     line-height: 1.5;
     font-size: 1.1em;
+    padding-bottom: 40px;
+    .review-byline {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
   }
 
   body.int {
@@ -45,12 +52,15 @@
     .mc_recent_comments .blockheader div:after {
       content: " on [in]Transition";
     }
+
     #block-views-contributors-this-hub-block .blockheader div:after {
       content: " to this Issue";
     }
+
     iframe {
       max-width: 100%;
     }
+
     .spoke-teaser-meta {
       .peoplelist {
         float: none;
@@ -62,6 +72,7 @@
         }
       }
     }
+
     .node-spoke {
       &.node-teaser {
         border-bottom: 1px solid nth($tertiary, 5);
@@ -72,6 +83,7 @@
         }
       }
     }
+
     .featured-more header {
       margin-bottom: 20px;
     } //  @media (max-width: 799px) {
@@ -94,9 +106,11 @@
         line-height: .5;
       }
     }
+
     .homehub-spokes {
       margin-top: .8em;
     }
+
     &.front {
       @media (min-width: 50.0625em) {
         #content {
@@ -127,13 +141,16 @@
         font-size: 1.25rem;
       }
     }
+
     time,
     .date-display-range {
       display: none !important;
     }
+
     .comment time {
       display: block !important;
     }
+
     li.featured-item {
       //background: image-url($spoke-default-thumb);
       // background-color: #efefef;
@@ -142,11 +159,13 @@
       // background-position-y: -18px;
       min-height: 7rem;
     }
+
     .node-spoke.node-teaser .thumb {
       background-size: 224%;
       background-position-x: 3px;
       background-position-y: -77px;
     }
+
     .node-hub.node-teaser {
       .field-name-field-body {
         display: none;
@@ -160,6 +179,7 @@
         font-size: 1.4rem;
       }
     }
+
     .intransition_full {
       // special horizontal homepage layout for spokes
       .review-title {
@@ -184,6 +204,8 @@
           float: right;
           width: 48%;
           margin-left: 1%;
+          border-left: 4px solid #782a6f;
+          padding-left: 30px;
         }
         .group-3 {
           float: left;
@@ -195,8 +217,7 @@
         clear: both;
         margin-top: 4em;
       }
-    }
-  }
+    }  }
 
   .review-byline {
     font-size: 1.2rem;

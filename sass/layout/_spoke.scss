@@ -22,10 +22,11 @@
     }
   }
   .curatorsnote {
-    @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
+    @include bold-italic-uppercase-variant($h3-font-bold, $h3-font-italic, $h3-font-uppercase, $h3-font-variant);
     @include type-size($h3-font-size, $h3-line-height);
     color: $h3-color;
     margin-bottom: .5em;
+    padding-top: 0;
   }
   h1 {
     font-size: 1.8rem;

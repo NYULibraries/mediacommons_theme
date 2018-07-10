@@ -22,9 +22,6 @@
     right: $search-image-right;
     @include margin-padding(padding, $search-image-padding);
   }
-  label {
-    display: none;
-  }
   fieldset {
     margin: 0;
     border: none;

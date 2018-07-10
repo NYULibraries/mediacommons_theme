@@ -23,8 +23,8 @@
   }
   .curatorsnote {
     @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
-    @include type-size($h2-font-size, $h2-line-height);
-    color: $h2-color;
+    @include type-size($h3-font-size, $h3-line-height);
+    color: $h3-color;
     margin-bottom: .5em;
   }
   h1 {

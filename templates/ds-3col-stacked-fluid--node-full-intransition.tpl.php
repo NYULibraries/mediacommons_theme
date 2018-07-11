@@ -16,7 +16,7 @@
   <?php if (isset($title_suffix['contextual_links'])): ?>
   <?php print render($title_suffix['contextual_links']); ?>
   <?php endif; ?>
-
+  <nav class="backToIssue"><a href="/intransition/theme-week/2018/10/journal-videographic-film-mloving-image-studies-51-2018">Journal of Videographic Film &amp; Moving Image Studies, 5.1, 2018</a></nav>
    <header class="group-header <?php print $header_classes; ?>">
     <?php print $header; ?>
   </header>

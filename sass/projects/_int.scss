@@ -29,6 +29,7 @@
       a:link,
       a:visited {
         padding: 3px 0px;
+        line-height: 1.4;
         display: block;
         color: white; //background-color: #3e3d3d;
         color: #3e3d3d; //text-decoration: underline;
@@ -209,7 +210,10 @@
     }
 
     .intransition_full {
-
+      header h2 {
+        
+        margin-bottom:.4rem;
+      }
       .int-full-sections {
         width: auto;
         overflow: hidden;

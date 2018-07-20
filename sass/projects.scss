@@ -10,7 +10,7 @@ $breakpoint-no-query-fallbacks: false;
 @import "layout/breakpoints/_breakpoints"; 
 
 //// Projects
-$map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #e25025, int: #782A71, alt: #be1e2d);
+$map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #b9480f, int: #782A71, alt: #be1e2d);
 $black-value: #333333;
 $black: tint-stack($black-value);
 $type-color-value: #232323;
@@ -33,7 +33,7 @@ $col in $map {
   #{$node-class} {
     border-top: 4px solid $col;
     .field-name-field-project {
-      background-color: $col;
+      background-color: shade($col, 20%);
     }
     $spoke-default-thumb: "default_images/spoke-default-#{$header}.svg";
     &.node-spoke.node-teaser .thumb {
@@ -66,9 +66,9 @@ $col in $map {
         background-color: $col;
         display: inline-block;
         padding: 0 6px;
-         min-height: 1.4rem;
+        min-height: 1.4rem;
       }
-    } 
+    }
     .view-list-of-all-hubs {
       .view-filters {
         // float: right;
@@ -189,10 +189,12 @@ $col in $map {
   text-transform: uppercase;
   font-size: .85rem;
   line-height: 1.3;
-  color: rgba(255, 255, 255, .7) !important;
+  color: #ffffff !important;
   a:link,
-  a:visited {
-    color: rgba(255, 255, 255, .7) !important;
+  a:visited,
+  a:hover,
+  a:active {
+    color: #ffffff !important;
   }
 }
 

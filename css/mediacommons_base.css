@@ -3086,7 +3086,7 @@ ul.action-links li a {
 .block .more-link a:link,
 .block .more-link a:visited {
   display: block;
-  color: #777 !important;
+  color: #5a5a5a !important;
 }
 
 /* MODULES: Component styles that are layout independent */

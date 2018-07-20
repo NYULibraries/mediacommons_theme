@@ -1899,7 +1899,7 @@ body.mc .block.fieldguide_toc .hub-title a:visited {
 /* line 386, ../sass/modules/homepage/_homepageUmbrella.scss */
 body.mc .block.fieldguide_toc .spokes {
   margin-top: 20px;
-  border-top: 2px solid #d7a100;
+  border-top: 1px solid #a9a7a7;
 }
 /* line 390, ../sass/modules/homepage/_homepageUmbrella.scss */
 body.mc .block.fieldguide_toc .node-teaser {

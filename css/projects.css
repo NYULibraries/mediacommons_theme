@@ -1718,7 +1718,7 @@ body.imr .field-name-field-representative-image {
 .node-front-page-post.view-mode-full h2 {
   background: #ffffff;
   font-size: 1.6rem;
-  margin: 20px 0 10px 10px;
+  margin: 2rem 1rem 1rem;
   padding-top: 0;
   float: left;
   clear: both;
@@ -1732,7 +1732,7 @@ body.imr .field-name-field-representative-image {
 /* line 253, ../sass/modules/homepage/_homepageUmbrella.scss */
 .node-front-page-post.view-mode-full .field-name-field-body {
   background: #ffffff;
-  margin: 10px 0 0 10px;
+  margin: 0rem 1rem 1rem;
   padding: 10px;
   color: #222;
   float: left;

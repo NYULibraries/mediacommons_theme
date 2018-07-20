@@ -43,73 +43,68 @@ body.mc .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #196195;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #196195;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.mc .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.mc a:link,
 body.mc a:visited {
   color: #196195;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.mc a:hover,
 body.mc a:focus {
   color: #124569;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.mc a:active {
   color: #0a283e;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.mc [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.mc [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.mc nav.global {
   box-shadow: 0px 3px #3797dd;
   border-bottom: 3px solid #196195;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.mc footer#footer {
   border-top: 3px solid #207bbc;
   box-shadow: 0px -3px #248cd7;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.mc .comments#comments {
   border-color: #207bbc;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.mc [role="complementary"] .block {
   background-color: #f4ebe7;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.mc [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.mc [role="complementary"] header {
   background-color: #e4d1c5;
 }
@@ -179,73 +174,68 @@ body.fieldguide .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #8b6800;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #8b6800;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.fieldguide .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.fieldguide a:link,
 body.fieldguide a:visited {
   color: #8b6800;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.fieldguide a:hover,
 body.fieldguide a:focus {
   color: #584200;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.fieldguide a:active {
   color: #251c00;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.fieldguide [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.fieldguide [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.fieldguide nav.global {
   box-shadow: 0px 3px #f1b400;
   border-bottom: 3px solid #8b6800;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.fieldguide footer#footer {
   border-top: 3px solid #b98a00;
   box-shadow: 0px -3px #d7a100;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.fieldguide .comments#comments {
   border-color: #b98a00;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.fieldguide [role="complementary"] .block {
   background-color: #e2e9f2;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.fieldguide [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #bfcee2;
 }
@@ -315,73 +305,68 @@ body.tne .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #1db7b7;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #1db7b7;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.tne .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.tne a:link,
 body.tne a:visited {
   color: #1db7b7;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.tne a:hover,
 body.tne a:focus {
   color: #168b8b;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.tne a:active {
   color: #0f5f5f;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.tne [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.tne [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.tne nav.global {
   box-shadow: 0px 3px #56e4e4;
   border-bottom: 3px solid #1db7b7;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.tne footer#footer {
   border-top: 3px solid #25dddd;
   box-shadow: 0px -3px #40e1e1;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.tne .comments#comments {
   border-color: #25dddd;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.tne [role="complementary"] .block {
   background-color: #f8ebe9;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.tne [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.tne [role="complementary"] header {
   background-color: #edcdc6;
 }
@@ -451,73 +436,68 @@ body.imr .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #b9480f;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #b9480f;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.imr .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.imr a:link,
 body.imr a:visited {
   color: #b9480f;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.imr a:hover,
 body.imr a:focus {
   color: #8a360b;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.imr a:active {
   color: #5b2307;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.imr [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.imr [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.imr nav.global {
   box-shadow: 0px 3px #ef7a3f;
   border-bottom: 3px solid #b9480f;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.imr footer#footer {
   border-top: 3px solid #e35912;
   box-shadow: 0px -3px #ed6a27;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.imr .comments#comments {
   border-color: #e35912;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.imr [role="complementary"] .block {
   background-color: #e7f8e7;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.imr [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.imr [role="complementary"] header {
   background-color: #c4edc3;
 }
@@ -587,73 +567,68 @@ body.int .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #782a71;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #782a71;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.int .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.int a:link,
 body.int a:visited {
   color: #782a71;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.int a:hover,
 body.int a:focus {
   color: #521d4d;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.int a:active {
   color: #2c102a;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.int [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.int [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.int nav.global {
   box-shadow: 0px 3px #bf49b5;
   border-bottom: 3px solid #782a71;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.int footer#footer {
   border-top: 3px solid #9a3691;
   box-shadow: 0px -3px #b13ea6;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.int .comments#comments {
   border-color: #9a3691;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.int [role="complementary"] .block {
   background-color: #f0f0e8;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.int [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.int [role="complementary"] header {
   background-color: #ddddc9;
 }
@@ -723,73 +698,68 @@ body.alt .featured-more .blockheader div {
 /* line 81, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .view-filters {
   text-align: right;
-  box-shadow: 0px 2px 2px #ccc;
 }
-/* line 85, ../sass/projects.scss */
+/* line 83, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .view-filters .views-exposed-widgets {
-  margin: 0;
-  padding-right: 10px;
-  padding-top: 7px;
-  border: none;
   border-bottom: 4px solid #be1e2d;
 }
-/* line 93, ../sass/projects.scss */
+/* line 87, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .node-hub.node-teaser {
   border-bottom: 4px solid #be1e2d;
 }
-/* line 95, ../sass/projects.scss */
+/* line 89, ../sass/projects.scss */
 body.alt .view-list-of-all-hubs .node-hub.node-teaser:last-child {
   border-bottom: none;
 }
-/* line 102, ../sass/projects.scss */
+/* line 94, ../sass/projects.scss */
 body.alt a:link,
 body.alt a:visited {
   color: #be1e2d;
 }
-/* line 106, ../sass/projects.scss */
+/* line 98, ../sass/projects.scss */
 body.alt a:hover,
 body.alt a:focus {
   color: #921723;
   text-decoration: underline;
 }
-/* line 111, ../sass/projects.scss */
+/* line 103, ../sass/projects.scss */
 body.alt a:active {
   color: #661018;
 }
-/* line 115, ../sass/projects.scss */
+/* line 107, ../sass/projects.scss */
 body.alt [role="navigation"].main ul.main li {
   font-size: .9em;
 }
-/* line 119, ../sass/projects.scss */
+/* line 111, ../sass/projects.scss */
 body.alt [role="banner"] {
   margin: 3.25rem auto 0 auto;
 }
-/* line 122, ../sass/projects.scss */
+/* line 114, ../sass/projects.scss */
 body.alt nav.global {
   box-shadow: 0px 3px #e55d69;
   border-bottom: 3px solid #be1e2d;
 }
-/* line 126, ../sass/projects.scss */
+/* line 118, ../sass/projects.scss */
 body.alt footer#footer {
   border-top: 3px solid #de2c3d;
   box-shadow: 0px -3px #e24755;
 }
-/* line 130, ../sass/projects.scss */
+/* line 122, ../sass/projects.scss */
 body.alt .comments#comments {
   border-color: #de2c3d;
 }
-/* line 134, ../sass/projects.scss */
+/* line 126, ../sass/projects.scss */
 body.alt [role="complementary"] .block {
   background-color: #f2f8e9;
 }
-/* line 136, ../sass/projects.scss */
+/* line 128, ../sass/projects.scss */
 body.alt [role="complementary"] .block.twitter-block {
   border-radius: 4px;
   background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
   min-height: 600px;
   height: 600px;
 }
-/* line 143, ../sass/projects.scss */
+/* line 135, ../sass/projects.scss */
 body.alt [role="complementary"] header {
   background-color: #dfeec6;
 }
@@ -814,32 +784,32 @@ body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   color: #cccccc;
 }
 
-/* line 161, ../sass/projects.scss */
+/* line 153, ../sass/projects.scss */
 .featured-item-list .featured-item {
   padding-bottom: 10px;
 }
 
-/* line 165, ../sass/projects.scss */
+/* line 157, ../sass/projects.scss */
 .featuredhub-info {
   max-width: 88%;
 }
-/* line 169, ../sass/projects.scss */
+/* line 161, ../sass/projects.scss */
 .featuredhub-info time {
   color: #444 !important;
   margin: 5px 0 2px;
 }
-/* line 177, ../sass/projects.scss */
+/* line 169, ../sass/projects.scss */
 .featuredhub-info h2 {
   padding: 0 0 8px 0;
   font-size: 18px;
   line-height: 1.25;
 }
-/* line 179, ../sass/projects.scss */
+/* line 171, ../sass/projects.scss */
 .featuredhub-info h2 a {
   color: #222 !important;
 }
 
-/* line 189, ../sass/projects.scss */
+/* line 181, ../sass/projects.scss */
 .field-name-field-project {
   position: absolute;
   z-index: 1;
@@ -853,7 +823,7 @@ body.alt input[name="search_block_form"]::-webkit-input-placeholder {
   line-height: 1.3;
   color: #ffffff !important;
 }
-/* line 201, ../sass/projects.scss */
+/* line 193, ../sass/projects.scss */
 .field-name-field-project a:link,
 .field-name-field-project a:visited,
 .field-name-field-project a:hover,

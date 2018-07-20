@@ -47,7 +47,7 @@ aside+h2 {
   }
   &.view-mode-full {
     .hubhead {
-       padding: 0rem 0 .4rem 0;
+      padding: 0rem 0 .4rem 0;
     }
     .default-image {
       display: none;
@@ -141,12 +141,15 @@ aside+h2 {
 
 
 .view-list-of-all-hubs {
+  margin-top: 25px;
+
   >header {
     float: left;
     line-height: 1rem;
-    font-size: .8rem;
-    padding-left: 10px;
-    padding-top: 10px;
+    font-size: 1rem;
+    color: #222222;
+    padding-top: 20px;
+    padding-bottom: 5px;
   }
   >.view-content {
     clear: both;
@@ -154,9 +157,7 @@ aside+h2 {
 }
 
 body .view-filters {
-  // float: right;
   text-align: right;
-  background-color: #F7F7F7;
   form {
     margin: 0;
   }
@@ -164,7 +165,6 @@ body .view-filters {
     margin: 0;
     padding-right: 10px;
     padding-top: 7px;
-    border: 1px solid #eeeeee;
   }
   .views-exposed-form {
     label {

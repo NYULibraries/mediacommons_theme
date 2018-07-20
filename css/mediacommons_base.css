@@ -3230,34 +3230,37 @@ aside + h2 {
   height: auto;
 }
 
-/* line 144, ../sass/modules/hub_list/_hub_list.scss */
+/* line 143, ../sass/modules/hub_list/_hub_list.scss */
+.view-list-of-all-hubs {
+  margin-top: 25px;
+}
+/* line 146, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > header {
   float: left;
   line-height: 1rem;
-  font-size: .8rem;
-  padding-left: 10px;
-  padding-top: 10px;
+  font-size: 1rem;
+  color: #222222;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
-/* line 151, ../sass/modules/hub_list/_hub_list.scss */
+/* line 154, ../sass/modules/hub_list/_hub_list.scss */
 .view-list-of-all-hubs > .view-content {
   clear: both;
 }
 
-/* line 156, ../sass/modules/hub_list/_hub_list.scss */
+/* line 159, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters {
   text-align: right;
-  background-color: #F7F7F7;
 }
-/* line 160, ../sass/modules/hub_list/_hub_list.scss */
+/* line 161, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters form {
   margin: 0;
 }
-/* line 163, ../sass/modules/hub_list/_hub_list.scss */
+/* line 164, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-widgets {
   margin: 0;
   padding-right: 10px;
   padding-top: 7px;
-  border: 1px solid #eeeeee;
 }
 /* line 170, ../sass/modules/hub_list/_hub_list.scss */
 body .view-filters .views-exposed-form label {

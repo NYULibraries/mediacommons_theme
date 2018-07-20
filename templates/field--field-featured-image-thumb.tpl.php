@@ -12,6 +12,7 @@
     <?php foreach ($items as $delta => $item):
       unset($item['#item']['width']);
       unset($item['#item']['height']);
+      $item['#item']['alt'] = "";
       print render($item); ?>
     <?php endforeach; ?>
 </div>

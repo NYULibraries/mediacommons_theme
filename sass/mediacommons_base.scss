@@ -58,6 +58,16 @@ $breakpoint-no-query-fallbacks: false;
 @import "layout/_spoke";
 @import "layout/_user_profile";
 
+
+@import "projects/projects";
+@import "projects/mc";
+@import "projects/int";
+@import "projects/alt";
+@import "projects/fieldguide";
+@import "projects/tne";
+@import "projects/imr";
+@import "modules/homepage/_homepageUmbrella";
+
 .view-list-of-all-hubs,
 .hubhead {
   img[src *="default_images"] {

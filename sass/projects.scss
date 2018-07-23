@@ -7,7 +7,7 @@ $breakpoint-no-query-fallbacks: false;
 @import "color-schemer";
 @import "respond-to";
 @import "breakpoint";
-@import "layout/breakpoints/_breakpoints"; 
+@import "layout/breakpoints/_breakpoints";
 
 //// Projects
 $map: (mc: #196195, fieldguide: #8b6800, tne: #1db7b7, imr: #b9480f, int: #782A71, alt: #be1e2d);
@@ -38,7 +38,7 @@ $col in $map {
   $tertiary: tint-stack(cs-tertiary()) !global;
   $quadrary: tint-stack(cs-quadrary()) !global;
   $node-class: ".node-#{$header}";
-  #{$node-class} {
+  #{$node-class}   {  
     border-top: 4px solid $col;
     .field-name-field-project {
       background-color: shade($col, 20%);
@@ -79,7 +79,7 @@ $col in $map {
     }
     .view-list-of-all-hubs {
       .view-filters {
-        text-align: right; 
+        text-align: right;
         .views-exposed-widgets {
           border-bottom: 4px solid nth($primary, 1);
         }
@@ -88,7 +88,7 @@ $col in $map {
         border-bottom: 4px solid nth($primary-color, 1);
         &:last-child {
           border-bottom: none;
-        } 
+        }
       }
     }
     a:link,

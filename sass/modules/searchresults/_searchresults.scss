@@ -71,8 +71,15 @@
     }
   }
 }
-
+.search-assist-info {
+  max-width: 35rem;
+  margin-top: 1.5rem;
+  li {margin-top: .8rem;}
+}
 .mc-searchresults {
+  clear:right;
+  margin-top: 50px;
+
   .spoke-teaser-meta {
     font-size: $spoke-teaser-meta-size;
   }

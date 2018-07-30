@@ -1686,16 +1686,31 @@ nav.global li.sites_nav ul > li > a.menu__link {
   clear: both;
 }
 
-/* line 76, ../sass/modules/searchresults/_searchresults.scss */
+/* line 74, ../sass/modules/searchresults/_searchresults.scss */
+.search-assist-info {
+  max-width: 35rem;
+  margin-top: 1.5rem;
+}
+/* line 77, ../sass/modules/searchresults/_searchresults.scss */
+.search-assist-info li {
+  margin-top: .8rem;
+}
+
+/* line 79, ../sass/modules/searchresults/_searchresults.scss */
+.mc-searchresults {
+  clear: right;
+  margin-top: 50px;
+}
+/* line 83, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-teaser-meta {
   font-size: 0.86rem;
 }
-/* line 79, ../sass/modules/searchresults/_searchresults.scss */
+/* line 86, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-teaser {
   padding: 40px 0 10px 0px;
   margin-top: 30px;
 }
-/* line 84, ../sass/modules/searchresults/_searchresults.scss */
+/* line 91, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result {
   position: relative;
   overflow: hidden;
@@ -1705,32 +1720,32 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-top: 40px;
   max-width: 50em;
 }
-/* line 95, ../sass/modules/searchresults/_searchresults.scss */
+/* line 102, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result .field-name-field-project {
   display: block;
   margin-bottom: 10px;
 }
-/* line 100, ../sass/modules/searchresults/_searchresults.scss */
+/* line 107, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr + .node-imr, .mc-searchresults .search-result.node-fieldguide + .node-fieldguide, .mc-searchresults .search-result.node-alt + .node-alt, .mc-searchresults .search-result.node-int + .node-int, .mc-searchresults .search-result.node-tne + .node-tne {
   border-top-width: 0px;
   padding-top: 0px;
   margin-top: 5px;
 }
-/* line 108, ../sass/modules/searchresults/_searchresults.scss */
+/* line 115, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-result.node-imr + .node-imr .field-name-field-project, .mc-searchresults .search-result.node-fieldguide + .node-fieldguide .field-name-field-project, .mc-searchresults .search-result.node-alt + .node-alt .field-name-field-project, .mc-searchresults .search-result.node-int + .node-int .field-name-field-project, .mc-searchresults .search-result.node-tne + .node-tne .field-name-field-project {
   display: none;
 }
-/* line 114, ../sass/modules/searchresults/_searchresults.scss */
+/* line 121, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title {
   margin-top: 0;
   border-bottom: none;
 }
-/* line 117, ../sass/modules/searchresults/_searchresults.scss */
+/* line 124, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .spoke-title a {
   display: block;
   padding: 0px;
 }
-/* line 122, ../sass/modules/searchresults/_searchresults.scss */
+/* line 129, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .search-snippet-info {
   padding: 0px;
   margin: 0;
@@ -1739,49 +1754,49 @@ nav.global li.sites_nav ul > li > a.menu__link {
   padding-top: 5px;
   font-size: .9rem;
 }
-/* line 132, ../sass/modules/searchresults/_searchresults.scss */
+/* line 139, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .hub-title {
   padding-top: 0;
   font-size: 1.3rem;
   line-height: 1.25;
 }
-/* line 137, ../sass/modules/searchresults/_searchresults.scss */
+/* line 144, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-hub .thumb {
   width: 120px;
   height: auto;
 }
-/* line 143, ../sass/modules/searchresults/_searchresults.scss */
+/* line 150, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment {
   padding: 10px;
 }
-/* line 145, ../sass/modules/searchresults/_searchresults.scss */
+/* line 152, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment .h-card {
   margin-bottom: 0px;
 }
-/* line 149, ../sass/modules/searchresults/_searchresults.scss */
+/* line 156, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .peoplelist,
 .mc-searchresults .node-comment time {
   font-size: .85rem;
   margin-top: 2px;
   margin-bottom: 0;
 }
-/* line 155, ../sass/modules/searchresults/_searchresults.scss */
+/* line 162, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node {
   font-size: .85rem;
 }
-/* line 157, ../sass/modules/searchresults/_searchresults.scss */
+/* line 164, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .referenced-node a:link,
 .mc-searchresults .node-comment .referenced-node a:hover,
 .mc-searchresults .node-comment .referenced-node a:active {
   color: inherit;
 }
-/* line 163, ../sass/modules/searchresults/_searchresults.scss */
+/* line 170, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-body {
   font-size: .85rem;
   margin-top: .2rem;
   display: none;
 }
-/* line 168, ../sass/modules/searchresults/_searchresults.scss */
+/* line 175, ../sass/modules/searchresults/_searchresults.scss */
 .mc-searchresults .node-comment .comment-title {
   padding: 0;
   font-size: 1rem;
@@ -1789,46 +1804,46 @@ nav.global li.sites_nav ul > li > a.menu__link {
   margin-bottom: 0;
 }
 
-/* line 181, ../sass/modules/searchresults/_searchresults.scss */
+/* line 188, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-user-content .field-label,
 .field-name-user-content-hubs .field-label,
 .field-name-user-comments .field-label {
   display: none;
 }
 
-/* line 186, ../sass/modules/searchresults/_searchresults.scss */
+/* line 193, ../sass/modules/searchresults/_searchresults.scss */
 .field-name-search-snippet {
   clear: both;
   font-size: .8rem;
 }
 
-/* line 192, ../sass/modules/searchresults/_searchresults.scss */
+/* line 199, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 196, ../sass/modules/searchresults/_searchresults.scss */
+/* line 203, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_sidebar {
   flex: 0 0 300px;
   padding-right: 45px;
 }
-/* line 202, ../sass/modules/searchresults/_searchresults.scss */
+/* line 209, ../sass/modules/searchresults/_searchresults.scss */
 .searchresults_hold .searchresults_content {
   flex: 1 1 70%;
   max-width: 49rem;
 }
 
-/* line 210, ../sass/modules/searchresults/_searchresults.scss */
+/* line 217, ../sass/modules/searchresults/_searchresults.scss */
 .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Curated by ";
 }
 
-/* line 214, ../sass/modules/searchresults/_searchresults.scss */
+/* line 221, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .content-type:after {
   content: "Theme Week:";
 }
 
-/* line 218, ../sass/modules/searchresults/_searchresults.scss */
+/* line 225, ../sass/modules/searchresults/_searchresults.scss */
 .node-imr .peoplelist.curator .curatorlabel:not(:empty):after {
   content: "Theme week organized by ";
 }
@@ -1937,7 +1952,7 @@ body.mc .facetapi-facetapi-links a:visited {
 /* line 97, ../sass/modules/searchresults/_facets.scss */
 .facetapi-count {
   font-size: .8rem;
-  color: gray !important;
+  color: #676666 !important;
 }
 
 /* line 5, ../sass/modules/content/_content.scss */
@@ -5222,36 +5237,41 @@ body.tne .field-name-field-representative-image {
   background-color: #158484;
 }
 
-/* line 6, ../sass/projects/_imr.scss */
+/* line 7, ../sass/projects/_imr.scss */
+body.imr a:link,
+body.imr a:visited {
+  color: #af3b00;
+}
+/* line 12, ../sass/projects/_imr.scss */
 body.imr .logo {
   background: url('../images/mc-logos/imr.svg?1531239544');
   background-size: cover;
   background-repeat: no-repeat;
   height: 4.7rem;
 }
-/* line 16, ../sass/projects/_imr.scss */
+/* line 22, ../sass/projects/_imr.scss */
 body.imr .mc_recent_comments .blockheader div:after {
   content: " on IMR";
 }
-/* line 19, ../sass/projects/_imr.scss */
+/* line 25, ../sass/projects/_imr.scss */
 body.imr #block-views-contributors-this-hub-block .blockheader div:after {
   content: " to this Theme Week";
 }
-/* line 23, ../sass/projects/_imr.scss */
+/* line 29, ../sass/projects/_imr.scss */
 body.imr .view-mode-hub-home .hub-title {
   font-size: 2.5rem;
   max-width: 90%;
 }
-/* line 30, ../sass/projects/_imr.scss */
+/* line 37, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] > div,
 body.imr [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 34, ../sass/projects/_imr.scss */
+/* line 41, ../sass/projects/_imr.scss */
 body.imr [role="complementary"] header {
   background-color: #cccccc;
 }
-/* line 38, ../sass/projects/_imr.scss */
+/* line 45, ../sass/projects/_imr.scss */
 body.imr .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-imr.svg?1528903581');
   background-repeat: no-repeat;
@@ -5260,7 +5280,7 @@ body.imr .field-name-field-representative-image {
   border: 1px solid #e5e4e4;
 }
 
-/* line 47, ../sass/projects/_imr.scss */
+/* line 54, ../sass/projects/_imr.scss */
 .not-available {
   opacity: 0.5;
 }

@@ -6,10 +6,8 @@
 <?php endif; ?>
 <main role="main">
   <div id="content">
-    <?php if (isset($tabs)): ?>
-      <div class="tabs">
-        <?php print render($tabs); ?>
-      </div>
+    <?php if (isset($tabs) && !empty($tabs["#primary"])): 
+      <div class="tabs"><?php print render($tabs); ?></div>
     <?php endif; ?>
     <?php if (isset($page['highlighted'])) : ?>
       <div id="highlighted">

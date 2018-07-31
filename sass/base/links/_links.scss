@@ -31,32 +31,3 @@ a {
     outline: none;
   }
 }
-
-// .in_transition a {
-//   color: $link-color-int;
-//   text-decoration: $link-text-decoration;
-//   @include border-outline(border, $link-border-width, $link-border-style, $link-border-color-int);
-//   &:link,
-//   &:visited {
-//     color: $link-visited-link-color-int;
-//     @include border-outline(border, $link-visited-border-width, $link-visited-border-style, $link-visited-border-color-int);
-//   }
-//   &[href]:hover,
-//   &[href]:focus {
-//     color: $link-hover-link-color-int;
-//     text-decoration: $link-hover-text-decoration;
-//     @include border-outline(border, $link-hover-border-width, $link-hover-border-style, $link-hover-border-color-int);
-//   }
-//   &:active {
-//     color: $link-active-link-color-int;
-//     @include border-outline(border, $link-active-border-width, $link-active-border-style, $link-active-border-color-int);
-//   } 
-//   .logo &, h1 &, h2 &, h3 & {
-//     color: $headers-link-color-int;
-//     @include border-outline(border, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color-int);
-//   }
-//   &:focus {
-//     background: yellow;
-//     outline: none;
-//   }
-// }

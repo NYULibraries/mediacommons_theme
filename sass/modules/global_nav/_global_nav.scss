@@ -15,6 +15,10 @@
   position: relative;
 }
 
+html body.admin-menu nav.global {
+  margin-top: -29px;
+}
+
 nav.global {
   //$experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
@@ -22,12 +26,7 @@ nav.global {
   height: $globalnav-height;
   font-family: $heading-font-name;
   font-size: $ms-base;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2000; // padding: $globalnav-top-pad 1% 0 1%;
-  // padding: 0 1% 0 1%;
-  padding: 0; // ALL LIST padding: 0 1% 0 1%;S
+  padding: 0; 
   ul {
     margin: 0;
     li {
@@ -41,6 +40,7 @@ nav.global {
         font-weight: 400;
         color: nth($black, 5);
         text-indent: 0;
+        height: $globalnav-height;
         display: block; // important is for overriding the project specific colors
         &:hover,
         &:focus {

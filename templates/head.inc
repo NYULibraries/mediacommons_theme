@@ -1,3 +1,9 @@
+<?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
+  <nav class="global" role="navigation">
+    <?php print render($page['globalnav']); ?>
+  </nav>
+<?php endif; ?>
+
 <header  role="banner">
   <button type="button" class="skip-arrow"></button>
   <div class="top-hold">

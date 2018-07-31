@@ -18,11 +18,6 @@
   <?php endif; ?>
   <?php print render($page['content']); ?>
 </main>
-<?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
-  <nav class="global" role="navigation">
-    <?php print render($page['globalnav']); ?>
-  </nav>
-<?php endif; ?>
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
   <?php print render($page['footer']); ?> 
 <?php endif; ?>

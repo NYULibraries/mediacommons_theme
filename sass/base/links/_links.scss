@@ -25,6 +25,12 @@ a {
     color: $headers-link-color; //   @include border-outline(border, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color);
   }
   &:focus {
-    outline: none;
+    outline-style: solid;
+    outline-color: #FDE16B;
+    outline-width: 4px;
+    transition: outline-color .5s ease;
+  }
+   &:active {
+    outline-color: #FDC309;
   }
 }

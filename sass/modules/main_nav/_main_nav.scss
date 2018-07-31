@@ -9,20 +9,15 @@
     padding: 0;
     ul {
       display: block;
-      float: left;
-      @include horizontal-list;
       li {
         margin: 0;
         text-indent: 0;
         font-size: 1.15em;
         display: inline-block;
-        &:before {
+        &:not(:first-child):before {
           content: "\20\00b7\20";
           // middot encoded http://css-tricks.com/snippets/html/glyphs/
           color: #999;
-        }
-        &:first-child:before {
-          content: "\20";
         }
       }
     }

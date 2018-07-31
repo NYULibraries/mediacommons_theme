@@ -69,21 +69,19 @@ aside+h2 {
       margin: 0 0 .3em 0;
     }
     .group-flex1 {
-      flex: 1 0 33%;
-      min-width: 300px;
+      min-width: 150px;
+      margin-right: 15px;
+      flex: 1 0 30%;
+      @include respond-to("mobile-sm2") {
+        margin-right: 0px;
+        flex: none;
+        width: 100%;
+      }
     }
     .group-flex2 {
-      flex: 1 0 64%; // min-width: 500px;
-    }
-    &:first-child {
-      // padding: 0 0 1em;
-      // border-top: 1px solid #cccccc;
-    }
-    &:last-child {
-      // border: none;
+      flex: 1 0 64%;
     }
     .field-name-field-representative-image {
-      margin-right: 35px;
       min-height: 7rem;
       img {
         width: 100%;

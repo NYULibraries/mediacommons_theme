@@ -10,6 +10,7 @@ $breakpoint-to-ems: false;
 $breakpoints: ('tablet': (525px 801px),
               'tablet-lh': (600px 840px),
               'mobile-lh': (0px 599px),
+              'mobile-sm2': (0px 499px),
               'mobile-sm': (0px 400px),
               'not-mobile-lh': (600px),
               'desktop-lh': (841px, 'no-query' true),

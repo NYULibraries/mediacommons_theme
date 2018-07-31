@@ -26,14 +26,10 @@
 .node-spoke {
   &.node-teaser {
     padding: .8em 0;
-
     line-height: 1.5;
     margin: 0;
     .spoke-teaser-meta {
-
-      width: auto;
-      overflow: hidden;
-      font-size: $spoke-teaser-meta-size;
+      @extend %clearfix;
     }
     &:last-child {
       border-bottom: none;

@@ -23,10 +23,10 @@ nav.global {
   //$experimental-support-for-svg: true;
   @include background-image(linear-gradient(top, $globalnav-background-gradient-start, $globalnav-background-gradient-end));
   width: 100%;
-  height: $globalnav-height;
   font-family: $heading-font-name;
   font-size: $ms-base;
-  padding: 0; 
+  padding: 0;
+   @extend %clearfix; 
   ul {
     margin: 0;
     li {
@@ -40,7 +40,6 @@ nav.global {
         font-weight: 400;
         color: nth($black, 5);
         text-indent: 0;
-        height: $globalnav-height;
         display: block; // important is for overriding the project specific colors
         &:hover,
         &:focus {
@@ -122,19 +121,16 @@ nav.global {
         }
       }
       ul {
-        height: $globalnav-height;
+       // height: $globalnav-height;
         display: -webkit-flex;
         display: flex;
         -webkit-flex-flow: row nowrap;
-        flex-flow: row nowrap; // -ms-flex-align: center;
-        // -webkit-align-items: center;
-        // -webkit-box-align: center;
-        // align-items: center;
+        flex-flow: row nowrap; 
         >li {
           -webkit-flex: 1 0 auto;
           flex: 1 0 auto;
           >a.menu__link {
-            padding: .7em .7em 0;
+            padding: .7em ;
           }
         }
       }

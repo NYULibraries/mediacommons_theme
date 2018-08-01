@@ -5,17 +5,17 @@
 @import "_header--search";
 @import "_header--logos";
 [role="banner"] {
-  margin: $globalnav-height auto 0 auto;
+  margin: 1rem auto 0 auto;
   padding: 6px 0 0 0;
   @extend %clearfix;
   button {
     display: none;
   }
-  a.skip-to-nav {
-    height: 0px !important;
-    overflow: hidden;
-    display: none !important;
-  }
+  // a.skip-to-nav {
+  //   height: 0px !important;
+  //   overflow: hidden;
+  //   display: none !important;
+  // }
   @include respond-to("full navigation") {
     //  margin: ($globalnav-height + 0.8) auto 0 auto;
     width: 94.5%;

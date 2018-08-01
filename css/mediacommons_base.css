@@ -1,5 +1,5 @@
 /* line 6, ../sass/partials/_extendables.scss */
-[role="banner"] .top-hold:after, [role="banner"]:after, .node-spoke.node-teaser .spoke-teaser-meta:after, footer#footer:after, [role="main"]:after, .spoke:after {
+nav.global:after, [role="banner"] .top-hold:after, [role="banner"]:after, .node-spoke.node-teaser .spoke-teaser-meta:after, footer#footer:after, [role="main"]:after, .spoke:after {
   content: "";
   display: table;
   clear: both;
@@ -1310,7 +1310,6 @@ nav.global {
   background-image: -webkit-linear-gradient(top, #175888, #12476e);
   background-image: linear-gradient(to bottom, #175888, #12476e);
   width: 100%;
-  height: 2.4rem;
   font-family: "Open Sans";
   font-size: 1em 2.25em;
   padding: 0;
@@ -1333,29 +1332,28 @@ nav.global ul li a {
   font-weight: 400;
   color: #dedede;
   text-indent: 0;
-  height: 2.4rem;
   display: block;
 }
-/* line 45, ../sass/modules/global_nav/_global_nav.scss */
+/* line 44, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:hover, nav.global ul li a:focus {
   color: #e9e9e9 !important;
   text-decoration: underline;
 }
-/* line 50, ../sass/modules/global_nav/_global_nav.scss */
+/* line 49, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul li a:link, nav.global ul li a:visited {
   color: #e9e9e9 !important;
   text-decoration: none;
 }
-/* line 74, ../sass/modules/global_nav/_global_nav.scss */
+/* line 73, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="true"] {
   display: none;
   overflow: hidden;
 }
-/* line 78, ../sass/modules/global_nav/_global_nav.scss */
+/* line 77, ../sass/modules/global_nav/_global_nav.scss */
 nav.global ul[aria-hidden="false"] {
   overflow: visible;
 }
-/* line 84, ../sass/modules/global_nav/_global_nav.scss */
+/* line 83, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink {
   width: 12rem;
   padding: .5rem 1rem 0 1rem;
@@ -1366,11 +1364,11 @@ nav.global li.sites_nav .logolink {
   font-size: 1.3rem;
   line-height: 1;
 }
-/* line 93, ../sass/modules/global_nav/_global_nav.scss */
+/* line 92, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink:hover {
   text-decoration: none;
 }
-/* line 96, ../sass/modules/global_nav/_global_nav.scss */
+/* line 95, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .logolink span {
   position: absolute !important;
   height: 1px;
@@ -1378,52 +1376,51 @@ nav.global li.sites_nav .logolink span {
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
 }
-/* line 104, ../sass/modules/global_nav/_global_nav.scss */
+/* line 103, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav ul {
   float: left;
   width: auto;
   position: relative;
 }
-/* line 109, ../sass/modules/global_nav/_global_nav.scss */
+/* line 108, ../sass/modules/global_nav/_global_nav.scss */
 nav.global li.sites_nav .mediacommonsfrontpage {
   display: block;
 }
 @media (min-width: 801px) {
-  /* line 113, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 112, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav .mediacommonsfrontpage {
     display: none;
   }
-  /* line 116, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 115, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav .leaf {
     background: url('../images/verticalline.png?1528903581');
     background-repeat: no-repeat;
     background-position: center right;
   }
-  /* line 120, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 119, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav .leaf:last-child {
     background: none;
   }
-  /* line 124, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 123, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul {
-    height: 2.4rem;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row nowrap;
     flex-flow: row nowrap;
   }
-  /* line 133, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 129, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul > li {
     -webkit-flex: 1 0 auto;
     flex: 1 0 auto;
   }
-  /* line 136, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 132, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul > li > a.menu__link {
-    padding: .7em .7em 0;
+    padding: 0.7em;
   }
 }
 
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 152, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 148, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav {
     padding: 0 0 0 3%;
     font-size: 1.3rem;
@@ -1433,19 +1430,19 @@ nav.global li.sites_nav .mediacommonsfrontpage {
     z-index: 5;
     float: left;
   }
-  /* line 160, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 156, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul {
     -moz-border-radius: 0 0 5px 5px;
     -webkit-border-radius: 0;
     border-radius: 0 0 5px 5px;
     background-color: #12476e;
   }
-  /* line 165, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 161, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul > li {
     -webkit-flex: 1 1 auto;
     flex: 1 1 auto;
   }
-  /* line 168, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 164, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul > li a {
     width: 16em;
     padding: 1em 2.5em 1em 1em;
@@ -1453,12 +1450,12 @@ nav.global li.sites_nav .mediacommonsfrontpage {
     border-bottom: 1px solid #0e3653;
     box-shadow: 0px 1px #15537f;
   }
-  /* line 175, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 171, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav ul > li:last-child > a {
     border: none;
     box-shadow: none;
   }
-  /* line 181, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 177, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav.open ul {
     height: auto;
     display: -webkit-flex;
@@ -1467,13 +1464,13 @@ nav.global li.sites_nav .mediacommonsfrontpage {
     flex-flow: column nowrap;
     clear: left;
   }
-  /* line 189, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 185, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav a.logolink {
     padding: .25em 0em .2em 0;
     width: 14rem;
     font-size: 1.3rem;
   }
-  /* line 193, ../sass/modules/global_nav/_global_nav.scss */
+  /* line 189, ../sass/modules/global_nav/_global_nav.scss */
   nav.global li.sites_nav a.logolink:before {
     content: "\e002 \e00b";
   }
@@ -1761,18 +1758,12 @@ nav.global li.sites_nav .mediacommonsfrontpage {
 
 /* line 7, ../sass/modules/header/_header.scss */
 [role="banner"] {
-  margin: 2.4rem auto 0 auto;
+  margin: 1rem auto 0 auto;
   padding: 6px 0 0 0;
 }
 /* line 11, ../sass/modules/header/_header.scss */
 [role="banner"] button {
   display: none;
-}
-/* line 14, ../sass/modules/header/_header.scss */
-[role="banner"] a.skip-to-nav {
-  height: 0px !important;
-  overflow: hidden;
-  display: none !important;
 }
 @media (min-width: 801px) {
   /* line 7, ../sass/modules/header/_header.scss */
@@ -5280,7 +5271,7 @@ body.mc [role="main"] {
 }
 /* line 9, ../sass/projects/_mc.scss */
 body.mc [role="banner"] {
-  margin: 3.25em auto 3rem;
+  margin: 1rem auto 2rem;
   max-width: 84rem;
 }
 /* line 13, ../sass/projects/_mc.scss */

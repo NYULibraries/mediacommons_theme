@@ -1427,7 +1427,7 @@ nav.global li.sites_nav .mediacommonsfrontpage {
     height: 2.4rem;
     display: block;
     position: relative;
-    z-index: 5;
+    z-index: 1000;
     float: left;
   }
   /* line 156, ../sass/modules/global_nav/_global_nav.scss */
@@ -6348,4 +6348,5 @@ body.mc .block.fieldguide_toc .node-spoke.node-teaser .comment-count::before {
   position: absolute !important;
   padding: 20px;
   border: 4px solid #196195;
+  z-index: 1000;
 }

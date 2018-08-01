@@ -5547,4 +5547,5 @@ body.mc .block.fieldguide_toc .node-spoke.node-teaser .comment-count::before {
   position: absolute !important;
   padding: 20px;
   border: 4px solid #196195;
+  z-index: 1000;
 }

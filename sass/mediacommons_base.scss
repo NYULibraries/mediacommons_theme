@@ -88,5 +88,6 @@ $breakpoint-no-query-fallbacks: false;
     padding: 20px;
     border: 4px solid #196195;
     @extend %shadow-material-design;
+    z-index: 1000;
   }
 }

@@ -151,7 +151,7 @@ nav.global {
     height: $globalnav-height;
     display: block;
     position: relative;
-    z-index: 5;
+    z-index: 1000;
     float: left;
     ul {
       // Channel links

@@ -1109,8 +1109,8 @@ a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
 
 @font-face {
   font-family: "MediaCommons-Icon-Font";
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1513629794');
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1513629794#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1531239544') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1531239544') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1531239544#MediaCommons-Icon-Font') format('svg');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1533232141');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1533232141#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1531239544') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1531239544') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1531239544#MediaCommons-Icon-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -5307,15 +5307,11 @@ body.mc [role="complementary"] header {
   background-color: #cccccc;
 }
 @media (min-width: 240px) and (max-width: 800px) {
-  /* line 46, ../sass/projects/_mc.scss */
-  body.mc [role="banner"] {
-    margin: 3.25em auto 1rem;
-  }
-  /* line 48, ../sass/projects/_mc.scss */
+  /* line 47, ../sass/projects/_mc.scss */
   body.mc [role="banner"] h1 {
     margin-left: 3%;
   }
-  /* line 51, ../sass/projects/_mc.scss */
+  /* line 50, ../sass/projects/_mc.scss */
   body.mc [role="banner"] .logo {
     width: 60vw;
     max-width: 700px;

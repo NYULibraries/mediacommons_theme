@@ -1,25 +1,19 @@
 body.fieldguide {
-  $fg_primary: map-get($map, fieldguide);
-  // $fg_primary: #d7a100;
+  $fg_primary: map-get($map, fieldguide); // $fg_primary: #d7a100;
   $brighter-yellow: #d7a100;
-  $fg_neutral: $fg_primary;
-  // : $fg_primary;
-  $cs-primary: $fg_primary !global;
-  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $fg_neutral: $fg_primary; // : $fg_primary;
+  $cs-primary: $fg_primary !global; // Options: mono, complement, triad, tetrad, analogic, accented-analogic
   $cs-scheme: complement !global;
-  $cs-hue-offset: 20 !global;
-  // Options: 0-100;
+  $cs-hue-offset: 20 !global; // Options: 0-100;
   $cs-brightness-offset: 100 !global;
-  $brighter-yellow: #d7a100;
-  // Options: 0-100;
+  $brighter-yellow: #d7a100; // Options: 0-100;
   $cs-color-model: ryb !global;
   $primary: tint-stack(cs-primary()) !global;
   $yellow: tint-stack( $brighter-yellow) !global;
   $neutral-tint-stack: tint-stack($fg_neutral) !global;
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
-  $quadrary: tint-stack(cs-quadrary()) !global;
-  // on fieldguide, hide all images for now 
+  $quadrary: tint-stack(cs-quadrary()) !global; // on fieldguide, hide all images for now 
   // this uses underscores because it is created from a block's delta 
   .mc_recent_comments .blockheader div:after {
     content: " on Field Guide";
@@ -36,16 +30,17 @@ body.fieldguide {
     border-bottom: 3px solid #d7a100;
   }
   [role="complementary"] {
+    .hub-title a:link, a:visited {
+      color: #7d5e00;
+    }
     header {
       background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
     }
-    > div,
+    >div,
     .block {
       background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
     }
-    header {
-      //    background-color: nth($tertiary, 4);
-    }
+    
   }
   .comments {
     article {
@@ -90,10 +85,7 @@ body.fieldguide {
       }
     }
     .timerangeheader {
-      > * {
-        // background-color: lighten(set-saturation(nth($primary, 4), 50%), 1%);
-        // background-color: #D7A100;
-        // color: #111111;
+      >* {
         padding: 3px 29px;
       }
     }
@@ -115,8 +107,7 @@ body.fieldguide {
       }
       background-color: nth($yellow,
       1);
-    }
-    // for now, use the same one 
+    } // for now, use the same one 
     .view-recent-6-hubs {
       .featuredhub-info {
         position: static;
@@ -136,7 +127,7 @@ body.fieldguide {
           color: #5a5a5a !important;
         }
         .peoplelist {
-            padding: 0 20px 0px;
+          padding: 0 20px 0px;
         }
         h2 {
           background-color: inherit;
@@ -148,8 +139,7 @@ body.fieldguide {
           }
         }
       }
-    }
-    // .view-recent-hubs-fieldguide .view-content {
+    } // .view-recent-hubs-fieldguide .view-content {
     //   display: flex;
     //   justify-content: space-between;
     //   // align-items: stretch;

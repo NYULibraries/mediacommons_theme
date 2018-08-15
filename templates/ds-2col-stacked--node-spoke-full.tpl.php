@@ -29,7 +29,7 @@
           )
         )
       );
-      $log_in_link = l(t('Log in'),'user/login', $query);
+      $log_in_link = l(t('Log in'), 'user/login', $query);
       if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
         $register_link = l(t('register'),'user/register', $query);
       }

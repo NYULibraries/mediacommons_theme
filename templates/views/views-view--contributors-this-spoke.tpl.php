@@ -27,12 +27,6 @@
  * @ingroup views_templates
  */
 ?>
-  
-
   <?php if ($rows): ?>
-   
-      <?php print $rows; ?>
-  
-
+    <?php print $rows; ?>
   <?php endif; ?>
-

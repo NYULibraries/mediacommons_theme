@@ -488,13 +488,12 @@ a:active {
 /* line 27, ../sass/base/links/_links.scss */
 a:focus {
   outline-style: solid;
-  outline-color: #FDE16B;
+  outline-color: #dd5520;
   outline-width: 4px;
-  transition: outline-color .5s ease;
 }
-/* line 33, ../sass/base/links/_links.scss */
+/* line 32, ../sass/base/links/_links.scss */
 a:active {
-  outline-color: #FDC309;
+  outline-color: #dd5520;
 }
 
 /* line 5, ../sass/base/forms/_forms_extendables.scss */
@@ -1102,8 +1101,8 @@ a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
 
 @font-face {
   font-family: "MediaCommons-Icon-Font";
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1533232141');
-  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1533232141#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1531239544') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1531239544') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1531239544#MediaCommons-Icon-Font') format('svg');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?1535335806');
+  src: url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.eot?&1535335806#iefix') format('embedded-opentype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.woff?1531239544') format('woff'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.ttf?1531239544') format('truetype'), url('../fonts/MediaCommons-Icon-Font/MediaCommons-Icon-Font.svg?1531239544#MediaCommons-Icon-Font') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -4875,63 +4874,65 @@ body.int.front .hub-title {
 body.int.front .hub-title a {
   background-color: rgba(255, 255, 255, 0.8);
   padding: .5rem;
+  display: inline-block;
+  margin-right: 10px;
 }
-/* line 174, ../sass/projects/_int.scss */
+/* line 176, ../sass/projects/_int.scss */
 body.int.front .spoke-title {
   font-size: 1.25rem;
 }
-/* line 179, ../sass/projects/_int.scss */
+/* line 181, ../sass/projects/_int.scss */
 body.int time,
 body.int .date-display-range {
   display: none !important;
 }
-/* line 184, ../sass/projects/_int.scss */
+/* line 186, ../sass/projects/_int.scss */
 body.int .comment time {
   display: block !important;
 }
-/* line 188, ../sass/projects/_int.scss */
+/* line 190, ../sass/projects/_int.scss */
 body.int li.featured-item {
   min-height: 7rem;
 }
-/* line 192, ../sass/projects/_int.scss */
+/* line 194, ../sass/projects/_int.scss */
 body.int .node-spoke.node-teaser .thumb {
   background-size: 224%;
   background-position-x: 3px;
   background-position-y: -77px;
 }
-/* line 199, ../sass/projects/_int.scss */
+/* line 201, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-body {
   display: none;
 }
-/* line 202, ../sass/projects/_int.scss */
+/* line 204, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .field-name-field-representative-image {
   background: url('../images/default_images/spoke-default-int.svg?1528903581');
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 207, ../sass/projects/_int.scss */
+/* line 209, ../sass/projects/_int.scss */
 body.int .node-hub.node-teaser .hub-title {
   font-size: 1.4rem;
 }
-/* line 213, ../sass/projects/_int.scss */
+/* line 215, ../sass/projects/_int.scss */
 body.int .intransition_full header h2 {
   margin-bottom: .4rem;
 }
-/* line 217, ../sass/projects/_int.scss */
+/* line 219, ../sass/projects/_int.scss */
 body.int .intransition_full .int-full-sections {
   width: auto;
   overflow: hidden;
   margin: 2em 0;
 }
 @media (min-width: 830px) {
-  /* line 223, ../sass/projects/_int.scss */
+  /* line 225, ../sass/projects/_int.scss */
   body.int .intransition_full .group-1 {
     float: left;
     width: 49%;
     margin-right: 1%;
     margin-bottom: 2em;
   }
-  /* line 229, ../sass/projects/_int.scss */
+  /* line 231, ../sass/projects/_int.scss */
   body.int .intransition_full .group-2 {
     float: right;
     width: 48%;
@@ -4939,41 +4940,41 @@ body.int .intransition_full .int-full-sections {
     border-left: 1px solid #d2bdcf;
     padding-left: 30px;
   }
-  /* line 236, ../sass/projects/_int.scss */
+  /* line 238, ../sass/projects/_int.scss */
   body.int .intransition_full .group-3 {
     float: left;
     width: 48%;
     margin-right: 2%;
   }
 }
-/* line 242, ../sass/projects/_int.scss */
+/* line 244, ../sass/projects/_int.scss */
 body.int .intransition_full .group-footer {
   clear: both;
   margin-top: 4em;
 }
 
-/* line 249, ../sass/projects/_int.scss */
+/* line 251, ../sass/projects/_int.scss */
 .review-byline {
   font-size: 1.2rem;
   line-height: 1.5;
   margin-bottom: 20px;
   color: #232323;
 }
-/* line 254, ../sass/projects/_int.scss */
+/* line 256, ../sass/projects/_int.scss */
 .review-byline .label {
   display: inline-block;
 }
-/* line 257, ../sass/projects/_int.scss */
+/* line 259, ../sass/projects/_int.scss */
 .review-byline a {
   color: inherit;
 }
-/* line 260, ../sass/projects/_int.scss */
+/* line 262, ../sass/projects/_int.scss */
 .review-byline .view-mode-user_byline {
   display: inline-block;
   float: none;
 }
 
-/* line 266, ../sass/projects/_int.scss */
+/* line 268, ../sass/projects/_int.scss */
 .field-name-posts-contributed.mc-int .block-title::after {
   content: "As creator";
 }

@@ -26,12 +26,10 @@ a {
   }
   &:focus {
     outline-style: solid;
-    outline-color: #FDE16B;
+    outline-color: $link-active-link-color;
     outline-width: 4px;
-    transition: outline-color .5s ease;
   }
    &:active {
-    outline-color: #FDC309;
-   // outline-color: transparent;
+    outline-color: $link-active-link-color;
   }
 }

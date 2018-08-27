@@ -23,7 +23,6 @@ body.mc {
       button.skip-arrow {
         // there is no primary nav on homepage, so hide responsive hamburger button
         display: none !important;
-        border-color: red;
       }
     }
   }
@@ -35,11 +34,10 @@ body.mc {
   [role="complementary"] {
     >div,
     .block {
-      //background-color: lighten(nth($neutral_stack, 5), 3%);
       background-color: $hometoprightcolor;
     }
     header {
-      background-color: nth($neutral_stack, 4);
+      background-color: #d6e2ea;
     }
   }
   @include respond-to("narrow navigation") {

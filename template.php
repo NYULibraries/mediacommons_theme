@@ -269,7 +269,6 @@ function mediacommons_preprocess_node(&$variables) {
 }
 
 function mediacommons_preprocess_username(&$variables) {
-  //dpr(__FUNCTION__);
   $variables['name'] =  check_plain( $variables['name_raw'] );
   $account = $variables['account'];
   $variables['extra'] = '';

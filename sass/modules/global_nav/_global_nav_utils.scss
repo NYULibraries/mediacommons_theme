@@ -1,7 +1,6 @@
 nav.global {
   // Utilities -- login, user preferences
   li.utils {
-    // @include horizontal-list(1em);
     position: absolute;
     overflow: visible;
     right: 0;
@@ -66,8 +65,8 @@ nav.global {
       @include border-bottom-right-radius(5px);
       right: 1.5em;
       top: $globalnav-height;
+    
       > li {
-        //@include inline-block-list-item(1em);
         padding-top: 20px;
         > a {
           padding: 0.3em 0.5em;
@@ -98,11 +97,12 @@ nav.global {
           label {
             display: none;
           }
-          #edit-submit {
+          input[type="submit"]  {
             float: right;
           }
           .button-link {
             line-height: 1.2em;
+            padding-top: 10px;
           }
         }
       }

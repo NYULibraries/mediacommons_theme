@@ -78,12 +78,16 @@ $breakpoint-no-query-fallbacks: false;
 
 
 // Skip to main content
-.element-invisible.element-focusable {
-    transition: all .5s;
-}
-.element-invisible.element-focusable:active,
-.element-invisible.element-focusable:focus {
-  position: absolute !important;
-  padding: 20px;
-  background-color:  white;
+#skip-link {
+  transition: all .5s;
+  background-color: white;
+  left: 30px;
+  &:active,
+  &:focus {
+    position: absolute !important;
+    padding: 20px;
+    border: 4px solid #196195;
+    @extend %shadow-material-design;
+    z-index: 1000;
+  }
 }

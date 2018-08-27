@@ -3,6 +3,12 @@ $neutral_stack: tint-stack(#333333) !global;
 $spoke-default-thumb: "default_images/spoke-default-imr.svg";
 $imr-logo: "mc-logos/imr.svg";
 body.imr {
+
+  a:link,
+  a:visited {
+    color: #af3b00;
+  }
+
   .logo {
     background: image-url($imr-logo);
     background-size: cover;
@@ -27,6 +33,7 @@ body.imr {
   }
 
   [role="complementary"] {
+
     >div,
     .block {
       background-color: lighten(nth($neutral_stack, 5), 3%);

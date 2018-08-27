@@ -7,7 +7,7 @@ body.mc {
     margin: 0em auto 0;
   }
   [role="banner"] {
-    margin: 3.25em auto 3rem;
+    margin: 1rem auto 2rem;
     max-width: 84rem;
 
     .logo {
@@ -44,7 +44,6 @@ body.mc {
   }
   @include respond-to("narrow navigation") {
     [role="banner"] {
-      margin: 3.25em auto 1rem;
       h1 {
         margin-left: 3%;
       }

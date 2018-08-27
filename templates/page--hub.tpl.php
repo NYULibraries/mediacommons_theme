@@ -6,10 +6,8 @@
 <?php endif; ?>
 <main role="main">
   <div id="content">
-    <?php if (isset($tabs)): ?>
-      <div class="tabs">
-        <?php print render($tabs); ?>
-      </div>
+    <?php if (isset($tabs["#primary"])  && !empty($tabs["#primary"])):  ?>
+      <div class="tabs"><?php print render($tabs); ?></div>
     <?php endif; ?>
     <?php if (isset($page['highlighted'])) : ?>
       <div id="highlighted">
@@ -29,11 +27,7 @@
     </aside>
   <?php endif; ?> 
 </main>
-<?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
-  <nav class="global" role="navigation">
-    <?php print render($page['globalnav']); ?>
-  </nav>
-<?php endif; ?>
+
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
   <?php print render($page['footer']); ?> 
 <?php endif; ?>

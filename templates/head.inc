@@ -1,7 +1,13 @@
+<?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
+  <nav class="global" role="navigation">
+    <?php print render($page['globalnav']); ?>
+  </nav>
+<?php endif; ?>
+
 <header  role="banner">
-  <button type="button" class="skip-arrow"></button>
+  <button type="button" class="skip-arrow" aria-label="menu"></button>
   <div class="top-hold">
-    <h1><a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>
+    <h1><a href="<?php print $front_page; ?>" rel="home" class="logo"><span><?php print $site_name; ?></span></a></h1>
     <?php print render($page['search']); ?>
   </div>
   <nav id="main-nav" class="nav main" role="navigation">

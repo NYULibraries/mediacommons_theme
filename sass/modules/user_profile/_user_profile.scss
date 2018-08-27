@@ -14,14 +14,6 @@
   font-size: .9rem;
 }
 
-.view-mode-user_byline {
-  &:after {
-    content: ",\20";
-  }
-  &:last-child:after {
-    content: "";
-  }
-}
 
 h2.block-title {
   font-size: 1.5rem;
@@ -43,22 +35,25 @@ h2.block-title {
 
 
 .view-mode-user_byline {
-  /* for spoke pages, when there is an org */
-  /* for reviews areas on spoke */
-  //background-color: pink;
-  float: left;
+  // for spoke pages, when there is an org 
+  // for reviews areas on spoke 
+  // float: left;
   margin-right: 5px;
+  display: inline-block;
   .p-name,
   .p-org {
-    float: left;
-  }
-  &:after {
-    content: ",\20";
-  }
-  &:last-child:after {
-    //content: "";
+    // float: left;
+    display: inline-block;
   }
 }
+
+.view-mode-user_byline:not(:last-child) {
+  background-color: green;
+  &::after {
+    content: ",\20";
+  }
+}
+
 
 .view-mode-user_teaser {
   padding-bottom: 8px;
@@ -107,12 +102,10 @@ img[src*="identicon"] {
 
 
 
-/* for contributors lists as well as profile */
-
+// for contributors lists as well as profile 
 .h-card {
   .field-user-avatar,
   .prof-img-hold {
-    //  background-color: yellow;
     float: left;
     a {
       display: block;
@@ -196,8 +189,7 @@ h1.p-name {
 
 
 
-/* ONLY user profile page */
-
+// ONLY user profile page 
 .profile.view-mode-full {
   ul {
     list-style-type: none;
@@ -361,5 +353,4 @@ h1.p-name {
 
 .profile .contribution-type {
   margin-top: 20px;
- 
 }

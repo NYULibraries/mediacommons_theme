@@ -1,20 +1,41 @@
   $int_primary: map-get($map, int);
   $primary-color: $int_primary;
-  $cs-primary: $primary-color;
-  // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
-  $cs-scheme: triad;
-  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
-  $cs-hue-offset: 20;
-  // Options: 0-100;
-  $cs-brightness-offset: 0;
-  // Options: 0-100;
+  $cs-primary: $primary-color; // Primary color, can be any color you can use in CSS, plus CMYK from Color Schemer
+  $cs-scheme: triad; // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $cs-hue-offset: 20; // Options: 0-100;
+  $cs-brightness-offset: 0; // Options: 0-100;
   $cs-color-model: ryb;
   $primary: tint-stack(cs-primary()) !global;
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
   $spoke-default-thumb: "default_images/spoke-default-int.svg";
   $int-logo: "mc-logos/int.svg";
+  .node-review.view-mode-full {
+    border-top: 4px solid #782a70;
+    font-family: "Georgia", "Times New Roman", serif;
+    max-width: 38em;
+    line-height: 1.5;
+    font-size: 1.1em;
+    padding-bottom: 40px;
+    .review-byline {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+  }
+
   body.int {
+    .backToIssue {
+      a:link,
+      a:visited {
+        padding: 3px 0px;
+        line-height: 1.4;
+        display: block;
+        color: white; //background-color: #3e3d3d;
+        color: #3e3d3d; //text-decoration: underline;
+      }
+    }
+
     [role="banner"] {
       .logo {
         background: image-url($int-logo);
@@ -38,17 +59,19 @@
           background-position: bottom;
         }
       }
-    }
-    // this uses underscores because it is created from a block's delta 
+    } // this uses underscores because it is created from a block's delta 
     .mc_recent_comments .blockheader div:after {
       content: " on [in]Transition";
     }
+
     #block-views-contributors-this-hub-block .blockheader div:after {
       content: " to this Issue";
     }
+
     iframe {
       max-width: 100%;
     }
+
     .spoke-teaser-meta {
       .peoplelist {
         float: none;
@@ -60,6 +83,19 @@
         }
       }
     }
+
+    .node-hub .field-name-field-body {
+      position: relative;
+      font-family: "Georgia", "Times New Roman", serif;
+      line-height: 1.4;
+      font-size: 1rem;
+      margin-top: 1rem;
+      max-width: 41rem;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
     .node-spoke {
       &.node-teaser {
         border-bottom: 1px solid nth($tertiary, 5);
@@ -70,20 +106,16 @@
         }
       }
     }
+
     .featured-more header {
       margin-bottom: 20px;
-    }
-    //  @media (max-width: 799px) {
+    } //  @media (max-width: 799px) {
     .featuredhub-info {
       position: relative;
       bottom: 0px;
       max-width: 100%;
       left: 0px;
-      h2 {
-        //background-color: #222;
-      }
-    }
-    //  }
+    } //  }
     &.front {
       .field-name-field-body {
         display: none;
@@ -94,8 +126,23 @@
         line-height: .5;
       }
     }
+
     .homehub-spokes {
       margin-top: .8em;
+    }
+    header.hubhead {
+      position: relative;
+    }
+    &.node-type-hub {
+      .hub-title {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        line-height: 1.4;
+        font-size: 1.3rem;
+        background-color: rgba(255, 255, 255, .8);
+        padding: .5rem;
+      }
     }
     &.front {
       @media (min-width: 50.0625em) {
@@ -118,35 +165,38 @@
         left: 10px;
         line-height: 1.5;
         font-size: 1.4rem;
+        padding: 0;
         a {
           background-color: rgba(255, 255, 255, .8);
-          padding: 4px 7px;
+          padding: .5rem;
+          display: inline-block;
+          margin-right: 10px;
         }
       }
       .spoke-title {
         font-size: 1.25rem;
       }
     }
+
     time,
     .date-display-range {
       display: none !important;
     }
+
     .comment time {
       display: block !important;
     }
+
     li.featured-item {
-      //background: image-url($spoke-default-thumb);
-     // background-color: #efefef;
-      // background-size: cover;
-      // background-repeat: no-repeat;
-      // background-position-y: -18px;
       min-height: 7rem;
     }
+
     .node-spoke.node-teaser .thumb {
       background-size: 224%;
       background-position-x: 3px;
       background-position-y: -77px;
     }
+
     .node-hub.node-teaser {
       .field-name-field-body {
         display: none;
@@ -160,28 +210,11 @@
         font-size: 1.4rem;
       }
     }
+
     .intransition_full {
-      /* special horizontal homepage layout for spokes*/
-      .review-title {
-        margin: .5em 0;
-        font-size: 1rem;
-      }
-      .review-byline {
-        font-size: 1.2rem;
-        line-height: 1.5;
-        background-color: pink;
-        width: auto;
-        overflow: visible;
-        margin-bottom: 20px;
-        color: #232323;
-        .label {
-          float: left;
-          display: block;
-          padding-right: 5px;
-        }
-        a {
-          color: inherit;
-        }
+      header h2 {
+        
+        margin-bottom:.4rem;
       }
       .int-full-sections {
         width: auto;
@@ -199,6 +232,8 @@
           float: right;
           width: 48%;
           margin-left: 1%;
+          border-left: 1px solid #d2bdcf;
+          padding-left: 30px;
         }
         .group-3 {
           float: left;
@@ -212,7 +247,24 @@
       }
     }
   }
-  
+
+  .review-byline {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #232323;
+    .label {
+      display: inline-block;
+    }
+    a {
+      color: inherit;
+    }
+    .view-mode-user_byline {
+      display: inline-block; 
+      float: none;
+    }
+  }
+
   .field-name-posts-contributed.mc-int .block-title::after {
     content: "As creator";
   }

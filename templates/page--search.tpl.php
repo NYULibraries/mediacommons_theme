@@ -1,11 +1,10 @@
-<a id="main-content"></a>
 <?php  include ("head.inc"); ?>
 <?php if ($action_links): ?>
   <ul class="action-links">
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main">
+<main role="main" id="main-content">
   <?php if ($tabs) : ?>
     <div class="tabs">
       <?php print render($tabs); ?>
@@ -25,17 +24,13 @@
         <?php print render($page['searchresults_sidebar']); ?>
       </div>
     <?php endif; ?>
-    <div id="main-content" class="searchresults_content">
+    <div  class="searchresults_content">
       <?php print render($page['searchresults_main']); ?>
       <?php print render($page['content']); ?>
     </div>
   </div>
 </main>
   
-<?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
-  <nav class="global" role="navigation"><?php print render($page['globalnav']); ?></nav>
-<?php endif; ?>
-
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>
     <?php print render($page['footer']); ?> 
 <?php endif; ?>

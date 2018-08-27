@@ -2,8 +2,6 @@
 // SUB-MODULES: Component styles that are layout independent 
 //////////////////////////////
 [role="search"] {
-
-
   padding: 0;
   margin: 0;
   form {
@@ -13,9 +11,8 @@
     margin: 0;
     border: none;
   }
-  label,
-  label span {
-    display: none;
+  label {
+    @include element-invisible();
   }
   .search-contain {
     display: flex;
@@ -59,12 +56,7 @@
 }
 
 @include respond-to("full navigation") {
-  [role="banner"] [role="search"] label {
-    display: none;
-  }
-  [role="banner"] [role="search"] label span {
-    display: none;
-  }
+
   [role="banner"] [role="search"] form {
     margin-top: 10px;
   }
@@ -78,10 +70,9 @@
     position: relative;
     width: auto;
     background-color: transparent;
-    label span {
-      display: none;
-    }
+
     label {
+      position: relative !important;
       height: 40px;
       width: 40px;
       text-align: center;
@@ -93,6 +84,9 @@
       @include border-radius(5px);
       border: 1px solid;
       border-color: #ddd #bbb #999;
+      span {
+        display: none;
+      }
     }
     fieldset {
       clear: both;
@@ -175,7 +169,7 @@
     overflow: auto;
     margin-top: 5px;
     label {
-      display: inline-block; // background-color: red;
+      display: inline-block;
     }
   }
 }

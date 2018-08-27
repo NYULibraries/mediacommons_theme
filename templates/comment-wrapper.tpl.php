@@ -11,10 +11,9 @@
   $comments = render($content['comments']);
   $comment_form = render($content['comment_form']);
   $dest = drupal_get_destination();
-
   $log_in_link = NULL;
   $register_link = NULL;
-  $comments_link = FALSE;
+  $comments_link = FALSE;  
   if (user_is_anonymous()) {
       $comments_link = TRUE;
       $query = array('query' =>  
@@ -24,14 +23,12 @@
             'project' => variable_get('mediacommons_project', 'mediacommons') // add project
           )
         )
-      );
-      
-      $log_in_link = l(t('Log in'),'user/login', $query);
+      );      
+      $log_in_link = l(t('Log in'), 'user/login', $query);
       if (variable_get('user_register', USER_REGISTER_VISITORS_ADMINISTRATIVE_APPROVAL)) {
-        $register_link = l(t('register'),'user/register', $query);
+        $register_link = l(t('register'), 'user/register', $query);
       }
-  }
-  
+  }  
 ?>
 <section id="comments" class="comments <?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ($comments && $node->type != 'forum'): ?>

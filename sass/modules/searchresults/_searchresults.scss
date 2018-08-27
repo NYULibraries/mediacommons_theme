@@ -10,6 +10,11 @@
   }
 }
 
+.search-header-group {
+  width: auto;
+  overflow: auto;
+}
+
 .spelling-suggestions {
   padding: 15px 0;
   dt,
@@ -66,12 +71,19 @@
     }
   }
 }
-
+.search-assist-info {
+  max-width: 35rem;
+  margin-top: 1.5rem;
+  li {margin-top: .8rem;}
+}
 .mc-searchresults {
+  clear:right;
+  margin-top: 50px;
+
   .spoke-teaser-meta {
     font-size: $spoke-teaser-meta-size;
   }
-  .search-result.node-spoke.node-teaser {
+  .search-result.node-teaser {
     // overriding defaults set elsewhere 
     padding: 40px 0 10px 0px;
     margin-top: 30px;
@@ -117,6 +129,10 @@
   .search-snippet-info {
     padding: 0px;
     margin: 0;
+    clear:both;
+    line-height: 1.35;
+    padding-top: 5px;
+    font-size: .9rem;
   }
 
   .node-hub {

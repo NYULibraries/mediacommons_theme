@@ -100,7 +100,7 @@ function mediacommons_form_element($variables) {
 
   $name = isset($element['#name']) ? $element['#name'] : NULL;
 
-  if ($name != 'search_block_form') {
+  if (($name != 'search_block_form') && ($name != 'search_block_form_mcsolr')) {
 
     // This function is invoked as theme wrapper, but the rendered form element
     // may not necessarily have been processed by form_builder().

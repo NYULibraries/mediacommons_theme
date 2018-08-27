@@ -48,7 +48,6 @@ h2.block-title {
 }
 
 .view-mode-user_byline:not(:last-child) {
-  background-color: green;
   &::after {
     content: ",\20";
   }
@@ -244,13 +243,6 @@ h1.p-name {
     display: inline-block;
     margin-right: 1%;
     line-height: 1.6;
-  }
-  .author {
-    background-color: red;
-    font-style: italic;
-    &:before {
-      content: "\2014\20"; // mdash encoded http://css-tricks.com/snippets/html/glyphs/
-    }
   }
   ul.tags li:first-child {
     display: inline-block;

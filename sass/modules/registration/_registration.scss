@@ -4,7 +4,7 @@
   }
 }
 
-#user-register-form {
+#user-register-form, #user-login, #user-pass {
   max-width: 55rem;
   input[type],
   textarea {
@@ -14,6 +14,7 @@
     padding: 20px;
     font-size: 1.1rem;
     margin-top: 40px;
+    min-width: 250px;
   }
   .form-required {
     color: fuchsia;

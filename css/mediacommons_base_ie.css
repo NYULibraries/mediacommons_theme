@@ -3457,60 +3457,69 @@ h1.p-name {
   margin-top: 20px;
 }
 
-/* line 2, ../sass/modules/registration/_registration.scss */
-.page-user-register .page-title {
+/* line 2, ../sass/modules/registration/_registerlogin.scss */
+.page-user .page-title {
   margin-bottom: 40px;
 }
 
-/* line 7, ../sass/modules/registration/_registration.scss */
-#user-register-form {
+/* line 8, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form {
   max-width: 55rem;
 }
-/* line 9, ../sass/modules/registration/_registration.scss */
-#user-register-form input[type],
-#user-register-form textarea {
+/* line 12, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form input[type],
+.page-user main form textarea {
   padding: 5px 10px;
 }
-/* line 13, ../sass/modules/registration/_registration.scss */
-#user-register-form input[type="submit"] {
+/* line 16, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form input[type="submit"] {
   padding: 20px;
   font-size: 1.1rem;
-  margin-top: 40px;
+  min-width: 250px;
 }
-/* line 18, ../sass/modules/registration/_registration.scss */
-#user-register-form .form-required {
-  color: fuchsia;
+/* line 21, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .form-required {
+  color: #cc02cc;
 }
-/* line 21, ../sass/modules/registration/_registration.scss */
-#user-register-form .description {
+/* line 24, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .description {
   margin-top: 5px;
 }
-/* line 24, ../sass/modules/registration/_registration.scss */
-#user-register-form .form-item {
+/* line 27, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .form-item {
   margin-bottom: 35px;
 }
-/* line 26, ../sass/modules/registration/_registration.scss */
-#user-register-form .form-item.form-type-textarea {
+/* line 29, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .form-item.form-type-textarea {
   margin-bottom: 0;
   padding-bottom: 5px;
 }
-/* line 30, ../sass/modules/registration/_registration.scss */
-#user-register-form .form-item.form-item-field-url-und-0-title {
+/* line 33, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .form-item.form-item-field-url-und-0-title {
   margin-bottom: 0;
 }
-/* line 34, ../sass/modules/registration/_registration.scss */
-#user-register-form label {
+/* line 37, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form label {
   padding-bottom: 5px;
   font-weight: bold;
 }
-/* line 38, ../sass/modules/registration/_registration.scss */
-#user-register-form .filter-wrapper,
-#user-register-form .filter-guidelines {
+/* line 41, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .filter-wrapper,
+.page-user main form .filter-guidelines {
   padding: 0;
 }
-/* line 42, ../sass/modules/registration/_registration.scss */
-#user-register-form .field-widget-text-textarea {
+/* line 45, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .field-widget-text-textarea {
   margin: 35px 0;
+}
+/* line 48, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form .field-name-field-title {
+  margin-top: 40px;
+}
+/* line 51, ../sass/modules/registration/_registerlogin.scss */
+.page-user main form a.button-link {
+  margin-top: 20px;
+  display: inline-block;
 }
 
 /* line 4, ../sass/layout/_page.scss */

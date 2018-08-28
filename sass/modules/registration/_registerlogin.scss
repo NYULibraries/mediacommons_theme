@@ -1,0 +1,54 @@
+// For registration, login, lost password, and user profile pages
+.page-user {
+  .page-title {
+    margin-bottom: 40px;
+  }
+  main form {
+    max-width: 55rem;
+
+
+    input[type],
+    textarea {
+      padding: 5px 10px;
+    }
+    input[type="submit"] {
+      padding: 20px;
+      font-size: 1.1rem;
+      min-width: 250px;
+    }
+    .form-required {
+      color: #cc02cc;
+    }
+    .description {
+      margin-top: 5px;
+    }
+    .form-item {
+      margin-bottom: 35px;
+      &.form-type-textarea {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+      }
+      &.form-item-field-url-und-0-title {
+        margin-bottom: 0;
+      }
+    }
+    label {
+      padding-bottom: 5px;
+      font-weight: bold;
+    }
+    .filter-wrapper,
+    .filter-guidelines {
+      padding: 0;
+    }
+    .field-widget-text-textarea {
+      margin: 35px 0;
+    }
+    .field-name-field-title {
+      margin-top: 40px;
+    }
+    a.button-link {
+      margin-top: 20px;
+      display: inline-block;
+    }
+  }
+}

@@ -1685,11 +1685,11 @@ nav.global li.sites_nav ul > li > a.menu__link {
   float: none !important;
 }
 /* line 98, ../sass/modules/searchresults/_searchresults.scss */
-.sr-item-group .node-meta time {
+.sr-item-group .node-meta time, .sr-item-group .node-meta .comment-count {
   float: none !important;
 }
 /* line 100, ../sass/modules/searchresults/_searchresults.scss */
-.sr-item-group .node-meta time::before {
+.sr-item-group .node-meta time::before, .sr-item-group .node-meta .comment-count::before {
   content: "" !important;
 }
 
@@ -3103,11 +3103,6 @@ body .view-filters .views-exposed-form .views-submit-button {
 .peoplelist .label {
   float: left;
   margin-right: 5px;
-}
-
-/* line 149, ../sass/modules/teasers/_spoke_teaser.scss */
-p.search-snippet {
-  margin-bottom: 0;
 }
 
 /* line 10, ../sass/modules/embedded_video/_embedded_video.scss */
@@ -4969,7 +4964,7 @@ body.alt [role="complementary"] > div,
 body.alt [role="complementary"] .block {
   background-color: #e8e8e8;
 }
-/* line 51, ../sass/projects/_alt.scss */
+/* line 32, ../sass/projects/_alt.scss */
 body.alt [role="complementary"] header {
   background-color: #cccccc;
 }
@@ -4993,14 +4988,15 @@ body.fieldguide nav.global {
   border-bottom: 3px solid #d7a100;
 }
 /* line 33, ../sass/projects/_fieldguide.scss */
-body.fieldguide [role="complementary"] .hub-title a:link, body.fieldguide [role="complementary"] a:visited {
+body.fieldguide [role="complementary"] .hub-title a:link,
+body.fieldguide [role="complementary"] a:visited {
   color: #7d5e00;
 }
-/* line 36, ../sass/projects/_fieldguide.scss */
+/* line 37, ../sass/projects/_fieldguide.scss */
 body.fieldguide [role="complementary"] header {
   background-color: #ece2c5;
 }
-/* line 39, ../sass/projects/_fieldguide.scss */
+/* line 40, ../sass/projects/_fieldguide.scss */
 body.fieldguide [role="complementary"] > div,
 body.fieldguide [role="complementary"] .block {
   background-color: #f5f0e0;
@@ -5035,24 +5031,24 @@ body.fieldguide.front .hubhead h1.hub-title {
 body.fieldguide.front .timerangeheader > * {
   padding: 3px 29px;
 }
-/* line 96, ../sass/projects/_fieldguide.scss */
+/* line 94, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .field-name-field-spokes .field-item {
   margin-bottom: .5rem;
 }
-/* line 100, ../sass/projects/_fieldguide.scss */
+/* line 98, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item {
   padding: 0;
   background-color: #d7a100;
 }
-/* line 102, ../sass/projects/_fieldguide.scss */
+/* line 100, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item img {
   display: none;
 }
-/* line 105, ../sass/projects/_fieldguide.scss */
+/* line 103, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-item time {
   display: relative;
 }
-/* line 112, ../sass/projects/_fieldguide.scss */
+/* line 110, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   position: static;
   height: 100%;
@@ -5063,7 +5059,7 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   display: flex;
   flex-direction: column;
 }
-/* line 121, ../sass/projects/_fieldguide.scss */
+/* line 119, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   order: 2;
   background-color: inherit;
@@ -5072,45 +5068,45 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   font-size: 0.8rem;
   color: #5a5a5a !important;
 }
-/* line 129, ../sass/projects/_fieldguide.scss */
+/* line 127, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info .peoplelist {
   padding: 0 20px 0px;
 }
-/* line 132, ../sass/projects/_fieldguide.scss */
+/* line 130, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 {
   background-color: inherit;
   padding: 0;
 }
-/* line 135, ../sass/projects/_fieldguide.scss */
+/* line 133, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 a {
   display: block;
   padding: 20px 20px 5px 20px;
   color: black !important;
 }
-/* line 178, ../sass/projects/_fieldguide.scss */
+/* line 141, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg {
   position: static;
   max-width: none;
   flex: 0 1 49%;
 }
-/* line 182, ../sass/projects/_fieldguide.scss */
+/* line 145, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg time {
   display: none;
 }
-/* line 185, ../sass/projects/_fieldguide.scss */
+/* line 148, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a {
   display: block;
   background-color: #d7a100;
 }
-/* line 188, ../sass/projects/_fieldguide.scss */
+/* line 151, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a:hover {
   background-color: #e1b83f;
 }
-/* line 195, ../sass/projects/_fieldguide.scss */
+/* line 158, ../sass/projects/_fieldguide.scss */
 body.fieldguide .view-list-of-all-hubs .group-flex1 {
   display: none;
 }
-/* line 199, ../sass/projects/_fieldguide.scss */
+/* line 162, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: .5rem;

@@ -95,7 +95,7 @@
     .peoplelist {
       float:none !important;
     }
-    time {
+    time, .comment-count {
       float:none !important;
       &::before {
         content:"" !important;

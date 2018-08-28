@@ -30,7 +30,8 @@ body.fieldguide {
     border-bottom: 3px solid #d7a100;
   }
   [role="complementary"] {
-    .hub-title a:link, a:visited {
+    .hub-title a:link,
+    a:visited {
       color: #7d5e00;
     }
     header {
@@ -40,7 +41,6 @@ body.fieldguide {
     .block {
       background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
     }
-    
   }
   .comments {
     article {
@@ -89,9 +89,7 @@ body.fieldguide {
         padding: 3px 29px;
       }
     }
-    .featured-more .blockheader div {
-      // background-color: nth($yellow, 1);
-    }
+
     .field-name-field-spokes {
       .field-item {
         margin-bottom: .5rem;
@@ -139,42 +137,7 @@ body.fieldguide {
           }
         }
       }
-    } // .view-recent-hubs-fieldguide .view-content {
-    //   display: flex;
-    //   justify-content: space-between;
-    //   // align-items: stretch;
-    //   // align-content: stretch;
-    //   flex-wrap: wrap;
-    //   a {
-    //     flex: 0 1 49%;
-    //     background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
-    //     box-shadow: inset 0px 0px 0px 2px set-saturation(nth($primary, 5), 50%);
-    //     margin-bottom: 15px;
-    //     padding: 0px;
-    //     min-height: 9rem;
-    //     &:hover {
-    //       background-color: nth($yellow, 4);
-    //       text-decoration: none;
-    //       box-shadow: none;
-    //     }
-    //     time {
-    //       background-color: rgba(0, 0, 0, 0.3);
-    //       display: inline-block;
-    //       color: white;
-    //       padding: 0 8px;
-    //       display: none;
-    //     }
-    //     h3 {
-    //       font-size: 1.5rem;
-    //       padding: 20px;
-    //       color: black;
-    //       padding: 10px;
-    //       margin: 15px;
-    //       // background-color: tint(nth($secondary, 4), 10%);
-    //       // background-color: rgba(0, 0, 0, 0.7);
-    //     }
-    //   }
-    // }
+    }
     .featured-fg {
       position: static;
       max-width: none;

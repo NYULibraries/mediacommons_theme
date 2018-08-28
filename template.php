@@ -898,3 +898,13 @@ function mediacommons_apachesolr_sort_link($vars) {
   return '<option value="' . $value. '"'. $selected .'>' . $vars['text'] . '</option>';
 
 }
+
+ function mediacommons_form_required_marker($variables) {
+   $attributes = array(
+     'class' => 'form-required',
+      'title' => t('This field is required.'),
+      'aria-hidden' => 'true'
+   );
+  return '<span' . drupal_attributes($attributes) . '>*</span>';
+
+ }

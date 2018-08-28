@@ -16,6 +16,7 @@
   <?php if ($messages) : ?>
     <?php print $messages; ?>
   <?php endif; ?>
+  <a id="main-content"></a>
   <?php print render($page['content']); ?>
 </main>
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>

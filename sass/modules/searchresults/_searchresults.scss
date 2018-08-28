@@ -71,13 +71,17 @@
     }
   }
 }
+
 .search-assist-info {
   max-width: 35rem;
   margin-top: 1.5rem;
-  li {margin-top: .8rem;}
+  li {
+    margin-top: .8rem;
+  }
 }
+
 .mc-searchresults {
-  clear:right;
+  clear: right;
   margin-top: 50px;
 
   .spoke-teaser-meta {
@@ -129,7 +133,7 @@
   .search-snippet-info {
     padding: 0px;
     margin: 0;
-    clear:both;
+    clear: both;
     line-height: 1.35;
     padding-top: 5px;
     font-size: .9rem;

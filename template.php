@@ -55,6 +55,7 @@ function mediacommons_preprocess_html(&$variables) {
   }
   if ($special_body_class) {
     $variables['classes_array'][] = $special_body_class;
+   $variables['special_body_class'] = $special_body_class;
   }
   if ($no_sidebars !== false) { // should we test true instead of "!== false"
     unset($variables['classes_array'][$no_sidebars]);

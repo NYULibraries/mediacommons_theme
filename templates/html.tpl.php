@@ -13,8 +13,10 @@
 <!--[if IE 8]><html class="lt-ie9" <?php print $html_attributes; ?>><![endif]-->
 <!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html <?php print $html_attributes . $rdf_namespaces; ?>><!--<![endif]-->
 <head>
-    <?php if ($special_body_class == "alt"): ?>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <?php 
+    switch ($special_body_class): 
+    case "alt": ?>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-2"></script>
         <script>
           window.dataLayer = window.dataLayer || [];
@@ -23,7 +25,8 @@
 
           gtag('config', 'UA-30270469-2');
         </script>
-    <?php elseif ($special_body_class == "imr"): ?>
+    <?php break;
+    case "imr": ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-3"></script>
         <script>
@@ -33,7 +36,9 @@
 
           gtag('config', 'UA-30270469-3');
         </script>
-    <?php elseif ($special_body_class == "int"): ?>
+    <?php 
+    break;
+    case "int":  ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-4"></script>
         <script>
@@ -43,7 +48,9 @@
 
         gtag('config', 'UA-30270469-4');
         </script>
-     <?php elseif ($special_body_class == "mc"): ?>
+     <?php 
+    break;
+    case "mc": ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-1"></script>
         <script>
@@ -53,7 +60,9 @@
 
         gtag('config', 'UA-30270469-1');
         </script>
-     <?php elseif ($special_body_class == "tne"): ?>
+     <?php 
+    break;
+    case "tne": ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-5"></script>
         <script>
@@ -63,7 +72,20 @@
 
         gtag('config', 'UA-30270469-5');
         </script>
-    <?php endif; ?>
+    <?php 
+    break;
+    case "fieldguide": ?>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-302704xx-x"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-302704xx-x');
+        </script>
+
+    <?php endswitch; ?>
 
 
   <?php print $head; ?>

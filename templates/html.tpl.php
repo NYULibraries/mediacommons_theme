@@ -22,8 +22,8 @@
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-
-          gtag('config', 'UA-30270469-2');
+          
+          gtag('config', 'UA-30270469-2', { 'anonymize_ip': true });
         </script>
     <?php break;
     case "imr": ?>
@@ -34,7 +34,7 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'UA-30270469-3');
+          gtag('config', 'UA-30270469-3', { 'anonymize_ip': true });
         </script>
     <?php 
     break;
@@ -46,7 +46,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-30270469-4');
+        gtag('config', 'UA-30270469-4', { 'anonymize_ip': true });
         </script>
      <?php 
     break;
@@ -58,7 +58,7 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-30270469-1');
+        gtag('config', 'UA-30270469-1', { 'anonymize_ip': true });
         </script>
      <?php 
     break;
@@ -70,19 +70,19 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-30270469-5');
+        gtag('config', 'UA-30270469-5', { 'anonymize_ip': true });
         </script>
     <?php 
     break;
     case "fieldguide": ?>
         <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-302704xx-x"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-30270469-7"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-302704xx-x');
+        gtag('config', 'UA-30270469-7', { 'anonymize_ip': true });
         </script>
 
     <?php endswitch; ?>

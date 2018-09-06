@@ -1,0 +1,24 @@
+//removes the text "User content: Reviews" that appears on the profile page
+.field-name-as-reviewer {
+  .blockheader {
+    display: none;
+  }
+}
+
+// removes the underlines on search results, for hubs and comments.  This is an //override of user.css
+.profile h3 {
+  border-bottom: none;
+}
+
+// The title of a review, which should not appear
+.node-review.view-mode-full {
+  .field-name-title {
+    // LMH in case this title accidentally gets moved to visible through Display Suite UI
+    display: none;
+  }
+}
+
+// On user profiles, snippets should not appear
+.profile.user-profile.view-mode-full .search-snippet-info {
+  display: none;
+}

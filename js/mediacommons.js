@@ -31,6 +31,14 @@
         }
       });
     },
+    setUpHomepageLinks: function() {
+      $('.node-front-page-post.node-teaser').click(function() {
+        document.location = $(this).find('a.rlink').attr('href');
+      });
+      $('.mc_home_lede').click(function() {
+        document.location = $(this).find('a.rlink').attr('href');
+      });
+    },
     setUpAsideReveal: function() {
 
       // visibility of arrow determined by CSS media queries
@@ -79,6 +87,7 @@
         $('aside[role="complimentary"].part-of-hub').removeClass('open');
       }
     }
+
   };
   Drupal.behaviors.mediacommons = {
     attach: function(context, settings) {
@@ -87,14 +96,13 @@
         return $(this).find('.spoke-title>a').hasClass('active') === true;
       }).addClass('active');
 
-   
       $(window).resize(_.debounce(function() {
         Drupal.mediacommons.setUpAsideReveal();
         Drupal.mediacommons.setUpFacetsReveal();
       }, 200));
       $(window).bind('load', function() {
-        //Drupal.mediacommons.setUpAsideReveal();
-        //Drupal.mediacommons.setUpFacetsReveal();
+        Drupal.mediacommons.setUpHomepageLinks();
+
       });
 
       $searchresults = $('#searchresults-sort');

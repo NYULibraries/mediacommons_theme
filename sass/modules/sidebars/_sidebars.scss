@@ -43,8 +43,11 @@
       padding: 0;
     }
     &.twitter-block {
+      a:link {      
+        color: rgba(0, 0, 0, 0);
+      }
       border-radius: 4px;
-      background: #292F33 image-url("ui/ring.svg") no-repeat center 75px;
+      background: #292F33 image-url("ui/ring.svg") no-repeat center 75px !important;
       min-height: 600px;
       height: 600px;
     }

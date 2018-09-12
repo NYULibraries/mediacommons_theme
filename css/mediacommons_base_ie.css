@@ -956,19 +956,18 @@ a.control:active {
 /* line 33, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more {
   margin: 5rem 0 3rem;
-  background-color: yellow;
 }
-/* line 36, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 35, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more .blockheader div {
   display: inline-block;
   padding: 0 6px;
   min-height: 1.4rem;
 }
-/* line 41, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 40, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more header {
   margin-bottom: 40px;
 }
-/* line 45, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
+/* line 44, ../sass/modules/homepagesChannels/_homepagesChannels.scss */
 .featured-more img {
   width: 100% !important;
   height: auto !important;
@@ -2701,82 +2700,86 @@ ul.action-links li a {
 /* line 45, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .block.twitter-block {
   border-radius: 4px;
-  background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px;
+  background: #292f33 url('../images/ui/ring.svg?1531239544') no-repeat center 75px !important;
   min-height: 600px;
   height: 600px;
 }
-/* line 54, ../sass/modules/sidebars/_sidebars.scss */
+/* line 46, ../sass/modules/sidebars/_sidebars.scss */
+[role="complementary"] .block.twitter-block a:link {
+  color: transparent;
+}
+/* line 57, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub header h1 {
   font-weight: bold;
   font-size: 1rem;
 }
-/* line 58, ../sass/modules/sidebars/_sidebars.scss */
+/* line 61, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub header span {
   display: block;
   color: #333;
   font-size: .9rem;
   font-weight: normal;
 }
-/* line 65, ../sass/modules/sidebars/_sidebars.scss */
+/* line 68, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .node-spoke.node-teaser time,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .comment-count {
   display: none;
 }
-/* line 70, ../sass/modules/sidebars/_sidebars.scss */
+/* line 73, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .peoplelist span,
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .peoplelist a {
   display: inline-block;
 }
-/* line 75, ../sass/modules/sidebars/_sidebars.scss */
+/* line 78, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .spoke-title {
   font-size: .9rem;
 }
-/* line 77, ../sass/modules/sidebars/_sidebars.scss */
+/* line 80, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub .spoke-title a {
   display: block;
 }
-/* line 83, ../sass/modules/sidebars/_sidebars.scss */
+/* line 86, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li {
   line-height: 1.4;
   transition: all .3s ease-out;
   padding-right: .7rem;
 }
-/* line 89, ../sass/modules/sidebars/_sidebars.scss */
+/* line 92, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li.active {
   background-color: rgba(255, 255, 255, 0.6);
   margin-left: -.5rem;
   margin-right: -.5rem;
   padding: 0 1.2rem 0 .5rem;
 }
-/* line 95, ../sass/modules/sidebars/_sidebars.scss */
+/* line 98, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .view-all-spokes-in-this-spokes-hub ul li.active a:hover {
   cursor: default;
   text-decoration: none;
 }
-/* line 105, ../sass/modules/sidebars/_sidebars.scss */
+/* line 108, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div {
   padding: 1rem;
   font-size: .7rem;
   line-height: 1.5;
 }
-/* line 109, ../sass/modules/sidebars/_sidebars.scss */
+/* line 112, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"].bio > div p {
   margin: 0 0 .8em 0;
 }
-/* line 114, ../sass/modules/sidebars/_sidebars.scss */
+/* line 117, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] .responsive-disclosure {
   display: none;
 }
-/* line 118, ../sass/modules/sidebars/_sidebars.scss */
+/* line 121, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] span.responsive-disclosure {
   display: none;
 }
-/* line 121, ../sass/modules/sidebars/_sidebars.scss */
+/* line 124, ../sass/modules/sidebars/_sidebars.scss */
 [role="complementary"] nav {
   display: block;
 }
 
-/* line 136, ../sass/modules/sidebars/_sidebars.scss */
+/* line 139, ../sass/modules/sidebars/_sidebars.scss */
 .block .more-link {
   padding: .5rem .5rem 1rem 0;
   margin: 0 1rem 1rem 1rem;
@@ -2784,7 +2787,7 @@ ul.action-links li a {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: .8rem;
 }
-/* line 142, ../sass/modules/sidebars/_sidebars.scss */
+/* line 145, ../sass/modules/sidebars/_sidebars.scss */
 .block .more-link a:link,
 .block .more-link a:visited {
   display: block;
@@ -5020,7 +5023,7 @@ body.fieldguide.front .featured-item img {
 body.fieldguide.front .featured-item time {
   display: relative;
 }
-/* line 116, ../sass/projects/_fieldguide.scss */
+/* line 115, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   position: static;
   height: 100%;
@@ -5031,7 +5034,7 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info {
   display: flex;
   flex-direction: column;
 }
-/* line 125, ../sass/projects/_fieldguide.scss */
+/* line 124, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   order: 2;
   background-color: inherit;
@@ -5040,45 +5043,45 @@ body.fieldguide.front .view-recent-6-hubs .featuredhub-info time {
   font-size: 0.8rem;
   color: #5a5a5a !important;
 }
-/* line 133, ../sass/projects/_fieldguide.scss */
+/* line 132, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info .peoplelist {
   padding: 0 20px 0px;
 }
-/* line 136, ../sass/projects/_fieldguide.scss */
+/* line 135, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 {
   background-color: inherit;
   padding: 0;
 }
-/* line 139, ../sass/projects/_fieldguide.scss */
+/* line 138, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .view-recent-6-hubs .featuredhub-info h2 a {
   display: block;
   padding: 20px 20px 5px 20px;
   color: black !important;
 }
-/* line 147, ../sass/projects/_fieldguide.scss */
+/* line 146, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg {
   position: static;
   max-width: none;
   flex: 0 1 49%;
 }
-/* line 151, ../sass/projects/_fieldguide.scss */
+/* line 150, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg time {
   display: none;
 }
-/* line 154, ../sass/projects/_fieldguide.scss */
+/* line 153, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a {
   display: block;
   background-color: #d7a100;
 }
-/* line 157, ../sass/projects/_fieldguide.scss */
+/* line 156, ../sass/projects/_fieldguide.scss */
 body.fieldguide.front .featured-fg a:hover {
   background-color: #e1b83f;
 }
-/* line 164, ../sass/projects/_fieldguide.scss */
+/* line 163, ../sass/projects/_fieldguide.scss */
 body.fieldguide .view-list-of-all-hubs .group-flex1 {
   display: none;
 }
-/* line 168, ../sass/projects/_fieldguide.scss */
+/* line 167, ../sass/projects/_fieldguide.scss */
 body.fieldguide .node-spoke.node-teaser {
   border-bottom: none;
   padding-bottom: .5rem;

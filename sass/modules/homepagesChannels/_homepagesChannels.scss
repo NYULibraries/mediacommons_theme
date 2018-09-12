@@ -32,6 +32,11 @@
 
 .featured-more {
   margin: 5rem 0 3rem;
+  .blockheader div { 
+    display: inline-block;
+    padding: 0 6px;
+    min-height: 1.4rem;
+  }
   header {
     margin-bottom: 40px;
     @extend %sans;

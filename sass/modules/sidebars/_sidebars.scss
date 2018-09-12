@@ -42,8 +42,13 @@
     .h-card {
       padding: 0;
     }
+    &.twitter-block {
+      border-radius: 4px;
+      background: #292F33 image-url("ui/ring.svg") no-repeat center 75px;
+      min-height: 600px;
+      height: 600px;
+    }
   }
-
   .view-all-spokes-in-this-spokes-hub {
     header {
       h1 {

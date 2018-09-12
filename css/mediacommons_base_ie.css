@@ -2032,74 +2032,53 @@ ul.tags li a {
 
 /* line 4, ../sass/modules/footer/_footer.scss */
 footer#footer {
-  padding: 2em;
+  padding: 2rem;
   text-align: center;
   display: block;
+  font-size: .9rem;
 }
-/* line 8, ../sass/modules/footer/_footer.scss */
-footer#footer .powered {
-  font-size: .8em;
+/* line 10, ../sass/modules/footer/_footer.scss */
+footer#footer .credits {
+  font-size: .8rem;
 }
-/* line 11, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu],
-footer#footer ul.menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
-/* line 17, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu] li,
-footer#footer ul[role=menu] li:first-child,
-footer#footer ul.menu li,
-footer#footer ul.menu li:first-child {
-  text-indent: 0;
-  display: inline;
-  margin: 0;
-}
-/* line 22, ../sass/modules/footer/_footer.scss */
-footer#footer ul[role=menu] li a,
-footer#footer ul[role=menu] li:first-child a,
-footer#footer ul.menu li a,
-footer#footer ul.menu li:first-child a {
-  padding: 0 .5em;
+/* line 13, ../sass/modules/footer/_footer.scss */
+footer#footer ul {
+  display: flex;
+  justify-content: center;
 }
 
-/* line 30, ../sass/modules/footer/_footer.scss */
-.footer-nav li {
-  display: inline-block;
-}
-/* line 35, ../sass/modules/footer/_footer.scss */
+/* line 21, ../sass/modules/footer/_footer.scss */
 .footer-nav li:not(.first):before {
   content: "\20\00b7\20";
   color: #999;
+  padding: 0 .1rem 0 .4rem;
 }
 
-/* line 43, ../sass/modules/footer/_footer.scss */
-body.mc .extras span {
-  display: inline-block;
-  line-height: 1.5;
-}
-/* line 46, ../sass/modules/footer/_footer.scss */
-body.mc .extras span:not(:last-child):after {
-  content: " | ";
-}
-
-/* line 52, ../sass/modules/footer/_footer.scss */
+/* line 29, ../sass/modules/footer/_footer.scss */
 .cc-info {
   font-size: .9rem;
   color: #555 !important;
 }
-/* line 55, ../sass/modules/footer/_footer.scss */
+/* line 32, ../sass/modules/footer/_footer.scss */
 .cc-info a:link,
 .cc-info a:visited {
   color: #555 !important;
 }
-/* line 59, ../sass/modules/footer/_footer.scss */
+/* line 36, ../sass/modules/footer/_footer.scss */
 .cc-info .cc-license::before {
   padding: 0 2px 0 4px;
   display: inline-block;
   font-size: 1rem;
+}
+
+/* line 44, ../sass/modules/footer/_footer.scss */
+.external {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: .8rem;
+  padding-right: 1rem;
+  display: inline;
+  background-image: url('../images/External.svg?1536789058');
 }
 
 /* line 37, ../sass/modules/tabs/_tabs.scss */

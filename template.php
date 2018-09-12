@@ -262,7 +262,9 @@ function mediacommons_preprocess_node(&$variables) {
   $is_pjax = mediacommons_is_pjax();
   // give project names as classes to the items on the umbrella site front page
   if ($bundle == 'front_page_post') {
-    $variables['classes_array'][] =  'node-' . $wrapper->field_project->value();
+    // name used for Fieldguide channel needs to be standardized 
+    $projNameUsedSitewide = ($wrapper->field_project->value() == 'fg') ? 'fieldguide' : $wrapper->field_project->value();
+    $variables['classes_array'][] = 'node-' . $projNameUsedSitewide;
   }
   if ($is_pjax) {
     $variables['theme_hook_suggestions'][] = 'node__pjax';

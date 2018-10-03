@@ -13,6 +13,7 @@ $body-color: #333333;
 $mcpress-color: #659e42;
 $mcpress-color-darker: #225a00;
 $fg-color: #d7a100;
+$fg-color-darker: #826001;
 $fieldguide-primary: #8b6800;
 $hometoprightcolor: #E7EEF3;
 
@@ -63,9 +64,7 @@ $col in $map {
       .blockheader div {
         color: white;
         background-color: $col;
-        display: inline-block;
-        padding: 0 6px;
-        min-height: 1.4rem;
+ 
       }
     }
     .view-list-of-all-hubs {
@@ -113,12 +112,6 @@ $col in $map {
     [role="complementary"] {
       .block {
         background-color: lighten(nth($tertiary, 5), 3%);
-        &.twitter-block {
-          border-radius: 4px;
-          background: #292F33 image-url("ui/ring.svg") no-repeat center 75px;
-          min-height: 600px;
-          height: 600px;
-        }
       }
       header {
         background-color: nth($tertiary, 4);

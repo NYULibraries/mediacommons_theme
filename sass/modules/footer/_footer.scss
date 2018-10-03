@@ -2,49 +2,27 @@
 // MODULES: Component styles that are layout independent 
 //////////////////////////////
 footer#footer {
-  padding: 2em;
+  padding: 2rem;
   text-align: center;
   display: block;
-  .powered {
-    font-size: .8em;
+  font-size: .9rem;
+ 
+  .credits {
+    font-size: .8rem; 
   }
-  ul[role=menu],
-  ul.menu {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-    li,
-    li:first-child {
-      text-indent: 0;
-      display: inline;
-      margin: 0;
-      a {
-        padding: 0 .5em;
-      }
-    }
+  ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 
 .footer-nav {
-  li {
-    display: inline-block;
-  }
-
   li:not(.first) {
     &:before {
       content: "\20\00b7\20";
       color: #999;
-    }
-  }
-}
-
-body.mc .extras {
-  span {
-    display: inline-block;
-    line-height: 1.5;
-    &:not(:last-child):after {
-      content: " | "
+      padding: 0 .1rem 0 .4rem;
     }
   }
 }
@@ -61,4 +39,14 @@ body.mc .extras {
     display: inline-block;
     font-size: 1rem;
   }
+}
+
+
+.external {
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: .8rem;
+  padding-right: 1rem;
+  display: inline;
+  background-image: image-url("external.svg");
 }

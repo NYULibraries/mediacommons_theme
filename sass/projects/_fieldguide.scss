@@ -1,3 +1,9 @@
+.node-fieldguide {
+  border-top: 4px solid $fg-color;
+  .field-name-field-project {
+    background-color: $fg-color-darker;
+  }
+}
 body.fieldguide {
   $fg_primary: map-get($map, fieldguide); // $fg_primary: #d7a100;
   $brighter-yellow: #d7a100;
@@ -103,8 +109,7 @@ body.fieldguide {
       time {
         display: relative;
       }
-      background-color: nth($yellow,
-      1);
+      background-color: nth($yellow, 1);
     } // for now, use the same one 
     .view-recent-6-hubs {
       .featuredhub-info {

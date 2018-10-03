@@ -2371,33 +2371,34 @@ footer#footer .credits {
 footer#footer ul {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
-/* line 21, ../sass/modules/footer/_footer.scss */
+/* line 22, ../sass/modules/footer/_footer.scss */
 .footer-nav li:not(.first):before {
   content: "\20\00b7\20";
   color: #999;
   padding: 0 .1rem 0 .4rem;
 }
 
-/* line 29, ../sass/modules/footer/_footer.scss */
+/* line 30, ../sass/modules/footer/_footer.scss */
 .cc-info {
   font-size: .9rem;
   color: #555 !important;
 }
-/* line 32, ../sass/modules/footer/_footer.scss */
+/* line 33, ../sass/modules/footer/_footer.scss */
 .cc-info a:link,
 .cc-info a:visited {
   color: #555 !important;
 }
-/* line 36, ../sass/modules/footer/_footer.scss */
+/* line 37, ../sass/modules/footer/_footer.scss */
 .cc-info .cc-license::before {
   padding: 0 2px 0 4px;
   display: inline-block;
   font-size: 1rem;
 }
 
-/* line 44, ../sass/modules/footer/_footer.scss */
+/* line 45, ../sass/modules/footer/_footer.scss */
 .external {
   background-position: right center;
   background-repeat: no-repeat;

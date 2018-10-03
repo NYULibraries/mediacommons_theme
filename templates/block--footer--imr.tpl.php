@@ -6,7 +6,6 @@
  */
 ?>
 <?php 
-$mclink = $GLOBALS['base_root'] . "/mediacommons" ; 
 $main_menu = menu_navigation_links('main-menu');
 
 ?>
@@ -16,6 +15,6 @@ $main_menu = menu_navigation_links('main-menu');
     <?php endif; ?>
   </nav>
 
-<div class="extras footer-nav"><ul><li class="first"><strong>In Media Res:</strong> A <a href="<?php echo $mclink; ?>">MediaCommons</a> Project&nbsp;</li><li><a href="/imr/copyright">Copyright/Fair Use Policy</a></li></ul></div>
+<div class="extras footer-nav"><ul><li class="first"><strong>In Media Res:</strong> A <a href="/">MediaCommons</a> Project&nbsp;</li><li><a href="/imr/copyright">Copyright/Fair Use Policy</a></li></ul></div>
 
-<?php print $content; ?>
+<div class="footer-nav credits" ><ul> <li class="first"><a class="external" href="https://www.nyu.edu/footer/accessibility.html" target="_blank">Accessibility</a></li><li class="powered">Powered by <a href="http://dlib.nyu.edu/dlts/" target="_blank" class="external">NYU DLTS</a></li></ul></div>

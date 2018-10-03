@@ -17,4 +17,4 @@ $main_menu = menu_navigation_links('main-menu');
     </a></li><li>
     <a href="/intransition/copyright">Copyright/Fair Use Policy</a></li>
   </ul></div>
-  <?php print $content; ?>
+<div class="footer-nav credits" ><ul> <li class="first"><a class="external" href="https://www.nyu.edu/footer/accessibility.html" target="_blank">Accessibility</a></li><li class="powered">Powered by <a href="http://dlib.nyu.edu/dlts/" target="_blank" class="external">NYU DLTS</a></li></ul></div>

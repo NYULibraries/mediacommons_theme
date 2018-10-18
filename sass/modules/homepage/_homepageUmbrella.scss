@@ -2,8 +2,10 @@
   .mc_home_lede {
     @extend %shadow-material-design;
   }
+
   .node-mcpress {
     border-top: 4px solid $mcpress-color;
+
     .field-name-field-project {
       background-color: $mcpress-color-darker;
     }
@@ -11,22 +13,32 @@
 
   [role="complementary"] {
     background-color: #fff;
+
     .view-simple-for-survey {
       padding: .5rem 1rem;
+
       .survey-question {
         font-size: 1.4rem;
         margin: 1rem 0 1rem;
-        line-height: 1.3; // color: #111;
+        line-height: 1.3;
+
+        // color: #111;
+     
       }
+
       .field-item {
         margin: 1em 0;
       }
+
       .field-name-title {
         font-size: 1.2rem;
+
         a:link {
           //color: #5a5a5a;
+       
         }
       }
+
       a.username {
         font-size: .9rem;
         display: block;
@@ -34,16 +46,20 @@
       }
     }
   }
+
   [role="main"] {
     max-width: 84rem;
     margin: 0em auto 0;
-  } // .button.skip-arrow {
+  }
+
+  // .button.skip-arrow {
   //   // there is no primary nav on homepage, so hide responsive hamburger button
   //  // display: block;
   // }
   .featured-more {
     margin-top: 0;
   }
+
   #content {
     width: 100%;
     max-width: none;
@@ -59,17 +75,26 @@
     -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
+
     section {
       -ms-flex: 0 0 74.5%;
       -webkit-flex: 0 0 74.5%;
-      flex: 0 0 74.5%; // margin: 1% 0;
+      flex: 0 0 74.5%;
+
+      // margin: 1% 0;
+   
     }
+
     aside {
       -ms-flex: 0 1 23%;
       -webkit-flex: 0 1 23%;
-      flex: 0 1 23%; // margin: 1% 0;
+      flex: 0 1 23%;
+
+      // margin: 1% 0;
+   
     }
   }
+
   .featured-item-list {
     margin-top: 1%;
     display: -ms-flexbox;
@@ -81,6 +106,7 @@
     -webkit-justify-content: space-between;
     justify-content: space-between;
     -ms-flex-pack: justify;
+
     .featured-item:empty {
       height: 0;
       border: none;
@@ -88,9 +114,12 @@
       box-shadow: none;
       margin: 0;
     }
+
     .featured-item {
       background: $hometoprightcolor;
+
       @extend %shadow-material-design;
+
       -ms-flex: 0 1 31%;
       -webkit-flex: 0 1 31%;
       flex: 0 1 31%;
@@ -98,43 +127,53 @@
       padding-bottom: 0;
       overflow: hidden;
       transition: all .1s ease;
-      &:hover {
 
+      &:hover {
         cursor: pointer;
         background-color: lighten($hometoprightcolor, 15%);
 
         .field-name-field-body {
           color: black;
         }
+
         h2 {
           a:link,
           a:visited {
             color: black;
           }
         }
+
         .node-front-page-post {
           // border: 1px solid black;
+       
         }
       }
+
       @include respond-to("tablet-lh") {
         -webkit-flex: 0 1 49%;
         flex: 0 1 49%;
         margin: 20px 0;
       }
+
+
       @include respond-to("mobile-lh") {
         -webkit-flex: 1 1 100%;
         flex: 1 1 100%;
         margin: 25px 0 0;
       }
+
+
       p {
         margin-bottom: 0;
       }
     }
   }
+
   .featured-more {
     //margin: 3rem 0 3rem;
     border-top: none;
   }
+
   @include respond-to("not desktop") {
     .flexhold {
       section {
@@ -142,6 +181,7 @@
         flex: 1 1 100%;
         margin: 1% 0;
       }
+
       aside {
         margin: 1% 0;
         flex: none;
@@ -150,6 +190,7 @@
         -webkit-justify-content: space-between;
         justify-content: space-between;
         -ms-flex-pack: justify;
+
         .block {
           -webkit-flex: 0 1 49%;
           flex: 0 1 49%;
@@ -158,9 +199,12 @@
       }
     }
   }
+
+
   @include respond-to("mobile-lh") {
     .flexhold aside {
       display: block;
+
       .block {
         flex: none;
         display: block;
@@ -171,11 +215,10 @@
   }
 }
 
-
-
 .node-front-page-post {
   position: relative;
   overflow: hidden;
+
   &.view-mode-teaser {
     padding-bottom: 10px;
 
@@ -183,18 +226,23 @@
       //border-top: 1px solid #666;
       border-top: 1px solid shade($hometoprightcolor, 10%);
       font-size: 1rem;
-      line-height: 1.3; //font-weight: 300;
+      line-height: 1.3;
+
+      //font-weight: 300;
       margin: 0;
       padding-top: 0;
+
       a {
         display: block;
         padding: 5px 10px 5px;
       }
+
       a:link,
       a:visited {
         color: #222;
       }
     }
+
     .field-name-field-body {
       font-size: .8rem;
       margin: 0;
@@ -202,10 +250,12 @@
       line-height: 1.5;
     }
   }
+
   &.view-mode-full {
     &:hover {
       cursor: pointer;
     }
+
     .field-group-html-element {
       position: absolute;
       top: -2px;
@@ -219,12 +269,14 @@
       padding-top: 0;
       float: left;
       clear: both;
+
       a {
         color: #222 !important;
         padding: 8px 12px;
         display: block;
       }
     }
+
     .field-name-field-body {
       background: #ffffff;
       margin: 0rem 1rem 1rem;
@@ -232,6 +284,7 @@
       color: #222;
       float: left;
       clear: both;
+
       p:last-child {
         margin: 0;
       }
@@ -240,6 +293,7 @@
 
   .field-name-field-featured-image-thumb {
     background-color: white;
+
     img {
       display: block;
       width: 100%;
@@ -261,7 +315,10 @@
     justify-content: space-between;
     -ms-flex-pack: justify;
   }
+
+
   margin-bottom: 20px;
+
   .hometopleft {
     @include respond-to("not-mobile-lh") {
       -ms-flex: 0 0 65.5%;
@@ -269,8 +326,10 @@
       flex: 0 0 65.5%;
     }
   }
+
   .hometopright {
     background-color: $hometoprightcolor;
+
     @extend %shadow-material-design;
 
     @include respond-to("not-mobile-lh") {
@@ -279,10 +338,14 @@
       flex: 0 1 31%;
       padding: 15px;
     }
+
+
     @include respond-to("mobile-lh") {
       margin-top: 20px;
       padding: 20px;
     }
+
+
     .readmoreabout {
       text-decoration: underline;
     }
@@ -290,20 +353,27 @@
     .special {
       font-size: 1.1em;
       font-weight: bold;
+
       @include respond-to("narrow navigation") {
         span {
           display: none;
-        } //  font-size: .9rem;
+        }
+
+        //  font-size: .9rem;
       }
     }
+
     .maintext {
       font-size: 1.05rem;
       line-height: 1.3;
+
       @include respond-to("extra wide content") {
         font-size: calc(8px + 1vw);
         line-height: 1.2;
         margin: 1em 0;
       }
+
+
       @include respond-to("medium wide content") {
         // background-color: yellow;
         font-size: 1.1rem;
@@ -311,14 +381,22 @@
         font-size: calc(.1 * 20vw);
         margin: 1em 0;
       }
+
+
       @include respond-to("medium content") {
-        font-size: .9rem; // font-size: calc(8px + 1vw);
+        font-size: .9rem;
+
+        // font-size: calc(8px + 1vw);
         // font-size: calc(.1 *  20vw);
         margin: .2em 0;
       }
+
+
       @include respond-to("narrow navigation") {
         font-size: calc(.7rem + .5vw);
       }
+
+
       @include respond-to("mobile-lh") {
         font-size: 1.1rem;
         margin: .6em 0;
@@ -331,59 +409,71 @@ body.mc .block.fieldguide_toc {
   padding: 0 20px 20px 20px;
   margin-top: 15px;
   border-top: 4px solid $fg-color;
+
   @extend %shadow-material-design;
+
   .view-content {
     padding: 0 !important;
   }
+
   .thumb {
     display: none;
   }
+
   .blockheader {
     div {
-      background: $fg-color;
+      background: $fg-color-darker;
       margin: 0px 0 0 -20px;
       display: inline-block;
       float: left;
       margin-bottom: 1em;
-      padding: 0px 20px 3px;
+      padding: 2px 20px 3px;
       text-transform: uppercase;
-      font-size: .9rem;
+      font-size: .85rem;
+      color: white;
     }
   }
+
   .hub-title {
     clear: both;
     font-size: 1.2rem;
     line-height: 1.3;
+
     a:link,
     a:visited {
       color: #111111;
     }
   }
+
   .spokes {
     margin-top: 20px;
     border-top: 1px solid #a9a7a7;
   }
+
   .node-teaser {
     border: none;
     padding: .8em 0 0 0;
   }
+
   .spoke-title {
     font-size: .9rem;
   }
+
   .node-spoke.node-teaser {
     time::before {
       content: "";
     }
+
     .comment-count {
       clear: left;
       display: block;
+
       &::before {
         content: "";
       }
     }
   }
 }
-
 
 @include respond-to("mobile-lh") {
   -webkit-flex: 1 1 100%;

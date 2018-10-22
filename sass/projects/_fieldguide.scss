@@ -1,65 +1,98 @@
 .node-fieldguide {
   border-top: 4px solid $fg-color;
+
   .field-name-field-project {
     background-color: $fg-color-darker;
   }
 }
+
 body.fieldguide {
-  $fg_primary: map-get($map, fieldguide); // $fg_primary: #d7a100;
+  $fg_primary: map-get($map, fieldguide);
+
+  // $fg_primary: #d7a100;
   $brighter-yellow: #d7a100;
-  $fg_neutral: $fg_primary; // : $fg_primary;
-  $cs-primary: $fg_primary !global; // Options: mono, complement, triad, tetrad, analogic, accented-analogic
+  $fg_neutral: $fg_primary;
+
+  // : $fg_primary;
+  $cs-primary: $fg_primary !global;
+
+  // Options: mono, complement, triad, tetrad, analogic, accented-analogic
   $cs-scheme: complement !global;
-  $cs-hue-offset: 20 !global; // Options: 0-100;
+  $cs-hue-offset: 20 !global;
+
+  // Options: 0-100;
   $cs-brightness-offset: 100 !global;
-  $brighter-yellow: #d7a100; // Options: 0-100;
+  $brighter-yellow: #d7a100;
+
+  // Options: 0-100;
   $cs-color-model: ryb !global;
   $primary: tint-stack(cs-primary()) !global;
-  $yellow: tint-stack( $brighter-yellow) !global;
+  $yellow: tint-stack($brighter-yellow) !global;
   $neutral-tint-stack: tint-stack($fg_neutral) !global;
   $secondary: tint-stack(cs-secondary()) !global;
   $tertiary: tint-stack(cs-tertiary()) !global;
-  $quadrary: tint-stack(cs-quadrary()) !global; // on fieldguide, hide all images for now 
-  // this uses underscores because it is created from a block's delta 
+  $quadrary: tint-stack(cs-quadrary()) !global;
+
+  // on fieldguide, hide all images for now 
+  // this uses underscores because it is created from a block's delta
   .mc_recent_comments .blockheader div:after {
     content: " on Field Guide";
   }
+
   #block-views-contributors-this-hub-block .blockheader div:after {
     content: " to this Survey Question";
   }
+
   .node-spoke.node-teaser .thumb,
   .field-name-field-representative-image {
     display: none;
   }
+
+  .featured-more {
+    border-top: 2px solid $fg-color;
+    font-size: .85rem;
+
+    .blockheader div {
+      padding: 2px 20px;
+    }
+  }
+
   nav.global {
     box-shadow: 0px 3px #b98a00;
     border-bottom: 3px solid #d7a100;
   }
+
   [role="complementary"] {
     .hub-title a:link,
     a:visited {
       color: #7d5e00;
     }
+
     header {
       background-color: lighten(set-saturation(nth($primary, 4), 50%), 3%);
     }
-    >div,
+
+    > div,
     .block {
       background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
     }
   }
+
   .comments {
     article {
       padding: 2.5%;
       border: transparent 1px solid;
+
       &:nth-of-type(odd) {
         background-color: lighten(set-saturation(nth($neutral-tint-stack, 5), 50%), 3%);
       }
+
       &:nth-of-type(even) {
         background-color: lighten(set-saturation(nth($neutral-tint-stack, 4), 50%), 6%);
       }
     }
   }
+
   .logo {
     background-position: 0 0%;
     width: 18rem;
@@ -68,6 +101,7 @@ body.fieldguide {
     background-repeat: no-repeat;
     background-size: 100%;
   }
+
   @include respond-to("narrow navigation") {
     .logo {
       height: 2.5rem;
@@ -79,19 +113,23 @@ body.fieldguide {
       left: 18vw;
       max-width: 15rem;
     }
+
     nav.global {
       box-shadow: none;
       border-bottom: 3px solid #C49A1E;
     }
   }
+
+
   &.front {
     .hubhead {
       h1.hub-title {
         font-size: 2.3rem;
       }
     }
+
     .timerangeheader {
-      >* {
+      > * {
         padding: 3px 29px;
       }
     }
@@ -101,16 +139,22 @@ body.fieldguide {
         margin-bottom: .5rem;
       }
     }
+
     .featured-item {
       padding: 0;
+
       img {
         display: none;
       }
+
       time {
         display: relative;
       }
+
       background-color: nth($yellow, 1);
-    } // for now, use the same one 
+    }
+
+    // for now, use the same one
     .view-recent-6-hubs {
       .featuredhub-info {
         position: static;
@@ -121,6 +165,7 @@ body.fieldguide {
         background-color: lighten(set-saturation(nth($primary, 5), 50%), 3%);
         display: flex;
         flex-direction: column;
+
         time {
           order: 2;
           background-color: inherit;
@@ -129,12 +174,15 @@ body.fieldguide {
           font-size: 0.8rem;
           color: #5a5a5a !important;
         }
+
         .peoplelist {
           padding: 0 20px 0px;
         }
+
         h2 {
           background-color: inherit;
           padding: 0;
+
           a {
             display: block;
             padding: 20px 20px 5px 20px;
@@ -143,27 +191,33 @@ body.fieldguide {
         }
       }
     }
+
     .featured-fg {
       position: static;
       max-width: none;
       flex: 0 1 49%;
+
       time {
         display: none;
       }
+
       a {
         display: block;
         background-color: nth($yellow, 1);
+
         &:hover {
           background-color: nth($yellow, 2);
         }
       }
     }
   }
+
   .view-list-of-all-hubs {
     .group-flex1 {
       display: none;
     }
   }
+
   .node-spoke.node-teaser {
     border-bottom: none;
     padding-bottom: .5rem;

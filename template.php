@@ -797,25 +797,7 @@ function mediacommons_special_body_class() {
 }
 
 function mediacommons_is_pjax() {
-  $is_pjax = &drupal_static( 'is_pjax' );
-  if ( !isset( $is_pjax ) && function_exists( 'getallheaders' ) ) {
-    $headers = getallheaders();
-    if ( isset( $headers['X-Pjax'] ) || isset( $headers['X-PJAX'] ) ) {
-      drupal_add_http_header( 'uri', request_uri() );
-      $is_pjax = TRUE;
-    }
-    else {
-      $params = drupal_get_query_parameters();
-      if ( isset( $params['pjax'] ) ) {
-        drupal_add_http_header( 'uri', base_path() . request_uri() );
-        $is_pjax = TRUE;
-      }
-      else {
-        $is_pjax = FALSE;
-      }
-    }
-  }
-  return $is_pjax;
+  return mediacommons_apis_is_pjax();
 }
 
 function get_url_for_mediacommons_site($placeholder_url) {

@@ -14,16 +14,21 @@
 
 foreach ($items as $delta => $item) {
 
+  //print_r($item['classes_array'][0]);
+  //print_r($item['#item']);
   $path = 'node/' . $element['#object']->nid;
   $spokepath = url($path);
 
 	unset($item['#item']['width']);
 	unset($item['#item']['height']);
-	$item['#item']['alt'] = "";
-  
-  print '<a tabindex="-1" role="presentation" href = "'. $spokepath . '">';
-  print render($item); 
-  print "</a>";
+	// class is set in mediacommons_editorialworkflow.module
+	if (isset($item['classes_array'][0])){
+		print render($item); 
+	} else {
+		print '<a tabindex="-1" role="presentation" href = "'. $spokepath . '">';
+		print render($item); 
+	 	print "</a>";
+	}
      
 }
 ?>

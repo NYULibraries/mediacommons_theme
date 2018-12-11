@@ -5,7 +5,7 @@
  *
  */
 ?>
-<label for="edit-search-block-form--2">
+<label>
   <span>Search this site:</span>
 </label>
 <fieldset>

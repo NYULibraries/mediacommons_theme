@@ -171,6 +171,7 @@ function mediacommons_form_search_block_form_alter(&$form, &$form_state, $form_i
   // HTML5 placeholder attribute
   // Do not change the name attribute, it will break search.
   $form['search_block_form']['#attributes']['placeholder'] = t('Search...');
+  $form['search_block_form']['#attributes']['aria-label'] = t('Search');
   $form['#prefix'] = '';
   $form['#suffix'] = '';
 }

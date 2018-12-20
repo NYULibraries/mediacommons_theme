@@ -1,4 +1,4 @@
-//////////////////////////////
+﻿//////////////////////////////
 // VARIABLES: For Modules  
 //////////////////////////////
 
@@ -13,24 +13,26 @@ $icons:
   ('.icon-contract-arrow-m' '\e00a')
   ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') 
   ('.icon-expand-arrow-s' '\e00f') 
-	('[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
+  ('[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
   ('[role="complimentary"].part-of-hub .responsive-disclosure:after,  a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
   ('.responsive-disclosure' '\e010') 
-	('.responsive-container.is-open .responsive-disclosure' '\e013') 
- 	('[href^="mailto"]' '\e006') 
+  ('.responsive-container.is-open .responsive-disclosure' '\e013') 
+  ('[href^="mailto"]' '\e006') 
   ('[rel*="external"][href^="http"]' '\e602')
- 	('[href^="skype:"]' '\e603') 
-	('[href^="tel:"]' '\e008')
-	('[rel*="me"][href*="twitter.com"]' '\e604')
-	('.icon-user' '\e01f')
-	('.icon-users' '\e020') 
-	('.icon-add-user' '\e01e') 
-	('[role="banner"] [role="search"] label' '\e016')
-	('[role="banner"] [role="search"].open label' '\e012')
-	('.cc-license' '\e900')
-	('.icon-cross' '\ea0f')
-	('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600');
+  ('[href^="skype:"]' '\e603') 
+  ('[href^="tel:"]' '\e008')
+  ('[rel*="me"][href*="twitter.com"]' '\e604')
+  ('.icon-user' '\e01f')
+  ('.icon-users' '\e020') 
+  ('.icon-add-user' '\e01e') 
+  ('[role="banner"] [role="search"] label' '\e016')
+  ('[role="banner"] [role="search"].open label' '\e012')
+  ('.cc-license' '\e900')
+  ('.icon-cross' '\ea0f')
+  ('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600');
 
-$iconsAfter: ('a.login-link:after, li[aria-haspopup="true"] > a:after',  "\e013"), ('a.login-link.open:after, li[aria-haspopup="true"] > a.open:after',  "\e012");
+$iconsAfter: 
+  ('a.login-link:after, li[aria-haspopup="true"] > a:after',  "\e013"),
+  ('a.login-link.open:after, li[aria-haspopup="true"] > a.open:after',  "\e012");
 // To add more than one selectors to use the same class you need to add the :before or :after psuedo class (see the @each mixin in $icon_mixins for the pseudo class) 
 // ('.swf:before, a[href$=".swf"]' '\e014')

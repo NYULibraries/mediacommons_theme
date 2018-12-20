@@ -13,8 +13,8 @@ $icons:
   ('.icon-contract-arrow-m' '\e00a')
   ('.icon-expand-arrow-m' '\e00b') ('.icon-contract-arrow-s' '\e00e') 
   ('.icon-expand-arrow-s' '\e00f') 
-  ('[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
-  ('[role="complimentary"].part-of-hub .responsive-disclosure:after,  a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
+  ('aside.part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l' '\e012') 
+  ('aside.part-of-hub .responsive-disclosure:after,  a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l' '\e013') 
   ('.responsive-disclosure' '\e010') 
   ('.responsive-container.is-open .responsive-disclosure' '\e013') 
   ('[href^="mailto"]' '\e006') 
@@ -25,11 +25,11 @@ $icons:
   ('.icon-user' '\e01f')
   ('.icon-users' '\e020') 
   ('.icon-add-user' '\e01e') 
-  ('[role="banner"] [role="search"] label' '\e016')
-  ('[role="banner"] [role="search"].open label' '\e012')
+  ('.banner [role="search"] label' '\e016')
+  ('.banner [role="search"].open label' '\e012')
   ('.cc-license' '\e900')
   ('.icon-cross' '\ea0f')
-  ('[role="banner"] .skip-arrow:before, [role="banner"] .skip-arrow.open' '\e600');
+  ('.banner .skip-arrow:before, .banner .skip-arrow.open' '\e600');
 
 $iconsAfter: 
   ('a.login-link:after, li[aria-haspopup="true"] > a:after',  "\e013"),

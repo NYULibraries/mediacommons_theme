@@ -4,7 +4,7 @@
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main">
+<main>
    <a id="main-content"></a>
   <?php if (isset($page['highlighted'])) : ?>
     <div id="highlighted"><?php print render($page['highlighted']); ?></div>

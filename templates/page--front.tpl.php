@@ -5,7 +5,7 @@
     <?php print render($action_links); ?>
   </ul>
   <?php endif; ?>
-  <main role="main"> 
+  <main> 
     <?php if (isset($tabs)): ?>
       <div class="tabs"><?php print render($tabs); ?></div>
     <?php endif; ?>
@@ -22,7 +22,7 @@
       </section>
     </div>
     <?php if (isset($page['homepage_sidebar'])) : ?>
-      <aside role="complementary"><?php print render($page['homepage_sidebar']); ?></aside>
+      <aside><?php print render($page['homepage_sidebar']); ?></aside>
     <?php endif; ?> 
   </main>  
 <?php if (isset($page['footer']) && !empty($page['footer'])) : ?>

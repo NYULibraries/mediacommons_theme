@@ -2,28 +2,31 @@
   .page-title {
     display: none;
   }
+
   .page-view-title {
     display: inline-block;
     margin-right: 20px;
   }
+
   .view-content {
     margin-top: 30px;
   }
 }
 
-[role="complementary"] {
-
+aside {
   header,
   header.blockheader {
-    padding: .5rem 1rem; 
+    padding: .5rem 1rem;
     background: nth($black, 4);
     color: nth($black, 1);
     font-size: 1.1rem;
     line-height: 1.3;
     margin-bottom: 0;
-    >div {
+
+    > div {
       color: nth($black, 1);
     }
+
     h2,
     h1 {
       color: nth($black, 1);
@@ -33,31 +36,38 @@
       margin: 0;
     }
   }
+
   .block {
     background: nth($black, 5);
     margin-bottom: 20px;
+
     .view-content {
       padding: 1rem;
     }
+
     .h-card {
       padding: 0;
     }
+
     &.twitter-block {
-      a:link {      
+      a:link {
         color: rgba(0, 0, 0, 0);
       }
+
       border-radius: 4px;
       background: #292F33 image-url("ui/ring.svg") no-repeat center 75px !important;
       min-height: 600px;
       height: 600px;
     }
   }
+
   .view-all-spokes-in-this-spokes-hub {
     header {
       h1 {
         font-weight: bold;
         font-size: 1rem;
       }
+
       span {
         display: block;
         color: #333;
@@ -65,23 +75,28 @@
         font-weight: normal;
       }
     }
+
     .node-spoke.node-teaser time,
     .comment-count {
       display: none;
     }
+
     .peoplelist {
       span,
       a {
         display: inline-block;
       }
     }
+
     .spoke-title {
       font-size: .9rem;
+
       a {
         //padding: .5em 0;
         display: block;
       }
     }
+
     ul {
       li {
         // text-indent: 0;
@@ -89,8 +104,11 @@
         line-height: 1.4;
         transition: all .3s ease-out;
         padding-right: .7rem;
+
         &.active {
-          background-color: rgba(255, 255, 255, .6); //  color: #666 !important;
+          background-color: rgba(255, 255, 255, 0.6);
+
+          //  color: #666 !important;
           margin-left: -.5rem;
           margin-right: -.5rem;
           padding: 0 1.2rem 0 .5rem;
@@ -103,28 +121,36 @@
       }
     }
   }
+
   /* On user profile page */
   &.bio {
-    >div {
+    > div {
       padding: 1rem;
       font-size: .7rem;
       line-height: 1.5;
+
       p {
         margin: 0 0 .8em 0;
       }
     }
   }
+
   .responsive-disclosure {
     display: none;
   }
+
   @include respond-to("full navigation") {
     span.responsive-disclosure {
       display: none;
     }
+
     nav {
       display: block;
     }
-  } // @include respond-to("not desktop") {
+  }
+
+
+  // @include respond-to("not desktop") {
   //     span.responsive-disclosure {
   //         display: inline-block;
   //         float: right;
@@ -140,8 +166,9 @@
   padding: .5rem .5rem 1rem 0;
   margin: 0 1rem 1rem 1rem;
   text-align: right;
-  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   font-size: .8rem;
+
   a:link,
   a:visited {
     display: block;

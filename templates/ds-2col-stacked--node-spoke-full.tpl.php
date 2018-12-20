@@ -51,7 +51,7 @@
 </<?php print $left_wrapper ?>>
 
 <?php print $right; ?>
-<aside role="complementary">
+<aside>
 	<div class="block-views block">
 		<?php print views_embed_view('all_spokes_in_this_spokes_hub', 'block_1');?>
 	</div>

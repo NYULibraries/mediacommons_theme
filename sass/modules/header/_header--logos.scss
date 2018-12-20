@@ -1,23 +1,23 @@
 //////////////////////////////
 // SUB-MODULES: Component styles that are layout independent 
 //////////////////////////////
-[role="banner"] {
+.banner {
   h1 {
     display: block;
     float: left;
     font-size: 1.8em;
     line-height: 1em;
     margin: 0;
+
     a {
       color: #333333;
     }
+
     span {
       @extend %element-invisible;
     }
   }
 }
-
-
 
 /* to prevent the logo from disappearing due to override */
 
@@ -28,34 +28,44 @@
 
 .logo {
   // background: image-url("mc-logos/mediacommons-logos3.svg");
-  max-width: 100%; // padding: 16% 0 5% 0;
+  max-width: 100%;
+
+  // padding: 16% 0 5% 0;
   height: 4.4rem;
-  display: block; //margin: 0 0 1em 0;
+  display: block;
+
+  //margin: 0 0 1em 0;
   background-size: cover;
   background-repeat: no-repeat;
   width: 10em;
+
   .mc & {}
+
   .no-svg & {
     // png fallback Note: relies on modernizer svg test
     // background-image: image-url("mc-logos/mediacommons-logos.png");
+ 
   }
 }
 
-[role="banner"] {
+.banner {
   .top-hold {
     @extend %clearfix;
-  
   }
+
   @include respond-to("full navigation") {
     .top-hold {
-      margin-bottom: 1em; 
+      margin-bottom: 1em;
     }
   }
+
+
   @include respond-to("narrow navigation") {
     h1 {
       margin-left: 65px;
       margin-left: calc(3% + 50px);
     }
+
     .logo {
       background-repeat: no-repeat;
       background-size: cover;

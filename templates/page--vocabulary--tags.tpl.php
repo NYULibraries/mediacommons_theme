@@ -6,7 +6,7 @@
   </ul>
   <?php endif; ?>
 
-<main role="main">
+<main>
 
    <?php if ($tabs) : ?>
   <div class="tabs"><?php print render($tabs); ?></div>
@@ -26,7 +26,7 @@
   <?php print render($page['content']); ?> 
   </article>
  <?php if (isset($page['sidebar_tagpages'])) : ?>
-          <aside role="complementary"><?php print render($page['sidebar_tagpages']); ?>
+          <aside><?php print render($page['sidebar_tagpages']); ?>
           </aside>
   <?php endif; ?> </main>
   

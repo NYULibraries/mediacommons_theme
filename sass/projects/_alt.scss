@@ -1,36 +1,43 @@
-  $aa_primary: map-get($map, alt);
-  $primary_stack: tint-stack($aa_primary) !global;
-  $neutral_stack: tint-stack(#333333) !global;
-  $spoke-default-thumb: "default_images/spoke-default-alt.svg";
-  $imr-logo: "mc-logos/alt.svg";
-  body.alt {
-    .logo {
-      background: image-url($imr-logo);
-      background-size: cover;
-      background-repeat: no-repeat;
-      @include respond-to("narrow navigation") {
-        background-position: bottom;
-        height: 3rem;
-      }
-    }
-    .mc_recent_comments .blockheader div:after {
-      content: " on #alt-ac";
-    }
-    #block-views-contributors-this-hub-block .blockheader div:after {
-      content: " to this Cluster";
-    }
-    .node-hub.node-teaser .field-name-field-representative-image {
-      background: image-url($spoke-default-thumb);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    [role="complementary"] {
-      >div,
-      .block {
-        background-color: lighten(nth($neutral_stack, 5), 3%);
-      }
-      header {
-        background-color: nth($neutral_stack, 4);
-      }
+$aa_primary: map-get($map, alt);
+$primary_stack: tint-stack($aa_primary) !global;
+$neutral_stack: tint-stack(#333333) !global;
+$spoke-default-thumb: "default_images/spoke-default-alt.svg";
+$imr-logo: "mc-logos/alt.svg";
+
+body.alt {
+  .logo {
+    background: image-url($imr-logo);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include respond-to("narrow navigation") {
+      background-position: bottom;
+      height: 3rem;
     }
   }
+
+  .mc_recent_comments .blockheader div:after {
+    content: " on #alt-ac";
+  }
+
+  #block-views-contributors-this-hub-block .blockheader div:after {
+    content: " to this Cluster";
+  }
+
+  .node-hub.node-teaser .field-name-field-representative-image {
+    background: image-url($spoke-default-thumb);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  aside {
+    > div,
+    .block {
+      background-color: lighten(nth($neutral_stack, 5), 3%);
+    }
+
+    header {
+      background-color: nth($neutral_stack, 4);
+    }
+  }
+}

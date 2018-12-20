@@ -1,11 +1,11 @@
 <?php if (isset($page['globalnav']) && !empty($page['globalnav'])) : ?>
-<nav class="global" role="navigation">
+<nav class="global">
   <?php print render($page['globalnav']); ?>
 </nav>
 <?php endif; ?>
 
 <a id="main-content"></a>
-<header role="banner">
+<header class="banner">
   <h1>
     <a href="<?php print $front_page; ?>" title="Home" rel="home" class="logo">
       <span>
@@ -20,7 +20,7 @@
   <?php print render($action_links); ?>
 </ul>
 <?php endif; ?>
-<main role="main">
+<main>
   <?php if (isset($tabs)): ?>
   <div class="tabs">
     <?php print render($tabs); ?>
@@ -54,7 +54,7 @@
         </div>
         <?php  print render($page['umb_homepage_bottom']); ?>
       </section>
-      <aside role="complementary">
+      <aside>
         <?php print render($page['umb_homepage_sidebar']); ?>
       </aside>
     </div>

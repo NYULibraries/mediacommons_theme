@@ -4,7 +4,7 @@
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main" id="main-content">
+<main id="main-content">
   <?php if ($tabs) : ?>
     <div class="tabs">
       <?php print render($tabs); ?>

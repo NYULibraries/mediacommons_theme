@@ -4,7 +4,7 @@
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main">
+<main>
   <div id="content">
     <?php if (isset($tabs["#primary"])  && !empty($tabs["#primary"])):  ?>
       <div class="tabs"><?php print render($tabs); ?></div>
@@ -17,12 +17,12 @@
     <?php if ($messages) : ?>
       <?php print $messages; ?>
     <?php endif; ?>
-    <article  class="toc" role="directory"><a id="main-content"></a>
+    <article  class="toc"><a id="main-content"></a>
       <?php print render($page['content']); ?> 
     </article>
   </div>
   <?php if (isset($page['sidebar_first'])) : ?>
-    <aside role="complementary">
+    <aside>
       <?php print render($page['sidebar_first']); ?>
     </aside>
   <?php endif; ?> 

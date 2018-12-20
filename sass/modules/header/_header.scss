@@ -4,13 +4,17 @@
 @import "_header_variables";
 @import "_header--search";
 @import "_header--logos";
-[role="banner"] {
+
+.banner {
   margin: 1rem auto 0 auto;
   padding: 6px 0 0 0;
+
   @extend %clearfix;
+
   button {
     display: none;
   }
+
   // a.skip-to-nav {
   //   height: 0px !important;
   //   overflow: hidden;
@@ -20,19 +24,26 @@
     //  margin: ($globalnav-height + 0.8) auto 0 auto;
     width: 94.5%;
     max-width: 64rem;
+
     fieldset {
       margin: 0;
     }
   }
+
+
   @include respond-to("narrow navigation") {
     width: 100%;
     position: relative;
+
     button.skip-arrow {
       padding-top: .5em;
+
       // margin: 0 2%;
       margin: 0 0 0 3%;
+
       @include background-image(linear-gradient(top, $body-background-color, $body-background-color));
       @include border-radius(5px);
+
       //border: none;
       //float: left;
       display: block;

@@ -4,7 +4,7 @@
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main">
+<main>
   <?php if ($tabs) : ?>
     <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>
@@ -14,7 +14,7 @@
   <?php if ($messages) : ?>
     <?php print $messages; ?>
   <?php endif; ?>
-  <article role="article" class="spoke"><a id="main-content"></a>
+  <article class="spoke"><a id="main-content"></a>
     <?php print render($page['content']); ?>
   </article>
 </main>

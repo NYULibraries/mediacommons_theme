@@ -9,7 +9,7 @@
 $main_menu = menu_navigation_links('main-menu');
 
 ?>
-  <nav class="footer-nav" role="navigation">
+  <nav class="footer-nav">
     <?php if ($main_menu) : ?>
       <?php print theme('links__system_main_menu', array('links' => $main_menu )); ?>
     <?php endif; ?>

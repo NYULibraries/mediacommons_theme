@@ -2,8 +2,8 @@ $fg_primary: map-get($map, imr);
 $neutral_stack: tint-stack(#333333) !global;
 $spoke-default-thumb: "default_images/spoke-default-imr.svg";
 $imr-logo: "mc-logos/imr.svg";
-body.imr {
 
+body.imr {
   a:link,
   a:visited {
     color: #af3b00;
@@ -14,17 +14,22 @@ body.imr {
     background-size: cover;
     background-repeat: no-repeat;
     height: 4.7rem;
+
     @include respond-to("narrow navigation") {
       background-position: bottom;
       height: 2.5rem;
     }
-  } // this uses underscores because it is created from a block's delta
+  }
+
+  // this uses underscores because it is created from a block's delta
   .mc_recent_comments .blockheader div:after {
     content: " on IMR";
   }
+
   #block-views-contributors-this-hub-block .blockheader div:after {
     content: " to this Theme Week";
   }
+
   .view-mode-hub-home {
     .hub-title {
       font-size: 2.5rem;
@@ -32,16 +37,17 @@ body.imr {
     }
   }
 
-  [role="complementary"] {
-
-    >div,
+  aside {
+    > div,
     .block {
       background-color: lighten(nth($neutral_stack, 5), 3%);
     }
+
     header {
       background-color: nth($neutral_stack, 4);
     }
   }
+
   .field-name-field-representative-image {
     background: image-url($spoke-default-thumb);
     background-repeat: no-repeat;

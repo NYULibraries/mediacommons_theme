@@ -557,7 +557,7 @@ function mediacommons_menu_tree__menu_mcglobalnav($variables) {
     // For Channel navigation
     return '<ul aria-hidden="true">' . $variables['tree'] . '</ul>';
   } else {
-    return '<ul role="menubar" aria-label="MediaCommons Global Navigation Menu" >' . $variables['tree'] . '</ul>';
+    return '<ul aria-label="MediaCommons Global Navigation Menu" >' . $variables['tree'] . '</ul>';
   }
 }
 

@@ -41,6 +41,6 @@
  * @see template_process()
  */
 ?>
-<article id="hometoc" class="toc" role="directory">
+<article id="hometoc" class="toc">
   <?php print $content; ?>
 </article>

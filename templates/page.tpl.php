@@ -4,7 +4,7 @@
     <?php print render($action_links); ?>
   </ul>
 <?php endif; ?>
-<main role="main">
+<main>
   <?php if ($tabs) : ?>
     <div class="tabs">
       <?php print render($tabs); ?>
@@ -27,7 +27,7 @@
   </div>
   </div>
  <?php if (isset($page['sidebar_basicpage1'])) : ?>
-    <aside role="complementary" class="sidebar_basicpage1">
+    <aside class="sidebar_basicpage1">
       <?php print render($page['sidebar_basicpage1']); ?>
     </aside>
   <?php endif; ?> 

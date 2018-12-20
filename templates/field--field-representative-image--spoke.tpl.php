@@ -25,7 +25,7 @@ foreach ($items as $delta => $item) {
 	if (isset($item['classes_array'][0])){
 		print render($item); 
 	} else {
-		print '<a tabindex="-1" role="presentation" href = "'. $spokepath . '">';
+		print '<a tabindex="-1" aria-hidden="true" href = "'. $spokepath . '">';
 		print render($item); 
 	 	print "</a>";
 	}

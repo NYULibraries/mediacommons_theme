@@ -14,7 +14,7 @@ if ($nid) {
   </ul>
   <?php endif; ?>
 
-<main role="main">
+<main>
   <?php if ($tabs) : ?>
       <div class="tabs"><?php print render($tabs); ?></div>
   <?php endif; ?>
@@ -27,7 +27,7 @@ if ($nid) {
       <?php print $messages; ?>
   <?php endif; ?>
 
-  <article role="article" class="spoke"><a id="main-content"></a>
+  <article class="spoke"><a id="main-content"></a>
    <?php 
   if ($nid) {
     print render($rendered_view);

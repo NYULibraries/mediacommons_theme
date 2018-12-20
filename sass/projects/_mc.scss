@@ -1,12 +1,14 @@
 $fg_primary: map-get($map, mc);
 $mc-logo: "mc-logos/mc.svg";
 $neutral_stack: tint-stack(#333333) !global;
+
 body.mc {
-  [role="main"] {
+  main {
     max-width: 84rem;
     margin: 0em auto 0;
   }
-  [role="banner"] {
+
+  .banner {
     margin: 1rem auto 2rem;
     max-width: 84rem;
 
@@ -16,9 +18,11 @@ body.mc {
       width: 22.5rem;
       height: 4.4rem;
     }
+
     #main-nav {
       display: none;
     }
+
     @include respond-to("narrow navigation") {
       button.skip-arrow {
         // there is no primary nav on homepage, so hide responsive hamburger button
@@ -31,20 +35,24 @@ body.mc {
     max-width: 84rem;
     margin: 3em auto 0;
   }
-  [role="complementary"] {
-    >div,
+
+  aside {
+    > div,
     .block {
       background-color: $hometoprightcolor;
     }
+
     header {
       background-color: #d6e2ea;
     }
   }
+
   @include respond-to("narrow navigation") {
-    [role="banner"] {
+    .banner {
       h1 {
         margin-left: 3%;
       }
+
       .logo {
         width: 60vw;
         max-width: 700px;

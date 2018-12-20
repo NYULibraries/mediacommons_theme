@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 6, ../sass/partials/_extendables.scss */
 nav.global:after, .banner .top-hold:after, .banner:after, .node-spoke.node-teaser .spoke-teaser-meta:after, footer#footer:after, main:after, .spoke:after {
   content: "";
@@ -983,7 +982,7 @@ a.control:active {
 }
 
 /* line 5, ../sass/modules/icons/_icons_extendables.scss */
-.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, [role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before, [role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before, .responsive-disclosure:before, .responsive-container.is-open .responsive-disclosure:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, .banner [role="search"] label:before, .banner [role="search"].open label:before, .cc-license:before, .icon-cross:before, .banner .skip-arrow:before, .banner .skip-arrow.open:before, a.login-link:after, a.login-link.open:after {
+.mc-logo:before, .icon-contract-arrow-m:before, .icon-expand-arrow-m:before, .icon-contract-arrow-s:before, .icon-expand-arrow-s:before, aside.part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before, aside.part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before, .responsive-disclosure:before, .responsive-container.is-open .responsive-disclosure:before, [href^="mailto"]:before, [rel*="external"][href^="http"]:before, [href^="skype:"]:before, [href^="tel:"]:before, [rel*="me"][href*="twitter.com"]:before, .icon-user:before, .icon-users:before, .icon-add-user:before, .banner [role="search"] label:before, .banner [role="search"].open label:before, .cc-license:before, .icon-cross:before, .banner .skip-arrow:before, .banner .skip-arrow.open:before, a.login-link:after, a.login-link.open:after {
   font-family: "MediaCommons-Icon-Font";
   speak: none;
   font-style: normal;
@@ -995,122 +994,122 @@ a.control:active {
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .mc-logo:before {
-  content: "";
+  content: "\e002";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-contract-arrow-m:before {
-  content: "";
+  content: "\e00a";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-expand-arrow-m:before {
-  content: "";
+  content: "\e00b";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-contract-arrow-s:before {
-  content: "";
+  content: "\e00e";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-expand-arrow-s:before {
-  content: "";
+  content: "\e00f";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
-[role="complimentary"].part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before {
-  content: "";
+aside.part-of-hub.open .responsive-disclosure:after, .drop-down.open:after, li[aria-haspopup="true"] > a.open:after, .icon-contract-arrow-l:before {
+  content: "\e012";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
-[role="complimentary"].part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before {
-  content: "";
+aside.part-of-hub .responsive-disclosure:after, a.drop-down:after, li[aria-haspopup="true"] > a:after, .icon-expand-arrow-l:before {
+  content: "\e013";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .responsive-disclosure:before {
-  content: "";
+  content: "\e010";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .responsive-container.is-open .responsive-disclosure:before {
-  content: "";
+  content: "\e013";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="mailto"]:before {
-  content: "";
+  content: "\e006";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [rel*="external"][href^="http"]:before {
-  content: "";
+  content: "\e602";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="skype:"]:before {
-  content: "";
+  content: "\e603";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [href^="tel:"]:before {
-  content: "";
+  content: "\e008";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 [rel*="me"][href*="twitter.com"]:before {
-  content: "";
+  content: "\e604";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-user:before {
-  content: "";
+  content: "\e01f";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-users:before {
-  content: "";
+  content: "\e020";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-add-user:before {
-  content: "";
+  content: "\e01e";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .banner [role="search"] label:before {
-  content: "";
+  content: "\e016";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .banner [role="search"].open label:before {
-  content: "";
+  content: "\e012";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .cc-license:before {
-  content: "";
+  content: "\e900";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .icon-cross:before {
-  content: "";
+  content: "\ea0f";
 }
 
 /* line 7, ../sass/modules/icons/_icons_mixins.scss */
 .banner .skip-arrow:before, .banner .skip-arrow.open:before {
-  content: "";
+  content: "\e600";
 }
 
 /* line 14, ../sass/modules/icons/_icons_mixins.scss */
 a.login-link:after, li[aria-haspopup="true"] > a:after {
-  content: "";
+  content: "\e013";
 }
 
 /* line 14, ../sass/modules/icons/_icons_mixins.scss */
 a.login-link.open:after, li[aria-haspopup="true"] > a.open:after {
-  content: "";
+  content: "\e012";
 }
 
 @font-face {

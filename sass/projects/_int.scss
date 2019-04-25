@@ -17,7 +17,7 @@ $primary: tint-stack(cs-primary()) !global;
 $secondary: tint-stack(cs-secondary()) !global;
 $tertiary: tint-stack(cs-tertiary()) !global;
 $spoke-default-thumb: "default_images/spoke-default-int.svg";
-$int-logo: "mc-logos/int.svg";
+$int-logo: "mc-logos/intlogo2019.jpg";
 
 .node-review.view-mode-full {
     border-top: 4px solid #782a70;
@@ -55,7 +55,7 @@ body.int {
         .logo {
             background: image-url($int-logo);
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
             width: 33rem;
             height: 3.2rem;
 
@@ -71,8 +71,6 @@ body.int {
             }
 
             @media (min-width: 200px) and (max-width: 500px) {
-                width: 60vw;
-                max-width: 15rem;
                 margin-top: 0;
                 background-position: bottom;
             }

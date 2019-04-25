@@ -20,300 +20,299 @@ $spoke-default-thumb: "default_images/spoke-default-int.svg";
 $int-logo: "mc-logos/int.svg";
 
 .node-review.view-mode-full {
-  border-top: 4px solid #782a70;
-  font-family: "Georgia", "Times New Roman", serif;
-  max-width: 38em;
-  line-height: 1.5;
-  font-size: 1.1em;
-  padding-bottom: 40px;
+    border-top: 4px solid #782a70;
+    font-family: "Georgia", "Times New Roman", serif;
+    max-width: 38em;
+    line-height: 1.5;
+    font-size: 1.1em;
+    padding-bottom: 40px;
 
-  .review-byline {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 20px 0;
-  }
+    .review-byline {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin: 20px 0;
+    }
 }
 
 body.int {
-  .backToIssue {
-    a:link,
-    a:visited {
-      padding: 3px 0px;
-      line-height: 1.4;
-      display: block;
-      color: white;
+    .backToIssue {
+        a:link,
+        a:visited {
+            padding: 3px 0;
+            line-height: 1.4;
+            display: block;
+            color: white;
 
-      //background-color: #3e3d3d;
-      color: #3e3d3d;
+            //background-color: #3e3d3d;
+            color: #3e3d3d;
 
-      //text-decoration: underline;
-   
-    }
-  }
+            //text-decoration: underline;
 
-  .banner {
-    .logo {
-      background: image-url($int-logo);
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 33rem;
-      height: 3.2rem;
-
-      @include respond-to("narrow navigation") {
-        width: 67vw;
-        max-width: 380px;
-        height: 2.6rem;
-        margin-top: 10px;
-      }
-
-
-      @media (min-width: 501px) and (max-width: 599px) {
-        margin-top: 10px;
-      }
-
-      @media (min-width: 200px) and (max-width: 500px) {
-        width: 60vw;
-        max-width: 15rem;
-        margin-top: 0px;
-        background-position: bottom;
-      }
-    }
-  }
-
-  // this uses underscores because it is created from a block's delta
-  .mc_recent_comments .blockheader div:after {
-    content: " on [in]Transition";
-  }
-
-  #block-views-contributors-this-hub-block .blockheader div:after {
-    content: " to this Issue";
-  }
-
-  iframe {
-    max-width: 100%;
-  }
-
-  .spoke-teaser-meta {
-    .peoplelist {
-      float: none;
+        }
     }
 
-    .comment-count {
-      float: none;
+    .banner {
+        .logo {
+            background: image-url($int-logo);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 33rem;
+            height: 3.2rem;
 
-      &::before {
-        content: none;
-      }
-    }
-  }
+            @include respond-to("narrow navigation") {
+                width: 67vw;
+                max-width: 380px;
+                height: 2.6rem;
+                margin-top: 10px;
+            }
 
-  .node-hub .field-name-field-body {
-    position: relative;
-    font-family: "Georgia", "Times New Roman", serif;
-    line-height: 1.4;
-    font-size: 1rem;
-    margin-top: 1rem;
-    max-width: 41rem;
+            @media (min-width: 501px) and (max-width: 599px) {
+                margin-top: 10px;
+            }
 
-    p {
-      margin-bottom: 1rem;
-    }
-  }
-
-  .node-spoke {
-    &.node-teaser {
-      border-bottom: 1px solid nth($tertiary, 5);
-      border-bottom: none;
-
-      &:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-      }
-    }
-  }
-
-  .featured-more header {
-    margin-bottom: 20px;
-  }
-
-  //  @media (max-width: 799px) {
-  .featuredhub-info {
-    position: relative;
-    bottom: 0px;
-    max-width: 100%;
-    left: 0px;
-  }
-
-  //  }
-  &.front {
-    .field-name-field-body {
-      display: none;
+            @media (min-width: 200px) and (max-width: 500px) {
+                width: 60vw;
+                max-width: 15rem;
+                margin-top: 0;
+                background-position: bottom;
+            }
+        }
     }
 
-    .field-name-field-representative-image a {
-      display: block;
-      margin: 0;
-      line-height: .5;
+    // this uses underscores because it is created from a block's delta
+    .mc_recent_comments .blockheader div:after {
+        content: " on [in]Transition";
     }
-  }
 
-  .homehub-spokes {
-    margin-top: .8em;
-  }
-
-  header.hubhead {
-    position: relative;
-  }
-
-  &.node-type-hub {
-    .hub-title {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      line-height: 1.4;
-      font-size: 1.3rem;
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: .5rem;
+    #block-views-contributors-this-hub-block .blockheader div:after {
+        content: " to this Issue";
     }
-  }
 
-  &.front {
-    @media (min-width: 50.0625em) {
-      #content {
-        width: 70.5%;
-      }
+    iframe {
+        max-width: 100%;
+    }
 
-      aside {
-        width: 28%;
-      }
+    .spoke-teaser-meta {
+        .peoplelist {
+            float: none;
+        }
+
+        .comment-count {
+            float: none;
+
+            &::before {
+                content: none;
+            }
+        }
+    }
+
+    .node-hub .field-name-field-body {
+        position: relative;
+        font-family: "Georgia", "Times New Roman", serif;
+        line-height: 1.4;
+        font-size: 1rem;
+        margin-top: 1rem;
+        max-width: 41rem;
+
+        p {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .node-spoke {
+        &.node-teaser {
+            border-bottom: 1px solid nth($tertiary, 5);
+            border-bottom: none;
+
+            &:last-child {
+                border-bottom: none;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .featured-more header {
+        margin-bottom: 20px;
+    }
+
+    //  @media (max-width: 799px) {
+    .featuredhub-info {
+        position: relative;
+        bottom: 0;
+        max-width: 100%;
+        left: 0;
+    }
+
+    //  }
+    &.front {
+        .field-name-field-body {
+            display: none;
+        }
+
+        .field-name-field-representative-image a {
+            display: block;
+            margin: 0;
+            line-height: .5;
+        }
+    }
+
+    .homehub-spokes {
+        margin-top: .8em;
     }
 
     header.hubhead {
-      position: relative;
-
-      .peoplelist {
-        display: none;
-      }
+        position: relative;
     }
 
-    .hub-title {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      line-height: 1.5;
-      font-size: 1.4rem;
-      padding: 0;
-
-      a {
-        background-color: rgba(255, 255, 255, 0.8);
-        padding: .5rem;
-        display: inline-block;
-        margin-right: 10px;
-      }
+    &.node-type-hub {
+        .hub-title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1.4;
+            font-size: 1.3rem;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: .5rem;
+        }
     }
 
-    .spoke-title {
-      font-size: 1.25rem;
-    }
-  }
+    &.front {
+        @media (min-width: 50.0625em) {
+            #content {
+                width: 70.5%;
+            }
 
-  time,
-  .date-display-range {
-    display: none !important;
-  }
+            aside {
+                width: 28%;
+            }
+        }
 
-  .comment time {
-    display: block !important;
-  }
+        header.hubhead {
+            position: relative;
 
-  li.featured-item {
-    min-height: 7rem;
-  }
+            .peoplelist {
+                display: none;
+            }
+        }
 
-  .node-spoke.node-teaser .thumb {
-    background-size: 224%;
-    background-position-x: 3px;
-    background-position-y: -77px;
-  }
+        .hub-title {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            line-height: 1.5;
+            font-size: 1.4rem;
+            padding: 0;
 
-  .node-hub.node-teaser {
-    .field-name-field-body {
-      display: none;
-    }
+            a {
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: .5rem;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
 
-    .field-name-field-representative-image {
-      background: image-url($spoke-default-thumb);
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .hub-title {
-      font-size: 1.4rem;
-    }
-  }
-
-  .intransition_full {
-    header h2 {
-      margin-bottom: .4rem;
+        .spoke-title {
+            font-size: 1.25rem;
+        }
     }
 
-    .int-full-sections {
-      width: auto;
-      overflow: hidden;
-      margin: 2em 0;
+    .date-display-range,
+    time {
+        display: none !important;
     }
 
-    @media (min-width: 830px) {
-      .group-1 {
-        float: left;
-        width: 49%;
-        margin-right: 1%;
-        margin-bottom: 2em;
-      }
-
-      .group-2 {
-        float: right;
-        width: 48%;
-        margin-left: 1%;
-        border-left: 1px solid #d2bdcf;
-        padding-left: 30px;
-      }
-
-      .group-3 {
-        float: left;
-        width: 48%;
-        margin-right: 2%;
-      }
+    .comment time {
+        display: block !important;
     }
 
-    .group-footer {
-      clear: both;
-      margin-top: 4em;
+    li.featured-item {
+        min-height: 7rem;
     }
-  }
+
+    .node-spoke.node-teaser .thumb {
+        background-size: 224%;
+        background-position-x: 3px;
+        background-position-y: -77px;
+    }
+
+    .node-hub.node-teaser {
+        .field-name-field-body {
+            display: none;
+        }
+
+        .field-name-field-representative-image {
+            background: image-url($spoke-default-thumb);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hub-title {
+            font-size: 1.4rem;
+        }
+    }
+
+    .intransition_full {
+        header h2 {
+            margin-bottom: .4rem;
+        }
+
+        .int-full-sections {
+            width: auto;
+            overflow: hidden;
+            margin: 2em 0;
+        }
+
+        @media (min-width: 830px) {
+            .group-1 {
+                float: left;
+                width: 49%;
+                margin-right: 1%;
+                margin-bottom: 2em;
+            }
+
+            .group-2 {
+                float: right;
+                width: 48%;
+                margin-left: 1%;
+                border-left: 1px solid #d2bdcf;
+                padding-left: 30px;
+            }
+
+            .group-3 {
+                float: left;
+                width: 48%;
+                margin-right: 2%;
+            }
+        }
+
+        .group-footer {
+            clear: both;
+            margin-top: 4em;
+        }
+    }
 }
 
 .review-byline {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  margin-bottom: 20px;
-  color: #232323;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #232323;
 
-  .label {
-    display: inline-block;
-    margin-right: .4rem;
-  }
+    .label {
+        display: inline-block;
+        margin-right: .4rem;
+    }
 
-  a {
-    color: inherit;
-  }
+    a {
+        color: inherit;
+    }
 
-  .view-mode-user_byline {
-    display: inline-block;
-    float: none;
-  }
+    .view-mode-user_byline {
+        display: inline-block;
+        float: none;
+    }
 }
 
 .field-name-posts-contributed.mc-int .block-title::after {
-  content: "As creator";
+    content: "As creator";
 }
